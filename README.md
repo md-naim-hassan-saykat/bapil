@@ -9,8 +9,8 @@
 ## Table of Contents
 
 - [Overview](#overview)
-- [Vision](#vision)
 - [Inspiration & Related Initiatives](#inspiration-related-initiatives)
+- [Vision](#vision)
 - [Mission](#mission)
 - [Objectives](#objectives)
 - [Scope](#scope)
@@ -152,9 +152,10 @@ The BAPIL White Paper is planned around the following chapters:
 11. AI Education & Talent Development
 12. Startup Ecosystem
 13. Budget Estimation
-14. Five-Year Roadmap
-15. Risks, Ethics, and Responsible AI
-16. Conclusion
+14. Five-Year Roadmap (2026-2030)
+15. Long-Term Vision (2030-2041)
+16. Risks, Ethics, and Responsible AI
+17. Conclusion
 
 ---
 
