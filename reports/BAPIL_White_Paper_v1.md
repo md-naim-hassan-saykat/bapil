@@ -25,8 +25,6 @@ The long-term vision of BAPIL is to contribute to a future where policymaking an
 
 This document serves as a conceptual and research framework intended to stimulate discussion, collaboration, and strategic thinking regarding the role of Artificial Intelligence in shaping Bangladesh’s future. The contents of this white paper are intended for research, educational, and policy discussion purposes and do not represent any official government position.
 
-⸻
-
 ## Chapter 2: Why Bangladesh Needs AI Policy Intelligence
 
 ### Introduction
@@ -87,8 +85,6 @@ The Bangladesh AI Policy & Innovation Lab (BAPIL) is proposed as a research-orie
 As Bangladesh advances toward its long-term development aspirations and digital transformation goals, the ability to leverage data, knowledge, and Artificial Intelligence responsibly will become increasingly important. AI policy intelligence represents an opportunity to strengthen evidence-based governance, improve institutional effectiveness, and support informed decision-making.
 
 Through research, collaboration, and capacity building, BAPIL aims to contribute to discussions on how AI can be applied responsibly and effectively to address national challenges and support Bangladesh’s future development.
-
-⸻
 
 ## Chapter 3: Global Examples
 
@@ -199,8 +195,6 @@ These experiences demonstrate that successful AI-enabled governance depends not 
 International experiences from Singapore, South Korea, Estonia, and the United Kingdom provide valuable insights into how governments can leverage AI, data analytics, and digital technologies to improve governance and public service delivery. While Bangladesh faces its own unique challenges and opportunities, these examples offer practical lessons that may inform future discussions on AI governance, policy intelligence, digital transformation, and public sector innovation.
 
 The next chapter examines the current AI landscape in Bangladesh and identifies opportunities and challenges that may shape the country’s future AI ecosystem.
-
-⸻
 
 ## Chapter 4: Current AI Landscape in Bangladesh
 
@@ -322,8 +316,6 @@ Bangladesh stands at an important stage in its AI development journey. The count
 
 Understanding the current AI landscape is essential for identifying future priorities and opportunities. The next chapter presents the vision and strategic objectives of BAPIL as a proposed framework for supporting AI governance, policy intelligence, and public sector innovation in Bangladesh.
 
-⸻
-
 ## Chapter 5: BAPIL Vision
 
 ### Introduction
@@ -432,8 +424,6 @@ Such collaboration may support knowledge exchange, capacity building, comparativ
 ### Conclusion
 
 The vision of BAPIL is grounded in the belief that responsible Artificial Intelligence, combined with strong governance, research excellence, and interdisciplinary collaboration, can contribute to more informed decision-making and sustainable national development. Through research, dialogue, and innovation, BAPIL aims to support the exploration of AI-enabled solutions that align with Bangladesh’s long-term aspirations and digital transformation goals.
-
-⸻
 
 ## Chapter 6: BAPIL Architecture
 
@@ -661,8 +651,6 @@ The proposed BAPIL architecture provides a conceptual framework for integrating 
 
 The next chapter introduces the concept of a Policy Intelligence Dashboard and explores how policymakers, researchers, and stakeholders may interact with analytical insights generated through the BAPIL framework.
 
-⸻
-
 ## Chapter 7: Policy Intelligence Dashboard
 
 ### Introduction
@@ -887,8 +875,6 @@ The Policy Intelligence Dashboard represents a key component of the BAPIL framew
 Rather than replacing policymakers or institutions, the dashboard is envisioned as a research and decision-support tool that helps stakeholders navigate complexity, access relevant information, and better understand emerging policy challenges.
 
 The next chapter introduces the concept of a Bangla Policy Foundation Model and explores how Bangla-language AI technologies may contribute to policy intelligence and public sector innovation in Bangladesh.
-
-⸻
 
 ## Chapter 8: Bangla Policy Foundation Model
 
@@ -1120,8 +1106,6 @@ Such a model could serve as a foundational component within the broader BAPIL fr
 The Bangla Policy Foundation Model represents a strategic research concept that seeks to explore how modern AI technologies can support policy intelligence and public sector innovation in Bangladesh. By combining Bangla-language processing, knowledge management, information retrieval, and responsible AI principles, the model may contribute to future efforts aimed at strengthening evidence-based governance and digital transformation.
 
 The next chapter examines AI Governance Frameworks and discusses the institutional, ethical, and regulatory considerations necessary for responsible AI adoption within the BAPIL ecosystem.
-
-⸻
 
 ## Chapter 9: AI Governance Framework
 
@@ -1408,8 +1392,6 @@ The objective is not to regulate AI directly but to contribute research, knowled
 As Artificial Intelligence becomes increasingly important for governance, research, and public sector innovation, effective governance frameworks will be essential for ensuring responsible and trustworthy deployment. By emphasizing transparency, accountability, fairness, privacy, security, and human oversight, the proposed AI Governance Framework seeks to support the responsible exploration of AI within the BAPIL ecosystem.
 
 The next chapter examines National Security and Cybersecurity considerations and discusses how emerging technologies may affect digital resilience, information integrity, and public-sector security.
-
-⸻
 
 ## Chapter 10: National Security & Cybersecurity
 
