@@ -22,35 +22,35 @@ This document reviews major developments in AI governance, responsible AI, polic
 * Explainability
 * Human oversight
 
-## AI Regulation
+### AI Regulation
 
 * Risk-based regulation
 * Compliance mechanisms
 * Regulatory sandboxes
 * International standards
 
-## Public Sector AI
+### Public Sector AI
 
 * Government applications of AI
 * Policy intelligence systems
 * Decision-support tools
 * Public service modernization
 
-## Data Governance
+### Data Governance
 
 * Data quality
 * Privacy protection
 * Data sharing
 * Open government data
 
-## AI Ethics
+### AI Ethics
 
 * Ethical principles
 * Human rights considerations
 * Bias mitigation
 * Societal impact assessment
 
-## Major International Frameworks
+### Major International Frameworks
 
 * OECD AI Principles
 * UNESCO Recommendation on the Ethics of AI
