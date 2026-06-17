@@ -4,8 +4,6 @@
 
 ### A Conceptual Framework for AI Governance, Policy Intelligence, and Public Sector Innovation
 
-⸻
-
 #### Author
 
 Md Naim Hassan Saykat
@@ -23,7 +21,7 @@ Research, policy discussion, academic collaboration, and public-interest dialogu
 #### Nature of Document:
 Independent Research Proposal
 
-Disclaimer
+## Disclaimer
 
 This white paper is an independent research and policy discussion document prepared by the author in an individual capacity. The ideas, analyses, and recommendations presented herein do not represent the official position of the Government of Bangladesh, any public institution, Université Paris-Saclay, or any affiliated organization.
 
