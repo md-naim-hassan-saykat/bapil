@@ -1,4 +1,21 @@
 # BAPIL White Paper
+BAPIL White Paper
+
+Bangladesh AI Policy & Innovation Lab (BAPIL)
+
+A Conceptual Framework for AI Governance, Policy Intelligence, and Public Sector Innovation
+
+Author
+
+Md Naim Hassan Saykat 
+
+Master’s Student in Artificial Intelligence
+Université Paris-Saclay, France
+
+Version 1.0
+June 2026
+
+Prepared for research, policy discussion, and public-interest dialogue.
 
 ## Chapter 1: Executive Summary
 
@@ -28,28 +45,6 @@ This document serves as a conceptual and research framework intended to stimulat
 ### Disclaimer
 
 This white paper is an independent research and policy discussion document. The ideas presented herein do not represent the official position of the Government of Bangladesh or any public institution. BAPIL is proposed as a conceptual framework intended to stimulate research, collaboration, and discussion regarding AI governance, policy intelligence, and digital transformation.
-
-BAPIL White Paper
-
-Bangladesh AI Policy & Innovation Lab (BAPIL)
-
-A Conceptual Framework for AI Governance, Policy Intelligence, and Public Sector Innovation
-
-⸻
-
-Author
-
-Md Naim Hassan Saykat
-
-Master’s Student in Artificial Intelligence
-Université Paris-Saclay, France
-
-⸻
-
-Version 1.0
-June 2026
-
-Prepared for research, policy discussion, and public-interest dialogue.
 
 ## Chapter 2: Why Bangladesh Needs AI Policy Intelligence
 
