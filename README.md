@@ -10,6 +10,7 @@
 
 - [Overview](#overview)
 - [Vision](#vision)
+- [Inspiration & Related Initiatives](#inspiration--related-initiatives)
 - [Mission](#mission)
 - [Objectives](#objectives)
 - [Core Components](#core-components)
@@ -29,6 +30,22 @@
 The Bangladesh AI Policy & Innovation Lab (BAPIL) is a research-driven initiative that explores how Artificial Intelligence (AI), data analytics, and digital technologies can support evidence-based policymaking, public sector innovation, and responsible AI governance in Bangladesh.
 
 BAPIL aims to bridge the gap between AI research, public policy, governance, and innovation by developing frameworks, methodologies, and prototype systems that can assist decision-makers, researchers, and stakeholders in addressing national challenges through data-informed approaches.
+
+---
+
+## Inspiration & Related Initiatives
+
+BAPIL draws inspiration from international efforts in AI governance, policy intelligence, digital government, and public sector innovation, including initiatives from:
+
+- Singapore GovTech
+
+- South Korea National AI Strategy and AI Hub initiatives
+
+- Estonia's digital government ecosystem
+
+- United Kingdom AI governance and public sector AI programs
+
+- OECD AI Policy Observatory
 
 ---
 
@@ -56,6 +73,12 @@ To contribute to a future where public policy, governance, and innovation in Ban
 - Investigate methods for misinformation detection and digital resilience.
 - Support AI education, research, and innovation ecosystems.
 - Encourage responsible and ethical deployment of AI technologies.
+
+---
+
+## Scope
+
+BAPIL focuses on research, policy intelligence, AI governance, public sector innovation, and capacity building. The initiative is intended to support discussion, analysis, and evidence-based decision-making and does not perform policymaking functions.
 
 ---
 
@@ -211,8 +234,12 @@ BAPIL is an independent research and innovation initiative. The project does not
 
 **Md Naim Hassan Saykat**
 
-Master's Student in Artificial Intelligence  
+Master's Student in Artificial Intelligence
+
 Université Paris-Saclay, France
+
+Research Interests:
+AI Governance, Policy Intelligence, Machine Learning, Data Analytics, and Public Sector Innovation
 
 GitHub: https://github.com/md-naim-hassan-saykat
 
