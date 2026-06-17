@@ -6,6 +6,23 @@
 
 ---
 
+## Table of Contents
+
+- Overview
+- Vision
+- Mission
+- Objectives
+- Core Components
+- White Paper Structure
+- Research Roadmap
+- Repository Structure
+- Planned GitHub Issues
+- Current Status
+- Disclaimer
+- Author
+
+---
+
 ## Overview
 
 The Bangladesh AI Policy & Innovation Lab (BAPIL) is a research-driven initiative that explores how Artificial Intelligence (AI), data analytics, and digital technologies can support evidence-based policymaking, public sector innovation, and responsible AI governance in Bangladesh.
