@@ -2300,16 +2300,28 @@ Year	Strategic Focus	Primary Goal
 
 ### Roadmap Visualization
 
+### Roadmap Visualization
+
 2026 → Research Foundation
+
    ↓
+
 2027 → Framework Development
+
    ↓
+
 2028 → Capacity Building & Collaboration
+
    ↓
+
 2029 → Advanced Research & Innovation
+
    ↓
+
 2030 → Strategic Expansion & Sustainability
+
    ↓
+
 2041 → Long-Term National Vision
 
 This progression reflects the philosophy that sustainable AI ecosystems are built through continuous investment in research, governance, human capital, institutional capacity, and collaboration. Rather than pursuing rapid technological deployment alone, BAPIL emphasizes evidence-based development, responsible innovation, and long-term national value creation.
@@ -2913,3 +2925,19 @@ OECD - Organisation for Economic Co-operation and Development
 NIST - National Institute of Standards and Technology
 
 ## References
+
+References
+
+1. Organisation for Economic Co-operation and Development (OECD). OECD Principles on Artificial Intelligence. Paris: OECD.
+2. United Nations Educational, Scientific and Cultural Organization (UNESCO). Recommendation on the Ethics of Artificial Intelligence. Paris: UNESCO.
+3. European Union. Regulation Laying Down Harmonised Rules on Artificial Intelligence (AI Act). Brussels: European Union.
+4. National Institute of Standards and Technology (NIST). AI Risk Management Framework (AI RMF 1.0). Gaithersburg, MD: NIST.
+5. Infocomm Media Development Authority (IMDA), Singapore. Model AI Governance Framework. Singapore: Government of Singapore.
+6. Smart Nation and Digital Government Office (SNDGO). Smart Nation Singapore Initiatives and Digital Government Programmes. Singapore: Government of Singapore.
+7. Government of Estonia. Digital Government and e-Estonia Framework Reports. Tallinn: Government of Estonia.
+8. Government of the United Kingdom. AI Opportunities Action Plan. London: UK Government.
+9. Government of the People’s Republic of Bangladesh. Smart Bangladesh Vision 2041. Dhaka: Government of Bangladesh.
+10. Organisation for Economic Co-operation and Development (OECD). OECD AI Policy Observatory (OECD.AI).
+11. World Bank. Digital Development and GovTech Reports.
+12. United Nations Development Programme (UNDP). Digital Governance and Public Sector Innovation Publications.
+13. World Economic Forum (WEF). Global Artificial Intelligence Governance Reports.
