@@ -129,7 +129,7 @@ Key features of Singapore’s approach include:
 
 Singapore has also introduced initiatives such as AI Verify and Model AI Governance Frameworks to promote responsible and trustworthy AI deployment.
 
-Lessons for Bangladesh
+### Lessons for Bangladesh
 
 * Importance of long-term digital transformation strategies.
 * Coordination across government agencies.
@@ -150,7 +150,7 @@ South Korea’s approach includes:
 
 Recent initiatives have also focused on establishing AI hubs, expanding digital infrastructure, and strengthening international collaboration.
 
-#### Lessons for Bangladesh
+### Lessons for Bangladesh
 
 * Importance of a coordinated national AI strategy.
 * Development of AI talent and research capacity.
