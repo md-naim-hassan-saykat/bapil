@@ -3181,13 +3181,25 @@ The future of Artificial Intelligence in Bangladesh will not be determined solel
 
 ## Acronyms
 
-AI - Artificial Intelligence
-NLP - Natural Language Processing
-RAG - Retrieval-Augmented Generation
-BPFM - Bangla Policy Foundation Model
-BAPIL - Bangladesh AI Policy & Innovation Lab
-OECD - Organisation for Economic Co-operation and Development
-NIST - National Institute of Standards and Technology
+| Acronym | Meaning |
+|----------|----------|
+| AI | Artificial Intelligence |
+| NLP | Natural Language Processing |
+| RAG | Retrieval-Augmented Generation |
+| BPFM | Bangla Policy Foundation Model |
+| BAPIL | Bangladesh AI Policy & Innovation Lab |
+| OECD | Organisation for Economic Co-operation and Development |
+| NIST | National Institute of Standards and Technology |
+| UNESCO | United Nations Educational, Scientific and Cultural Organization |
+| WEF | World Economic Forum |
+| UNDP | United Nations Development Programme |
+| ITU | International Telecommunication Union |
+| BCC | Bangladesh Computer Council |
+| BBS | Bangladesh Bureau of Statistics |
+| ICT | Information and Communication Technology |
+| GovTech | Government Technology |
+| LLM | Large Language Model |
+| XAI | Explainable Artificial Intelligence |
 
 ## Glossary
 
