@@ -21,7 +21,7 @@ Université Paris-Saclay, France
 
 Prepared for research, policy discussion, academic collaboration, and public-interest dialogue.
 
-Independent Research Proposal
+An Independent White Paper on AI Governance, Policy Intelligence, and Public Sector Innovation in Bangladesh
 
 ## Disclaimer
 
