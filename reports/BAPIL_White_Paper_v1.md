@@ -16,263 +16,35 @@ June 2026
 
 Prepared for research, policy discussion, and public-interest dialogue.
 
-### Disclaimer
+## Disclaimer
 
 This white paper is an independent research and policy discussion document. The ideas presented herein do not represent the official position of the Government of Bangladesh or any public institution. BAPIL is proposed as a conceptual framework intended to stimulate research, collaboration, and discussion regarding AI governance, policy intelligence, and digital transformation.
 
-### Table of Contents
+## Table of Contents
 
-#### Front Matter
+1. Executive Summary
+2. Why Bangladesh Needs AI Policy Intelligence
+3. Global Examples
+4. Current AI Landscape in Bangladesh
+5. BAPIL Vision
+6. BAPIL Architecture
+7. Policy Intelligence Dashboard
+8. Bangla Policy Foundation Model (BPFM)
+9. AI Governance Framework
+10. National Security & Cybersecurity
+11. AI Education & Talent Development
+12. Startup Ecosystem
+13. Resource Requirements & Funding Considerations
+14. Five-Year Roadmap (2026–2030)
+15. Long-Term Vision (2030–2041)
+16. Risks, Ethics, and Responsible AI
+17. Strategic Recommendations
+18. Conclusion
 
-* Cover Page
-* Disclaimer
-* Table of Contents
-* List of Figures
-* Acronyms
-* Glossary
-
-### Chapter 1: Executive Summary
-
-#### 1.1 Executive Summary
-
-### Chapter 2: Why Bangladesh Needs AI Policy Intelligence
-
-2.1 Introduction
-2.2 The Need for Data-Driven Policymaking
-2.3 Managing Information Complexity
-2.4 Citizen Engagement and Public Sentiment Analysis
-2.5 Digital Resilience and Misinformation Challenges
-2.6 Responsible AI Governance
-2.7 Opportunities for Bangladesh
-2.8 The Role of BAPIL
-2.9 Conclusion
-
-### Chapter 3: Global Examples
-
-3.1 Introduction
-3.2 Singapore: Smart Nation and GovTech
-3.3 South Korea: National AI Strategy and AI Hub
-3.4 Estonia: Digital Government and Digital Identity
-3.5 United Kingdom: AI Governance and Public Sector Innovation
-3.6 Comparative Analysis
-3.7 Conclusion
-
-### Chapter 4: Current AI Landscape in Bangladesh
-
-4.1 Introduction
-4.2 Digital Transformation and National Initiatives
-4.3 Government Interest in Artificial Intelligence
-4.4 How BAPIL Complements Existing National Initiatives
-4.5 Academic and Research Ecosystem
-4.6 Startup and Private Sector Innovation
-4.7 Bangla Language and AI
-4.8 Challenges and Constraints
-4.9 Opportunities for Future Development
-4.10 Implications for BAPIL
-4.11 Conclusion
-
-### Chapter 5: BAPIL Vision
-
-5.1 Introduction
-5.2 Vision Statement
-5.3 Strategic Purpose
-5.4 Core Principles
-5.5 Strategic Objectives
-5.6 Potential Areas of Impact
-5.7 Long-Term Aspirations
-5.8 Vision for International Collaboration
-5.9 Institutional Alignment with National Initiatives
-5.10 Conclusion
-
-### Chapter 6: BAPIL Architecture
-
-6.1 Introduction
-6.2 Architectural Principles
-6.3 High-Level Architecture
-6.4 Data Sources Layer
-6.5 Data Management Layer
-6.6 Policy Intelligence Layer
-6.7 Knowledge Management Layer
-6.8 Decision Support Layer
-6.9 Governance and Security Layer
-6.10 Conceptual Information Flow
-6.11 Future Research Components
-6.12 Conclusion
-
-### Chapter 7: Policy Intelligence Dashboard
-
-7.1 Introduction
-7.2 Purpose of the Dashboard
-7.3 Key Functional Components
-7.4 AI-Assisted Analytical Capabilities
-7.5 Visualization and User Experience
-7.6 Knowledge Search and Retrieval
-7.7 Stakeholder Perspectives
-7.8 Transparency and Responsible Use
-7.9 Conceptual Dashboard Architecture
-7.10 Future Opportunities
-7.11 Conclusion
-
-### Chapter 8: Bangla Policy Foundation Model (BPFM)
-
-8.1 Introduction
-8.2 What is a Foundation Model?
-8.3 Why a Bangla Policy Foundation Model?
-8.4 Strategic Objectives
-8.5 Potential Data Sources
-8.6 Conceptual Architecture
-8.7 Retrieval-Augmented Generation (RAG)
-8.8 Potential Use Cases
-8.9 Responsible AI Considerations
-8.10 Research Challenges
-8.11 Long-Term Vision
-8.12 Conclusion
-
-### Chapter 9: AI Governance Framework
-
-9.1 Introduction
-9.2 What is AI Governance?
-9.3 Guiding Principles
-9.4 Governance Structure
-9.5 AI Lifecycle Governance
-9.6 Risk-Based Governance Approach
-9.7 Data Governance Framework
-9.8 Explainability and Transparency
-9.9 Ethics Review and Impact Assessment
-9.10 International Alignment
-9.11 Governance and Public Trust
-9.12 Role of BAPIL
-9.13 Conclusion
-
-### Chapter 10: National Security & Cybersecurity
-
-10.1 Introduction
-10.2 The Growing Importance of Cybersecurity
-10.3 National Security in the Digital Era
-10.4 AI and Cybersecurity
-10.5 Digital Resilience
-10.6 Information Integrity and Misinformation
-10.7 Critical Digital Infrastructure
-10.8 Cybersecurity Capacity Building
-10.9 Responsible Security Governance
-10.10 International Cooperation
-10.11 Role of BAPIL
-10.12 Future Research Directions
-10.13 Conclusion
-
-### Chapter 11: AI Education & Talent Development
-
-11.1 Introduction
-11.2 The Importance of Human Capital
-11.3 Current Landscape of AI Education in Bangladesh
-11.4 AI Education Across Different Levels
-11.5 Professional and Workforce Development
-11.6 Research Capacity Development
-11.7 AI Talent for Public Sector Innovation
-11.8 Interdisciplinary Skills and AI Governance
-11.9 International Collaboration and Knowledge Exchange
-11.10 The Role of BAPIL
-11.11 Future Opportunities
-11.12 Long-Term Vision
-11.13 Conclusion
-
-### Chapter 12: Startup Ecosystem
-
-12.1 Introduction
-12.2 The Importance of Startups in the AI Economy
-12.3 Current Startup Landscape in Bangladesh
-12.4 Emerging Opportunities in AI Startups
-12.5 Innovation Ecosystem Components
-12.6 Challenges Facing AI Startups
-12.7 Research Commercialization
-12.8 AI Innovation and Public Value
-12.9 The Role of BAPIL
-12.10 International Perspectives
-12.11 Long-Term Vision
-12.12 Conclusion
-
-### Chapter 13: Resource Requirements & Funding Considerations
-
-13.1 Introduction
-13.2 Human Resource Requirements
-13.3 Technical Infrastructure Requirements
-13.4 Data and Knowledge Resources
-13.5 Institutional Partnerships
-13.6 Capacity Building Requirements
-13.7 Potential Funding Sources
-13.8 Phased Development Approach
-13.9 Sustainability Considerations
-13.10 Conclusion
-
-### Chapter 14: Five-Year Roadmap (2026–2030)
-
-14.1 Introduction
-14.2 Executive Roadmap Overview (2026–2041)
-14.3 Roadmap Visualization
-14.4 Strategic Objectives
-14.5 Phase 1: Foundation and Research (2026)
-14.6 Phase 2: Framework Design and Pilot Development (2027)
-14.7 Phase 3: Capacity Building and Collaboration (2028)
-14.8 Phase 4: Advanced Research and Innovation (2029)
-14.9 Phase 5: Consolidation and Strategic Expansion (2030)
-14.10 Success Indicators
-14.11 Risks and Mitigation Considerations
-14.12 Looking Beyond 2030
-14.13 Conclusion
-
-### Chapter 15: Long-Term Vision (2030–2041)
-
-15.1 Introduction
-15.2 Vision for 2041
-15.3 Knowledge-Based Governance
-15.4 Responsible AI Ecosystem
-15.5 Bangla-Language AI and Digital Inclusion
-15.6 National Research and Innovation Capacity
-15.7 Human Capital and Talent Development
-15.8 Public Sector Innovation
-15.9 International Leadership and Collaboration
-15.10 Vision Beyond Technology
-15.11 Long-Term Success Indicators
-15.12 Conclusion
-
-### Chapter 16: Risks, Ethics, and Responsible AI
-
-16.1 Introduction
-16.2 Understanding Responsible AI
-16.3 Ethical Principles
-16.4 Risks Associated with AI Systems
-16.5 Governance and Oversight Mechanisms
-16.6 Responsible AI in Policy Intelligence
-16.7 International Best Practices
-16.8 Building Public Trust
-16.9 The Role of BAPIL
-16.10 Conclusion
-
-### Chapter 17: Strategic Recommendations
-
-17.1 Introduction
-17.2 Recommendation 1: National AI Governance Framework
-17.3 Recommendation 2: Bangla-Language AI Research
-17.4 Recommendation 3: Open Data and Knowledge Sharing
-17.5 Recommendation 4: National Knowledge Repositories
-17.6 Recommendation 5: AI Research and Fellowship Programs
-17.7 Recommendation 6: Responsible AI Adoption
-17.8 Recommendation 7: Academia–Government–Industry Collaboration
-17.9 Recommendation 8: AI Literacy and Capacity Building
-17.10 Recommendation 9: Cybersecurity and Digital Resilience
-17.11 Recommendation 10: Regional AI Innovation Partnerships
-17.12 Conclusion
-
-### Chapter 18: Conclusion
-
-18.1 Conclusion
-18.2 Final Remark
-
-### Appendices
-
-Appendix A: Acronyms
-Appendix B: Glossary
-Appendix C: References
+Appendices
+- Acronyms
+- Glossary
+- References
 
 ## Chapter 1: Executive Summary
 
