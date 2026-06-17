@@ -139,28 +139,28 @@ The BAPIL White Paper is planned around the following chapters:
 
 ## Research Roadmap
 
-### Phase 1 – Foundation
+### Phase 1 - Foundation
 
 - Literature review on AI governance.
 - Analysis of international policy intelligence initiatives.
 - Assessment of Bangladesh's AI ecosystem.
 - Identification of key governance challenges.
 
-### Phase 2 – Framework Design
+### Phase 2 - Framework Design
 
 - Development of BAPIL architecture.
 - Policy intelligence framework design.
 - Responsible AI and governance framework.
 - Data governance and privacy considerations.
 
-### Phase 3 – Prototype Development
+### Phase 3 - Prototype Development
 
 - Policy intelligence dashboard prototype.
 - Knowledge management framework.
 - Public policy analytics workflows.
 - Research demonstrations and proof-of-concepts.
 
-### Phase 4 – Publication & Collaboration
+### Phase 4 - Publication & Collaboration
 
 - White paper publication.
 - Academic dissemination.
