@@ -2278,7 +2278,7 @@ By adopting a phased and collaborative approach, BAPIL can explore opportunities
 
 The next chapter presents the Five-Year Roadmap and outlines a potential implementation pathway for the evolution of BAPIL from a research concept into a mature policy intelligence and innovation framework.
 
-## Chapter 14: Five-Year Roadmap (2026–2030)
+## Chapter 14: Five-Year Roadmap (2026-2030)
 
 ### Introduction
 
@@ -2286,7 +2286,7 @@ The development of the Bangladesh AI Policy & Innovation Lab (BAPIL) is envision
 
 This roadmap outlines a conceptual five-year pathway (2026–2030) for the evolution of BAPIL from a research concept into a mature policy intelligence and innovation framework.
 
-Executive Roadmap Overview (2026–2041)
+### Executive Roadmap Overview (2026-2041)
 
 The development of BAPIL is envisioned as a long-term and phased journey that progresses from foundational research toward a mature ecosystem supporting AI governance, policy intelligence, innovation, and digital transformation. The roadmap is designed to align short-term actions with long-term national development aspirations.
 
@@ -2298,19 +2298,29 @@ Year	Strategic Focus	Primary Goal
 2030	Expansion	Consolidate achievements, expand partnerships, and prepare for long-term sustainability.
 2041	Long-Term Vision	Contribute to a knowledge-based, innovation-driven, and AI-enabled Bangladesh through research, collaboration, and responsible technology development.
 
-Roadmap Visualization
+### Roadmap Visualization
 
-2026 ─────► Research Foundation
-              ↓
-2027 ─────► Framework Development
-              ↓
-2028 ─────► Capacity Building & Collaboration
-              ↓
-2029 ─────► Advanced Research & Innovation
-              ↓
-2030 ─────► Strategic Expansion & Sustainability
-              ↓
-2041 ─────► Long-Term National Vision
+2026 → Research Foundation
+
+   ↓
+
+2027 → Framework Development
+
+   ↓
+
+2028 → Capacity Building & Collaboration
+
+   ↓
+
+2029 → Advanced Research & Innovation
+
+   ↓
+
+2030 → Strategic Expansion & Sustainability
+
+   ↓
+
+2041 → Long-Term National Vision
 
 This progression reflects the philosophy that sustainable AI ecosystems are built through continuous investment in research, governance, human capital, institutional capacity, and collaboration. Rather than pursuing rapid technological deployment alone, BAPIL emphasizes evidence-based development, responsible innovation, and long-term national value creation.
 
