@@ -8,18 +8,19 @@
 
 ## Table of Contents
 
-- Overview
-- Vision
-- Mission
-- Objectives
-- Core Components
-- White Paper Structure
-- Research Roadmap
-- Repository Structure
-- Planned GitHub Issues
-- Current Status
-- Disclaimer
-- Author
+- [Overview](#overview)
+- [Vision](#vision)
+- [Mission](#mission)
+- [Objectives](#objectives)
+- [Core Components](#core-components)
+- [White Paper Structure](#white-paper-structure)
+- [Research Roadmap](#research-roadmap)
+- [Repository Structure](#repository-structure)
+- [Planned GitHub Issues](#planned-github-issues)
+- [Project Status](#project-status)
+- [Current Status](#current-status)
+- [Disclaimer](#disclaimer)
+- [Author](#author)
 
 ---
 
@@ -180,6 +181,15 @@ Study Singapore GovTech
 ### Issue #4
 
 Draft BAPIL Technical Architecture
+
+---
+
+## Project Status
+
+- **Status:** Active
+- **White Paper:** In Preparation
+- **Repository Visibility:** Private
+- **Current Focus:** Literature Review, Architecture Design, and Policy Intelligence Framework
 
 ---
 
