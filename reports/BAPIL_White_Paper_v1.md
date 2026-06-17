@@ -4,21 +4,23 @@
 
 ### A Conceptual Framework for AI Governance, Policy Intelligence, and Public Sector Innovation
 
-#### Author
+## Author
 
-Md Naim Hassan Saykat
-Master’s Student in Artificial Intelligence
+**Md Naim Hassan Saykat**<br>
+Master’s Student in Artificial Intelligence<br>
 Université Paris-Saclay, France
 
-Version: 1.0
-Date: June 2026
-Document Type: White Paper
-Status: Public Discussion Draft
+<br>
 
-#### Prepared for:
-Research, policy discussion, academic collaboration, and public-interest dialogue.
+**Version:** 1.0<br>
+**Date:** June 2026<br>
+**Document Type:** White Paper<br>
+**Status:** Public Discussion Draft
 
-#### Nature of Document:
+<br>
+
+Prepared for research, policy discussion, academic collaboration, and public-interest dialogue.
+
 Independent Research Proposal
 
 ## Disclaimer
