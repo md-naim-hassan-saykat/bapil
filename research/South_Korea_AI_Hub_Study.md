@@ -40,8 +40,8 @@ Lessons for Bangladesh
 
 Relevance to BAPIL
 
-To be completed.
+South Korea’s AI ecosystem highlights the importance of long-term national strategy, investment in research infrastructure, industry-academia collaboration, and AI talent development. These experiences may inform the conceptual development of BAPIL and provide practical lessons for strengthening AI research, innovation, and policy intelligence capabilities in Bangladesh.
 
 References
 
-To be added.
+References will be added following a review of official government strategies, AI Hub documentation, research publications, and international assessments of South Korea’s AI initiatives.
