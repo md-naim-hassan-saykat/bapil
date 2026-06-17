@@ -20,6 +20,7 @@ Université Paris-Saclay, France
 <br>
 
 Prepared for research, policy discussion, academic collaboration, and public-interest dialogue.
+This document represents an independent academic and policy research initiative.
 
 An Independent White Paper on AI Governance, Policy Intelligence, and Public Sector Innovation in Bangladesh
 
@@ -30,6 +31,7 @@ This white paper is an independent research and policy discussion document prepa
 The Bangladesh AI Policy & Innovation Lab (BAPIL) is proposed as a conceptual framework intended to stimulate research, collaboration, dialogue, and future exploration regarding Artificial Intelligence governance, policy intelligence, digital transformation, and public-sector innovation in Bangladesh.
 
 This document is intended solely for educational, research, and policy discussion purposes.
+No recommendation contained in this document should be interpreted as official government policy or institutional endorsement.
 
 ## Table of Contents
 
