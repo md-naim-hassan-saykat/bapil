@@ -37,8 +37,8 @@ Lessons for Bangladesh
 
 Relevance to BAPIL
 
-To be completed.
+Estonia provides a valuable example of how secure digital infrastructure, interoperable government systems, and citizen-centric digital services can support efficient governance. The Estonian experience offers important lessons for digital transformation, data governance, and institutional innovation that may be relevant to future BAPIL research and policy discussions.
 
 References
 
-To be added.
+References will be added as official reports, academic studies, and documentation related to Estonia’s digital government ecosystem are reviewed.
