@@ -10,11 +10,11 @@
 
 - [Overview](#overview)
 - [Vision](#vision)
-- [Inspiration & Related Initiatives](#inspiration--related-initiatives)
+- [Inspiration & Related Initiatives](#inspiration-related-initiatives)
 - [Mission](#mission)
 - [Objectives](#objectives)
 - [Scope](#scope)
-- [Long-Term Vision (2026–2041)](#long-term-vision-20262041)
+- [Long-Term Vision (2026-2041)](#long-term-vision-20262041)
 - [Core Components](#core-components)
 - [White Paper Structure](#white-paper-structure)
 - [Research Roadmap](#research-roadmap)
