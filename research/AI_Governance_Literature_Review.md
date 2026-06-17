@@ -58,10 +58,10 @@ Major International Frameworks
 * NIST AI Risk Management Framework
 * Singapore AI Governance Framework
 
-Preliminary Findings
+Relevance to BAPIL
 
-To be completed.
+AI governance is a foundational component of BAPIL. Understanding international frameworks, regulatory approaches, and responsible AI principles will help inform the design of policy intelligence systems, governance frameworks, and ethical guidelines relevant to the Bangladeshi context. Insights from this literature review will support the development of BAPIL’s research agenda, institutional structure, and policy recommendations.
 
 References
 
-To be added.
+The references section will be expanded as the literature review progresses and additional academic publications, policy reports, and international frameworks are analyzed.
