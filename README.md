@@ -82,6 +82,25 @@ BAPIL focuses on research, policy intelligence, AI governance, public sector inn
 
 ---
 
+## Long-Term Vision (2026-2041)
+
+BAPIL envisions a future in which Artificial Intelligence, data analytics, and evidence-based policy intelligence contribute to Bangladesh’s long-term development objectives and digital transformation goals.
+
+By 2041, the initiative aims to support research, collaboration, and capacity-building efforts that may contribute to:
+
+* The adoption of evidence-based and data-informed policymaking practices.
+* The development of responsible AI governance and regulatory frameworks.
+* AI-assisted policy intelligence and decision-support capabilities.
+* Bangla-language AI research and public-interest AI applications.
+* Digital resilience, cybersecurity awareness, and misinformation mitigation.
+* AI talent development and workforce readiness.
+* Stronger collaboration among academia, government, industry, and startups.
+* International partnerships in AI governance, digital government, and emerging technologies.
+
+BAPIL's long-term aspiration is to serve as a research and innovation platform that promotes trustworthy, ethical, and transparent AI while supporting Bangladesh’s vision of becoming a knowledge-based, technologically advanced, and innovation-driven nation by 2041.
+
+---
+
 ## Core Components
 
 ### AI Policy & Research Unit
