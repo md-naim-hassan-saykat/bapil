@@ -33,7 +33,7 @@ This white paper is an independent research and policy discussion document. The 
 
 #### Md Naim Hassan Saykat
 
-Master’s Student in Artificial Intelligence\\
+Master’s Student in Artificial Intelligence
 Université Paris-Saclay, France
 
 Research Interests:
