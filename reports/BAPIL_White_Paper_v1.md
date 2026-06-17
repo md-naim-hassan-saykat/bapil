@@ -29,22 +29,18 @@ This document serves as a conceptual and research framework intended to stimulat
 
 This white paper is an independent research and policy discussion document. The ideas presented herein do not represent the official position of the Government of Bangladesh or any public institution. BAPIL is proposed as a conceptual framework intended to stimulate research, collaboration, and discussion regarding AI governance, policy intelligence, and digital transformation.
 
-### Author
+### BAPIL White Paper
 
-#### Md Naim Hassan Saykat
+#### Bangladesh AI Policy & Innovation Lab (BAPIL)
 
-Master’s Student in Artificial Intelligence
+#### A Conceptual Framework for AI Governance,
+Policy Intelligence, and Public Sector Innovation
+
+#### Author:
+Md Naim Hassan Saykat
 Université Paris-Saclay, France
 
-Research Interests:
-
-* Artificial Intelligence
-* AI Governance
-* Public Policy Analytics
-* Digital Government
-* Data Science
-
-Date: June 2026
+June 2026
 
 ## Chapter 2: Why Bangladesh Needs AI Policy Intelligence
 
@@ -471,6 +467,40 @@ BAPIL does not seek to function as a policymaking authority. Instead, it aims to
 AI governance and digital transformation are global challenges that require international cooperation. BAPIL seeks to learn from international experiences and encourage collaboration with academic institutions, research organizations, innovation ecosystems, and policy communities around the world.
 
 Such collaboration may support knowledge exchange, capacity building, comparative research, and the development of globally informed approaches to AI governance and public sector innovation.
+
+### Institutional Alignment with National Initiatives
+
+The proposed Bangladesh AI Policy & Innovation Lab (BAPIL) is envisioned as a complementary research and policy intelligence initiative that supports Bangladesh’s broader digital transformation agenda.
+
+BAPIL does not seek to replace existing national initiatives. Rather, it aims to contribute research, policy intelligence, governance frameworks, and knowledge-management capabilities that may support ongoing national efforts related to Artificial Intelligence, digital transformation, innovation, and public-sector modernization.
+
+The relationship among key initiatives may be conceptualized as follows:
+
+                Smart Bangladesh Vision 2041
+                             │
+                             ▼
+                    Bangladesh AI Hub
+                             │
+                             ▼
+      Bangladesh AI Policy & Innovation Lab (BAPIL)
+                             │
+      ┌──────────────────────┼──────────────────────┐
+      │                      │                      │
+      ▼                      ▼                      ▼
+ Universities        Research Institutes      Government
+  & Academia            & Think Tanks          Agencies
+      │                      │                      │
+      └──────────────────────┼──────────────────────┘
+                             │
+                             ▼
+                Industry, Startups, and Citizens
+
+#### Caption:
+Figure 2. Institutional relationship between Smart Bangladesh Vision 2041, Bangladesh AI Hub, and BAPIL.
+
+In this conceptual framework, Smart Bangladesh Vision 2041 represents the overarching national development vision. The Bangladesh AI Hub contributes to AI talent development, innovation, startup support, and technology ecosystem growth. BAPIL complements these efforts by focusing on policy intelligence, AI governance, knowledge management, research, and evidence-based decision support.
+
+Through collaboration with universities, research institutions, government agencies, industry partners, and civil society organizations, BAPIL may serve as a bridge between AI research and public policymaking while supporting responsible innovation and long-term national development.
 
 ### Conclusion
 
@@ -3223,71 +3253,146 @@ The future of Artificial Intelligence in Bangladesh will not be determined solel
 
 ## References
 
-1. Organisation for Economic Co-operation and Development (OECD). OECD Principles on Artificial Intelligence. Paris: OECD.
-2. United Nations Educational, Scientific and Cultural Organization (UNESCO). Recommendation on the Ethics of Artificial Intelligence. Paris: UNESCO.
-3. European Union. Regulation Laying Down Harmonised Rules on Artificial Intelligence (AI Act). Brussels: European Union.
-4. National Institute of Standards and Technology (NIST). AI Risk Management Framework (AI RMF 1.0). Gaithersburg, MD: NIST.
-5. Infocomm Media Development Authority (IMDA), Singapore. Model AI Governance Framework. Singapore: Government of Singapore.
-6. Smart Nation and Digital Government Office (SNDGO). Smart Nation Singapore Initiatives and Digital Government Programmes. Singapore: Government of Singapore.
-7. Government of Estonia. Digital Government and e-Estonia Framework Reports. Tallinn: Government of Estonia.
-8. Government of the United Kingdom. AI Opportunities Action Plan. London: UK Government.
-9. Government of the People’s Republic of Bangladesh. Smart Bangladesh Vision 2041. Dhaka: Government of Bangladesh.
-10. Organisation for Economic Co-operation and Development (OECD). OECD AI Policy Observatory (OECD.AI).
-11. World Bank. Digital Development and GovTech Reports.
-12. United Nations Development Programme (UNDP). Digital Governance and Public Sector Innovation Publications.
-13. World Economic Forum (WEF). Global Artificial Intelligence Governance Reports.
-14. Stanford Institute for Human-Centered Artificial Intelligence (HAI). AI Index Report.
-15. World Economic Forum. Responsible AI Governance Frameworks.
-16. Council of Europe. Framework Convention on Artificial Intelligence.
-17. United Nations. E-Government Survey.
-18. World Bank GovTech Maturity Index Reports.
-19. OECD Digital Government Reviews.
-20. ICT Division, Government of Bangladesh. Smart Bangladesh Implementation Strategy.
-21. Bangladesh Computer Council (BCC). National ICT Policy.
-22. Bangladesh Bureau of Statistics (BBS). Statistical Yearbook of Bangladesh.
-23. Planning Commission, Government of Bangladesh. Perspective Plan 2021–2041.
-24. United Nations Development Programme (UNDP). Artificial Intelligence for Sustainable Development.
-25. World Bank. Artificial Intelligence and Public Sector Innovation.
-26. OECD. State of Implementation of the OECD AI Principles.
-27. Hasan et al. BanglaNLP Benchmark Datasets.
-28. csebuetnlp. Bangla Language Resources and Benchmark Studies.
-29. BigScience Workshop. BLOOM Foundation Model.
-30. Lewis et al. Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks.
-31. International Telecommunication Union (ITU). Global Cybersecurity Index.
-32. NIST Cybersecurity Framework.
-33. World Economic Forum. Global Cybersecurity Outlook.
-34. UNESCO. AI and Education Guidance for Policymakers.
-35. World Economic Forum. Future of Jobs Report.
-36. Government of Bangladesh. Digital Bangladesh Vision 2021.
-37. Government of Bangladesh. National ICT Policy 2018.
-38. Bangladesh Hi-Tech Park Authority (BHTPA). AI Hub Project Documentation.
-39. Aspire to Innovate (a2i). Public Service Innovation and Digital Governance Reports.
-40. Bangladesh Open Data Initiative Publications.
-41. OECD. AI in the Public Sector: Opportunities and Challenges.
-42. World Bank. GovTech Global Partnership Reports.
-43. United Nations. Our Common Agenda: Digital Cooperation.
-44. GPAI (Global Partnership on AI). Annual Reports.
-45. World Economic Forum. Governance Alliance for AI.
-46. Brown et al. Language Models are Few-Shot Learners (GPT-3).
-47. Touvron et al. LLaMA: Open and Efficient Foundation Language Models.
-48. Vaswani et al. Attention Is All You Need.
-49. Wei et al. Chain-of-Thought Prompting Elicits Reasoning in Large Language Models.
-50. OpenAI. GPT-4 Technical Report.
-51. World Bank. Data for Better Lives.
-52. OECD. Government at a Glance.
-53. United Nations. Sustainable Development Goals Reports.
-54. OECD. Digital Government Index.
-55. World Bank. World Development Report: Data for Development.
-56. Kaplan, A. M., & Haenlein, M. (2019). Siri, Siri, in my hand: Who’s the fairest in the land? On the interpretations, illustrations, and implications of Artificial Intelligence.
-57. Russell, S., & Norvig, P. Artificial Intelligence: A Modern Approach.
-58. Bender, E. M., Gebru, T., McMillan-Major, A., & Shmitchell, S. On the Dangers of Stochastic Parrots: Can Language Models Be Too Big?
-59. Bommasani et al. On the Opportunities and Risks of Foundation Models.
-60. Bhattacharjee et al. BanglaBERT: Combating Label Scarcity and Domain Shift in Bangla NLP.
-61. Kakwani et al. IndicBERT: A Multilingual Language Model for Indian Languages.
-62. Oxford Insights. Government AI Readiness Index.
-63. Infocomm Media Development Authority (IMDA). AI Verify Testing Framework and Toolkit.
-64. World Bank. GovTech Dataset and GovTech Maturity Index Methodology.
-65. Lin et al. XGLM: A Multilingual Language Model for 100 Languages.
-66. Xue et al. mT5: A Massively Multilingual Pre-trained Text-to-Text Transformer.
-67. Government of Bangladesh. Cyber Security Act 2023.
-68. Information and Communication Technology Division. National Data Governance or Open Data Guidelines (if available).
+A. International Governance, AI Policy, and Public Sector Frameworks
+
+[1] Organisation for Economic Co-operation and Development (OECD). OECD Principles on Artificial Intelligence[M]. Paris: OECD, 2019.
+
+[2] United Nations Educational, Scientific and Cultural Organization (UNESCO). Recommendation on the Ethics of Artificial Intelligence[R]. Paris: UNESCO, 2021.
+
+[3] European Union. Regulation (EU) 2024/1689 Laying Down Harmonised Rules on Artificial Intelligence (Artificial Intelligence Act)[S]. Brussels: European Union, 2024.
+
+[4] National Institute of Standards and Technology (NIST). AI Risk Management Framework (AI RMF 1.0)[R]. Gaithersburg, MD: NIST, 2023.
+
+[5] Infocomm Media Development Authority (IMDA). Model AI Governance Framework[R]. Singapore: Government of Singapore, 2020.
+
+[6] Smart Nation and Digital Government Office (SNDGO). Smart Nation Singapore Initiatives and Digital Government Programmes[R]. Singapore: Government of Singapore, 2024.
+
+[7] Government of Estonia. e-Estonia: Digital Government Framework[R]. Tallinn: Government of Estonia, 2024.
+
+[8] Government of the United Kingdom. AI Opportunities Action Plan[R]. London: UK Government, 2025.
+
+[9] Government of the People’s Republic of Bangladesh. Smart Bangladesh Vision 2041[R]. Dhaka: Government of Bangladesh, 2023.
+
+[10] Organisation for Economic Co-operation and Development (OECD). OECD AI Policy Observatory (OECD.AI)[EB/OL]. Paris: OECD, 2024.
+
+[11] World Bank. Digital Development and GovTech Reports[R]. Washington, DC: World Bank, 2024.
+
+[12] United Nations Development Programme (UNDP). Digital Governance and Public Sector Innovation Publications[R]. New York: UNDP, 2024.
+
+[13] World Economic Forum (WEF). Global Artificial Intelligence Governance Reports[R]. Geneva: World Economic Forum, 2024.
+
+[14] Stanford Institute for Human-Centered Artificial Intelligence (HAI). AI Index Report 2025[R]. Stanford, CA: Stanford University, 2025.
+
+[15] World Economic Forum. Responsible AI Governance Frameworks[R]. Geneva: World Economic Forum, 2024.
+
+[16] Council of Europe. Framework Convention on Artificial Intelligence and Human Rights, Democracy and the Rule of Law[S]. Strasbourg: Council of Europe, 2024.
+
+[17] United Nations. United Nations E-Government Survey 2024[R]. New York: United Nations, 2024.
+
+[18] World Bank. GovTech Maturity Index 2022: Trends in Public Sector Digital Transformation[R]. Washington, DC: World Bank, 2023.
+
+[19] Organisation for Economic Co-operation and Development (OECD). Digital Government Reviews[R]. Paris: OECD Publishing, 2024.
+
+[24] United Nations Development Programme (UNDP). Artificial Intelligence for Sustainable Development[R]. New York: UNDP, 2023.
+
+[25] World Bank. Artificial Intelligence and Public Sector Innovation[R]. Washington, DC: World Bank, 2023.
+
+[26] Organisation for Economic Co-operation and Development (OECD). State of Implementation of the OECD AI Principles[R]. Paris: OECD Publishing, 2024.
+
+B. Bangladesh Policy, Government, and National Development Sources
+
+[20] ICT Division, Government of Bangladesh. Smart Bangladesh Implementation Strategy[R]. Dhaka: ICT Division, 2024.
+
+[21] Bangladesh Computer Council (BCC). National ICT Policy 2018[R]. Dhaka: Bangladesh Computer Council, 2018.
+
+[22] Bangladesh Bureau of Statistics (BBS). Statistical Yearbook of Bangladesh 2024[R]. Dhaka: BBS, 2024.
+
+[23] Planning Commission, Government of Bangladesh. Perspective Plan of Bangladesh 2021–2041[R]. Dhaka: Planning Commission, 2020.
+
+[36] Government of Bangladesh. Digital Bangladesh Vision 2021[R]. Dhaka: Government of Bangladesh, 2009.
+
+[37] Government of Bangladesh. National ICT Policy 2018[R]. Dhaka: Government of Bangladesh, 2018.
+
+[38] Bangladesh Hi-Tech Park Authority (BHTPA). AI Hub Project Documentation[R]. Dhaka: BHTPA, 2025.
+
+[39] Aspire to Innovate (a2i). Public Service Innovation and Digital Governance Reports[R]. Dhaka: a2i Programme, 2024.
+
+[40] Bangladesh Open Data Initiative. Open Data Publications[R]. Dhaka: Government of Bangladesh, 2024.
+
+[67] Government of Bangladesh. Cyber Security Act 2023[S]. Dhaka: Government of Bangladesh, 2023.
+
+[68] Information and Communication Technology Division. National Data Governance Guidelines[R]. Dhaka: ICT Division, Government of Bangladesh, 2024.
+
+C. AI Foundation Models, Large Language Models, and Bangla NLP Research
+
+[27] HASAN M, et al. BanglaNLP Benchmark Datasets[C]. Dhaka: BanglaNLP Research Community, 2023.
+
+[28] CSEBUETNLP. Bangla Language Resources and Benchmark Studies[R]. Dhaka: BUET, 2023.
+
+[29] BigScience Workshop. BLOOM: A 176B-Parameter Open-Access Multilingual Language Model[J]. 2022.
+
+[30] LEWIS P, PEREZ E, POYIADZI E, et al. Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks[C]//Advances in Neural Information Processing Systems. Red Hook, NY: Curran Associates, 2020.
+
+[46] BROWN T B, MANN B, RYDER N, et al. Language Models are Few-Shot Learners[C]//Advances in Neural Information Processing Systems. Red Hook, NY: Curran Associates, 2020.
+
+[47] TOUVRON H, LAVRIL T, IZACARD G, et al. LLaMA: Open and Efficient Foundation Language Models[EB/OL]. 2023.
+
+[48] VASWANI A, SHAZEER N, PARMAR N, et al. Attention Is All You Need[C]//Advances in Neural Information Processing Systems. Red Hook, NY: Curran Associates, 2017.
+
+[49] WEI J, WANG X, SCHUURMANS D, et al. Chain-of-Thought Prompting Elicits Reasoning in Large Language Models[C]//Advances in Neural Information Processing Systems. 2022.
+
+[50] OPENAI. GPT-4 Technical Report[EB/OL]. 2023.
+
+[58] BENDER E M, GEBRU T, MCMILLAN-MAJOR A, et al. On the Dangers of Stochastic Parrots: Can Language Models Be Too Big?[C]//FAccT ’21. New York: ACM, 2021.
+
+[59] BOMMASANI R, HUDSON D A, ADELI E, et al. On the Opportunities and Risks of Foundation Models[EB/OL]. Stanford University, 2021.
+
+[60] BHATTACHARJEE A, ISLAM M R, ANIK M A, et al. BanglaBERT: Combating Label Scarcity and Domain Shift in Bangla Language Understanding[J]. Findings of ACL, 2022.
+
+[61] KAKWANI D, KALRA S, MURTHY A, et al. IndicBERT: A Multilingual Language Model for Indian Languages[J]. Findings of EMNLP, 2020.
+
+[65] LIN X V, IYER S, PASUNURU R, et al. XGLM: A Multilingual Language Model for 100 Languages[EB/OL]. 2022.
+
+[66] XUE L, CONSTANT N, ROBERTS A, et al. mT5: A Massively Multilingual Pre-trained Text-to-Text Transformer[J]. Proceedings of NAACL, 2021.
+
+D. Digital Governance, Cybersecurity, Development, and Future Readiness
+
+[31] International Telecommunication Union (ITU). Global Cybersecurity Index 2024[R]. Geneva: ITU, 2024.
+
+[32] National Institute of Standards and Technology (NIST). Cybersecurity Framework 2.0[R]. Gaithersburg, MD: NIST, 2024.
+
+[33] World Economic Forum. Global Cybersecurity Outlook 2025[R]. Geneva: World Economic Forum, 2025.
+
+[34] UNESCO. AI and Education: Guidance for Policymakers[R]. Paris: UNESCO, 2021.
+
+[35] World Economic Forum. Future of Jobs Report 2025[R]. Geneva: World Economic Forum, 2025.
+
+[41] Organisation for Economic Co-operation and Development (OECD). AI in the Public Sector: Opportunities and Challenges[R]. Paris: OECD Publishing, 2023.
+
+[42] World Bank. GovTech Global Partnership Reports[R]. Washington, DC: World Bank, 2024.
+
+[43] United Nations. Our Common Agenda[R]. New York: United Nations, 2021.
+
+[44] Global Partnership on AI (GPAI). Annual Report 2024[R]. Paris: GPAI, 2024.
+
+[45] World Economic Forum. AI Governance Alliance Reports[R]. Geneva: World Economic Forum, 2024.
+
+[51] World Bank. World Development Report 2021: Data for Better Lives[R]. Washington, DC: World Bank, 2021.
+
+[52] Organisation for Economic Co-operation and Development (OECD). Government at a Glance 2023[R]. Paris: OECD Publishing, 2023.
+
+[53] United Nations. Sustainable Development Goals Report 2024[R]. New York: United Nations, 2024.
+
+[54] Organisation for Economic Co-operation and Development (OECD). Digital Government Index 2023[R]. Paris: OECD Publishing, 2024.
+
+[55] World Bank. World Development Report 2021: Data for Better Lives[R]. Washington, DC: World Bank, 2021.
+
+[56] KAPLAN A M, HAENLEIN M. Siri, Siri, in My Hand: Who’s the Fairest in the Land? On the Interpretations, Illustrations, and Implications of Artificial Intelligence[J]. Business Horizons, 2019, 62(1): 15–25.
+
+[57] RUSSELL S, NORVIG P. Artificial Intelligence: A Modern Approach[M]. 4th ed. Hoboken, NJ: Pearson, 2021.
+
+[62] Oxford Insights. Government AI Readiness Index 2024[R]. Oxford: Oxford Insights, 2024.
+
+[63] Infocomm Media Development Authority (IMDA). AI Verify Testing Framework and Toolkit[R]. Singapore: IMDA, 2024.
+
+[64] World Bank. GovTech Dataset and GovTech Maturity Index Methodology[R]. Washington, DC: World Bank, 2023.
