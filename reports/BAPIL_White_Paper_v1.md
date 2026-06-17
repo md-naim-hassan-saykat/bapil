@@ -3008,8 +3008,6 @@ NIST - National Institute of Standards and Technology
 
 ## References
 
-References
-
 1. Organisation for Economic Co-operation and Development (OECD). OECD Principles on Artificial Intelligence. Paris: OECD.
 2. United Nations Educational, Scientific and Cultural Organization (UNESCO). Recommendation on the Ethics of Artificial Intelligence. Paris: UNESCO.
 3. European Union. Regulation Laying Down Harmonised Rules on Artificial Intelligence (AI Act). Brussels: European Union.
