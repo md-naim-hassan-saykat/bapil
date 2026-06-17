@@ -2301,25 +2301,15 @@ Year	Strategic Focus	Primary Goal
 ### Roadmap Visualization
 
 2026 → Research Foundation
-
    ↓
-
 2027 → Framework Development
-
    ↓
-
 2028 → Capacity Building & Collaboration
-
    ↓
-
 2029 → Advanced Research & Innovation
-
    ↓
-
 2030 → Strategic Expansion & Sustainability
-
    ↓
-
 2041 → Long-Term National Vision
 
 This progression reflects the philosophy that sustainable AI ecosystems are built through continuous investment in research, governance, human capital, institutional capacity, and collaboration. Rather than pursuing rapid technological deployment alone, BAPIL emphasizes evidence-based development, responsible innovation, and long-term national value creation.
