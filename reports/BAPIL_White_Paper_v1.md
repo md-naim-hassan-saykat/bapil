@@ -2494,7 +2494,7 @@ The proposed five-year roadmap provides a structured pathway for the gradual dev
 
 The roadmap emphasizes sustainable growth, interdisciplinary collaboration, and evidence-based development as foundational principles for the future evolution of the initiative.
 
-## Chapter 15: Long-Term Vision (2030–2041)
+## Chapter 15: Long-Term Vision (2030-2041)
 
 ### Introduction
 
