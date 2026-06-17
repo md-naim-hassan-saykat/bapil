@@ -38,8 +38,8 @@ Lessons for Bangladesh
 
 Relevance to BAPIL
 
-To be completed.
+Singapore demonstrates how coordinated digital transformation, strong government leadership, and responsible AI governance can support effective public service delivery and evidence-based policymaking. Lessons from GovTech, Smart Nation, and AI governance initiatives may provide valuable insights for the design of future BAPIL frameworks and policy intelligence capabilities.
 
 References
 
-To be added.
+References will be added as official government publications, policy documents, and academic studies related to Singapore’s digital government ecosystem are reviewed.
