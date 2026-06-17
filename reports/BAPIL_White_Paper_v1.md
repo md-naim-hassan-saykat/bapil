@@ -25,6 +25,10 @@ The long-term vision of BAPIL is to contribute to a future where policymaking an
 
 This document serves as a conceptual and research framework intended to stimulate discussion, collaboration, and strategic thinking regarding the role of Artificial Intelligence in shaping Bangladesh’s future. The contents of this white paper are intended for research, educational, and policy discussion purposes and do not represent any official government position.
 
+### Disclaimer
+
+This white paper is an independent research and policy discussion document. The ideas presented herein do not represent the official position of the Government of Bangladesh or any public institution. BAPIL is proposed as a conceptual framework intended to stimulate research, collaboration, and discussion regarding AI governance, policy intelligence, and digital transformation.
+
 ## Chapter 2: Why Bangladesh Needs AI Policy Intelligence
 
 ### Introduction
