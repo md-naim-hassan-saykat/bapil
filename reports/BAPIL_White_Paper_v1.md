@@ -133,7 +133,7 @@ South Korea’s approach includes:
 
 Recent initiatives have also focused on establishing AI hubs, expanding digital infrastructure, and strengthening international collaboration.
 
-Lessons for Bangladesh
+#### Lessons for Bangladesh
 
 * Importance of a coordinated national AI strategy.
 * Development of AI talent and research capacity.
