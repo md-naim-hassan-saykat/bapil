@@ -1,6 +1,6 @@
-BAPIL White Paper
+# BAPIL White Paper
 
-Chapter 1: Executive Summary
+## Chapter 1: Executive Summary
 
 Artificial Intelligence (AI) is rapidly transforming governance, public administration, economic planning, national security, and public service delivery worldwide. Governments across both developed and developing economies are increasingly leveraging AI-driven analytics, digital infrastructure, and data-informed decision-making systems to improve policy effectiveness, operational efficiency, and citizen outcomes.
 
