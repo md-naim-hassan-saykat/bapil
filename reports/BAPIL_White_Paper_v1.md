@@ -3189,6 +3189,120 @@ BAPIL - Bangladesh AI Policy & Innovation Lab
 OECD - Organisation for Economic Co-operation and Development
 NIST - National Institute of Standards and Technology
 
+## Glossary
+
+Term
+
+Definition
+
+Artificial Intelligence (AI)
+
+A field of computer science focused on developing systems capable of performing tasks that typically require human intelligence, such as reasoning, learning, perception, and decision support.
+
+AI Governance
+
+The policies, processes, standards, and oversight mechanisms used to ensure the responsible, ethical, transparent, and accountable development and use of AI systems.
+
+AI Ethics
+
+Principles and guidelines that promote fairness, accountability, transparency, privacy, and human well-being in the design and deployment of AI technologies.
+
+Policy Intelligence
+
+The use of data, analytics, research, and AI-assisted methods to support evidence-based policy analysis, monitoring, evaluation, and decision-making.
+
+Evidence-Based Policymaking
+
+A policymaking approach that relies on data, research findings, and objective analysis rather than assumptions or anecdotal evidence.
+
+Foundation Model
+
+A large-scale pre-trained AI model that can be adapted to perform a wide variety of tasks such as question answering, summarization, translation, and information retrieval.
+
+Bangla Policy Foundation Model (BPFM)
+
+A proposed Bangla-language foundation model designed to support policy intelligence, governance research, knowledge management, and public sector innovation.
+
+Large Language Model (LLM)
+
+An AI model trained on large amounts of text data to understand and generate human-like language.
+
+Natural Language Processing (NLP)
+
+A branch of AI focused on enabling computers to understand, process, analyze, and generate human language.
+
+Retrieval-Augmented Generation (RAG)
+
+An AI architecture that combines information retrieval from external knowledge sources with language generation to improve accuracy, transparency, and factual grounding.
+
+Knowledge Graph
+
+A structured representation of entities, concepts, and relationships that helps organize and connect information for analysis and retrieval.
+
+Knowledge Management
+
+The systematic process of collecting, organizing, preserving, and sharing information and institutional knowledge.
+
+Semantic Search
+
+A search approach that retrieves information based on meaning and context rather than simple keyword matching.
+
+Data Governance
+
+The framework of policies, standards, and practices that ensure data quality, security, privacy, and responsible use.
+
+Open Data
+
+Publicly accessible data that can be freely used, shared, and reused, subject to applicable legal and ethical requirements.
+
+Digital Governance
+
+The use of digital technologies to improve government operations, public service delivery, transparency, and citizen engagement.
+
+Digital Resilience
+
+The ability of institutions and systems to prepare for, withstand, respond to, and recover from digital disruptions and cyber incidents.
+
+Cybersecurity
+
+The protection of digital systems, networks, devices, and information from unauthorized access, attack, disruption, or misuse.
+
+Misinformation
+
+False or inaccurate information that is shared without necessarily intending to cause harm.
+
+Disinformation
+
+Deliberately false or misleading information created and distributed with the intention of influencing opinions or causing harm.
+
+Public Sentiment Analysis
+
+The use of AI and data analytics to identify and evaluate opinions, attitudes, and trends expressed by individuals or groups.
+
+Explainable AI (XAI)
+
+Methods and techniques that help users understand how AI systems generate outputs and recommendations.
+
+Human Oversight
+
+The principle that human experts remain responsible for reviewing, validating, and making decisions supported by AI systems.
+
+GovTech
+
+The application of digital technologies and innovation to improve government services, operations, and public sector effectiveness.
+
+Smart Bangladesh Vision 2041
+
+Bangladesh’s national vision for becoming a developed, knowledge-based, and technology-driven nation by 2041.
+
+AI Readiness
+
+The degree to which a country, institution, or organization possesses the infrastructure, talent, governance, and resources necessary to effectively adopt AI technologies.
+
+BAPIL
+
+Bangladesh AI Policy & Innovation Lab, the proposed research-oriented framework for AI governance, policy intelligence, digital governance, and public sector innovation described in this white paper.
+
 ## References
 
 1. Organisation for Economic Co-operation and Development (OECD). OECD Principles on Artificial Intelligence. Paris: OECD.
