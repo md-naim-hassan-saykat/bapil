@@ -20,9 +20,9 @@ Prepared for research, policy discussion, and public-interest dialogue.
 
 This white paper is an independent research and policy discussion document. The ideas presented herein do not represent the official position of the Government of Bangladesh or any public institution. BAPIL is proposed as a conceptual framework intended to stimulate research, collaboration, and discussion regarding AI governance, policy intelligence, and digital transformation.
 
-Table of Contents
+### Table of Contents
 
-Front Matter
+#### Front Matter
 
 * Cover Page
 * Disclaimer
@@ -31,15 +31,11 @@ Front Matter
 * Acronyms
 * Glossary
 
-⸻
+### Chapter 1: Executive Summary
 
-Chapter 1: Executive Summary
+#### 1.1 Executive Summary
 
-1.1 Executive Summary
-
-⸻
-
-Chapter 2: Why Bangladesh Needs AI Policy Intelligence
+### Chapter 2: Why Bangladesh Needs AI Policy Intelligence
 
 2.1 Introduction
 2.2 The Need for Data-Driven Policymaking
@@ -51,9 +47,7 @@ Chapter 2: Why Bangladesh Needs AI Policy Intelligence
 2.8 The Role of BAPIL
 2.9 Conclusion
 
-⸻
-
-Chapter 3: Global Examples
+### Chapter 3: Global Examples
 
 3.1 Introduction
 3.2 Singapore: Smart Nation and GovTech
@@ -63,9 +57,7 @@ Chapter 3: Global Examples
 3.6 Comparative Analysis
 3.7 Conclusion
 
-⸻
-
-Chapter 4: Current AI Landscape in Bangladesh
+### Chapter 4: Current AI Landscape in Bangladesh
 
 4.1 Introduction
 4.2 Digital Transformation and National Initiatives
@@ -79,9 +71,7 @@ Chapter 4: Current AI Landscape in Bangladesh
 4.10 Implications for BAPIL
 4.11 Conclusion
 
-⸻
-
-Chapter 5: BAPIL Vision
+### Chapter 5: BAPIL Vision
 
 5.1 Introduction
 5.2 Vision Statement
@@ -94,9 +84,7 @@ Chapter 5: BAPIL Vision
 5.9 Institutional Alignment with National Initiatives
 5.10 Conclusion
 
-⸻
-
-Chapter 6: BAPIL Architecture
+### Chapter 6: BAPIL Architecture
 
 6.1 Introduction
 6.2 Architectural Principles
@@ -111,9 +99,7 @@ Chapter 6: BAPIL Architecture
 6.11 Future Research Components
 6.12 Conclusion
 
-⸻
-
-Chapter 7: Policy Intelligence Dashboard
+### Chapter 7: Policy Intelligence Dashboard
 
 7.1 Introduction
 7.2 Purpose of the Dashboard
@@ -127,9 +113,7 @@ Chapter 7: Policy Intelligence Dashboard
 7.10 Future Opportunities
 7.11 Conclusion
 
-⸻
-
-Chapter 8: Bangla Policy Foundation Model (BPFM)
+### Chapter 8: Bangla Policy Foundation Model (BPFM)
 
 8.1 Introduction
 8.2 What is a Foundation Model?
@@ -144,9 +128,7 @@ Chapter 8: Bangla Policy Foundation Model (BPFM)
 8.11 Long-Term Vision
 8.12 Conclusion
 
-⸻
-
-Chapter 9: AI Governance Framework
+### Chapter 9: AI Governance Framework
 
 9.1 Introduction
 9.2 What is AI Governance?
@@ -162,9 +144,7 @@ Chapter 9: AI Governance Framework
 9.12 Role of BAPIL
 9.13 Conclusion
 
-⸻
-
-Chapter 10: National Security & Cybersecurity
+### Chapter 10: National Security & Cybersecurity
 
 10.1 Introduction
 10.2 The Growing Importance of Cybersecurity
@@ -180,9 +160,7 @@ Chapter 10: National Security & Cybersecurity
 10.12 Future Research Directions
 10.13 Conclusion
 
-⸻
-
-Chapter 11: AI Education & Talent Development
+### Chapter 11: AI Education & Talent Development
 
 11.1 Introduction
 11.2 The Importance of Human Capital
@@ -198,9 +176,7 @@ Chapter 11: AI Education & Talent Development
 11.12 Long-Term Vision
 11.13 Conclusion
 
-⸻
-
-Chapter 12: Startup Ecosystem
+### Chapter 12: Startup Ecosystem
 
 12.1 Introduction
 12.2 The Importance of Startups in the AI Economy
@@ -215,9 +191,7 @@ Chapter 12: Startup Ecosystem
 12.11 Long-Term Vision
 12.12 Conclusion
 
-⸻
-
-Chapter 13: Resource Requirements & Funding Considerations
+### Chapter 13: Resource Requirements & Funding Considerations
 
 13.1 Introduction
 13.2 Human Resource Requirements
@@ -230,9 +204,7 @@ Chapter 13: Resource Requirements & Funding Considerations
 13.9 Sustainability Considerations
 13.10 Conclusion
 
-⸻
-
-Chapter 14: Five-Year Roadmap (2026–2030)
+### Chapter 14: Five-Year Roadmap (2026–2030)
 
 14.1 Introduction
 14.2 Executive Roadmap Overview (2026–2041)
@@ -248,9 +220,7 @@ Chapter 14: Five-Year Roadmap (2026–2030)
 14.12 Looking Beyond 2030
 14.13 Conclusion
 
-⸻
-
-Chapter 15: Long-Term Vision (2030–2041)
+### Chapter 15: Long-Term Vision (2030–2041)
 
 15.1 Introduction
 15.2 Vision for 2041
@@ -265,9 +235,7 @@ Chapter 15: Long-Term Vision (2030–2041)
 15.11 Long-Term Success Indicators
 15.12 Conclusion
 
-⸻
-
-Chapter 16: Risks, Ethics, and Responsible AI
+### Chapter 16: Risks, Ethics, and Responsible AI
 
 16.1 Introduction
 16.2 Understanding Responsible AI
@@ -280,9 +248,7 @@ Chapter 16: Risks, Ethics, and Responsible AI
 16.9 The Role of BAPIL
 16.10 Conclusion
 
-⸻
-
-Chapter 17: Strategic Recommendations
+### Chapter 17: Strategic Recommendations
 
 17.1 Introduction
 17.2 Recommendation 1: National AI Governance Framework
@@ -297,16 +263,12 @@ Chapter 17: Strategic Recommendations
 17.11 Recommendation 10: Regional AI Innovation Partnerships
 17.12 Conclusion
 
-⸻
-
-Chapter 18: Conclusion
+### Chapter 18: Conclusion
 
 18.1 Conclusion
 18.2 Final Remark
 
-⸻
-
-Appendices
+### Appendices
 
 Appendix A: Acronyms
 Appendix B: Glossary
