@@ -29,6 +29,23 @@ This document serves as a conceptual and research framework intended to stimulat
 
 This white paper is an independent research and policy discussion document. The ideas presented herein do not represent the official position of the Government of Bangladesh or any public institution. BAPIL is proposed as a conceptual framework intended to stimulate research, collaboration, and discussion regarding AI governance, policy intelligence, and digital transformation.
 
+### Author
+
+#### Md Naim Hassan Saykat
+
+Master’s Student in Artificial Intelligence
+Université Paris-Saclay, France
+
+Research Interests:
+
+* Artificial Intelligence
+* AI Governance
+* Public Policy Analytics
+* Digital Government
+* Data Science
+
+Date: June 2026
+
 ## Chapter 2: Why Bangladesh Needs AI Policy Intelligence
 
 ### Introduction
@@ -2962,7 +2979,173 @@ By emphasizing transparency, accountability, fairness, privacy, security, and pu
 
 The final chapter summarizes the key findings of this white paper and outlines the broader vision of BAPIL as a research-driven initiative for AI governance, policy intelligence, and public sector innovation in Bangladesh.
 
-## Chapter 17: Conclusion
+You can insert the following chapter immediately before Chapter 17: Conclusion.
+
+## Chapter 17: Strategic Recommendations
+
+### Introduction
+
+The Bangladesh AI Policy & Innovation Lab (BAPIL) is proposed as a long-term research and policy intelligence initiative that seeks to contribute to responsible Artificial Intelligence adoption, evidence-based governance, and public sector innovation. Drawing upon international best practices, emerging technological developments, and Bangladesh’s national development aspirations, this chapter presents a set of strategic recommendations that may support future discussions on AI governance, digital transformation, and innovation ecosystem development.
+
+These recommendations are intended as discussion points and do not constitute official policy proposals.
+
+### Recommendation 1: Establish a National AI Governance Framework
+
+As Artificial Intelligence becomes increasingly integrated into public institutions, businesses, and digital services, Bangladesh may benefit from the development of a comprehensive AI governance framework.
+
+Key considerations include:
+
+* Transparency and explainability requirements.
+* Accountability and oversight mechanisms.
+* Risk-based governance approaches.
+* Ethical AI principles.
+* Human oversight provisions.
+* Public trust and stakeholder engagement.
+
+International frameworks such as the OECD AI Principles, UNESCO Recommendation on the Ethics of AI, NIST AI Risk Management Framework, and the European Union AI Act may provide useful reference points for future discussions.
+
+### Recommendation 2: Strengthen Bangla-Language AI Research
+
+Bangla represents one of the largest language communities in the world and offers significant opportunities for AI innovation.
+
+Potential priorities include:
+
+* Development of Bangla NLP resources.
+* Expansion of Bangla-language datasets.
+* Research on large language models for Bangla.
+* Speech and multilingual AI technologies.
+* Open benchmarking initiatives.
+* Public-sector language technologies.
+
+Investment in Bangla AI research may contribute to greater digital inclusion and accessibility.
+
+### Recommendation 3: Expand Open Data and Knowledge-Sharing Initiatives
+
+Evidence-based governance depends on access to reliable, high-quality information.
+
+Potential initiatives include:
+
+* Expansion of open government data programs.
+* Standardized data publication practices.
+* Improved data interoperability.
+* Public research repositories.
+* Government knowledge-sharing platforms.
+
+Greater access to public information may support research, innovation, transparency, and civic engagement.
+
+### Recommendation 4: Develop National Knowledge Repositories
+
+Governments generate large volumes of reports, policies, regulations, and institutional knowledge that are often difficult to access and analyze.
+
+Future efforts may explore:
+
+* Centralized policy repositories.
+* Digital archives and document management systems.
+* Knowledge graph technologies.
+* Semantic search capabilities.
+* Institutional memory preservation mechanisms.
+
+Knowledge management systems can support continuity, learning, and evidence-based decision-making.
+
+### Recommendation 5: Invest in AI Research and Fellowship Programs
+
+Long-term AI competitiveness depends on sustained investment in research and human capital.
+
+Potential initiatives include:
+
+* Research grants.
+* Graduate scholarships.
+* Doctoral fellowships.
+* International research collaborations.
+* AI research centers and laboratories.
+* Public-sector innovation fellowships.
+
+Research investments can help strengthen national expertise and innovation capacity.
+
+### Recommendation 6: Promote Responsible AI Adoption
+
+The adoption of AI technologies should be accompanied by appropriate governance, oversight, and risk management mechanisms.
+
+Key priorities include:
+
+* Ethical AI assessments.
+* Transparency standards.
+* Bias and fairness evaluations.
+* Privacy protection measures.
+* Cybersecurity safeguards.
+* Continuous monitoring and evaluation.
+
+Responsible adoption can help maximize benefits while reducing potential risks.
+
+### Recommendation 7: Strengthen Academia–Government–Industry Collaboration
+
+AI ecosystems are most effective when researchers, policymakers, businesses, and civil society organizations work together.
+
+Potential approaches include:
+
+* Joint research initiatives.
+* Collaborative innovation programs.
+* Knowledge exchange platforms.
+* Public-private partnerships.
+* Industry-supported research projects.
+* Policy dialogue forums.
+
+Cross-sector collaboration can accelerate innovation and improve implementation capacity.
+
+### Recommendation 8: Develop AI Literacy and Capacity-Building Programs
+
+AI readiness requires not only technical specialists but also informed policymakers, public servants, educators, and citizens.
+
+Potential initiatives include:
+
+* AI awareness programs.
+* Digital literacy campaigns.
+* Public-sector AI training.
+* Responsible AI education.
+* Professional development courses.
+* University-industry training partnerships.
+
+Building AI literacy can support more informed and inclusive participation in technological transformation.
+
+### Recommendation 9: Strengthen Cybersecurity and Digital Resilience
+
+As digital technologies become increasingly important, cybersecurity and resilience should remain strategic priorities.
+
+Potential areas of focus include:
+
+* Cybersecurity workforce development.
+* Critical infrastructure protection.
+* Information integrity initiatives.
+* Digital risk management frameworks.
+* Incident response capabilities.
+* Public awareness and cyber hygiene programs.
+
+Strong cybersecurity foundations are essential for sustainable digital transformation.
+
+### Recommendation 10: Position Bangladesh as a Regional AI Innovation Partner
+
+Bangladesh has opportunities to strengthen its participation within regional and international AI ecosystems.
+
+Potential opportunities include:
+
+* International research partnerships.
+* AI governance cooperation.
+* Participation in global AI initiatives.
+* Regional knowledge-sharing networks.
+* Joint innovation projects.
+* Technology and talent exchange programs.
+
+International engagement can accelerate learning, capacity building, and innovation.
+
+### Conclusion
+
+The recommendations presented in this chapter reflect key themes that have emerged throughout this white paper, including responsible AI governance, evidence-based policymaking, digital transformation, research capacity development, and innovation ecosystem growth.
+
+While implementation pathways will depend on future priorities, stakeholder engagement, and resource availability, these recommendations may serve as a starting point for discussions regarding the role of Artificial Intelligence in supporting Bangladesh’s long-term development objectives.
+
+Ultimately, the successful development of an AI-enabled future will depend not only on technology, but also on strong institutions, human capital, ethical governance, collaboration, and public trust.
+
+## Chapter 18: Conclusion
 
 ### Conclusion
 
@@ -3021,3 +3204,58 @@ NIST - National Institute of Standards and Technology
 11. World Bank. Digital Development and GovTech Reports.
 12. United Nations Development Programme (UNDP). Digital Governance and Public Sector Innovation Publications.
 13. World Economic Forum (WEF). Global Artificial Intelligence Governance Reports.
+14. Stanford Institute for Human-Centered Artificial Intelligence (HAI). AI Index Report.
+15. World Economic Forum. Responsible AI Governance Frameworks.
+16. Council of Europe. Framework Convention on Artificial Intelligence.
+17. United Nations. E-Government Survey.
+18. World Bank GovTech Maturity Index Reports.
+19. OECD Digital Government Reviews.
+20. ICT Division, Government of Bangladesh. Smart Bangladesh Implementation Strategy.
+21. Bangladesh Computer Council (BCC). National ICT Policy.
+22. Bangladesh Bureau of Statistics (BBS). Statistical Yearbook of Bangladesh.
+23. Planning Commission, Government of Bangladesh. Perspective Plan 2021–2041.
+24. United Nations Development Programme (UNDP). Artificial Intelligence for Sustainable Development.
+25. World Bank. Artificial Intelligence and Public Sector Innovation.
+26. OECD. State of Implementation of the OECD AI Principles.
+27. Hasan et al. BanglaNLP Benchmark Datasets.
+28. csebuetnlp. Bangla Language Resources and Benchmark Studies.
+29. BigScience Workshop. BLOOM Foundation Model.
+30. Lewis et al. Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks.
+31. International Telecommunication Union (ITU). Global Cybersecurity Index.
+32. NIST Cybersecurity Framework.
+33. World Economic Forum. Global Cybersecurity Outlook.
+34. UNESCO. AI and Education Guidance for Policymakers.
+35. World Economic Forum. Future of Jobs Report.
+36. Government of Bangladesh. Digital Bangladesh Vision 2021.
+37. Government of Bangladesh. National ICT Policy 2018.
+38. Bangladesh Hi-Tech Park Authority (BHTPA). AI Hub Project Documentation.
+39. Aspire to Innovate (a2i). Public Service Innovation and Digital Governance Reports.
+40. Bangladesh Open Data Initiative Publications.
+41. OECD. AI in the Public Sector: Opportunities and Challenges.
+42. World Bank. GovTech Global Partnership Reports.
+43. United Nations. Our Common Agenda: Digital Cooperation.
+44. GPAI (Global Partnership on AI). Annual Reports.
+45. World Economic Forum. Governance Alliance for AI.
+46. Brown et al. Language Models are Few-Shot Learners (GPT-3).
+47. Touvron et al. LLaMA: Open and Efficient Foundation Language Models.
+48. Vaswani et al. Attention Is All You Need.
+49. Wei et al. Chain-of-Thought Prompting Elicits Reasoning in Large Language Models.
+50. OpenAI. GPT-4 Technical Report.
+51. World Bank. Data for Better Lives.
+52. OECD. Government at a Glance.
+53. United Nations. Sustainable Development Goals Reports.
+54. OECD. Digital Government Index.
+55. World Bank. World Development Report: Data for Development.
+56. Kaplan, A. M., & Haenlein, M. (2019). Siri, Siri, in my hand: Who’s the fairest in the land? On the interpretations, illustrations, and implications of Artificial Intelligence.
+57. Russell, S., & Norvig, P. Artificial Intelligence: A Modern Approach.
+58. Bender, E. M., Gebru, T., McMillan-Major, A., & Shmitchell, S. On the Dangers of Stochastic Parrots: Can Language Models Be Too Big?
+59. Bommasani et al. On the Opportunities and Risks of Foundation Models.
+60. Bhattacharjee et al. BanglaBERT: Combating Label Scarcity and Domain Shift in Bangla NLP.
+61. Kakwani et al. IndicBERT: A Multilingual Language Model for Indian Languages.
+62. Oxford Insights. Government AI Readiness Index.
+63. Infocomm Media Development Authority (IMDA). AI Verify Testing Framework and Toolkit.
+64. World Bank. GovTech Dataset and GovTech Maturity Index Methodology.
+65. Lin et al. XGLM: A Multilingual Language Model for 100 Languages.
+66. Xue et al. mT5: A Massively Multilingual Pre-trained Text-to-Text Transformer.
+67. Government of Bangladesh. Cyber Security Act 2023.
+68. Information and Communication Technology Division. National Data Governance or Open Data Guidelines (if available).
