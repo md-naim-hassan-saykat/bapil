@@ -39,8 +39,8 @@ Lessons for Bangladesh
 
 Relevance to BAPIL
 
-To be completed.
+The United Kingdom’s approach to AI governance demonstrates how innovation can be balanced with accountability, risk management, and public trust. The UK’s experience in public-sector AI adoption, governance frameworks, and AI safety initiatives may provide useful guidance for the development of responsible AI practices and policy intelligence frameworks within BAPIL.
 
 References
 
-To be added.
+References will be added following a review of official government publications, AI governance frameworks, academic research, and policy reports from the United Kingdom.
