@@ -1,10 +1,10 @@
-AI Governance Literature Review
+# AI Governance Literature Review 
 
-Purpose
+## Purpose
 
 This document reviews major developments in AI governance, responsible AI, policy intelligence, digital government, and public sector innovation. The objective is to identify frameworks, principles, and best practices that may inform the development of the Bangladesh AI Policy & Innovation Lab (BAPIL).
 
-Key Research Questions
+## Key Research Questions
 
 * What is AI governance?
 * How are governments regulating and governing AI?
