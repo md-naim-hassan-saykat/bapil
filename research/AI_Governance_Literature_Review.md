@@ -12,9 +12,9 @@ This document reviews major developments in AI governance, responsible AI, polic
 * How can AI support public policy and decision-making?
 * What institutional models exist for AI governance?
 
-Core Topics
+## Core Topics
 
-Responsible AI
+### Responsible AI
 
 * Transparency
 * Accountability
@@ -22,35 +22,35 @@ Responsible AI
 * Explainability
 * Human oversight
 
-AI Regulation
+## AI Regulation
 
 * Risk-based regulation
 * Compliance mechanisms
 * Regulatory sandboxes
 * International standards
 
-Public Sector AI
+## Public Sector AI
 
 * Government applications of AI
 * Policy intelligence systems
 * Decision-support tools
 * Public service modernization
 
-Data Governance
+## Data Governance
 
 * Data quality
 * Privacy protection
 * Data sharing
 * Open government data
 
-AI Ethics
+## AI Ethics
 
 * Ethical principles
 * Human rights considerations
 * Bias mitigation
 * Societal impact assessment
 
-Major International Frameworks
+## Major International Frameworks
 
 * OECD AI Principles
 * UNESCO Recommendation on the Ethics of AI
@@ -58,10 +58,10 @@ Major International Frameworks
 * NIST AI Risk Management Framework
 * Singapore AI Governance Framework
 
-Relevance to BAPIL
+## Relevance to BAPIL
 
 AI governance is a foundational component of BAPIL. Understanding international frameworks, regulatory approaches, and responsible AI principles will help inform the design of policy intelligence systems, governance frameworks, and ethical guidelines relevant to the Bangladeshi context. Insights from this literature review will support the development of BAPIL’s research agenda, institutional structure, and policy recommendations.
 
-References
+## References
 
 The references section will be expanded as the literature review progresses and additional academic publications, policy reports, and international frameworks are analyzed.
