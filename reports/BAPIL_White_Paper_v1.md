@@ -3837,39 +3837,79 @@ Our Common Agenda: Report of the Secretary-General (A/75/982)[EB/OL].
 New York: United Nations, 2021[2026-06-17].
 Available: https://digitallibrary.un.org/record/3939258
 
-[22] United Nations. Sustainable Development Goals Report 2024[R]. New York: United Nations, 2024.
+[21] UNITED NATIONS.
+The Sustainable Development Goals Report 2024[R].
+New York: United Nations, 2024.
+ISBN: 978-92-1-358975-5.
+Available: https://unstats.un.org/sdgs/report/2024
 
-[23] United Nations Development Programme (UNDP). Artificial Intelligence for Sustainable Development[R]. New York: UNDP, 2023.
+[22] UNITED NATIONS DEVELOPMENT PROGRAMME (UNDP).
+AI for Sustainable Development[EB/OL].
+New York: United Nations Development Programme, 2023[2026-06-18].
+Available: https://www.undp.org/digital/ai⁠
 
-[24] United Nations Development Programme (UNDP). Digital Governance and Public Sector Innovation Publications[R]. New York: UNDP, 2024.
+[23] UNITED NATIONS DEVELOPMENT PROGRAMME (UNDP).
+Governance Publications[EB/OL].
+New York: United Nations Development Programme, 2024[2026-06-18].
+Available: https://www.undp.org/governance/publications 
 
-[25] Oxford Insights. Government AI Readiness Index 2024[R]. Oxford: Oxford Insights, 2024.
+[24] OXFORD INSIGHTS.
+Government AI Readiness Index 2024[EB/OL].
+Oxford: Oxford Insights, 2024[2026-06-18].
+Available: https://oxfordinsights.com/ai-readiness/ai-readiness-index 
 
-[26] Global Partnership on AI (GPAI). Annual Report 2024[R]. Paris: GPAI, 2024.
+[25] GLOBAL PARTNERSHIP ON ARTIFICIAL INTELLIGENCE (GPAI).
+Annual Report 2024[EB/OL].
+Paris: Global Partnership on Artificial Intelligence, 2024[2026-06-18].
+Available: https://www.oecd.org/en/about/programmes/global-partnership-on-artificial-intelligence.html
 
 ### C. Bangladesh Policy, Governance, and National Development
 
-[27] MAZUMDAR A, ALHARAHSHEH H H. Digital Bangladesh–Vision 2021: What is the Digital Bangladesh Concept?[J]. South Asian Research Journal of Engineering and Technology, 2020, 2(1): 6-9.
+[26] MAZUMDAR A, ALHARAHSHEH H H.
+Digital Bangladesh-Vision 2021: What is the Digital Bangladesh Concept?[J/OL].
+South Asian Research Journal of Engineering and Technology, 2020, 2(1): 6–9[2026-06-18].
+DOI: 10.36346/sarjet.2020.v02i01.002.
+Available: https://sarpublication.com/media/articles/SARJET_21_6-9.pdf
 
-[28] Government of Bangladesh. Smart Bangladesh Vision 2041[R]. Dhaka: Government of Bangladesh, 2023.
+[27] GENERAL ECONOMICS DIVISION (GED), PLANNING COMMISSION, GOVERNMENT OF BANGLADESH.
+Perspective Plan of Bangladesh 2021–2041: Making Vision 2041 a Reality[EB/OL].
+Dhaka: Planning Commission, Government of Bangladesh, 2021[2026-06-18].
+Available: https://oldweb.lged.gov.bd/uploadeddocument/unitpublication/1/1049/vision%202021-2041.pdf 
 
-[29] ICT Division, Government of Bangladesh. Smart Bangladesh Implementation Strategy[R]. Dhaka: ICT Division, 2024.
+[28] INFORMATION AND COMMUNICATION TECHNOLOGY (ICT) DIVISION, GOVERNMENT OF THE PEOPLE’S REPUBLIC OF BANGLADESH.
+Smart Bangladesh: ICT Master Plan 2041[EB/OL].
+Dhaka: ICT Division, Government of the People’s Republic of Bangladesh, 2024[2026-06-18].
+Available: https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-moa/2024/12/a01255f61d29443eabbf948ef97c290e.pdf  
 
-[30] Planning Commission, Government of Bangladesh. Perspective Plan of Bangladesh 2021–2041[R]. Dhaka: Planning Commission, 2020.
+[29] GENERAL ECONOMICS DIVISION (GED), BANGLADESH PLANNING COMMISSION, MINISTRY OF PLANNING, GOVERNMENT OF THE PEOPLE’S REPUBLIC OF BANGLADESH.
+Making Vision 2041 a Reality: Perspective Plan of Bangladesh 2021–2041[EB/OL].
+Dhaka: General Economics Division (GED), Bangladesh Planning Commission, Ministry of Planning, Government of the People’s Republic of Bangladesh, 2020[2026-06-18].
+Available: https://oldweb.lged.gov.bd/uploadeddocument/unitpublication/1/1049/vision%202021-2041.pdf
 
-[31] Bangladesh Computer Council (BCC). National ICT Policy 2018[R]. Dhaka: BCC, 2018.
+[30] BANGLADESH BUREAU OF STATISTICS (BBS), STATISTICS AND INFORMATICS DIVISION, MINISTRY OF PLANNING, GOVERNMENT OF THE PEOPLE’S REPUBLIC OF BANGLADESH.
+Statistical Yearbook of Bangladesh 2024[EB/OL].
+Dhaka: Bangladesh Bureau of Statistics, 2024[2026-06-18].
+Available: https://bbs.portal.gov.bd/site/page/3f8a0ef0-7b87-48e0-a4d8-5e7c6f5e9f97
 
-[32] Bangladesh Bureau of Statistics (BBS). Statistical Yearbook of Bangladesh 2024[R]. Dhaka: BBS, 2024.
+[31] BANGLADESH BUREAU OF STATISTICS (BBS), STATISTICS AND INFORMATICS DIVISION, MINISTRY OF PLANNING, GOVERNMENT OF THE PEOPLE’S REPUBLIC OF BANGLADESH.
+Statistical Yearbook of Bangladesh 2024[EB/OL].
+Dhaka: Bangladesh Bureau of Statistics, 2025[2026-06-18].
+Available: https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-bbs/2024/12/517b375eefec4d09a9c00e9cb59c7e44.pdf 
 
-[33] Bangladesh Hi-Tech Park Authority (BHTPA). Public announcements and project information related to the Bangladesh AI Hub[EB/OL]. Dhaka: BHTPA, 2025–2026.
+[32] ASPIRE TO INNOVATE (a2i).
+e-Nothi Impact Study[R/OL].
+Dhaka: Aspire to Innovate (a2i), 2025[2026-06-18].
+Available: https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-a2i/2024/12/8e6eee520a6b44e4a3cbf8724d74e7c4.pdf
 
-[34] Aspire to Innovate (a2i). Public Service Innovation and Digital Governance Reports[R]. Dhaka: a2i Programme, 2024.
+[33] BANGLADESH OPEN DATA.
+Bangladesh Open Data Portal[EB/OL].
+Dhaka: Government of the People’s Republic of Bangladesh, 2024[2026-06-18].
+Available: https://data.gov.bd
 
-[35] Bangladesh Open Data Initiative. Open Data Publications[R]. Dhaka: Government of Bangladesh, 2024.
-
-[36] Information and Communication Technology Division. National Data Governance Guidelines[R]. Dhaka: ICT Division, 2024.
-
-[37] Government of Bangladesh. Cyber Security Act 2023[S]. Dhaka: Government of Bangladesh, 2023.
+[34] GOVERNMENT OF THE PEOPLE’S REPUBLIC OF BANGLADESH.
+The Cyber Security Act, 2023[S/OL].
+Dhaka: Government of the People’s Republic of Bangladesh, 2023[2026-06-18].
+Available: https://www.refworld.org/legal/legislation/natlegbod/2023/en/148277
 
 ### D. Foundation Models, LLMs, and Bangla NLP
 
