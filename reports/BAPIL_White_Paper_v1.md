@@ -4086,21 +4086,47 @@ Available: https://ised-isde.canada.ca/site/ai-strategy/en
 
 ### F. Cybersecurity, Future Readiness, and Workforce Development
 
-[64] International Telecommunication Union (ITU). Global Cybersecurity Index 2024[R]. Geneva: ITU, 2024.
+[64] INTERNATIONAL TELECOMMUNICATION UNION (ITU).
+Global Cybersecurity Index 2024[R/OL].
+Geneva: International Telecommunication Union, 2024[2026-06-18].
+Available: https://www.itu.int/en/ITU-D/Cybersecurity/Pages/global-cybersecurity-index.aspx
 
-[65] World Economic Forum. Global Cybersecurity Outlook 2025[R]. Geneva: World Economic Forum, 2025.
+[65] WORLD ECONOMIC FORUM (WEF).
+Global Cybersecurity Outlook 2025[R/OL].
+Geneva: World Economic Forum, 2025[2026-06-18].
+Available: https://www.weforum.org/publications/global-cybersecurity-outlook-2025
 
-[66] World Economic Forum. Future of Jobs Report 2025[R]. Geneva: World Economic Forum, 2025.
+[66] WORLD ECONOMIC FORUM (WEF).
+The Future of Jobs Report 2025[R/OL].
+Geneva: World Economic Forum, 2025[2026-06-18].
+ISBN: 978-2-940631-71-2.
+Available: https://www.weforum.org/publications/the-future-of-jobs-report-2025
 
-[67] World Economic Forum. Global Artificial Intelligence Governance Reports[R]. Geneva: World Economic Forum, 2024.
+[67] WORLD ECONOMIC FORUM (WEF).
+The Presidio Recommendations on Responsible Generative AI[R/OL].
+Geneva: World Economic Forum, 2024[2026-06-18].
+Available: https://www.weforum.org/publications/the-presidio-recommendations-on-responsible-generative-ai
 
-[68] World Economic Forum. Responsible AI Governance Frameworks[R]. Geneva: World Economic Forum, 2024.
+[68] WORLD ECONOMIC FORUM (WEF).
+The Presidio Recommendations on Responsible Generative AI[R/OL].
+Geneva: World Economic Forum, 2024[2026-06-18].
+Available: https://www.weforum.org/publications/the-presidio-recommendations-on-responsible-generative-ai
 
-[69] World Economic Forum. AI Governance Alliance Reports[R]. Geneva: World Economic Forum, 2024.
+[69] WORLD ECONOMIC FORUM (WEF).
+AI Governance Alliance: Briefing Paper Series[R/OL].
+Geneva: World Economic Forum, 2024[2026-06-18].
+Available: https://initiatives.weforum.org/ai-governance-alliance/home
 
-[70] UNESCO. AI and Education: Guidance for Policymakers[R]. Paris: UNESCO, 2021.
+[70] UNITED NATIONS EDUCATIONAL, SCIENTIFIC AND CULTURAL ORGANIZATION (UNESCO).
+AI and Education: Guidance for Policymakers[R/OL].
+Paris: UNESCO, 2021[2026-06-18].
+DOI: 10.54675/PCSP7350.
+Available: https://unesdoc.unesco.org/ark:/48223/pf0000376709
 
-[71] Stanford Institute for Human-Centered Artificial Intelligence (HAI). AI Index Report 2025[R]. Stanford, CA: Stanford University, 2025.
+[71] STANFORD INSTITUTE FOR HUMAN-CENTERED ARTIFICIAL INTELLIGENCE (HAI).
+AI Index Report 2025[R/OL].
+Stanford, CA: Stanford University, 2025[2026-06-18].
+Available: https://aiindex.stanford.edu/report
 
 ## Suggested Citation
 
