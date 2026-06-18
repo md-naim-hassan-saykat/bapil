@@ -3913,51 +3913,134 @@ Available: https://www.refworld.org/legal/legislation/natlegbod/2023/en/148277
 
 ### D. Foundation Models, LLMs, and Bangla NLP
 
-[38] VASWANI A, SHAZEER N, PARMAR N, et al. Attention Is All You Need[C]//Advances in Neural Information Processing Systems. Red Hook, NY: Curran Associates, 2017.
+[35] VASWANI A, SHAZEER N, PARMAR N, et al.
+Attention Is All You Need[C]//GUYON I, VON LUXBURG U, BENGIO S, et al., eds. Advances in Neural Information Processing Systems 30 (NeurIPS 2017).
+Red Hook, NY: Curran Associates, Inc., 2017: 5998–6008.
+DOI: 10.48550/arXiv.1706.03762.
+Available: https://papers.nips.cc/paper/7181-attention-is-all-you-need
 
-[39] LEWIS P, PEREZ E, POYIADZI E, et al. Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks[C]//NeurIPS. 2020.
+[36] LEWIS P, PEREZ E, POYIADZI E, et al.
+Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks[C/OL]//Advances in Neural Information Processing Systems 33 (NeurIPS 2020).
+Red Hook, NY: Curran Associates, Inc., 2020[2026-06-18].
+DOI: 10.48550/arXiv.2005.11401.
+Available: https://papers.nips.cc/paper/2020/hash/6b493230205f780e1bc26945df7481e5-Abstract.html
 
-[40] BROWN T B, MANN B, RYDER N, et al. Language Models are Few-Shot Learners[C]//NeurIPS. 2020.
+[37] BROWN T B, MANN B, RYDER N, et al.
+Language Models are Few-Shot Learners[C/OL]//Advances in Neural Information Processing Systems 33 (NeurIPS 2020).
+Red Hook, NY: Curran Associates, Inc., 2020[2026-06-18].
+DOI: 10.48550/arXiv.2005.14165.
+Available: https://papers.nips.cc/paper/2020/hash/1457c0d6bfcb4967418bfb8ac142f64a-Abstract.html
 
-[41] WEI J, WANG X, SCHUURMANS D, et al. Chain-of-Thought Prompting Elicits Reasoning in Large Language Models[C]//NeurIPS. 2022.
+[38] WEI J, WANG X, SCHUURMANS D, et al.
+Chain-of-Thought Prompting Elicits Reasoning in Large Language Models[C/OL]//Advances in Neural Information Processing Systems 35 (NeurIPS 2022).
+Red Hook, NY: Curran Associates, Inc., 2022[2026-06-18].
+DOI: 10.48550/arXiv.2201.11903.
+Available: https://papers.nips.cc/paper_files/paper/2022/hash/9d5609613524ecf4f15af0f7b31abca4-Abstract-Conference.html
 
-[42] BOMMASANI R, HUDSON D A, ADELI E, et al. On the Opportunities and Risks of Foundation Models[R]. Stanford University, 2021.
+[39] BOMMASANI R, HUDSON D A, ADELI E, et al.
+On the Opportunities and Risks of Foundation Models[R/OL].
+Stanford, CA: Stanford Center for Research on Foundation Models (CRFM), Stanford University, 2021[2026-06-18].
+DOI: 10.48550/arXiv.2108.07258.
+Available: https://arxiv.org/abs/2108.07258
 
-[43] BENDER E M, GEBRU T, MCMILLAN-MAJOR A, et al. On the Dangers of Stochastic Parrots[C]//FAccT. New York: ACM, 2021.
+[40] BENDER E M, GEBRU T, MCMILLAN-MAJOR A, et al.
+On the Dangers of Stochastic Parrots: Can Language Models Be Too Big?[C/OL]//Proceedings of the 2021 ACM Conference on Fairness, Accountability, and Transparency (FAccT ’21).
+New York: Association for Computing Machinery (ACM), 2021: 610–623[2026-06-18].
+DOI: 10.1145/3442188.3445922.
+Available: https://dl.acm.org/doi/10.1145/3442188.3445922
 
-[44] BHATTACHARJEE A, ISLAM M R, ANIK M A, et al. BanglaBERT: Combating Label Scarcity and Domain Shift in Bangla Language Understanding[J]. Findings of ACL, 2022.
+[41] BHATTACHARJEE A, ISLAM M R, ANIK M A, et al.
+BanglaBERT: Combating Label Scarcity and Domain Shift in Bangla Language Understanding[C/OL]//Findings of the Association for Computational Linguistics: NAACL 2022.
+Seattle, WA, USA: Association for Computational Linguistics, 2022: 1268–1281[2026-06-18].
+DOI: 10.18653/v1/2022.findings-naacl.98.
+Available: https://aclanthology.org/2022.findings-naacl.98
 
-[45] KAKWANI D, KALRA S, MURTHY A, et al. IndicBERT: A Multilingual Language Model for Indian Languages[J]. Findings of EMNLP, 2020.
+[42] KAKWANI D, KALRA S, MURTHY A, et al.
+IndicBERT: A Multilingual Language Model for Indian Languages[C/OL]//Findings of the Association for Computational Linguistics: EMNLP 2020.
+Online: Association for Computational Linguistics, 2020: 5153–5167[2026-06-18].
+DOI: 10.18653/v1/2020.findings-emnlp.445.
+Available: https://aclanthology.org/2020.findings-emnlp.445
 
 ### E. International Case Studies for Chapter 3
 
 #### Singapore
 
-[46] Infocomm Media Development Authority (IMDA). Model AI Governance Framework[R]. Singapore: Government of Singapore, 2020.
+[43] INFOCOMM MEDIA DEVELOPMENT AUTHORITY (IMDA), PERSONAL DATA PROTECTION COMMISSION (PDPC).
+Model AI Governance Framework (2nd Edition)[EB/OL].
+Singapore: Infocomm Media Development Authority and Personal Data Protection Commission, 2020[2026-06-18].
+Available: https://www.imda.gov.sg/-/media/imda/files/infocomm-media-landscape/sg-digital/tech-pillars/artificial-intelligence/second-edition-of-the-model-ai-governance-framework.pdf 
 
-[47] Smart Nation and Digital Government Office (SNDGO). Smart Nation Singapore Initiatives and Digital Government Programmes[R]. Singapore: Government of Singapore, 2024.
+[44] SMART NATION AND DIGITAL GOVERNMENT OFFICE (SNDGO), GOVERNMENT OF SINGAPORE.
+Smart Nation 2.0 Report[EB/OL].
+Singapore: Smart Nation and Digital Government Office, 2024[2026-06-18].
+Available: https://file.go.gov.sg/smartnation2-report.pdf  
 
-[48] Infocomm Media Development Authority (IMDA); AI Verify Foundation. Model AI Governance Framework for Generative AI[R]. Singapore: IMDA, 2024
+[45] INFOCOMM MEDIA DEVELOPMENT AUTHORITY (IMDA), AI VERIFY FOUNDATION (AIVF).
+Model AI Governance Framework for Generative AI: Fostering a Trusted Ecosystem[EB/OL].
+Singapore: Infocomm Media Development Authority and AI Verify Foundation, 2024[2026-06-18].
+Available: https://aiverifyfoundation.sg/wp-content/uploads/2024/05/Model-AI-Governance-Framework-for-Generative-AI-May-2024-1-1.pdf  
 
 #### South Korea
 
-[49] Government of the Republic of Korea. National Strategy for Artificial Intelligence[R]. Seoul: Government of Korea, latest edition.
+[46] GOVERNMENT OF THE REPUBLIC OF KOREA.
+National Strategy for Artificial Intelligence[EB/OL].
+Seoul: Government of the Republic of Korea, 2019[2026-06-18].
+Available: https://wp.oecd.ai/app/uploads/2021/12/Korea_National_Strategy_for_Artificial_Intelligence_2019.pdf
+
+[47] ORGANISATION FOR ECONOMIC CO-OPERATION AND DEVELOPMENT (OECD).
+National AI Policy Initiatives: Korea[EB/OL].
+Paris: OECD AI Policy Observatory, 2024[2026-06-18].
+Available: https://oecd.ai/en/dashboards/national/korea.
+
+[48] GOVERNMENT OF THE REPUBLIC OF KOREA.
+Korean New Deal: National Strategy for a Great Transformation[R/OL].
+Seoul: Government of the Republic of Korea, 2020[2026-06-18].
+Available: https://english.moef.go.kr/pc/selectTbPressCenterDtl.do?boardCd=N0001&seq=4948
 
 #### Estonia
 
-[51] Government of Estonia. e-Estonia: Digital Government Framework[R]. Tallinn: Government of Estonia, 2024.
+[49] E-ESTONIA BRIEFING CENTRE, GOVERNMENT OF ESTONIA.
+e-Governance and Digital Public Services in Estonia[EB/OL].
+Tallinn: e-Estonia Briefing Centre, 2024[2026-06-18].
+Available: https://e-estonia.com/solutions/e-governance
+
+[50] ORGANISATION FOR ECONOMIC CO-OPERATION AND DEVELOPMENT (OECD).
+Digital Government Review of Estonia: Towards a Data-Driven Public Sector[R/OL].
+Paris: OECD Publishing, 2019[2026-06-18].
+DOI: 10.1787/4cabcc9d-en.
+Available: https://www.oecd-ilibrary.org/governance/digital-government-review-of-estonia_4cabcc9d-en
+
+[51] E-ESTONIA BRIEFING CENTRE.
+X-Road: The Backbone of e-Estonia[EB/OL].
+Tallinn: Government of Estonia, 2024[2026-06-18].
+Available: https://e-estonia.com/solutions/interoperability-services/x-road
 
 #### United Kingdom
 
-[52] Government of the United Kingdom. AI Opportunities Action Plan[R]. London: UK Government, 2025.
+[52] DEPARTMENT FOR SCIENCE, INNOVATION AND TECHNOLOGY (DSIT), GOVERNMENT OF THE UNITED KINGDOM.
+AI Opportunities Action Plan[EB/OL].
+London: UK Government, 2025[2026-06-18].
+ISBN: 978-1-5286-5362-6.
+Available: https://www.gov.uk/government/publications/ai-opportunities-action-plan/ai-opportunities-action-plan
 
-[53] Government Digital Service (GDS). Artificial Intelligence Playbook for the UK Government[R]. London: UK Government, 2025.  
+[53] GOVERNMENT DIGITAL SERVICE (GDS), GOVERNMENT OF THE UNITED KINGDOM.
+Artificial Intelligence Playbook for the UK Government[EB/OL].
+London: Government Digital Service, 2025[2026-06-18].
+Available: https://www.gov.uk/government/publications/ai-playbook-for-the-uk-government/artificial-intelligence-playbook-for-the-uk-government-html
+
+[54] DEPARTMENT FOR SCIENCE, INNOVATION AND TECHNOLOGY (DSIT), GOVERNMENT OF THE UNITED KINGDOM.
+AI Regulation: A Pro-Innovation Approach[EB/OL].
+London: UK Government, 2023[2026-06-18].
+Available: https://www.gov.uk/government/publications/ai-regulation-a-pro-innovation-approach/white-paper
 
 #### Finland
 
-[54] Government of Finland. Finland’s National Artificial Intelligence Programme[R]. Helsinki: Ministry of Economic Affairs and Employment, 2024.
+[55] MINISTRY OF ECONOMIC AFFAIRS AND EMPLOYMENT OF FINLAND.
+Leading the Way into the Age of Artificial Intelligence: Final Report of Finland’s Artificial Intelligence Programme[R/OL].
+Helsinki: Ministry of Economic Affairs and Employment, 2019[2026-06-18].
+Available: https://julkaisut.valtioneuvosto.fi/handle/10024/161688
 
-[55] University of Helsinki; Reaktor. Elements of AI[R]. Helsinki: University of Helsinki, 2024.
+[56] University of Helsinki; Reaktor. Elements of AI[R]. Helsinki: University of Helsinki, 2024.
 
 #### United Arab Emirates
 
