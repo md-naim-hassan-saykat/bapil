@@ -3737,43 +3737,105 @@ Recommendation on the Ethics of Artificial Intelligence[EB/OL].
 Paris: UNESCO, 2021[2026-06-17].
 Available: https://unesdoc.unesco.org/ark:/48223/pf0000380455
 
-[4] European Union. Regulation (EU) 2024/1689 Laying Down Harmonised Rules on Artificial Intelligence (Artificial Intelligence Act)[S]. Brussels: European Union, 2024.
+[4] EUROPEAN PARLIAMENT AND COUNCIL OF THE EUROPEAN UNION.
+Regulation (EU) 2024/1689 of the European Parliament and of the Council
+of 13 June 2024 laying down harmonised rules on artificial intelligence
+(Artificial Intelligence Act)[EB/OL].
+Official Journal of the European Union, 2024[2026-06-17].
+Available: https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng
 
-[5] National Institute of Standards and Technology (NIST). AI Risk Management Framework (AI RMF 1.0)[R]. Gaithersburg, MD: NIST, 2023.
+[5] NATIONAL INSTITUTE OF STANDARDS AND TECHNOLOGY (NIST).
+Artificial Intelligence Risk Management Framework (AI RMF 1.0) (NIST AI 100-1)[EB/OL].
+Gaithersburg, MD: National Institute of Standards and Technology, 2023[2026-06-17].
+DOI: 10.6028/NIST.AI.100-1.
+Available: https://doi.org/10.6028/NIST.AI.100-1
 
-[6] Organisation for Economic Co-operation and Development (OECD). OECD Framework for the Classification of AI Systems[R]. Paris: OECD, 2024.  
+[6] ORGANISATION FOR ECONOMIC CO-OPERATION AND DEVELOPMENT (OECD).
+OECD Framework for the Classification of AI Systems[EB/OL].
+OECD Digital Economy Papers, No. 323.
+Paris: OECD Publishing, 2022[2026-06-17].
+DOI: 10.1787/cb6d9eca-en.
+Available: https://doi.org/10.1787/cb6d9eca-en
 
-[7] Organisation for Economic Co-operation and Development (OECD). State of Implementation of the OECD AI Principles[R]. Paris: OECD Publishing, 2024.
+[7] ORGANISATION FOR ECONOMIC CO-OPERATION AND DEVELOPMENT (OECD).
+State of Implementation of the OECD AI Principles: Insights from National AI Policies[EB/OL].
+Paris: OECD Publishing, 2024[2026-06-17].
+DOI: 10.1787/1cd40c44-en.
+Available: https://doi.org/10.1787/1cd40c44-en
 
-[8] Organisation for Economic Co-operation and Development (OECD). AI in the Public Sector: Opportunities and Challenges[R]. Paris: OECD Publishing, 2023.
+[8] ORGANISATION FOR ECONOMIC CO-OPERATION AND DEVELOPMENT (OECD).
+AI in the Public Sector: Opportunities and Challenges[EB/OL].
+Paris: OECD AI Policy Observatory, 2023[2026-06-17].
+Available: https://oecd.ai/en/wonk/ai-in-the-public-sector-opportunities-and-challenges
 
-[9] Organisation for Economic Co-operation and Development (OECD). Digital Government Reviews[R]. Paris: OECD Publishing, 2024.
+[9] ORGANISATION FOR ECONOMIC CO-OPERATION AND DEVELOPMENT (OECD).
+OECD Digital Government Reviews[EB/OL].
+Paris: OECD Publishing[2026-06-17].
+Available: https://www.oecd.org/gov/digital-government/oecd-digital-government-reviews/
 
-[10] Organisation for Economic Co-operation and Development (OECD). Government at a Glance 2023[R]. Paris: OECD Publishing, 2023.
+[10] ORGANISATION FOR ECONOMIC CO-OPERATION AND DEVELOPMENT (OECD).
+Government at a Glance 2023[EB/OL].
+Paris: OECD Publishing, 2023[2026-06-17].
+DOI: 10.1787/3d5c5d31-en.
+Available: https://doi.org/10.1787/3d5c5d31-en
 
-[11] Organisation for Economic Co-operation and Development (OECD). OECD AI Policy Observatory (OECD.AI)[EB/OL]. Paris: OECD, 2025.
+[11] ORGANISATION FOR ECONOMIC CO-OPERATION AND DEVELOPMENT (OECD).
+OECD AI Policy Observatory (OECD.AI)[EB/OL].
+Paris: OECD, 2025[2026-06-17].
+Available: https://oecd.ai
 
-[12] National Institute of Standards and Technology (NIST). Cybersecurity Framework 2.0[R]. Gaithersburg, MD: NIST, 2024.
+[12] NATIONAL INSTITUTE OF STANDARDS AND TECHNOLOGY (NIST).
+Cybersecurity Framework (CSF) 2.0[EB/OL].
+Gaithersburg, MD: National Institute of Standards and Technology, 2024[2026-06-17].
+DOI: 10.6028/NIST.CSWP.29.
+Available: https://doi.org/10.6028/NIST.CSWP.29
 
-[13] Council of Europe. Framework Convention on Artificial Intelligence and Human Rights, Democracy and the Rule of Law[S]. Strasbourg: Council of Europe, 2024.
+[13] COUNCIL OF EUROPE.
+Council of Europe Framework Convention on Artificial Intelligence and Human Rights,
+Democracy and the Rule of Law (CETS No. 225)[EB/OL].
+Strasbourg: Council of Europe Treaty Office, 2024[2026-06-17].
+Available: https://www.coe.int/en/web/conventions/full-list?module=treaty-detail&treatynum=225
 
 ### B. International Development, Digital Governance, and GovTech
 
-[14] World Bank. Digital Development and GovTech Reports[R]. Washington, DC: World Bank, 2024.
+[14] WORLD BANK.
+GovTech: Digital Transformation in the Public Sector[EB/OL].
+Washington, DC: World Bank, 2024[2026-06-17].
+Available: https://www.worldbank.org/en/programs/govtech
 
-[15] World Bank. Artificial Intelligence and Public Sector Innovation[R]. Washington, DC: World Bank, 2023.
+[15] WORLD BANK.
+World Development Report 2021: Data for Better Lives[EB/OL].
+Washington, DC: World Bank, 2021[2026-06-17].
+DOI: 10.1596/978-1-4648-1600-0.
+Available: https://doi.org/10.1596/978-1-4648-1600-0
 
-[16] World Bank. GovTech Global Partnership Reports[R]. Washington, DC: World Bank, 2024.
+[16] WORLD BANK.
+GovTech Global Partnership[EB/OL].
+Washington, DC: World Bank, 2024[2026-06-17].
+Available: https://www.worldbank.org/en/programs/govtech/partners
 
-[17] World Bank. GovTech Maturity Index 2022: Trends in Public Sector Digital Transformation[R]. Washington, DC: World Bank, 2023.
+[17] WORLD BANK.
+GovTech Maturity Index 2022 Update: Trends in Public Sector Digital Transformation[EB/OL].
+Washington, DC: World Bank, 2023[2026-06-17].
+DOI: https://doi.org/10.1596/38499
+Available: https://openknowledge.worldbank.org/entities/publication/10b535a7-e9d4-51bd-96ed-6b917d5eb09e
 
-[18] World Bank. GovTech Dataset and GovTech Maturity Index Methodology[R]. Washington, DC: World Bank, 2023.
+[18] WORLD BANK.
+World Development Report 2021: Data for Better Lives[M/OL].
+Washington, DC: World Bank, 2021[2026-06-17].
+DOI: https://doi.org/10.1596/978-1-4648-1600-0
+Available: https://openknowledge.worldbank.org/entities/publication/7a8f3bf4-c1ca-5512-bb16-7dcd5eb71007
 
-[19] World Bank. World Development Report 2021: Data for Better Lives[R]. Washington, DC: World Bank, 2021.
+[19] UNITED NATIONS.
+United Nations E-Government Survey 2024: Accelerating Digital Transformation for Sustainable Development – With the Addendum on Artificial Intelligence[M/OL].
+New York: United Nations, 2024[2026-06-17].
+DOI: https://doi.org/10.18356/237d52b2-en
+Available: https://www.un-ilibrary.org/content/books/9789211067286
 
-[20] United Nations. United Nations E-Government Survey 2024[R]. New York: United Nations, 2024.
-
-[21] United Nations. Our Common Agenda[R]. New York: United Nations, 2021.
+[20] UNITED NATIONS.
+Our Common Agenda: Report of the Secretary-General (A/75/982)[EB/OL].
+New York: United Nations, 2021[2026-06-17].
+Available: https://digitallibrary.un.org/record/3939258
 
 [22] United Nations. Sustainable Development Goals Report 2024[R]. New York: United Nations, 2024.
 
