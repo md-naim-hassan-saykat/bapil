@@ -163,7 +163,8 @@ The BAPIL White Paper is planned around the following chapters:
 14. Five-Year Roadmap (2026-2030)
 15. Long-Term Vision (2030-2041)
 16. Risks, Ethics, and Responsible AI
-17. Conclusion
+17. Strategic Recommendations
+18. Conclusion
 
 ---
 
