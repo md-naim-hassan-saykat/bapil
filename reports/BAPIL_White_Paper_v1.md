@@ -3778,7 +3778,7 @@ Comments, corrections, and constructive suggestions are welcome.
 
 ### C. Bangladesh Policy, Governance, and National Development
 
-[27] Government of Bangladesh. Digital Bangladesh Vision 2021[R]. Dhaka: Government of Bangladesh, 2009.
+[27] MAZUMDAR A, ALHARAHSHEH H H. Digital Bangladesh–Vision 2021: What is the Digital Bangladesh Concept?[J]. South Asian Research Journal of Engineering and Technology, 2020, 2(1): 6-9.
 
 [28] Government of Bangladesh. Smart Bangladesh Vision 2041[R]. Dhaka: Government of Bangladesh, 2023.
 
@@ -3831,8 +3831,6 @@ Comments, corrections, and constructive suggestions are welcome.
 #### South Korea
 
 [49] Government of the Republic of Korea. National Strategy for Artificial Intelligence[R]. Seoul: Government of Korea, latest edition.
-
-[50] Ministry of Science and ICT. AI Semiconductor and AI Ecosystem Development Plans[R]. Seoul: MSIT, 2025.
 
 #### Estonia
 
