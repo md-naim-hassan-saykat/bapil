@@ -3709,7 +3709,7 @@ Comments, corrections, and constructive suggestions are welcome.
 
 ## References
 
-A. International Governance, AI Policy, and Public Sector Frameworks
+### A. International AI Governance, Policy, and Public Sector Frameworks
 
 [1] Organisation for Economic Co-operation and Development (OECD). OECD Principles on Artificial Intelligence[M]. Paris: OECD, 2019.
 
@@ -3719,139 +3719,161 @@ A. International Governance, AI Policy, and Public Sector Frameworks
 
 [4] National Institute of Standards and Technology (NIST). AI Risk Management Framework (AI RMF 1.0)[R]. Gaithersburg, MD: NIST, 2023.
 
-[5] Infocomm Media Development Authority (IMDA). Model AI Governance Framework[R]. Singapore: Government of Singapore, 2020.
+[5] Organisation for Economic Co-operation and Development (OECD). OECD Framework for the Classification of AI Systems[R]. Paris: OECD, 2024.  
 
-[6] Smart Nation and Digital Government Office (SNDGO). Smart Nation Singapore Initiatives and Digital Government Programmes[R]. Singapore: Government of Singapore, 2024.
+[6] Organisation for Economic Co-operation and Development (OECD). State of Implementation of the OECD AI Principles[R]. Paris: OECD Publishing, 2024.
 
-[7] Government of Estonia. e-Estonia: Digital Government Framework[R]. Tallinn: Government of Estonia, 2024.
+[7] Organisation for Economic Co-operation and Development (OECD). AI in the Public Sector: Opportunities and Challenges[R]. Paris: OECD Publishing, 2023.
 
-[8] Government of the United Kingdom. AI Opportunities Action Plan[R]. London: UK Government, 2025.
+[8] Organisation for Economic Co-operation and Development (OECD). Digital Government Reviews[R]. Paris: OECD Publishing, 2024.
 
-[9] Government of the People’s Republic of Bangladesh. Smart Bangladesh Vision 2041[R]. Dhaka: Government of Bangladesh, 2023.
+[9] Organisation for Economic Co-operation and Development (OECD). Government at a Glance 2023[R]. Paris: OECD Publishing, 2023.
 
-[10] Organisation for Economic Co-operation and Development (OECD). OECD AI Policy Observatory (OECD.AI)[EB/OL]. Paris: OECD, 2024.
+[10] Organisation for Economic Co-operation and Development (OECD). Digital Government Index 2023[R]. Paris: OECD Publishing, 2024.
 
-[11] World Bank. Digital Development and GovTech Reports[R]. Washington, DC: World Bank, 2024.
+[11] National Institute of Standards and Technology (NIST). Cybersecurity Framework 2.0[R]. Gaithersburg, MD: NIST, 2024.
 
-[12] United Nations Development Programme (UNDP). Digital Governance and Public Sector Innovation Publications[R]. New York: UNDP, 2024.
+[12] Council of Europe. Framework Convention on Artificial Intelligence and Human Rights, Democracy and the Rule of Law[S]. Strasbourg: Council of Europe, 2024.
 
-[13] World Economic Forum (WEF). Global Artificial Intelligence Governance Reports[R]. Geneva: World Economic Forum, 2024.
+### B. International Development, Digital Governance, and GovTech
 
-[14] Stanford Institute for Human-Centered Artificial Intelligence (HAI). AI Index Report 2025[R]. Stanford, CA: Stanford University, 2025.
+[13] World Bank. Digital Development and GovTech Reports[R]. Washington, DC: World Bank, 2024.
 
-[15] World Economic Forum. Responsible AI Governance Frameworks[R]. Geneva: World Economic Forum, 2024.
+[14] World Bank. Artificial Intelligence and Public Sector Innovation[R]. Washington, DC: World Bank, 2023.
 
-[16] Council of Europe. Framework Convention on Artificial Intelligence and Human Rights, Democracy and the Rule of Law[S]. Strasbourg: Council of Europe, 2024.
+[15] World Bank. GovTech Global Partnership Reports[R]. Washington, DC: World Bank, 2024.
 
-[17] United Nations. United Nations E-Government Survey 2024[R]. New York: United Nations, 2024.
+[16] World Bank. GovTech Maturity Index 2022: Trends in Public Sector Digital Transformation[R]. Washington, DC: World Bank, 2023.
 
-[18] World Bank. GovTech Maturity Index 2022: Trends in Public Sector Digital Transformation[R]. Washington, DC: World Bank, 2023.
+[17] World Bank. GovTech Dataset and GovTech Maturity Index Methodology[R]. Washington, DC: World Bank, 2023.
 
-[19] Organisation for Economic Co-operation and Development (OECD). Digital Government Reviews[R]. Paris: OECD Publishing, 2024.
+[18] World Bank. World Development Report 2021: Data for Better Lives[R]. Washington, DC: World Bank, 2021.
 
-[24] United Nations Development Programme (UNDP). Artificial Intelligence for Sustainable Development[R]. New York: UNDP, 2023.
+[19] United Nations. United Nations E-Government Survey 2024[R]. New York: United Nations, 2024.
 
-[25] World Bank. Artificial Intelligence and Public Sector Innovation[R]. Washington, DC: World Bank, 2023.
+[20] United Nations. Our Common Agenda[R]. New York: United Nations, 2021.
 
-[26] Organisation for Economic Co-operation and Development (OECD). State of Implementation of the OECD AI Principles[R]. Paris: OECD Publishing, 2024.
+[21] United Nations. Sustainable Development Goals Report 2024[R]. New York: United Nations, 2024.
 
-B. Bangladesh Policy, Government, and National Development Sources
+[22] United Nations Development Programme (UNDP). Artificial Intelligence for Sustainable Development[R]. New York: UNDP, 2023.
 
-[20] ICT Division, Government of Bangladesh. Smart Bangladesh Implementation Strategy[R]. Dhaka: ICT Division, 2024.
+[23] United Nations Development Programme (UNDP). Digital Governance and Public Sector Innovation Publications[R]. New York: UNDP, 2024.
 
-[21] Bangladesh Computer Council (BCC). National ICT Policy 2018[R]. Dhaka: Bangladesh Computer Council, 2018.
+[24] Oxford Insights. Government AI Readiness Index 2024[R]. Oxford: Oxford Insights, 2024.
 
-[22] Bangladesh Bureau of Statistics (BBS). Statistical Yearbook of Bangladesh 2024[R]. Dhaka: BBS, 2024.
+[25] Global Partnership on AI (GPAI). Annual Report 2024[R]. Paris: GPAI, 2024.
 
-[23] Planning Commission, Government of Bangladesh. Perspective Plan of Bangladesh 2021–2041[R]. Dhaka: Planning Commission, 2020.
+### C. Bangladesh Policy, Governance, and National Development
 
-[36] Government of Bangladesh. Digital Bangladesh Vision 2021[R]. Dhaka: Government of Bangladesh, 2009.
+[26] Government of Bangladesh. Digital Bangladesh Vision 2021[R]. Dhaka: Government of Bangladesh, 2009.
 
-[37] Government of Bangladesh. National ICT Policy 2018[R]. Dhaka: Government of Bangladesh, 2018.
+[27] Government of Bangladesh. Smart Bangladesh Vision 2041[R]. Dhaka: Government of Bangladesh, 2023.
 
-[38] Bangladesh Hi-Tech Park Authority (BHTPA). AI Hub Project Documentation[R]. Dhaka: BHTPA, 2025.
+[28] ICT Division, Government of Bangladesh. Smart Bangladesh Implementation Strategy[R]. Dhaka: ICT Division, 2024.
 
-[39] Aspire to Innovate (a2i). Public Service Innovation and Digital Governance Reports[R]. Dhaka: a2i Programme, 2024.
+[29] Planning Commission, Government of Bangladesh. Perspective Plan of Bangladesh 2021–2041[R]. Dhaka: Planning Commission, 2020.
 
-[40] Bangladesh Open Data Initiative. Open Data Publications[R]. Dhaka: Government of Bangladesh, 2024.
+[30] Bangladesh Computer Council (BCC). National ICT Policy 2018[R]. Dhaka: BCC, 2018.
 
-[67] Government of Bangladesh. Cyber Security Act 2023[S]. Dhaka: Government of Bangladesh, 2023.
+[31] Bangladesh Bureau of Statistics (BBS). Statistical Yearbook of Bangladesh 2024[R]. Dhaka: BBS, 2024.
 
-[68] Information and Communication Technology Division. National Data Governance Guidelines[R]. Dhaka: ICT Division, Government of Bangladesh, 2024.
+[32] Bangladesh Hi-Tech Park Authority (BHTPA). Bangladesh AI Hub Project Proposal and Project Brief[R]. Dhaka: BHTPA, 2025–2026.
 
-C. AI Foundation Models, Large Language Models, and Bangla NLP Research
+[33] Aspire to Innovate (a2i). Public Service Innovation and Digital Governance Reports[R]. Dhaka: a2i Programme, 2024.
 
-[27] HASAN M, et al. BanglaNLP Benchmark Datasets[C]. Dhaka: BanglaNLP Research Community, 2023.
+[34] Bangladesh Open Data Initiative. Open Data Publications[R]. Dhaka: Government of Bangladesh, 2024.
 
-[28] CSEBUETNLP. Bangla Language Resources and Benchmark Studies[R]. Dhaka: BUET, 2023.
+[35] Information and Communication Technology Division. National Data Governance Guidelines[R]. Dhaka: ICT Division, 2024.
 
-[29] BigScience Workshop. BLOOM: A 176B-Parameter Open-Access Multilingual Language Model[J]. 2022.
+[36] Government of Bangladesh. Cyber Security Act 2023[S]. Dhaka: Government of Bangladesh, 2023.
 
-[30] LEWIS P, PEREZ E, POYIADZI E, et al. Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks[C]//Advances in Neural Information Processing Systems. Red Hook, NY: Curran Associates, 2020.
+### D. Foundation Models, LLMs, and Bangla NLP
 
-[46] BROWN T B, MANN B, RYDER N, et al. Language Models are Few-Shot Learners[C]//Advances in Neural Information Processing Systems. Red Hook, NY: Curran Associates, 2020.
+[37] VASWANI A, SHAZEER N, PARMAR N, et al. Attention Is All You Need[C]//Advances in Neural Information Processing Systems. Red Hook, NY: Curran Associates, 2017.
 
-[47] TOUVRON H, LAVRIL T, IZACARD G, et al. LLaMA: Open and Efficient Foundation Language Models[EB/OL]. 2023.
+[38] LEWIS P, PEREZ E, POYIADZI E, et al. Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks[C]//NeurIPS. 2020.
 
-[48] VASWANI A, SHAZEER N, PARMAR N, et al. Attention Is All You Need[C]//Advances in Neural Information Processing Systems. Red Hook, NY: Curran Associates, 2017.
+[39] BROWN T B, MANN B, RYDER N, et al. Language Models are Few-Shot Learners[C]//NeurIPS. 2020.
 
-[49] WEI J, WANG X, SCHUURMANS D, et al. Chain-of-Thought Prompting Elicits Reasoning in Large Language Models[C]//Advances in Neural Information Processing Systems. 2022.
+[40] WEI J, WANG X, SCHUURMANS D, et al. Chain-of-Thought Prompting Elicits Reasoning in Large Language Models[C]//NeurIPS. 2022.
 
-[50] OPENAI. GPT-4 Technical Report[EB/OL]. 2023.
+[41] BOMMASANI R, HUDSON D A, ADELI E, et al. On the Opportunities and Risks of Foundation Models[R]. Stanford University, 2021.
 
-[58] BENDER E M, GEBRU T, MCMILLAN-MAJOR A, et al. On the Dangers of Stochastic Parrots: Can Language Models Be Too Big?[C]//FAccT ’21. New York: ACM, 2021.
+[42] BENDER E M, GEBRU T, MCMILLAN-MAJOR A, et al. On the Dangers of Stochastic Parrots[C]//FAccT. New York: ACM, 2021.
 
-[59] BOMMASANI R, HUDSON D A, ADELI E, et al. On the Opportunities and Risks of Foundation Models[EB/OL]. Stanford University, 2021.
+[43] BHATTACHARJEE A, ISLAM M R, ANIK M A, et al. BanglaBERT: Combating Label Scarcity and Domain Shift in Bangla Language Understanding[J]. Findings of ACL, 2022.
 
-[60] BHATTACHARJEE A, ISLAM M R, ANIK M A, et al. BanglaBERT: Combating Label Scarcity and Domain Shift in Bangla Language Understanding[J]. Findings of ACL, 2022.
+[44] KAKWANI D, KALRA S, MURTHY A, et al. IndicBERT: A Multilingual Language Model for Indian Languages[J]. Findings of EMNLP, 2020.
 
-[61] KAKWANI D, KALRA S, MURTHY A, et al. IndicBERT: A Multilingual Language Model for Indian Languages[J]. Findings of EMNLP, 2020.
+[45] HASAN M, et al. BanglaNLP Benchmark Datasets[C]. Dhaka: BanglaNLP Research Community, 2023.
 
-[65] LIN X V, IYER S, PASUNURU R, et al. XGLM: A Multilingual Language Model for 100 Languages[EB/OL]. 2022.
+[46] CSEBUETNLP. Bangla Language Resources and Benchmark Studies[R]. Dhaka: BUET, 2023.
 
-[66] XUE L, CONSTANT N, ROBERTS A, et al. mT5: A Massively Multilingual Pre-trained Text-to-Text Transformer[J]. Proceedings of NAACL, 2021.
+### E. International Case Studies for Chapter 3
 
-D. Digital Governance, Cybersecurity, Development, and Future Readiness
+#### Singapore
 
-[31] International Telecommunication Union (ITU). Global Cybersecurity Index 2024[R]. Geneva: ITU, 2024.
+[47] Infocomm Media Development Authority (IMDA). Model AI Governance Framework[R]. Singapore: Government of Singapore, 2020.
 
-[32] National Institute of Standards and Technology (NIST). Cybersecurity Framework 2.0[R]. Gaithersburg, MD: NIST, 2024.
+[48] Smart Nation and Digital Government Office (SNDGO). Smart Nation Singapore Initiatives and Digital Government Programmes[R]. Singapore: Government of Singapore, 2024.
 
-[33] World Economic Forum. Global Cybersecurity Outlook 2025[R]. Geneva: World Economic Forum, 2025.
+[49] Infocomm Media Development Authority (IMDA). AI Verify Testing Framework and Toolkit[R]. Singapore: IMDA, 2024.
 
-[34] UNESCO. AI and Education: Guidance for Policymakers[R]. Paris: UNESCO, 2021.
+#### South Korea
 
-[35] World Economic Forum. Future of Jobs Report 2025[R]. Geneva: World Economic Forum, 2025.
+[50] Government of the Republic of Korea. National Strategy for Artificial Intelligence[R]. Seoul: Government of Korea, latest edition.
 
-[41] Organisation for Economic Co-operation and Development (OECD). AI in the Public Sector: Opportunities and Challenges[R]. Paris: OECD Publishing, 2023.
+[51] Ministry of Science and ICT. AI Semiconductor and AI Ecosystem Development Plans[R]. Seoul: MSIT, 2025.
 
-[42] World Bank. GovTech Global Partnership Reports[R]. Washington, DC: World Bank, 2024.
+#### Estonia
 
-[43] United Nations. Our Common Agenda[R]. New York: United Nations, 2021.
+[52] Government of Estonia. e-Estonia: Digital Government Framework[R]. Tallinn: Government of Estonia, 2024.
 
-[44] Global Partnership on AI (GPAI). Annual Report 2024[R]. Paris: GPAI, 2024.
+#### United Kingdom
 
-[45] World Economic Forum. AI Governance Alliance Reports[R]. Geneva: World Economic Forum, 2024.
+[53] Government of the United Kingdom. AI Opportunities Action Plan[R]. London: UK Government, 2025.
 
-[51] World Bank. World Development Report 2021: Data for Better Lives[R]. Washington, DC: World Bank, 2021.
+[54] Government Digital Service (GDS). Artificial Intelligence Playbook for the UK Government[R]. London: UK Government, 2025.  
 
-[52] Organisation for Economic Co-operation and Development (OECD). Government at a Glance 2023[R]. Paris: OECD Publishing, 2023.
+#### Finland
 
-[53] United Nations. Sustainable Development Goals Report 2024[R]. New York: United Nations, 2024.
+[55] Government of Finland. Finland’s National Artificial Intelligence Programme[R]. Helsinki: Ministry of Economic Affairs and Employment, 2024.
 
-[54] Organisation for Economic Co-operation and Development (OECD). Digital Government Index 2023[R]. Paris: OECD Publishing, 2024.
+[56] University of Helsinki; Reaktor. Elements of AI[R]. Helsinki: University of Helsinki, 2024.
 
-[55] World Bank. World Development Report 2021: Data for Better Lives[R]. Washington, DC: World Bank, 2021.
+#### United Arab Emirates
 
-[56] KAPLAN A M, HAENLEIN M. Siri, Siri, in My Hand: Who’s the Fairest in the Land? On the Interpretations, Illustrations, and Implications of Artificial Intelligence[J]. Business Horizons, 2019, 62(1): 15–25.
+[57] United Arab Emirates Government. UAE Strategy for Artificial Intelligence 2031[R]. Abu Dhabi: UAE Government, 2024.
 
-[57] RUSSELL S, NORVIG P. Artificial Intelligence: A Modern Approach[M]. 4th ed. Hoboken, NJ: Pearson, 2021.
+[58] United Arab Emirates Government. UAE National Strategy for Artificial Intelligence 2031[R]. Abu Dhabi: UAE Artificial Intelligence Office, 2019.
 
-[62] Oxford Insights. Government AI Readiness Index 2024[R]. Oxford: Oxford Insights, 2024.
+[59] United Nations Educational, Scientific and Cultural Organization (UNESCO). National AI Strategy 2031 and the National Program for Artificial Intelligence in the UAE[R]. Paris: UNESCO, 2024.
 
-[63] Infocomm Media Development Authority (IMDA). AI Verify Testing Framework and Toolkit[R]. Singapore: IMDA, 2024.
+#### Canada
 
-[64] World Bank. GovTech Dataset and GovTech Maturity Index Methodology[R]. Washington, DC: World Bank, 2023.
+[60] Treasury Board of Canada Secretariat. Directive on Automated Decision-Making[R]. Ottawa: Government of Canada, 2024.
+
+[61] Government of Canada. Algorithmic Impact Assessment Tool[R]. Ottawa: Treasury Board of Canada Secretariat, 2024.
+
+[62] Canadian Institute for Advanced Research (CIFAR). Pan-Canadian Artificial Intelligence Strategy[R]. Toronto: CIFAR, 2024.
+
+### F. Cybersecurity, Future Readiness, and Workforce Development
+
+[63] International Telecommunication Union (ITU). Global Cybersecurity Index 2024[R]. Geneva: ITU, 2024.
+
+[64] World Economic Forum. Global Cybersecurity Outlook 2025[R]. Geneva: World Economic Forum, 2025.
+
+[65] World Economic Forum. Future of Jobs Report 2025[R]. Geneva: World Economic Forum, 2025.
+
+[66] World Economic Forum. Global Artificial Intelligence Governance Reports[R]. Geneva: World Economic Forum, 2024.
+
+[67] World Economic Forum. Responsible AI Governance Frameworks[R]. Geneva: World Economic Forum, 2024.
+
+[68] World Economic Forum. AI Governance Alliance Reports[R]. Geneva: World Economic Forum, 2024.
+
+[69] UNESCO. AI and Education: Guidance for Policymakers[R]. Paris: UNESCO, 2021.
+
+[70] Stanford Institute for Human-Centered Artificial Intelligence (HAI). AI Index Report 2025[R]. Stanford, CA: Stanford University, 2025.
 
 ## Suggested Citation
 
