@@ -3796,35 +3796,34 @@ Democracy and the Rule of Law (CETS No. 225)[EB/OL].
 Strasbourg: Council of Europe Treaty Office, 2024[2026-06-17].
 Available: https://www.coe.int/en/web/conventions/full-list?module=treaty-detail&treatynum=225
 
+[14] EUROPEAN COMMISSION.
+GenAI4EU: Funding Opportunities to Boost Generative Artificial Intelligence in Europe[EB/OL].
+Brussels: European Commission, 2024[2026-06-18].
+Available: https://digital-strategy.ec.europa.eu/en/policies/genai4eu
+
 ### B. International Development, Digital Governance, and GovTech
 
-[14] WORLD BANK.
+[15] WORLD BANK.
 GovTech: Digital Transformation in the Public Sector[EB/OL].
 Washington, DC: World Bank, 2024[2026-06-17].
 Available: https://www.worldbank.org/en/programs/govtech
 
-[15] WORLD BANK.
+[16] WORLD BANK.
 World Development Report 2021: Data for Better Lives[EB/OL].
 Washington, DC: World Bank, 2021[2026-06-17].
 DOI: 10.1596/978-1-4648-1600-0.
 Available: https://doi.org/10.1596/978-1-4648-1600-0
 
-[16] WORLD BANK.
+[17] WORLD BANK.
 GovTech Global Partnership[EB/OL].
 Washington, DC: World Bank, 2024[2026-06-17].
 Available: https://www.worldbank.org/en/programs/govtech/partners
 
-[17] WORLD BANK.
+[18] WORLD BANK.
 GovTech Maturity Index 2022 Update: Trends in Public Sector Digital Transformation[EB/OL].
 Washington, DC: World Bank, 2023[2026-06-17].
 DOI: https://doi.org/10.1596/38499
 Available: https://openknowledge.worldbank.org/entities/publication/10b535a7-e9d4-51bd-96ed-6b917d5eb09e
-
-[18] WORLD BANK.
-World Development Report 2021: Data for Better Lives[M/OL].
-Washington, DC: World Bank, 2021[2026-06-17].
-DOI: https://doi.org/10.1596/978-1-4648-1600-0
-Available: https://openknowledge.worldbank.org/entities/publication/7a8f3bf4-c1ca-5512-bb16-7dcd5eb71007
 
 [19] UNITED NATIONS.
 United Nations E-Government Survey 2024: Accelerating Digital Transformation for Sustainable Development – With the Addendum on Artificial Intelligence[M/OL].
@@ -3881,35 +3880,35 @@ Smart Bangladesh: ICT Master Plan 2041[EB/OL].
 Dhaka: ICT Division, Government of the People’s Republic of Bangladesh, 2024[2026-06-18].
 Available: https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-moa/2024/12/a01255f61d29443eabbf948ef97c290e.pdf  
 
-[29] GENERAL ECONOMICS DIVISION (GED), BANGLADESH PLANNING COMMISSION, MINISTRY OF PLANNING, GOVERNMENT OF THE PEOPLE’S REPUBLIC OF BANGLADESH.
-Making Vision 2041 a Reality: Perspective Plan of Bangladesh 2021–2041[EB/OL].
-Dhaka: General Economics Division (GED), Bangladesh Planning Commission, Ministry of Planning, Government of the People’s Republic of Bangladesh, 2020[2026-06-18].
-Available: https://oldweb.lged.gov.bd/uploadeddocument/unitpublication/1/1049/vision%202021-2041.pdf
-
-[30] BANGLADESH BUREAU OF STATISTICS (BBS), STATISTICS AND INFORMATICS DIVISION, MINISTRY OF PLANNING, GOVERNMENT OF THE PEOPLE’S REPUBLIC OF BANGLADESH.
-Statistical Yearbook of Bangladesh 2024[EB/OL].
-Dhaka: Bangladesh Bureau of Statistics, 2024[2026-06-18].
-Available: https://bbs.portal.gov.bd/site/page/3f8a0ef0-7b87-48e0-a4d8-5e7c6f5e9f97
-
-[31] BANGLADESH BUREAU OF STATISTICS (BBS), STATISTICS AND INFORMATICS DIVISION, MINISTRY OF PLANNING, GOVERNMENT OF THE PEOPLE’S REPUBLIC OF BANGLADESH.
+[29] BANGLADESH BUREAU OF STATISTICS (BBS), STATISTICS AND INFORMATICS DIVISION, MINISTRY OF PLANNING, GOVERNMENT OF THE PEOPLE’S REPUBLIC OF BANGLADESH.
 Statistical Yearbook of Bangladesh 2024[EB/OL].
 Dhaka: Bangladesh Bureau of Statistics, 2025[2026-06-18].
 Available: https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-bbs/2024/12/517b375eefec4d09a9c00e9cb59c7e44.pdf 
 
-[32] ASPIRE TO INNOVATE (a2i).
+[30] ASPIRE TO INNOVATE (a2i).
 e-Nothi Impact Study[R/OL].
 Dhaka: Aspire to Innovate (a2i), 2025[2026-06-18].
 Available: https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-a2i/2024/12/8e6eee520a6b44e4a3cbf8724d74e7c4.pdf
 
-[33] BANGLADESH OPEN DATA.
+[31] BANGLADESH OPEN DATA.
 Bangladesh Open Data Portal[EB/OL].
 Dhaka: Government of the People’s Republic of Bangladesh, 2024[2026-06-18].
 Available: https://data.gov.bd
 
-[34] GOVERNMENT OF THE PEOPLE’S REPUBLIC OF BANGLADESH.
+[32] GOVERNMENT OF THE PEOPLE’S REPUBLIC OF BANGLADESH.
 The Cyber Security Act, 2023[S/OL].
 Dhaka: Government of the People’s Republic of Bangladesh, 2023[2026-06-18].
 Available: https://www.refworld.org/legal/legislation/natlegbod/2023/en/148277
+
+[33] BANGLADESH HI-TECH PARK AUTHORITY (BHTPA), INFORMATION AND COMMUNICATION TECHNOLOGY (ICT) DIVISION, GOVERNMENT OF THE PEOPLE’S REPUBLIC OF BANGLADESH.
+Fostering Innovative Technology Experts with a Focus on Artificial Intelligence (AI) in Bangladesh[R/OL].
+Dhaka: Bangladesh Hi-Tech Park Authority (BHTPA), 2026[2026-06-18].
+Available: https://www.tbsnews.net/tech/govt-establish-ai-hub-tk19266cr-project-backed-koica-1462206
+
+[34] KOREA INTERNATIONAL COOPERATION AGENCY (KOICA), INFORMATION AND COMMUNICATION TECHNOLOGY (ICT) DIVISION, GOVERNMENT OF THE PEOPLE’S REPUBLIC OF BANGLADESH.
+KOICA and ICT Division Launch $28.5 Million AI Innovation Project in Bangladesh[EB/OL].
+Dhaka: ICT Division, 2025[2026-06-18].
+Available: https://www.tbsnews.net/foreign-policy/koica-and-ict-division-launch-285million-ai-innovation-project-1039121
 
 ### D. Foundation Models, LLMs, and Bangla NLP
 
@@ -3943,187 +3942,208 @@ Stanford, CA: Stanford Center for Research on Foundation Models (CRFM), Stanford
 DOI: 10.48550/arXiv.2108.07258.
 Available: https://arxiv.org/abs/2108.07258
 
-[40] BENDER E M, GEBRU T, MCMILLAN-MAJOR A, et al.
+[40] OPENAI, ACHIAM J, ADLER S, et al.
+GPT-4 Technical Report[R/OL].
+San Francisco, CA: OpenAI, 2023[2026-06-18].
+DOI: 10.48550/arXiv.2303.08774.
+Available: https://arxiv.org/abs/2303.08774
+
+[41] TOUVRON H, LAVRIL T, IZACARD G, et al.
+LLaMA: Open and Efficient Foundation Language Models[R/OL].
+Menlo Park, CA: Meta AI, 2023[2026-06-18].
+DOI: 10.48550/arXiv.2302.13971.
+Available: https://arxiv.org/abs/2302.13971
+
+[42] BIGSCIENCE WORKSHOP.
+BLOOM: A 176B-Parameter Open-Access Multilingual Language Model[R/OL].
+Paris: BigScience, 2022[2026-06-18].
+DOI: 10.48550/arXiv.2211.05100.
+Available: https://arxiv.org/abs/2211.05100
+
+[43] BENDER E M, GEBRU T, MCMILLAN-MAJOR A, et al.
 On the Dangers of Stochastic Parrots: Can Language Models Be Too Big?[C/OL]//Proceedings of the 2021 ACM Conference on Fairness, Accountability, and Transparency (FAccT ’21).
 New York: Association for Computing Machinery (ACM), 2021: 610–623[2026-06-18].
 DOI: 10.1145/3442188.3445922.
 Available: https://dl.acm.org/doi/10.1145/3442188.3445922
 
-[41] BHATTACHARJEE A, ISLAM M R, ANIK M A, et al.
+[44] BHATTACHARJEE A, ISLAM M R, ANIK M A, et al.
 BanglaBERT: Combating Label Scarcity and Domain Shift in Bangla Language Understanding[C/OL]//Findings of the Association for Computational Linguistics: NAACL 2022.
 Seattle, WA, USA: Association for Computational Linguistics, 2022: 1268–1281[2026-06-18].
 DOI: 10.18653/v1/2022.findings-naacl.98.
 Available: https://aclanthology.org/2022.findings-naacl.98
 
-[42] KAKWANI D, KALRA S, MURTHY A, et al.
+[45] KAKWANI D, KALRA S, MURTHY A, et al.
 IndicBERT: A Multilingual Language Model for Indian Languages[C/OL]//Findings of the Association for Computational Linguistics: EMNLP 2020.
 Online: Association for Computational Linguistics, 2020: 5153–5167[2026-06-18].
 DOI: 10.18653/v1/2020.findings-emnlp.445.
 Available: https://aclanthology.org/2020.findings-emnlp.445
 
+[46] BHATTACHARJEE A, HASAN T, AHMAD W U, et al.
+BanglaNLG and BanglaT5: Benchmarks and Resources for Evaluating Low-Resource Natural Language Generation in Bangla[C/OL]//Findings of the Association for Computational Linguistics: EACL 2023.
+Dubrovnik, Croatia: Association for Computational Linguistics, 2023: 726–735[2026-06-18].
+DOI: 10.18653/v1/2023.findings-eacl.54.
+Available: https://aclanthology.org/2023.findings-eacl.54
+
+[47] ZEHADY A K, MAMUN S A, ISLAM N, et al.
+BongLLaMA: LLaMA for Bangla Language[R/OL].
+arXiv:2410.21200.
+Dhaka: BanglaLLM Research Initiative, 2024[2026-06-18].
+DOI: 10.48550/arXiv.2410.21200.
+Available: https://arxiv.org/abs/2410.21200
+
 ### E. International Case Studies for Chapter 3
 
 #### Singapore
 
-[43] INFOCOMM MEDIA DEVELOPMENT AUTHORITY (IMDA), PERSONAL DATA PROTECTION COMMISSION (PDPC).
+[48] INFOCOMM MEDIA DEVELOPMENT AUTHORITY (IMDA), PERSONAL DATA PROTECTION COMMISSION (PDPC).
 Model AI Governance Framework (2nd Edition)[EB/OL].
 Singapore: Infocomm Media Development Authority and Personal Data Protection Commission, 2020[2026-06-18].
 Available: https://www.imda.gov.sg/-/media/imda/files/infocomm-media-landscape/sg-digital/tech-pillars/artificial-intelligence/second-edition-of-the-model-ai-governance-framework.pdf 
 
-[44] SMART NATION AND DIGITAL GOVERNMENT OFFICE (SNDGO), GOVERNMENT OF SINGAPORE.
+[49] SMART NATION AND DIGITAL GOVERNMENT OFFICE (SNDGO), GOVERNMENT OF SINGAPORE.
 Smart Nation 2.0 Report[EB/OL].
 Singapore: Smart Nation and Digital Government Office, 2024[2026-06-18].
 Available: https://file.go.gov.sg/smartnation2-report.pdf  
 
-[45] INFOCOMM MEDIA DEVELOPMENT AUTHORITY (IMDA), AI VERIFY FOUNDATION (AIVF).
+[50] INFOCOMM MEDIA DEVELOPMENT AUTHORITY (IMDA), AI VERIFY FOUNDATION (AIVF).
 Model AI Governance Framework for Generative AI: Fostering a Trusted Ecosystem[EB/OL].
 Singapore: Infocomm Media Development Authority and AI Verify Foundation, 2024[2026-06-18].
 Available: https://aiverifyfoundation.sg/wp-content/uploads/2024/05/Model-AI-Governance-Framework-for-Generative-AI-May-2024-1-1.pdf  
 
 #### South Korea
 
-[46] GOVERNMENT OF THE REPUBLIC OF KOREA.
+[51] GOVERNMENT OF THE REPUBLIC OF KOREA.
 National Strategy for Artificial Intelligence[EB/OL].
 Seoul: Government of the Republic of Korea, 2019[2026-06-18].
 Available: https://wp.oecd.ai/app/uploads/2021/12/Korea_National_Strategy_for_Artificial_Intelligence_2019.pdf
 
-[47] ORGANISATION FOR ECONOMIC CO-OPERATION AND DEVELOPMENT (OECD).
+[52] ORGANISATION FOR ECONOMIC CO-OPERATION AND DEVELOPMENT (OECD).
 National AI Policy Initiatives: Korea[EB/OL].
 Paris: OECD AI Policy Observatory, 2024[2026-06-18].
 Available: https://oecd.ai/en/dashboards/national/korea
 
-[48] GOVERNMENT OF THE REPUBLIC OF KOREA.
+[53] GOVERNMENT OF THE REPUBLIC OF KOREA.
 Korean New Deal: National Strategy for a Great Transformation[R/OL].
 Seoul: Government of the Republic of Korea, 2020[2026-06-18].
 Available: https://english.moef.go.kr/pc/selectTbPressCenterDtl.do?boardCd=N0001&seq=4948
 
 #### Estonia
 
-[49] E-ESTONIA BRIEFING CENTRE, GOVERNMENT OF ESTONIA.
+[54] E-ESTONIA BRIEFING CENTRE, GOVERNMENT OF ESTONIA.
 e-Governance and Digital Public Services in Estonia[EB/OL].
 Tallinn: e-Estonia Briefing Centre, 2024[2026-06-18].
 Available: https://e-estonia.com/solutions/e-governance
 
-[50] ORGANISATION FOR ECONOMIC CO-OPERATION AND DEVELOPMENT (OECD).
+[55] ORGANISATION FOR ECONOMIC CO-OPERATION AND DEVELOPMENT (OECD).
 Digital Government Review of Estonia: Towards a Data-Driven Public Sector[R/OL].
 Paris: OECD Publishing, 2019[2026-06-18].
 DOI: 10.1787/4cabcc9d-en.
 Available: https://www.oecd-ilibrary.org/governance/digital-government-review-of-estonia_4cabcc9d-en
 
-[51] E-ESTONIA BRIEFING CENTRE.
+[56] E-ESTONIA BRIEFING CENTRE.
 X-Road: The Backbone of e-Estonia[EB/OL].
 Tallinn: Government of Estonia, 2024[2026-06-18].
 Available: https://e-estonia.com/solutions/interoperability-services/x-road
 
 #### United Kingdom
 
-[52] DEPARTMENT FOR SCIENCE, INNOVATION AND TECHNOLOGY (DSIT), GOVERNMENT OF THE UNITED KINGDOM.
+[57] DEPARTMENT FOR SCIENCE, INNOVATION AND TECHNOLOGY (DSIT), GOVERNMENT OF THE UNITED KINGDOM.
 AI Opportunities Action Plan[EB/OL].
 London: UK Government, 2025[2026-06-18].
 ISBN: 978-1-5286-5362-6.
 Available: https://www.gov.uk/government/publications/ai-opportunities-action-plan/ai-opportunities-action-plan
 
-[53] GOVERNMENT DIGITAL SERVICE (GDS), GOVERNMENT OF THE UNITED KINGDOM.
+[58] GOVERNMENT DIGITAL SERVICE (GDS), GOVERNMENT OF THE UNITED KINGDOM.
 Artificial Intelligence Playbook for the UK Government[EB/OL].
 London: Government Digital Service, 2025[2026-06-18].
 Available: https://www.gov.uk/government/publications/ai-playbook-for-the-uk-government/artificial-intelligence-playbook-for-the-uk-government-html
 
-[54] DEPARTMENT FOR SCIENCE, INNOVATION AND TECHNOLOGY (DSIT), GOVERNMENT OF THE UNITED KINGDOM.
+[59] DEPARTMENT FOR SCIENCE, INNOVATION AND TECHNOLOGY (DSIT), GOVERNMENT OF THE UNITED KINGDOM.
 AI Regulation: A Pro-Innovation Approach[EB/OL].
 London: UK Government, 2023[2026-06-18].
 Available: https://www.gov.uk/government/publications/ai-regulation-a-pro-innovation-approach/white-paper
 
 #### Finland
 
-[55] MINISTRY OF ECONOMIC AFFAIRS AND EMPLOYMENT OF FINLAND.
+[60] MINISTRY OF ECONOMIC AFFAIRS AND EMPLOYMENT OF FINLAND.
 Leading the Way into the Age of Artificial Intelligence: Final Report of Finland’s Artificial Intelligence Programme[R/OL].
 Helsinki: Ministry of Economic Affairs and Employment, 2019[2026-06-18].
 Available: https://julkaisut.valtioneuvosto.fi/handle/10024/161688
 
-[56] UNIVERSITY OF HELSINKI, REAKTOR.
+[61] UNIVERSITY OF HELSINKI, REAKTOR.
 Elements of AI: A Free Online Course on Artificial Intelligence[EB/OL].
 Helsinki: University of Helsinki and Reaktor, 2024[2026-06-18].
 Available: https://www.elementsofai.com
 
-[57] MINISTRY OF ECONOMIC AFFAIRS AND EMPLOYMENT OF FINLAND.
-Leading the Way into the Age of Artificial Intelligence: Final Report of Finland’s Artificial Intelligence Programme[R/OL].
-Helsinki: Ministry of Economic Affairs and Employment, 2019[2026-06-18].
-Available: https://julkaisut.valtioneuvosto.fi/handle/10024/161688
-
 #### United Arab Emirates
 
-[58] GOVERNMENT OF THE UNITED ARAB EMIRATES.
+[62] GOVERNMENT OF THE UNITED ARAB EMIRATES.
 UAE National Strategy for Artificial Intelligence 2031[EB/OL].
 Abu Dhabi: Government of the United Arab Emirates, 2017[2026-06-18].
 Available: https://staticcdn.mbzuai.ac.ae/mbzuaiwpprd01/2022/07/UAE-National-Strategy-for-Artificial-Intelligence-2031.pdf
 
-[59] UNITED ARAB EMIRATES CABINET.
+[63] UNITED ARAB EMIRATES CABINET.
 UAE Cabinet Adopts National Artificial Intelligence Strategy 2031[EB/OL].
 Abu Dhabi: UAE Cabinet, 2019[2026-06-18].
 Available: https://uaecabinet.ae/en/news/uae-cabinet-adopts-national-artificial-intelligence-strategy-2031 
 
-[60] UNITED NATIONS EDUCATIONAL, SCIENTIFIC AND CULTURAL ORGANIZATION (UNESCO).
+[64] UNITED NATIONS EDUCATIONAL, SCIENTIFIC AND CULTURAL ORGANIZATION (UNESCO).
 National AI Strategy 2031 and the National Program for Artificial Intelligence[EB/OL].
 Paris: UNESCO Culture|2030 Indicators Policy Monitoring Platform, 2024[2026-06-18].
 Available: https://www.unesco.org/creativity/en/policy-monitoring-platform/national-ai-strategy-2031-and-national-program-artificial-intelligence 
 
 #### Canada
 
-[61] TREASURY BOARD OF CANADA SECRETARIAT (TBS).
+[65] TREASURY BOARD OF CANADA SECRETARIAT (TBS).
 Directive on Automated Decision-Making[EB/OL].
 Ottawa: Government of Canada, 2025[2026-06-18].
 Available: https://www.tbs-sct.canada.ca/pol/doc-eng.aspx?id=32592
 
-[62] TREASURY BOARD OF CANADA SECRETARIAT (TBS).
+[66] TREASURY BOARD OF CANADA SECRETARIAT (TBS).
 Algorithmic Impact Assessment (AIA) Tool[EB/OL].
 Ottawa: Government of Canada, 2026[2026-06-18].
 Available: https://www.canada.ca/en/government/system/digital-government/digital-government-innovations/responsible-use-ai/algorithmic-impact-assessment.html
 
-[63] INNOVATION, SCIENCE AND ECONOMIC DEVELOPMENT CANADA (ISED).
+[67] INNOVATION, SCIENCE AND ECONOMIC DEVELOPMENT CANADA (ISED).
 Pan-Canadian Artificial Intelligence Strategy[EB/OL].
 Ottawa: Government of Canada, 2024[2026-06-18].
 Available: https://ised-isde.canada.ca/site/ai-strategy/en
 
 ### F. Cybersecurity, Future Readiness, and Workforce Development
 
-[64] INTERNATIONAL TELECOMMUNICATION UNION (ITU).
+[68] INTERNATIONAL TELECOMMUNICATION UNION (ITU).
 Global Cybersecurity Index 2024[R/OL].
 Geneva: International Telecommunication Union, 2024[2026-06-18].
 Available: https://www.itu.int/en/ITU-D/Cybersecurity/Pages/global-cybersecurity-index.aspx
 
-[65] WORLD ECONOMIC FORUM (WEF).
+[69] WORLD ECONOMIC FORUM (WEF).
 Global Cybersecurity Outlook 2025[R/OL].
 Geneva: World Economic Forum, 2025[2026-06-18].
 Available: https://www.weforum.org/publications/global-cybersecurity-outlook-2025
 
-[66] WORLD ECONOMIC FORUM (WEF).
+[70] WORLD ECONOMIC FORUM (WEF).
 The Future of Jobs Report 2025[R/OL].
 Geneva: World Economic Forum, 2025[2026-06-18].
 ISBN: 978-2-940631-71-2.
 Available: https://www.weforum.org/publications/the-future-of-jobs-report-2025
 
-[67] WORLD ECONOMIC FORUM (WEF).
+[71] WORLD ECONOMIC FORUM (WEF).
 The Presidio Recommendations on Responsible Generative AI[R/OL].
 Geneva: World Economic Forum, 2024[2026-06-18].
 Available: https://www.weforum.org/publications/the-presidio-recommendations-on-responsible-generative-ai
 
-[68] WORLD ECONOMIC FORUM (WEF).
-The Presidio Recommendations on Responsible Generative AI[R/OL].
-Geneva: World Economic Forum, 2024[2026-06-18].
-Available: https://www.weforum.org/publications/the-presidio-recommendations-on-responsible-generative-ai
-
-[69] WORLD ECONOMIC FORUM (WEF).
+[72] WORLD ECONOMIC FORUM (WEF).
 AI Governance Alliance: Briefing Paper Series[R/OL].
 Geneva: World Economic Forum, 2024[2026-06-18].
 Available: https://initiatives.weforum.org/ai-governance-alliance/home
 
-[70] UNITED NATIONS EDUCATIONAL, SCIENTIFIC AND CULTURAL ORGANIZATION (UNESCO).
+[73] UNITED NATIONS EDUCATIONAL, SCIENTIFIC AND CULTURAL ORGANIZATION (UNESCO).
 AI and Education: Guidance for Policymakers[R/OL].
 Paris: UNESCO, 2021[2026-06-18].
 DOI: 10.54675/PCSP7350.
 Available: https://unesdoc.unesco.org/ark:/48223/pf0000376709
 
-[71] STANFORD INSTITUTE FOR HUMAN-CENTERED ARTIFICIAL INTELLIGENCE (HAI).
+[74] STANFORD INSTITUTE FOR HUMAN-CENTERED ARTIFICIAL INTELLIGENCE (HAI).
 AI Index Report 2025[R/OL].
 Stanford, CA: Stanford University, 2025[2026-06-18].
 Available: https://aiindex.stanford.edu/report
