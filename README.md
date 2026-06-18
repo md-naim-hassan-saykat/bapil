@@ -147,6 +147,9 @@ The BAPIL White Paper is planned around the following chapters:
    - South Korea
    - Estonia
    - United Kingdom
+   - Finland
+   - United Arab Emirates (UAE)
+   - Canada
 4. Current AI Landscape in Bangladesh
 5. BAPIL Vision
 6. BAPIL Architecture
