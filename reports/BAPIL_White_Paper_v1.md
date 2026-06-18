@@ -3727,9 +3727,15 @@ Recommendation of the Council on Artificial Intelligence (OECD/LEGAL/0449)[EB/OL
 Paris: OECD, 2019[2026-06-17].
 Available: https://legalinstruments.oecd.org/en/instruments/oecd-legal-0449
 
-[2] Organisation for Economic Co-operation and Development (OECD). OECD AI Principles[EB/OL]. Paris: OECD AI Policy Observatory, 2024.  
+[2] ORGANISATION FOR ECONOMIC CO-OPERATION AND DEVELOPMENT (OECD).
+OECD AI Principles[EB/OL].
+Paris: OECD AI Policy Observatory, 2024[2026-06-17].
+Available: https://oecd.ai/en/ai-principles
 
-[3] United Nations Educational, Scientific and Cultural Organization (UNESCO). Recommendation on the Ethics of Artificial Intelligence[R]. Paris: UNESCO, 2021.
+[3] UNITED NATIONS EDUCATIONAL, SCIENTIFIC AND CULTURAL ORGANIZATION (UNESCO).
+Recommendation on the Ethics of Artificial Intelligence[EB/OL].
+Paris: UNESCO, 2021[2026-06-17].
+Available: https://unesdoc.unesco.org/ark:/48223/pf0000380455
 
 [4] European Union. Regulation (EU) 2024/1689 Laying Down Harmonised Rules on Artificial Intelligence (Artificial Intelligence Act)[S]. Brussels: European Union, 2024.
 
