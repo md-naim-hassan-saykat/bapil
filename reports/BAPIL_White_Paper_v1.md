@@ -3914,7 +3914,7 @@ You are free to:
 
 Under the following condition:
 
-* Attribution — appropriate credit must be given to the original author, a link to the license must be provided, and any changes made must be indicated.
+* Attribution - appropriate credit must be given to the original author, a link to the license must be provided, and any changes made must be indicated.
 
 The licensor cannot revoke these freedoms as long as the license terms are followed.
 
