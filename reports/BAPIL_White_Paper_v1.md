@@ -183,7 +183,7 @@ Through research, collaboration, and capacity building, BAPIL aims to contribute
 
 Around the world, governments are increasingly exploring the use of Artificial Intelligence (AI), digital technologies, and data-driven governance to improve policymaking, public service delivery, and national competitiveness. While each country follows its own institutional and regulatory approach, several international examples provide valuable insights into how AI and digital innovation can support effective governance.
 
-This chapter examines selected examples from Singapore, South Korea, Estonia, and the United Kingdom. These cases highlight different approaches to digital transformation, AI governance, public sector innovation, and policy intelligence that may offer useful lessons for future research and policy discussions in Bangladesh.
+The white paper has examined international experiences from Singapore, South Korea, Estonia, the United Kingdom, Finland, the United Arab Emirates, and Canada. These cases highlight different approaches to digital transformation, AI governance, public sector innovation, and policy intelligence that may offer useful lessons for future research and policy discussions in Bangladesh.
 
 ### 3.1 Singapore: Smart Nation and GovTech
 
@@ -519,7 +519,9 @@ Academia ────── BAPIL ────── Industry
                 Civil Society
 
 Caption:
-Figure 1. Conceptual BAPIL Ecosystem showing collaboration among government, academia, industry, and civil society.
+Figure 2. Conceptual BAPIL Ecosystem showing collaboration among government, academia, industry, and civil society.
+
+BAPIL is intended to complement-not duplicate-existing national AI initiatives. While programs such as the Bangladesh AI Hub may focus on talent development, startup incubation, AI adoption, and technology commercialization, BAPIL is envisioned as a research and policy intelligence platform focused on AI governance, policy analytics, knowledge management, and evidence-based decision support. Together, these initiatives can contribute to a more comprehensive and coordinated national AI ecosystem.
 
 ### Core Principles
 
@@ -636,7 +638,7 @@ The relationship among key initiatives may be conceptualized as follows:
                 Industry, Startups, and Citizens
 
 Caption:
-Figure 2. Institutional relationship between Smart Bangladesh Vision 2041, Bangladesh AI Hub, and BAPIL.
+Figure 3. Institutional relationship between Smart Bangladesh Vision 2041, Bangladesh AI Hub, and BAPIL.
 
 In this conceptual framework, Smart Bangladesh Vision 2041 represents the overarching national development vision. The Bangladesh AI Hub contributes to AI talent development, innovation, startup support, and technology ecosystem growth. BAPIL complements these efforts by focusing on policy intelligence, AI governance, knowledge management, research, and evidence-based decision support.
 
@@ -704,7 +706,7 @@ Together, these layers create an integrated environment for policy intelligence 
 └─────────────────────┘
 
 Caption: 
-Figure 2. High-level conceptual architecture of the BAPIL framework.
+Figure 4. High-level conceptual architecture of the BAPIL framework.
 
 ### Data Sources Layer
 
@@ -1104,7 +1106,7 @@ Policy Intelligence Dashboard
 Researchers • Policymakers • Stakeholders
 
 Caption:
-Figure 4. Conceptual workflow of policy intelligence within the BAPIL ecosystem.
+Figure 5. Conceptual workflow of policy intelligence within the BAPIL ecosystem.
 
 This architecture illustrates how information may be transformed into actionable insights and accessible visualizations.
 
@@ -2565,7 +2567,7 @@ Year	Strategic Focus	Primary Goal
 2041 → Long-Term National Vision
 
 Caption:
-Figure 3. Strategic roadmap for the phased development of BAPIL (2026-2041).
+Figure 6. Strategic roadmap for the phased development of BAPIL (2026-2041).
 
 ### Roadmap Visualization
 
