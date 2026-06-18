@@ -33,23 +33,28 @@ The Bangladesh AI Policy & Innovation Lab (BAPIL) is a research-driven initiativ
 
 BAPIL aims to bridge the gap between AI research, public policy, governance, and innovation by developing frameworks, methodologies, and prototype systems that can assist decision-makers, researchers, and stakeholders in addressing national challenges through data-informed approaches.
 
----
-
 ## Inspiration & Related Initiatives
 
-BAPIL draws inspiration from international efforts in AI governance, policy intelligence, digital government, and public sector innovation, including initiatives from:
+BAPIL draws inspiration from international efforts in AI governance, policy intelligence, digital government, public-sector innovation, and responsible AI adoption. The framework incorporates lessons from a diverse set of countries and institutions that have demonstrated leadership in digital transformation, AI strategy, governance, and innovation.
 
-- Singapore GovTech
+These include:
 
-- South Korea National AI Strategy and AI Hub initiatives
+* Singapore Smart Nation Initiative and GovTech Singapore
+* South Korea National AI Strategy and AI Hub initiatives
+* Estonia’s digital government and digital identity ecosystem
+* United Kingdom AI governance programs and Government Digital Service (GDS)
+* Finland’s AI literacy initiatives, including the Elements of AI program
+* United Arab Emirates (UAE) National AI Strategy and digital government initiatives
+* Canada’s responsible AI governance frameworks and Directive on Automated Decision-Making
+* OECD AI Policy Observatory (OECD.AI)
+* UNESCO AI Ethics and Responsible AI initiatives
+* NIST AI Risk Management Framework (AI RMF)
+* World Bank GovTech and Digital Development programs
+* UNDP Digital Governance and Public Sector Innovation initiatives
 
-- Estonia's digital government ecosystem
+BAPIL does not seek to replicate any existing model. Instead, it aims to synthesize international best practices and adapt relevant lessons to the Bangladeshi context, with a focus on AI governance, policy intelligence, digital transformation, public-sector innovation, Bangla-language AI, and evidence-based decision support.
 
-- United Kingdom AI governance and public sector AI programs
-
-- OECD AI Policy Observatory
-
----
+The initiative is envisioned as a complementary research and policy intelligence framework that supports Bangladesh’s broader digital transformation agenda, including Smart Bangladesh Vision 2041 and emerging national AI initiatives.
 
 ## Vision
 
