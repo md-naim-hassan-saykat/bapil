@@ -3722,7 +3722,10 @@ Comments, corrections, and constructive suggestions are welcome.
 
 ### A. International AI Governance, Policy, and Public Sector Frameworks
 
-[1] Organisation for Economic Co-operation and Development (OECD). Recommendation of the Council on Artificial Intelligence (OECD/LEGAL/0449)[R]. Paris: OECD, 2019.
+[1] ORGANISATION FOR ECONOMIC CO-OPERATION AND DEVELOPMENT (OECD).
+Recommendation of the Council on Artificial Intelligence (OECD/LEGAL/0449)[EB/OL].
+Paris: OECD, 2019[2026-06-17].
+Available: https://legalinstruments.oecd.org/en/instruments/oecd-legal-0449
 
 [2] Organisation for Economic Co-operation and Development (OECD). OECD AI Principles[EB/OL]. Paris: OECD AI Policy Observatory, 2024.  
 
