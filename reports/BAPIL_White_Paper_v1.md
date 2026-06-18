@@ -3428,7 +3428,10 @@ BAPIL may draw inspiration from internationally recognized frameworks and initia
 - Singapore Model AI Governance Framework
 - United Nations Digital Governance Initiatives
 
-These frameworks provide valuable guidance for promoting trustworthy, transparent, accountable, and human-centered AI systems.  [oai_citation:0‡OECD](https://www.oecd.org/en/topics/sub-issues/ai-principles.html?utm_source=chatgpt.com)
+These frameworks provide valuable guidance for promoting trustworthy, transparent, accountable, and human-centered AI systems. 
+Source:
+OECD AI Principles (2019, updated 2024)
+https://oecd.ai/en/ai-principles
 
 ### Disclaimer
 
@@ -3559,6 +3562,14 @@ The objective is to gradually build a self-sustaining research and innovation ec
 All funding sources and examples presented in this appendix are illustrative and intended solely for discussion purposes. Inclusion of any organization does not imply endorsement, partnership, funding commitment, or formal involvement with BAPIL.
 
 Actual funding arrangements, if pursued in the future, would depend upon stakeholder engagement, institutional agreements, legal requirements, and resource availability.
+
+## Acknowledgements
+
+The author would like to acknowledge the contributions of researchers,
+policymakers, international organizations, and public resources whose
+publications informed this white paper.
+
+Any errors or omissions remain the sole responsibility of the author.
 
 ## Acronyms
 
@@ -3747,3 +3758,44 @@ D. Digital Governance, Cybersecurity, Development, and Future Readiness
 [63] Infocomm Media Development Authority (IMDA). AI Verify Testing Framework and Toolkit[R]. Singapore: IMDA, 2024.
 
 [64] World Bank. GovTech Dataset and GovTech Maturity Index Methodology[R]. Washington, DC: World Bank, 2023.
+
+## License
+
+© 2026 Md Naim Hassan Saykat
+
+This work, BAPIL White Paper: Bangladesh AI Policy & Innovation Lab (Version 1.0), is licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) License.
+
+You are free to:
+
+* Share - copy and redistribute the material in any medium or format.
+* Adapt - remix, transform, and build upon the material for any purpose, including commercial use.
+
+Under the following condition:
+
+* Attribution — appropriate credit must be given to the original author, a link to the license must be provided, and any changes made must be indicated.
+
+The licensor cannot revoke these freedoms as long as the license terms are followed.
+
+For the full license text, please visit:
+
+https://creativecommons.org/licenses/by/4.0/
+
+## Suggested Citation
+
+Saykat, M. N. H. (2026). BAPIL White Paper: Bangladesh AI Policy & Innovation Lab (Version 1.0). Bangladesh AI Policy & Innovation Lab (BAPIL). Zenodo. DOI: To be assigned.
+
+## Contact
+
+Md Naim Hassan Saykat
+Master’s Student in Artificial Intelligence
+Université Paris-Saclay, France
+
+GitHub: https://github.com/md-naim-hassan-saykat
+
+For academic collaboration, research discussions, feedback, or inquiries related to this white paper, interested readers may contact the author through GitHub or other publicly available academic channels.
+
+## Version History
+
+| Version | Date | Description |
+|----------|----------|----------|
+| 1.0 | June 2026 | Initial public discussion draft |
