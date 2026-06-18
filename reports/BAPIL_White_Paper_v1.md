@@ -97,6 +97,25 @@ The long-term vision of BAPIL is to contribute to a future where policymaking an
 
 This document serves as a conceptual and research framework intended to stimulate discussion, collaboration, and strategic thinking regarding the role of Artificial Intelligence in shaping Bangladesh’s future. The contents of this white paper are intended for research, educational, and policy discussion purposes and do not represent any official government position.
 
+Figure 1. Positioning of BAPIL within the Bangladesh AI Ecosystem
+
+Smart Bangladesh Vision 2041
+            ↓
+     Bangladesh AI Hub
+            ↓
+           BAPIL
+            ↓
+ ┌─────────────────────┐
+ │ Policy Intelligence │
+ │ AI Governance       │
+ │ Bangla AI           │
+ │ Research            │
+ │ Innovation          │
+ └─────────────────────┘
+
+Caption:
+Figure 1. Conceptual positioning of BAPIL within the broader Bangladesh AI ecosystem.
+
 ## Chapter 2: Why Bangladesh Needs AI Policy Intelligence
 
 ### Introduction
@@ -250,9 +269,74 @@ Lessons for Bangladesh
 * Importance of transparency and accountability.
 * Development of institutional capacity for AI oversight.
 
+### 3.5 Finland: AI Education and National AI Readiness
+
+Finland is widely recognized for its proactive approach to AI literacy, digital skills development, and public-sector innovation. The country has emphasized the importance of preparing society for the AI era through education, research, and inclusive digital transformation policies.
+
+One notable initiative is the “Elements of AI” program, an online course designed to improve public understanding of Artificial Intelligence. Finland has also invested in AI research, digital government services, and innovation ecosystems that encourage collaboration among universities, industry, and public institutions.
+
+Key features of Finland’s approach include:
+
+* National AI education initiatives.
+* Strong emphasis on digital literacy.
+* Public-sector innovation programs.
+* Research-driven AI development.
+* Collaboration among government, academia, and industry.
+
+### Lessons for Bangladesh
+
+* Importance of AI literacy and public awareness.
+* Investment in education as a foundation for AI readiness.
+* Development of inclusive digital transformation strategies.
+* Promotion of interdisciplinary AI research and innovation.
+
+### 3.6 United Arab Emirates (UAE): Government Innovation and AI Leadership
+
+The United Arab Emirates has positioned itself as a regional leader in Artificial Intelligence and digital government. The country was among the first to appoint a Minister of State for Artificial Intelligence and has developed national strategies focused on AI adoption across government services and economic sectors.
+
+The UAE has established innovation-focused institutions and implemented digital government initiatives designed to improve efficiency, service delivery, and citizen experience.
+
+Key features include:
+
+* National AI Strategy.
+* Government innovation programs.
+* AI adoption across public services.
+* Smart city initiatives.
+* Strong investment in emerging technologies.
+
+The UAE demonstrates how strategic government leadership can accelerate AI adoption and digital transformation.
+
+### Lessons for Bangladesh
+
+* Importance of high-level political and institutional commitment.
+* Integration of AI into public service delivery.
+* Development of innovation-focused governance models.
+* Investment in emerging technologies and future skills.
+
+### 3.7 Canada: Responsible AI and Public Sector Governance
+
+Canada has played a significant role in advancing responsible AI governance and public-sector AI adoption. The country has invested heavily in AI research and was among the first governments to introduce guidance for the responsible use of AI within public institutions.
+
+One notable initiative is the Directive on Automated Decision-Making, which establishes governance requirements for AI systems used in government operations. Canada has also supported AI research through major academic institutions and innovation programs.
+
+Key features include:
+
+* Responsible AI governance frameworks.
+* Public-sector AI oversight mechanisms.
+* Strong AI research ecosystem.
+* Transparency and accountability requirements.
+* Risk-based approaches to AI deployment.
+
+### Lessons for Bangladesh
+
+* Development of public-sector AI governance standards.
+* Importance of transparency and accountability.
+* Risk-based evaluation of AI systems.
+* Building public trust through responsible implementation.
+
 ### Comparative Analysis
 
-Although the four countries examined in this chapter differ in size, governance structures, and economic conditions, several common themes emerge:
+Although the seven countries examined in this chapter differ in size, governance structures, and economic conditions, several common themes emerge:
 
 * Strong government leadership is essential for digital transformation.
 * Investment in digital infrastructure enables innovation and service delivery.
