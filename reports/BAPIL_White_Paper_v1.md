@@ -3990,7 +3990,7 @@ Available: https://wp.oecd.ai/app/uploads/2021/12/Korea_National_Strategy_for_Ar
 [47] ORGANISATION FOR ECONOMIC CO-OPERATION AND DEVELOPMENT (OECD).
 National AI Policy Initiatives: Korea[EB/OL].
 Paris: OECD AI Policy Observatory, 2024[2026-06-18].
-Available: https://oecd.ai/en/dashboards/national/korea.
+Available: https://oecd.ai/en/dashboards/national/korea
 
 [48] GOVERNMENT OF THE REPUBLIC OF KOREA.
 Korean New Deal: National Strategy for a Great Transformation[R/OL].
@@ -4040,41 +4040,67 @@ Leading the Way into the Age of Artificial Intelligence: Final Report of Finland
 Helsinki: Ministry of Economic Affairs and Employment, 2019[2026-06-18].
 Available: https://julkaisut.valtioneuvosto.fi/handle/10024/161688
 
-[56] University of Helsinki; Reaktor. Elements of AI[R]. Helsinki: University of Helsinki, 2024.
+[56] UNIVERSITY OF HELSINKI, REAKTOR.
+Elements of AI: A Free Online Course on Artificial Intelligence[EB/OL].
+Helsinki: University of Helsinki and Reaktor, 2024[2026-06-18].
+Available: https://www.elementsofai.com
+
+[57] MINISTRY OF ECONOMIC AFFAIRS AND EMPLOYMENT OF FINLAND.
+Leading the Way into the Age of Artificial Intelligence: Final Report of Finland’s Artificial Intelligence Programme[R/OL].
+Helsinki: Ministry of Economic Affairs and Employment, 2019[2026-06-18].
+Available: https://julkaisut.valtioneuvosto.fi/handle/10024/161688
 
 #### United Arab Emirates
 
-[56] United Arab Emirates Government. UAE Strategy for Artificial Intelligence 2031[R]. Abu Dhabi: UAE Government, 2024.
+[58] GOVERNMENT OF THE UNITED ARAB EMIRATES.
+UAE National Strategy for Artificial Intelligence 2031[EB/OL].
+Abu Dhabi: Government of the United Arab Emirates, 2017[2026-06-18].
+Available: https://staticcdn.mbzuai.ac.ae/mbzuaiwpprd01/2022/07/UAE-National-Strategy-for-Artificial-Intelligence-2031.pdf
 
-[57] United Arab Emirates Government. UAE National Strategy for Artificial Intelligence 2031[R]. Abu Dhabi: UAE Artificial Intelligence Office, 2019.
+[59] UNITED ARAB EMIRATES CABINET.
+UAE Cabinet Adopts National Artificial Intelligence Strategy 2031[EB/OL].
+Abu Dhabi: UAE Cabinet, 2019[2026-06-18].
+Available: https://uaecabinet.ae/en/news/uae-cabinet-adopts-national-artificial-intelligence-strategy-2031 
 
-[58] United Nations Educational, Scientific and Cultural Organization (UNESCO). National AI Strategy 2031 and the National Program for Artificial Intelligence in the UAE[R]. Paris: UNESCO, 2024.
+[60] UNITED NATIONS EDUCATIONAL, SCIENTIFIC AND CULTURAL ORGANIZATION (UNESCO).
+National AI Strategy 2031 and the National Program for Artificial Intelligence[EB/OL].
+Paris: UNESCO Culture|2030 Indicators Policy Monitoring Platform, 2024[2026-06-18].
+Available: https://www.unesco.org/creativity/en/policy-monitoring-platform/national-ai-strategy-2031-and-national-program-artificial-intelligence 
 
 #### Canada
 
-[59] Treasury Board of Canada Secretariat. Directive on Automated Decision-Making[R]. Ottawa: Government of Canada, 2024.
+[61] TREASURY BOARD OF CANADA SECRETARIAT (TBS).
+Directive on Automated Decision-Making[EB/OL].
+Ottawa: Government of Canada, 2025[2026-06-18].
+Available: https://www.tbs-sct.canada.ca/pol/doc-eng.aspx?id=32592
 
-[60] Government of Canada. Algorithmic Impact Assessment Tool[R]. Ottawa: Treasury Board of Canada Secretariat, 2024.
+[62] TREASURY BOARD OF CANADA SECRETARIAT (TBS).
+Algorithmic Impact Assessment (AIA) Tool[EB/OL].
+Ottawa: Government of Canada, 2026[2026-06-18].
+Available: https://www.canada.ca/en/government/system/digital-government/digital-government-innovations/responsible-use-ai/algorithmic-impact-assessment.html
 
-[61] Canadian Institute for Advanced Research (CIFAR). Pan-Canadian Artificial Intelligence Strategy[R]. Toronto: CIFAR, 2024.
+[63] INNOVATION, SCIENCE AND ECONOMIC DEVELOPMENT CANADA (ISED).
+Pan-Canadian Artificial Intelligence Strategy[EB/OL].
+Ottawa: Government of Canada, 2024[2026-06-18].
+Available: https://ised-isde.canada.ca/site/ai-strategy/en
 
 ### F. Cybersecurity, Future Readiness, and Workforce Development
 
-[62] International Telecommunication Union (ITU). Global Cybersecurity Index 2024[R]. Geneva: ITU, 2024.
+[64] International Telecommunication Union (ITU). Global Cybersecurity Index 2024[R]. Geneva: ITU, 2024.
 
-[63] World Economic Forum. Global Cybersecurity Outlook 2025[R]. Geneva: World Economic Forum, 2025.
+[65] World Economic Forum. Global Cybersecurity Outlook 2025[R]. Geneva: World Economic Forum, 2025.
 
-[64] World Economic Forum. Future of Jobs Report 2025[R]. Geneva: World Economic Forum, 2025.
+[66] World Economic Forum. Future of Jobs Report 2025[R]. Geneva: World Economic Forum, 2025.
 
-[65] World Economic Forum. Global Artificial Intelligence Governance Reports[R]. Geneva: World Economic Forum, 2024.
+[67] World Economic Forum. Global Artificial Intelligence Governance Reports[R]. Geneva: World Economic Forum, 2024.
 
-[66] World Economic Forum. Responsible AI Governance Frameworks[R]. Geneva: World Economic Forum, 2024.
+[68] World Economic Forum. Responsible AI Governance Frameworks[R]. Geneva: World Economic Forum, 2024.
 
-[67] World Economic Forum. AI Governance Alliance Reports[R]. Geneva: World Economic Forum, 2024.
+[69] World Economic Forum. AI Governance Alliance Reports[R]. Geneva: World Economic Forum, 2024.
 
-[68] UNESCO. AI and Education: Guidance for Policymakers[R]. Paris: UNESCO, 2021.
+[70] UNESCO. AI and Education: Guidance for Policymakers[R]. Paris: UNESCO, 2021.
 
-[69] Stanford Institute for Human-Centered Artificial Intelligence (HAI). AI Index Report 2025[R]. Stanford, CA: Stanford University, 2025.
+[71] Stanford Institute for Human-Centered Artificial Intelligence (HAI). AI Index Report 2025[R]. Stanford, CA: Stanford University, 2025.
 
 ## Suggested Citation
 
