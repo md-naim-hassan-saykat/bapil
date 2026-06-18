@@ -151,7 +151,7 @@ The BAPIL White Paper is planned around the following chapters:
 10. National Security & Cybersecurity
 11. AI Education & Talent Development
 12. Startup Ecosystem
-13. Budget Estimation
+13. Resource Requirements & Funding Considerations
 14. Five-Year Roadmap (2026-2030)
 15. Long-Term Vision (2030-2041)
 16. Risks, Ethics, and Responsible AI
