@@ -49,8 +49,8 @@ No recommendation contained in this document should be interpreted as official g
 11. AI Education & Talent Development
 12. Startup Ecosystem
 13. Resource Requirements & Funding Considerations
-14. Five-Year Roadmap (2026–2030)
-15. Long-Term Vision (2030–2041)
+14. Five-Year Roadmap (2026-2030)
+15. Long-Term Vision (2030-2041)
 16. Risks, Ethics, and Responsible AI
 17. Strategic Recommendations
 18. Conclusion
@@ -421,7 +421,7 @@ Academia ────── BAPIL ────── Industry
                       │
                 Civil Society
 
-#### Caption:
+Caption:
 Figure 1. Conceptual BAPIL Ecosystem showing collaboration among government, academia, industry, and civil society.
 
 ### Core Principles
@@ -538,7 +538,7 @@ The relationship among key initiatives may be conceptualized as follows:
                              ▼
                 Industry, Startups, and Citizens
 
-#### Caption:
+Caption:
 Figure 2. Institutional relationship between Smart Bangladesh Vision 2041, Bangladesh AI Hub, and BAPIL.
 
 In this conceptual framework, Smart Bangladesh Vision 2041 represents the overarching national development vision. The Bangladesh AI Hub contributes to AI talent development, innovation, startup support, and technology ecosystem growth. BAPIL complements these efforts by focusing on policy intelligence, AI governance, knowledge management, research, and evidence-based decision support.
@@ -606,7 +606,7 @@ Together, these layers create an integrated environment for policy intelligence 
 │ Governance & Security│
 └─────────────────────┘
 
-#### Caption: 
+Caption: 
 Figure 2. High-level conceptual architecture of the BAPIL framework.
 
 ### Data Sources Layer
@@ -1006,7 +1006,7 @@ Policy Intelligence Dashboard
         ↓
 Researchers • Policymakers • Stakeholders
 
-#### Caption:
+Caption:
 Figure 4. Conceptual workflow of policy intelligence within the BAPIL ecosystem.
 
 This architecture illustrates how information may be transformed into actionable insights and accessible visualizations.
@@ -1362,7 +1362,7 @@ Key objectives include:
 
 The proposed governance structure may include several complementary layers.
 
-Strategic Governance Layer
+#### Strategic Governance Layer
 
 Responsible for:
 
@@ -1906,7 +1906,7 @@ Within the BAPIL framework, AI education and talent development represent a stra
 
 Potential contributions may include:
 
-Research and Knowledge Sharing
+### Research and Knowledge Sharing
 
 * Publication of policy research
 * Workshops and seminars
@@ -2005,7 +2005,7 @@ Artificial Intelligence offers opportunities for developing innovative products 
 
 Potential areas include:
 
-Public Sector Innovation
+### Public Sector Innovation
 
 * Government service optimization.
 * Citizen engagement tools.
@@ -2435,13 +2435,13 @@ By adopting a phased and collaborative approach, BAPIL can explore opportunities
 
 The next chapter presents the Five-Year Roadmap and outlines a potential implementation pathway for the evolution of BAPIL from a research concept into a mature policy intelligence and innovation framework.
 
-## Chapter 14: Five-Year Roadmap (2026-2030)
+## Public Sector Innovation: Five-Year Roadmap (2026-2030)
 
 ### Introduction
 
 The development of the Bangladesh AI Policy & Innovation Lab (BAPIL) is envisioned as a gradual and research-driven process. Rather than attempting large-scale implementation from the outset, BAPIL may evolve through phased development, stakeholder engagement, capacity building, and pilot initiatives.
 
-This roadmap outlines a conceptual five-year pathway (2026–2030) for the evolution of BAPIL from a research concept into a mature policy intelligence and innovation framework.
+This roadmap outlines a conceptual five-year pathway (2026-2030) for the evolution of BAPIL from a research concept into a mature policy intelligence and innovation framework.
 
 ### Executive Roadmap Overview (2026-2041)
 
@@ -2467,10 +2467,8 @@ Year	Strategic Focus	Primary Goal
         ↓
 2041 → Long-Term National Vision
 
-#### Caption:
-Figure 3. Strategic roadmap for the phased development of BAPIL (2026–2041).
-
-### Roadmap Visualization
+Caption:
+Figure 3. Strategic roadmap for the phased development of BAPIL (2026-2041).
 
 ### Roadmap Visualization
 
@@ -2652,7 +2650,7 @@ Mitigation strategies may include:
 
 ### Looking Beyond 2030
 
-While this roadmap focuses on the period 2026–2030, the broader vision of BAPIL extends toward Bangladesh’s long-term development aspirations through 2041 and beyond.
+While this roadmap focuses on the period 2026-2030, the broader vision of BAPIL extends toward Bangladesh’s long-term development aspirations through 2041 and beyond.
 
 Future opportunities may include:
 
@@ -2672,7 +2670,7 @@ The roadmap emphasizes sustainable growth, interdisciplinary collaboration, and 
 
 ### Introduction
 
-While the initial development of the Bangladesh AI Policy & Innovation Lab (BAPIL) focuses on research, capacity building, and pilot initiatives during 2026–2030, the broader vision extends toward supporting Bangladesh’s long-term development aspirations through 2041 and beyond.
+While the initial development of the Bangladesh AI Policy & Innovation Lab (BAPIL) focuses on research, capacity building, and pilot initiatives during 2026-2030, the broader vision extends toward supporting Bangladesh’s long-term development aspirations through 2041 and beyond.
 
 This chapter outlines a strategic vision for how AI governance, policy intelligence, digital innovation, and knowledge-driven decision-making may evolve over the coming decade. The objective is not to predict specific outcomes but to identify opportunities that could contribute to a more innovative, resilient, and technologically advanced Bangladesh.
 
@@ -3052,8 +3050,6 @@ By emphasizing transparency, accountability, fairness, privacy, security, and pu
 
 The final chapter summarizes the key findings of this white paper and outlines the broader vision of BAPIL as a research-driven initiative for AI governance, policy intelligence, and public sector innovation in Bangladesh.
 
-You can insert the following chapter immediately before Chapter 17: Conclusion.
-
 ## Chapter 17: Strategic Recommendations
 
 ### Introduction
@@ -3150,7 +3146,7 @@ Key priorities include:
 
 Responsible adoption can help maximize benefits while reducing potential risks.
 
-### Recommendation 7: Strengthen Academia–Government–Industry Collaboration
+### Recommendation 7: Strengthen Academia-Government-Industry Collaboration
 
 AI ecosystems are most effective when researchers, policymakers, businesses, and civil society organizations work together.
 
