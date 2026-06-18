@@ -315,10 +315,11 @@ While programs such as AI Hub may emphasize workforce development, startup suppo
 
 The relationship between these initiatives may therefore be viewed as complementary:
 
-Existing Initiatives	Primary Focus
-Smart Bangladesh Vision 2041	National digital transformation and development
-Bangladesh AI Hub	AI skills, talent development, research support, startup ecosystem, and industry collaboration
-BAPIL	AI governance, policy intelligence, evidence-based policymaking, knowledge management, and public-sector innovation research
+| Initiative | Primary Focus |
+|------------|---------------|
+| Smart Bangladesh Vision 2041 | National digital transformation |
+| Bangladesh AI Hub | AI skills, startups, research support |
+| BAPIL | Policy intelligence and AI governance |
 
 In this context, BAPIL is envisioned as a research and policy intelligence platform that can contribute analytical insights, governance frameworks, and knowledge resources that may support broader national AI and digital transformation initiatives.
 
@@ -3613,6 +3614,13 @@ Any errors or omissions remain the sole responsibility of the author.
 | GovTech | The application of digital technologies and innovation to improve government services and public sector effectiveness. |
 | BAPIL | Bangladesh AI Policy & Innovation Lab, a proposed research-oriented framework for AI governance, policy intelligence, digital governance, and public sector innovation. |
 
+## Author's Note
+
+This document is intended as a public discussion draft.
+The concepts presented herein are exploratory and are expected to evolve through future research, stakeholder feedback, and collaborative discussion.
+
+Comments, corrections, and constructive suggestions are welcome.
+
 ## References
 
 A. International Governance, AI Policy, and Public Sector Frameworks
@@ -3759,6 +3767,32 @@ D. Digital Governance, Cybersecurity, Development, and Future Readiness
 
 [64] World Bank. GovTech Dataset and GovTech Maturity Index Methodology[R]. Washington, DC: World Bank, 2023.
 
+## Suggested Citation
+
+Saykat, M. N. H. (2026).
+
+BAPIL White Paper: Bangladesh AI Policy & Innovation Lab (Version 1.0).
+
+BAPIL Research Initiative.
+
+Zenodo. DOI: To be assigned.
+
+## Contact
+
+Md Naim Hassan Saykat
+Master’s Student in Artificial Intelligence
+Université Paris-Saclay, France
+
+GitHub: https://github.com/md-naim-hassan-saykat
+
+For academic collaboration, research discussions, feedback, or inquiries related to this white paper, interested readers may contact the author through GitHub or other publicly available academic channels.
+
+## Version History
+
+| Version | Date | Description |
+|----------|----------|----------|
+| 1.0 | June 2026 | Initial public discussion draft |
+
 ## License
 
 © 2026 Md Naim Hassan Saykat
@@ -3778,24 +3812,4 @@ The licensor cannot revoke these freedoms as long as the license terms are follo
 
 For the full license text, please visit:
 
-https://creativecommons.org/licenses/by/4.0/
-
-## Suggested Citation
-
-Saykat, M. N. H. (2026). BAPIL White Paper: Bangladesh AI Policy & Innovation Lab (Version 1.0). Bangladesh AI Policy & Innovation Lab (BAPIL). Zenodo. DOI: To be assigned.
-
-## Contact
-
-Md Naim Hassan Saykat
-Master’s Student in Artificial Intelligence
-Université Paris-Saclay, France
-
-GitHub: https://github.com/md-naim-hassan-saykat
-
-For academic collaboration, research discussions, feedback, or inquiries related to this white paper, interested readers may contact the author through GitHub or other publicly available academic channels.
-
-## Version History
-
-| Version | Date | Description |
-|----------|----------|----------|
-| 1.0 | June 2026 | Initial public discussion draft |
+[Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/)
