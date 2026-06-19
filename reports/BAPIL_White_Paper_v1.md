@@ -1663,37 +1663,37 @@ The Bangla Policy Foundation Model represents a strategic research concept that 
 
 The next chapter examines AI Governance Frameworks and discusses the institutional, ethical, and regulatory considerations necessary for responsible AI adoption within the BAPIL ecosystem [1,4,5,6,15].
 
-## Chapter 9: AI Governance Framework
+# Chapter 9: AI Governance Framework
 
-### Introduction
+## Introduction
 
-As Artificial Intelligence (AI) becomes increasingly integrated into governance, public administration, research, and decision-support systems, the need for effective governance mechanisms becomes critical. While AI offers significant opportunities for improving efficiency, innovation, and evidence-based policymaking, it also introduces risks related to transparency, accountability, privacy, bias, security, and public trust.
+As Artificial Intelligence (AI) becomes increasingly integrated into governance, public administration, research, and decision-support systems, the need for effective governance mechanisms becomes critical [1,4,5,6,7,10,15]. While AI offers significant opportunities for improving efficiency, innovation, and evidence-based policymaking, it also introduces risks related to transparency, accountability, privacy, bias, security, and public trust [2,5,6,7,14,15].
 
-The purpose of an AI Governance Framework within the BAPIL ecosystem is to establish principles, guidelines, and oversight mechanisms that support the responsible development, deployment, and evaluation of AI systems. The framework seeks to ensure that AI technologies serve the public interest while remaining aligned with legal, ethical, and institutional requirements.
+The purpose of an AI Governance Framework within the BAPIL ecosystem is to establish principles, guidelines, and oversight mechanisms that support the responsible development, deployment, and evaluation of AI systems [1,4,5,7]. The framework seeks to ensure that AI technologies serve the public interest while remaining aligned with legal, ethical, and institutional requirements [5,6,15,17,21].
 
-### What is AI Governance?
+## What is AI Governance?
 
-AI governance refers to the policies, processes, standards, and institutional mechanisms that guide the development and use of Artificial Intelligence systems.
+AI governance refers to the policies, processes, standards, and institutional mechanisms that guide the development and use of Artificial Intelligence systems [1,4,5,6,7].
 
 Effective AI governance aims to:
 
-* Promote responsible innovation.
-* Ensure accountability and oversight.
-* Protect individual rights and privacy.
-* Reduce unintended harms.
-* Build public trust.
-* Support transparency and explainability.
-* Encourage ethical and lawful AI deployment.
+* Promote responsible innovation [1,4,62].
+* Ensure accountability and oversight [5,6,68].
+* Protect individual rights and privacy [5,15].
+* Reduce unintended harms [2,7].
+* Build public trust [1,5,15].
+* Support transparency and explainability [4,7,68].
+* Encourage ethical and lawful AI deployment [5,6,15].
 
-AI governance does not seek to prevent innovation but rather to ensure that technological progress is aligned with societal values and public interests.
+AI governance does not seek to prevent innovation but rather to ensure that technological progress is aligned with societal values and public interests [1,4,5].
 
-### Guiding Principles
+## Guiding Principles
 
-The proposed BAPIL AI Governance Framework is based on internationally recognized principles adapted to the context of policy intelligence and public sector innovation.
+The proposed BAPIL AI Governance Framework is based on internationally recognized principles adapted to the context of policy intelligence and public sector innovation [1,4,5,7,15].
 
-#### Transparency
+### Transparency
 
-AI systems should be understandable and explainable to the extent possible.
+AI systems should be understandable and explainable to the extent possible [1,4,5,50,68].
 
 Key objectives include:
 
@@ -1702,9 +1702,9 @@ Key objectives include:
 * Transparent methodologies.
 * Disclosure of limitations.
 
-#### Accountability
+### Accountability
 
-Human institutions and individuals remain responsible for decisions supported by AI systems.
+Human institutions and individuals remain responsible for decisions supported by AI systems [1,5,6,15,68].
 
 Key objectives include:
 
@@ -1713,9 +1713,9 @@ Key objectives include:
 * Auditability.
 * Governance review processes.
 
-#### Fairness and Inclusion
+### Fairness and Inclusion
 
-AI systems should be designed and evaluated to minimize unfair bias and promote equitable outcomes.
+AI systems should be designed and evaluated to minimize unfair bias and promote equitable outcomes [5,15,45,53].
 
 Key objectives include:
 
@@ -1724,9 +1724,9 @@ Key objectives include:
 * Fair evaluation methodologies.
 * Accessibility considerations.
 
-#### Privacy Protection
+### Privacy Protection
 
-The collection, storage, and processing of information should respect privacy rights and applicable legal requirements.
+The collection, storage, and processing of information should respect privacy rights and applicable legal requirements [5,6,15,34].
 
 Key objectives include:
 
@@ -1735,9 +1735,9 @@ Key objectives include:
 * Controlled access.
 * Privacy-preserving techniques.
 
-#### Human Oversight
+### Human Oversight
 
-AI systems should support human decision-making rather than replace human judgment.
+AI systems should support human decision-making rather than replace human judgment [1,5,6,51,68].
 
 Key objectives include:
 
@@ -1746,9 +1746,9 @@ Key objectives include:
 * Decision accountability.
 * Override mechanisms.
 
-#### Safety and Reliability
+### Safety and Reliability
 
-AI systems should be reliable, secure, and appropriate for their intended purposes.
+AI systems should be reliable, secure, and appropriate for their intended purposes [2,6,7,14].
 
 Key objectives include:
 
@@ -1757,11 +1757,11 @@ Key objectives include:
 * Risk management.
 * Continuous evaluation.
 
-#### Governance Structure
+## Governance Structure
 
 The proposed governance structure may include several complementary layers.
 
-#### Strategic Governance Layer
+### Strategic Governance Layer
 
 Responsible for:
 
@@ -1770,7 +1770,9 @@ Responsible for:
 * Institutional oversight.
 * Strategic priorities.
 
-#### Technical Governance Layer
+This layer aligns with international governance recommendations and national AI strategies [1,9,15,54,60,70].
+
+### Technical Governance Layer
 
 Responsible for:
 
@@ -1779,7 +1781,9 @@ Responsible for:
 * Technical documentation.
 * System monitoring.
 
-#### Ethical Governance Layer
+This layer draws upon NIST AI RMF, OECD guidance, and responsible AI practices [7,8,10,14].
+
+### Ethical Governance Layer
 
 Responsible for:
 
@@ -1788,7 +1792,9 @@ Responsible for:
 * Bias and fairness analysis.
 * Public-interest considerations.
 
-#### Operational Governance Layer
+This layer reflects UNESCO and Council of Europe principles [5,15].
+
+### Operational Governance Layer
 
 Responsible for:
 
@@ -1797,45 +1803,57 @@ Responsible for:
 * Incident reporting.
 * Continuous improvement.
 
-### AI Lifecycle Governance
+Operational governance is consistent with public-sector AI governance practices adopted internationally [17,20,21,61].
 
-Governance should be applied throughout the lifecycle of AI systems.
+## AI Lifecycle Governance
 
-#### Data Collection
+Governance should be applied throughout the lifecycle of AI systems [7,14].
+
+### Data Collection
 
 * Data quality assessment.
 * Data governance compliance.
 * Privacy protection measures.
 
-#### Model Development
+Supported by data governance and public-sector data frameworks [18,21,78,79].
+
+### Model Development
 
 * Documentation.
 * Validation procedures.
 * Fairness evaluation.
 
-#### Deployment
+Consistent with responsible AI development principles [5,7,45,50].
+
+### Deployment
 
 * Security review.
 * Performance testing.
 * Risk assessment.
 
-#### Monitoring
+Aligned with NIST and EU AI governance approaches [6,7,14].
+
+### Monitoring
 
 * Continuous evaluation.
 * Feedback mechanisms.
 * Error tracking.
 
-#### Retirement and Updating
+Supported by AI risk management and governance frameworks [7,68,69].
+
+### Retirement and Updating
 
 * Model review.
 * Version management.
 * Responsible decommissioning.
 
-### Risk-Based Governance Approach
+Consistent with lifecycle governance recommendations [7,14].
 
-Not all AI applications present the same level of risk. A risk-based governance approach allows resources and oversight mechanisms to be aligned with the potential impact of a system.
+## Risk-Based Governance Approach
 
-#### Low-Risk Systems
+Not all AI applications present the same level of risk. A risk-based governance approach allows resources and oversight mechanisms to be aligned with the potential impact of a system [6,7,8,68,69].
+
+### Low-Risk Systems
 
 Examples:
 
@@ -1843,7 +1861,7 @@ Examples:
 * Information retrieval systems.
 * Data visualization tools.
 
-#### Medium-Risk Systems
+### Medium-Risk Systems
 
 Examples:
 
@@ -1851,7 +1869,7 @@ Examples:
 * Public sentiment analysis systems.
 * Forecasting applications.
 
-#### High-Risk Systems
+### High-Risk Systems
 
 Examples:
 
@@ -1859,11 +1877,11 @@ Examples:
 * Sensitive public sector applications.
 * Critical infrastructure-related systems.
 
-Higher-risk systems require stronger oversight, testing, and governance controls.
+Higher-risk systems require stronger oversight, testing, and governance controls [6,7,15,68,69].
 
-#### Data Governance Framework
+## Data Governance Framework
 
-AI governance depends heavily on effective data governance.
+AI governance depends heavily on effective data governance [18,21,78,79].
 
 Key elements include:
 
@@ -1874,11 +1892,11 @@ Key elements include:
 * Privacy protection.
 * Security requirements.
 
-The framework should promote responsible use of data while supporting innovation and research.
+The framework should promote responsible use of data while supporting innovation and research [18,21,33,78,79].
 
-#### Explainability and Transparency
+## Explainability and Transparency
 
-For policy intelligence applications, explainability is particularly important.
+For policy intelligence applications, explainability is particularly important [1,5,7,50,68].
 
 Users should be able to understand:
 
@@ -1887,11 +1905,11 @@ Users should be able to understand:
 * Assumptions and limitations.
 * Confidence levels where appropriate.
 
-Explainable AI techniques may improve transparency and trust in analytical systems.
+Explainable AI techniques may improve transparency and trust in analytical systems [5,7,50].
 
-#### Ethics Review and Impact Assessment
+## Ethics Review and Impact Assessment
 
-Future AI projects within the BAPIL ecosystem may benefit from structured ethical review processes.
+Future AI projects within the BAPIL ecosystem may benefit from structured ethical review processes [5,15,53,69,74].
 
 Potential considerations include:
 
@@ -1901,9 +1919,9 @@ Potential considerations include:
 * Human rights considerations.
 * Public trust implications.
 
-Ethical review processes can help identify and mitigate risks before deployment.
+Ethical review processes can help identify and mitigate risks before deployment [5,15].
 
-#### International Alignment
+## International Alignment
 
 The BAPIL AI Governance Framework may draw inspiration from internationally recognized frameworks, including:
 
@@ -1913,11 +1931,11 @@ The BAPIL AI Governance Framework may draw inspiration from internationally reco
 * European Union AI Act.
 * Singapore AI Governance Framework.
 
-These frameworks provide valuable guidance while allowing adaptation to local contexts and priorities.
+These frameworks provide valuable guidance while allowing adaptation to local contexts and priorities [1,5,6,7,51].
 
-#### Governance and Public Trust
+## Governance and Public Trust
 
-Public trust is essential for the successful adoption of AI technologies.
+Public trust is essential for the successful adoption of AI technologies [1,5,15,74,75].
 
 Trust can be strengthened through:
 
@@ -1927,13 +1945,13 @@ Trust can be strengthened through:
 * Independent oversight.
 * Responsible communication.
 
-AI systems that are perceived as trustworthy are more likely to be accepted and effectively utilized.
+AI systems that are perceived as trustworthy are more likely to be accepted and effectively utilized [1,5,15].
 
-### Role of BAPIL
+## Role of BAPIL
 
-Within the broader BAPIL framework, AI governance serves as a foundational pillar that supports responsible innovation and policy intelligence.
+Within the broader BAPIL framework, AI governance serves as a foundational pillar that supports responsible innovation and policy intelligence [24,25,35,36,80].
 
-#### BAPIL aims to:
+### BAPIL aims to:
 
 * Promote research on AI governance.
 * Explore governance best practices.
@@ -1941,29 +1959,29 @@ Within the broader BAPIL framework, AI governance serves as a foundational pilla
 * Encourage responsible AI adoption.
 * Foster interdisciplinary collaboration.
 
-The objective is not to regulate AI directly but to contribute research, knowledge, and analytical perspectives that support informed governance discussions.
+The objective is not to regulate AI directly but to contribute research, knowledge, and analytical perspectives that support informed governance discussions [24,25,27].
 
-### Conclusion
+## Conclusion
 
-As Artificial Intelligence becomes increasingly important for governance, research, and public sector innovation, effective governance frameworks will be essential for ensuring responsible and trustworthy deployment. By emphasizing transparency, accountability, fairness, privacy, security, and human oversight, the proposed AI Governance Framework seeks to support the responsible exploration of AI within the BAPIL ecosystem.
+As Artificial Intelligence becomes increasingly important for governance, research, and public sector innovation, effective governance frameworks will be essential for ensuring responsible and trustworthy deployment [1,5,6,7,15]. By emphasizing transparency, accountability, fairness, privacy, security, and human oversight, the proposed AI Governance Framework seeks to support the responsible exploration of AI within the BAPIL ecosystem [1,4,5,6,7,15].
 
-The next chapter examines National Security and Cybersecurity considerations and discusses how emerging technologies may affect digital resilience, information integrity, and public-sector security.
+The next chapter examines National Security and Cybersecurity considerations and discusses how emerging technologies may affect digital resilience, information integrity, and public-sector security [14,34,71,72].
 
-## Chapter 10: National Security & Cybersecurity
+# Chapter 10: National Security & Cybersecurity
 
-### Introduction
+## Introduction
 
-As societies become increasingly dependent on digital technologies, Artificial Intelligence (AI), data systems, and interconnected infrastructures, national security and cybersecurity have emerged as critical policy priorities. Governments worldwide are investing in digital resilience, cybersecurity capabilities, and secure technology ecosystems to protect public institutions, critical infrastructure, economic systems, and citizens from evolving threats.
+As societies become increasingly dependent on digital technologies, Artificial Intelligence (AI), data systems, and interconnected infrastructures, national security and cybersecurity have emerged as critical policy priorities [2, 14, 17, 21, 71, 72]. Governments worldwide are investing in digital resilience, cybersecurity capabilities, and secure technology ecosystems to protect public institutions, critical infrastructure, economic systems, and citizens from evolving threats [14, 17, 71, 72].
 
-For Bangladesh, continued digital transformation presents significant opportunities for economic growth, public service innovation, and technological advancement. At the same time, increasing digitalization creates new challenges related to cybersecurity, information integrity, cybercrime, and technological dependence.
+For Bangladesh, continued digital transformation presents significant opportunities for economic growth, public service innovation, and technological advancement [29, 30, 82, 83]. At the same time, increasing digitalization creates new challenges related to cybersecurity, information integrity, cybercrime, and technological dependence [34, 71, 72, 80].
 
-This chapter explores the relationship between AI, cybersecurity, digital resilience, and national security within the broader context of the BAPIL framework.
+This chapter explores the relationship between AI, cybersecurity, digital resilience, and national security within the broader context of the BAPIL framework [30, 35, 36].
 
-### The Growing Importance of Cybersecurity
+## The Growing Importance of Cybersecurity
 
-Cybersecurity refers to the protection of digital systems, networks, devices, and information from unauthorized access, disruption, damage, or misuse.
+Cybersecurity refers to the protection of digital systems, networks, devices, and information from unauthorized access, disruption, damage, or misuse [14, 71, 72].
 
-As government services, financial systems, healthcare platforms, educational institutions, and communication networks become more digital, the consequences of cyber incidents can become increasingly significant.
+As government services, financial systems, healthcare platforms, educational institutions, and communication networks become more digital, the consequences of cyber incidents can become increasingly significant [17, 20, 21, 71].
 
 Key cybersecurity objectives include:
 
@@ -1974,11 +1992,11 @@ Key cybersecurity objectives include:
 * Preventing cybercrime.
 * Strengthening digital trust.
 
-Cybersecurity is therefore not only a technical issue but also an economic, social, and governance challenge.
+Cybersecurity is therefore not only a technical issue but also an economic, social, and governance challenge [14, 17, 21, 71].
 
-### National Security in the Digital Era
+## National Security in the Digital Era
 
-National security increasingly includes digital dimensions alongside traditional security considerations.
+National security increasingly includes digital dimensions alongside traditional security considerations [2, 14, 71, 72].
 
 Emerging areas of concern include:
 
@@ -1989,13 +2007,13 @@ Emerging areas of concern include:
 * Technology supply chain vulnerabilities.
 * AI-enabled cyber threats.
 
-As digital technologies become more integrated into national development, cybersecurity and national resilience become closely connected.
+As digital technologies become more integrated into national development, cybersecurity and national resilience become closely connected [21, 30, 71, 72, 80].
 
-### AI and Cybersecurity
+## AI and Cybersecurity
 
-Artificial Intelligence can play a dual role in cybersecurity.
+Artificial Intelligence can play a dual role in cybersecurity [2, 7, 14, 75].
 
-#### AI for Cyber Defense
+### AI for Cyber Defense
 
 AI technologies may help improve cybersecurity capabilities through:
 
@@ -2006,9 +2024,9 @@ AI technologies may help improve cybersecurity capabilities through:
 * Automated incident analysis.
 * Risk assessment.
 
-These applications may support faster and more effective responses to emerging cyber threats.
+These applications may support faster and more effective responses to emerging cyber threats [7, 14, 71, 72, 77].
 
-#### AI-Enabled Risks
+### AI-Enabled Risks
 
 At the same time, AI technologies may also introduce new risks, including:
 
@@ -2018,11 +2036,11 @@ At the same time, AI technologies may also introduce new risks, including:
 * AI-assisted misinformation.
 * Adversarial attacks on AI systems.
 
-Responsible governance and security measures are therefore essential.
+Responsible governance and security measures are therefore essential [2, 6, 7, 41, 45, 74, 75].
 
-#### Digital Resilience
+## Digital Resilience
 
-Digital resilience refers to the ability of institutions, systems, and societies to prepare for, respond to, and recover from digital disruptions.
+Digital resilience refers to the ability of institutions, systems, and societies to prepare for, respond to, and recover from digital disruptions [17, 20, 21, 71].
 
 Key components include:
 
@@ -2033,11 +2051,11 @@ Key components include:
 * Continuous monitoring.
 * Public awareness and education.
 
-Building digital resilience requires both technological and institutional capacity.
+Building digital resilience requires both technological and institutional capacity [20, 21, 71, 72].
 
-### Information Integrity and Misinformation
+## Information Integrity and Misinformation
 
-The rapid growth of digital communication platforms has increased the speed at which information spreads. While this creates opportunities for communication and participation, it also increases the risk of misinformation and disinformation.
+The rapid growth of digital communication platforms has increased the speed at which information spreads. While this creates opportunities for communication and participation, it also increases the risk of misinformation and disinformation [2, 45, 74, 75].
 
 Challenges may include:
 
@@ -2047,11 +2065,11 @@ Challenges may include:
 * Coordinated information operations.
 * Erosion of public trust.
 
-Research into information integrity and responsible AI may contribute to improved understanding of these challenges.
+Research into information integrity and responsible AI may contribute to improved understanding of these challenges [2, 5, 45, 74, 75].
 
-### Critical Digital Infrastructure
+## Critical Digital Infrastructure
 
-Modern societies depend on digital infrastructure that supports essential services.
+Modern societies depend on digital infrastructure that supports essential services [17, 20, 21, 71].
 
 Examples include:
 
@@ -2062,11 +2080,11 @@ Examples include:
 * Energy and utility systems.
 * Transportation systems.
 
-Protecting these systems is increasingly important for national resilience and economic stability.
+Protecting these systems is increasingly important for national resilience and economic stability [14, 17, 20, 21, 71].
 
-### Cybersecurity Capacity Building
+## Cybersecurity Capacity Building
 
-A strong cybersecurity ecosystem requires investment in people, institutions, and knowledge.
+A strong cybersecurity ecosystem requires investment in people, institutions, and knowledge [71, 72, 73].
 
 Important priorities include:
 
@@ -2077,11 +2095,11 @@ Important priorities include:
 * Public awareness programs.
 * International cooperation.
 
-Developing local expertise can contribute to long-term national resilience.
+Developing local expertise can contribute to long-term national resilience [35, 36, 73, 76, 77, 80].
 
-### Responsible Security Governance
+## Responsible Security Governance
 
-Cybersecurity initiatives should be guided by principles that balance security objectives with broader societal considerations.
+Cybersecurity initiatives should be guided by principles that balance security objectives with broader societal considerations [5, 6, 7, 14, 15].
 
 Key principles include:
 
@@ -2092,11 +2110,11 @@ Key principles include:
 * Human rights considerations.
 * Proportionality.
 
-Responsible governance helps ensure that security measures support public trust and democratic values.
+Responsible governance helps ensure that security measures support public trust and democratic values [5, 6, 15, 68].
 
-### International Cooperation
+## International Cooperation
 
-Cybersecurity and digital resilience are global challenges that require international collaboration.
+Cybersecurity and digital resilience are global challenges that require international collaboration [19, 27, 71, 72].
 
 Potential areas of cooperation include:
 
@@ -2107,11 +2125,11 @@ Potential areas of cooperation include:
 * Cybersecurity training.
 * Best-practice exchange.
 
-International engagement can help strengthen national capabilities while supporting broader regional and global resilience.
+International engagement can help strengthen national capabilities while supporting broader regional and global resilience [19, 27, 71, 72, 75].
 
-### Role of BAPIL
+## Role of BAPIL
 
-Within the BAPIL framework, national security and cybersecurity are approached from a research, policy intelligence, and governance perspective.
+Within the BAPIL framework, national security and cybersecurity are approached from a research, policy intelligence, and governance perspective [30, 35, 36, 80].
 
 Potential areas of focus include:
 
@@ -2122,27 +2140,27 @@ Potential areas of focus include:
 * Cybersecurity governance frameworks.
 * Public awareness and capacity-building initiatives.
 
-BAPIL does not seek to perform operational security functions. Instead, it aims to contribute research, knowledge, and policy insights that may support informed discussions regarding cybersecurity and digital governance.
+BAPIL does not seek to perform operational security functions. Instead, it aims to contribute research, knowledge, and policy insights that may support informed discussions regarding cybersecurity and digital governance [30, 35, 36].
 
 ## Future Research Directions
 
 Future research may explore:
 
-* AI-assisted threat detection.
-* Cybersecurity policy frameworks.
-* Information integrity and misinformation analysis.
-* Digital resilience indicators.
-* Secure AI systems.
-* Privacy-preserving technologies.
-* Responsible cybersecurity governance.
+* AI-assisted threat detection [7, 14, 71].
+* Cybersecurity policy frameworks [14, 34, 68].
+* Information integrity and misinformation analysis [45, 74, 75].
+* Digital resilience indicators [20, 21, 71].
+* Secure AI systems [2, 6, 7].
+* Privacy-preserving technologies [5, 15].
+* Responsible cybersecurity governance [5, 6, 14, 15].
 
-These areas represent important intersections between AI, governance, and national development.
+These areas represent important intersections between AI, governance, and national development [2, 7, 75, 80].
 
-### Conclusion
+## Conclusion
 
-As Bangladesh continues its digital transformation journey, cybersecurity and digital resilience will become increasingly important components of national development. Protecting digital infrastructure, strengthening institutional capacity, and promoting responsible technology governance are essential for ensuring secure and sustainable progress.
+As Bangladesh continues its digital transformation journey, cybersecurity and digital resilience will become increasingly important components of national development [29, 30, 35, 36, 80]. Protecting digital infrastructure, strengthening institutional capacity, and promoting responsible technology governance are essential for ensuring secure and sustainable progress [14, 34, 71, 72].
 
-Within the broader BAPIL vision, research on cybersecurity, information integrity, and digital resilience may contribute to a deeper understanding of emerging challenges and support evidence-based approaches to strengthening national capabilities in the digital age.
+Within the broader BAPIL vision, research on cybersecurity, information integrity, and digital resilience may contribute to a deeper understanding of emerging challenges and support evidence-based approaches to strengthening national capabilities in the digital age [30, 35, 36, 80].
 
 The next chapter examines AI Education and Talent Development, focusing on the human capital, skills, and research capacity required to support Bangladesh’s long-term AI ecosystem.
 
