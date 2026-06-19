@@ -3081,17 +3081,17 @@ The proposed five-year roadmap provides a structured pathway for the gradual dev
 
 The roadmap emphasizes sustainable growth, interdisciplinary collaboration, and evidence-based development as foundational principles for the future evolution of the initiative [1, 3, 9, 22, 29, 30]. International experience demonstrates that successful public-sector AI initiatives require strong governance, institutional capacity, long-term commitment, and continuous adaptation to emerging technological and societal challenges.
 
-## Chapter 15: Long-Term Vision (2030-2041)
+# Chapter 15: Long-Term Vision (2030–2041)
 
-### Introduction
+## Introduction
 
-While the initial development of the Bangladesh AI Policy & Innovation Lab (BAPIL) focuses on research, capacity building, and pilot initiatives during 2026-2030, the broader vision extends toward supporting Bangladesh’s long-term development aspirations through 2041 and beyond.
+While the initial development of the Bangladesh AI Policy & Innovation Lab (BAPIL) focuses on research, capacity building, and pilot initiatives during 2026–2030, the broader vision extends toward supporting Bangladesh’s long-term development aspirations through 2041 and beyond [3,21,23,29,30].
 
-This chapter outlines a strategic vision for how AI governance, policy intelligence, digital innovation, and knowledge-driven decision-making may evolve over the coming decade. The objective is not to predict specific outcomes but to identify opportunities that could contribute to a more innovative, resilient, and technologically advanced Bangladesh.
+This chapter outlines a strategic vision for how AI governance, policy intelligence, digital innovation, and knowledge-driven decision-making may evolve over the coming decade. The objective is not to predict specific outcomes but to identify opportunities that could contribute to a more innovative, resilient, and technologically advanced Bangladesh [1,17,21,24,29,30].
 
-### Vision for 2041
+## Vision for 2041
 
-By 2041, BAPIL aspires to contribute to an ecosystem where Artificial Intelligence, data analytics, and evidence-based policy intelligence support national development, public sector innovation, and responsible governance.
+By 2041, BAPIL aspires to contribute to an ecosystem where Artificial Intelligence, data analytics, and evidence-based policy intelligence support national development, public sector innovation, and responsible governance [21,23,29,30,80].
 
 The long-term vision is founded on five strategic pillars:
 
@@ -3101,9 +3101,9 @@ The long-term vision is founded on five strategic pillars:
 * Human Capital Development
 * International Collaboration
 
-### Knowledge-Based Governance
+## Knowledge-Based Governanc
 
-Future governance systems may increasingly rely on data, analytics, and digital intelligence to support informed decision-making.
+Future governance systems may increasingly rely on data, analytics, and digital intelligence to support informed decision-making [11,17,18,20,21,57,58].
 
 Potential developments include:
 
@@ -3113,11 +3113,11 @@ Potential developments include:
 * Improved policy monitoring and evaluation.
 * Enhanced public-sector transparency.
 
-The objective is to strengthen institutional capacity while maintaining human oversight and democratic accountability.
+The objective is to strengthen institutional capacity while maintaining human oversight and democratic accountability [1,5,11,17,21,68,69].
 
-### Responsible AI Ecosystem
+## Responsible AI Ecosystem 
 
-As AI technologies become more widespread, governance frameworks will become increasingly important.
+As AI technologies become more widespread, governance frameworks will become increasingly important [1,4,5,6,7,15].
 
 Long-term aspirations include:
 
@@ -3127,11 +3127,11 @@ Long-term aspirations include:
 * Risk management frameworks.
 * Public trust and accountability.
 
-The goal is to ensure that technological advancement remains aligned with societal values and public interests.
+The goal is to ensure that technological advancement remains aligned with societal values and public interests [1,4,5,6,7,8,9,14,15,50].
 
-### Bangla-Language AI and Digital Inclusion
+## Bangla-Language AI and Digital Inclusion 
 
-Bangla represents one of the most widely spoken languages in the world and provides a unique opportunity for AI innovation.
+Bangla represents one of the most widely spoken languages in the world and provides a unique opportunity for AI innovation [37,39,41,46,48,49].
 
 Future opportunities may include:
 
@@ -3141,11 +3141,11 @@ Future opportunities may include:
 * Multilingual government knowledge systems.
 * Improved digital accessibility.
 
-These developments may contribute to greater inclusion and broader access to digital services.
+These developments may contribute to greater inclusion and broader access to digital services [3,24,46,47,48,49,76,81].
 
-### National Research and Innovation Capacity
+## National Research and Innovation Capacity
 
-Long-term technological competitiveness depends upon strong research institutions and innovation ecosystems.
+Long-term technological competitiveness depends upon strong research institutions and innovation ecosystems [16,24,27,70,77].
 
 Potential aspirations include:
 
@@ -3155,11 +3155,11 @@ Potential aspirations include:
 * Centers of excellence in AI governance.
 * Stronger technology transfer mechanisms.
 
-Research capacity development remains a foundational element of sustainable innovation.
+Research capacity development remains a foundational element of sustainable innovation [16,24,35,36,70,77,80].
 
-### Human Capital and Talent Development
+## Human Capital and Talent Development
 
-The future AI ecosystem will depend on highly skilled professionals across multiple disciplines.
+The future AI ecosystem will depend on highly skilled professionals across multiple disciplines [35,36,73,76,77].
 
 Long-term objectives may include:
 
@@ -3169,11 +3169,11 @@ Long-term objectives may include:
 * Public-sector digital skills development.
 * Interdisciplinary AI governance expertise.
 
-Human capital development is expected to remain one of the most important drivers of long-term success.
+Human capital development is expected to remain one of the most important drivers of long-term success [35,36,63,64,73,76].
 
-### Public Sector Innovation
+## Public Sector Innovation 
 
-Emerging technologies may create opportunities to improve public service delivery and administrative efficiency.
+Emerging technologies may create opportunities to improve public service delivery and administrative efficiency [10,17,20,21,32,57,61].
 
 Potential applications include:
 
@@ -3183,11 +3183,11 @@ Potential applications include:
 * Data-driven planning tools.
 * Citizen engagement technologies.
 
-Such innovations should complement existing institutions and support better service delivery.
+Such innovations should complement existing institutions and support better service delivery [10,11,17,20,21,32,52,57,61,68,69,82].
 
-### International Leadership and Collaboration
+## International Leadership and Collaboration
 
-AI governance is a global challenge that benefits from international cooperation.
+AI governance is a global challenge that benefits from international cooperation [1,15,19,27].
 
 By 2041, Bangladesh may seek to strengthen its role within international discussions on:
 
@@ -3197,9 +3197,9 @@ By 2041, Bangladesh may seek to strengthen its role within international discuss
 * Cybersecurity.
 * Emerging technologies.
 
-International partnerships can support knowledge exchange, research collaboration, and capacity building.
+International partnerships can support knowledge exchange, research collaboration, and capacity building [15,19,27,54,55,60,65,70,75].
 
-### Vision Beyond Technology
+## Vision Beyond Technology
 
 The ultimate objective of BAPIL is not technology for its own sake.
 
@@ -3212,9 +3212,9 @@ The broader aspiration is to support:
 * Inclusive innovation.
 * Public benefit.
 
-Technology should remain a tool that serves people, institutions, and society.
+Technology should remain a tool that serves people, institutions, and society [3,5,22,23,24,74].
 
-### Long-Term Success Indicators
+## Long-Term Success Indicators
 
 Potential indicators of progress may include:
 
@@ -3226,13 +3226,13 @@ Potential indicators of progress may include:
 * Greater public awareness of responsible AI.
 * Increased participation in global AI governance discussions.
 
-These indicators should evolve alongside future national priorities and technological developments.
+These indicators should evolve alongside future national priorities and technological developments [20,21,26,71,73,77,80].
 
-### Conclusion
+## Conclusion
 
-The period between 2030 and 2041 presents significant opportunities for Bangladesh to strengthen its capabilities in Artificial Intelligence, digital governance, policy intelligence, and innovation. Through research, collaboration, education, and responsible technology development, BAPIL aspires to contribute to a future where AI serves as a tool for evidence-based governance, sustainable development, and public benefit.
+The period between 2030 and 2041 presents significant opportunities for Bangladesh to strengthen its capabilities in Artificial Intelligence, digital governance, policy intelligence, and innovation [21,29,30,80]. Through research, collaboration, education, and responsible technology development, BAPIL aspires to contribute to a future where AI serves as a tool for evidence-based governance, sustainable development, and public benefit [1,3,4,5,17,23,24].
 
-The realization of this vision will depend on continued investment in people, institutions, knowledge, and responsible innovation, supported by strong collaboration among government, academia, industry, and civil society.
+The realization of this vision will depend on continued investment in people, institutions, knowledge, and responsible innovation, supported by strong collaboration among government, academia, industry, and civil society [19,27,35,36,70,75].
 
 ## Chapter 16: Risks, Ethics, and Responsible AI
 
