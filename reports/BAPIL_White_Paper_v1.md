@@ -1432,21 +1432,21 @@ Rather than replacing policymakers or institutions, the dashboard is envisioned 
 
 The next chapter introduces the concept of a Bangla Policy Foundation Model and explores how Bangla-language AI technologies may contribute to policy intelligence and public sector innovation in Bangladesh [37,46,48,49,80].
 
-## Chapter 8: Bangla Policy Foundation Model (BPFM)
+# Chapter 8: Bangla Policy Foundation Model (BPFM)
 
-### Introduction
+## Introduction
 
-Recent advances in Artificial Intelligence have demonstrated the transformative potential of large-scale foundation models capable of understanding, generating, and analyzing human language. These models have become increasingly important in areas such as information retrieval, document analysis, knowledge management, decision support, and public service delivery.
+Recent advances in Artificial Intelligence have demonstrated the transformative potential of large-scale foundation models capable of understanding, generating, and analyzing human language [37,39,41,42,43,44]. These models have become increasingly important in areas such as information retrieval, document analysis, knowledge management, decision support, and public service delivery [10,17,21,24].
 
-However, many existing foundation models are primarily optimized for high-resource languages and may not adequately address the linguistic, cultural, and policy-specific requirements of Bangladesh. This creates an opportunity to explore the development of a Bangla Policy Foundation Model (BPFM), a specialized AI framework designed to support policy intelligence, governance research, and public sector innovation in the Bangla language.
+However, many existing foundation models are primarily optimized for high-resource languages and may not adequately address the linguistic, cultural, and policy-specific requirements of Bangladesh [41,45,46,48,49]. This creates an opportunity to explore the development of a Bangla Policy Foundation Model (BPFM), a specialized AI framework designed to support policy intelligence, governance research, and public sector innovation in the Bangla language [24,30,35,80].
 
 The concept proposed in this chapter is intended as a long-term research direction rather than a fully developed implementation plan.
 
-### What is a Foundation Model?
+## What is a Foundation Model?
 
-A foundation model is a large-scale AI model trained on diverse datasets that can perform multiple tasks through adaptation and fine-tuning.
+A foundation model is a large-scale AI model trained on diverse datasets that can perform multiple tasks through adaptation and fine-tuning [41].
 
-Examples of foundation model capabilities include:
+Examples of foundation model capabilities include [39,42,43,44]:
 
 * Question answering
 * Text summarization
@@ -1456,212 +1456,212 @@ Examples of foundation model capabilities include:
 * Knowledge extraction
 * Conversational assistance
 
-These capabilities provide opportunities for supporting policy analysis and governance-related research.
+These capabilities provide opportunities for supporting policy analysis and governance-related research [10,17,21].
 
-### Why a Bangla Policy Foundation Model?
+## Why a Bangla Policy Foundation Model?
 
-Bangla is among the most widely spoken languages in the world. Despite its importance, the availability of large-scale AI resources specifically designed for Bangla policy analysis and governance applications remains limited.
+Bangla is among the most widely spoken languages in the world. Despite its importance, the availability of large-scale AI resources specifically designed for Bangla policy analysis and governance applications remains limited [46,48,49,80].
 
 A specialized Bangla Policy Foundation Model may help address several challenges:
 
-* Large volumes of policy documents.
-* Complex government reports.
-* Budget and planning documents.
-* Legislative texts.
-* Citizen feedback and consultations.
-* Public sector knowledge management.
+* Large volumes of policy documents [29,30]
+* Complex government reports [31,32]
+* Budget and planning documents [29,31]
+* Legislative texts [34]
+* Citizen feedback and consultations [21,24,81]
+* Public sector knowledge management [17,21,82]
 
-The model could assist researchers and institutions in navigating large information repositories more efficiently.
+The model could assist researchers and institutions in navigating large information repositories more efficiently [18,21].
 
-### Strategic Objectives
+## Strategic Objectives
 
 The proposed Bangla Policy Foundation Model would aim to support:
 
-#### Policy Intelligence
+### Policy Intelligence
 
-* Policy document analysis.
-* Regulatory monitoring.
-* Legislative analysis.
-* Evidence synthesis.
+* Policy document analysis [10,17]
+* Regulatory monitoring [6,15]
+* Legislative analysis [34]
+* Evidence synthesis [21,24]
 
-#### Knowledge Management
+### Knowledge Management
 
-* Government knowledge repositories.
-* Research databases.
-* Institutional memory systems.
-* Public information access.
+* Government knowledge repositories [17,21]
+* Research databases [25]
+* Institutional memory systems [32]
+* Public information access [33,83]
 
-#### Citizen Engagement
+### Citizen Engagement
 
-* Analysis of public feedback.
-* Sentiment analysis.
-* Public consultation support.
-* Citizen information services.
+* Analysis of public feedback [21,24]
+* Sentiment analysis [81]
+* Public consultation support [22]
+* Citizen information services [17,21]
 
-#### Bangla Language Technology
+### Bangla Language Technology
 
-* Bangla Natural Language Processing (NLP).
-* Document understanding.
-* Question-answering systems.
-* Semantic search.
+* Bangla Natural Language Processing (NLP) [46,48,49]
+* Document understanding [41,42]
+* Question-answering systems [39,42]
+* Semantic search [38]
 
-### Potential Data Sources
+## Potential Data Sources
 
 A future research initiative may explore the use of publicly available and appropriately governed data sources, including:
 
-#### Government Publications
+### Government Publications
 
-* Policy documents
-* Strategic plans
-* Budget reports
-* Annual reports
-* Regulatory documents
+* Policy documents [29,30]
+* Strategic plans [29,30]
+* Budget reports [31]
+* Annual reports [31]
+* Regulatory documents [34]
 
-#### Parliamentary and Legislative Resources
+### Parliamentary and Legislative Resources
 
 * Parliamentary proceedings
-* Legislative records
+* Legislative records [34]
 * Committee reports
 
-#### Research and Academic Materials
+### Research and Academic Materials
 
-* Research publications
-* Policy studies
-* Development reports
-* International best practices
+* Research publications [25]
+* Policy studies [17,21]
+* Development reports [23,24]
+* International best practices [11,17,21]
 
-#### Public Information Resources
+### Public Information Resources
 
 * News archives
-* Public consultation documents
-* Open government datasets
+* Public consultation documents [21,22]
+* Open government datasets [33,78,79]
 
-All data usage should comply with legal, ethical, and governance requirements.
+All data usage should comply with legal, ethical, and governance requirements [1,4,5,6,15,34].
 
-### Conceptual Architecture
+## Conceptual Architecture
 
 The Bangla Policy Foundation Model may consist of several components:
 
-#### Data Collection Layer
+### Data Collection Layer
 
-Responsible for gathering and organizing policy-related information.
+Responsible for gathering and organizing policy-related information from trusted and governed sources [18,33,78,79].
 
-#### Language Processing Layer
-
-Supports:
-
-* Tokenization
-* Language understanding
-* Named entity recognition
-* Information extraction
-
-#### Knowledge Layer
+### Language Processing Layer
 
 Supports:
 
-* Knowledge repositories
+* Tokenization [37]
+* Language understanding [39,42]
+* Named entity recognition [46]
+* Information extraction [41]
+
+### Knowledge Layer
+
+Supports:
+
+* Knowledge repositories [17,21]
 * Knowledge graphs
 * Policy document indexing
 * Semantic relationships
 
-#### Foundation Model Layer
+### Foundation Model Layer
 
 Supports:
 
-* Language understanding
-* Context-aware retrieval
-* Question answering
-* Document summarization
+* Language understanding [41,42,43,44]
+* Context-aware retrieval [38]
+* Question answering [39,42]
+* Document summarization [41]
 
-#### Application Layer
+### Application Layer
 
 Supports:
 
-* Policy intelligence dashboards
+* Policy intelligence dashboards [17,21]
 * Research tools
-* Search systems
+* Search systems [38]
 * Analytical interfaces
 
-### Retrieval-Augmented Generation (RAG)
+## Retrieval-Augmented Generation (RAG)
 
-Future research may explore Retrieval-Augmented Generation (RAG) architectures.
+Future research may explore Retrieval-Augmented Generation (RAG) architectures [38].
 
-Rather than relying solely on model memory, RAG systems retrieve relevant information from external knowledge repositories before generating responses.
+Rather than relying solely on model memory, RAG systems retrieve relevant information from external knowledge repositories before generating responses [38].
 
 Potential benefits include:
 
-* Improved factual grounding.
-* Better transparency.
-* Access to updated information.
-* Reduced hallucination risks.
-* Stronger policy research capabilities.
+* Improved factual grounding [38]
+* Better transparency [50]
+* Access to updated information [38]
+* Reduced hallucination risks [2,38]
+* Stronger policy research capabilities [17,21]
 
-RAG-based systems may be particularly valuable for policy intelligence applications where accuracy and traceability are essential.
+RAG-based systems may be particularly valuable for policy intelligence applications where accuracy and traceability are essential [2,7,15].
 
-### Potential Use Cases
+## Potential Use Cases
 
 The Bangla Policy Foundation Model may support:
 
-#### Policy Document Search
+### Policy Document Search
 
-Users could search large collections of policy documents using natural language queries.
+Users could search large collections of policy documents using natural language queries [38].
 
-#### Policy Summarization
+### Policy Summarization
 
-Long reports could be summarized into concise, understandable insights.
+Long reports could be summarized into concise, understandable insights [41,42].
 
-#### Budget Analysis
+### Budget Analysis
 
-AI-assisted tools could help identify major themes, trends, and allocations within public budgets.
+AI-assisted tools could help identify major themes, trends, and allocations within public budgets [31].
 
-#### Legislative Analysis
+### Legislative Analysis
 
-Researchers could analyze laws, regulations, and parliamentary discussions more efficiently.
+Researchers could analyze laws, regulations, and parliamentary discussions more efficiently [34].
 
-#### Knowledge Discovery
+### Knowledge Discovery
 
-The system could help identify relationships across policies, programs, institutions, and development priorities.
+The system could help identify relationships across policies, programs, institutions, and development priorities [17,21].
 
-#### Responsible AI Considerations
+## Responsible AI Considerations
 
-The development of any policy-focused foundation model should be guided by responsible AI principles.
+The development of any policy-focused foundation model should be guided by responsible AI principles [1,4,5,6,7,15,51,53].
 
 Important considerations include:
 
-* Transparency.
-* Human oversight.
-* Data governance.
-* Privacy protection.
-* Security controls.
-* Fairness and bias mitigation.
-* Accountability mechanisms.
+* Transparency [1,4,50]
+* Human oversight [5,15,68]
+* Data governance [18,21]
+* Privacy protection [5,34]
+* Security controls [14,71,72]
+* Fairness and bias mitigation [45,50]
+* Accountability mechanisms [1,15,68,69]
 
-The model should support human decision-making rather than replace human judgment.
+The model should support human decision-making rather than replace human judgment [1,4,5,7].
 
-#### Research Challenges
+## Research Challenges
 
 Several challenges would need to be addressed:
 
-* Availability of high-quality Bangla datasets.
-* Data standardization and quality.
-* Computational infrastructure requirements.
-* Model evaluation and benchmarking.
-* Governance and regulatory considerations.
-* Long-term maintenance and sustainability.
+* Availability of high-quality Bangla datasets [46,48,49,81]
+* Data standardization and quality [18,78,79]
+* Computational infrastructure requirements [35,36,77]
+* Model evaluation and benchmarking [41,50,77]
+* Governance and regulatory considerations [1,5,6,15]
+* Long-term maintenance and sustainability [17,24,30]
 
-Addressing these challenges would require collaboration among academia, government, industry, and research institutions.
+Addressing these challenges would require collaboration among academia, government, industry, and research institutions [24,27,35,36,80].
 
 ## Long-Term Vision
 
-In the long term, a Bangla Policy Foundation Model could contribute to a broader ecosystem of Bangla-language AI technologies supporting governance, education, research, and public services.
+In the long term, a Bangla Policy Foundation Model could contribute to a broader ecosystem of Bangla-language AI technologies supporting governance, education, research, and public services [24,30,35,36,76,80].
 
-Such a model could serve as a foundational component within the broader BAPIL framework by supporting knowledge discovery, policy intelligence, and evidence-based research while promoting responsible AI development aligned with national priorities.
+Such a model could serve as a foundational component within the broader BAPIL framework by supporting knowledge discovery, policy intelligence, and evidence-based research while promoting responsible AI development aligned with national priorities [1,4,5,24,30].
 
-### Conclusion
+## Conclusion
 
-The Bangla Policy Foundation Model represents a strategic research concept that seeks to explore how modern AI technologies can support policy intelligence and public sector innovation in Bangladesh. By combining Bangla-language processing, knowledge management, information retrieval, and responsible AI principles, the model may contribute to future efforts aimed at strengthening evidence-based governance and digital transformation.
+The Bangla Policy Foundation Model represents a strategic research concept that seeks to explore how modern AI technologies can support policy intelligence and public sector innovation in Bangladesh [24,30,35,80]. By combining Bangla-language processing, knowledge management, information retrieval, and responsible AI principles [38,46,48,49], the model may contribute to future efforts aimed at strengthening evidence-based governance and digital transformation [17,21,30].
 
-The next chapter examines AI Governance Frameworks and discusses the institutional, ethical, and regulatory considerations necessary for responsible AI adoption within the BAPIL ecosystem.
+The next chapter examines AI Governance Frameworks and discusses the institutional, ethical, and regulatory considerations necessary for responsible AI adoption within the BAPIL ecosystem [1,4,5,6,15].
 
 ## Chapter 9: AI Governance Framework
 
