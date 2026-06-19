@@ -36,7 +36,7 @@ No recommendation contained in this document should be interpreted as official g
 
 ## Why I Wrote This White Paper
 
-During my studies in Artificial Intelligence at Université Paris-Saclay, I became increasingly interested in the intersection of AI, governance, public policy, and evidence-based decision-making. While much of the global discussion surrounding Artificial Intelligence focuses on commercial applications, I believe there are also important opportunities for AI to contribute to policy research, public-sector innovation, and digital governance.
+During my master’s studies in Artificial Intelligence at Université Paris-Saclay, I became increasingly interested in the intersection of Artificial Intelligence, governance, public policy, and evidence-based decision-making. While much of the global discussion surrounding Artificial Intelligence focuses on commercial applications, I believe there are also important opportunities for AI to contribute to policy research, public-sector innovation, and digital governance.
 
 Bangladesh has made significant progress in digital transformation and has demonstrated growing interest in emerging technologies. As AI continues to evolve, I believe it is important to explore how these technologies may be applied responsibly to support governance, knowledge management, policy analysis, and public service improvement.
 
