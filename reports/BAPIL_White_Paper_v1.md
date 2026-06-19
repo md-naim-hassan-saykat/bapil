@@ -3465,15 +3465,15 @@ By emphasizing transparency, accountability, fairness, privacy, security, and pu
 
 The final chapter summarizes the key findings of this white paper and outlines the broader vision of BAPIL as a research-driven initiative for AI governance, policy intelligence, and public sector innovation in Bangladesh.
 
-## Chapter 17: Strategic Recommendations
+# Chapter 17: Strategic Recommendations
 
-### Introduction
+## Introduction
 
 The Bangladesh AI Policy & Innovation Lab (BAPIL) is proposed as a long-term research and policy intelligence initiative that seeks to contribute to responsible Artificial Intelligence adoption, evidence-based governance, and public sector innovation [1,3,10,17,21]. Drawing upon international best practices, emerging technological developments, and Bangladesh’s national development aspirations, this chapter presents a set of strategic recommendations that may support future discussions on AI governance, digital transformation, and innovation ecosystem development [1,5,21,29,30].
 
 These recommendations are intended as discussion points and do not constitute official policy proposals.
 
-### Recommendation 1: Establish a National AI Governance Framework
+## Recommendation 1: Establish a National AI Governance Framework
 
 As Artificial Intelligence becomes increasingly integrated into public institutions, businesses, and digital services, Bangladesh may benefit from the development of a comprehensive AI governance framework [1,4,5,6,7].
 
@@ -3488,7 +3488,7 @@ Key considerations include:
 
 International frameworks such as the OECD AI Principles, UNESCO Recommendation on the Ethics of AI, NIST AI Risk Management Framework, and the European Union AI Act may provide useful reference points for future discussions [1,4,5,6,7,15,51]. Such frameworks emphasize trustworthy, human-centered, transparent, and accountable AI systems that respect democratic values and human rights [1,5].
 
-### Recommendation 2: Strengthen Bangla-Language AI Research
+## Recommendation 2: Strengthen Bangla-Language AI Research
 
 Bangla represents one of the largest language communities in the world and offers significant opportunities for AI innovation [37,39,44].
 
@@ -3503,7 +3503,7 @@ Potential priorities include:
 
 Investment in Bangla AI research may contribute to greater digital inclusion and accessibility [24,46,47,48,49,81].
 
-### Recommendation 3: Expand Open Data and Knowledge-Sharing Initiatives
+## Recommendation 3: Expand Open Data and Knowledge-Sharing Initiatives
 
 Evidence-based governance depends on access to reliable, high-quality information [18,21].
 
@@ -3517,7 +3517,7 @@ Potential initiatives include:
 
 Greater access to public information may support research, innovation, transparency, and civic engagement [18,21,33,78,79,82].
 
-### Recommendation 4: Develop National Knowledge Repositories
+## Recommendation 4: Develop National Knowledge Repositories
 
 Governments generate large volumes of reports, policies, regulations, and institutional knowledge that are often difficult to access and analyze [10,11,17,32].
 
@@ -3531,7 +3531,7 @@ Future efforts may explore:
 
 Knowledge management systems can support continuity, learning, and evidence-based decision-making [10,11,17,21,32,58].
 
-### Recommendation 5: Invest in AI Research and Fellowship Programs
+## Recommendation 5: Invest in AI Research and Fellowship Programs
 
 Long-term AI competitiveness depends on sustained investment in research and human capital [16,35,36,73,77].
 
@@ -3546,7 +3546,7 @@ Potential initiatives include:
 
 Research investments can help strengthen national expertise and innovation capacity [16,27,35,36,70,77,80].
 
-### Recommendation 6: Promote Responsible AI Adoption
+## Recommendation 6: Promote Responsible AI Adoption
 
 The adoption of AI technologies should be accompanied by appropriate governance, oversight, and risk management mechanisms [1,5,6,7].
 
@@ -3561,7 +3561,7 @@ Key priorities include:
 
 Responsible adoption can help maximize benefits while reducing potential risks [1,5,6,7,14,15,50,74]. International AI governance frameworks consistently emphasize transparency, accountability, fairness, security, and human oversight as core requirements for trustworthy AI.
 
-### Recommendation 7: Strengthen Academia-Government-Industry Collaboration
+## Recommendation 7: Strengthen Academia-Government-Industry Collaboration
 
 AI ecosystems are most effective when researchers, policymakers, businesses, and civil society organizations work together [3,19,27].
 
@@ -3576,7 +3576,7 @@ Potential approaches include:
 
 Cross-sector collaboration can accelerate innovation and improve implementation capacity [19,27,35,36,70,80].
 
-### Recommendation 8: Develop AI Literacy and Capacity-Building Programs
+## Recommendation 8: Develop AI Literacy and Capacity-Building Programs
 
 AI readiness requires not only technical specialists but also informed policymakers, public servants, educators, and citizens [26,73,76,80].
 
@@ -3591,7 +3591,7 @@ Potential initiatives include:
 
 Building AI literacy can support more informed and inclusive participation in technological transformation [35,36,64,73,76,80]. Recent assessments indicate that AI readiness depends heavily on workforce development, curriculum modernization, and cross-sector skills development. 
 
-### Recommendation 9: Strengthen Cybersecurity and Digital Resilience
+## Recommendation 9: Strengthen Cybersecurity and Digital Resilience
 
 As digital technologies become increasingly important, cybersecurity and resilience should remain strategic priorities [14,34,71,72].
 
@@ -3606,7 +3606,7 @@ Potential areas of focus include:
 
 Strong cybersecurity foundations are essential for sustainable digital transformation [14,34,71,72].
 
-### Recommendation 10: Position Bangladesh as a Regional AI Innovation Partner
+## Recommendation 10: Position Bangladesh as a Regional AI Innovation Partner
 
 Bangladesh has opportunities to strengthen its participation within regional and international AI ecosystems [16,19,27,35,36].
 
@@ -3621,7 +3621,7 @@ Potential opportunities include:
 
 International engagement can accelerate learning, capacity building, and innovation [19,27,54,55,60,65,70]. International cooperation has become an important component of national AI strategies and global AI governance initiatives. 
 
-### Conclusion
+## Conclusion
 
 The recommendations presented in this chapter reflect key themes that have emerged throughout this white paper, including responsible AI governance, evidence-based policymaking, digital transformation, research capacity development, and innovation ecosystem growth [1,17,21,24,29,30].
 
