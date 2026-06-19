@@ -946,27 +946,27 @@ Through collaboration with universities, research institutions, government agenc
 
 The vision of BAPIL is grounded in the belief that responsible Artificial Intelligence, combined with strong governance, research excellence, and interdisciplinary collaboration, can contribute to more informed decision-making and sustainable national development [1, 5, 15, 23, 24]. Through research, dialogue, and innovation, BAPIL aims to support the exploration of AI-enabled solutions that align with Bangladesh’s long-term aspirations and digital transformation goals [29, 30, 35, 36].
 
-## Chapter 6: BAPIL Architecture
+# Chapter 6: BAPIL Architecture
 
-### Introduction
+## Introduction
 
-The Bangladesh AI Policy & Innovation Lab (BAPIL) is envisioned as a research-oriented policy intelligence framework that integrates data analytics, Artificial Intelligence (AI), knowledge management, and decision-support capabilities. The proposed architecture is designed to facilitate evidence-based analysis, policy research, digital governance studies, and responsible AI experimentation.
+The Bangladesh AI Policy & Innovation Lab (BAPIL) is envisioned as a research-oriented policy intelligence framework that integrates data analytics, Artificial Intelligence (AI), knowledge management, and decision-support capabilities. The proposed architecture is designed to facilitate evidence-based analysis, policy research, digital governance studies, and responsible AI experimentation [1, 4, 10, 17, 21].
 
-The architecture does not aim to automate policymaking. Instead, it seeks to provide analytical tools, knowledge resources, and AI-assisted insights that can support researchers, policymakers, and stakeholders in understanding complex policy challenges.
+The architecture does not aim to automate policymaking. Instead, it seeks to provide analytical tools, knowledge resources, and AI-assisted insights that can support researchers, policymakers, and stakeholders in understanding complex policy challenges [5, 7, 15, 17].
 
-### Architectural Principles
+## Architectural Principles
 
 The BAPIL architecture is guided by the following principles:
 
-* Human-centered decision support.
-* Responsible and ethical AI.
-* Transparency and explainability.
-* Data security and privacy protection.
-* Interoperability and scalability.
-* Research-driven innovation.
-* Modular and extensible design.
+* Human-centered decision support [1, 4, 5, 15]
+* Responsible and ethical AI [2, 5, 6, 7]
+* Transparency and explainability [4, 5, 7, 50]
+* Data security and privacy protection [6, 14, 34, 71]
+* Interoperability and scalability [11, 17, 20, 57, 59]
+* Research-driven innovation [16, 24, 27, 35]
+* Modular and extensible design [7, 8, 10, 17]
 
-### High-Level Architecture
+## High-Level Architecture
 
 The proposed BAPIL architecture consists of six primary layers:
 
@@ -977,7 +977,7 @@ The proposed BAPIL architecture consists of six primary layers:
 5. Decision Support Layer
 6. Governance and Security Layer
 
-Together, these layers create an integrated environment for policy intelligence and research.
+Together, these layers create an integrated environment for policy intelligence, AI-assisted analysis, and governance research [7, 10, 17, 18].
 
 ┌─────────────────────┐
 │    Data Sources     │
@@ -1006,161 +1006,161 @@ Together, these layers create an integrated environment for policy intelligence 
 Caption: 
 Figure 4. High-level conceptual architecture of the BAPIL framework.
 
-### Data Sources Layer
+## Data Sources Layer
 
 The Data Sources Layer provides the information required for policy analysis and research activities.
 
 Potential sources include:
 
-#### Government Data
+### Government Data
 
-* National statistics
-* Economic indicators
-* Budget reports
-* Development plans
-* Public service datasets
+* National statistics [31]
+* Economic indicators [29, 31]
+* Budget reports [29, 31]
+* Development plans [29, 30]
+* Public service datasets [33, 83]
 
-#### Legislative and Policy Documents
+### Legislative and Policy Documents
 
-* Laws and regulations
+* Laws and regulations [34]
 * Parliamentary proceedings
-* Policy reports
-* Strategic planning documents
+* Policy reports [29, 30]
+* Strategic planning documents [29, 30]
 
-#### Public Information Sources
+### Public Information Sources
 
 * News media
 * Public consultations
-* Research publications
-* Open government data
+* Research publications [24, 79, 80]
+* Open government data [33, 78]
 
-#### Citizen Feedback Sources
+### Citizen Feedback Sources
 
 * Surveys
-* Public opinion reports
-* Social media trends
-* Digital participation platforms
+* Public opinion reports [79]
+* Social media trends [81]
+* Digital participation platforms [17, 21]
 
-The purpose of this layer is to aggregate diverse sources of information that may contribute to policy analysis.
+The purpose of this layer is to aggregate diverse sources of information that may contribute to policy analysis and evidence-based decision support [18, 21, 22].
 
-### Data Management Layer
+## Data Management Layer
 
 The Data Management Layer is responsible for data collection, storage, integration, and preprocessing.
 
 Key functions include:
 
-* Data ingestion
-* Data cleaning
-* Data validation
-* Metadata management
-* Data cataloging
-* Secure storage
+* Data ingestion [18, 20]
+* Data cleaning [18]
+* Data validation [18, 31]
+* Metadata management [18, 33]
+* Data cataloging [17, 18]
+* Secure storage [14, 34, 71]
 
-A centralized data repository may support efficient access to information while maintaining appropriate governance and security controls.
+A centralized data repository may support efficient access to information while maintaining appropriate governance, privacy, and security controls [14, 17, 18, 34].
 
-### Policy Intelligence Layer
+## Policy Intelligence Layer
 
 The Policy Intelligence Layer represents the analytical core of the BAPIL framework.
 
 Potential capabilities include:
 
-#### Policy Analytics
+### Policy Analytics
 
-* Trend analysis
-* Comparative analysis
-* Policy impact assessment
-* Scenario exploration
+* Trend analysis [10, 17, 20]
+* Comparative analysis [17, 21]
+* Policy impact assessment [10, 17]
+* Scenario exploration [60, 61]
 
-#### Natural Language Processing (NLP)
+### Natural Language Processing (NLP)
 
-* Document summarization
-* Information extraction
-* Topic modeling
-* Sentiment analysis
+* Document summarization [38, 39, 42]
+* Information extraction [38, 46]
+* Topic modeling [46, 81]
+* Sentiment analysis [81]
 
-#### Data Analytics
+### Data Analytics
 
-* Statistical analysis
-* Predictive modeling
-* Visualization
-* Pattern identification
+* Statistical analysis [18, 31]
+* Predictive modeling [39, 42]
+* Visualization [17, 20]
+* Pattern identification [18, 77]
 
-#### Knowledge Discovery
+### Knowledge Discovery
 
-* Identification of emerging issues
-* Evidence synthesis
-* Cross-sector analysis
+* Identification of emerging issues [2, 77]
+* Evidence synthesis [18, 24]
+* Cross-sector analysis [17, 21]
 
-These tools are intended to support research and analytical activities rather than replace human judgment.
+These tools are intended to support research and analytical activities rather than replace human judgment [5, 7, 15].
 
-### Knowledge Management Layer
+## Knowledge Management Layer
 
 Effective policymaking depends on access to organized and reliable knowledge resources.
 
 The Knowledge Management Layer may include:
 
-* Policy document repositories
-* Research databases
-* Best-practice libraries
-* Knowledge graphs
-* Institutional memory systems
+* Policy document repositories [32, 83]
+* Research databases [24, 79, 80]
+* Best-practice libraries [11, 17, 25]
+* Knowledge graphs [38]
+* Institutional memory systems [32, 57]
 
-This layer aims to preserve, organize, and make information more accessible to researchers and stakeholders.
+This layer aims to preserve, organize, and make information more accessible to researchers and stakeholders while supporting long-term institutional learning [17, 21, 32].
 
-### Decision Support Layer
+## Decision Support Layer
 
 The Decision Support Layer provides user-facing tools that facilitate understanding and interpretation of analytical outputs.
 
 Potential components include:
 
-#### Policy Intelligence Dashboard
+### Policy Intelligence Dashboard
 
-* Key indicators
-* Trend monitoring
-* Data visualization
-* Research insights
+* Key indicators [20, 31]
+* Trend monitoring [17, 21]
+* Data visualization [20]
+* Research insights [24, 77]
 
-#### Interactive Analytics Tools
+### Interactive Analytics Tools
 
-* Scenario exploration
-* Comparative analysis
-* Custom reporting
+* Scenario exploration [60, 61]
+* Comparative analysis [17, 20]
+* Custom reporting [21]
 
-#### Knowledge Search Systems
+### Knowledge Search Systems
 
-* Intelligent document retrieval
-* Semantic search
-* AI-assisted information discovery
+* Intelligent document retrieval [38]
+* Semantic search [38, 46, 49]
+* AI-assisted information discovery [39, 42, 43]
 
-The goal is to improve accessibility and usability of policy-relevant information.
+The goal is to improve accessibility, transparency, and usability of policy-relevant information [10, 17, 21].
 
-### Governance and Security Layer
+## Governance and Security Layer
 
 Responsible AI and effective governance require strong oversight mechanisms.
 
 Key components may include:
 
-#### AI Governance Framework
+### AI Governance Framework
 
-* Transparency principles
-* Accountability mechanisms
-* Human oversight requirements
+* Transparency principles [1, 4, 5]
+* Accountability mechanisms [5, 6, 15, 68]
+* Human oversight requirements [5, 6, 68]
 
-#### Data Governance Framework
+### Data Governance Framework
 
-* Data quality standards
-* Privacy protection
-* Data access policies
+* Data quality standards [18, 79]
+* Privacy protection [6, 14, 34]
+* Data access policies [18, 33]
 
-#### Security Controls
+### Security Controls
 
-* Cybersecurity monitoring
-* Access management
-* Risk assessment
+* Cybersecurity monitoring [14, 71, 72]
+* Access management [14, 34]
+* Risk assessment [2, 7, 71]
 
-This layer ensures that research and analytical activities align with ethical, legal, and institutional requirements.
+This layer ensures that research and analytical activities align with ethical, legal, cybersecurity, and institutional requirements [5, 6, 7, 14, 15].
 
-### Conceptual Information Flow
+## Conceptual Information Flow
 
 The BAPIL architecture may be represented through the following simplified workflow:
 
@@ -1178,26 +1178,28 @@ Policy Intelligence Dashboard
        ↓
 Researchers & Stakeholders
 
-This workflow illustrates how information may move through the system from data acquisition to analytical insights and user interaction.
+This workflow illustrates how information may move through the system from data acquisition to analytical insights and user interaction [17, 18, 21].
 
-### Future Research Components
+## Future Research Components
 
 Future versions of the architecture may explore:
 
-* Bangla Policy Foundation Models.
-* Retrieval-Augmented Generation (RAG) systems.
-* Knowledge graph technologies.
-* Multi-agent policy analysis systems.
-* Explainable AI mechanisms.
-* Advanced public sentiment analysis tools.
+* Bangla Policy Foundation Models [41, 46, 48, 49]
+* Retrieval-Augmented Generation (RAG) systems [38]
+* Knowledge graph technologies [38]
+* Multi-agent policy analysis systems [41, 42]
+* Explainable AI mechanisms [5, 7, 50]
+* Advanced public sentiment analysis tools [46, 81]
+* Policy-oriented Bangla large language models [46, 48, 49]
+* AI readiness and governance benchmarking systems [26, 80]
 
-These components would remain subject to research, evaluation, and governance considerations.
+These components would remain subject to research, evaluation, safety, transparency, and governance considerations [2, 5, 7, 50].
 
-### Conclusion
+## Conclusion
 
-The proposed BAPIL architecture provides a conceptual framework for integrating data, AI, knowledge management, and policy intelligence capabilities within a research-oriented environment. By combining analytical tools with responsible governance principles, the architecture seeks to support evidence-based research, informed discussion, and public sector innovation.
+The proposed BAPIL architecture provides a conceptual framework for integrating data, AI, knowledge management, and policy intelligence capabilities within a research-oriented environment. By combining analytical tools with responsible governance principles, the architecture seeks to support evidence-based research, informed discussion, and public sector innovation [1, 5, 7, 17, 21].
 
-The next chapter introduces the concept of a Policy Intelligence Dashboard and explores how policymakers, researchers, and stakeholders may interact with analytical insights generated through the BAPIL framework.
+The architecture builds upon international best practices in AI governance, digital government, knowledge management, and public-sector innovation while remaining aligned with Bangladesh’s digital transformation agenda, Smart Bangladesh Vision 2041, AI readiness initiatives, and emerging AI ecosystem development efforts [17, 20, 21, 29, 30, 35, 36, 80].
 
 ## Chapter 7: Policy Intelligence Dashboard
 
