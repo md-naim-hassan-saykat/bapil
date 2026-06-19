@@ -34,14 +34,14 @@ The Bangladesh AI Policy & Innovation Lab (BAPIL) is proposed as a conceptual fr
 This document is intended solely for educational, research, and policy discussion purposes.
 No recommendation contained in this document should be interpreted as official government policy or institutional endorsement.
 
-# Author's Note
+## Author's Note
 
 This document is intended as a public discussion draft.
 The concepts presented herein are exploratory and are expected to evolve through future research, stakeholder feedback, and collaborative discussion.
 
 Comments, corrections, and constructive suggestions are welcome.
 
-# Suggested Citation
+## Suggested Citation
 
 Saykat, M. N. H. (2026).
 
@@ -51,13 +51,13 @@ BAPIL Research Initiative.
 
 Zenodo. DOI: To be assigned.
 
-# Version History
+## Version History
 
 | Version | Date | Description |
 |----------|----------|----------|
 | 1.0 | June 2026 | Initial public discussion draft |
 
-# Acronyms
+## Acronyms
 
 | Acronym | Meaning |
 |----------|----------|
@@ -79,7 +79,7 @@ Zenodo. DOI: To be assigned.
 | LLM | Large Language Model |
 | XAI | Explainable Artificial Intelligence |
 
-# Glossary
+## Glossary
 
 | Term | Definition |
 |------|------------|
