@@ -480,13 +480,13 @@ Canada’s experience provides a practical model for implementing AI governance 
 
 ## Comparative Analysis
 
-Although the seven countries examined in this chapter differ in size, governance structures, and economic conditions, several common themes emerge [51–70]:
+Although the international case studies examined in this chapter differ in governance structures, levels of digital maturity, institutional arrangements, and economic contexts, several common themes emerge [51–70]:
 
-* Strong government leadership is essential for digital transformation.
-* Investment in digital infrastructure enables innovation and service delivery.
-* AI governance frameworks help promote trust and accountability.
-* Collaboration among government, academia, industry, and civil society strengthens implementation capacity.
-* Talent development and education are critical for long-term success.
+* Strong government leadership and long-term strategic vision are essential drivers of successful digital transformation [52, 54, 56, 60, 65, 66].
+* Sustained investment in digital infrastructure and interoperable public systems enables innovation, efficiency, and improved service delivery [17, 20, 21, 57–59].
+* AI governance frameworks and risk-management mechanisms play a critical role in promoting public trust, transparency, accountability, and responsible innovation [51, 53, 60–62, 68, 69].
+* Effective collaboration among government, academia, industry, and civil society strengthens implementation capacity and accelerates innovation [19, 27, 54, 63, 70].
+* Talent development, digital literacy, and AI education are fundamental to long-term national competitiveness and AI readiness [63, 64, 73, 76, 77].
 
 These experiences demonstrate that successful AI-enabled governance depends not only on technology but also on institutions, policies, human capital, and public trust [1, 3, 5, 10, 17, 21, 51–70].
 
@@ -790,23 +790,23 @@ Bangladesh stands at an important stage in its AI development journey. The count
 
 Understanding the current AI landscape is essential for identifying future priorities and opportunities. The next chapter presents the vision and strategic objectives of BAPIL as a proposed framework for supporting AI governance, policy intelligence, and public sector innovation in Bangladesh [1, 5, 17, 24, 29, 30, 35, 36].
 
-## Chapter 5: BAPIL Vision
+# Chapter 5: BAPIL Vision
 
-### Introduction
+## Introduction
 
-The rapid advancement of Artificial Intelligence (AI), data analytics, and digital technologies presents both opportunities and challenges for governments, institutions, and societies worldwide. As Bangladesh continues its digital transformation journey, there is growing need for research-driven frameworks that can support evidence-based policymaking, responsible AI adoption, and public sector innovation.
+The rapid advancement of Artificial Intelligence (AI), data analytics, and digital technologies presents both opportunities and challenges for governments, institutions, and societies worldwide. As Bangladesh continues its digital transformation journey, there is growing need for research-driven frameworks that can support evidence-based policymaking, responsible AI adoption, digital governance, and public sector innovation [1–7, 10, 17–26].
 
-The Bangladesh AI Policy & Innovation Lab (BAPIL) is envisioned as a multidisciplinary research and innovation initiative that explores how AI and data-driven technologies can contribute to governance, policy intelligence, digital resilience, and national development.
+The Bangladesh AI Policy & Innovation Lab (BAPIL) is envisioned as a multidisciplinary research and innovation initiative that explores how AI and data-driven technologies can contribute to governance, policy intelligence, digital resilience, and national development [3, 17, 21, 24–27].
 
-### Vision Statement
+## Vision Statement
 
-To contribute to a future where governance, policymaking, and innovation in Bangladesh are supported by trustworthy, transparent, ethical, and evidence-based Artificial Intelligence systems.
+To contribute to a future where governance, policymaking, and innovation in Bangladesh are supported by trustworthy, transparent, ethical, and evidence-based Artificial Intelligence systems [1, 4, 5, 7, 15].
 
-### Strategic Purpose
+## Strategic Purpose
 
-BAPIL seeks to serve as a research-oriented platform that bridges the gap between technology, public policy, governance, academia, and innovation. The initiative aims to facilitate knowledge generation, interdisciplinary collaboration, and responsible AI research that may contribute to long-term national development objectives.
+BAPIL seeks to serve as a research-oriented platform that bridges the gap between technology, public policy, governance, academia, and innovation. The initiative aims to facilitate knowledge generation, interdisciplinary collaboration, and responsible AI research that may contribute to long-term national development objectives [3, 17, 19, 24, 25, 27, 29, 30].
 
-Rather than replacing human decision-making, BAPIL is intended to explore how AI can assist policymakers, researchers, and institutions by providing analytical insights, supporting evidence-based discussions, and improving access to relevant information.
+Rather than replacing human decision-making, BAPIL is intended to explore how AI can assist policymakers, researchers, and institutions by providing analytical insights, supporting evidence-based discussions, and improving access to relevant information [10, 17, 18, 20, 21].
 
                  Government
                       │
@@ -817,102 +817,102 @@ Academia ────── BAPIL ────── Industry
                 Civil Society
 
 Caption:
-Figure 2. Conceptual BAPIL Ecosystem showing collaboration among government, academia, industry, and civil society.
+Figure 2. Conceptual BAPIL Ecosystem showing collaboration among government, academia, industry, and civil society [19, 24, 25, 27].
 
-BAPIL is intended to complement-not duplicate-existing national AI initiatives. While programs such as the Bangladesh AI Hub may focus on talent development, startup incubation, AI adoption, and technology commercialization, BAPIL is envisioned as a research and policy intelligence platform focused on AI governance, policy analytics, knowledge management, and evidence-based decision support. Together, these initiatives can contribute to a more comprehensive and coordinated national AI ecosystem.
+BAPIL is intended to complement—not duplicate—existing national AI initiatives. While programs such as the Bangladesh AI Hub may focus on talent development, startup incubation, AI adoption, and technology commercialization, BAPIL is envisioned as a research and policy intelligence platform focused on AI governance, policy analytics, knowledge management, and evidence-based decision support [35, 36]. Together, these initiatives can contribute to a more comprehensive and coordinated national AI ecosystem [29, 30, 35, 36].
 
-### Core Principles
+## Core Principles
 
 The vision of BAPIL is guided by several foundational principles:
 
-#### Human-Centered AI
+### Human-Centered AI
 
-AI systems should support and augment human expertise while preserving meaningful human oversight and accountability.
+AI systems should support and augment human expertise while preserving meaningful human oversight and accountability [1, 5, 7, 15, 51, 68].
 
-#### Transparency
+### Transparency
 
-Research, methodologies, and analytical frameworks should be transparent and explainable whenever possible.
+Research, methodologies, and analytical frameworks should be transparent and explainable whenever possible [5, 7, 50, 68, 69].
 
-#### Responsibility
+### Responsibility
 
-AI technologies should be developed and applied in ways that promote public interest, social benefit, and responsible innovation.
+AI technologies should be developed and applied in ways that promote public interest, social benefit, and responsible innovation [1, 4, 5, 15, 24, 74, 75].
 
-#### Inclusiveness
+### Inclusiveness
 
-The benefits of AI should be accessible to diverse communities and stakeholders across Bangladesh.
+The benefits of AI should be accessible to diverse communities and stakeholders across Bangladesh while supporting equitable digital transformation [3, 22, 23, 24, 76].
 
-#### Evidence-Based Decision Support
+### Evidence-Based Decision Support
 
-Policy discussions and strategic planning should be informed by reliable data, rigorous analysis, and objective evidence.
+Policy discussions and strategic planning should be informed by reliable data, rigorous analysis, and objective evidence [10, 17, 18, 20, 21].
 
-#### Collaboration
+### Collaboration
 
-Progress in AI governance and policy intelligence requires cooperation among government, academia, industry, civil society, and international partners.
+Progress in AI governance and policy intelligence requires cooperation among government, academia, industry, civil society, and international partners [19, 24, 25, 27, 35, 36].
 
-### Strategic Objectives
+## Strategic Objectives
 
 The long-term vision of BAPIL includes supporting efforts that may contribute to:
 
-* AI-assisted policy intelligence and decision support.
-* Responsible AI governance frameworks.
-* Data-informed public sector innovation.
-* Bangla-language AI research and applications.
-* Digital resilience and misinformation awareness.
-* AI education and workforce development.
-* Research collaboration and knowledge sharing.
-* Innovation ecosystem development and entrepreneurship.
+* AI-assisted policy intelligence and decision support [10, 17, 20, 21].
+* Responsible AI governance frameworks [1, 4–9, 15, 51, 53, 68, 69].
+* Data-informed public sector innovation [17, 18, 20, 21].
+* Bangla-language AI research and applications [46–49, 80, 81].
+* Digital resilience and misinformation awareness [14, 34, 71, 72, 74, 75].
+* AI education and workforce development [35, 36, 63, 64, 73, 76, 77].
+* Research collaboration and knowledge sharing [19, 24, 25, 27].
+* Innovation ecosystem development and entrepreneurship [16, 26, 35, 36, 70].
 
-### Potential Areas of Impact
+## Potential Areas of Impact
 
 BAPIL seeks to explore applications of AI and data analytics in areas such as:
 
-Governance and Public Policy
+### Governance and Public Policy
 
-* Policy analysis and evaluation.
-* Public sector innovation.
-* Evidence-based decision support.
+* Policy analysis and evaluation [10, 17, 20, 21].
+* Public sector innovation [17, 20, 21].
+* Evidence-based decision support [18, 20, 21].
 
 ### Education
 
-* AI literacy initiatives.
-* Research and capacity building.
-* Educational technology innovation.
+* AI literacy initiatives [64, 76].
+* Research and capacity building [35, 36, 63, 73].
+* Educational technology innovation [24, 76].
 
 ### Healthcare
 
-* Health data analytics.
-* Public health intelligence.
-* Medical AI research.
+* Health data analytics [18, 24].
+* Public health intelligence [17, 24].
+* Medical AI research [16, 77].
 
 ### Agriculture
 
-* Data-driven agricultural insights.
-* Climate and food security analysis.
-* Smart farming technologies.
+* Data-driven agricultural insights [18, 23].
+* Climate and food security analysis [22, 23].
+* Smart farming technologies [24, 77].
 
 ### Digital Governance
 
-* Digital public services.
-* Citizen engagement and feedback analysis.
-* Government knowledge management.
+* Digital public services [17, 20, 21, 57].
+* Citizen engagement and feedback analysis [21, 25].
+* Government knowledge management [17, 18, 57, 58].
 
-### Long-Term Aspirations
+## Long-Term Aspirations
 
-By 2041, BAPIL aspires to contribute to the development of a stronger AI governance and policy intelligence ecosystem in Bangladesh. The initiative envisions a future where AI technologies are applied responsibly, research capacity is strengthened, and collaboration across sectors supports sustainable development and innovation.
+By 2041, BAPIL aspires to contribute to the development of a stronger AI governance and policy intelligence ecosystem in Bangladesh. The initiative envisions a future where AI technologies are applied responsibly, research capacity is strengthened, and collaboration across sectors supports sustainable development and innovation [23, 29, 30, 35, 36, 73, 77].
 
-BAPIL does not seek to function as a policymaking authority. Instead, it aims to serve as a research, knowledge, and innovation platform that supports informed discussion, evidence-based analysis, and responsible exploration of emerging technologies.
+BAPIL does not seek to function as a policymaking authority. Instead, it aims to serve as a research, knowledge, and innovation platform that supports informed discussion, evidence-based analysis, and responsible exploration of emerging technologies [1, 5, 7, 15, 24].
 
-### Vision for International Collaboration
+## Vision for International Collaboration
 
-AI governance and digital transformation are global challenges that require international cooperation. BAPIL seeks to learn from international experiences and encourage collaboration with academic institutions, research organizations, innovation ecosystems, and policy communities around the world.
+AI governance and digital transformation are global challenges that require international cooperation. BAPIL seeks to learn from international experiences and encourage collaboration with academic institutions, research organizations, innovation ecosystems, and policy communities around the world [3, 19, 24, 27, 51–70].
 
-Such collaboration may support knowledge exchange, capacity building, comparative research, and the development of globally informed approaches to AI governance and public sector innovation.
+Such collaboration may support knowledge exchange, capacity building, comparative research, and the development of globally informed approaches to AI governance and public sector innovation [19, 24, 27, 51–70].
 
-### Institutional Alignment with National Initiatives
+## Institutional Alignment with National Initiatives
 
-The proposed Bangladesh AI Policy & Innovation Lab (BAPIL) is envisioned as a complementary research and policy intelligence initiative that supports Bangladesh’s broader digital transformation agenda.
+The proposed Bangladesh AI Policy & Innovation Lab (BAPIL) is envisioned as a complementary research and policy intelligence initiative that supports Bangladesh’s broader digital transformation agenda [29, 30, 35, 36].
 
-BAPIL does not seek to replace existing national initiatives. Rather, it aims to contribute research, policy intelligence, governance frameworks, and knowledge-management capabilities that may support ongoing national efforts related to Artificial Intelligence, digital transformation, innovation, and public-sector modernization.
+BAPIL does not seek to replace existing national initiatives. Rather, it aims to contribute research, policy intelligence, governance frameworks, and knowledge-management capabilities that may support ongoing national efforts related to Artificial Intelligence, digital transformation, innovation, and public-sector modernization [17, 20, 21, 29, 30, 35, 36].
 
 The relationship among key initiatives may be conceptualized as follows:
 
@@ -936,15 +936,15 @@ The relationship among key initiatives may be conceptualized as follows:
                 Industry, Startups, and Citizens
 
 Caption:
-Figure 3. Institutional relationship between Smart Bangladesh Vision 2041, Bangladesh AI Hub, and BAPIL.
+Figure 3. Institutional relationship between Smart Bangladesh Vision 2041, Bangladesh AI Hub, and BAPIL [29, 30, 35, 36].
 
-In this conceptual framework, Smart Bangladesh Vision 2041 represents the overarching national development vision. The Bangladesh AI Hub contributes to AI talent development, innovation, startup support, and technology ecosystem growth. BAPIL complements these efforts by focusing on policy intelligence, AI governance, knowledge management, research, and evidence-based decision support.
+In this conceptual framework, Smart Bangladesh Vision 2041 represents the overarching national development vision [29, 30]. The Bangladesh AI Hub contributes to AI talent development, innovation, startup support, and technology ecosystem growth [35, 36]. BAPIL complements these efforts by focusing on policy intelligence, AI governance, knowledge management, research, and evidence-based decision support [1, 7, 10, 17, 21].
 
-Through collaboration with universities, research institutions, government agencies, industry partners, and civil society organizations, BAPIL may serve as a bridge between AI research and public policymaking while supporting responsible innovation and long-term national development.
+Through collaboration with universities, research institutions, government agencies, industry partners, and civil society organizations, BAPIL may serve as a bridge between AI research and public policymaking while supporting responsible innovation and long-term national development [19, 24, 25, 27, 35, 36].
 
-### Conclusion
+## Conclusion
 
-The vision of BAPIL is grounded in the belief that responsible Artificial Intelligence, combined with strong governance, research excellence, and interdisciplinary collaboration, can contribute to more informed decision-making and sustainable national development. Through research, dialogue, and innovation, BAPIL aims to support the exploration of AI-enabled solutions that align with Bangladesh’s long-term aspirations and digital transformation goals.
+The vision of BAPIL is grounded in the belief that responsible Artificial Intelligence, combined with strong governance, research excellence, and interdisciplinary collaboration, can contribute to more informed decision-making and sustainable national development [1, 5, 15, 23, 24]. Through research, dialogue, and innovation, BAPIL aims to support the exploration of AI-enabled solutions that align with Bangladesh’s long-term aspirations and digital transformation goals [29, 30, 35, 36].
 
 ## Chapter 6: BAPIL Architecture
 
