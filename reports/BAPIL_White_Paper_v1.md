@@ -2,7 +2,7 @@
 
 ## Bangladesh AI Policy & Innovation Lab (BAPIL)
 
-### A Conceptual Framework for AI Governance, Policy Intelligence, and Public Sector Innovation
+### A Conceptual Framework for AI Governance, Policy Intelligence, and Public Sector Innovation in Bangladesh
 
 ## Author
 
