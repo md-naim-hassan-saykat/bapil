@@ -1201,17 +1201,17 @@ The proposed BAPIL architecture provides a conceptual framework for integrating 
 
 The architecture builds upon international best practices in AI governance, digital government, knowledge management, and public-sector innovation while remaining aligned with Bangladesh’s digital transformation agenda, Smart Bangladesh Vision 2041, AI readiness initiatives, and emerging AI ecosystem development efforts [17, 20, 21, 29, 30, 35, 36, 80].
 
-## Chapter 7: Policy Intelligence Dashboard
+# Chapter 7: Policy Intelligence Dashboard
 
-### Introduction
+## Introduction
 
-One of the core concepts proposed within the Bangladesh AI Policy & Innovation Lab (BAPIL) framework is the Policy Intelligence Dashboard. The dashboard is envisioned as an integrated analytical platform that enables researchers, policymakers, and stakeholders to access relevant information, monitor trends, explore policy insights, and support evidence-based decision-making.
+One of the core concepts proposed within the Bangladesh AI Policy & Innovation Lab (BAPIL) framework is the Policy Intelligence Dashboard. The dashboard is envisioned as an integrated analytical platform that enables researchers, policymakers, and stakeholders to access relevant information, monitor trends, explore policy insights, and support evidence-based decision-making [10,17,21,24,25].
 
-The dashboard is not intended to make policy decisions automatically. Instead, it serves as a decision-support and knowledge-discovery environment that helps users understand complex policy issues through data visualization, analytics, and AI-assisted insights.
+The dashboard is not intended to make policy decisions automatically. Instead, it serves as a decision-support and knowledge-discovery environment that helps users understand complex policy issues through data visualization, analytics, and AI-assisted insights [1,4,10,17].
 
-### Purpose of the Dashboard
+## Purpose of the Dashboard
 
-Modern governance requires timely access to information from diverse sources, including economic indicators, public feedback, policy documents, research publications, and administrative data.
+Modern governance requires timely access to information from diverse sources, including economic indicators, public feedback, policy documents, research publications, and administrative data [17,18,20,21].
 
 The Policy Intelligence Dashboard aims to:
 
@@ -1220,15 +1220,15 @@ The Policy Intelligence Dashboard aims to:
 * Facilitate monitoring of national development indicators.
 * Enable exploration of policy trends and challenges.
 * Enhance transparency and institutional knowledge sharing.
-* Support research and public sector innovation.
+* Support research and public sector innovation [17,20,21,25].
 
-### Key Functional Components
+## Key Functional Components
 
 The dashboard may consist of several integrated modules.
 
-#### National Indicators Module
+### National Indicators Module
 
-This module provides access to important national development indicators.
+This module provides access to important national development indicators [21,23,29,31].
 
 Potential indicators include:
 
@@ -1241,11 +1241,11 @@ Potential indicators include:
 * Digital transformation metrics
 * Sustainable development indicators
 
-Interactive visualizations may help users monitor trends over time and compare performance across sectors.
+Interactive visualizations may help users monitor trends over time and compare performance across sectors [21,23,31].
 
-#### Policy Monitoring Module
+### Policy Monitoring Module
 
-This module focuses on tracking policy implementation and outcomes.
+This module focuses on tracking policy implementation and outcomes [11,12,20,32].
 
 Potential capabilities include:
 
@@ -1255,11 +1255,11 @@ Potential capabilities include:
 * Program evaluation support
 * Strategic planning dashboards
 
-The objective is to support greater visibility into policy implementation processes.
+The objective is to support greater visibility into policy implementation processes [11,20,32].
 
-#### Public Sentiment and Citizen Feedback Module
+### Public Sentiment and Citizen Feedback Module
 
-Understanding public perspectives is important for responsive governance.
+Understanding public perspectives is important for responsive governance [18,21,24].
 
 Potential features include:
 
@@ -1269,11 +1269,11 @@ Potential features include:
 * Citizen feedback aggregation
 * Emerging issue identification
 
-AI-assisted analytics may help summarize large volumes of feedback while maintaining appropriate ethical safeguards.
+AI-assisted analytics may help summarize large volumes of feedback while maintaining appropriate ethical safeguards [5,7,80,81].
 
-#### Policy Research Module
+### Policy Research Module
 
-The dashboard may provide access to policy-related research resources.
+The dashboard may provide access to policy-related research resources [17,19,25,27].
 
 Potential features include:
 
@@ -1283,21 +1283,21 @@ Potential features include:
 * International best practices
 * Evidence synthesis tools
 
-This module aims to support knowledge sharing and policy learning.
+This module aims to support knowledge sharing and policy learning [17,25,27].
 
-### AI-Assisted Analytical Capabilities
+## AI-Assisted Analytical Capabilities
 
-The dashboard may incorporate AI technologies to enhance analytical functions.
+The dashboard may incorporate AI technologies to enhance analytical functions [37–45].
 
 Potential capabilities include:
 
-#### Document Summarization
+### Document Summarization
 
-AI systems may assist users by generating concise summaries of lengthy policy documents, reports, and research publications.
+AI systems may assist users by generating concise summaries of lengthy policy documents, reports, and research publications [39,42,43].
 
-#### Information Extraction
+### Information Extraction
 
-Relevant information may be automatically identified from large collections of documents.
+Relevant information may be automatically identified from large collections of documents [38,42,46,48].
 
 Examples include:
 
@@ -1306,19 +1306,19 @@ Examples include:
 * Strategic objectives
 * Regulatory changes
 
-#### Trend Analysis
+### Trend Analysis
 
-Analytical tools may identify trends and patterns across datasets and policy domains.
+Analytical tools may identify trends and patterns across datasets and policy domains [18,21,77].
 
-#### Knowledge Discovery
+### Knowledge Discovery
 
-AI-assisted systems may help uncover relationships between policies, programs, outcomes, and development indicators.
+AI-assisted systems may help uncover relationships between policies, programs, outcomes, and development indicators [38,41,50].
 
-These capabilities are intended to augment human analysis rather than replace expert judgment.
+These capabilities are intended to augment human analysis rather than replace expert judgment [1,4,5].
 
-#### Visualization and User Experience
+## Visualization and User Experience
 
-Effective policy intelligence requires information to be accessible and understandable.
+Effective policy intelligence requires information to be accessible and understandable [17,20,21].
 
 Potential visualization tools include:
 
@@ -1329,11 +1329,11 @@ Potential visualization tools include:
 * Network visualizations
 * Trend monitoring panels
 
-User-centered design principles should guide the development of dashboard interfaces.
+User-centered design principles should guide the development of dashboard interfaces [17,21].
 
-#### Knowledge Search and Retrieval
+## Knowledge Search and Retrieval
 
-A major challenge in policymaking is locating relevant information across large document collections.
+A major challenge in policymaking is locating relevant information across large document collections [18,25].
 
 Future versions of the dashboard may include:
 
@@ -1343,37 +1343,37 @@ Future versions of the dashboard may include:
 * Knowledge graph navigation
 * Cross-document linking
 
-These capabilities may improve access to institutional knowledge and research resources.
+These capabilities may improve access to institutional knowledge and research resources [38,46,48,49].
 
-### Stakeholder Perspectives
+## Stakeholder Perspectives
 
-Different stakeholders may interact with the dashboard in different ways.
+Different stakeholders may interact with the dashboard in different ways [3,17,21,25].
 
-#### Policymakers
+### Policymakers
 
 * Access policy insights
 * Monitor implementation progress
 * Review evidence and research
 
-#### Researchers
+### Researchers
 
 * Explore datasets
 * Conduct analytical studies
 * Access policy repositories
 
-#### Government Agencies
+### Government Agencies
 
 * Track performance indicators
 * Support planning and evaluation
 
-#### Civil Society and Public Stakeholders
+### Civil Society and Public Stakeholders
 
 * Access publicly available information
 * Explore policy trends and development indicators
 
-#### Transparency and Responsible Use
+## Transparency and Responsible Use
 
-The dashboard should be designed according to responsible AI and governance principles.
+The dashboard should be designed according to responsible AI and governance principles [1,4,5,6,7,15].
 
 Key considerations include:
 
@@ -1384,9 +1384,9 @@ Key considerations include:
 * Ethical use of AI technologies
 * Explainability of analytical outputs
 
-Responsible implementation is essential for maintaining trust and accountability.
+Responsible implementation is essential for maintaining trust and accountability [1,4,5,6,7,14,15,74,75].
 
-### Conceptual Dashboard Architecture
+## Conceptual Dashboard Architecture
 
 A simplified representation of the dashboard workflow is shown below:
 
@@ -1408,11 +1408,11 @@ Researchers • Policymakers • Stakeholders
 Caption:
 Figure 5. Conceptual workflow of policy intelligence within the BAPIL ecosystem.
 
-This architecture illustrates how information may be transformed into actionable insights and accessible visualizations.
+This architecture illustrates how information may be transformed into actionable insights and accessible visualizations [10,17,18,21,33,83].
 
-### Future Opportunities
+## Future Opportunities
 
-Future research may explore advanced dashboard capabilities such as:
+Future research may explore advanced dashboard capabilities such as [38,41,42,49,50]:
 
 * Real-time policy monitoring.
 * AI-powered policy assistants.
@@ -1422,15 +1422,15 @@ Future research may explore advanced dashboard capabilities such as:
 * Explainable AI analytics.
 * Cross-sector knowledge graphs.
 
-These capabilities would be subject to ongoing research, evaluation, and governance considerations.
+These capabilities would be subject to ongoing research, evaluation, and governance considerations [2,5,7,50,74,75].
 
-### Conclusion
+## Conclusion
 
-The Policy Intelligence Dashboard represents a key component of the BAPIL framework. By combining data analytics, AI-assisted insights, visualization tools, and knowledge management capabilities, the dashboard seeks to support evidence-based policy analysis and informed decision-making.
+The Policy Intelligence Dashboard represents a key component of the BAPIL framework. By combining data analytics, AI-assisted insights, visualization tools, and knowledge management capabilities, the dashboard seeks to support evidence-based policy analysis and informed decision-making [17,21,24].
 
-Rather than replacing policymakers or institutions, the dashboard is envisioned as a research and decision-support tool that helps stakeholders navigate complexity, access relevant information, and better understand emerging policy challenges.
+Rather than replacing policymakers or institutions, the dashboard is envisioned as a research and decision-support tool that helps stakeholders navigate complexity, access relevant information, and better understand emerging policy challenges [1,4,5,10].
 
-The next chapter introduces the concept of a Bangla Policy Foundation Model and explores how Bangla-language AI technologies may contribute to policy intelligence and public sector innovation in Bangladesh.
+The next chapter introduces the concept of a Bangla Policy Foundation Model and explores how Bangla-language AI technologies may contribute to policy intelligence and public sector innovation in Bangladesh [37,46,48,49,80].
 
 ## Chapter 8: Bangla Policy Foundation Model (BPFM)
 
