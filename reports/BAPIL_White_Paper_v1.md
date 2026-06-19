@@ -2850,17 +2850,17 @@ By adopting a phased and collaborative approach, BAPIL can explore opportunities
 
 The next chapter presents the Five-Year Roadmap and outlines a potential implementation pathway for the evolution of BAPIL from a research concept into a mature policy intelligence and innovation framework.
 
-## Chapter 14: Public Sector Innovation: Five-Year Roadmap (2026-2030)
+# Chapter 14: Public Sector Innovation: Five-Year Roadmap (2026–2030)
 
-### Introduction
+## Introduction
 
-The development of the Bangladesh AI Policy & Innovation Lab (BAPIL) is envisioned as a gradual and research-driven process. Rather than attempting large-scale implementation from the outset, BAPIL may evolve through phased development, stakeholder engagement, capacity building, and pilot initiatives.
+The development of the Bangladesh AI Policy & Innovation Lab (BAPIL) is envisioned as a gradual and research-driven process. Rather than attempting large-scale implementation from the outset, BAPIL may evolve through phased development, stakeholder engagement, capacity building, and pilot initiatives [1–5, 9, 17, 21].
 
-This roadmap outlines a conceptual five-year pathway (2026-2030) for the evolution of BAPIL from a research concept into a mature policy intelligence and innovation framework.
+This roadmap outlines a conceptual five-year pathway (2026–2030) for the evolution of BAPIL from a research concept into a mature policy intelligence and innovation framework [1, 9, 10, 17, 21].
 
-### Executive Roadmap Overview (2026-2041)
+## Executive Roadmap Overview (2026–2041)
 
-The development of BAPIL is envisioned as a long-term and phased journey that progresses from foundational research toward a mature ecosystem supporting AI governance, policy intelligence, innovation, and digital transformation. The roadmap is designed to align short-term actions with long-term national development aspirations.
+The development of BAPIL is envisioned as a long-term and phased journey that progresses from foundational research toward a mature ecosystem supporting AI governance, policy intelligence, innovation, and digital transformation [1, 4, 9, 17, 22, 29, 30]. The roadmap is designed to align short-term actions with long-term national development aspirations and Bangladesh’s broader digital transformation agenda [28–30, 35, 36].
 
 Year	Strategic Focus	Primary Goal
 2026	Research	Establish conceptual foundations, conduct literature reviews, and develop the initial BAPIL framework.
@@ -2885,7 +2885,7 @@ Year	Strategic Focus	Primary Goal
 Caption:
 Figure 6. Strategic roadmap for the phased development of BAPIL (2026-2041).
 
-### Roadmap Visualization
+## Roadmap Visualization
 
 2026 → Research Foundation
 
@@ -2909,13 +2909,13 @@ Figure 6. Strategic roadmap for the phased development of BAPIL (2026-2041).
 
 2041 → Long-Term National Vision
 
-This progression reflects the philosophy that sustainable AI ecosystems are built through continuous investment in research, governance, human capital, institutional capacity, and collaboration. Rather than pursuing rapid technological deployment alone, BAPIL emphasizes evidence-based development, responsible innovation, and long-term national value creation.
+This progression reflects the philosophy that sustainable AI ecosystems are built through continuous investment in research, governance, human capital, institutional capacity, and collaboration [1, 4, 5, 9, 17, 21, 24, 76]. Rather than pursuing rapid technological deployment alone, BAPIL emphasizes evidence-based development, responsible innovation, and long-term national value creation [1, 5, 7, 15, 22, 74, 75].
 
-The roadmap is intended to remain flexible and adaptive, allowing future priorities to evolve in response to technological advancements, policy needs, stakeholder feedback, and national development objectives.
+The roadmap is intended to remain flexible and adaptive, allowing future priorities to evolve in response to technological advancements, policy needs, stakeholder feedback, and national development objectives [2, 8, 9, 22, 29, 30]. Adaptive governance and continuous evaluation are increasingly recognized as essential elements of successful public-sector AI initiatives worldwide [9, 10, 15].
 
-### Strategic Objectives
+## Strategic Objectives
 
-The roadmap is guided by the following objectives:
+The roadmap is guided by the following objectives [1, 4, 5, 9, 17, 29, 30]:
 
 * Establish a strong research foundation for AI governance and policy intelligence.
 * Develop institutional knowledge and technical capabilities.
@@ -2924,114 +2924,114 @@ The roadmap is guided by the following objectives:
 * Foster collaboration among government, academia, industry, and civil society.
 * Support innovation and evidence-based policymaking.
 
-### Phase 1: Foundation and Research (2026)
+## Phase 1: Foundation and Research (2026)
 
-#### Objectives
+### Objectives
 
 * Establish the conceptual foundations of BAPIL.
 * Conduct research and comparative studies.
 * Develop stakeholder awareness and engagement.
 
-#### Key Activities
+### Key Activities
 
 * Complete the BAPIL White Paper.
-* Conduct literature reviews on AI governance and policy intelligence.
-* Study international best practices.
+* Conduct literature reviews on AI governance and policy intelligence [1–10, 15].
+* Study international best practices from Singapore, South Korea, Estonia, United Kingdom, Finland, United Arab Emirates (UAE) and Canada [51–70].
 * Develop initial technical architecture concepts.
-* Establish academic and research partnerships.
-* Organize workshops and stakeholder consultations.
+* Establish academic and research partnerships [24, 27, 35, 36].
+* Organize workshops and stakeholder consultations [5, 22, 76].
 
-#### Expected Outcomes
+### Expected Outcomes
 
 * Foundational research completed.
 * Initial stakeholder network established.
 * Strategic direction and vision refined.
 
-### Phase 2: Framework Design and Pilot Development (2027)
+## Phase 2: Framework Design and Pilot Development (2027)
 
-#### Objectives
+### Objectives
 
 * Transform research findings into practical frameworks.
 * Develop initial prototypes and analytical tools.
 
-#### Key Activities
+### Key Activities
 
-* Design the BAPIL Policy Intelligence Framework.
+* Design the BAPIL Policy Intelligence Framework [1, 4, 7, 15].
 * Develop an initial Policy Intelligence Dashboard prototype.
-* Create knowledge management and document repositories.
-* Explore Bangla-language policy intelligence technologies.
-* Develop AI governance and ethical guidelines.
+* Create knowledge management and document repositories [18, 33, 78, 79].
+* Explore Bangla-language policy intelligence technologies [46–49, 80, 81].
+* Develop AI governance and ethical guidelines [1, 5–7, 15].
 
-#### Expected Outcomes
+### Expected Outcomes
 
 * Functional research prototypes.
 * Initial governance framework.
 * Pilot analytical capabilities.
 
-### Phase 3: Capacity Building and Collaboration (2028)
+## Phase 3: Capacity Building and Collaboration (2028)
 
-#### Objectives
+### Objectives
 
 * Expand human capital development.
 * Strengthen institutional collaboration.
 
-#### Key Activities
+### Key Activities
 
-* Launch AI governance workshops and training programs.
-* Support student and researcher engagement initiatives.
+* Launch AI governance workshops and training programs [35, 36, 76].
+* Support student and researcher engagement initiatives [24, 35, 77].
 * Develop partnerships with universities and research centers.
 * Publish policy briefs and research reports.
 * Organize national conferences and knowledge-sharing events.
 
-#### Expected Outcomes
+### Expected Outcomes
 
 * Expanded research community.
 * Increased AI governance awareness.
 * Strengthened institutional partnerships.
 
-### Phase 4: Advanced Research and Innovation (2029)
+## Phase 4: Advanced Research and Innovation (2029)
 
-#### Objectives
+### Objectives
 
 * Advance technical capabilities.
 * Strengthen innovation ecosystem engagement.
 
-#### Key Activities
+### Key Activities
 
-* Explore Bangla Policy Foundation Model research.
-* Develop advanced policy analytics tools.
-* Conduct public sentiment and policy intelligence studies.
-* Support innovation and startup ecosystem research.
-* Expand international collaboration initiatives.
+* Explore Bangla Policy Foundation Model research [41–50].
+* Develop advanced policy analytics tools using foundation models and retrieval-augmented approaches [38–42].
+* Conduct public sentiment and policy intelligence studies [80, 81].
+* Support innovation and startup ecosystem research [16, 27, 35, 36].
+* Expand international collaboration initiatives [19, 24, 27].
 
-#### Expected Outcomes
+### Expected Outcomes
 
 * Advanced research outputs.
 * Improved analytical capabilities.
 * Expanded innovation ecosystem engagement.
 
-### Phase 5: Consolidation and Strategic Expansion (2030)
+## Phase 5: Consolidation and Strategic Expansion (2030)
 
-#### Objectives
+### Objectives
 
 * Evaluate progress and identify future opportunities.
 * Establish long-term sustainability strategies.
 
-#### Key Activities
+### Key Activities
 
 * Conduct comprehensive program evaluation.
 * Publish a five-year impact assessment report.
-* Review governance and operational frameworks.
+* Review governance and operational frameworks [1, 9, 15].
 * Develop recommendations for future expansion.
-* Strengthen national and international partnerships.
+* Strengthen national and international partnerships [19, 24, 27].
 
-#### Expected Outcomes
+### Key Activities
 
 * Mature research and policy intelligence framework.
 * Stronger institutional network.
 * Strategic roadmap for the next decade.
 
-#### Success Indicators
+### Success Indicators
 
 Potential indicators of progress may include:
 
@@ -3043,43 +3043,43 @@ Potential indicators of progress may include:
 * Knowledge resources developed.
 * Participation in national and international initiatives.
 
-These indicators should be refined through future planning and stakeholder consultation.
+These indicators should be refined through future planning and stakeholder consultation [9, 13, 20, 21, 26, 77].
 
-#### Risks and Mitigation Considerations
+### Risks and Mitigation Considerations
 
 Potential challenges include:
 
 * Funding limitations.
-* Talent shortages.
-* Infrastructure constraints.
-* Data availability issues.
-* Institutional coordination challenges.
+* Talent shortages [73, 77].
+* Infrastructure constraints [18, 31].
+* Data availability issues [33, 78, 79].
+* Institutional coordination challenges [17, 20, 21].
 
 Mitigation strategies may include:
 
 * Diversified funding approaches.
-* Capacity-building programs.
-* Strategic partnerships.
+* Capacity-building programs [35, 36, 76].
+* Strategic partnerships [19, 24, 27].
 * Incremental implementation.
-* Continuous evaluation and adaptation.
+* Continuous evaluation and adaptation [1, 9, 15].
 
-### Looking Beyond 2030
+## Looking Beyond 2030
 
-While this roadmap focuses on the period 2026-2030, the broader vision of BAPIL extends toward Bangladesh’s long-term development aspirations through 2041 and beyond.
+While this roadmap focuses on the period 2026–2030, the broader vision of BAPIL extends toward Bangladesh’s long-term development aspirations through 2041 and beyond [29, 30].
 
 Future opportunities may include:
 
 * National-scale policy intelligence platforms.
-* Advanced Bangla-language AI systems.
-* Regional AI governance leadership.
+* Advanced Bangla-language AI systems [46–49].
+* Regional AI governance leadership [1, 4, 27].
 * Expanded research infrastructure.
 * International centers of excellence in AI governance and public-sector innovation.
 
-#### Conclusion
+## Conclusion
 
-The proposed five-year roadmap provides a structured pathway for the gradual development of BAPIL. Through research, collaboration, capacity building, and responsible innovation, BAPIL seeks to contribute to discussions on AI governance, policy intelligence, and digital transformation in Bangladesh.
+The proposed five-year roadmap provides a structured pathway for the gradual development of BAPIL. Through research, collaboration, capacity building, and responsible innovation, BAPIL seeks to contribute to discussions on AI governance, policy intelligence, and digital transformation in Bangladesh [1, 4, 5, 17, 21, 28–30].
 
-The roadmap emphasizes sustainable growth, interdisciplinary collaboration, and evidence-based development as foundational principles for the future evolution of the initiative.
+The roadmap emphasizes sustainable growth, interdisciplinary collaboration, and evidence-based development as foundational principles for the future evolution of the initiative [1, 3, 9, 22, 29, 30]. International experience demonstrates that successful public-sector AI initiatives require strong governance, institutional capacity, long-term commitment, and continuous adaptation to emerging technological and societal challenges.
 
 ## Chapter 15: Long-Term Vision (2030-2041)
 
