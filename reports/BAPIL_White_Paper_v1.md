@@ -141,9 +141,9 @@ Appendices
 
 ## Executive Summary
 
-Artificial Intelligence (AI) is rapidly transforming governance, public administration, economic planning, national security, and public service delivery worldwide. Governments across both developed and developing economies are increasingly leveraging AI-driven analytics, digital infrastructure, and data-informed decision-making systems to improve policy effectiveness, operational efficiency, and citizen outcomes [1–17, 21, 26].
+Artificial Intelligence (AI) is rapidly transforming governance, public administration, economic planning, national security, and public service delivery worldwide. Governments across both developed and developing economies are increasingly leveraging AI-driven analytics, digital infrastructure, and data-informed decision-making systems to improve policy effectiveness, operational efficiency, and citizen outcomes [1-17, 21, 26].
 
-Bangladesh has made significant progress in digital transformation through national initiatives such as Digital Bangladesh and Smart Bangladesh. However, the growing complexity of public policy challenges, expanding volumes of government and citizen-generated data, and the accelerating pace of technological change require more advanced analytical capabilities to support evidence-based governance and long-term strategic planning [28–33, 82, 83].
+Bangladesh has made significant progress in digital transformation through national initiatives such as Digital Bangladesh and Smart Bangladesh. However, the growing complexity of public policy challenges, expanding volumes of government and citizen-generated data, and the accelerating pace of technological change require more advanced analytical capabilities to support evidence-based governance and long-term strategic planning [28-33, 82, 83].
 
 This white paper proposes the Bangladesh AI Policy & Innovation Lab (BAPIL), a research-oriented framework designed to explore how Artificial Intelligence, data analytics, and responsible AI governance can contribute to national development, public sector innovation, and institutional capacity building. The initiative seeks to bridge the gap between AI research, policymaking, governance, and innovation by developing methodologies, frameworks, and prototype systems that support informed decision-making [1, 3, 5, 7, 17, 21, 24].
 
@@ -204,7 +204,7 @@ BAPIL may serve as a research-oriented platform for exploring AI-enabled policy 
 
 ### 2. Strengthen AI Governance and Regulatory Readiness
 
-As AI adoption increases across public and private sectors, Bangladesh may benefit from developing comprehensive AI governance frameworks addressing issues such as transparency, accountability, fairness, privacy, risk management, and human oversight [1, 4–9, 14, 15, 51, 53, 68, 69].
+As AI adoption increases across public and private sectors, Bangladesh may benefit from developing comprehensive AI governance frameworks addressing issues such as transparency, accountability, fairness, privacy, risk management, and human oversight [1, 4-9, 14, 15, 51, 53, 68, 69].
 
 As AI adoption increases across public and private sectors, Bangladesh may benefit from developing comprehensive AI governance frameworks addressing issues such as:
 
@@ -219,7 +219,7 @@ Establishing governance mechanisms early can help ensure that AI technologies ar
 
 ### 3. Expand National AI Research Capacity
 
-Long-term competitiveness in AI requires sustained investment in research infrastructure, talent development, and interdisciplinary collaboration [16, 27, 35, 36, 54–56, 63, 70, 73, 77].
+Long-term competitiveness in AI requires sustained investment in research infrastructure, talent development, and interdisciplinary collaboration [16, 27, 35, 36, 54-56, 63, 70, 73, 77].
 
 Key priorities may include:
 
@@ -233,7 +233,7 @@ Strengthening research capacity will contribute to both scientific advancement a
 
 ### 4. Promote Bangla Language AI Development
 
-As one of the world’s most widely spoken languages, Bangla represents a strategic opportunity for AI innovation. National efforts may focus on language resources, foundation models, NLP systems, speech technologies, and digital public services [37–50, 80, 81].
+As one of the world’s most widely spoken languages, Bangla represents a strategic opportunity for AI innovation. National efforts may focus on language resources, foundation models, NLP systems, speech technologies, and digital public services [37-50, 80, 81].
 
 National efforts may focus on:
 
@@ -315,9 +315,9 @@ By strengthening AI governance, supporting responsible innovation, and promoting
 
 ## Introduction
 
-The increasing complexity of governance in the twenty-first century requires policymakers to process large volumes of information, analyze rapidly changing social and economic conditions, and respond effectively to emerging national and global challenges. Around the world, governments are increasingly adopting Artificial Intelligence (AI), advanced analytics, and digital technologies to strengthen decision-making, improve public services, and support evidence-based policymaking [10–21, 26].
+The increasing complexity of governance in the twenty-first century requires policymakers to process large volumes of information, analyze rapidly changing social and economic conditions, and respond effectively to emerging national and global challenges. Around the world, governments are increasingly adopting Artificial Intelligence (AI), advanced analytics, and digital technologies to strengthen decision-making, improve public services, and support evidence-based policymaking [10-21, 26].
 
-Bangladesh has made notable progress in digital transformation through initiatives such as Digital Bangladesh and Smart Bangladesh. Significant advancements have been achieved in digital service delivery, e-governance, connectivity, and public access to information [28–33, 82, 83].
+Bangladesh has made notable progress in digital transformation through initiatives such as Digital Bangladesh and Smart Bangladesh. Significant advancements have been achieved in digital service delivery, e-governance, connectivity, and public access to information [28-33, 82, 83].
 
 ## The Need for Data-Driven Policymaking 
 
@@ -345,7 +345,7 @@ Research into AI-assisted monitoring, information verification, and digital resi
 
 ## Responsible AI Governance
 
-The adoption of AI within public institutions requires appropriate governance mechanisms to ensure transparency, accountability, fairness, privacy protection, and human oversight. International experience demonstrates that responsible AI governance is essential for building public trust and maximizing the societal benefits of AI technologies [1, 4–9, 15, 51, 53, 68, 69].
+The adoption of AI within public institutions requires appropriate governance mechanisms to ensure transparency, accountability, fairness, privacy protection, and human oversight. International experience demonstrates that responsible AI governance is essential for building public trust and maximizing the societal benefits of AI technologies [1, 4-9, 15, 51, 53, 68, 69].
 
 Bangladesh has an opportunity to learn from global best practices and develop governance frameworks that align technological innovation with national priorities, public interests, and ethical principles [1, 5, 6, 15, 51, 54, 57, 60, 68].
 
@@ -376,13 +376,13 @@ Through research, collaboration, and capacity building, BAPIL aims to contribute
 
 ## Introduction
 
-Around the world, governments are increasingly exploring the use of Artificial Intelligence (AI), digital technologies, and data-driven governance to improve policymaking, public service delivery, and national competitiveness. While each country follows its own institutional and regulatory approach, several international examples provide valuable insights into how AI and digital innovation can support effective governance [10–21, 26].
+Around the world, governments are increasingly exploring the use of Artificial Intelligence (AI), digital technologies, and data-driven governance to improve policymaking, public service delivery, and national competitiveness. While each country follows its own institutional and regulatory approach, several international examples provide valuable insights into how AI and digital innovation can support effective governance [10-21, 26].
 
-This white paper examines international experiences from Singapore, South Korea, Estonia, the United Kingdom, Finland, the United Arab Emirates, and Canada. These cases highlight different approaches to digital transformation, AI governance, public sector innovation, and policy intelligence that may offer useful lessons for future research and policy discussions in Bangladesh [51–70].
+This white paper examines international experiences from Singapore, South Korea, Estonia, the United Kingdom, Finland, the United Arab Emirates, and Canada. These cases highlight different approaches to digital transformation, AI governance, public sector innovation, and policy intelligence that may offer useful lessons for future research and policy discussions in Bangladesh [51-70].
 
 ## 3.1 Singapore: Smart Nation and GovTech
 
-Singapore is widely regarded as one of the world's leading digital governments. Through its Smart Nation initiative and GovTech Singapore, the country has implemented a comprehensive strategy to integrate digital technologies into government operations and public services [51–53].
+Singapore is widely regarded as one of the world's leading digital governments. Through its Smart Nation initiative and GovTech Singapore, the country has implemented a comprehensive strategy to integrate digital technologies into government operations and public services [51-53].
 
 Key features of Singapore’s approach include:
 
@@ -401,11 +401,11 @@ Singapore has also introduced initiatives such as AI Verify and the Model AI Gov
 * Investment in digital infrastructure and human capital.
 * Integration of responsible AI principles into governance frameworks.
 
-These lessons align closely with Bangladesh's Smart Bangladesh vision and future AI governance ambitions [30, 51–53].
+These lessons align closely with Bangladesh's Smart Bangladesh vision and future AI governance ambitions [30, 51-53].
 
 ## 3.2 South Korea: National AI Strategy and AI Hub
 
-South Korea has emerged as a global leader in Artificial Intelligence research, innovation, and digital transformation. The country's National AI Strategy aims to strengthen economic competitiveness, technological leadership, and public-sector innovation through AI adoption [54–56].
+South Korea has emerged as a global leader in Artificial Intelligence research, innovation, and digital transformation. The country's National AI Strategy aims to strengthen economic competitiveness, technological leadership, and public-sector innovation through AI adoption [54-56].
 
 South Korea’s approach includes:
 
@@ -415,7 +415,7 @@ South Korea’s approach includes:
 * National AI infrastructure and data initiatives.
 * Support for AI startups and innovation ecosystems.
 
-Recent initiatives have also focused on establishing AI hubs, expanding digital infrastructure, and strengthening international collaboration [54–56].
+Recent initiatives have also focused on establishing AI hubs, expanding digital infrastructure, and strengthening international collaboration [54-56].
 
 ### Lessons for Bangladesh
 
@@ -424,11 +424,11 @@ Recent initiatives have also focused on establishing AI hubs, expanding digital 
 * Industry-academia-government collaboration.
 * Creation of innovation ecosystems and startup support programs.
 
-These experiences are particularly relevant as Bangladesh develops its AI Hub initiative and broader AI ecosystem [35, 36, 54–56].
+These experiences are particularly relevant as Bangladesh develops its AI Hub initiative and broader AI ecosystem [35, 36, 54-56].
 
 ## 3.3 Estonia: Digital Government and Digital Identity
 
-Estonia is internationally recognized for its advanced digital government ecosystem. Since the early 2000s, Estonia has pursued a digital-first approach to governance that enables citizens to access a wide range of public services online [57–59].
+Estonia is internationally recognized for its advanced digital government ecosystem. Since the early 2000s, Estonia has pursued a digital-first approach to governance that enables citizens to access a wide range of public services online [57-59].
 
 Key components of Estonia’s model include:
 
@@ -438,7 +438,7 @@ Key components of Estonia’s model include:
 * Secure data exchange between public institutions.
 * Citizen-centric service delivery.
 
-Estonia demonstrates how digital infrastructure can improve government efficiency, transparency, and accessibility [57–59].
+Estonia demonstrates how digital infrastructure can improve government efficiency, transparency, and accessibility [57-59].
 
 ### Lessons for Bangladesh
 
@@ -447,11 +447,11 @@ Estonia demonstrates how digital infrastructure can improve government efficienc
 * Expansion of digital public services.
 * Strengthening trust through cybersecurity and data protection.
 
-These lessons complement Bangladesh’s ongoing e-governance and digital service initiatives [32, 33, 57–59].
+These lessons complement Bangladesh’s ongoing e-governance and digital service initiatives [32, 33, 57-59].
 
 ## 3.4 United Kingdom: AI Governance and Public Sector Innovation
 
-The United Kingdom has adopted a comprehensive approach to AI governance that seeks to balance innovation with accountability, public trust, and risk management [60–62].
+The United Kingdom has adopted a comprehensive approach to AI governance that seeks to balance innovation with accountability, public trust, and risk management [60-62].
 
 Key initiatives include:
 
@@ -461,7 +461,7 @@ Key initiatives include:
 * Public-sector AI adoption guidelines.
 * Research and policy institutions focused on AI governance.
 
-The UK has emphasized the importance of responsible innovation while supporting research, entrepreneurship, and economic growth [60–62].
+The UK has emphasized the importance of responsible innovation while supporting research, entrepreneurship, and economic growth [60-62].
 
 ### Lessons for Bangladesh
 
@@ -470,7 +470,7 @@ The UK has emphasized the importance of responsible innovation while supporting 
 * Importance of transparency and accountability.
 * Development of institutional capacity for AI oversight.
 
-These principles are consistent with emerging international AI governance frameworks promoted by OECD, UNESCO, and the Council of Europe [1, 5, 15, 60–62].
+These principles are consistent with emerging international AI governance frameworks promoted by OECD, UNESCO, and the Council of Europe [1, 5, 15, 60-62].
 
 ## 3.5 Finland: AI Education and National AI Readiness
 
@@ -497,9 +497,9 @@ These lessons are particularly relevant for long-term workforce development and 
 
 ## 3.6 United Arab Emirates (UAE): Government Innovation and AI Leadership
 
-The United Arab Emirates has positioned itself as a regional leader in Artificial Intelligence and digital government. The country was among the first to appoint a Minister of State for Artificial Intelligence and has developed national strategies focused on AI adoption across government services and economic sectors [65–67].
+The United Arab Emirates has positioned itself as a regional leader in Artificial Intelligence and digital government. The country was among the first to appoint a Minister of State for Artificial Intelligence and has developed national strategies focused on AI adoption across government services and economic sectors [65-67].
 
-The UAE has established innovation-focused institutions and implemented digital government initiatives designed to improve efficiency, service delivery, and citizen experience [65–67].
+The UAE has established innovation-focused institutions and implemented digital government initiatives designed to improve efficiency, service delivery, and citizen experience [65-67].
 
 Key features include:
 
@@ -509,7 +509,7 @@ Key features include:
 * Smart city initiatives.
 * Strong investment in emerging technologies.
 
-The UAE demonstrates how strategic government leadership can accelerate AI adoption and digital transformation [65–67].
+The UAE demonstrates how strategic government leadership can accelerate AI adoption and digital transformation [65-67].
 
 ### Lessons for Bangladesh
 
@@ -518,13 +518,13 @@ The UAE demonstrates how strategic government leadership can accelerate AI adopt
 * Development of innovation-focused governance models.
 * Investment in emerging technologies and future skills.
 
-These experiences illustrate the value of clear national vision and institutional leadership in technology policy [29, 30, 65–67].
+These experiences illustrate the value of clear national vision and institutional leadership in technology policy [29, 30, 65-67].
 
 ## 3.7 Canada: Responsible AI and Public Sector Governance
 
-Canada has played a significant role in advancing responsible AI governance and public-sector AI adoption. The country has invested heavily in AI research and was among the first governments to introduce guidance for the responsible use of AI within public institutions [68–70].
+Canada has played a significant role in advancing responsible AI governance and public-sector AI adoption. The country has invested heavily in AI research and was among the first governments to introduce guidance for the responsible use of AI within public institutions [68-70].
 
-One notable initiative is the Directive on Automated Decision-Making, which establishes governance requirements for AI systems used in government operations. Canada has also supported AI research through major academic institutions and innovation programs [68–70].
+One notable initiative is the Directive on Automated Decision-Making, which establishes governance requirements for AI systems used in government operations. Canada has also supported AI research through major academic institutions and innovation programs [68-70].
 
 Key features include:
 
@@ -541,27 +541,27 @@ Key features include:
 * Risk-based evaluation of AI systems.
 * Building public trust through responsible implementation.
 
-Canada’s experience provides a practical model for implementing AI governance mechanisms within public institutions [68–70].
+Canada’s experience provides a practical model for implementing AI governance mechanisms within public institutions [68-70].
 
 ## Comparative Analysis
 
 Although the international case studies examined in this chapter differ in governance structures, levels of digital maturity, institutional arrangements, and economic contexts, several common themes emerge [51–70]:
 
 * Strong government leadership and long-term strategic vision are essential drivers of successful digital transformation [52, 54, 56, 60, 65, 66].
-* Sustained investment in digital infrastructure and interoperable public systems enables innovation, efficiency, and improved service delivery [17, 20, 21, 57–59].
-* AI governance frameworks and risk-management mechanisms play a critical role in promoting public trust, transparency, accountability, and responsible innovation [51, 53, 60–62, 68, 69].
+* Sustained investment in digital infrastructure and interoperable public systems enables innovation, efficiency, and improved service delivery [17, 20, 21, 57-59].
+* AI governance frameworks and risk-management mechanisms play a critical role in promoting public trust, transparency, accountability, and responsible innovation [51, 53, 60-62, 68, 69].
 * Effective collaboration among government, academia, industry, and civil society strengthens implementation capacity and accelerates innovation [19, 27, 54, 63, 70].
 * Talent development, digital literacy, and AI education are fundamental to long-term national competitiveness and AI readiness [63, 64, 73, 76, 77].
 
-These experiences demonstrate that successful AI-enabled governance depends not only on technology but also on institutions, policies, human capital, and public trust [1, 3, 5, 10, 17, 21, 51–70].
+These experiences demonstrate that successful AI-enabled governance depends not only on technology but also on institutions, policies, human capital, and public trust [1, 3, 5, 10, 17, 21, 51-70].
 
 ## Conclusion
 
-International experiences from Singapore, South Korea, Estonia, the United Kingdom, Finland, the United Arab Emirates, and Canada provide valuable insights into how governments can leverage AI, data analytics, and digital technologies to improve governance and public service delivery [51–70].
+International experiences from Singapore, South Korea, Estonia, the United Kingdom, Finland, the United Arab Emirates, and Canada provide valuable insights into how governments can leverage AI, data analytics, and digital technologies to improve governance and public service delivery [51-70].
 
 While Bangladesh faces its own unique challenges and opportunities, these examples offer practical lessons that may inform future discussions on AI governance, policy intelligence, digital transformation, and public-sector innovation [1, 3, 5, 17, 21, 29, 30, 35, 36].
 
-The next chapter examines the current AI landscape in Bangladesh and identifies opportunities and challenges that may shape the country's future AI ecosystem [29–36, 80].
+The next chapter examines the current AI landscape in Bangladesh and identifies opportunities and challenges that may shape the country's future AI ecosystem [29-36, 80].
 
 # Chapter 4: Current AI Landscape in Bangladesh
 
@@ -569,11 +569,11 @@ The next chapter examines the current AI landscape in Bangladesh and identifies 
 
 Artificial Intelligence (AI) is emerging as a strategic technology with the potential to transform economic development, public service delivery, education, healthcare, agriculture, manufacturing, and governance. In recent years, Bangladesh has demonstrated growing interest in AI through government initiatives, academic research, startup activities, and private-sector innovation [24, 26, 35, 36, 80].
 
-Although Bangladesh remains in the early stages of AI adoption compared to leading digital economies, the country has established a foundation for future growth through investments in digital infrastructure, human capital development, and technology-driven public services [28–33, 35, 36, 82, 83].
+Although Bangladesh remains in the early stages of AI adoption compared to leading digital economies, the country has established a foundation for future growth through investments in digital infrastructure, human capital development, and technology-driven public services [28-33, 35, 36, 82, 83].
 
 ## Digital Transformation and National Initiatives
 
-Bangladesh has pursued digital transformation through initiatives such as Digital Bangladesh and Smart Bangladesh. These programs have contributed to improvements in digital connectivity, e-governance, online public services, and technology adoption across various sectors [28–30, 32, 82, 83].
+Bangladesh has pursued digital transformation through initiatives such as Digital Bangladesh and Smart Bangladesh. These programs have contributed to improvements in digital connectivity, e-governance, online public services, and technology adoption across various sectors [28-30, 32, 82, 83].
 
 Key achievements include:
 
@@ -583,7 +583,7 @@ Key achievements include:
 * Increasing use of cloud-based and data-driven services.
 * Promotion of technology entrepreneurship and innovation.
 
-These developments provide an important foundation for future AI adoption and innovation [17, 20, 21, 28–30, 82, 83].
+These developments provide an important foundation for future AI adoption and innovation [17, 20, 21, 28-30, 82, 83].
 
 ## Existing Digital Government Foundations in Bangladesh
 
@@ -722,7 +722,7 @@ Addressing these issues will be important for supporting future AI-driven govern
 
 ### Implications for BAPIL
 
-The existence of digital government foundations significantly improves the feasibility of future policy intelligence initiatives [28–33].
+The existence of digital government foundations significantly improves the feasibility of future policy intelligence initiatives [28-33].
 
 Rather than starting from scratch, BAPIL can potentially build upon:
 
@@ -812,7 +812,7 @@ One of the most significant opportunities for Bangladesh lies in the development
 * Digital public services.
 * Educational technologies.
 
-The development of Bangla-focused AI models and datasets may contribute to greater digital inclusion and accessibility for citizens [46–49, 80, 81].
+The development of Bangla-focused AI models and datasets may contribute to greater digital inclusion and accessibility for citizens [46-49, 80, 81].
 
 ## Challenges and Constraints
 
@@ -828,7 +828,7 @@ Key challenges include:
 * Ethical and regulatory considerations.
 * Gaps in industry-academia collaboration.
 
-Addressing these challenges will require coordinated efforts from government, academia, industry, and civil society [7, 14, 35, 36, 71–80].
+Addressing these challenges will require coordinated efforts from government, academia, industry, and civil society [7, 14, 35, 36, 71-80].
 
 ## Opportunities for Future Development
 
@@ -851,7 +851,7 @@ BAPIL is envisioned as a research-oriented platform that may contribute to discu
 
 ## Conclusion
 
-Bangladesh stands at an important stage in its AI development journey. The country’s growing digital ecosystem, expanding technology sector, and increasing focus on innovation create significant opportunities for future AI adoption. At the same time, challenges related to infrastructure, governance, talent, and research capacity must be addressed to ensure sustainable and responsible development [29–36, 71–80].
+Bangladesh stands at an important stage in its AI development journey. The country’s growing digital ecosystem, expanding technology sector, and increasing focus on innovation create significant opportunities for future AI adoption. At the same time, challenges related to infrastructure, governance, talent, and research capacity must be addressed to ensure sustainable and responsible development [29-36, 71-80].
 
 Understanding the current AI landscape is essential for identifying future priorities and opportunities. The next chapter presents the vision and strategic objectives of BAPIL as a proposed framework for supporting AI governance, policy intelligence, and public sector innovation in Bangladesh [1, 5, 17, 24, 29, 30, 35, 36].
 
@@ -859,9 +859,9 @@ Understanding the current AI landscape is essential for identifying future prior
 
 ## Introduction
 
-The rapid advancement of Artificial Intelligence (AI), data analytics, and digital technologies presents both opportunities and challenges for governments, institutions, and societies worldwide. As Bangladesh continues its digital transformation journey, there is growing need for research-driven frameworks that can support evidence-based policymaking, responsible AI adoption, digital governance, and public sector innovation [1–7, 10, 17–26].
+The rapid advancement of Artificial Intelligence (AI), data analytics, and digital technologies presents both opportunities and challenges for governments, institutions, and societies worldwide. As Bangladesh continues its digital transformation journey, there is growing need for research-driven frameworks that can support evidence-based policymaking, responsible AI adoption, digital governance, and public sector innovation [1-7, 10, 17-26].
 
-The Bangladesh AI Policy & Innovation Lab (BAPIL) is envisioned as a multidisciplinary research and innovation initiative that explores how AI and data-driven technologies can contribute to governance, policy intelligence, digital resilience, and national development [3, 17, 21, 24–27].
+The Bangladesh AI Policy & Innovation Lab (BAPIL) is envisioned as a multidisciplinary research and innovation initiative that explores how AI and data-driven technologies can contribute to governance, policy intelligence, digital resilience, and national development [3, 17, 21, 24-27].
 
 ## Vision Statement
 
@@ -884,7 +884,7 @@ Academia ────── BAPIL ────── Industry
 Caption:
 Figure 2. Conceptual BAPIL Ecosystem showing collaboration among government, academia, industry, and civil society [19, 24, 25, 27].
 
-BAPIL is intended to complement—not duplicate—existing national AI initiatives. While programs such as the Bangladesh AI Hub may focus on talent development, startup incubation, AI adoption, and technology commercialization, BAPIL is envisioned as a research and policy intelligence platform focused on AI governance, policy analytics, knowledge management, and evidence-based decision support [35, 36]. Together, these initiatives can contribute to a more comprehensive and coordinated national AI ecosystem [29, 30, 35, 36].
+BAPIL is intended to complement-not duplicate-existing national AI initiatives. While programs such as the Bangladesh AI Hub may focus on talent development, startup incubation, AI adoption, and technology commercialization, BAPIL is envisioned as a research and policy intelligence platform focused on AI governance, policy analytics, knowledge management, and evidence-based decision support [35, 36]. Together, these initiatives can contribute to a more comprehensive and coordinated national AI ecosystem [29, 30, 35, 36].
 
 ## Core Principles
 
@@ -919,9 +919,9 @@ Progress in AI governance and policy intelligence requires cooperation among gov
 The long-term vision of BAPIL includes supporting efforts that may contribute to:
 
 * AI-assisted policy intelligence and decision support [10, 17, 20, 21].
-* Responsible AI governance frameworks [1, 4–9, 15, 51, 53, 68, 69].
+* Responsible AI governance frameworks [1, 4-9, 15, 51, 53, 68, 69].
 * Data-informed public sector innovation [17, 18, 20, 21].
-* Bangla-language AI research and applications [46–49, 80, 81].
+* Bangla-language AI research and applications [46-49, 80, 81].
 * Digital resilience and misinformation awareness [14, 34, 71, 72, 74, 75].
 * AI education and workforce development [35, 36, 63, 64, 73, 76, 77].
 * Research collaboration and knowledge sharing [19, 24, 25, 27].
@@ -969,9 +969,9 @@ BAPIL does not seek to function as a policymaking authority. Instead, it aims to
 
 ## Vision for International Collaboration
 
-AI governance and digital transformation are global challenges that require international cooperation. BAPIL seeks to learn from international experiences and encourage collaboration with academic institutions, research organizations, innovation ecosystems, and policy communities around the world [3, 19, 24, 27, 51–70].
+AI governance and digital transformation are global challenges that require international cooperation. BAPIL seeks to learn from international experiences and encourage collaboration with academic institutions, research organizations, innovation ecosystems, and policy communities around the world [3, 19, 24, 27, 51-70].
 
-Such collaboration may support knowledge exchange, capacity building, comparative research, and the development of globally informed approaches to AI governance and public sector innovation [19, 24, 27, 51–70].
+Such collaboration may support knowledge exchange, capacity building, comparative research, and the development of globally informed approaches to AI governance and public sector innovation [19, 24, 27, 51-70].
 
 ## Institutional Alignment with National Initiatives
 
@@ -1352,7 +1352,7 @@ This module aims to support knowledge sharing and policy learning [17,25,27].
 
 ## AI-Assisted Analytical Capabilities
 
-The dashboard may incorporate AI technologies to enhance analytical functions [37–45].
+The dashboard may incorporate AI technologies to enhance analytical functions [37-45].
 
 Potential capabilities include:
 
@@ -2370,7 +2370,7 @@ Potential opportunities include:
 
 International engagement can accelerate capacity building, research quality, and innovation diffusion [2, 23, 27, 63, 77].
 
-Several countries, including Singapore, South Korea, Finland, Estonia, Canada, and the United Kingdom, have demonstrated the importance of international cooperation and strategic investment in AI talent development [51–56, 58, 60–70].
+Several countries, including Singapore, South Korea, Finland, Estonia, Canada, and the United Kingdom, have demonstrated the importance of international cooperation and strategic investment in AI talent development [51–56, 58, 60-70].
 
 ## The Role of BAPIL
 
@@ -2422,7 +2422,7 @@ Several emerging opportunities may support future talent development:
 * Public-private partnerships.
 * AI-focused innovation hubs and incubators.
 
-These opportunities may contribute to strengthening national capabilities over the coming decades [29, 35, 36, 46–49, 77, 80].
+These opportunities may contribute to strengthening national capabilities over the coming decades [29, 35, 36, 46-49, 77, 80].
 
 ## Long-Term Vision
 
@@ -2442,9 +2442,9 @@ The next chapter examines the Startup Ecosystem and explores how innovation, ent
 
 ## Introduction
 
-Innovation and entrepreneurship play a critical role in transforming research, technology, and ideas into practical solutions that generate economic and social value. Around the world, startups have become important drivers of technological advancement, job creation, digital transformation, and economic competitiveness [10–13, 17–20, 26, 73]. AI-enabled firms are increasingly attracting significant global investment and shaping the future of innovation ecosystems worldwide.  
+Innovation and entrepreneurship play a critical role in transforming research, technology, and ideas into practical solutions that generate economic and social value. Around the world, startups have become important drivers of technological advancement, job creation, digital transformation, and economic competitiveness [10–13, 17-20, 26, 73]. AI-enabled firms are increasingly attracting significant global investment and shaping the future of innovation ecosystems worldwide.  
 
-As Artificial Intelligence (AI) continues to reshape industries and public services, the development of a vibrant AI startup ecosystem represents an important opportunity for Bangladesh [1, 4, 9, 17, 24, 26, 54, 70]. By encouraging innovation, supporting entrepreneurs, and fostering collaboration among academia, industry, government, and investors, Bangladesh can strengthen its position within the emerging global digital economy [28–30, 35, 36].
+As Artificial Intelligence (AI) continues to reshape industries and public services, the development of a vibrant AI startup ecosystem represents an important opportunity for Bangladesh [1, 4, 9, 17, 24, 26, 54, 70]. By encouraging innovation, supporting entrepreneurs, and fostering collaboration among academia, industry, government, and investors, Bangladesh can strengthen its position within the emerging global digital economy [28-30, 35, 36].
 
 This chapter examines the role of startups and innovation ecosystems within the broader BAPIL framework.
 
@@ -2465,7 +2465,7 @@ By transforming research outcomes into practical applications, startups can help
 
 ## Current Startup Landscape in Bangladesh
 
-Bangladesh has witnessed significant growth in its startup ecosystem over the past decade as part of the country’s broader digital transformation agenda [28–30, 32, 82, 83]. The expansion of digital infrastructure, mobile connectivity, and e-government initiatives has created favorable conditions for entrepreneurship and technology innovation [28, 29, 32, 82].
+Bangladesh has witnessed significant growth in its startup ecosystem over the past decade as part of the country’s broader digital transformation agenda [28-30, 32, 82, 83]. The expansion of digital infrastructure, mobile connectivity, and e-government initiatives has created favorable conditions for entrepreneurship and technology innovation [28, 29, 32, 82].
 
 A growing number of technology ventures have emerged in sectors such as:
 
@@ -2481,7 +2481,7 @@ The expansion of internet connectivity, mobile technologies, and digital service
 
 ## Emerging Opportunities in AI Startups
 
-Artificial Intelligence offers opportunities for developing innovative products and services across multiple sectors [1, 4, 17, 24, 37–44].
+Artificial Intelligence offers opportunities for developing innovative products and services across multiple sectors [1, 4, 17, 24, 37-44].
 
 ### Public Sector Innovation
 
@@ -2511,7 +2511,7 @@ Potential areas include:
 * Personalized learning systems [39, 42, 76].
 * AI-powered tutoring [39, 42].
 * Educational analytics.
-* Language learning technologies [46–49].
+* Language learning technologies [46-49].
 
 ### Financial Services
 
@@ -2630,7 +2630,7 @@ BAPIL is not intended to function as a startup incubator or investment fund. Rat
 
 ## International Perspectives
 
-Many countries have successfully leveraged startups as engines of technological advancement and economic growth [51–70].
+Many countries have successfully leveraged startups as engines of technological advancement and economic growth [51-70].
 
 Common success factors include:
 
@@ -2641,7 +2641,7 @@ Common success factors include:
 * International collaboration [27, 51, 53].
 * Entrepreneurial culture [52, 57].
 
-Examples from Singapore, South Korea, Estonia, Canada, Finland, and the United Kingdom demonstrate the importance of coordinated national strategies, digital infrastructure, and public-private partnerships in fostering innovation ecosystems [51–70].
+Examples from Singapore, South Korea, Estonia, Canada, Finland, and the United Kingdom demonstrate the importance of coordinated national strategies, digital infrastructure, and public-private partnerships in fostering innovation ecosystems [51-70].
 
 ## Long-Term Vision
 
@@ -2681,11 +2681,11 @@ The successful implementation of BAPIL may require expertise from multiple disci
 
 ### Artificial Intelligence and Data Science
 
-* Machine Learning researchers [37–44]
+* Machine Learning researchers [37-44]
 * Data scientists [24, 26, 77]
 * AI engineers [2, 7, 42]
-* Natural Language Processing (NLP) specialists [46–49, 81]
-* Knowledge graph researchers [37–41]
+* Natural Language Processing (NLP) specialists [46-49, 81]
+* Knowledge graph researchers [37-41]
 
 ### Public Policy and Governance
 
@@ -2724,7 +2724,7 @@ Key infrastructure components may include:
 
 * Cloud computing platforms [16, 35, 36]
 * Research servers [35, 77]
-* AI development environments [37–44]
+* AI development environments [37-44]
 * Data processing systems [17, 18]
 
 ### Data Infrastructure
@@ -2738,8 +2738,8 @@ Key infrastructure components may include:
 
 * Policy intelligence dashboards [10, 13, 17]
 * Data visualization systems [17, 18]
-* AI research environments [37–44]
-* Information retrieval tools [38, 46–49]
+* AI research environments [37-44]
+* Information retrieval tools [38, 46-49]
 
 ### Security Infrastructure
 
@@ -2849,7 +2849,7 @@ Potential sources include:
 
 Potential support may be available through:
 
-* Multilateral organizations [17–25]
+* Multilateral organizations [17-25]
 * Development agencies [3, 24]
 * International cooperation programs [16, 36]
 
@@ -2869,14 +2869,14 @@ To minimize risks and support sustainable growth, BAPIL may adopt a phased imple
 
 ### Phase 1 - Research and Planning
 
-* Literature review [1–16]
-* Comparative studies [51–70]
+* Literature review [1-16]
+* Comparative studies [51-70]
 * White paper development
 * Stakeholder engagement [22, 25]
 
 ### Phase 2 - Prototype Development
 
-* Initial architecture implementation [37–44]
+* Initial architecture implementation [37-44]
 * Dashboard prototypes [10, 17]
 * Research demonstrations [41, 50]
 
@@ -2915,17 +2915,17 @@ By adopting a phased and collaborative approach, BAPIL can explore opportunities
 
 The next chapter presents the Five-Year Roadmap and outlines a potential implementation pathway for the evolution of BAPIL from a research concept into a mature policy intelligence and innovation framework.
 
-# Chapter 14: Public Sector Innovation: Five-Year Roadmap (2026–2030)
+# Chapter 14: Public Sector Innovation: Five-Year Roadmap (2026-2030)
 
 ## Introduction
 
-The development of the Bangladesh AI Policy & Innovation Lab (BAPIL) is envisioned as a gradual and research-driven process. Rather than attempting large-scale implementation from the outset, BAPIL may evolve through phased development, stakeholder engagement, capacity building, and pilot initiatives [1–5, 9, 17, 21].
+The development of the Bangladesh AI Policy & Innovation Lab (BAPIL) is envisioned as a gradual and research-driven process. Rather than attempting large-scale implementation from the outset, BAPIL may evolve through phased development, stakeholder engagement, capacity building, and pilot initiatives [1-5, 9, 17, 21].
 
 This roadmap outlines a conceptual five-year pathway (2026–2030) for the evolution of BAPIL from a research concept into a mature policy intelligence and innovation framework [1, 9, 10, 17, 21].
 
-## Executive Roadmap Overview (2026–2041)
+## Executive Roadmap Overview (2026-2041)
 
-The development of BAPIL is envisioned as a long-term and phased journey that progresses from foundational research toward a mature ecosystem supporting AI governance, policy intelligence, innovation, and digital transformation [1, 4, 9, 17, 22, 29, 30]. The roadmap is designed to align short-term actions with long-term national development aspirations and Bangladesh’s broader digital transformation agenda [28–30, 35, 36].
+The development of BAPIL is envisioned as a long-term and phased journey that progresses from foundational research toward a mature ecosystem supporting AI governance, policy intelligence, innovation, and digital transformation [1, 4, 9, 17, 22, 29, 30]. The roadmap is designed to align short-term actions with long-term national development aspirations and Bangladesh’s broader digital transformation agenda [28-30, 35, 36].
 
 Year	Strategic Focus	Primary Goal
 2026	Research	Establish conceptual foundations, conduct literature reviews, and develop the initial BAPIL framework.
@@ -3000,8 +3000,8 @@ The roadmap is guided by the following objectives [1, 4, 5, 9, 17, 29, 30]:
 ### Key Activities
 
 * Complete the BAPIL White Paper.
-* Conduct literature reviews on AI governance and policy intelligence [1–10, 15].
-* Study international best practices from Singapore, South Korea, Estonia, United Kingdom, Finland, United Arab Emirates (UAE) and Canada [51–70].
+* Conduct literature reviews on AI governance and policy intelligence [1-10, 15].
+* Study international best practices from Singapore, South Korea, Estonia, United Kingdom, Finland, United Arab Emirates (UAE) and Canada [51-70].
 * Develop initial technical architecture concepts.
 * Establish academic and research partnerships [24, 27, 35, 36].
 * Organize workshops and stakeholder consultations [5, 22, 76].
@@ -3024,8 +3024,8 @@ The roadmap is guided by the following objectives [1, 4, 5, 9, 17, 29, 30]:
 * Design the BAPIL Policy Intelligence Framework [1, 4, 7, 15].
 * Develop an initial Policy Intelligence Dashboard prototype.
 * Create knowledge management and document repositories [18, 33, 78, 79].
-* Explore Bangla-language policy intelligence technologies [46–49, 80, 81].
-* Develop AI governance and ethical guidelines [1, 5–7, 15].
+* Explore Bangla-language policy intelligence technologies [46-49, 80, 81].
+* Develop AI governance and ethical guidelines [1, 5-7, 15].
 
 ### Expected Outcomes
 
@@ -3063,8 +3063,8 @@ The roadmap is guided by the following objectives [1, 4, 5, 9, 17, 29, 30]:
 
 ### Key Activities
 
-* Explore Bangla Policy Foundation Model research [41–50].
-* Develop advanced policy analytics tools using foundation models and retrieval-augmented approaches [38–42].
+* Explore Bangla Policy Foundation Model research [41-50].
+* Develop advanced policy analytics tools using foundation models and retrieval-augmented approaches [38-42].
 * Conduct public sentiment and policy intelligence studies [80, 81].
 * Support innovation and startup ecosystem research [16, 27, 35, 36].
 * Expand international collaboration initiatives [19, 24, 27].
@@ -3135,18 +3135,18 @@ While this roadmap focuses on the period 2026–2030, the broader vision of BAPI
 Future opportunities may include:
 
 * National-scale policy intelligence platforms.
-* Advanced Bangla-language AI systems [46–49].
+* Advanced Bangla-language AI systems [46-49].
 * Regional AI governance leadership [1, 4, 27].
 * Expanded research infrastructure.
 * International centers of excellence in AI governance and public-sector innovation.
 
 ## Conclusion
 
-The proposed five-year roadmap provides a structured pathway for the gradual development of BAPIL. Through research, collaboration, capacity building, and responsible innovation, BAPIL seeks to contribute to discussions on AI governance, policy intelligence, and digital transformation in Bangladesh [1, 4, 5, 17, 21, 28–30].
+The proposed five-year roadmap provides a structured pathway for the gradual development of BAPIL. Through research, collaboration, capacity building, and responsible innovation, BAPIL seeks to contribute to discussions on AI governance, policy intelligence, and digital transformation in Bangladesh [1, 4, 5, 17, 21, 28-30].
 
 The roadmap emphasizes sustainable growth, interdisciplinary collaboration, and evidence-based development as foundational principles for the future evolution of the initiative [1, 3, 9, 22, 29, 30]. International experience demonstrates that successful public-sector AI initiatives require strong governance, institutional capacity, long-term commitment, and continuous adaptation to emerging technological and societal challenges.
 
-# Chapter 15: Long-Term Vision (2030–2041)
+# Chapter 15: Long-Term Vision (2030-2041)
 
 ## Introduction
 
@@ -3909,7 +3909,7 @@ The organizations listed in this appendix are presented solely as examples of in
 
 ## Introduction
 
-The Bangladesh AI Policy & Innovation Lab (BAPIL) is envisioned as a research-oriented initiative focused on AI governance, policy intelligence, digital transformation, and public-sector innovation. Long-term sustainability may depend upon diversified funding sources, strategic partnerships, and phased development approaches [3, 16–19, 24, 25, 27, 35, 36].
+The Bangladesh AI Policy & Innovation Lab (BAPIL) is envisioned as a research-oriented initiative focused on AI governance, policy intelligence, digital transformation, and public-sector innovation. Long-term sustainability may depend upon diversified funding sources, strategic partnerships, and phased development approaches [3, 16-19, 24, 25, 27, 35, 36].
 
 This appendix presents a conceptual funding model intended for discussion and future exploration. It does not represent an approved budget or funding commitment from any organization.
 
@@ -3967,7 +3967,7 @@ Funding may support activities such as:
 * Bangla-language AI technologies
 * Digital governance studies
 
-Research and development activities are fundamental for strengthening national AI capacity, promoting responsible innovation, and supporting evidence-based policymaking [1, 17, 24, 37–50, 70, 77].
+Research and development activities are fundamental for strengthening national AI capacity, promoting responsible innovation, and supporting evidence-based policymaking [1, 17, 24, 37-50, 70, 77].
 
 ### Human Capital Development
 
@@ -4055,7 +4055,7 @@ Actual funding arrangements, if pursued in the future, would depend upon stakeho
 
 # Acknowledgements
 
-The author would like to acknowledge the contributions of researchers, policymakers, international organizations, and public resources whose publications informed this white paper, particularly those produced by organizations such as OECD, UNESCO, UNDP, the United Nations, the World Bank, the World Economic Forum, and various academic and research institutions [1–27, 71–77].
+The author would like to acknowledge the contributions of researchers, policymakers, international organizations, and public resources whose publications informed this white paper, particularly those produced by organizations such as OECD, UNESCO, UNDP, the United Nations, the World Bank, the World Economic Forum, and various academic and research institutions [1-27, 71-77].
 
 Any errors or omissions remain the sole responsibility of the author.
 
