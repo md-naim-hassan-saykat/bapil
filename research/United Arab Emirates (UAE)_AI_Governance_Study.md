@@ -73,4 +73,7 @@
 
 ### References
 
-Use [65]–[67].
+1. [65] UAE National Strategy for Artificial Intelligence 2031.
+2. [66] UAE Cabinet Adopts National AI Strategy 2031.
+3. [67] UNESCO Policy Monitoring Platform.
+4. [26] Government AI Readiness Index.
