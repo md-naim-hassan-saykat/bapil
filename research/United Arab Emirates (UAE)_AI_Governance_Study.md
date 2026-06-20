@@ -71,6 +71,6 @@
 
 ## Key Takeaways
 
-## References
+### References
 
 Use [65]–[67].
