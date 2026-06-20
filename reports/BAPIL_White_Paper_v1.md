@@ -133,9 +133,17 @@ I hope this document contributes, in some small way, to ongoing discussions abou
 18. Conclusion
 
 Appendices
-- Acronyms
-- Glossary
-- References
+
+Appendix A: Potential Pilot Projects
+Appendix B: International Advisory Board Concept
+Appendix C: Funding Model
+
+Back Matter
+
+Acknowledgements
+References
+Contact
+License
 
 # Chapter 1: Executive Summary
 
