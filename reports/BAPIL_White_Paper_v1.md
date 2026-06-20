@@ -134,21 +134,21 @@ I hope this document contributes, in some small way, to ongoing discussions abou
 
 Appendices
 
-Appendix A: Potential Pilot Projects
+    Appendix A: Potential Pilot Projects
 
-Appendix B: International Advisory Board Concept
+    Appendix B: International Advisory Board Concept
 
-Appendix C: Funding Model
+    Appendix C: Funding Model
 
 Back Matter
 
-Acknowledgements
+    Acknowledgements
 
-References
+    References
 
-Contact
+    Contact
 
-License
+    License
 
 # Chapter 1: Executive Summary
 
