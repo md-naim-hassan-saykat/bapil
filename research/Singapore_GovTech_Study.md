@@ -40,7 +40,9 @@ Singapore is widely recognized as one of the world’s leading digital governmen
 
 Singapore demonstrates how coordinated digital transformation, strong government leadership, and responsible AI governance can support effective public service delivery and evidence-based policymaking. Lessons from GovTech, Smart Nation, and AI governance initiatives may provide valuable insights for the design of future BAPIL frameworks and policy intelligence capabilities.
 
-## References
+## Key Takeaways
+
+### References
 
 1. [17] World Bank GovTech.
 2. [20] GovTech Maturity Index.
