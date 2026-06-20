@@ -69,7 +69,7 @@
 
 ## Key Takeaways
 
-## References
+### References
 
 1. [26] Government AI Readiness Index 2024.
 2. [63] Finland Artificial Intelligence Programme.
