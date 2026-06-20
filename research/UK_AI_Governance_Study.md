@@ -43,4 +43,9 @@ The United Kingdom’s approach to AI governance demonstrates how innovation can
 
 ## References
 
-References will be added following a review of official government publications, AI governance frameworks, academic research, and policy reports from the United Kingdom.
+1. [1] OECD Recommendation on AI.
+2. [5] UNESCO Recommendation on the Ethics of AI.
+3. [15] Council of Europe Framework Convention on AI.
+4. [60] AI Opportunities Action Plan.
+5. [61] Artificial Intelligence Playbook for the UK Government.
+6. [62] AI Regulation: A Pro-Innovation Approach.
