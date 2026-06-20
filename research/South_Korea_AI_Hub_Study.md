@@ -42,7 +42,9 @@ South Korea has emerged as a global leader in AI research, digital transformatio
 
 South Korea’s AI ecosystem highlights the importance of long-term national strategy, investment in research infrastructure, industry-academia collaboration, and AI talent development. These experiences may inform the conceptual development of BAPIL and provide practical lessons for strengthening AI research, innovation, and policy intelligence capabilities in Bangladesh.
 
-## References
+## Key Takeaways
+
+### References
 
 1. [26] Government AI Readiness Index.
 2. [54] National Strategy for Artificial Intelligence.
