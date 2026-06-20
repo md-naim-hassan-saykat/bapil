@@ -41,4 +41,11 @@ Estonia provides a valuable example of how secure digital infrastructure, intero
 
 ## References
 
-References will be added as official reports, academic studies, and documentation related to Estonia’s digital government ecosystem are reviewed.
+## References
+
+1. [17] World Bank GovTech.
+2. [20] GovTech Maturity Index.
+3. [21] UN E-Government Survey 2024.
+4. [57] e-Governance and Digital Public Services in Estonia.
+5. [58] OECD Digital Government Review of Estonia.
+6. [59] X-Road Platform.
