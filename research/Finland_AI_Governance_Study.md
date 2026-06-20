@@ -71,4 +71,9 @@
 
 ## References
 
-Use references [63] and [64] plus OECD and AI Readiness reports.
+1. [26] Government AI Readiness Index 2024.
+2. [63] Finland Artificial Intelligence Programme.
+3. [64] Elements of AI.
+4. [73] Future of Jobs Report.
+5. [76] AI and Education: Guidance for Policymakers.
+6. [77] Stanford AI Index Report 2026.
