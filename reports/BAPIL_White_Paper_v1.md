@@ -132,7 +132,7 @@ I hope this document contributes, in some small way, to ongoing discussions abou
 17. Strategic Recommendations
 18. Conclusion
 
-## Appendices
+Appendices
 
 Appendix A: Potential Pilot Projects
 
@@ -140,7 +140,7 @@ Appendix B: International Advisory Board Concept
 
 Appendix C: Funding Model
 
-## Back Matter
+Back Matter
 
 Acknowledgements
 
