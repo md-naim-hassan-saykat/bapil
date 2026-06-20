@@ -74,7 +74,16 @@
 
 ## Key Takeaways
 
-### References
+1. Canada demonstrates that responsible AI governance can be integrated into public-sector decision-making through formal policies, risk assessment mechanisms, and transparency requirements.
+2. The Directive on Automated Decision-Making provides a practical framework for ensuring accountability, human oversight, and responsible use of AI systems in government operations.
+3. The Algorithmic Impact Assessment (AIA) tool illustrates how governments can evaluate risks associated with AI systems before deployment and apply appropriate safeguards based on risk levels.
+4. Canada’s experience highlights the importance of combining innovation with governance, ensuring that technological advancement is accompanied by public trust, transparency, and ethical oversight.
+5. Strong collaboration among government agencies, research institutions, and the private sector has contributed to Canada’s leadership in AI research and policy development.
+6. Risk-based AI governance frameworks can help public institutions identify, monitor, and mitigate potential harms while supporting innovation and service improvement.
+7. For Bangladesh, Canada offers a useful model for developing public-sector AI governance standards, AI risk assessment procedures, transparency requirements, and accountability mechanisms.
+8. Several Canadian practices could inform future BAPIL initiatives, including AI governance dashboards, policy risk assessment frameworks, responsible AI guidelines, and public-sector AI evaluation toolkits.
+
+## References
 
 1. [1] OECD Recommendation on AI.
 2. [4] OECD AI Principles.
