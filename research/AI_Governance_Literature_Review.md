@@ -66,16 +66,16 @@ AI governance is a foundational component of BAPIL. Understanding international 
 
 ### Primary International AI Governance Frameworks
 
-- [1] OECD Recommendation on Artificial Intelligence
-- [4] OECD AI Principles
-- [5] UNESCO Recommendation on the Ethics of Artificial Intelligence
-- [6] European Union AI Act
-- [7] NIST AI Risk Management Framework
-- [8] OECD Framework for the Classification of AI Systems
-- [9] State of Implementation of the OECD AI Principles
-- [10] AI in the Public Sector: Opportunities and Challenges
-- [14] NIST Cybersecurity Framework 2.0
-- [15] Council of Europe Framework Convention on AI
-- [26] Government AI Readiness Index 2024
-- [74] Presidio Recommendations on Responsible Generative AI
-- [75] AI Governance Alliance Briefing Papers
+1. [1] OECD Recommendation on Artificial Intelligence
+2. [4] OECD AI Principles
+3. [5] UNESCO Recommendation on the Ethics of Artificial Intelligence
+4. [6] European Union AI Act
+5. [7] NIST AI Risk Management Framework
+6. [8] OECD Framework for the Classification of AI Systems
+7. [9] State of Implementation of the OECD AI Principles
+8. [10] AI in the Public Sector: Opportunities and Challenges
+9. [14] NIST Cybersecurity Framework 2.0
+10. [15] Council of Europe Framework Convention on AI
+11. [26] Government AI Readiness Index 2024
+12. [74] Presidio Recommendations on Responsible Generative AI
+13. [75] AI Governance Alliance Briefing Papers
