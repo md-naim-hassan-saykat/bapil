@@ -76,4 +76,9 @@
 
 ### References
 
-Use [68]–[70] and OECD/NIST references.
+1. [1] OECD Recommendation on AI.
+2. [4] OECD AI Principles.
+3. [7] NIST AI Risk Management Framework.
+4. [68] Directive on Automated Decision-Making.
+5. [69] Algorithmic Impact Assessment Tool.
+6. [70] Pan-Canadian Artificial Intelligence Strategy.
