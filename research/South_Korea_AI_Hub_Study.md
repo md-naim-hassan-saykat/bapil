@@ -55,7 +55,7 @@ South Korea’s AI ecosystem highlights the importance of long-term national str
 9. For Bangladesh, South Korea offers valuable lessons in national AI capacity building, research ecosystem development, AI talent cultivation, innovation hub creation, and public-private-academic collaboration.
 10. Several aspects of South Korea’s experience may inform future BAPIL initiatives, including AI policy intelligence systems, research collaboration networks, innovation ecosystems, talent development programs, and national AI strategy development.
 
-### References
+## References
 
 1. [26] Government AI Readiness Index.
 2. [54] National Strategy for Artificial Intelligence.
