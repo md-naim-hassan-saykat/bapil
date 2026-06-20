@@ -42,7 +42,17 @@ Singapore demonstrates how coordinated digital transformation, strong government
 
 ## Key Takeaways
 
-### References
+1. Singapore demonstrates how a clear national vision, strong government leadership, and coordinated digital transformation strategies can accelerate innovation and improve public service delivery.
+2. The Smart Nation initiative illustrates the importance of integrating digital technologies, data analytics, and AI into government operations to support evidence-based policymaking and citizen-centric services.
+3. GovTech Singapore serves as an example of how centralized coordination and dedicated digital institutions can strengthen implementation capacity across government agencies.
+4. Singapore’s AI governance initiatives, including the Model AI Governance Framework and AI Verify, highlight the importance of responsible, transparent, and trustworthy AI deployment.
+5. The country’s emphasis on digital infrastructure, interoperability, and whole-of-government collaboration has contributed to its position as a global leader in digital governance.
+6. Continuous investment in digital talent, skills development, and innovation ecosystems has supported Singapore’s long-term technological competitiveness.
+7. Singapore demonstrates that effective digital transformation requires not only technological investment but also supportive regulatory frameworks, institutional capacity, and stakeholder collaboration.
+8. For Bangladesh, Singapore offers valuable lessons in digital government modernization, AI governance, institutional coordination, digital talent development, and public-sector innovation.
+9. Several aspects of Singapore’s experience may inform future BAPIL initiatives, including policy intelligence platforms, AI governance frameworks, digital government modernization strategies, and evidence-based decision-support systems.
+
+## References
 
 1. [17] World Bank GovTech.
 2. [20] GovTech Maturity Index.
