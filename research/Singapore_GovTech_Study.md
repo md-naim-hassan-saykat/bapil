@@ -42,4 +42,9 @@ Singapore demonstrates how coordinated digital transformation, strong government
 
 ## References
 
-References will be added as official government publications, policy documents, and academic studies related to Singapore’s digital government ecosystem are reviewed.
+1. [17] World Bank GovTech.
+2. [20] GovTech Maturity Index.
+3. [21] UN E-Government Survey 2024.
+4. [51] Singapore Model AI Governance Framework.
+5. [52] Smart Nation 2.0 Report.
+6. [53] Model AI Governance Framework for Generative AI.
