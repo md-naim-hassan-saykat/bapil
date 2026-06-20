@@ -14,13 +14,13 @@
 
 ## Education and Digital Literacy
 
-Elements of AI
+### Elements of AI
 
 * History of the initiative.
 * University of Helsinki and Reaktor collaboration.
 * Global impact.
 
-Public AI Education
+### Public AI Education
 
 * Citizen-focused AI literacy.
 * Workforce reskilling.
