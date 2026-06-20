@@ -44,4 +44,9 @@ South Korea’s AI ecosystem highlights the importance of long-term national str
 
 ## References
 
-References will be added following a review of official government strategies, AI Hub documentation, research publications, and international assessments of South Korea’s AI initiatives.
+1. [26] Government AI Readiness Index.
+2. [54] National Strategy for Artificial Intelligence.
+3. [55] OECD National AI Policy Initiatives: Korea.
+4. [56] Korean New Deal.
+5.[73] Future of Jobs Report.
+6. [77] Stanford AI Index Report.
