@@ -79,7 +79,7 @@
 8. For Bangladesh, Finland offers valuable lessons in AI literacy, teacher training, workforce development, university-industry partnerships, and national AI readiness assessment.
 9. Several aspects of Finland’s experience may inform future BAPIL initiatives, including AI education programs, public awareness campaigns, talent development strategies, responsible AI governance frameworks, and long-term national AI capacity-building efforts.
 
-### References
+## References
 
 1. [26] Government AI Readiness Index 2024.
 2. [63] Finland Artificial Intelligence Programme.
