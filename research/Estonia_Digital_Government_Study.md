@@ -41,8 +41,6 @@ Estonia provides a valuable example of how secure digital infrastructure, intero
 
 ## References
 
-## References
-
 1. [17] World Bank GovTech.
 2. [20] GovTech Maturity Index.
 3. [21] UN E-Government Survey 2024.
