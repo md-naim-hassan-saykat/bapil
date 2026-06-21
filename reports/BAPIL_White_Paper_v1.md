@@ -4579,4 +4579,5 @@ Under the following condition:
 The licensor cannot revoke these freedoms as long as the license terms are followed.
 
 For the full license text, please visit:
+
 [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/)
