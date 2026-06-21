@@ -2654,7 +2654,7 @@ Common success factors include:
 * International collaboration [27, 51, 53].
 * Entrepreneurial culture [52, 57].
 
-Examples from Singapore, South Korea, Estonia, Canada, Finland, and the United Kingdom demonstrate the importance of coordinated national strategies, digital infrastructure, and public-private partnerships in fostering innovation ecosystems [51-70].
+Examples from Singapore, South Korea, Estonia, the United Kingdom, Finland, the United Arab Emirates (UAE), and Canada demonstrate the importance of coordinated national strategies, digital infrastructure, and public-private partnerships in fostering innovation ecosystems [51-70].
 
 ## Long-Term Vision
 
