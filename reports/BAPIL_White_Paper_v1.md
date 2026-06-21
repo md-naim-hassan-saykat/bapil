@@ -3727,7 +3727,7 @@ The proposed framework is built upon several key pillars:
 * Innovation and Startup Ecosystem Support
 * Bangla-Language AI and Knowledge Systems
 
-The white paper has examined international experiences from Singapore, South Korea, Estonia, and the United Kingdom, highlighting lessons that may inform future discussions on AI governance and digital transformation in Bangladesh [51,52,54,57,58,60,61,62]. It has also outlined a conceptual architecture, governance framework, implementation roadmap, and long-term vision extending toward 2041 [29,30].
+The white paper has examined international experiences from Singapore, South Korea, Estonia, the United Kingdom, Finland, the United Arab Emirates (UAE), and Canada highlighting lessons that may inform future discussions on AI governance and digital transformation in Bangladesh [51,52,54,57,58,60,61,62]. It has also outlined a conceptual architecture, governance framework, implementation roadmap, and long-term vision extending toward 2041 [29,30].
 
 A central theme throughout this document is the importance of responsible AI. Technological advancement alone is insufficient. Sustainable progress requires strong institutions, ethical governance, transparency, accountability, public trust, and meaningful human oversight [1,4,5,6,7,15]. AI should serve as a tool that augments human capabilities rather than replaces human judgment [4,5,15].
 
