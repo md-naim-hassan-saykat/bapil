@@ -8,7 +8,7 @@
 
 ## National AI Strategy
 
-* Finland’s AI Programme (2017–2019).
+* Finland’s AI Programme (2017-2019).
 * Government objectives.
 * Key policy priorities.
 
