@@ -4087,7 +4087,7 @@ London: International AI Safety Report Secretariat, 2025[2026-06-18].
 Available: https://internationalaisafetyreport.org/publication/international-ai-safety-report-2025
 
 [3] UNITED NATIONS DEVELOPMENT PROGRAMME (UNDP).
-Digital Strategy 2022–2025: Creating a World in Which Digital Is an Empowering Force for People and Planet[R/OL].
+Digital Strategy 2022-2025: Creating a World in Which Digital Is an Empowering Force for People and Planet[R/OL].
 New York: UNDP, 2022[2026-06-18].
 Available: https://www.undp.org/digital/Digital-Strategy
 
@@ -4190,7 +4190,7 @@ DOI: https://doi.org/10.1596/38499
 Available: https://openknowledge.worldbank.org/entities/publication/10b535a7-e9d4-51bd-96ed-6b917d5eb09e
 
 [21] UNITED NATIONS.
-United Nations E-Government Survey 2024: Accelerating Digital Transformation for Sustainable Development – With the Addendum on Artificial Intelligence[M/OL].
+United Nations E-Government Survey 2024: Accelerating Digital Transformation for Sustainable Development - With the Addendum on Artificial Intelligence[M/OL].
 New York: United Nations, 2024[2026-06-17].
 DOI: https://doi.org/10.18356/237d52b2-en
 Available: https://www.un-ilibrary.org/content/books/9789211067286
@@ -4230,12 +4230,12 @@ Available: https://www.oecd.org/en/about/programmes/global-partnership-on-artifi
 
 [28] MAZUMDAR A, ALHARAHSHEH H H.
 Digital Bangladesh-Vision 2021: What is the Digital Bangladesh Concept?[J/OL].
-South Asian Research Journal of Engineering and Technology, 2020, 2(1): 6–9[2026-06-18].
+South Asian Research Journal of Engineering and Technology, 2020, 2(1): 6-9[2026-06-18].
 DOI: 10.36346/sarjet.2020.v02i01.002.
 Available: https://sarpublication.com/media/articles/SARJET_21_6-9.pdf
 
 [29] GENERAL ECONOMICS DIVISION (GED), PLANNING COMMISSION, GOVERNMENT OF BANGLADESH.
-Perspective Plan of Bangladesh 2021–2041: Making Vision 2041 a Reality[EB/OL].
+Perspective Plan of Bangladesh 2021-2041: Making Vision 2041 a Reality[EB/OL].
 Dhaka: Planning Commission, Government of Bangladesh, 2021[2026-06-18].
 Available: https://oldweb.lged.gov.bd/uploadeddocument/unitpublication/1/1049/vision%202021-2041.pdf 
 
@@ -4278,7 +4278,7 @@ Available: https://www.tbsnews.net/foreign-policy/koica-and-ict-division-launch-
 
 [37] VASWANI A, SHAZEER N, PARMAR N, et al.
 Attention Is All You Need[C]//GUYON I, VON LUXBURG U, BENGIO S, et al., eds. Advances in Neural Information Processing Systems 30 (NeurIPS 2017).
-Red Hook, NY: Curran Associates, Inc., 2017: 5998–6008.
+Red Hook, NY: Curran Associates, Inc., 2017: 5998-6008.
 DOI: 10.48550/arXiv.1706.03762.
 Available: https://papers.nips.cc/paper/7181-attention-is-all-you-need
 
@@ -4325,26 +4325,26 @@ DOI: 10.48550/arXiv.2211.05100.
 Available: https://arxiv.org/abs/2211.05100
 
 [45] BENDER E M, GEBRU T, MCMILLAN-MAJOR A, et al.
-On the Dangers of Stochastic Parrots: Can Language Models Be Too Big?[C/OL]//Proceedings of the 2021 ACM Conference on Fairness, Accountability, and Transparency (FAccT ’21).
-New York: Association for Computing Machinery (ACM), 2021: 610–623[2026-06-18].
+On the Dangers of Stochastic Parrots: Can Language Models Be Too Big?[C/OL]//Proceedings of the 2021 ACM Conference on Fairness, Accountability, and Transparency (FAccT '21).
+New York: Association for Computing Machinery (ACM), 2021: 610-623[2026-06-18].
 DOI: 10.1145/3442188.3445922.
 Available: https://dl.acm.org/doi/10.1145/3442188.3445922
 
 [46] BHATTACHARJEE A, ISLAM M R, ANIK M A, et al.
 BanglaBERT: Combating Label Scarcity and Domain Shift in Bangla Language Understanding[C/OL]//Findings of the Association for Computational Linguistics: NAACL 2022.
-Seattle, WA, USA: Association for Computational Linguistics, 2022: 1268–1281[2026-06-18].
+Seattle, WA, USA: Association for Computational Linguistics, 2022: 1268-1281[2026-06-18].
 DOI: 10.18653/v1/2022.findings-naacl.98.
 Available: https://aclanthology.org/2022.findings-naacl.98
 
 [47] KAKWANI D, KALRA S, MURTHY A, et al.
 IndicBERT: A Multilingual Language Model for Indian Languages[C/OL]//Findings of the Association for Computational Linguistics: EMNLP 2020.
-Online: Association for Computational Linguistics, 2020: 5153–5167[2026-06-18].
+Online: Association for Computational Linguistics, 2020: 5153-5167[2026-06-18].
 DOI: 10.18653/v1/2020.findings-emnlp.445.
 Available: https://aclanthology.org/2020.findings-emnlp.445
 
 [48] BHATTACHARJEE A, HASAN T, AHMAD W U, et al.
 BanglaNLG and BanglaT5: Benchmarks and Resources for Evaluating Low-Resource Natural Language Generation in Bangla[C/OL]//Findings of the Association for Computational Linguistics: EACL 2023.
-Dubrovnik, Croatia: Association for Computational Linguistics, 2023: 726–735[2026-06-18].
+Dubrovnik, Croatia: Association for Computational Linguistics, 2023: 726-735[2026-06-18].
 DOI: 10.18653/v1/2023.findings-eacl.54.
 Available: https://aclanthology.org/2023.findings-eacl.54
 
@@ -4436,7 +4436,7 @@ Available: https://www.gov.uk/government/publications/ai-regulation-a-pro-innova
 #### Finland
 
 [63] MINISTRY OF ECONOMIC AFFAIRS AND EMPLOYMENT OF FINLAND.
-Leading the Way into the Age of Artificial Intelligence: Final Report of Finland’s Artificial Intelligence Programme[R/OL].
+Leading the Way into the Age of Artificial Intelligence: Final Report of Finland's Artificial Intelligence Programme[R/OL].
 Helsinki: Ministry of Economic Affairs and Employment, 2019[2026-06-18].
 Available: https://julkaisut.valtioneuvosto.fi/handle/10024/161688
 
@@ -4546,7 +4546,7 @@ How Bangladesh is Seizing the Opportunities of E-Government[EB/OL].
 Geneva: World Economic Forum, 2020[2026-06-19].
 Available: https://www.weforum.org/stories/2020/11/bangladesh-and-digital
 
-[83] GOVERNMENT OF THE PEOPLE’S REPUBLIC OF BANGLADESH.
+[83] GOVERNMENT OF THE PEOPLE'S REPUBLIC OF BANGLADESH.
 Bangladesh National Portal[EB/OL].
 Dhaka: Government of the People’s Republic of Bangladesh, 2026[2026-06-19].
 Available: https://bangladesh.gov.bd
