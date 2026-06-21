@@ -83,7 +83,7 @@
 7. For Bangladesh, Canada offers a useful model for developing public-sector AI governance standards, AI risk assessment procedures, transparency requirements, and accountability mechanisms.
 8. Several Canadian practices could inform future BAPIL initiatives, including AI governance dashboards, policy risk assessment frameworks, responsible AI guidelines, and public-sector AI evaluation toolkits.
 
-Relevance to BAPIL
+## Relevance to BAPIL
 
 Canada demonstrates how responsible AI governance, risk assessment frameworks, and public-sector oversight mechanisms can support trustworthy and accountable AI adoption. The country’s experience with the Directive on Automated Decision-Making, Algorithmic Impact Assessment (AIA), and public-sector AI governance provides valuable insights for the development of AI governance frameworks, risk management methodologies, and policy intelligence systems within BAPIL.
 
