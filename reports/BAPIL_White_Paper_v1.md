@@ -2383,7 +2383,7 @@ Potential opportunities include:
 
 International engagement can accelerate capacity building, research quality, and innovation diffusion [2, 23, 27, 63, 77].
 
-Several countries, including Singapore, South Korea, Finland, Estonia, Canada, and the United Kingdom, have demonstrated the importance of international cooperation and strategic investment in AI talent development [51–56, 58, 60-70].
+Several countries, including Singapore, South Korea, Finland, Estonia, Canada, and the United Kingdom, have demonstrated the importance of international cooperation and strategic investment in AI talent development [51-56, 58, 60-70].
 
 ## The Role of BAPIL
 
