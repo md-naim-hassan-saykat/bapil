@@ -3179,7 +3179,7 @@ The long-term vision is founded on five strategic pillars:
 * Human Capital Development
 * International Collaboration
 
-## Knowledge-Based Governanc
+## Knowledge-Based Governance
 
 Future governance systems may increasingly rely on data, analytics, and digital intelligence to support informed decision-making [11,17,18,20,21,57,58].
 
