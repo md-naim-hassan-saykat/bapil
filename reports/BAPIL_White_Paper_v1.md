@@ -4135,7 +4135,7 @@ Available: https://oecd.ai/en/wonk/ai-in-the-public-sector-opportunities-and-cha
 [11] ORGANISATION FOR ECONOMIC CO-OPERATION AND DEVELOPMENT (OECD).
 OECD Digital Government Reviews[EB/OL].
 Paris: OECD Publishing[2026-06-17].
-Available: https://www.oecd.org/gov/digital-government/oecd-digital-government-reviews/
+Available: https://www.oecd.org/gov/digital-government/oecd-digital-government-reviews
 
 [12] ORGANISATION FOR ECONOMIC CO-OPERATION AND DEVELOPMENT (OECD).
 Government at a Glance 2023[EB/OL].
