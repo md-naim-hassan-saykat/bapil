@@ -2934,7 +2934,7 @@ The next chapter presents the Five-Year Roadmap and outlines a potential impleme
 
 The development of the Bangladesh AI Policy & Innovation Lab (BAPIL) is envisioned as a gradual and research-driven process. Rather than attempting large-scale implementation from the outset, BAPIL may evolve through phased development, stakeholder engagement, capacity building, and pilot initiatives [1-5, 9, 17, 21].
 
-This roadmap outlines a conceptual five-year pathway (2026–2030) for the evolution of BAPIL from a research concept into a mature policy intelligence and innovation framework [1, 9, 10, 17, 21].
+This roadmap outlines a conceptual five-year pathway (2026-2030) for the evolution of BAPIL from a research concept into a mature policy intelligence and innovation framework [1, 9, 10, 17, 21].
 
 ## Executive Roadmap Overview (2026-2041)
 
