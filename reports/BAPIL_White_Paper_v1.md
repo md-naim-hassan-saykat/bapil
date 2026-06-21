@@ -3163,7 +3163,7 @@ The roadmap emphasizes sustainable growth, interdisciplinary collaboration, and 
 
 ## Introduction
 
-While the initial development of the Bangladesh AI Policy & Innovation Lab (BAPIL) focuses on research, capacity building, and pilot initiatives during 2026–2030, the broader vision extends toward supporting Bangladesh’s long-term development aspirations through 2041 and beyond [3,21,23,29,30].
+While the initial development of the Bangladesh AI Policy & Innovation Lab (BAPIL) focuses on research, capacity building, and pilot initiatives during 2026-2030, the broader vision extends toward supporting Bangladesh’s long-term development aspirations through 2041 and beyond [3,21,23,29,30].
 
 This chapter outlines a strategic vision for how AI governance, policy intelligence, digital innovation, and knowledge-driven decision-making may evolve over the coming decade. The objective is not to predict specific outcomes but to identify opportunities that could contribute to a more innovative, resilient, and technologically advanced Bangladesh [1,17,21,24,29,30].
 
