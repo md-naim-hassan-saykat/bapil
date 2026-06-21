@@ -3944,13 +3944,13 @@ These principles are aligned with international recommendations concerning trust
 ## Potential Funding Sources
 
 #### Source	Example
-Government	ICT Division, Bangladesh Computer Council (BCC), Planning Commission
-Development Partners	UNDP, UNESCO, Asian Development Bank (ADB)
-International Grants	Horizon Europe, Erasmus+, OECD-related research initiatives
-Research Grants	World Bank, national and international research programs
-Industry	Telecommunications companies, banks, technology firms, startup ecosystem partners
-Academic Partnerships	Universities, research institutes, international academic collaborations
-Philanthropic Foundations	Technology and development-focused foundations
+* Government: ICT Division, Bangladesh Computer Council (BCC), Planning Commission
+* Development Partners: UNDP, UNESCO, Asian Development Bank (ADB)
+* International Grants: Horizon Europe, Erasmus+, OECD-related research initiatives
+* Research Grants: World Bank, national and international research programs
+* Industry: Telecommunications companies, banks, technology firms, startup ecosystem partners
+* Academic Partnerships: Universities, research institutes, international academic collaborations
+* Philanthropic Foundations: Technology and development-focused foundations.
 
 Diversified funding mechanisms are widely recognized as essential for sustaining research and innovation ecosystems and reducing dependency on a single funding source [16, 17, 19, 24, 27]. International experience also suggests that blended funding approaches combining public investment, competitive grants, and private-sector participation can strengthen long-term innovation capacity [16, 19, 24, 27, 35, 36].
 
@@ -3961,11 +3961,11 @@ A diversified funding model may reduce long-term dependency on any single source
 Potential distribution:
 
 #### Category	Potential Purpose
-Research Grants	AI governance, policy intelligence, digital governance studies
-Government Support	Public-sector innovation initiatives and capacity building
-International Cooperation	Research collaboration and knowledge exchange
-Academic Partnerships	Student engagement, fellowships, and research programs
-Industry Collaboration	Applied research and innovation projects
+* Research Grants: AI governance, policy intelligence, and digital governance studies
+* Government Support: Public-sector innovation initiatives and capacity building
+* International Cooperation: Research collaboration and knowledge exchange
+* Academic Partnerships: Student engagement, fellowships, and research programs
+* Industry Collaboration: Applied research and innovation projects
 
 A diversified funding model may reduce long-term dependency on any single source while supporting strategic flexibility and institutional resilience [16, 17, 19, 24].
 
