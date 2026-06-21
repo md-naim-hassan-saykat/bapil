@@ -3014,7 +3014,7 @@ The roadmap is guided by the following objectives [1, 4, 5, 9, 17, 29, 30]:
 
 * Complete the BAPIL White Paper.
 * Conduct literature reviews on AI governance and policy intelligence [1-10, 15].
-* Study international best practices from Singapore, South Korea, Estonia, United Kingdom, Finland, United Arab Emirates (UAE) and Canada [51-70].
+* Study international best practices from Singapore, South Korea, Estonia, the United Kingdom, Finland, the United Arab Emirates (UAE) and Canada [51-70].
 * Develop initial technical architecture concepts.
 * Establish academic and research partnerships [24, 27, 35, 36].
 * Organize workshops and stakeholder consultations [5, 22, 76].
@@ -3143,7 +3143,7 @@ Mitigation strategies may include:
 
 ## Looking Beyond 2030
 
-While this roadmap focuses on the period 2026–2030, the broader vision of BAPIL extends toward Bangladesh’s long-term development aspirations through 2041 and beyond [29, 30].
+While this roadmap focuses on the period 2026-2030, the broader vision of BAPIL extends toward Bangladesh’s long-term development aspirations through 2041 and beyond [29, 30].
 
 Future opportunities may include:
 
