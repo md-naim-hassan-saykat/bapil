@@ -4553,8 +4553,8 @@ Available: https://bangladesh.gov.bd
 
 # Contact
 
-Md Naim Hassan Saykat
-Master’s Student in Artificial Intelligence
+Md Naim Hassan Saykat<br>
+Master's Student in Artificial Intelligence<br>
 Université Paris-Saclay, France
 
 GitHub: https://github.com/md-naim-hassan-saykat
