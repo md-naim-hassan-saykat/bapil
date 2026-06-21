@@ -3950,7 +3950,7 @@ These principles are aligned with international recommendations concerning trust
 * Research Grants: World Bank, national and international research programs
 * Industry: Telecommunications companies, banks, technology firms, startup ecosystem partners
 * Academic Partnerships: Universities, research institutes, international academic collaborations
-* Philanthropic Foundations: Technology and development-focused foundations.
+* Philanthropic Foundations: Technology and development-focused foundations
 
 Diversified funding mechanisms are widely recognized as essential for sustaining research and innovation ecosystems and reducing dependency on a single funding source [16, 17, 19, 24, 27]. International experience also suggests that blended funding approaches combining public investment, competitive grants, and private-sector participation can strengthen long-term innovation capacity [16, 19, 24, 27, 35, 36].
 
