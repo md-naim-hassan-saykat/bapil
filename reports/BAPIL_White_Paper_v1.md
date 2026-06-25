@@ -140,7 +140,6 @@ Appendices
 
   Appendix C: Funding Model
 
-
   Acknowledgements
 
   References
