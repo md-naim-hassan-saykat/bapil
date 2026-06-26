@@ -187,14 +187,14 @@ This document serves as a conceptual and research framework intended to stimulat
 
 This white paper is intended for:
 
-• Policymakers
-• Government agencies
-• Researchers and academics
-• Universities
-• Technology companies
-• Development partners
-• Civil society organizations
-• Students and innovators
+* Policymakers
+* Government agencies
+* Researchers and academics
+* Universities
+* Technology companies
+* Development partners
+* Civil society organizations
+* Students and innovators
 
 ## Executive Recommendations Summary
 
