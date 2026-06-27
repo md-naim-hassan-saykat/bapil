@@ -2904,20 +2904,16 @@ Year	Strategic Focus	Primary Goal
 2030	Expansion	Consolidate achievements, expand partnerships, and prepare for long-term sustainability.
 2041	Long-Term Vision	Contribute to a knowledge-based, innovation-driven, and AI-enabled Bangladesh through research, collaboration, and responsible technology development.
 
-2026 → Research Foundation
-        ↓
-2027 → Framework Development
-        ↓
-2028 → Capacity Building
-        ↓
-2029 → Advanced Research
-        ↓
-2030 → Strategic Expansion
-        ↓
-2041 → Long-Term National Vision
+<div align="center">
+  <img
+    src="figures/figure6.png"
+    alt="Strategic roadmap for the phased development of the BAPIL framework"
+    width="50%">
+</div>
 
-Caption:
-Figure 6. Strategic roadmap for the phased development of BAPIL (2026-2041).
+<p align="center">
+  <strong>Figure 6.</strong> Strategic roadmap for the phased development of the Bangladesh AI Policy &amp; Innovation Lab (BAPIL) from 2026 to 2041, illustrating the progression from research foundation and framework development to capacity building, advanced research, strategic expansion, and long-term alignment with Bangladesh's national development vision.
+</p>
 
 ## Roadmap Visualization
 
