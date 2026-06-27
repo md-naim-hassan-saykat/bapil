@@ -1040,7 +1040,7 @@ Together, these layers create an integrated environment for policy intelligence,
   <img
     src="figures/figure4.png"
     alt="High-level conceptual architecture of the BAPIL framework"
-    width="55%">
+    width="50%">
 </div>
 
 <p align="center">
