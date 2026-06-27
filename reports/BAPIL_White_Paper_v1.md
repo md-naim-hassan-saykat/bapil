@@ -175,7 +175,7 @@ This document serves as a conceptual and research framework intended to stimulat
 
 <div align="center">
   <img
-    src="figures/figure1.png"
+    src="figures/figure1_v2.png"
     alt="Positioning of BAPIL within the Bangladesh AI Ecosystem"
     width="70%">
 </div>
