@@ -173,7 +173,9 @@ The long-term vision of BAPIL is to contribute to a future where policymaking an
 
 This document serves as a conceptual and research framework intended to stimulate discussion, collaboration, and strategic thinking regarding the role of Artificial Intelligence in shaping Bangladesh’s future. The contents of this white paper are intended for research, educational, and policy discussion purposes and do not represent any official government position.
 
-![**Figure 1.** Conceptual positioning of the Bangladesh AI Policy & Innovation Lab (BAPIL) within the broader Bangladesh AI ecosystem.](figures/figure1_v2.png)
+![](figures/figure1_v2.png)
+
+Figure 1. Conceptual positioning of the Bangladesh AI Policy & Innovation Lab (BAPIL) within the broader Bangladesh AI ecosystem.
 
 This white paper is intended for:
 
@@ -968,7 +970,9 @@ BAPIL does not seek to replace existing national initiatives. Rather, it aims to
 
 The relationship among key initiatives may be conceptualized as follows:
 
-![Figure 3. Institutional relationship between Smart Bangladesh Vision 2041, Bangladesh AI Hub, and the Bangladesh AI Policy & Innovation Lab (BAPIL), illustrating BAPIL's engagement with universities and academia, research institutes and think tanks, government agencies, and its contribution to industry, startups, and citizens [29, 30, 35, 36].](figures/figure3.png)
+![](figures/figure3.png)
+
+Figure 3. Institutional relationship between Smart Bangladesh Vision 2041, Bangladesh AI Hub, and the Bangladesh AI Policy & Innovation Lab (BAPIL), illustrating BAPIL's engagement with universities and academia, research institutes and think tanks, government agencies, and its contribution to industry, startups, and citizens [29, 30, 35, 36].
 
 In this conceptual framework, Smart Bangladesh Vision 2041 represents the overarching national development vision [29, 30]. The Bangladesh AI Hub contributes to AI talent development, innovation, startup support, and technology ecosystem growth [35, 36]. BAPIL complements these efforts by focusing on policy intelligence, AI governance, knowledge management, research, and evidence-based decision support [1, 7, 10, 17, 21].
 
@@ -1397,7 +1401,9 @@ Responsible implementation is essential for maintaining trust and accountability
 
 A simplified representation of the dashboard workflow is shown below:
 
-![**Figure 5.** Conceptual workflow of policy intelligence within the Bangladesh AI Policy & Innovation Lab (BAPIL) ecosystem, illustrating the flow from government data, policy documents, citizen feedback, and research reports through data collection, AI-powered analytics, knowledge management, and policy intelligence to support researchers, policymakers, and other stakeholders in evidence-based decision-making.](figures/figure5.png){ width=50% }
+![](figures/figure5.png)
+
+Figure 5. Conceptual workflow of policy intelligence within the Bangladesh AI Policy & Innovation Lab (BAPIL) ecosystem, illustrating the flow from government data, policy documents, citizen feedback, and research reports through data collection, AI-powered analytics, knowledge management, and policy intelligence to support researchers, policymakers, and other stakeholders in evidence-based decision-making.
 
 This architecture illustrates how information may be transformed into actionable insights and accessible visualizations [10,17,18,21,33,83].
 
@@ -2861,7 +2867,9 @@ Year	Strategic Focus	Primary Goal
 2030	Expansion	Consolidate achievements, expand partnerships, and prepare for long-term sustainability.
 2041	Long-Term Vision	Contribute to a knowledge-based, innovation-driven, and AI-enabled Bangladesh through research, collaboration, and responsible technology development.
 
-![**Figure 6.** Strategic roadmap for the phased development of the Bangladesh AI Policy & Innovation Lab (BAPIL) from 2026 to 2041, illustrating the progression from research foundation and framework development to capacity building, advanced research, strategic expansion, and long-term alignment with Bangladesh's national development vision.](figures/figure6.png){ width=50% }
+![](figures/figure6.png)
+
+Figure 6. Strategic roadmap for the phased development of the Bangladesh AI Policy & Innovation Lab (BAPIL) from 2026 to 2041, illustrating the progression from research foundation and framework development to capacity building, advanced research, strategic expansion, and long-term alignment with Bangladesh's national development vision.
 
 This progression reflects the philosophy that sustainable AI ecosystems are built through continuous investment in research, governance, human capital, institutional capacity, and collaboration [1, 4, 5, 9, 17, 21, 24, 76]. Rather than pursuing rapid technological deployment alone, BAPIL emphasizes evidence-based development, responsible innovation, and long-term national value creation [1, 5, 7, 15, 22, 74, 75].
 
