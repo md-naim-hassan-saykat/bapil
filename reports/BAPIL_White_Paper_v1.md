@@ -3950,7 +3950,8 @@ Available: https://legalinstruments.oecd.org/en/instruments/oecd-legal-0449
 [2] BENGIO Y, MINDERMANN S, PRIVITERA D, et al.
 International AI Safety Report 2025[R/OL].
 London: International AI Safety Report Secretariat, 2025[2026-06-18].
-Available: https://internationalaisafetyreport.org/publication/international-ai-safety-report-2025
+Available: 
+<https://internationalaisafetyreport.org/publication/international-ai-safety-report-2025>
 
 [3] UNITED NATIONS DEVELOPMENT PROGRAMME (UNDP).
 Digital Strategy 2022-2025: Creating a World in Which Digital Is an Empowering Force for People and Planet[R/OL].
