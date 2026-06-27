@@ -1431,23 +1431,16 @@ Responsible implementation is essential for maintaining trust and accountability
 
 A simplified representation of the dashboard workflow is shown below:
 
-Government Data
-Policy Documents
-Citizen Feedback
-Research Reports
-        ↓
-Data Collection
-        ↓
-AI & Analytics Engine
-        ↓
-Knowledge Repository
-        ↓
-Policy Intelligence Dashboard
-        ↓
-Researchers • Policymakers • Stakeholders
+<div align="center">
+  <img
+    src="figures/figure5.png"
+    alt="Conceptual workflow of policy intelligence within the BAPIL ecosystem"
+    width="50%">
+</div>
 
-Caption:
-Figure 5. Conceptual workflow of policy intelligence within the BAPIL ecosystem.
+<p align="center">
+  <strong>Figure 5.</strong> Conceptual workflow of policy intelligence within the Bangladesh AI Policy &amp; Innovation Lab (BAPIL) ecosystem, illustrating the flow from government data, policy documents, citizen feedback, and research reports through data collection, AI-powered analytics, knowledge management, and policy intelligence to support researchers, policymakers, and other stakeholders in evidence-based decision-making.
+</p>
 
 This architecture illustrates how information may be transformed into actionable insights and accessible visualizations [10,17,18,21,33,83].
 
