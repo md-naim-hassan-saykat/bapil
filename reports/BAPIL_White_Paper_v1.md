@@ -876,16 +876,16 @@ BAPIL seeks to serve as a research-oriented platform that bridges the gap betwee
 
 Rather than replacing human decision-making, BAPIL is intended to explore how AI can assist policymakers, researchers, and institutions by providing analytical insights, supporting evidence-based discussions, and improving access to relevant information [10, 17, 18, 20, 21].
 
-                 Government
-                      │
-                      │
-Academia ────── BAPIL ────── Industry
-                      │
-                      │
-                Civil Society
+<div align="center">
+  <img
+    src="figures/figure2.png"
+    alt="Conceptual BAPIL Ecosystem"
+    width="70%">
+</div>
 
-Caption:
-Figure 2. Conceptual BAPIL Ecosystem showing collaboration among government, academia, industry, and civil society [19, 24, 25, 27].
+<p align="center">
+  <strong>Figure 2.</strong> Conceptual BAPIL ecosystem illustrating collaboration among government, academia, industry, and civil society to support evidence-based AI governance and innovation in Bangladesh [19, 24, 25, 27].
+</p>
 
 BAPIL is intended to complement-not duplicate-existing national AI initiatives. While programs such as the Bangladesh AI Hub may focus on talent development, startup incubation, AI adoption, and technology commercialization, BAPIL is envisioned as a research and policy intelligence platform focused on AI governance, policy analytics, knowledge management, and evidence-based decision support [35, 36]. Together, these initiatives can contribute to a more comprehensive and coordinated national AI ecosystem [29, 30, 35, 36].
 
