@@ -1015,7 +1015,9 @@ The proposed BAPIL architecture consists of six primary layers:
 
 Together, these layers create an integrated environment for policy intelligence, AI-assisted analysis, and governance research [7, 10, 17, 18].
 
-![**Figure 4.** High-level conceptual architecture of the Bangladesh AI Policy & Innovation Lab (BAPIL), illustrating the end-to-end flow from data sources and data management to policy intelligence, knowledge management, decision support, and governance & security for evidence-based policymaking.](figures/figure4.png){ width=50% }
+![](figures/figure4.png)
+
+Figure 4. High-level conceptual architecture of the Bangladesh AI Policy & Innovation Lab (BAPIL), illustrating the end-to-end flow from data sources and data management to policy intelligence, knowledge management, decision support, and governance & security for evidence-based policymaking.
 
 ## Data Sources Layer
 
