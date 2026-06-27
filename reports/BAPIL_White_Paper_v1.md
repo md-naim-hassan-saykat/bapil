@@ -2915,30 +2915,6 @@ Year	Strategic Focus	Primary Goal
   <strong>Figure 6.</strong> Strategic roadmap for the phased development of the Bangladesh AI Policy &amp; Innovation Lab (BAPIL) from 2026 to 2041, illustrating the progression from research foundation and framework development to capacity building, advanced research, strategic expansion, and long-term alignment with Bangladesh's national development vision.
 </p>
 
-## Roadmap Visualization
-
-2026 → Research Foundation
-
-   ↓
-
-2027 → Framework Development
-
-   ↓
-
-2028 → Capacity Building & Collaboration
-
-   ↓
-
-2029 → Advanced Research & Innovation
-
-   ↓
-
-2030 → Strategic Expansion & Sustainability
-
-   ↓
-
-2041 → Long-Term National Vision
-
 This progression reflects the philosophy that sustainable AI ecosystems are built through continuous investment in research, governance, human capital, institutional capacity, and collaboration [1, 4, 5, 9, 17, 21, 24, 76]. Rather than pursuing rapid technological deployment alone, BAPIL emphasizes evidence-based development, responsible innovation, and long-term national value creation [1, 5, 7, 15, 22, 74, 75].
 
 The roadmap is intended to remain flexible and adaptive, allowing future priorities to evolve in response to technological advancements, policy needs, stakeholder feedback, and national development objectives [2, 8, 9, 22, 29, 30]. Adaptive governance and continuous evaluation are increasingly recognized as essential elements of successful public-sector AI initiatives worldwide [9, 10, 15].
