@@ -3945,7 +3945,8 @@ Any errors or omissions remain the sole responsibility of the author.
 [1] ORGANISATION FOR ECONOMIC CO-OPERATION AND DEVELOPMENT (OECD).
 Recommendation of the Council on Artificial Intelligence (OECD/LEGAL/0449)[EB/OL].
 Paris: OECD, 2019[2026-06-17].
-Available: https://legalinstruments.oecd.org/en/instruments/oecd-legal-0449
+Available: 
+<https://legalinstruments.oecd.org/en/instruments/oecd-legal-0449>
 
 [2] BENGIO Y, MINDERMANN S, PRIVITERA D, et al.
 International AI Safety Report 2025[R/OL].
@@ -3956,7 +3957,8 @@ Available:
 [3] UNITED NATIONS DEVELOPMENT PROGRAMME (UNDP).
 Digital Strategy 2022-2025: Creating a World in Which Digital Is an Empowering Force for People and Planet[R/OL].
 New York: UNDP, 2022[2026-06-18].
-Available: https://www.undp.org/digital/Digital-Strategy
+Available: 
+<https://www.undp.org/digital/Digital-Strategy>
 
 [4] ORGANISATION FOR ECONOMIC CO-OPERATION AND DEVELOPMENT (OECD).
 OECD AI Principles[EB/OL].
