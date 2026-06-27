@@ -968,7 +968,7 @@ BAPIL does not seek to replace existing national initiatives. Rather, it aims to
 
 The relationship among key initiatives may be conceptualized as follows:
 
-![**Figure 3.** Institutional relationship between Smart Bangladesh Vision 2041, Bangladesh AI Hub, and the Bangladesh AI Policy & Innovation Lab (BAPIL), illustrating BAPIL's engagement with universities and academia, research institutes and think tanks, government agencies, and its contribution to industry, startups, and citizens [29, 30, 35, 36].](figures/figure3.png){ width=70% }
+![Figure 3. Institutional relationship between Smart Bangladesh Vision 2041, Bangladesh AI Hub, and the Bangladesh AI Policy & Innovation Lab (BAPIL), illustrating BAPIL's engagement with universities and academia, research institutes and think tanks, government agencies, and its contribution to industry, startups, and citizens [29, 30, 35, 36].](figures/figure3.png)
 
 In this conceptual framework, Smart Bangladesh Vision 2041 represents the overarching national development vision [29, 30]. The Bangladesh AI Hub contributes to AI talent development, innovation, startup support, and technology ecosystem growth [35, 36]. BAPIL complements these efforts by focusing on policy intelligence, AI governance, knowledge management, research, and evidence-based decision support [1, 7, 10, 17, 21].
 
