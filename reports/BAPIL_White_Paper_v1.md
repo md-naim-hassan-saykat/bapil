@@ -1173,26 +1173,6 @@ Key components may include:
 
 This layer ensures that research and analytical activities align with ethical, legal, cybersecurity, and institutional requirements [5, 6, 7, 14, 15].
 
-## Conceptual Information Flow
-
-The BAPIL architecture may be represented through the following simplified workflow:
-
-Data Sources
-       ↓
-Data Collection & Integration
-       ↓
-Data Management Layer
-       ↓
-Policy Intelligence Engine
-       ↓
-Knowledge Management System
-       ↓ 
-Policy Intelligence Dashboard
-       ↓
-Researchers & Stakeholders
-
-This workflow illustrates how information may move through the system from data acquisition to analytical insights and user interaction [17, 18, 21].
-
 ## Future Research Components
 
 Future versions of the architecture may explore:
