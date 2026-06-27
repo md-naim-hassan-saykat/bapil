@@ -4506,7 +4506,7 @@ Md Naim Hassan Saykat<br>
 Master's Student in Artificial Intelligence<br>
 Université Paris-Saclay, France
 
-GitHub: https://github.com/md-naim-hassan-saykat
+GitHub: <https://github.com/md-naim-hassan-saykat>
 
 For academic collaboration, research discussions, feedback, or inquiries related to this white paper, interested readers may contact the author through GitHub or other publicly available academic channels.
 
