@@ -4075,7 +4075,7 @@ Available: https://unstats.un.org/sdgs/report/2024
 [24] UNITED NATIONS DEVELOPMENT PROGRAMME (UNDP).
 AI for Sustainable Development[EB/OL].
 New York: United Nations Development Programme, 2023[2026-06-18].
-Available: https://www.undp.org/digital/ai⁠
+Available: https://www.undp.org/digital/ai
 
 [25] UNITED NATIONS DEVELOPMENT PROGRAMME (UNDP).
 Governance Publications[EB/OL].
