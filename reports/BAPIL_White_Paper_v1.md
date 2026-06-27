@@ -158,7 +158,7 @@ Bangladesh has made significant progress in digital transformation through natio
 
 This white paper proposes the Bangladesh AI Policy & Innovation Lab (BAPIL), a research-oriented framework designed to explore how Artificial Intelligence, data analytics, and responsible AI governance can contribute to national development, public sector innovation, and institutional capacity building. The initiative seeks to bridge the gap between AI research, policymaking, governance, and innovation by developing methodologies, frameworks, and prototype systems that support informed decision-making [1, 3, 5, 7, 17, 21, 24].
 
-BAPIL is envisioned as a multidisciplinary platform that brings together expertise from academia, government, industry, and civil society to address national challenges through data-driven approaches. The initiative will focus on policy intelligence, public sector innovation, AI governance, cybersecurity awareness, talent development, and innovation ecosystem support [17–27, 71–77].
+BAPIL is envisioned as a multidisciplinary platform that brings together expertise from academia, government, industry, and civil society to address national challenges through data-driven approaches. The initiative will focus on policy intelligence, public sector innovation, AI governance, cybersecurity awareness, talent development, and innovation ecosystem support [17-27, 71-77].
 
 The proposed framework is organized around several strategic pillars:
 
