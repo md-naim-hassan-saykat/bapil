@@ -4003,10 +4003,12 @@ Available:
 <https://doi.org/10.1787/1cd40c44-en>
 
 [10] ORGANISATION FOR ECONOMIC CO-OPERATION AND DEVELOPMENT (OECD).
-AI in the Public Sector: Opportunities and Challenges[EB/OL].
-Paris: OECD AI Policy Observatory, 2023[2026-06-17].
-Available: 
-<https://oecd.ai/en/wonk/ai-in-the-public-sector-opportunities-and-challenges>
+Hello, World: Artificial Intelligence and its Use in the Public Sector[EB/OL].
+Paris: OECD Publishing, 2019[2026-06-17].
+OECD Working Papers on Public Governance, No. 36.
+DOI: 10.1787/726fd39d-en.
+Available:
+<https://doi.org/10.1787/726fd39d-en>
 
 [11] ORGANISATION FOR ECONOMIC CO-OPERATION AND DEVELOPMENT (OECD).
 OECD Digital Government Reviews[EB/OL].
@@ -4114,9 +4116,9 @@ Available:
 <https://oxfordinsights.com/ai-readiness/ai-readiness-index> 
 
 [27] GLOBAL PARTNERSHIP ON ARTIFICIAL INTELLIGENCE (GPAI).
-Annual Report 2024[EB/OL].
-Paris: Global Partnership on Artificial Intelligence, 2024[2026-06-18].
-Available: 
+About the Global Partnership on Artificial Intelligence (GPAI)[EB/OL].
+Paris: Organisation for Economic Co-operation and Development (OECD), 2025[2026-06-18].
+Available:
 <https://www.oecd.org/en/about/programmes/global-partnership-on-artificial-intelligence.html>
 
 ## C. Bangladesh Policy, Governance, and National Development
@@ -4131,8 +4133,8 @@ Available:
 [29] GENERAL ECONOMICS DIVISION (GED), PLANNING COMMISSION, GOVERNMENT OF BANGLADESH.
 Perspective Plan of Bangladesh 2021-2041: Making Vision 2041 a Reality[EB/OL].
 Dhaka: Planning Commission, Government of Bangladesh, 2021[2026-06-18].
-Available: 
-<https://oldweb.lged.gov.bd/uploadeddocument/unitpublication/1/1049/vision%202021-2041.pdf> 
+Available:
+<https://oldweb.lged.gov.bd/uploadeddocument/unitpublication/1/1049/vision%202021-2041.pdf>
 
 [30] INFORMATION AND COMMUNICATION TECHNOLOGY (ICT) DIVISION, GOVERNMENT OF THE PEOPLE’S REPUBLIC OF BANGLADESH.
 Smart Bangladesh: ICT Master Plan 2041[EB/OL].
