@@ -4243,11 +4243,12 @@ DOI: 10.1145/3442188.3445922.
 Available: 
 <https://dl.acm.org/doi/10.1145/3442188.3445922>
 
-[46] BHATTACHARJEE A, ISLAM M R, ANIK M A, et al.
-BanglaBERT: Combating Label Scarcity and Domain Shift in Bangla Language Understanding[C/OL]//Findings of the Association for Computational Linguistics: NAACL 2022.
-Seattle, WA, USA: Association for Computational Linguistics, 2022: 1268-1281[2026-06-18].
+[46] BHATTACHARJEE A, HASAN T, AHMAD W, MUBASSHIR K S, ISLAM M S, IQBAL A, RAHMAN M S, SHAHRIYAR R.
+BanglaBERT: Language Model Pretraining and Benchmarks for Low-Resource Language Understanding Evaluation in Bangla[C/OL]//
+Findings of the Association for Computational Linguistics: NAACL 2022.
+Seattle, WA, USA: Association for Computational Linguistics, 2022: 1318-1327[2026-06-18].
 DOI: 10.18653/v1/2022.findings-naacl.98.
-Available: 
+Available:
 <https://aclanthology.org/2022.findings-naacl.98>
 
 [47] KAKWANI D, KALRA S, MURTHY A, et al.
