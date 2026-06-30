@@ -3963,7 +3963,7 @@ Available:
 [4] ORGANISATION FOR ECONOMIC CO-OPERATION AND DEVELOPMENT (OECD).
 OECD AI Principles[EB/OL].
 Paris: OECD AI Policy Observatory, 2024[2026-06-17].
-Available: 
+Available:
 <https://oecd.ai/en/ai-principles>
 
 [5] UNITED NATIONS EDUCATIONAL, SCIENTIFIC AND CULTURAL ORGANIZATION (UNESCO).
