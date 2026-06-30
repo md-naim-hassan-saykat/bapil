@@ -4025,8 +4025,8 @@ Available:
 
 [13] ORGANISATION FOR ECONOMIC CO-OPERATION AND DEVELOPMENT (OECD).
 OECD AI Policy Observatory (OECD.AI)[EB/OL].
-Paris: OECD, 2025[2026-06-17].
-Available: 
+Paris: OECD AI Policy Observatory, 2025[2026-06-17].
+Available:
 <https://oecd.ai>
 
 [14] NATIONAL INSTITUTE OF STANDARDS AND TECHNOLOGY (NIST).
