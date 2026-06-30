@@ -82,7 +82,7 @@ Zenodo. DOI: To be assigned.
 ## Glossary
 
 | Term | Definition |
-|------|------------|
+|------|----------|
 | Artificial Intelligence (AI) | A field of computer science focused on developing systems capable of performing tasks that typically require human intelligence, such as reasoning, learning, perception, and decision support. |
 | AI Governance | Policies, processes, standards, and oversight mechanisms used to ensure responsible, ethical, transparent, and accountable development and use of AI systems. |
 | AI Ethics | Principles and guidelines that promote fairness, accountability, transparency, privacy, and human well-being in the design and deployment of AI technologies. |
