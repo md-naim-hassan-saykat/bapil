@@ -4166,10 +4166,10 @@ Dhaka: Government of the People’s Republic of Bangladesh, 2023[2026-06-18].
 Available: 
 <https://www.refworld.org/legal/legislation/natlegbod/2023/en/148277>
 
-[35] BANGLADESH HI-TECH PARK AUTHORITY (BHTPA), INFORMATION AND COMMUNICATION TECHNOLOGY (ICT) DIVISION, GOVERNMENT OF THE PEOPLE’S REPUBLIC OF BANGLADESH.
-Fostering Innovative Technology Experts with a Focus on Artificial Intelligence (AI) in Bangladesh[R/OL].
-Dhaka: Bangladesh Hi-Tech Park Authority (BHTPA), 2026[2026-06-18].
-Available: 
+[35] THE BUSINESS STANDARD (TBS).
+Govt to establish AI hub with Tk192.66cr project backed by Koica[EB/OL].
+Dhaka: The Business Standard, 2026[2026-06-18].
+Available:
 <https://www.tbsnews.net/tech/govt-establish-ai-hub-tk19266cr-project-backed-koica-1462206>
 
 [36] KOREA INTERNATIONAL COOPERATION AGENCY (KOICA), INFORMATION AND COMMUNICATION TECHNOLOGY (ICT) DIVISION, GOVERNMENT OF THE PEOPLE’S REPUBLIC OF BANGLADESH.
