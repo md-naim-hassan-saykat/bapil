@@ -4251,11 +4251,12 @@ DOI: 10.18653/v1/2022.findings-naacl.98.
 Available:
 <https://aclanthology.org/2022.findings-naacl.98>
 
-[47] KAKWANI D, KALRA S, MURTHY A, et al.
-IndicBERT: A Multilingual Language Model for Indian Languages[C/OL]//Findings of the Association for Computational Linguistics: EMNLP 2020.
-Online: Association for Computational Linguistics, 2020: 5153-5167[2026-06-18].
+[47] KAKWANI D, KUNCHUKUTTAN A, GOLLA S, N. C. G, BHATTACHARYYA A, KHAPRA M M, KUMAR P.
+IndicNLPSuite: Monolingual Corpora, Evaluation Benchmarks and Pre-trained Multilingual Language Models for Indian Languages[C/OL]//
+Findings of the Association for Computational Linguistics: EMNLP 2020.
+Online: Association for Computational Linguistics, 2020: 4948-4961[2026-06-18].
 DOI: 10.18653/v1/2020.findings-emnlp.445.
-Available: 
+Available:
 <https://aclanthology.org/2020.findings-emnlp.445>
 
 [48] BHATTACHARJEE A, HASAN T, AHMAD W U, et al.
