@@ -4312,9 +4312,9 @@ Available:
 <https://wp.oecd.ai/app/uploads/2021/12/Korea_National_Strategy_for_Artificial_Intelligence_2019.pdf>
 
 [55] ORGANISATION FOR ECONOMIC CO-OPERATION AND DEVELOPMENT (OECD).
-National AI Policy Initiatives: Korea[EB/OL].
+The OECD.AI Policy Navigator: Korea[EB/OL].
 Paris: OECD AI Policy Observatory, 2024[2026-06-18].
-Available: 
+Available:
 <https://oecd.ai/en/dashboards/national/korea>
 
 [56] GOVERNMENT OF THE REPUBLIC OF KOREA.
@@ -4326,22 +4326,22 @@ Available:
 #### Estonia
 
 [57] E-ESTONIA BRIEFING CENTRE, GOVERNMENT OF ESTONIA.
-e-Governance and Digital Public Services in Estonia[EB/OL].
+e-Governance[EB/OL].
 Tallinn: e-Estonia Briefing Centre, 2024[2026-06-18].
-Available: 
+Available:
 <https://e-estonia.com/solutions/e-governance>
 
 [58] ORGANISATION FOR ECONOMIC CO-OPERATION AND DEVELOPMENT (OECD).
 Digital Government Review of Estonia: Towards a Data-Driven Public Sector[R/OL].
 Paris: OECD Publishing, 2019[2026-06-18].
 DOI: 10.1787/4cabcc9d-en.
-Available: 
+Available:
 <https://www.oecd-ilibrary.org/governance/digital-government-review-of-estonia_4cabcc9d-en>
 
 [59] E-ESTONIA BRIEFING CENTRE.
 X-Road: The Backbone of e-Estonia[EB/OL].
-Tallinn: Government of Estonia, 2024[2026-06-18].
-Available: 
+Tallinn: e-Estonia Briefing Centre, 2024[2026-06-18].
+Available:
 <https://e-estonia.com/solutions/interoperability-services/x-road>
 
 #### United Kingdom
@@ -4359,10 +4359,10 @@ London: Government Digital Service, 2025[2026-06-18].
 Available: 
 <https://www.gov.uk/government/publications/ai-playbook-for-the-uk-government/artificial-intelligence-playbook-for-the-uk-government-html>
 
-[62] DEPARTMENT FOR SCIENCE, INNOVATION AND TECHNOLOGY (DSIT), GOVERNMENT OF THE UNITED KINGDOM.
+[62] DEPARTMENT FOR SCIENCE, INNOVATION AND TECHNOLOGY (DSIT).
 AI Regulation: A Pro-Innovation Approach[EB/OL].
-London: UK Government, 2023[2026-06-18].
-Available: 
+London: Department for Science, Innovation and Technology, 2023[2026-06-18].
+Available:
 <https://www.gov.uk/government/publications/ai-regulation-a-pro-innovation-approach/white-paper>
 
 #### Finland
@@ -4390,14 +4390,14 @@ Available:
 [66] UNITED ARAB EMIRATES CABINET.
 UAE Cabinet Adopts National Artificial Intelligence Strategy 2031[EB/OL].
 Abu Dhabi: UAE Cabinet, 2019[2026-06-18].
-Available: 
-<https://uaecabinet.ae/en/news/uae-cabinet-adopts-national-artificial-intelligence-strategy-2031> 
+Available:
+<https://uaecabinet.ae/en/news/uae-cabinet-adopts-national-artificial-intelligence-strategy-2031>
 
 [67] UNITED NATIONS EDUCATIONAL, SCIENTIFIC AND CULTURAL ORGANIZATION (UNESCO).
 National AI Strategy 2031 and the National Program for Artificial Intelligence[EB/OL].
-Paris: UNESCO Culture|2030 Indicators Policy Monitoring Platform, 2024[2026-06-18].
-Available: 
-<https://www.unesco.org/creativity/en/policy-monitoring-platform/national-ai-strategy-2031-and-national-program-artificial-intelligence> 
+Paris: UNESCO, 2024[2026-06-18].
+Available:
+<https://www.unesco.org/creativity/en/policy-monitoring-platform/national-ai-strategy-2031-and-national-program-artificial-intelligence>
 
 #### Canada
 
@@ -4447,9 +4447,9 @@ Available:
 <https://www.weforum.org/publications/the-presidio-recommendations-on-responsible-generative-ai>
 
 [75] WORLD ECONOMIC FORUM (WEF).
-AI Governance Alliance: Briefing Paper Series[R/OL].
+AI Global Alliance[EB/OL].
 Geneva: World Economic Forum, 2024[2026-06-18].
-Available: 
+Available:
 <https://initiatives.weforum.org/ai-governance-alliance/home>
 
 [76] UNITED NATIONS EDUCATIONAL, SCIENTIFIC AND CULTURAL ORGANIZATION (UNESCO).
@@ -4500,8 +4500,8 @@ Available:
 
 [83] GOVERNMENT OF THE PEOPLE'S REPUBLIC OF BANGLADESH.
 Bangladesh National Portal[EB/OL].
-Dhaka: Government of the People’s Republic of Bangladesh, 2026[2026-06-19].
-Available: 
+Dhaka: Government of the People's Republic of Bangladesh, 2026[2026-06-19].
+Available:
 <https://bangladesh.gov.bd>
 
 # Contact
