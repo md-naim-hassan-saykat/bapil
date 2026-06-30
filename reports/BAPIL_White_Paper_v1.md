@@ -4073,14 +4073,14 @@ Available:
 [20] WORLD BANK.
 GovTech Maturity Index 2022 Update: Trends in Public Sector Digital Transformation[EB/OL].
 Washington, DC: World Bank, 2023[2026-06-17].
-DOI: https://doi.org/10.1596/38499
+DOI: 10.1596/38499.
 Available: 
 <https://openknowledge.worldbank.org/entities/publication/10b535a7-e9d4-51bd-96ed-6b917d5eb09e>
 
 [21] UNITED NATIONS.
 United Nations E-Government Survey 2024: Accelerating Digital Transformation for Sustainable Development - With the Addendum on Artificial Intelligence[M/OL].
 New York: United Nations, 2024[2026-06-17].
-DOI: https://doi.org/10.18356/237d52b2-en
+DOI: 10.18356/237d52b2-en.
 Available: 
 <https://www.un-ilibrary.org/content/books/9789211067286>
 
@@ -4172,10 +4172,10 @@ Dhaka: The Business Standard, 2026[2026-06-18].
 Available:
 <https://www.tbsnews.net/tech/govt-establish-ai-hub-tk19266cr-project-backed-koica-1462206>
 
-[36] KOREA INTERNATIONAL COOPERATION AGENCY (KOICA), INFORMATION AND COMMUNICATION TECHNOLOGY (ICT) DIVISION, GOVERNMENT OF THE PEOPLE’S REPUBLIC OF BANGLADESH.
-KOICA and ICT Division Launch $28.5 Million AI Innovation Project in Bangladesh[EB/OL].
-Dhaka: ICT Division, 2025[2026-06-18].
-Available: 
+[36] THE BUSINESS STANDARD (TBS).
+Koica and ICT Division launch $28.5 million AI innovation project in Bangladesh[EB/OL].
+Dhaka: The Business Standard, 2025[2026-06-18].
+Available:
 <https://www.tbsnews.net/foreign-policy/koica-and-ict-division-launch-285million-ai-innovation-project-1039121>
 
 ## D. Foundation Models, LLMs, and Bangla NLP
@@ -4325,7 +4325,7 @@ Available:
 
 #### Estonia
 
-[57] E-ESTONIA BRIEFING CENTRE, GOVERNMENT OF ESTONIA.
+[57] E-ESTONIA BRIEFING CENTRE.
 e-Governance[EB/OL].
 Tallinn: e-Estonia Briefing Centre, 2024[2026-06-18].
 Available:
