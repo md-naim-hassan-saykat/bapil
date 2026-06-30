@@ -4368,7 +4368,7 @@ Available:
 #### Finland
 
 [63] MINISTRY OF ECONOMIC AFFAIRS AND EMPLOYMENT OF FINLAND.
-Leading the Way into the Age of Artificial Intelligence: Final Report of Finland's Artificial Intelligence Programme[R/OL].
+Leading the Way into the Era of Artificial Intelligence: Final Report of Finland's Artificial Intelligence Programme[R/OL].
 Helsinki: Ministry of Economic Affairs and Employment, 2019[2026-06-18].
 Available: 
 <https://julkaisut.valtioneuvosto.fi/handle/10024/161688>
