@@ -4052,9 +4052,9 @@ Available:
 ## B. International Development, Digital Governance, and GovTech
 
 [17] WORLD BANK.
-GovTech: Digital Transformation in the Public Sector[EB/OL].
+Global Program on GovTech & Public Sector Innovation[EB/OL].
 Washington, DC: World Bank, 2024[2026-06-17].
-Available: 
+Available:
 <https://www.worldbank.org/en/programs/govtech>
 
 [18] WORLD BANK.
