@@ -13,7 +13,7 @@ Université Paris-Saclay, France
 <br>
 
 **Version:** 1.0<br>
-**Date:** June 2026<br>
+**Date:** July 2026<br>
 **Document Type:** White Paper<br>
 **Status:** Public Discussion Draft
 
@@ -55,7 +55,7 @@ Zenodo. DOI: To be assigned.
 
 | Version | Date | Description |
 |----------|----------|----------|
-| 1.0 | June 2026 | Initial public discussion draft |
+| 1.0 | July 2026 | Initial public discussion draft |
 
 ## Acronyms
 
