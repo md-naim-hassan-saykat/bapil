@@ -8,7 +8,7 @@
 
 **মোঃ নাঈম হাসান সৈকত**<br>
 কৃত্রিম বুদ্ধিমত্তা বিষয়ে স্নাতকোত্তর শিক্ষার্থী<br>
-ইউনিভার্সিতে প্যারিস-স্যাকলে, ফ্রান্স
+Université Paris-Saclay, France
 
 <br>
 
@@ -4540,8 +4540,8 @@ Available:
 
 # যোগাযোগ
 
-Md Naim Hassan Saykat<br>
-কৃত্রিম বুদ্ধিমত্তা বিষয়ে মাস্টার্স শিক্ষার্থী<br>
+**মোঃ নাঈম হাসান সৈকত**<br>
+কৃত্রিম বুদ্ধিমত্তা বিষয়ে স্নাতকোত্তর শিক্ষার্থী<br>
 Université Paris-Saclay, France
 
 GitHub: <https://github.com/md-naim-hassan-saykat>
