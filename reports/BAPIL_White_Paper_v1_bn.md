@@ -8,7 +8,7 @@
 
 **মো. নাঈম হাসান সৈকত**  
 কৃত্রিম বুদ্ধিমত্তা বিষয়ে স্নাতকোত্তর শিক্ষার্থী  
-Université Paris-Saclay, France
+Universite Paris-Saclay, France
 
 <br>
 
