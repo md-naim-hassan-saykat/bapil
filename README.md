@@ -204,15 +204,27 @@ The BAPIL White Paper is planned around the following chapters:
 
 ```text
 bapil/
-│
 ├── README.md
-├── docs/
+├── LICENSE
+├── CITATION.cff
+├── CHANGELOG.md
+├── .gitignore
+│
 ├── reports/
+│   ├── BAPIL_White_Paper_v1.md
+│   ├── BAPIL_White_Paper_v1_bn.md
+│   ├── references.bib
+│   └── figures/
+│
+├── releases/
+│   ├── README.md
+│   └── v1.0/
+│       ├── BAPIL_White_Paper_v1.pdf
+│       └── BAPIL_White_Paper_v1_bn.pdf
+│
 ├── research/
-├── architecture/
-├── data/
-├── notebooks/
-├── presentations/
+├── docs/
+├── scripts/
 └── assets/
 ```
 
