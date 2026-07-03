@@ -3979,7 +3979,7 @@ Available:
 [7] NATIONAL INSTITUTE OF STANDARDS AND TECHNOLOGY (NIST).
 Artificial Intelligence Risk Management Framework (AI RMF 1.0) (NIST AI 100-1)[EB/OL].
 Gaithersburg, MD: National Institute of Standards and Technology, 2023[2026-06-17].
-DOI: \seqsplit{10.6028/NIST.AI.100-1.}
+DOI: 10.6028/NIST.AI.100-1.
 Available: 
 <https://doi.org/10.6028/NIST.AI.100-1>
 
@@ -3987,14 +3987,14 @@ Available:
 OECD Framework for the Classification of AI Systems[EB/OL].
 OECD Digital Economy Papers, No. 323.
 Paris: OECD Publishing, 2022[2026-06-17].
-DOI: \seqsplit{10.1787/cb6d9eca-en.}
+DOI: 10.1787/cb6d9eca-en.
 Available: 
 <https://doi.org/10.1787/cb6d9eca-en>
 
 [9] ORGANISATION FOR ECONOMIC CO-OPERATION AND DEVELOPMENT (OECD).
 State of Implementation of the OECD AI Principles: Insights from National AI Policies[EB/OL].
 Paris: OECD Publishing, 2024[2026-06-17].
-DOI: \seqsplit{10.1787/1cd40c44-en.}
+DOI: 10.1787/1cd40c44-en.
 Available: 
 <https://doi.org/10.1787/1cd40c44-en>
 
@@ -4002,7 +4002,7 @@ Available:
 Hello, World: Artificial Intelligence and its Use in the Public Sector[EB/OL].
 Paris: OECD Publishing, 2019[2026-06-17].
 OECD Working Papers on Public Governance, No. 36.
-DOI: \seqsplit{10.1787/726fd39d-en.}
+DOI: 10.1787/726fd39d-en.
 Available:
 <https://doi.org/10.1787/726fd39d-en>
 
@@ -4015,7 +4015,7 @@ Available:
 [12] ORGANISATION FOR ECONOMIC CO-OPERATION AND DEVELOPMENT (OECD).
 Government at a Glance 2023[EB/OL].
 Paris: OECD Publishing, 2023[2026-06-17].
-DOI: \seqsplit{10.1787/3d5c5d31-en.}
+DOI: 10.1787/3d5c5d31-en.
 Available: 
 <https://doi.org/10.1787/3d5c5d31-en>
 
@@ -4028,7 +4028,7 @@ Available:
 [14] NATIONAL INSTITUTE OF STANDARDS AND TECHNOLOGY (NIST).
 Cybersecurity Framework (CSF) 2.0[EB/OL].
 Gaithersburg, MD: National Institute of Standards and Technology, 2024[2026-06-17].
-DOI: \seqsplit{10.6028/NIST.CSWP.29.}
+DOI: 10.6028/NIST.CSWP.29.
 Available: 
 <https://doi.org/10.6028/NIST.CSWP.29>
 
@@ -4056,7 +4056,7 @@ Available:
 [18] WORLD BANK.
 World Development Report 2021: Data for Better Lives[EB/OL].
 Washington, DC: World Bank, 2021[2026-06-17].
-DOI: \seqsplit{10.1596/978-1-4648-1600-0.}
+DOI: 10.1596/978-1-4648-1600-0.
 Available: 
 <https://doi.org/10.1596/978-1-4648-1600-0>
 
@@ -4069,14 +4069,14 @@ Available:
 [20] WORLD BANK.
 GovTech Maturity Index 2022 Update: Trends in Public Sector Digital Transformation[EB/OL].
 Washington, DC: World Bank, 2023[2026-06-17].
-DOI: \seqsplit{10.1596/38499.}
+DOI: 10.1596/38499.
 Available: 
 <https://openknowledge.worldbank.org/entities/publication/10b535a7-e9d4-51bd-96ed-6b917d5eb09e>
 
 [21] UNITED NATIONS.
 United Nations E-Government Survey 2024: Accelerating Digital Transformation for Sustainable Development - With the Addendum on Artificial Intelligence[M/OL].
 New York: United Nations, 2024[2026-06-17].
-DOI: \seqsplit{10.18356/237d52b2-en.}
+DOI: 10.18356/237d52b2-en.
 Available: 
 <https://www.un-ilibrary.org/content/books/9789211067286>
 
@@ -4122,7 +4122,7 @@ Available:
 [28] MAZUMDAR A, ALHARAHSHEH H H.
 Digital Bangladesh-Vision 2021: What is the Digital Bangladesh Concept?[J/OL].
 South Asian Research Journal of Engineering and Technology, 2020, 2(1): 6-9[2026-06-18].
-DOI: \seqsplit{10.36346/sarjet.2020.v02i01.002.}
+DOI: 10.36346/sarjet.2020.v02i01.002.
 Available: 
 <https://sarpublication.com/media/articles/SARJET_21_6-9.pdf>
 
@@ -4179,63 +4179,63 @@ Available:
 [37] VASWANI A, SHAZEER N, PARMAR N, et al.
 Attention Is All You Need[C]//GUYON I, VON LUXBURG U, BENGIO S, et al., eds. Advances in Neural Information Processing Systems 30 (NeurIPS 2017).
 Red Hook, NY: Curran Associates, Inc., 2017: 5998-6008.
-DOI: \seqsplit{10.48550/arXiv.1706.03762.}
+DOI: 10.48550/arXiv.1706.03762.
 Available: 
 <https://papers.nips.cc/paper/7181-attention-is-all-you-need>
 
 [38] LEWIS P, PEREZ E, POYIADZI E, et al.
 Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks[C/OL]//Advances in Neural Information Processing Systems 33 (NeurIPS 2020).
 Red Hook, NY: Curran Associates, Inc., 2020[2026-06-18].
-DOI: \seqsplit{10.48550/arXiv.2005.11401.}
+DOI: 10.48550/arXiv.2005.11401.
 Available: 
 <https://papers.nips.cc/paper/2020/hash/6b493230205f780e1bc26945df7481e5-Abstract.html>
 
 [39] BROWN T B, MANN B, RYDER N, et al.
 Language Models are Few-Shot Learners[C/OL]//Advances in Neural Information Processing Systems 33 (NeurIPS 2020).
 Red Hook, NY: Curran Associates, Inc., 2020[2026-06-18].
-DOI: \seqsplit{10.48550/arXiv.2005.14165.}
+DOI: 10.48550/arXiv.2005.14165.
 Available: 
 <https://papers.nips.cc/paper/2020/hash/1457c0d6bfcb4967418bfb8ac142f64a-Abstract.html>
 
 [40] WEI J, WANG X, SCHUURMANS D, et al.
 Chain-of-Thought Prompting Elicits Reasoning in Large Language Models[C/OL]//Advances in Neural Information Processing Systems 35 (NeurIPS 2022).
 Red Hook, NY: Curran Associates, Inc., 2022[2026-06-18].
-DOI: \seqsplit{10.48550/arXiv.2201.11903.}
+DOI: 10.48550/arXiv.2201.11903.
 Available: 
 <https://papers.nips.cc/paper_files/paper/2022/hash/9d5609613524ecf4f15af0f7b31abca4-Abstract-Conference.html>
 
 [41] BOMMASANI R, HUDSON D A, ADELI E, et al.
 On the Opportunities and Risks of Foundation Models[R/OL].
 Stanford, CA: Stanford Center for Research on Foundation Models (CRFM), Stanford University, 2021[2026-06-18].
-DOI: \seqsplit{10.48550/arXiv.2108.07258.}
+DOI: 10.48550/arXiv.2108.07258.
 Available: 
 <https://arxiv.org/abs/2108.07258>
 
 [42] OPENAI, ACHIAM J, ADLER S, et al.
 GPT-4 Technical Report[R/OL].
 San Francisco, CA: OpenAI, 2023[2026-06-18].
-DOI: \seqsplit{10.48550/arXiv.2303.08774.}
+DOI: 10.48550/arXiv.2303.08774.
 Available: 
 <https://arxiv.org/abs/2303.08774>
 
 [43] TOUVRON H, LAVRIL T, IZACARD G, et al.
 LLaMA: Open and Efficient Foundation Language Models[R/OL].
 Menlo Park, CA: Meta AI, 2023[2026-06-18].
-DOI: \seqsplit{10.48550/arXiv.2302.13971.}
+DOI: 10.48550/arXiv.2302.13971.
 Available: 
 <https://arxiv.org/abs/2302.13971>
 
 [44] BIGSCIENCE WORKSHOP.
 BLOOM: A 176B-Parameter Open-Access Multilingual Language Model[R/OL].
 Paris: BigScience, 2022[2026-06-18].
-DOI: \seqsplit{10.48550/arXiv.2211.05100.}
+DOI: 10.48550/arXiv.2211.05100.
 Available: 
 <https://arxiv.org/abs/2211.05100>
 
 [45] BENDER E M, GEBRU T, MCMILLAN-MAJOR A, et al.
 On the Dangers of Stochastic Parrots: Can Language Models Be Too Big?[C/OL]//Proceedings of the 2021 ACM Conference on Fairness, Accountability, and Transparency (FAccT '21).
 New York: Association for Computing Machinery (ACM), 2021: 610-623[2026-06-18].
-DOI: \seqsplit{10.1145/3442188.3445922.}
+DOI: 10.1145/3442188.3445922.
 Available: 
 <https://dl.acm.org/doi/10.1145/3442188.3445922>
 
@@ -4243,7 +4243,7 @@ Available:
 BanglaBERT: Language Model Pretraining and Benchmarks for Low-Resource Language Understanding Evaluation in Bangla[C/OL]//
 Findings of the Association for Computational Linguistics: NAACL 2022.
 Seattle, WA, USA: Association for Computational Linguistics, 2022: 1318-1327[2026-06-18].
-DOI: \seqsplit{10.18653/v1/2022.findings-naacl.98.}
+DOI: 10.18653/v1/2022.findings-naacl.98.
 Available:
 <https://aclanthology.org/2022.findings-naacl.98>
 
@@ -4251,14 +4251,14 @@ Available:
 IndicNLPSuite: Monolingual Corpora, Evaluation Benchmarks and Pre-trained Multilingual Language Models for Indian Languages[C/OL]//
 Findings of the Association for Computational Linguistics: EMNLP 2020.
 Online: Association for Computational Linguistics, 2020: 4948-4961[2026-06-18].
-DOI: \seqsplit{10.18653/v1/2020.findings-emnlp.445.}
+DOI: 10.18653/v1/2020.findings-emnlp.445.
 Available:
 <https://aclanthology.org/2020.findings-emnlp.445>
 
 [48] BHATTACHARJEE A, HASAN T, AHMAD W U, et al.
 BanglaNLG and BanglaT5: Benchmarks and Resources for Evaluating Low-Resource Natural Language Generation in Bangla[C/OL]//Findings of the Association for Computational Linguistics: EACL 2023.
 Dubrovnik, Croatia: Association for Computational Linguistics, 2023: 726-735[2026-06-18].
-DOI: \seqsplit{10.18653/v1/2023.findings-eacl.54.}
+DOI: 10.18653/v1/2023.findings-eacl.54.
 Available: 
 <https://aclanthology.org/2023.findings-eacl.54>
 
@@ -4266,14 +4266,14 @@ Available:
 BongLLaMA: LLaMA for Bangla Language[R/OL].
 arXiv:2410.21200.
 Dhaka: BanglaLLM Research Initiative, 2024[2026-06-18].
-DOI: \seqsplit{10.48550/arXiv.2410.21200.}
+DOI: 10.48550/arXiv.2410.21200.
 Available: 
 <https://arxiv.org/abs/2410.21200>
 
 [50] BOMMASANI R, KLYMAN K, KAPOOR S, et al.
 The Foundation Model Transparency Index v1.1: May 2024[R/OL].
 Stanford, CA: Stanford Center for Research on Foundation Models (CRFM), Stanford University, 2024[2026-06-18].
-DOI: \seqsplit{10.48550/arXiv.2407.12929.}
+DOI: 10.48550/arXiv.2407.12929.
 Available: 
 <https://arxiv.org/abs/2407.12929>
 
@@ -4330,7 +4330,7 @@ Available:
 [58] ORGANISATION FOR ECONOMIC CO-OPERATION AND DEVELOPMENT (OECD).
 Digital Government Review of Estonia: Towards a Data-Driven Public Sector[R/OL].
 Paris: OECD Publishing, 2019[2026-06-18].
-DOI: \seqsplit{10.1787/4cabcc9d-en.}
+DOI: 10.1787/4cabcc9d-en.
 Available:
 <https://www.oecd-ilibrary.org/governance/digital-government-review-of-estonia_4cabcc9d-en>
 
@@ -4451,7 +4451,7 @@ Available:
 [76] UNITED NATIONS EDUCATIONAL, SCIENTIFIC AND CULTURAL ORGANIZATION (UNESCO).
 AI and Education: Guidance for Policymakers[R/OL].
 Paris: UNESCO, 2021[2026-06-18].
-DOI: \seqsplit{10.54675/PCSP7350.}
+DOI: 10.54675/PCSP7350.
 Available: 
 <https://unesdoc.unesco.org/ark:/48223/pf0000376709>
 
@@ -4476,7 +4476,7 @@ Available:
 [80] SULTANA S, SAMAD R, HAQUE M, SULTANA Z, JAHANGIR Z, HOSSAIN B M M, NOMAN R M, AHMED S I.
 Bangladesh AI Readiness: Perspectives from the Academia, Industry, and Government[EB/OL].
 Ithaca, NY: arXiv, 2026[2026-06-19].
-DOI: \seqsplit{10.48550/arXiv.2601.12934.}
+DOI: 10.48550/arXiv.2601.12934.
 Available: 
 <https://arxiv.org/abs/2601.12934>
 
@@ -4484,7 +4484,7 @@ Available:
 SentiGOLD: A Large Bangla Gold Standard Multi-Domain Sentiment Analysis Dataset and its Evaluation[C/OL]//
 Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD '23).
 New York: Association for Computing Machinery (ACM), 2023[2026-06-19].
-DOI: \seqsplit{10.1145/3580305.3599904.}
+DOI: 10.1145/3580305.3599904.
 Available: 
 <https://doi.org/10.1145/3580305.3599904>
 
