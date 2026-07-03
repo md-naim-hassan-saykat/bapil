@@ -111,43 +111,6 @@ The proposed Bangladesh AI Policy & Innovation Lab (BAPIL) is therefore presente
 
 I hope this document contributes, in some small way, to ongoing discussions about how Bangladesh can build a knowledge-driven, innovation-oriented, and responsible AI ecosystem for the future.
 
-## Table of Contents
-
-1. Executive Summary
-2. Why Bangladesh Needs AI Policy Intelligence
-3. Global Examples
-4. Current AI Landscape in Bangladesh
-5. BAPIL Vision
-6. BAPIL Architecture
-7. Policy Intelligence Dashboard
-8. Bangla Policy Foundation Model (BPFM)
-9. AI Governance Framework
-10. National Security & Cybersecurity
-11. AI Education & Talent Development
-12. Startup Ecosystem
-13. Resource Requirements & Funding Considerations
-14. Five-Year Roadmap (2026-2030)
-15. Long-Term Vision (2030-2041)
-16. Risks, Ethics, and Responsible AI
-17. Strategic Recommendations
-18. Conclusion
-
-Appendices
-
-  Appendix A: Potential Pilot Projects
-
-  Appendix B: International Advisory Board Concept
-
-  Appendix C: Funding Model
-
-  Acknowledgements
-
-  References
-
-  Contact
-
-  License
-
 # Chapter 1: Executive Summary
 
 ## Executive Summary
