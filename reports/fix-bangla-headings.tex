@@ -1,0 +1,25 @@
+\usepackage{titlesec}
+
+% Make Markdown #### headings start on a separate line
+\titleformat{\paragraph}[block]
+  {\normalfont\normalsize\bfseries}
+  {}
+  {0pt}
+  {}
+
+\titlespacing*{\paragraph}
+  {0pt}
+  {1.4em}
+  {0.6em}
+
+% Also fix Markdown ##### headings if any exist
+\titleformat{\subparagraph}[block]
+  {\normalfont\normalsize\bfseries}
+  {}
+  {0pt}
+  {}
+
+\titlespacing*{\subparagraph}
+  {0pt}
+  {1.2em}
+  {0.5em}
