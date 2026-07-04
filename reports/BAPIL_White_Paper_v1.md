@@ -4485,12 +4485,12 @@ This work, BAPIL White Paper: Bangladesh AI Policy & Innovation Lab (Version 1.0
 
 You are free to:
 
-* Share - copy and redistribute the material in any medium or format.
-* Adapt - remix, transform, and build upon the material for any purpose, including commercial use.
+* Share: copy and redistribute the material in any medium or format.
+* Adapt: remix, transform, and build upon the material for any purpose, including commercial use.
 
 Under the following condition:
 
-* Attribution - appropriate credit must be given to the original author, a link to the license must be provided, and any changes made must be indicated.
+* Attribution: appropriate credit must be given to the original author, a link to the license must be provided, and any changes made must be indicated.
 
 The licensor cannot revoke these freedoms as long as the license terms are followed.
 
