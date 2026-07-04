@@ -500,7 +500,7 @@ Canada’s experience provides a practical model for implementing AI governance 
 
 ## Comparative Analysis
 
-Although the international case studies examined in this chapter differ in governance structures, levels of digital maturity, institutional arrangements, and economic contexts, several common themes emerge [51–70]:
+Although the international case studies examined in this chapter differ in governance structures, levels of digital maturity, institutional arrangements, and economic contexts, several common themes emerge [51-70]:
 
 * Strong government leadership and long-term strategic vision are essential drivers of successful digital transformation [52, 54, 56, 60, 65, 66].
 * Sustained investment in digital infrastructure and interoperable public systems enables innovation, efficiency, and improved service delivery [17, 20, 21, 57-59].
