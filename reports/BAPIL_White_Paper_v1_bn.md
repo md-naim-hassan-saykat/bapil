@@ -619,7 +619,7 @@ UAE-এর অভিজ্ঞতা দেখায় যে সুদূরপ
 
 বাংলাদেশের তথ্যভিত্তিক অবকাঠামো গড়ে তোলার ক্ষেত্রে বিভিন্ন প্রতিষ্ঠান গুরুত্বপূর্ণ ভূমিকা পালন করছে।
 
-#### বাংলাদেশ পরিসংখ্যান ব্যুরো (Bangladesh Bureau of Statistics - BBS)
+#### বাংলাদেশ পরিসংখ্যান ব্যুরো (Bangladesh Bureau of Statistics, BBS)
 
 **বাংলাদেশ পরিসংখ্যান ব্যুরো (BBS)**
 
@@ -4138,7 +4138,7 @@ Dhaka: ICT Division, Government of the People’s Republic of Bangladesh, 2024[2
 Available: 
 <https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-moa/2024/12/a01255f61d29443eabbf948ef97c290e.pdf>  
 
-[31] BANGLADESH BUREAU OF STATISTICS (BBS), STATISTICS AND INFORMATICS DIVISION, MINISTRY OF PLANNING, GOVERNMENT OF THE PEOPLE’S REPUBLIC OF BANGLADESH.
+[31] (Bangladesh Bureau of Statistics, BBS), STATISTICS AND INFORMATICS DIVISION, MINISTRY OF PLANNING, GOVERNMENT OF THE PEOPLE’S REPUBLIC OF BANGLADESH.
 Statistical Yearbook of Bangladesh 2024[EB/OL].
 Dhaka: Bangladesh Bureau of Statistics, 2025[2026-06-18].
 Available: 
