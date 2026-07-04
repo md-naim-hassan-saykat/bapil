@@ -3602,7 +3602,7 @@ Policy Intelligence সক্ষমতা, বাংলা ভাষাভিত
 
 বাংলাদেশে কৃত্রিম বুদ্ধিমত্তার ভবিষ্যৎ কেবল প্রযুক্তির মাধ্যমে নির্ধারিত হবে না; বরং তা নির্ভর করবে রাষ্ট্রের প্রতিষ্ঠান, গবেষক, নীতিনির্ধারক, উদ্যোক্তা, শিক্ষাবিদ এবং নাগরিকদের সম্মিলিত সিদ্ধান্ত, দৃষ্টিভঙ্গি ও অংশগ্রহণের ওপর [1,5,22,24]। দায়িত্বশীল উদ্ভাবন, প্রমাণভিত্তিক শাসনব্যবস্থা এবং দীর্ঘমেয়াদি সহযোগিতার মাধ্যমে বাংলাদেশ এমন একটি AI ইকোসিস্টেম গড়ে তোলার সুযোগ রাখে, যা আগামী প্রজন্মের জন্য সমৃদ্ধি, অন্তর্ভুক্তি, স্থিতিস্থাপকতা এবং জনআস্থা নিশ্চিত করতে সহায়ক হবে [4,5,23,24,29,30]।
 
-## পরিশিষ্ট A: সম্ভাব্য পাইলট প্রকল্পসমূহ
+# পরিশিষ্ট A: সম্ভাব্য পাইলট প্রকল্পসমূহ
 
 ### ভূমিকা
 
@@ -3726,7 +3726,7 @@ Policy Intelligence সক্ষমতা, বাংলা ভাষাভিত
 
 এখানে বর্ণিত প্রকল্পসমূহ আলোচনার ভিত্তি, গবেষণামূলক পরীক্ষণ এবং ভবিষ্যৎ অনুসন্ধানের উদাহরণ হিসেবে উপস্থাপিত হয়েছে, যা বাংলাদেশের ক্রমবিকাশমান AI ইকোসিস্টেমের অংশ হিসেবে বিবেচিত হতে পারে।
 
-## পরিশিষ্ট B: আন্তর্জাতিক উপদেষ্টা বোর্ডের ধারণা (International Advisory Board Concept)
+# পরিশিষ্ট B: আন্তর্জাতিক উপদেষ্টা বোর্ডের ধারণা (International Advisory Board Concept)
 
 ## উদ্দেশ্য
 
@@ -3780,7 +3780,7 @@ https://oecd.ai/en/ai-principles
 
 এই পরিশিষ্টে উল্লেখিত প্রতিষ্ঠানসমূহ শুধুমাত্র উদাহরণ হিসেবে অন্তর্ভুক্ত করা হয়েছে, যাদের প্রকাশনা, নীতিমালা, কাঠামো এবং গবেষণা ভবিষ্যৎ অধ্যয়নের জন্য সহায়ক রেফারেন্স হিসেবে বিবেচিত হতে পারে। এদের অন্তর্ভুক্তি কোনো ধরনের আনুষ্ঠানিক সম্পর্ক, অনুমোদন, অংশীদারিত্ব, অর্থায়ন বা উপদেষ্টা হিসেবে সম্পৃক্ততার ইঙ্গিত প্রদান করে না।
 
-## পরিশিষ্ট C: অর্থায়ন মডেল (Funding Model)
+# পরিশিষ্ট C: অর্থায়ন মডেল (Funding Model)
 
 ## ভূমিকা
 
@@ -4279,7 +4279,7 @@ Available:
 
 ## ঙ. অধ্যায় ৩-এর জন্য আন্তর্জাতিক কেস স্টাডি
 
-#### সিঙ্গাপুর
+### সিঙ্গাপুর
 
 [51] INFOCOMM MEDIA DEVELOPMENT AUTHORITY (IMDA), PERSONAL DATA PROTECTION COMMISSION (PDPC).
 Model AI Governance Framework (2nd Edition)[EB/OL].
@@ -4299,7 +4299,7 @@ Singapore: Infocomm Media Development Authority and AI Verify Foundation, 2024[2
 Available: 
 <https://aiverifyfoundation.sg/wp-content/uploads/2024/05/Model-AI-Governance-Framework-for-Generative-AI-May-2024-1-1.pdf>  
 
-#### দক্ষিণ কোরিয়া
+### দক্ষিণ কোরিয়া
 
 [54] GOVERNMENT OF THE REPUBLIC OF KOREA.
 National Strategy for Artificial Intelligence[EB/OL].
@@ -4319,7 +4319,7 @@ Seoul: Government of the Republic of Korea, 2020[2026-06-18].
 Available: 
 <https://english.moef.go.kr/pc/selectTbPressCenterDtl.do?boardCd=N0001&seq=4948>
 
-#### এস্তোনিয়া
+### এস্তোনিয়া
 
 [57] E-ESTONIA BRIEFING CENTRE.
 e-Governance[EB/OL].
@@ -4340,7 +4340,7 @@ Tallinn: e-Estonia Briefing Centre, 2024[2026-06-18].
 Available:
 <https://e-estonia.com/solutions/interoperability-services/x-road>
 
-#### যুক্তরাজ্য
+### যুক্তরাজ্য
 
 [60] DEPARTMENT FOR SCIENCE, INNOVATION AND TECHNOLOGY (DSIT), GOVERNMENT OF THE UNITED KINGDOM.
 AI Opportunities Action Plan[EB/OL].
@@ -4361,7 +4361,7 @@ London: Department for Science, Innovation and Technology, 2023[2026-06-18].
 Available:
 <https://www.gov.uk/government/publications/ai-regulation-a-pro-innovation-approach/white-paper>
 
-#### ফিনল্যান্ড
+### ফিনল্যান্ড
 
 [63] MINISTRY OF ECONOMIC AFFAIRS AND EMPLOYMENT OF FINLAND.
 Leading the Way into the Era of Artificial Intelligence: Final Report of Finland's Artificial Intelligence Programme[R/OL].
@@ -4375,7 +4375,7 @@ Helsinki: University of Helsinki and Reaktor, 2024[2026-06-18].
 Available: 
 <https://www.elementsofai.com>
 
-#### সংযুক্ত আরব আমিরাত
+### সংযুক্ত আরব আমিরাত
 
 [65] GOVERNMENT OF THE UNITED ARAB EMIRATES.
 UAE National Strategy for Artificial Intelligence 2031[EB/OL].
@@ -4395,7 +4395,7 @@ Paris: UNESCO, 2024[2026-06-18].
 Available:
 <https://www.unesco.org/creativity/en/policy-monitoring-platform/national-ai-strategy-2031-and-national-program-artificial-intelligence>
 
-#### কানাডা
+### কানাডা
 
 [68] TREASURY BOARD OF CANADA SECRETARIAT (TBS).
 Directive on Automated Decision-Making[EB/OL].
