@@ -6,18 +6,14 @@
 
 ## Author
 
-**Md Naim Hassan Saykat**<br>
-Master’s Student in Artificial Intelligence<br>
+**Md Naim Hassan Saykat**  
+Master’s Student in Artificial Intelligence  
 Université Paris-Saclay, France
 
-<br>
-
-**Version:** 1.0<br>
-**Date:** July 2026<br>
-**Document Type:** White Paper<br>
+**Version:** 1.0  
+**Date:** July 2026  
+**Document Type:** White Paper  
 **Status:** Public Discussion Draft
-
-<br>
 
 Prepared for research, policy discussion, academic collaboration, and public-interest dialogue.
 
@@ -4469,11 +4465,11 @@ Available:
 
 # Contact
 
-Md Naim Hassan Saykat<br>
-Master's Student in Artificial Intelligence<br>
+**Md Naim Hassan Saykat**  
+Master’s Student in Artificial Intelligence  
 Université Paris-Saclay, France
 
-GitHub: <https://github.com/md-naim-hassan-saykat>
+GitHub: https://github.com/md-naim-hassan-saykat
 
 For academic collaboration, research discussions, feedback, or inquiries related to this white paper, interested readers may contact the author through GitHub or other publicly available academic channels.
 
