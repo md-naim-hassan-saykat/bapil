@@ -406,7 +406,7 @@ These lessons complement Bangladesh’s ongoing e-governance and digital service
 
 ## 3.4 United Kingdom: AI Governance and Public Sector Innovation
 
-The United Kingdom has adopted a comprehensive approach to AI governance that seeks to balance innovation with accountability, public trust, and risk management [60-62].
+The United Kingdom has adopted a comprehensive approach to AI governance that seeks to balance innovation with accountability, public trust, and risk management [60–62].
 
 Key initiatives include:
 
