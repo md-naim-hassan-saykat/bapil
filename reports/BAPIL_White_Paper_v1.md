@@ -3133,7 +3133,7 @@ These indicators should evolve alongside future national priorities and technolo
 
 ## Conclusion
 
-The period between 2030 and 2041 presents significant opportunities for Bangladesh to strengthen its capabilities in Artificial Intelligence, digital governance, policy intelligence, and innovation [21,29,30,80]. Through research, collaboration, education, and responsible technology development, BAPIL aspires to contribute to a future where AI serves as a tool for evidence-based governance, sustainable development, and public benefit [1, 3, 4, 5, 17, 23, 24].
+The period between 2030 and 2041 presents significant opportunities for Bangladesh to strengthen its capabilities in Artificial Intelligence, digital governance, policy intelligence, and innovation [21, 29, 30, 80]. Through research, collaboration, education, and responsible technology development, BAPIL aspires to contribute to a future where AI serves as a tool for evidence-based governance, sustainable development, and public benefit [1, 3, 4, 5, 17, 23, 24].
 
 The realization of this vision will depend on continued investment in people, institutions, knowledge, and responsible innovation, supported by strong collaboration among government, academia, industry, and civil society [19, 27, 35, 36, 70, 75].
 
