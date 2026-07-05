@@ -4141,7 +4141,7 @@ Available:
 
 [37] VASWANI A, SHAZEER N, PARMAR N, et al.
 Attention Is All You Need[C]//GUYON I, VON LUXBURG U, BENGIO S, et al., eds. Advances in Neural Information Processing Systems 30 (NeurIPS 2017).
-Red Hook, NY: Curran Associates, Inc., 2017: 5998-6008.
+Red Hook, NY: Curran Associates, Inc., 2017[2026-06-18]: 5998-6008.
 DOI: 10.48550/arXiv.1706.03762.
 Available: 
 <https://papers.nips.cc/paper/7181-attention-is-all-you-need>
