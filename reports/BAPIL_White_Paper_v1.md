@@ -333,7 +333,7 @@ Through research, collaboration, and capacity building, BAPIL aims to contribute
 
 Around the world, governments are increasingly exploring the use of Artificial Intelligence (AI), digital technologies, and data-driven governance to improve policymaking, public service delivery, and national competitiveness. While each country follows its own institutional and regulatory approach, several international examples provide valuable insights into how AI and digital innovation can support effective governance [10–21, 26].
 
-This white paper examines international experiences from Singapore, South Korea, Estonia, the United Kingdom, Finland, the United Arab Emirates, and Canada. These cases highlight different approaches to digital transformation, AI governance, public sector innovation, and policy intelligence that may offer useful lessons for future research and policy discussions in Bangladesh [51-70].
+This white paper examines international experiences from Singapore, South Korea, Estonia, the United Kingdom, Finland, the United Arab Emirates, and Canada. These cases highlight different approaches to digital transformation, AI governance, public sector innovation, and policy intelligence that may offer useful lessons for future research and policy discussions in Bangladesh [51–70].
 
 ## 3.1 Singapore: Smart Nation and GovTech
 
