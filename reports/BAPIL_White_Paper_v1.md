@@ -337,7 +337,7 @@ This white paper examines international experiences from Singapore, South Korea,
 
 ## 3.1 Singapore: Smart Nation and GovTech
 
-Singapore is widely regarded as one of the world's leading digital governments. Through its Smart Nation initiative and GovTech Singapore, the country has implemented a comprehensive strategy to integrate digital technologies into government operations and public services [51-53].
+Singapore is widely regarded as one of the world's leading digital governments. Through its Smart Nation initiative and GovTech Singapore, the country has implemented a comprehensive strategy to integrate digital technologies into government operations and public services [51–53].
 
 Key features of Singapore’s approach include:
 
