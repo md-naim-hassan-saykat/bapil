@@ -496,7 +496,7 @@ Key features include:
 * Risk-based evaluation of AI systems.
 * Building public trust through responsible implementation.
 
-Canada’s experience provides a practical model for implementing AI governance mechanisms within public institutions [68-70].
+Canada’s experience provides a practical model for implementing AI governance mechanisms within public institutions [68–70].
 
 ## Comparative Analysis
 
@@ -512,11 +512,11 @@ These experiences demonstrate that successful AI-enabled governance depends not 
 
 ## Conclusion
 
-International experiences from Singapore, South Korea, Estonia, the United Kingdom, Finland, the United Arab Emirates, and Canada provide valuable insights into how governments can leverage AI, data analytics, and digital technologies to improve governance and public service delivery [51-70].
+International experiences from Singapore, South Korea, Estonia, the United Kingdom, Finland, the United Arab Emirates, and Canada provide valuable insights into how governments can leverage AI, data analytics, and digital technologies to improve governance and public service delivery [51–70].
 
 While Bangladesh faces its own unique challenges and opportunities, these examples offer practical lessons that may inform future discussions on AI governance, policy intelligence, digital transformation, and public-sector innovation [1, 3, 5, 17, 21, 29, 30, 35, 36].
 
-The next chapter examines the current AI landscape in Bangladesh and identifies opportunities and challenges that may shape the country's future AI ecosystem [29-36, 80].
+The next chapter examines the current AI landscape in Bangladesh and identifies opportunities and challenges that may shape the country's future AI ecosystem [29–36, 80].
 
 # Chapter 4: Current AI Landscape in Bangladesh
 
