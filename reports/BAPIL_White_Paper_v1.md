@@ -333,7 +333,7 @@ Through research, collaboration, and capacity building, BAPIL aims to contribute
 
 Around the world, governments are increasingly exploring the use of Artificial Intelligence (AI), digital technologies, and data-driven governance to improve policymaking, public service delivery, and national competitiveness. While each country follows its own institutional and regulatory approach, several international examples provide valuable insights into how AI and digital innovation can support effective governance [10–21, 26].
 
-This white paper examines international experiences from Singapore, South Korea, Estonia, the United Kingdom, Finland, the United Arab Emirates, and Canada. These cases highlight different approaches to digital transformation, AI governance, public sector innovation, and policy intelligence that may offer useful lessons for future research and policy discussions in Bangladesh [51–70].
+This white paper examines international experiences from Singapore, South Korea, Estonia, the United Kingdom, Finland, the United Arab Emirates, and Canada. These cases highlight different approaches to digital transformation, AI governance, public sector innovation, and policy intelligence that may offer useful lessons for future research and policy discussions in Bangladesh [51-70].
 
 ## 3.1 Singapore: Smart Nation and GovTech
 
@@ -500,7 +500,7 @@ Canada’s experience provides a practical model for implementing AI governance 
 
 ## Comparative Analysis
 
-Although the international case studies examined in this chapter differ in governance structures, levels of digital maturity, institutional arrangements, and economic contexts, several common themes emerge [51–70]:
+Although the international case studies examined in this chapter differ in governance structures, levels of digital maturity, institutional arrangements, and economic contexts, several common themes emerge [51-70]:
 
 * Strong government leadership and long-term strategic vision are essential drivers of successful digital transformation [52, 54, 56, 60, 65, 66].
 * Sustained investment in digital infrastructure and interoperable public systems enables innovation, efficiency, and improved service delivery [17, 20, 21, 57–59].
@@ -512,7 +512,7 @@ These experiences demonstrate that successful AI-enabled governance depends not 
 
 ## Conclusion
 
-International experiences from Singapore, South Korea, Estonia, the United Kingdom, Finland, the United Arab Emirates, and Canada provide valuable insights into how governments can leverage AI, data analytics, and digital technologies to improve governance and public service delivery [51–70].
+International experiences from Singapore, South Korea, Estonia, the United Kingdom, Finland, the United Arab Emirates, and Canada provide valuable insights into how governments can leverage AI, data analytics, and digital technologies to improve governance and public service delivery [51-70].
 
 While Bangladesh faces its own unique challenges and opportunities, these examples offer practical lessons that may inform future discussions on AI governance, policy intelligence, digital transformation, and public-sector innovation [1, 3, 5, 17, 21, 29, 30, 35, 36].
 
@@ -2503,7 +2503,7 @@ BAPIL is not intended to function as a startup incubator or investment fund. Rat
 
 ## International Perspectives
 
-Many countries have successfully leveraged startups as engines of technological advancement and economic growth [51–70].
+Many countries have successfully leveraged startups as engines of technological advancement and economic growth [51-70].
 
 Common success factors include:
 
@@ -2514,7 +2514,7 @@ Common success factors include:
 * International collaboration [27, 51, 53].
 * Entrepreneurial culture [52, 57].
 
-Examples from Singapore, South Korea, Estonia, the United Kingdom, Finland, the United Arab Emirates (UAE), and Canada demonstrate the importance of coordinated national strategies, digital infrastructure, and public-private partnerships in fostering innovation ecosystems [51–70].
+Examples from Singapore, South Korea, Estonia, the United Kingdom, Finland, the United Arab Emirates (UAE), and Canada demonstrate the importance of coordinated national strategies, digital infrastructure, and public-private partnerships in fostering innovation ecosystems [51-70].
 
 ## Long-Term Vision
 
@@ -2743,7 +2743,7 @@ To minimize risks and support sustainable growth, BAPIL may adopt a phased imple
 ### Phase 1 - Research and Planning
 
 * Literature review [1–16]
-* Comparative studies [51–70]
+* Comparative studies [51-70]
 * White paper development
 * Stakeholder engagement [22, 25]
 
@@ -2839,7 +2839,7 @@ The roadmap is guided by the following objectives [1, 4, 5, 9, 17, 29, 30]:
 
 * Complete the BAPIL White Paper.
 * Conduct literature reviews on AI governance and policy intelligence [1–10, 15].
-* Study international best practices from Singapore, South Korea, Estonia, the United Kingdom, Finland, the United Arab Emirates (UAE) and Canada [51–70].
+* Study international best practices from Singapore, South Korea, Estonia, the United Kingdom, Finland, the United Arab Emirates (UAE) and Canada [51-70].
 * Develop initial technical architecture concepts.
 * Establish academic and research partnerships [24, 27, 35, 36].
 * Organize workshops and stakeholder consultations [5, 22, 76].
