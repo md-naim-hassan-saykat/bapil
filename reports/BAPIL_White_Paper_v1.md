@@ -1157,13 +1157,13 @@ The architecture builds upon international best practices in AI governance, digi
 
 ## Introduction
 
-One of the core concepts proposed within the Bangladesh AI Policy & Innovation Lab (BAPIL) framework is the Policy Intelligence Dashboard. The dashboard is envisioned as an integrated analytical platform that enables researchers, policymakers, and stakeholders to access relevant information, monitor trends, explore policy insights, and support evidence-based decision-making [10,17,21,24,25].
+One of the core concepts proposed within the Bangladesh AI Policy & Innovation Lab (BAPIL) framework is the Policy Intelligence Dashboard. The dashboard is envisioned as an integrated analytical platform that enables researchers, policymakers, and stakeholders to access relevant information, monitor trends, explore policy insights, and support evidence-based decision-making [10, 17, 21, 24, 25].
 
-The dashboard is not intended to make policy decisions automatically. Instead, it serves as a decision-support and knowledge-discovery environment that helps users understand complex policy issues through data visualization, analytics, and AI-assisted insights [1,4,10,17].
+The dashboard is not intended to make policy decisions automatically. Instead, it serves as a decision-support and knowledge-discovery environment that helps users understand complex policy issues through data visualization, analytics, and AI-assisted insights [1, 4, 10, 17].
 
 ## Purpose of the Dashboard
 
-Modern governance requires timely access to information from diverse sources, including economic indicators, public feedback, policy documents, research publications, and administrative data [17,18,20,21].
+Modern governance requires timely access to information from diverse sources, including economic indicators, public feedback, policy documents, research publications, and administrative data [17, 18, 20, 21].
 
 The Policy Intelligence Dashboard aims to:
 
@@ -1172,7 +1172,7 @@ The Policy Intelligence Dashboard aims to:
 * Facilitate monitoring of national development indicators.
 * Enable exploration of policy trends and challenges.
 * Enhance transparency and institutional knowledge sharing.
-* Support research and public sector innovation [17,20,21,25].
+* Support research and public sector innovation [17, 20, 21, 25].
 
 ## Key Functional Components
 
@@ -1180,7 +1180,7 @@ The dashboard may consist of several integrated modules.
 
 ### National Indicators Module
 
-This module provides access to important national development indicators [21,23,29,31].
+This module provides access to important national development indicators [21, 23, 29, 31].
 
 Potential indicators include:
 
@@ -1193,11 +1193,11 @@ Potential indicators include:
 * Digital transformation metrics
 * Sustainable development indicators
 
-Interactive visualizations may help users monitor trends over time and compare performance across sectors [21,23,31].
+Interactive visualizations may help users monitor trends over time and compare performance across sectors [21, 23, 31].
 
 ### Policy Monitoring Module
 
-This module focuses on tracking policy implementation and outcomes [11,12,20,32].
+This module focuses on tracking policy implementation and outcomes [11, 12, 20, 32].
 
 Potential capabilities include:
 
@@ -1207,11 +1207,11 @@ Potential capabilities include:
 * Program evaluation support
 * Strategic planning dashboards
 
-The objective is to support greater visibility into policy implementation processes [11,20,32].
+The objective is to support greater visibility into policy implementation processes [11, 20, 32].
 
 ### Public Sentiment and Citizen Feedback Module
 
-Understanding public perspectives is important for responsive governance [18,21,24].
+Understanding public perspectives is important for responsive governance [18, 21, 24].
 
 Potential features include:
 
@@ -1221,11 +1221,11 @@ Potential features include:
 * Citizen feedback aggregation
 * Emerging issue identification
 
-AI-assisted analytics may help summarize large volumes of feedback while maintaining appropriate ethical safeguards [5,7,80,81].
+AI-assisted analytics may help summarize large volumes of feedback while maintaining appropriate ethical safeguards [5, 7, 80, 81].
 
 ### Policy Research Module
 
-The dashboard may provide access to policy-related research resources [17,19,25,27].
+The dashboard may provide access to policy-related research resources [17, 19, 25, 27].
 
 Potential features include:
 
@@ -1235,7 +1235,7 @@ Potential features include:
 * International best practices
 * Evidence synthesis tools
 
-This module aims to support knowledge sharing and policy learning [17,25,27].
+This module aims to support knowledge sharing and policy learning [17, 25, 27].
 
 ## AI-Assisted Analytical Capabilities
 
@@ -1245,11 +1245,11 @@ Potential capabilities include:
 
 ### Document Summarization
 
-AI systems may assist users by generating concise summaries of lengthy policy documents, reports, and research publications [39,42,43].
+AI systems may assist users by generating concise summaries of lengthy policy documents, reports, and research publications [39, 42, 43].
 
 ### Information Extraction
 
-Relevant information may be automatically identified from large collections of documents [38,42,46,48].
+Relevant information may be automatically identified from large collections of documents [38, 42, 46, 48].
 
 Examples include:
 
@@ -1260,17 +1260,17 @@ Examples include:
 
 ### Trend Analysis
 
-Analytical tools may identify trends and patterns across datasets and policy domains [18,21,77].
+Analytical tools may identify trends and patterns across datasets and policy domains [18, 21, 77].
 
 ### Knowledge Discovery
 
-AI-assisted systems may help uncover relationships between policies, programs, outcomes, and development indicators [38,41,50].
+AI-assisted systems may help uncover relationships between policies, programs, outcomes, and development indicators [38, 41, 50].
 
-These capabilities are intended to augment human analysis rather than replace expert judgment [1,4,5].
+These capabilities are intended to augment human analysis rather than replace expert judgment [1, 4, 5].
 
 ## Visualization and User Experience
 
-Effective policy intelligence requires information to be accessible and understandable [17,20,21].
+Effective policy intelligence requires information to be accessible and understandable [17, 20, 21].
 
 Potential visualization tools include:
 
@@ -1281,11 +1281,11 @@ Potential visualization tools include:
 * Network visualizations
 * Trend monitoring panels
 
-User-centered design principles should guide the development of dashboard interfaces [17,21].
+User-centered design principles should guide the development of dashboard interfaces [17, 21].
 
 ## Knowledge Search and Retrieval
 
-A major challenge in policymaking is locating relevant information across large document collections [18,25].
+A major challenge in policymaking is locating relevant information across large document collections [18, 25].
 
 Future versions of the dashboard may include:
 
@@ -1295,11 +1295,11 @@ Future versions of the dashboard may include:
 * Knowledge graph navigation
 * Cross-document linking
 
-These capabilities may improve access to institutional knowledge and research resources [38,46,48,49].
+These capabilities may improve access to institutional knowledge and research resources [38, 46, 48, 49].
 
 ## Stakeholder Perspectives
 
-Different stakeholders may interact with the dashboard in different ways [3,17,21,25].
+Different stakeholders may interact with the dashboard in different ways [3, 17, 21, 25].
 
 ### Policymakers
 
@@ -1325,7 +1325,7 @@ Different stakeholders may interact with the dashboard in different ways [3,17,2
 
 ## Transparency and Responsible Use
 
-The dashboard should be designed according to responsible AI and governance principles [1,4,5,6,7,15].
+The dashboard should be designed according to responsible AI and governance principles [1, 4, 5, 6, 7, 15].
 
 Key considerations include:
 
@@ -1336,7 +1336,7 @@ Key considerations include:
 * Ethical use of AI technologies
 * Explainability of analytical outputs
 
-Responsible implementation is essential for maintaining trust and accountability [1,4,5,6,7,14,15,74,75].
+Responsible implementation is essential for maintaining trust and accountability [1, 4, 5, 6, 7, 14, 15, 74, 75].
 
 ## Conceptual Dashboard Architecture
 
@@ -1346,11 +1346,11 @@ A simplified representation of the dashboard workflow is shown below:
 
 Figure 5. Conceptual workflow of policy intelligence within the Bangladesh AI Policy & Innovation Lab (BAPIL) ecosystem, illustrating the flow from government data, policy documents, citizen feedback, and research reports through data collection, AI-powered analytics, knowledge management, and policy intelligence to support researchers, policymakers, and other stakeholders in evidence-based decision-making.
 
-This architecture illustrates how information may be transformed into actionable insights and accessible visualizations [10,17,18,21,33,83].
+This architecture illustrates how information may be transformed into actionable insights and accessible visualizations [10, 17, 18, 21, 33, 83].
 
 ## Future Opportunities
 
-Future research may explore advanced dashboard capabilities such as [38,41,42,49,50]:
+Future research may explore advanced dashboard capabilities such as [38, 41, 42, 49, 50]:
 
 * Real-time policy monitoring.
 * AI-powered policy assistants.
@@ -1360,23 +1360,23 @@ Future research may explore advanced dashboard capabilities such as [38,41,42,49
 * Explainable AI analytics.
 * Cross-sector knowledge graphs.
 
-These capabilities would be subject to ongoing research, evaluation, and governance considerations [2,5,7,50,74,75].
+These capabilities would be subject to ongoing research, evaluation, and governance considerations [2, 5, 7, 50, 74, 75].
 
 ## Conclusion
 
-The Policy Intelligence Dashboard represents a key component of the BAPIL framework. By combining data analytics, AI-assisted insights, visualization tools, and knowledge management capabilities, the dashboard seeks to support evidence-based policy analysis and informed decision-making [17,21,24].
+The Policy Intelligence Dashboard represents a key component of the BAPIL framework. By combining data analytics, AI-assisted insights, visualization tools, and knowledge management capabilities, the dashboard seeks to support evidence-based policy analysis and informed decision-making [17, 21, 24].
 
-Rather than replacing policymakers or institutions, the dashboard is envisioned as a research and decision-support tool that helps stakeholders navigate complexity, access relevant information, and better understand emerging policy challenges [1,4,5,10].
+Rather than replacing policymakers or institutions, the dashboard is envisioned as a research and decision-support tool that helps stakeholders navigate complexity, access relevant information, and better understand emerging policy challenges [1, 4, 5, 10].
 
-The next chapter introduces the concept of a Bangla Policy Foundation Model and explores how Bangla-language AI technologies may contribute to policy intelligence and public sector innovation in Bangladesh [37,46,48,49,80].
+The next chapter introduces the concept of a Bangla Policy Foundation Model and explores how Bangla-language AI technologies may contribute to policy intelligence and public sector innovation in Bangladesh [37, 46, 48, 49, 80].
 
 # Chapter 8: Bangla Policy Foundation Model (BPFM)
 
 ## Introduction
 
-Recent advances in Artificial Intelligence have demonstrated the transformative potential of large-scale foundation models capable of understanding, generating, and analyzing human language [37,39,41,42,43,44]. These models have become increasingly important in areas such as information retrieval, document analysis, knowledge management, decision support, and public service delivery [10,17,21,24].
+Recent advances in Artificial Intelligence have demonstrated the transformative potential of large-scale foundation models capable of understanding, generating, and analyzing human language [37, 39, 41, 42, 43, 44]. These models have become increasingly important in areas such as information retrieval, document analysis, knowledge management, decision support, and public service delivery [10, 17, 21, 24].
 
-However, many existing foundation models are primarily optimized for high-resource languages and may not adequately address the linguistic, cultural, and policy-specific requirements of Bangladesh [41,45,46,48,49]. This creates an opportunity to explore the development of a Bangla Policy Foundation Model (BPFM), a specialized AI framework designed to support policy intelligence, governance research, and public sector innovation in the Bangla language [24,30,35,80].
+However, many existing foundation models are primarily optimized for high-resource languages and may not adequately address the linguistic, cultural, and policy-specific requirements of Bangladesh [41, 45, 46, 48, 49]. This creates an opportunity to explore the development of a Bangla Policy Foundation Model (BPFM), a specialized AI framework designed to support policy intelligence, governance research, and public sector innovation in the Bangla language [24, 30, 35, 80].
 
 The concept proposed in this chapter is intended as a long-term research direction rather than a fully developed implementation plan.
 
@@ -1384,7 +1384,7 @@ The concept proposed in this chapter is intended as a long-term research directi
 
 A foundation model is a large-scale AI model trained on diverse datasets that can perform multiple tasks through adaptation and fine-tuning [41].
 
-Examples of foundation model capabilities include [39,42,43,44]:
+Examples of foundation model capabilities include [39, 42, 43, 44]:
 
 * Question answering
 * Text summarization
@@ -1394,22 +1394,22 @@ Examples of foundation model capabilities include [39,42,43,44]:
 * Knowledge extraction
 * Conversational assistance
 
-These capabilities provide opportunities for supporting policy analysis and governance-related research [10,17,21].
+These capabilities provide opportunities for supporting policy analysis and governance-related research [10, 17, 21].
 
 ## Why a Bangla Policy Foundation Model?
 
-Bangla is among the most widely spoken languages in the world. Despite its importance, the availability of large-scale AI resources specifically designed for Bangla policy analysis and governance applications remains limited [46,48,49,80].
+Bangla is among the most widely spoken languages in the world. Despite its importance, the availability of large-scale AI resources specifically designed for Bangla policy analysis and governance applications remains limited [46, 48, 49, 80].
 
 A specialized Bangla Policy Foundation Model may help address several challenges:
 
-* Large volumes of policy documents [29,30]
-* Complex government reports [31,32]
-* Budget and planning documents [29,31]
+* Large volumes of policy documents [29, 30]
+* Complex government reports [31, 32]
+* Budget and planning documents [29, 31]
 * Legislative texts [34]
-* Citizen feedback and consultations [21,24,81]
-* Public sector knowledge management [17,21,82]
+* Citizen feedback and consultations [21, 24, 81]
+* Public sector knowledge management [17, 21, 82]
 
-The model could assist researchers and institutions in navigating large information repositories more efficiently [18,21].
+The model could assist researchers and institutions in navigating large information repositories more efficiently [18, 21].
 
 ## Strategic Objectives
 
@@ -1417,30 +1417,30 @@ The proposed Bangla Policy Foundation Model would aim to support:
 
 ### Policy Intelligence
 
-* Policy document analysis [10,17]
-* Regulatory monitoring [6,15]
+* Policy document analysis [10, 17]
+* Regulatory monitoring [6, 15]
 * Legislative analysis [34]
-* Evidence synthesis [21,24]
+* Evidence synthesis [21, 24]
 
 ### Knowledge Management
 
-* Government knowledge repositories [17,21]
+* Government knowledge repositories [17, 21]
 * Research databases [25]
 * Institutional memory systems [32]
-* Public information access [33,83]
+* Public information access [33, 83]
 
 ### Citizen Engagement
 
-* Analysis of public feedback [21,24]
+* Analysis of public feedback [21, 24]
 * Sentiment analysis [81]
 * Public consultation support [22]
-* Citizen information services [17,21]
+* Citizen information services [17, 21]
 
 ### Bangla Language Technology
 
-* Bangla Natural Language Processing (NLP) [46,48,49]
-* Document understanding [41,42]
-* Question-answering systems [39,42]
+* Bangla Natural Language Processing (NLP) [46, 48, 49]
+* Document understanding [41, 42]
+* Question-answering systems [39, 42]
 * Semantic search [38]
 
 ## Potential Data Sources
@@ -1449,8 +1449,8 @@ A future research initiative may explore the use of publicly available and appro
 
 ### Government Publications
 
-* Policy documents [29,30]
-* Strategic plans [29,30]
+* Policy documents [29, 30]
+* Strategic plans [29, 30]
 * Budget reports [31]
 * Annual reports [31]
 * Regulatory documents [34]
@@ -1464,17 +1464,17 @@ A future research initiative may explore the use of publicly available and appro
 ### Research and Academic Materials
 
 * Research publications [25]
-* Policy studies [17,21]
-* Development reports [23,24]
-* International best practices [11,17,21]
+* Policy studies [17, 21]
+* Development reports [23, 24]
+* International best practices [11, 17, 21]
 
 ### Public Information Resources
 
 * News archives
-* Public consultation documents [21,22]
-* Open government datasets [33,78,79]
+* Public consultation documents [21, 22]
+* Open government datasets [33, 78, 79]
 
-All data usage should comply with legal, ethical, and governance requirements [1,4,5,6,15,34].
+All data usage should comply with legal, ethical, and governance requirements [1, 4, 5, 6, 15, 34].
 
 ## Conceptual Architecture
 
@@ -1482,14 +1482,14 @@ The Bangla Policy Foundation Model may consist of several components:
 
 ### Data Collection Layer
 
-Responsible for gathering and organizing policy-related information from trusted and governed sources [18,33,78,79].
+Responsible for gathering and organizing policy-related information from trusted and governed sources [18, 33, 78, 79].
 
 ### Language Processing Layer
 
 Supports:
 
 * Tokenization [37]
-* Language understanding [39,42]
+* Language understanding [39, 42]
 * Named entity recognition [46]
 * Information extraction [41]
 
@@ -1497,7 +1497,7 @@ Supports:
 
 Supports:
 
-* Knowledge repositories [17,21]
+* Knowledge repositories [17, 21]
 * Knowledge graphs
 * Policy document indexing
 * Semantic relationships
@@ -1506,16 +1506,16 @@ Supports:
 
 Supports:
 
-* Language understanding [41,42,43,44]
+* Language understanding [41, 42, 43, 44]
 * Context-aware retrieval [38]
-* Question answering [39,42]
+* Question answering [39, 42]
 * Document summarization [41]
 
 ### Application Layer
 
 Supports:
 
-* Policy intelligence dashboards [17,21]
+* Policy intelligence dashboards [17, 21]
 * Research tools
 * Search systems [38]
 * Analytical interfaces
@@ -1531,10 +1531,10 @@ Potential benefits include:
 * Improved factual grounding [38]
 * Better transparency [50]
 * Access to updated information [38]
-* Reduced hallucination risks [2,38]
-* Stronger policy research capabilities [17,21]
+* Reduced hallucination risks [2, 38]
+* Stronger policy research capabilities [17, 21]
 
-RAG-based systems may be particularly valuable for policy intelligence applications where accuracy and traceability are essential [2,7,15].
+RAG-based systems may be particularly valuable for policy intelligence applications where accuracy and traceability are essential [2, 7, 15].
 
 ## Potential Use Cases
 
@@ -1546,7 +1546,7 @@ Users could search large collections of policy documents using natural language 
 
 ### Policy Summarization
 
-Long reports could be summarized into concise, understandable insights [41,42].
+Long reports could be summarized into concise, understandable insights [41, 42].
 
 ### Budget Analysis
 
@@ -1558,80 +1558,80 @@ Researchers could analyze laws, regulations, and parliamentary discussions more 
 
 ### Knowledge Discovery
 
-The system could help identify relationships across policies, programs, institutions, and development priorities [17,21].
+The system could help identify relationships across policies, programs, institutions, and development priorities [17, 21].
 
 ## Responsible AI Considerations
 
-The development of any policy-focused foundation model should be guided by responsible AI principles [1,4,5,6,7,15,51,53].
+The development of any policy-focused foundation model should be guided by responsible AI principles [1, 4, 5, 6, 7, 15, 51, 53].
 
 Important considerations include:
 
-* Transparency [1,4,50]
-* Human oversight [5,15,68]
-* Data governance [18,21]
-* Privacy protection [5,34]
-* Security controls [14,71,72]
-* Fairness and bias mitigation [45,50]
-* Accountability mechanisms [1,15,68,69]
+* Transparency [1, 4, 50]
+* Human oversight [5, 15, 68]
+* Data governance [18, 21]
+* Privacy protection [5, 34]
+* Security controls [14, 71, 72]
+* Fairness and bias mitigation [45, 50]
+* Accountability mechanisms [1, 15, 68, 69]
 
-The model should support human decision-making rather than replace human judgment [1,4,5,7].
+The model should support human decision-making rather than replace human judgment [1, 4, 5, 7].
 
 ## Research Challenges
 
 Several challenges would need to be addressed:
 
-* Availability of high-quality Bangla datasets [46,48,49,81]
-* Data standardization and quality [18,78,79]
-* Computational infrastructure requirements [35,36,77]
-* Model evaluation and benchmarking [41,50,77]
-* Governance and regulatory considerations [1,5,6,15]
-* Long-term maintenance and sustainability [17,24,30]
+* Availability of high-quality Bangla datasets [46, 48, 49, 81]
+* Data standardization and quality [18, 78, 79]
+* Computational infrastructure requirements [35, 36, 77]
+* Model evaluation and benchmarking [41, 50, 77]
+* Governance and regulatory considerations [1, 5, 6, 15]
+* Long-term maintenance and sustainability [17, 24, 30]
 
-Addressing these challenges would require collaboration among academia, government, industry, and research institutions [24,27,35,36,80].
+Addressing these challenges would require collaboration among academia, government, industry, and research institutions [24, 27, 35, 36, 80].
 
 ## Long-Term Vision
 
-In the long term, a Bangla Policy Foundation Model could contribute to a broader ecosystem of Bangla-language AI technologies supporting governance, education, research, and public services [24,30,35,36,76,80].
+In the long term, a Bangla Policy Foundation Model could contribute to a broader ecosystem of Bangla-language AI technologies supporting governance, education, research, and public services [24, 30, 35, 36, 76, 80].
 
-Such a model could serve as a foundational component within the broader BAPIL framework by supporting knowledge discovery, policy intelligence, and evidence-based research while promoting responsible AI development aligned with national priorities [1,4,5,24,30].
+Such a model could serve as a foundational component within the broader BAPIL framework by supporting knowledge discovery, policy intelligence, and evidence-based research while promoting responsible AI development aligned with national priorities [1, 4, 5, 24, 30].
 
 ## Conclusion
 
-The Bangla Policy Foundation Model represents a strategic research concept that seeks to explore how modern AI technologies can support policy intelligence and public sector innovation in Bangladesh [24,30,35,80]. By combining Bangla-language processing, knowledge management, information retrieval, and responsible AI principles [38,46,48,49], the model may contribute to future efforts aimed at strengthening evidence-based governance and digital transformation [17,21,30].
+The Bangla Policy Foundation Model represents a strategic research concept that seeks to explore how modern AI technologies can support policy intelligence and public sector innovation in Bangladesh [24, 30, 35, 80]. By combining Bangla-language processing, knowledge management, information retrieval, and responsible AI principles [38, 46, 48, 49], the model may contribute to future efforts aimed at strengthening evidence-based governance and digital transformation [17, 21, 30].
 
-The next chapter examines AI Governance Frameworks and discusses the institutional, ethical, and regulatory considerations necessary for responsible AI adoption within the BAPIL ecosystem [1,4,5,6,15].
+The next chapter examines AI Governance Frameworks and discusses the institutional, ethical, and regulatory considerations necessary for responsible AI adoption within the BAPIL ecosystem [1, 4, 5, 6, 15].
 
 # Chapter 9: AI Governance Framework
 
 ## Introduction
 
-As Artificial Intelligence (AI) becomes increasingly integrated into governance, public administration, research, and decision-support systems, the need for effective governance mechanisms becomes critical [1,4,5,6,7,10,15]. While AI offers significant opportunities for improving efficiency, innovation, and evidence-based policymaking, it also introduces risks related to transparency, accountability, privacy, bias, security, and public trust [2,5,6,7,14,15].
+As Artificial Intelligence (AI) becomes increasingly integrated into governance, public administration, research, and decision-support systems, the need for effective governance mechanisms becomes critical [1, 4, 5, 6, 7, 10, 15]. While AI offers significant opportunities for improving efficiency, innovation, and evidence-based policymaking, it also introduces risks related to transparency, accountability, privacy, bias, security, and public trust [2, 5, 6, 7, 14, 15].
 
-The purpose of an AI Governance Framework within the BAPIL ecosystem is to establish principles, guidelines, and oversight mechanisms that support the responsible development, deployment, and evaluation of AI systems [1,4,5,7]. The framework seeks to ensure that AI technologies serve the public interest while remaining aligned with legal, ethical, and institutional requirements [5,6,15,17,21].
+The purpose of an AI Governance Framework within the BAPIL ecosystem is to establish principles, guidelines, and oversight mechanisms that support the responsible development, deployment, and evaluation of AI systems [1, 4, 5, 7]. The framework seeks to ensure that AI technologies serve the public interest while remaining aligned with legal, ethical, and institutional requirements [5, 6, 15, 17, 21].
 
 ## What is AI Governance?
 
-AI governance refers to the policies, processes, standards, and institutional mechanisms that guide the development and use of Artificial Intelligence systems [1,4,5,6,7].
+AI governance refers to the policies, processes, standards, and institutional mechanisms that guide the development and use of Artificial Intelligence systems [1, 4, 5, 6, 7].
 
 Effective AI governance aims to:
 
-* Promote responsible innovation [1,4,62].
-* Ensure accountability and oversight [5,6,68].
-* Protect individual rights and privacy [5,15].
-* Reduce unintended harms [2,7].
-* Build public trust [1,5,15].
-* Support transparency and explainability [4,7,68].
-* Encourage ethical and lawful AI deployment [5,6,15].
+* Promote responsible innovation [1, 4, 62].
+* Ensure accountability and oversight [5, 6, 68].
+* Protect individual rights and privacy [5, 15].
+* Reduce unintended harms [2, 7].
+* Build public trust [1, 5, 15].
+* Support transparency and explainability [4, 7, 68].
+* Encourage ethical and lawful AI deployment [5, 6, 15].
 
-AI governance does not seek to prevent innovation but rather to ensure that technological progress is aligned with societal values and public interests [1,4,5].
+AI governance does not seek to prevent innovation but rather to ensure that technological progress is aligned with societal values and public interests [1, 4, 5].
 
 ## Guiding Principles
 
-The proposed BAPIL AI Governance Framework is based on internationally recognized principles adapted to the context of policy intelligence and public sector innovation [1,4,5,7,15].
+The proposed BAPIL AI Governance Framework is based on internationally recognized principles adapted to the context of policy intelligence and public sector innovation [1, 4, 5, 7, 15].
 
 ### Transparency
 
-AI systems should be understandable and explainable to the extent possible [1,4,5,50,68].
+AI systems should be understandable and explainable to the extent possible [1, 4, 5, 50, 68].
 
 Key objectives include:
 
@@ -1642,7 +1642,7 @@ Key objectives include:
 
 ### Accountability
 
-Human institutions and individuals remain responsible for decisions supported by AI systems [1,5,6,15,68].
+Human institutions and individuals remain responsible for decisions supported by AI systems [1, 5, 6, 15, 68].
 
 Key objectives include:
 
@@ -1653,7 +1653,7 @@ Key objectives include:
 
 ### Fairness and Inclusion
 
-AI systems should be designed and evaluated to minimize unfair bias and promote equitable outcomes [5,15,45,53].
+AI systems should be designed and evaluated to minimize unfair bias and promote equitable outcomes [5, 15, 45, 53].
 
 Key objectives include:
 
@@ -1664,7 +1664,7 @@ Key objectives include:
 
 ### Privacy Protection
 
-The collection, storage, and processing of information should respect privacy rights and applicable legal requirements [5,6,15,34].
+The collection, storage, and processing of information should respect privacy rights and applicable legal requirements [5, 6, 15, 34].
 
 Key objectives include:
 
@@ -1675,7 +1675,7 @@ Key objectives include:
 
 ### Human Oversight
 
-AI systems should support human decision-making rather than replace human judgment [1,5,6,51,68].
+AI systems should support human decision-making rather than replace human judgment [1, 5, 6, 51, 68].
 
 Key objectives include:
 
@@ -1686,7 +1686,7 @@ Key objectives include:
 
 ### Safety and Reliability
 
-AI systems should be reliable, secure, and appropriate for their intended purposes [2,6,7,14].
+AI systems should be reliable, secure, and appropriate for their intended purposes [2, 6, 7, 14].
 
 Key objectives include:
 
@@ -1708,7 +1708,7 @@ Responsible for:
 * Institutional oversight.
 * Strategic priorities.
 
-This layer aligns with international governance recommendations and national AI strategies [1,9,15,54,60,70].
+This layer aligns with international governance recommendations and national AI strategies [1, 9, 15, 54, 60, 70].
 
 ### Technical Governance Layer
 
@@ -1719,7 +1719,7 @@ Responsible for:
 * Technical documentation.
 * System monitoring.
 
-This layer draws upon NIST AI RMF, OECD guidance, and responsible AI practices [7,8,10,14].
+This layer draws upon NIST AI RMF, OECD guidance, and responsible AI practices [7, 8, 10, 14].
 
 ### Ethical Governance Layer
 
@@ -1730,7 +1730,7 @@ Responsible for:
 * Bias and fairness analysis.
 * Public-interest considerations.
 
-This layer reflects UNESCO and Council of Europe principles [5,15].
+This layer reflects UNESCO and Council of Europe principles [5, 15].
 
 ### Operational Governance Layer
 
@@ -1741,11 +1741,11 @@ Responsible for:
 * Incident reporting.
 * Continuous improvement.
 
-Operational governance is consistent with public-sector AI governance practices adopted internationally [17,20,21,61].
+Operational governance is consistent with public-sector AI governance practices adopted internationally [17, 20, 21, 61].
 
 ## AI Lifecycle Governance
 
-Governance should be applied throughout the lifecycle of AI systems [7,14].
+Governance should be applied throughout the lifecycle of AI systems [7, 14].
 
 ### Data Collection
 
@@ -1753,7 +1753,7 @@ Governance should be applied throughout the lifecycle of AI systems [7,14].
 * Data governance compliance.
 * Privacy protection measures.
 
-Supported by data governance and public-sector data frameworks [18,21,78,79].
+Supported by data governance and public-sector data frameworks [18, 21, 78, 79].
 
 ### Model Development
 
@@ -1761,7 +1761,7 @@ Supported by data governance and public-sector data frameworks [18,21,78,79].
 * Validation procedures.
 * Fairness evaluation.
 
-Consistent with responsible AI development principles [5,7,45,50].
+Consistent with responsible AI development principles [5, 7, 45, 50].
 
 ### Deployment
 
@@ -1769,7 +1769,7 @@ Consistent with responsible AI development principles [5,7,45,50].
 * Performance testing.
 * Risk assessment.
 
-Aligned with NIST and EU AI governance approaches [6,7,14].
+Aligned with NIST and EU AI governance approaches [6, 7, 14].
 
 ### Monitoring
 
@@ -1777,7 +1777,7 @@ Aligned with NIST and EU AI governance approaches [6,7,14].
 * Feedback mechanisms.
 * Error tracking.
 
-Supported by AI risk management and governance frameworks [7,68,69].
+Supported by AI risk management and governance frameworks [7, 68, 69].
 
 ### Retirement and Updating
 
@@ -1785,11 +1785,11 @@ Supported by AI risk management and governance frameworks [7,68,69].
 * Version management.
 * Responsible decommissioning.
 
-Consistent with lifecycle governance recommendations [7,14].
+Consistent with lifecycle governance recommendations [7, 14].
 
 ## Risk-Based Governance Approach
 
-Not all AI applications present the same level of risk. A risk-based governance approach allows resources and oversight mechanisms to be aligned with the potential impact of a system [6,7,8,68,69].
+Not all AI applications present the same level of risk. A risk-based governance approach allows resources and oversight mechanisms to be aligned with the potential impact of a system [6, 7, 8, 68, 69].
 
 ### Low-Risk Systems
 
@@ -1815,11 +1815,11 @@ Examples:
 * Sensitive public sector applications.
 * Critical infrastructure-related systems.
 
-Higher-risk systems require stronger oversight, testing, and governance controls [6,7,15,68,69].
+Higher-risk systems require stronger oversight, testing, and governance controls [6, 7, 15, 68, 69].
 
 ## Data Governance Framework
 
-AI governance depends heavily on effective data governance [18,21,78,79].
+AI governance depends heavily on effective data governance [18, 21, 78, 79].
 
 Key elements include:
 
@@ -1830,11 +1830,11 @@ Key elements include:
 * Privacy protection.
 * Security requirements.
 
-The framework should promote responsible use of data while supporting innovation and research [18,21,33,78,79].
+The framework should promote responsible use of data while supporting innovation and research [18, 21, 33, 78, 79].
 
 ## Explainability and Transparency
 
-For policy intelligence applications, explainability is particularly important [1,5,7,50,68].
+For policy intelligence applications, explainability is particularly important [1, 5, 7, 50, 68].
 
 Users should be able to understand:
 
@@ -1843,11 +1843,11 @@ Users should be able to understand:
 * Assumptions and limitations.
 * Confidence levels where appropriate.
 
-Explainable AI techniques may improve transparency and trust in analytical systems [5,7,50].
+Explainable AI techniques may improve transparency and trust in analytical systems [5, 7, 50].
 
 ## Ethics Review and Impact Assessment
 
-Future AI projects within the BAPIL ecosystem may benefit from structured ethical review processes [5,15,53,69,74].
+Future AI projects within the BAPIL ecosystem may benefit from structured ethical review processes [5, 15, 53, 69, 74].
 
 Potential considerations include:
 
@@ -1857,7 +1857,7 @@ Potential considerations include:
 * Human rights considerations.
 * Public trust implications.
 
-Ethical review processes can help identify and mitigate risks before deployment [5,15].
+Ethical review processes can help identify and mitigate risks before deployment [5, 15].
 
 ## International Alignment
 
@@ -1869,11 +1869,11 @@ The BAPIL AI Governance Framework may draw inspiration from internationally reco
 * European Union AI Act.
 * Singapore AI Governance Framework.
 
-These frameworks provide valuable guidance while allowing adaptation to local contexts and priorities [1,5,6,7,51].
+These frameworks provide valuable guidance while allowing adaptation to local contexts and priorities [1, 5, 6, 7, 51].
 
 ## Governance and Public Trust
 
-Public trust is essential for the successful adoption of AI technologies [1,5,15,74,75].
+Public trust is essential for the successful adoption of AI technologies [1, 5, 15, 74, 75].
 
 Trust can be strengthened through:
 
@@ -1883,11 +1883,11 @@ Trust can be strengthened through:
 * Independent oversight.
 * Responsible communication.
 
-AI systems that are perceived as trustworthy are more likely to be accepted and effectively utilized [1,5,15].
+AI systems that are perceived as trustworthy are more likely to be accepted and effectively utilized [1, 5, 15].
 
 ## Role of BAPIL
 
-Within the broader BAPIL framework, AI governance serves as a foundational pillar that supports responsible innovation and policy intelligence [24,25,35,36,80].
+Within the broader BAPIL framework, AI governance serves as a foundational pillar that supports responsible innovation and policy intelligence [24, 25, 35, 36, 80].
 
 ### BAPIL aims to:
 
@@ -1897,13 +1897,13 @@ Within the broader BAPIL framework, AI governance serves as a foundational pilla
 * Encourage responsible AI adoption.
 * Foster interdisciplinary collaboration.
 
-The objective is not to regulate AI directly but to contribute research, knowledge, and analytical perspectives that support informed governance discussions [24,25,27].
+The objective is not to regulate AI directly but to contribute research, knowledge, and analytical perspectives that support informed governance discussions [24, 25, 27].
 
 ## Conclusion
 
-As Artificial Intelligence becomes increasingly important for governance, research, and public sector innovation, effective governance frameworks will be essential for ensuring responsible and trustworthy deployment [1,5,6,7,15]. By emphasizing transparency, accountability, fairness, privacy, security, and human oversight, the proposed AI Governance Framework seeks to support the responsible exploration of AI within the BAPIL ecosystem [1,4,5,6,7,15].
+As Artificial Intelligence becomes increasingly important for governance, research, and public sector innovation, effective governance frameworks will be essential for ensuring responsible and trustworthy deployment [1,5,6,7,15]. By emphasizing transparency, accountability, fairness, privacy, security, and human oversight, the proposed AI Governance Framework seeks to support the responsible exploration of AI within the BAPIL ecosystem [1, 4, 5, 6, 7, 15].
 
-The next chapter examines National Security and Cybersecurity considerations and discusses how emerging technologies may affect digital resilience, information integrity, and public-sector security [14,34,71,72].
+The next chapter examines National Security and Cybersecurity considerations and discusses how emerging technologies may affect digital resilience, information integrity, and public-sector security [14, 34, 71, 72].
 
 # Chapter 10: National Security & Cybersecurity
 
@@ -2988,13 +2988,13 @@ The roadmap emphasizes sustainable growth, interdisciplinary collaboration, and 
 
 ## Introduction
 
-While the initial development of the Bangladesh AI Policy & Innovation Lab (BAPIL) focuses on research, capacity building, and pilot initiatives during 2026-2030, the broader vision extends toward supporting Bangladesh’s long-term development aspirations through 2041 and beyond [3,21,23,29,30].
+While the initial development of the Bangladesh AI Policy & Innovation Lab (BAPIL) focuses on research, capacity building, and pilot initiatives during 2026-2030, the broader vision extends toward supporting Bangladesh’s long-term development aspirations through 2041 and beyond [3, 21, 23, 29, 30].
 
-This chapter outlines a strategic vision for how AI governance, policy intelligence, digital innovation, and knowledge-driven decision-making may evolve over the coming decade. The objective is not to predict specific outcomes but to identify opportunities that could contribute to a more innovative, resilient, and technologically advanced Bangladesh [1,17,21,24,29,30].
+This chapter outlines a strategic vision for how AI governance, policy intelligence, digital innovation, and knowledge-driven decision-making may evolve over the coming decade. The objective is not to predict specific outcomes but to identify opportunities that could contribute to a more innovative, resilient, and technologically advanced Bangladesh [1, 17, 21, 24, 29, 30].
 
 ## Vision for 2041
 
-By 2041, BAPIL aspires to contribute to an ecosystem where Artificial Intelligence, data analytics, and evidence-based policy intelligence support national development, public sector innovation, and responsible governance [21,23,29,30,80].
+By 2041, BAPIL aspires to contribute to an ecosystem where Artificial Intelligence, data analytics, and evidence-based policy intelligence support national development, public sector innovation, and responsible governance [21, 23, 29, 30, 80].
 
 The long-term vision is founded on five strategic pillars:
 
@@ -3006,7 +3006,7 @@ The long-term vision is founded on five strategic pillars:
 
 ## Knowledge-Based Governance
 
-Future governance systems may increasingly rely on data, analytics, and digital intelligence to support informed decision-making [11,17,18,20,21,57,58].
+Future governance systems may increasingly rely on data, analytics, and digital intelligence to support informed decision-making [11, 17, 18, 20, 21, 57, 58].
 
 Potential developments include:
 
@@ -3016,11 +3016,11 @@ Potential developments include:
 * Improved policy monitoring and evaluation.
 * Enhanced public-sector transparency.
 
-The objective is to strengthen institutional capacity while maintaining human oversight and democratic accountability [1,5,11,17,21,68,69].
+The objective is to strengthen institutional capacity while maintaining human oversight and democratic accountability [1, 5, 11, 17, 21, 68, 69].
 
 ## Responsible AI Ecosystem 
 
-As AI technologies become more widespread, governance frameworks will become increasingly important [1,4,5,6,7,15].
+As AI technologies become more widespread, governance frameworks will become increasingly important [1, 4, 5, 6, 7, 15].
 
 Long-term aspirations include:
 
@@ -3030,11 +3030,11 @@ Long-term aspirations include:
 * Risk management frameworks.
 * Public trust and accountability.
 
-The goal is to ensure that technological advancement remains aligned with societal values and public interests [1,4,5,6,7,8,9,14,15,50].
+The goal is to ensure that technological advancement remains aligned with societal values and public interests [1, 4, 5, 6, 7, 8, 9, 14, 15, 50].
 
 ## Bangla-Language AI and Digital Inclusion 
 
-Bangla represents one of the most widely spoken languages in the world and provides a unique opportunity for AI innovation [37,39,41,46,48,49].
+Bangla represents one of the most widely spoken languages in the world and provides a unique opportunity for AI innovation [37, 39, 41, 46, 48, 49].
 
 Future opportunities may include:
 
@@ -3044,11 +3044,11 @@ Future opportunities may include:
 * Multilingual government knowledge systems.
 * Improved digital accessibility.
 
-These developments may contribute to greater inclusion and broader access to digital services [3,24,46,47,48,49,76,81].
+These developments may contribute to greater inclusion and broader access to digital services [3, 24, 46, 47, 48, 49, 76, 81].
 
 ## National Research and Innovation Capacity
 
-Long-term technological competitiveness depends upon strong research institutions and innovation ecosystems [16,24,27,70,77].
+Long-term technological competitiveness depends upon strong research institutions and innovation ecosystems [16, 24, 27, 70, 77].
 
 Potential aspirations include:
 
@@ -3058,11 +3058,11 @@ Potential aspirations include:
 * Centers of excellence in AI governance.
 * Stronger technology transfer mechanisms.
 
-Research capacity development remains a foundational element of sustainable innovation [16,24,35,36,70,77,80].
+Research capacity development remains a foundational element of sustainable innovation [16, 24, 35, 36, 70, 77, 80].
 
 ## Human Capital and Talent Development
 
-The future AI ecosystem will depend on highly skilled professionals across multiple disciplines [35,36,73,76,77].
+The future AI ecosystem will depend on highly skilled professionals across multiple disciplines [35, 36, 73, 76, 77].
 
 Long-term objectives may include:
 
@@ -3072,11 +3072,11 @@ Long-term objectives may include:
 * Public-sector digital skills development.
 * Interdisciplinary AI governance expertise.
 
-Human capital development is expected to remain one of the most important drivers of long-term success [35,36,63,64,73,76].
+Human capital development is expected to remain one of the most important drivers of long-term success [35, 36, 63, 64, 73, 76].
 
 ## Public Sector Innovation 
 
-Emerging technologies may create opportunities to improve public service delivery and administrative efficiency [10,17,20,21,32,57,61].
+Emerging technologies may create opportunities to improve public service delivery and administrative efficiency [10, 17, 20, 21, 32, 57, 61].
 
 Potential applications include:
 
@@ -3086,11 +3086,11 @@ Potential applications include:
 * Data-driven planning tools.
 * Citizen engagement technologies.
 
-Such innovations should complement existing institutions and support better service delivery [10,11,17,20,21,32,52,57,61,68,69,82].
+Such innovations should complement existing institutions and support better service delivery [10, 11, 17, 20, 21, 32, 52, 57, 61, 68, 69, 82].
 
 ## International Leadership and Collaboration
 
-AI governance is a global challenge that benefits from international cooperation [1,15,19,27].
+AI governance is a global challenge that benefits from international cooperation [1, 15, 19, 27].
 
 By 2041, Bangladesh may seek to strengthen its role within international discussions on:
 
@@ -3100,7 +3100,7 @@ By 2041, Bangladesh may seek to strengthen its role within international discuss
 * Cybersecurity.
 * Emerging technologies.
 
-International partnerships can support knowledge exchange, research collaboration, and capacity building [15,19,27,54,55,60,65,70,75].
+International partnerships can support knowledge exchange, research collaboration, and capacity building [15, 19, 27, 54, 55, 60, 65, 70, 75].
 
 ## Vision Beyond Technology
 
@@ -3115,7 +3115,7 @@ The broader aspiration is to support:
 * Inclusive innovation.
 * Public benefit.
 
-Technology should remain a tool that serves people, institutions, and society [3,5,22,23,24,74].
+Technology should remain a tool that serves people, institutions, and society [3, 5, 22, 23, 24, 74].
 
 ## Long-Term Success Indicators
 
@@ -3129,39 +3129,39 @@ Potential indicators of progress may include:
 * Greater public awareness of responsible AI.
 * Increased participation in global AI governance discussions.
 
-These indicators should evolve alongside future national priorities and technological developments [20,21,26,71,73,77,80].
+These indicators should evolve alongside future national priorities and technological developments [20, 21, 26, 71, 73, 77, 80].
 
 ## Conclusion
 
-The period between 2030 and 2041 presents significant opportunities for Bangladesh to strengthen its capabilities in Artificial Intelligence, digital governance, policy intelligence, and innovation [21,29,30,80]. Through research, collaboration, education, and responsible technology development, BAPIL aspires to contribute to a future where AI serves as a tool for evidence-based governance, sustainable development, and public benefit [1,3,4,5,17,23,24].
+The period between 2030 and 2041 presents significant opportunities for Bangladesh to strengthen its capabilities in Artificial Intelligence, digital governance, policy intelligence, and innovation [21,29,30,80]. Through research, collaboration, education, and responsible technology development, BAPIL aspires to contribute to a future where AI serves as a tool for evidence-based governance, sustainable development, and public benefit [1, 3, 4, 5, 17, 23, 24].
 
-The realization of this vision will depend on continued investment in people, institutions, knowledge, and responsible innovation, supported by strong collaboration among government, academia, industry, and civil society [19,27,35,36,70,75].
+The realization of this vision will depend on continued investment in people, institutions, knowledge, and responsible innovation, supported by strong collaboration among government, academia, industry, and civil society [19, 27, 35, 36, 70, 75].
 
 # Chapter 16: Risks, Ethics, and Responsible AI
 
 ## Introduction
 
-Artificial Intelligence (AI) offers significant opportunities for improving governance, research, public services, and decision-support capabilities [1,10,17,21,24]. However, AI technologies also introduce important ethical, social, legal, and operational challenges that must be carefully addressed [2,5,6,7,15,41,45].
+Artificial Intelligence (AI) offers significant opportunities for improving governance, research, public services, and decision-support capabilities [1, 10, 17, 21, 24]. However, AI technologies also introduce important ethical, social, legal, and operational challenges that must be carefully addressed [2, 5, 6, 7, 15, 41, 45].
 
-Responsible AI requires more than technical excellence. It demands appropriate governance frameworks, human oversight, transparency, accountability, and continuous evaluation of societal impacts [1,4,5,7,15]. As AI systems become increasingly integrated into institutions and public services, ensuring their responsible use becomes a critical priority [6,10,21].
+Responsible AI requires more than technical excellence. It demands appropriate governance frameworks, human oversight, transparency, accountability, and continuous evaluation of societal impacts [1, 4, 5, 7, 15]. As AI systems become increasingly integrated into institutions and public services, ensuring their responsible use becomes a critical priority [6, 10, 21].
 
 This chapter examines key risks, ethical considerations, and responsible AI principles relevant to the BAPIL framework.
 
 ## Understanding Responsible AI
 
-Responsible AI refers to the development and use of Artificial Intelligence in ways that are ethical, transparent, accountable, safe, and aligned with human values [1,4,5,7,15].
+Responsible AI refers to the development and use of Artificial Intelligence in ways that are ethical, transparent, accountable, safe, and aligned with human values [1, 4, 5, 7, 15].
 
-The objective of responsible AI is not to slow innovation but to ensure that technological progress contributes positively to society while minimizing potential harms [1,5,6,74].
+The objective of responsible AI is not to slow innovation but to ensure that technological progress contributes positively to society while minimizing potential harms [1, 5, 6, 74].
 
-Within the BAPIL framework, responsible AI serves as a foundational principle that guides research, development, governance, and implementation activities [1,4,5,7,15].
+Within the BAPIL framework, responsible AI serves as a foundational principle that guides research, development, governance, and implementation activities [1, 4, 5, 7, 15].
 
 ## Ethical Principles
 
-The proposed BAPIL framework is guided by several core ethical principles derived from internationally recognized AI governance frameworks [1,4,5,6,7,15,51].
+The proposed BAPIL framework is guided by several core ethical principles derived from internationally recognized AI governance frameworks [1, 4, 5, 6, 7, 15, 51].
 
 ### Human-Centered Design
 
-AI systems should support human decision-making and remain subject to meaningful human oversight [1,5,6,15,68].
+AI systems should support human decision-making and remain subject to meaningful human oversight [1, 5, 6, 15, 68].
 
 Key considerations include:
 
@@ -3172,7 +3172,7 @@ Key considerations include:
 
 ### Transparency
 
-Users should have a reasonable understanding of how AI-supported outputs are generated [1,4,5,7,50,51].
+Users should have a reasonable understanding of how AI-supported outputs are generated [1, 4, 5, 7, 50, 51].
 
 Key considerations include:
 
@@ -3183,7 +3183,7 @@ Key considerations include:
 
 ### Fairness
 
-AI systems should be designed to reduce unfair discrimination and promote equitable outcomes [1,5,6,7,45,74].
+AI systems should be designed to reduce unfair discrimination and promote equitable outcomes [1, 5, 6, 7, 45, 74].
 
 Key considerations include:
 
@@ -3194,7 +3194,7 @@ Key considerations include:
 
 ### Accountability
 
-Responsibility for decisions should remain with human institutions and authorized decision-makers [1,6,15,68,69].
+Responsibility for decisions should remain with human institutions and authorized decision-makers [1, 6, 15, 68, 69].
 
 Key considerations include:
 
@@ -3205,7 +3205,7 @@ Key considerations include:
 
 ### Privacy Protection
 
-Data should be collected, stored, and processed responsibly [5,7,14,18,34].
+Data should be collected, stored, and processed responsibly [5, 7, 14, 18, 34].
 
 Key considerations include:
 
@@ -3216,11 +3216,11 @@ Key considerations include:
 
 ## Risks Associated with AI Systems
 
-Although AI technologies provide valuable opportunities, they also introduce risks that require careful management [2,6,7,41,45].
+Although AI technologies provide valuable opportunities, they also introduce risks that require careful management [2, 6, 7, 41, 45].
 
 ### Bias and Discrimination
 
-AI systems may inherit biases present in data or design processes [5,41,45].
+AI systems may inherit biases present in data or design processes [5, 41, 45].
 
 Potential risks include:
 
@@ -3228,11 +3228,11 @@ Potential risks include:
 * Inaccurate predictions.
 * Unintended exclusion.
 
-Continuous monitoring and evaluation are important for reducing such risks [5,7,45].
+Continuous monitoring and evaluation are important for reducing such risks [5, 7, 45].
 
 ### Lack of Transparency
 
-Complex AI systems may be difficult for users to understand [42,43,50].
+Complex AI systems may be difficult for users to understand [42, 43, 50].
 
 Potential consequences include:
 
@@ -3240,11 +3240,11 @@ Potential consequences include:
 * Limited accountability.
 * Difficulty interpreting outputs.
 
-Explainability mechanisms can help improve transparency [1,5,7,50].
+Explainability mechanisms can help improve transparency [1, 5, 7, 50].
 
 ### Privacy and Data Protection Risks
 
-Policy intelligence systems may rely on large volumes of information [18,33,78,79].
+Policy intelligence systems may rely on large volumes of information [18, 33, 78, 79].
 
 Potential concerns include:
 
@@ -3252,7 +3252,7 @@ Potential concerns include:
 * Data breaches.
 * Misuse of personal information.
 
-Strong data governance and security practices are therefore essential [7,14,18,34].
+Strong data governance and security practices are therefore essential [7, 14, 18, 34].
 
 ### Security Risks
 
@@ -3263,11 +3263,11 @@ AI systems may be vulnerable to:
 * Unauthorized system access.
 * Data corruption.
 
-Cybersecurity should be integrated throughout the system lifecycle [2,7,14,71,72].
+Cybersecurity should be integrated throughout the system lifecycle [2, 7, 14, 71, 72].
 
 ### Overreliance on Automation
 
-AI should not replace critical human judgment in areas involving significant public consequences [1,5,15,68].
+AI should not replace critical human judgment in areas involving significant public consequences [1, 5, 15, 68].
 
 Potential risks include:
 
@@ -3275,11 +3275,11 @@ Potential risks include:
 * Misinterpretation of outputs.
 * Excessive dependence on automated recommendations.
 
-Human expertise should remain central to decision-making processes [1,5,15].
+Human expertise should remain central to decision-making processes [1, 5, 15].
 
 ### Misinformation and Information Integrity
 
-Advances in AI have increased the ability to generate realistic synthetic content, including text, images, audio, and video [39,42,43].
+Advances in AI have increased the ability to generate realistic synthetic content, including text, images, audio, and video [39, 42, 43].
 
 Potential concerns include:
 
@@ -3288,11 +3288,11 @@ Potential concerns include:
 * Manipulated content.
 * Information credibility challenges.
 
-Addressing these risks requires a combination of technical, institutional, and educational responses [2,5,22,45,74].
+Addressing these risks requires a combination of technical, institutional, and educational responses [2, 5, 22, 45, 74].
 
 ## Governance and Oversight Mechanisms
 
-Responsible AI requires appropriate governance structures [1,4,7,15].
+Responsible AI requires appropriate governance structures [1, 4, 7, 15].
 
 Potential mechanisms include:
 
@@ -3303,11 +3303,11 @@ Potential mechanisms include:
 * Continuous monitoring.
 * Stakeholder consultation.
 
-Governance mechanisms help ensure that AI systems remain aligned with public-interest objectives [1,5,7,15,51,53].
+Governance mechanisms help ensure that AI systems remain aligned with public-interest objectives [1, 5, 7, 15, 51, 53].
 
 ## Responsible AI in Policy Intelligence
 
-Policy intelligence systems present unique challenges because they may influence public discussions, institutional analysis, and strategic planning [10,17,21].
+Policy intelligence systems present unique challenges because they may influence public discussions, institutional analysis, and strategic planning [10, 17, 21].
 
 Responsible implementation requires:
 
@@ -3317,23 +3317,23 @@ Responsible implementation requires:
 * Evidence-based analytical processes.
 * Continuous evaluation and review.
 
-AI-generated insights should be viewed as analytical support rather than authoritative conclusions [1,5,7,10,61].
+AI-generated insights should be viewed as analytical support rather than authoritative conclusions [1, 5, 7, 10, 61].
 
 ## International Best Practices
 
 The BAPIL framework may draw upon lessons from internationally recognized initiatives, including:
 
-* OECD AI Principles [1,4].
+* OECD AI Principles [1, 4].
 * UNESCO Recommendation on the Ethics of AI [5].
 * NIST AI Risk Management Framework [7].
 * European Union AI Act [6].
-* Singapore Model AI Governance Framework [51,53].
+* Singapore Model AI Governance Framework [51, 53].
 
-These frameworks provide useful guidance for balancing innovation with accountability and public trust [1,4,5,6,7,15,51].
+These frameworks provide useful guidance for balancing innovation with accountability and public trust [1, 4, 5, 6, 7, 15, 51].
 
 ## Building Public Trust
 
-Public trust is essential for the successful adoption of AI technologies [1,4,5].
+Public trust is essential for the successful adoption of AI technologies [1, 4, 5].
 
 Trust can be strengthened through:
 
@@ -3344,11 +3344,11 @@ Trust can be strengthened through:
 * Responsible communication.
 * Continuous oversight.
 
-AI systems that are trusted are more likely to be accepted and used effectively [1,4,5,15,74].
+AI systems that are trusted are more likely to be accepted and used effectively [1, 4, 5, 15, 74].
 
 ## The Role of BAPIL
 
-Within the broader BAPIL vision, responsible AI serves as a cross-cutting principle that informs all research, governance, education, and innovation activities [1,4,5,24].
+Within the broader BAPIL vision, responsible AI serves as a cross-cutting principle that informs all research, governance, education, and innovation activities [1, 4, 5, 24].
 
 BAPIL seeks to:
 
@@ -3358,13 +3358,13 @@ BAPIL seeks to:
 * Contribute to evidence-based policy dialogue.
 * Foster interdisciplinary collaboration.
 
-The goal is to support responsible innovation while ensuring that societal values remain central to technological development [1,5,15,24,75].
+The goal is to support responsible innovation while ensuring that societal values remain central to technological development [1, 5, 15, 24, 75].
 
 ## Conclusion
 
-Artificial Intelligence presents both opportunities and risks [2,10,17,21]. While AI technologies may contribute to improved governance, research, and public service innovation, their successful adoption depends on strong ethical foundations, effective governance mechanisms, and meaningful human oversight [1,4,5,6,7,15].
+Artificial Intelligence presents both opportunities and risks [2, 10, 17, 21]. While AI technologies may contribute to improved governance, research, and public service innovation, their successful adoption depends on strong ethical foundations, effective governance mechanisms, and meaningful human oversight [1, 4, 5, 6, 7, 15].
 
-By emphasizing transparency, accountability, fairness, privacy, security, and public trust, the BAPIL framework seeks to encourage responsible AI development that serves the public interest and supports sustainable national development [1,5,7,14,23,24].
+By emphasizing transparency, accountability, fairness, privacy, security, and public trust, the BAPIL framework seeks to encourage responsible AI development that serves the public interest and supports sustainable national development [1, 5, 7, 14, 23, 24].
 
 The final chapter summarizes the key findings of this white paper and outlines the broader vision of BAPIL as a research-driven initiative for AI governance, policy intelligence, and public sector innovation in Bangladesh.
 
@@ -3372,13 +3372,13 @@ The final chapter summarizes the key findings of this white paper and outlines t
 
 ## Introduction
 
-The Bangladesh AI Policy & Innovation Lab (BAPIL) is proposed as a long-term research and policy intelligence initiative that seeks to contribute to responsible Artificial Intelligence adoption, evidence-based governance, and public sector innovation [1,3,10,17,21]. Drawing upon international best practices, emerging technological developments, and Bangladesh’s national development aspirations, this chapter presents a set of strategic recommendations that may support future discussions on AI governance, digital transformation, and innovation ecosystem development [1,5,21,29,30].
+The Bangladesh AI Policy & Innovation Lab (BAPIL) is proposed as a long-term research and policy intelligence initiative that seeks to contribute to responsible Artificial Intelligence adoption, evidence-based governance, and public sector innovation [1, 3, 10, 17, 21]. Drawing upon international best practices, emerging technological developments, and Bangladesh’s national development aspirations, this chapter presents a set of strategic recommendations that may support future discussions on AI governance, digital transformation, and innovation ecosystem development [1, 5, 21, 29, 30].
 
 These recommendations are intended as discussion points and do not constitute official policy proposals.
 
 ## Recommendation 1: Establish a National AI Governance Framework
 
-As Artificial Intelligence becomes increasingly integrated into public institutions, businesses, and digital services, Bangladesh may benefit from the development of a comprehensive AI governance framework [1,4,5,6,7].
+As Artificial Intelligence becomes increasingly integrated into public institutions, businesses, and digital services, Bangladesh may benefit from the development of a comprehensive AI governance framework [1, 4, 5, 6, 7].
 
 Key considerations include:
 
@@ -3389,11 +3389,11 @@ Key considerations include:
 * Human oversight provisions.
 * Public trust and stakeholder engagement.
 
-International frameworks such as the OECD AI Principles, UNESCO Recommendation on the Ethics of AI, NIST AI Risk Management Framework, and the European Union AI Act may provide useful reference points for future discussions [1,4,5,6,7,15,51]. Such frameworks emphasize trustworthy, human-centered, transparent, and accountable AI systems that respect democratic values and human rights [1,5].
+International frameworks such as the OECD AI Principles, UNESCO Recommendation on the Ethics of AI, NIST AI Risk Management Framework, and the European Union AI Act may provide useful reference points for future discussions [1, 4, 5, 6, 7, 15, 51]. Such frameworks emphasize trustworthy, human-centered, transparent, and accountable AI systems that respect democratic values and human rights [1, 5].
 
 ## Recommendation 2: Strengthen Bangla-Language AI Research
 
-Bangla represents one of the largest language communities in the world and offers significant opportunities for AI innovation [37,39,44].
+Bangla represents one of the largest language communities in the world and offers significant opportunities for AI innovation [37, 39, 44].
 
 Potential priorities include:
 
@@ -3404,11 +3404,11 @@ Potential priorities include:
 * Open benchmarking initiatives.
 * Public-sector language technologies.
 
-Investment in Bangla AI research may contribute to greater digital inclusion and accessibility [24,46,47,48,49,81].
+Investment in Bangla AI research may contribute to greater digital inclusion and accessibility [24, 46, 47, 48, 49, 81].
 
 ## Recommendation 3: Expand Open Data and Knowledge-Sharing Initiatives
 
-Evidence-based governance depends on access to reliable, high-quality information [18,21].
+Evidence-based governance depends on access to reliable, high-quality information [18, 21].
 
 Potential initiatives include:
 
@@ -3418,11 +3418,11 @@ Potential initiatives include:
 * Public research repositories.
 * Government knowledge-sharing platforms.
 
-Greater access to public information may support research, innovation, transparency, and civic engagement [18,21,33,78,79,82].
+Greater access to public information may support research, innovation, transparency, and civic engagement [18, 21, 33, 78, 79, 82].
 
 ## Recommendation 4: Develop National Knowledge Repositories
 
-Governments generate large volumes of reports, policies, regulations, and institutional knowledge that are often difficult to access and analyze [10,11,17,32].
+Governments generate large volumes of reports, policies, regulations, and institutional knowledge that are often difficult to access and analyze [10, 11, 17, 32].
 
 Future efforts may explore:
 
@@ -3432,11 +3432,11 @@ Future efforts may explore:
 * Semantic search capabilities.
 * Institutional memory preservation mechanisms.
 
-Knowledge management systems can support continuity, learning, and evidence-based decision-making [10,11,17,21,32,58].
+Knowledge management systems can support continuity, learning, and evidence-based decision-making [10, 11, 17, 21, 32, 58].
 
 ## Recommendation 5: Invest in AI Research and Fellowship Programs
 
-Long-term AI competitiveness depends on sustained investment in research and human capital [16,35,36,73,77].
+Long-term AI competitiveness depends on sustained investment in research and human capital [16, 35, 36, 73, 77].
 
 Potential initiatives include:
 
@@ -3447,11 +3447,11 @@ Potential initiatives include:
 * AI research centers and laboratories.
 * Public-sector innovation fellowships.
 
-Research investments can help strengthen national expertise and innovation capacity [16,27,35,36,70,77,80].
+Research investments can help strengthen national expertise and innovation capacity [16, 27, 35, 36, 70, 77, 80].
 
 ## Recommendation 6: Promote Responsible AI Adoption
 
-The adoption of AI technologies should be accompanied by appropriate governance, oversight, and risk management mechanisms [1,5,6,7].
+The adoption of AI technologies should be accompanied by appropriate governance, oversight, and risk management mechanisms [1, 5, 6, 7].
 
 Key priorities include:
 
@@ -3462,11 +3462,11 @@ Key priorities include:
 * Cybersecurity safeguards.
 * Continuous monitoring and evaluation.
 
-Responsible adoption can help maximize benefits while reducing potential risks [1,5,6,7,14,15,50,74]. International AI governance frameworks consistently emphasize transparency, accountability, fairness, security, and human oversight as core requirements for trustworthy AI.
+Responsible adoption can help maximize benefits while reducing potential risks [1, 5, 6, 7, 14, 15, 50, 74]. International AI governance frameworks consistently emphasize transparency, accountability, fairness, security, and human oversight as core requirements for trustworthy AI.
 
 ## Recommendation 7: Strengthen Academia-Government-Industry Collaboration
 
-AI ecosystems are most effective when researchers, policymakers, businesses, and civil society organizations work together [3,19,27].
+AI ecosystems are most effective when researchers, policymakers, businesses, and civil society organizations work together [3, 19, 27].
 
 Potential approaches include:
 
@@ -3477,11 +3477,11 @@ Potential approaches include:
 * Industry-supported research projects.
 * Policy dialogue forums.
 
-Cross-sector collaboration can accelerate innovation and improve implementation capacity [19,27,35,36,70,80].
+Cross-sector collaboration can accelerate innovation and improve implementation capacity [19, 27, 35, 36, 70, 80].
 
 ## Recommendation 8: Develop AI Literacy and Capacity-Building Programs
 
-AI readiness requires not only technical specialists but also informed policymakers, public servants, educators, and citizens [26,73,76,80].
+AI readiness requires not only technical specialists but also informed policymakers, public servants, educators, and citizens [26, 73, 76, 80].
 
 Potential initiatives include:
 
@@ -3492,11 +3492,11 @@ Potential initiatives include:
 * Professional development courses.
 * University-industry training partnerships.
 
-Building AI literacy can support more informed and inclusive participation in technological transformation [35,36,64,73,76,80]. Recent assessments indicate that AI readiness depends heavily on workforce development, curriculum modernization, and cross-sector skills development. 
+Building AI literacy can support more informed and inclusive participation in technological transformation [35, 36, 64, 73, 76, 80]. Recent assessments indicate that AI readiness depends heavily on workforce development, curriculum modernization, and cross-sector skills development. 
 
 ## Recommendation 9: Strengthen Cybersecurity and Digital Resilience
 
-As digital technologies become increasingly important, cybersecurity and resilience should remain strategic priorities [14,34,71,72].
+As digital technologies become increasingly important, cybersecurity and resilience should remain strategic priorities [14, 34, 71, 72].
 
 Potential areas of focus include:
 
@@ -3507,11 +3507,11 @@ Potential areas of focus include:
 * Incident response capabilities.
 * Public awareness and cyber hygiene programs.
 
-Strong cybersecurity foundations are essential for sustainable digital transformation [14,34,71,72].
+Strong cybersecurity foundations are essential for sustainable digital transformation [14, 34, 71, 72].
 
 ## Recommendation 10: Position Bangladesh as a Regional AI Innovation Partner
 
-Bangladesh has opportunities to strengthen its participation within regional and international AI ecosystems [16,19,27,35,36].
+Bangladesh has opportunities to strengthen its participation within regional and international AI ecosystems [16, 19, 27, 35, 36].
 
 Potential opportunities include:
 
@@ -3522,25 +3522,25 @@ Potential opportunities include:
 * Joint innovation projects.
 * Technology and talent exchange programs.
 
-International engagement can accelerate learning, capacity building, and innovation [19,27,54,55,60,65,70]. International cooperation has become an important component of national AI strategies and global AI governance initiatives. 
+International engagement can accelerate learning, capacity building, and innovation [19, 27, 54, 55, 60, 65, 70]. International cooperation has become an important component of national AI strategies and global AI governance initiatives. 
 
 ## Conclusion
 
-The recommendations presented in this chapter reflect key themes that have emerged throughout this white paper, including responsible AI governance, evidence-based policymaking, digital transformation, research capacity development, and innovation ecosystem growth [1,17,21,24,29,30].
+The recommendations presented in this chapter reflect key themes that have emerged throughout this white paper, including responsible AI governance, evidence-based policymaking, digital transformation, research capacity development, and innovation ecosystem growth [1, 17, 21, 24, 29, 30].
 
-While implementation pathways will depend on future priorities, stakeholder engagement, and resource availability, these recommendations may serve as a starting point for discussions regarding the role of Artificial Intelligence in supporting Bangladesh’s long-term development objectives [29,30,80].
+While implementation pathways will depend on future priorities, stakeholder engagement, and resource availability, these recommendations may serve as a starting point for discussions regarding the role of Artificial Intelligence in supporting Bangladesh’s long-term development objectives [29, 30, 80].
 
-Ultimately, the successful development of an AI-enabled future will depend not only on technology, but also on strong institutions, human capital, ethical governance, collaboration, and public trust [1,5,23,24,73,80].
+Ultimately, the successful development of an AI-enabled future will depend not only on technology, but also on strong institutions, human capital, ethical governance, collaboration, and public trust [1, 5, 23, 24, 73, 80].
 
 # Chapter 18: Conclusion
 
 ## Conclusion
 
-Artificial Intelligence is increasingly shaping the future of governance, public administration, economic development, scientific research, and digital transformation around the world [1,3,10,17,21,22,23]. Governments and institutions are exploring how data, analytics, and AI-enabled technologies can support more informed decision-making, improve public services, and strengthen institutional effectiveness [10,17,20,21].
+Artificial Intelligence is increasingly shaping the future of governance, public administration, economic development, scientific research, and digital transformation around the world [1, 3, 10, 17, 21, 22, 23]. Governments and institutions are exploring how data, analytics, and AI-enabled technologies can support more informed decision-making, improve public services, and strengthen institutional effectiveness [10, 17, 20, 21].
 
-Bangladesh has already made significant progress through initiatives such as Digital Bangladesh and Smart Bangladesh [28,29,30,32,82,83]. As the country continues its development journey, emerging technologies present new opportunities to strengthen governance, expand innovation capacity, and support evidence-based policymaking [17,21,24,29,30]. At the same time, these opportunities are accompanied by important challenges related to ethics, governance, cybersecurity, talent development, and institutional readiness [2,5,7,14,71,72,73,80].
+Bangladesh has already made significant progress through initiatives such as Digital Bangladesh and Smart Bangladesh [28, 29, 30, 32, 82, 83]. As the country continues its development journey, emerging technologies present new opportunities to strengthen governance, expand innovation capacity, and support evidence-based policymaking [17, 21, 24, 29, 30]. At the same time, these opportunities are accompanied by important challenges related to ethics, governance, cybersecurity, talent development, and institutional readiness [2, 5, 7, 14, 71, 72, 73, 80].
 
-This white paper has proposed the Bangladesh AI Policy & Innovation Lab (BAPIL) as a research-oriented framework for exploring the intersection of Artificial Intelligence, policy intelligence, digital governance, and public sector innovation [1,10,17,21,25]. Rather than serving as a policymaking authority, BAPIL is envisioned as a multidisciplinary platform that promotes research, knowledge sharing, collaboration, and responsible AI development [3,24,25,27].
+This white paper has proposed the Bangladesh AI Policy & Innovation Lab (BAPIL) as a research-oriented framework for exploring the intersection of Artificial Intelligence, policy intelligence, digital governance, and public sector innovation [1, 10, 17, 21, 25]. Rather than serving as a policymaking authority, BAPIL is envisioned as a multidisciplinary platform that promotes research, knowledge sharing, collaboration, and responsible AI development [3, 24, 25, 27].
 
 The proposed framework is built upon several key pillars:
 
@@ -3552,25 +3552,25 @@ The proposed framework is built upon several key pillars:
 * Innovation and Startup Ecosystem Support
 * Bangla-Language AI and Knowledge Systems
 
-The white paper has examined international experiences from Singapore, South Korea, Estonia, the United Kingdom, Finland, the United Arab Emirates (UAE), and Canada highlighting lessons that may inform future discussions on AI governance and digital transformation in Bangladesh [51,52,54,57,58,60,61,62]. It has also outlined a conceptual architecture, governance framework, implementation roadmap, and long-term vision extending toward 2041 [29,30].
+The white paper has examined international experiences from Singapore, South Korea, Estonia, the United Kingdom, Finland, the United Arab Emirates (UAE), and Canada highlighting lessons that may inform future discussions on AI governance and digital transformation in Bangladesh [51, 52, 54, 57, 58, 60, 61, 62]. It has also outlined a conceptual architecture, governance framework, implementation roadmap, and long-term vision extending toward 2041 [29, 30].
 
-A central theme throughout this document is the importance of responsible AI. Technological advancement alone is insufficient. Sustainable progress requires strong institutions, ethical governance, transparency, accountability, public trust, and meaningful human oversight [1,4,5,6,7,15]. AI should serve as a tool that augments human capabilities rather than replaces human judgment [4,5,15].
+A central theme throughout this document is the importance of responsible AI. Technological advancement alone is insufficient. Sustainable progress requires strong institutions, ethical governance, transparency, accountability, public trust, and meaningful human oversight [1, 4, 5, 6, 7, 15]. AI should serve as a tool that augments human capabilities rather than replaces human judgment [4, 5, 15].
 
-The development of policy intelligence capabilities, Bangla-language AI technologies, and interdisciplinary research ecosystems represents a significant opportunity for Bangladesh [35,36,46,48,49,80]. By investing in knowledge, human capital, innovation, and collaboration, the country can strengthen its capacity to address complex challenges and participate more actively in the evolving global AI landscape [16,27,35,36,73,77].
+The development of policy intelligence capabilities, Bangla-language AI technologies, and interdisciplinary research ecosystems represents a significant opportunity for Bangladesh [35, 36, 46, 48, 49, 80]. By investing in knowledge, human capital, innovation, and collaboration, the country can strengthen its capacity to address complex challenges and participate more actively in the evolving global AI landscape [16, 27, 35, 36, 73, 77].
 
-BAPIL is ultimately envisioned as a long-term research and innovation initiative that encourages evidence-based thinking, responsible technology adoption, and constructive dialogue among academia, government, industry, civil society, and international partners [1,3,17,24,25,27]. Its purpose is to contribute to a future where Artificial Intelligence is developed and applied in ways that promote public benefit, sustainable development, and national progress [5,22,23,24].
+BAPIL is ultimately envisioned as a long-term research and innovation initiative that encourages evidence-based thinking, responsible technology adoption, and constructive dialogue among academia, government, industry, civil society, and international partners [1, 3, 17, 24, 25, 27]. Its purpose is to contribute to a future where Artificial Intelligence is developed and applied in ways that promote public benefit, sustainable development, and national progress [5, 22, 23, 24].
 
-The ideas presented in this white paper are intended to serve as a starting point for discussion, research, collaboration, and future exploration. As technologies continue to evolve, ongoing engagement among stakeholders will remain essential for ensuring that AI contributes positively to Bangladesh’s development aspirations and long-term vision for a knowledge-based, innovation-driven, and digitally empowered society [22,23,29,30].
+The ideas presented in this white paper are intended to serve as a starting point for discussion, research, collaboration, and future exploration. As technologies continue to evolve, ongoing engagement among stakeholders will remain essential for ensuring that AI contributes positively to Bangladesh’s development aspirations and long-term vision for a knowledge-based, innovation-driven, and digitally empowered society [22, 23, 29, 30].
 
 ## Final Remark
 
-The future of Artificial Intelligence in Bangladesh will not be determined solely by technology. It will be shaped by the collective choices of institutions, researchers, policymakers, entrepreneurs, educators, and citizens [1,5,22,24]. Through responsible innovation, evidence-based governance, and sustained collaboration, Bangladesh has the opportunity to build an AI ecosystem that supports prosperity, inclusion, resilience, and public trust for generations to come [4,5,23,24,29,30].
+The future of Artificial Intelligence in Bangladesh will not be determined solely by technology. It will be shaped by the collective choices of institutions, researchers, policymakers, entrepreneurs, educators, and citizens [1,5,22,24]. Through responsible innovation, evidence-based governance, and sustained collaboration, Bangladesh has the opportunity to build an AI ecosystem that supports prosperity, inclusion, resilience, and public trust for generations to come [4, 5, 23, 24, 29, 30].
 
 # Appendix A: Potential Pilot Projects
 
 ## Introduction
 
-The pilot projects presented in this appendix are illustrative examples of research and innovation initiatives that may be explored within the broader BAPIL framework [10,17,21,24]. These projects are intended to demonstrate potential applications of Artificial Intelligence, data analytics, policy intelligence, and knowledge-management technologies in support of governance research, public-sector innovation, and evidence-based decision-making [10,17,18,21].
+The pilot projects presented in this appendix are illustrative examples of research and innovation initiatives that may be explored within the broader BAPIL framework [10, 17, 21, 24]. These projects are intended to demonstrate potential applications of Artificial Intelligence, data analytics, policy intelligence, and knowledge-management technologies in support of governance research, public-sector innovation, and evidence-based decision-making [10, 17, 18, 21].
 
 The projects described below are conceptual in nature and do not represent approved government programs, implementation plans, or operational systems.
 
@@ -3578,29 +3578,29 @@ The projects described below are conceptual in nature and do not represent appro
 
 ### Objective
 
-Develop a semantic search and knowledge-discovery platform for government policies, laws, regulations, strategic plans, and public reports [18,33,38,57,59].
+Develop a semantic search and knowledge-discovery platform for government policies, laws, regulations, strategic plans, and public reports [18, 33, 38, 57, 59].
 
 ### Potential Capabilities
 
-* Natural-language policy search [38,42]
+* Natural-language policy search [38, 42]
 * Semantic document retrieval [38]
-* AI-assisted document summarization [39,42]
+* AI-assisted document summarization [39, 42]
 * Cross-document linking and citation tracking
 * Knowledge graph integration [18]
 * Policy comparison and trend analysis
 
 ### Potential Benefits
 
-* Improved access to policy information [33,83]
-* Enhanced institutional knowledge management [57,58]
+* Improved access to policy information [33, 83]
+* Enhanced institutional knowledge management [57, 58]
 * Faster policy research and evidence discovery
-* Increased transparency and accessibility [17,21]
+* Increased transparency and accessibility [17, 21]
 
 ## Pilot Project 2: Budget Intelligence Dashboard
 
 ### Objective
 
-Create an interactive analytical platform for exploring national budget allocations, expenditures, development priorities, and fiscal trends [17,18,31].
+Create an interactive analytical platform for exploring national budget allocations, expenditures, development priorities, and fiscal trends [17, 18, 31].
 
 ### Potential Capabilities
 
@@ -3608,13 +3608,13 @@ Create an interactive analytical platform for exploring national budget allocati
 * Sector-wise expenditure analysis
 * Historical trend monitoring
 * Development project tracking
-* Public transparency and accountability tools [17,20]
+* Public transparency and accountability tools [17, 20]
 * Interactive reporting and analytics
 
 ### Potential Benefits
 
 * Improved understanding of public expenditure
-* Enhanced budget transparency [17,21]
+* Enhanced budget transparency [17, 21]
 * Support for policy evaluation and research
 * Data-driven fiscal analysis [18]
 
@@ -3622,7 +3622,7 @@ Create an interactive analytical platform for exploring national budget allocati
 
 ### Objective
 
-Explore AI-assisted approaches for analyzing citizen feedback collected through surveys, consultations, public submissions, and digital platforms [21,24,25].
+Explore AI-assisted approaches for analyzing citizen feedback collected through surveys, consultations, public submissions, and digital platforms [21, 24, 25].
 
 ### Potential Capabilities
 
@@ -3637,27 +3637,27 @@ Explore AI-assisted approaches for analyzing citizen feedback collected through 
 
 * Improved understanding of public concerns
 * Evidence-informed policy discussions [18]
-* Enhanced citizen engagement [21,25]
+* Enhanced citizen engagement [21, 25]
 * Early identification of emerging societal issues
 
 ## Pilot Project 4: Bangla Policy Foundation Model (BPFM)
 
 ### Objective
 
-Explore the development of a Bangla-language foundation model specialized for governance, policy research, public administration, and knowledge management [37,39,41,46,48,49].
+Explore the development of a Bangla-language foundation model specialized for governance, policy research, public administration, and knowledge management [37, 39, 41, 46, 48, 49].
 
 ### Potential Capabilities
 
-* Policy question answering [39,42]
+* Policy question answering [39, 42]
 * Policy document summarization [42]
 * Semantic search and retrieval [38]
 * Retrieval-Augmented Generation (RAG) [38]
 * Legislative and regulatory analysis
-* Bangla-language knowledge assistance [46,48,49]
+* Bangla-language knowledge assistance [46, 48, 49]
 
 ### Potential Benefits
 
-* Strengthened Bangla-language AI ecosystem [46,48,49]
+* Strengthened Bangla-language AI ecosystem [46, 48, 49]
 * Improved accessibility of policy information
 * Enhanced research productivity
 * Support for knowledge-driven governance
@@ -3666,27 +3666,27 @@ Explore the development of a Bangla-language foundation model specialized for go
 
 ### Objective
 
-Develop a research platform for monitoring and assessing AI readiness across government, academia, industry, and society [26,77,80].
+Develop a research platform for monitoring and assessing AI readiness across government, academia, industry, and society [26, 77, 80].
 
 ### Potential Capabilities
 
-* AI readiness indicators [26,80]
-* Talent and workforce monitoring [73,77]
+* AI readiness indicators [26, 80]
+* Talent and workforce monitoring [73, 77]
 * Research ecosystem analysis
 * Infrastructure and innovation metrics
-* International benchmarking [26,77]
+* International benchmarking [26, 77]
 * Policy and governance tracking
 
 ### Potential Benefits
 
 * Evidence-based AI policy discussions
-* Improved national AI planning [26,80]
+* Improved national AI planning [26, 80]
 * Benchmarking against international trends
 * Identification of strategic opportunities and gaps
 
 ## Summary
 
-These pilot projects illustrate how the BAPIL framework may be translated into practical research initiatives that support AI governance, policy intelligence, digital transformation, and public-sector innovation [10,17,21]. Future implementation would require stakeholder engagement, technical evaluation, governance review, and resource planning [1,7,17].
+These pilot projects illustrate how the BAPIL framework may be translated into practical research initiatives that support AI governance, policy intelligence, digital transformation, and public-sector innovation [10, 17, 21]. Future implementation would require stakeholder engagement, technical evaluation, governance review, and resource planning [1, 7, 17].
 
 The projects are intended to serve as examples for discussion, experimentation, and future exploration within Bangladesh’s evolving AI ecosystem.
 
@@ -3694,7 +3694,7 @@ The projects are intended to serve as examples for discussion, experimentation, 
 
 ## Purpose
 
-To encourage knowledge exchange, research collaboration, and the adoption of international best practices in AI governance, digital government, policy intelligence, and responsible innovation, BAPIL may seek engagement with international organizations, research institutions, and policy communities [1,3,5,10,17,27].
+To encourage knowledge exchange, research collaboration, and the adoption of international best practices in AI governance, digital government, policy intelligence, and responsible innovation, BAPIL may seek engagement with international organizations, research institutions, and policy communities [1, 3, 5, 10, 17, 27].
 
 The organizations listed below are illustrative examples only and do not imply endorsement, partnership, affiliation, or participation.
 
@@ -3702,24 +3702,24 @@ The organizations listed below are illustrative examples only and do not imply e
 
 | Organization | Potential Contribution |
 |--------------|-----------------------|
-| OECD | AI governance principles, digital government policy, policy intelligence best practices [1,4,10,11,13] |
-| UNESCO | AI ethics, education, capacity building [5,67,76] |
-| NIST | AI risk management, standards, cybersecurity [7,14] |
-| World Bank | GovTech, digital transformation, development policy [17,18,19,20] |
-| UNDP | Digital governance, sustainable development, public-sector innovation [3,24,25] |
+| OECD | AI governance principles, digital government policy, policy intelligence best practices [1, 4, 10, 11, 13] |
+| UNESCO | AI ethics, education, capacity building [5, 67, 76] |
+| NIST | AI risk management, standards, cybersecurity [7, 14] |
+| World Bank | GovTech, digital transformation, development policy [17, 18, 19, 20] |
+| UNDP | Digital governance, sustainable development, public-sector innovation [3, 24, 25] |
 
 ## Potential Areas of Collaboration
 
 Future collaboration opportunities may include:
 
-* AI governance research [1,4,5]
-* Responsible AI frameworks [5,7]
-* Digital government and GovTech studies [17,20,21]
-* Public-sector innovation research [10,17]
-* Capacity-building and training programs [25,76]
+* AI governance research [1, 4, 5]
+* Responsible AI frameworks [5, 7]
+* Digital government and GovTech studies [17, 20, 21]
+* Public-sector innovation research [10, 17]
+* Capacity-building and training programs [25, 76]
 * Policy intelligence methodologies
-* Bangla-language AI research [46,48,49]
-* Knowledge-sharing initiatives [17,27]
+* Bangla-language AI research [46, 48, 49]
+* Knowledge-sharing initiatives [17, 27]
 * International workshops and conferences
 * Comparative policy studies
 
@@ -3727,14 +3727,14 @@ Future collaboration opportunities may include:
 
 BAPIL may draw inspiration from internationally recognized frameworks and initiatives, including:
 
-* OECD AI Principles [1,4]
+* OECD AI Principles [1, 4]
 * UNESCO Recommendation on the Ethics of Artificial Intelligence [5]
 * NIST AI Risk Management Framework (AI RMF) [7]
 * European Union AI Act [6]
-* Singapore Model AI Governance Framework [51,53]
-* United Nations Digital Governance Initiatives [21,22]
+* Singapore Model AI Governance Framework [51, 53]
+* United Nations Digital Governance Initiatives [21, 22]
 
-These frameworks provide valuable guidance for promoting trustworthy, transparent, accountable, and human-centered AI systems [1,4,5,7].
+These frameworks provide valuable guidance for promoting trustworthy, transparent, accountable, and human-centered AI systems [1, 4, 5, 7].
 Source:
 OECD AI Principles (2019, updated 2024)
 https://oecd.ai/en/ai-principles
