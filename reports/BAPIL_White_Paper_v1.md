@@ -272,7 +272,7 @@ By strengthening AI governance, supporting responsible innovation, and promoting
 
 The increasing complexity of governance in the twenty-first century requires policymakers to process large volumes of information, analyze rapidly changing social and economic conditions, and respond effectively to emerging national and global challenges. Around the world, governments are increasingly adopting Artificial Intelligence (AI), advanced analytics, and digital technologies to strengthen decision-making, improve public services, and support evidence-based policymaking [10–21, 26].
 
-Bangladesh has made notable progress in digital transformation through initiatives such as Digital Bangladesh and Smart Bangladesh. Significant advancements have been achieved in digital service delivery, e-governance, connectivity, and public access to information [28-33, 82, 83].
+Bangladesh has made notable progress in digital transformation through initiatives such as Digital Bangladesh and Smart Bangladesh. Significant advancements have been achieved in digital service delivery, e-governance, connectivity, and public access to information [28–33, 82, 83].
 
 ## The Need for Data-Driven Policymaking 
 
