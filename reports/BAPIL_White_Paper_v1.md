@@ -2503,7 +2503,7 @@ BAPIL is not intended to function as a startup incubator or investment fund. Rat
 
 ## International Perspectives
 
-Many countries have successfully leveraged startups as engines of technological advancement and economic growth [51-70].
+Many countries have successfully leveraged startups as engines of technological advancement and economic growth [51–70].
 
 Common success factors include:
 
@@ -2514,7 +2514,7 @@ Common success factors include:
 * International collaboration [27, 51, 53].
 * Entrepreneurial culture [52, 57].
 
-Examples from Singapore, South Korea, Estonia, the United Kingdom, Finland, the United Arab Emirates (UAE), and Canada demonstrate the importance of coordinated national strategies, digital infrastructure, and public-private partnerships in fostering innovation ecosystems [51-70].
+Examples from Singapore, South Korea, Estonia, the United Kingdom, Finland, the United Arab Emirates (UAE), and Canada demonstrate the importance of coordinated national strategies, digital infrastructure, and public-private partnerships in fostering innovation ecosystems [51–70].
 
 ## Long-Term Vision
 
@@ -2743,7 +2743,7 @@ To minimize risks and support sustainable growth, BAPIL may adopt a phased imple
 ### Phase 1 - Research and Planning
 
 * Literature review [1–16]
-* Comparative studies [51-70]
+* Comparative studies [51–70]
 * White paper development
 * Stakeholder engagement [22, 25]
 
@@ -2839,7 +2839,7 @@ The roadmap is guided by the following objectives [1, 4, 5, 9, 17, 29, 30]:
 
 * Complete the BAPIL White Paper.
 * Conduct literature reviews on AI governance and policy intelligence [1–10, 15].
-* Study international best practices from Singapore, South Korea, Estonia, the United Kingdom, Finland, the United Arab Emirates (UAE) and Canada [51-70].
+* Study international best practices from Singapore, South Korea, Estonia, the United Kingdom, Finland, the United Arab Emirates (UAE) and Canada [51–70].
 * Develop initial technical architecture concepts.
 * Establish academic and research partnerships [24, 27, 35, 36].
 * Organize workshops and stakeholder consultations [5, 22, 76].
