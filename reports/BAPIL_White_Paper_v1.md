@@ -174,7 +174,7 @@ Establishing governance mechanisms early can help ensure that AI technologies ar
 
 ### 3. Expand National AI Research Capacity
 
-Long-term competitiveness in AI requires sustained investment in research infrastructure, talent development, and interdisciplinary collaboration [16, 27, 35, 36, 54-56, 63, 70, 73, 77].
+Long-term competitiveness in AI requires sustained investment in research infrastructure, talent development, and interdisciplinary collaboration [16, 27, 35, 36, 54–56, 63, 70, 73, 77].
 
 Key priorities may include:
 
