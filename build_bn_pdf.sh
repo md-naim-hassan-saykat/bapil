@@ -59,10 +59,7 @@ from pathlib import Path
 p = Path(".build/BAPIL_White_Paper_v1_bn.tex")
 text = p.read_text(encoding="utf-8")
 
-# Remove selnolig because it breaks Bengali LuaLaTeX
 text = "\n".join(line for line in text.splitlines() if "selnolig" not in line)
-
-# Correct spelling only; do NOT replace \contentsname
 text = text.replace("সূচীপত্র", "সূচিপত্র")
 
 p.write_text(text + "\n", encoding="utf-8")
