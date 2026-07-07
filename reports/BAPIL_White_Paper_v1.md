@@ -1,27 +1,68 @@
-\newpage
+---
+title: ""
+author: ""
+date: ""
+lang: en
+---
 
-# BAPIL White Paper
+# Bangladesh AI Policy & Innovation Lab (BAPIL)
 
-## Bangladesh AI Policy & Innovation Lab (BAPIL)
+## WHITE PAPER
 
-### A Conceptual Framework for AI Governance, Policy Intelligence, and Public Sector Innovation in Bangladesh
+### An Evidence-Based AI Policy and Innovation Framework for Bangladesh
 
-## Author
+**Version 1.0**
 
-**Md Naim Hassan Saykat**  
-Master’s Student in Artificial Intelligence  
+**Md Naim Hassan Saykat**
+
+Master's Student in Artificial Intelligence  
 Université Paris-Saclay, France
 
+July 2026
+
+---
+
+*This white paper presents a research-based framework to encourage evidence-based policymaking, responsible artificial intelligence governance, innovation, and multi-stakeholder collaboration in Bangladesh. It is intended to support informed discussion among policymakers, researchers, academia, industry, civil society, and development partners.*
+
+\newpage
+
+# Copyright & License
+
+**Bangladesh AI Policy & Innovation Lab (BAPIL): White Paper**
+
 **Version:** 1.0  
-**Date:** July 2026  
-**Document Type:** White Paper  
-**Status:** Public Discussion Draft
+**Publication Date:** July 2026
 
-Prepared for research, policy discussion, academic collaboration, and public-interest dialogue.
+© 2026 Md Naim Hassan Saykat.
 
-This document represents an independent academic and policy research initiative.
+Except where otherwise noted, this work is licensed under the **Creative Commons Attribution 4.0 International (CC BY 4.0)** License.
 
-An Independent White Paper on AI Governance, Policy Intelligence, and Public Sector Innovation in Bangladesh
+You are free to share and adapt this work for any purpose, including commercial use, provided appropriate attribution is given, a link to the license is included, and any modifications are indicated.
+
+License: <https://creativecommons.org/licenses/by/4.0/>
+
+\newpage
+
+# Version Information
+
+| Item | Information |
+|---|---|
+| **Document Title** | Bangladesh AI Policy & Innovation Lab (BAPIL): White Paper |
+| **Version** | 1.0 |
+| **Publication Date** | July 2026 |
+| **Author** | Md Naim Hassan Saykat |
+| **Affiliation** | Université Paris-Saclay, France |
+| **Language** | English |
+| **Document Type** | White Paper |
+| **License** | Creative Commons Attribution 4.0 International (CC BY 4.0) |
+| **Repository** | <https://github.com/md-naim-hassan-saykat/bapil> |
+| **DOI** | To be added following Zenodo publication |
+
+## Citation
+
+Saykat, M. N. H. (2026). *Bangladesh AI Policy & Innovation Lab (BAPIL): White Paper* (Version 1.0). Bangladesh AI Policy & Innovation Lab (BAPIL).
+
+\newpage
 
 ## Disclaimer
 
