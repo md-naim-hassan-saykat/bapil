@@ -128,7 +128,7 @@ Comments, corrections, and constructive suggestions are welcome.
 
 \newpage
 
-\tableofcontents
+# Contents
 
 \newpage
 
