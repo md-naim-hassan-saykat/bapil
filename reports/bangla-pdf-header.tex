@@ -1,16 +1,17 @@
 \usepackage{fontspec}
 \usepackage{polyglossia}
+
 \setmainlanguage{bengali}
 \setotherlanguage{english}
 
 \setmainfont[
   Script=Bengali,
-  Ligatures=TeX
+  Renderer=HarfBuzz
 ]{Noto Serif Bengali}
 
 \setsansfont[
   Script=Bengali,
-  Ligatures=TeX
+  Renderer=HarfBuzz
 ]{Noto Sans Bengali}
 
 \setmonofont{Menlo}
@@ -20,7 +21,7 @@
 \usepackage{titlesec}
 \usepackage{tocloft}
 
-\setlength{\emergencystretch}{4em}
+\setlength{\emergencystretch}{3em}
 \Urlmuskip=0mu plus 1mu
 
 \renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
@@ -36,5 +37,3 @@
   {0pt}
   {1.4em}
   {0.6em}
-
-\sloppy
