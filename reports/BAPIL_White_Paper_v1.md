@@ -3962,6 +3962,8 @@ Any errors or omissions remain the sole responsibility of the author.
 
 \newpage
 
+# Afterword
+
 ## Why I Wrote This White Paper
 
 During my master's studies in Artificial Intelligence at Université Paris-Saclay, I became increasingly interested in the intersection of Artificial Intelligence, governance, public policy, and evidence-based decision-making. While much of the global discussion surrounding Artificial Intelligence focuses on commercial applications, I believe there are also important opportunities for AI to contribute to policy research, public-sector innovation, and digital governance.
