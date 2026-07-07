@@ -1,3 +1,5 @@
+\newpage
+
 # BAPIL White Paper
 
 ## Bangladesh AI Policy & Innovation Lab (BAPIL)
