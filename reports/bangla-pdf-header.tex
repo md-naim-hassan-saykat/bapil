@@ -1,26 +1,22 @@
 \usepackage{fontspec}
-\usepackage{polyglossia}
-\setmainlanguage{bengali}
-\setotherlanguage{english}
-
-\setmainfont[
-  Script=Bengali,
-  Renderer=HarfBuzz,
-  Ligatures=TeX
-]{Noto Serif Bengali}
-
-\setsansfont[
-  Script=Bengali,
-  Renderer=HarfBuzz,
-  Ligatures=TeX
-]{Noto Sans Bengali}
-
-\setmonofont{Menlo}
-
+\usepackage{xunicode}
+\usepackage{xltxtra}
 \usepackage{xurl}
 \usepackage{ragged2e}
 \usepackage{titlesec}
 \usepackage{tocloft}
+
+\setmainfont[
+  Script=Bengali,
+  Ligatures=TeX
+]{SolaimanLipi}
+
+\setsansfont[
+  Script=Bengali,
+  Ligatures=TeX
+]{SolaimanLipi}
+
+\setmonofont{Menlo}
 
 \setlength{\emergencystretch}{3em}
 \Urlmuskip=0mu plus 1mu
