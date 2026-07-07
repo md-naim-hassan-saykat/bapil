@@ -128,8 +128,6 @@ Comments, corrections, and constructive suggestions are welcome.
 
 \newpage
 
-# Contents
-
 \tableofcontents
 
 \newpage
