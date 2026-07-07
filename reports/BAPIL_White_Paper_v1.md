@@ -128,6 +128,12 @@ Comments, corrections, and constructive suggestions are welcome.
 
 \newpage
 
+# Contents
+
+\tableofcontents
+
+\newpage
+
 # Chapter 1: Executive Summary
 
 ## Executive Summary
