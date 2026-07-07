@@ -4105,7 +4105,7 @@ Available:
 
 [26] OXFORD INSIGHTS. 
 Government AI Readiness Index 2025[EB/OL].
-Oxford: Oxford Insights, 2025[2026-07-07].
+Oxford: Oxford Insights, 2025[2026-06-18].
 Available: 
 <https://oxfordinsights.com/ai-readiness/government-ai-readiness-index-2025>
 
