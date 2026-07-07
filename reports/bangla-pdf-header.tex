@@ -1,6 +1,4 @@
 \usepackage{fontspec}
-\usepackage{xunicode}
-\usepackage{xltxtra}
 \usepackage{xurl}
 \usepackage{ragged2e}
 \usepackage{titlesec}
@@ -8,13 +6,15 @@
 
 \setmainfont[
   Script=Bengali,
+  Renderer=HarfBuzz,
   Ligatures=TeX
-]{SolaimanLipi}
+]{Noto Serif Bengali}
 
 \setsansfont[
   Script=Bengali,
+  Renderer=HarfBuzz,
   Ligatures=TeX
-]{SolaimanLipi}
+]{Noto Sans Bengali}
 
 \setmonofont{Menlo}
 
