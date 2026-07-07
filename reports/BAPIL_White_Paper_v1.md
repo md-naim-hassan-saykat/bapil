@@ -4068,11 +4068,11 @@ New York: United Nations Development Programme, 2024[2026-06-18].
 Available: 
 <https://www.undp.org/governance/publications> 
 
-[26] OXFORD INSIGHTS.
-Government AI Readiness Index 2024[EB/OL].
-Oxford: Oxford Insights, 2024[2026-06-18].
+[26] OXFORD INSIGHTS. 
+Government AI Readiness Index 2025[EB/OL].
+Oxford: Oxford Insights, 2025[2026-06-18].
 Available: 
-<https://oxfordinsights.com/ai-readiness/ai-readiness-index> 
+<https://oxfordinsights.com/ai-readiness/government-ai-readiness-index-2025>
 
 [27] GLOBAL PARTNERSHIP ON ARTIFICIAL INTELLIGENCE (GPAI).
 About the Global Partnership on Artificial Intelligence (GPAI)[EB/OL].
