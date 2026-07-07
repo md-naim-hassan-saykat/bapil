@@ -5,7 +5,9 @@ date: ""
 lang: bn
 ---
 
-# বাংলাদেশ AI Policy & Innovation Lab (BAPIL)
+# Bangladesh AI Policy & Innovation Lab (BAPIL)
+
+### বাংলাদেশ এআই নীতি ও উদ্ভাবন ল্যাব
 
 ## হোয়াইট পেপার
 
