@@ -212,27 +212,25 @@ bapil/
 │
 ├── reports/
 │   ├── README.md
+│   ├── BAPIL_White_Paper_v1.md
+│   ├── BAPIL_White_Paper_v1_bn.md
+│   ├── references.bib
 │   │
-│   ├── white_paper/
-│   │   ├── BAPIL_White_Paper_v1.md
-│   │   ├── BAPIL_White_Paper_v1_bn.md
-│   │   ├── references.bib
-│   │   ├── figures/
-│   │   │   ├── figure01.png
-│   │   │   ├── figure02.pdf
-│   │   │   └── ...
-│   │   ├── build_bn_pdf.sh
-│   │   ├── bangla-pdf-header.tex
-│   │   ├── bangla-page-numbers.tex
-│   │   ├── fix-bangla-heading-spacing.tex
-│   │   ├── fix-bangla-headings.tex
-│   │   ├── fix-heading-spacing.tex
-│   │   ├── fix-heading4.tex
-│   │   └── fix-runin-headings.lua
+│   ├── figures/
+│   │   ├── figure01.png
+│   │   ├── figure01.pdf
+│   │   ├── figure02.png
+│   │   ├── figure02.pdf
+│   │   └── ...
 │   │
-│   ├── blueprint/
-│   ├── policy_briefs/
-│   └── presentations/
+│   ├── build_bn_pdf.sh
+│   ├── bangla-pdf-header.tex
+│   ├── bangla-page-numbers.tex
+│   ├── fix-bangla-heading-spacing.tex
+│   ├── fix-bangla-headings.tex
+│   ├── fix-heading-spacing.tex
+│   ├── fix-heading4.tex
+│   └── fix-runin-headings.lua
 │
 ├── releases/
 │   ├── README.md
@@ -249,13 +247,6 @@ bapil/
 │   ├── South_Korea_AI_Hub_Study.md
 │   ├── UK_AI_Governance_Study.md
 │   └── United_Arab_Emirates_AI_Governance_Study.md
-│
-├── scripts/
-├── docs/
-├── assets/
-│   ├── logo/
-│   ├── banner/
-│   └── images/
 │
 └── .github/
     ├── ISSUE_TEMPLATE/
