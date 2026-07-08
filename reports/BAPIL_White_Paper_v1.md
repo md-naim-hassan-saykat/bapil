@@ -2416,10 +2416,10 @@ Potential areas include:
 
 Potential areas include:
 
-- AI-assisted disease surveillance and outbreak prediction [10, 17, 21].
-- Clinical decision-support systems for healthcare professionals [17, 21].
-- Medical imaging and diagnostic assistance [18, 21].
-- Healthcare resource planning and hospital management [1, 4, 9].
+- AI-assisted disease surveillance and public health monitoring [18, 21, 24].
+- Clinical decision-support systems with appropriate human oversight and risk management [7, 10, 76].
+- Medical imaging and diagnostic assistance under responsible AI governance frameworks [7, 10, 21].
+- Healthcare resource planning, hospital management, and data-driven public health service delivery [18, 21, 24].
 
 ### Agriculture
 
