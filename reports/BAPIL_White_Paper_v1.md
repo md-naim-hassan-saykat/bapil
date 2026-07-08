@@ -3621,6 +3621,7 @@ BAPIL is ultimately envisioned as a long-term research and innovation initiative
 
 The ideas presented in this white paper are intended to serve as a starting point for discussion, research, collaboration, and future exploration. As technologies continue to evolve, ongoing engagement among stakeholders will remain essential for ensuring that AI contributes positively to Bangladesh’s development aspirations and long-term vision for a knowledge-based, innovation-driven, and digitally empowered society [22, 23, 29, 30].
 
+\enlargethispage{\baselineskip}
 ## Final Remark
 
 The future of Artificial Intelligence in Bangladesh will not be determined solely by technology. It will be shaped by the collective choices of institutions, researchers, policymakers, entrepreneurs, educators, and citizens [1,5,22,24]. Through responsible innovation, evidence-based governance, and sustained collaboration, Bangladesh has the opportunity to build an AI ecosystem that supports prosperity, inclusion, resilience, and public trust for generations to come [4, 5, 23, 24, 29, 30].
