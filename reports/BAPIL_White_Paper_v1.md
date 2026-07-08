@@ -2414,10 +2414,12 @@ Potential areas include:
 
 ### Healthcare
 
-* Government service optimization [10, 17, 21].
-* Citizen engagement tools [17, 21].
-* Data analytics platforms [18, 21].
-* Policy intelligence solutions [1, 4, 9].
+Potential areas include:
+
+- AI-assisted disease surveillance and outbreak prediction [10, 17, 21].
+- Clinical decision-support systems for healthcare professionals [17, 21].
+- Medical imaging and diagnostic assistance [18, 21].
+- Healthcare resource planning and hospital management [1, 4, 9].
 
 ### Agriculture
 
