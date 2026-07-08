@@ -12,6 +12,9 @@ mkdir -p "$BUILDDIR" "$OUTDIR"
 rm -rf "$BUILDDIR"
 mkdir -p "$BUILDDIR" "$OUTDIR"
 
+# Copy figures into the build directory so LaTeX can find figures/figureXX.png
+cp -R "$ROOT/reports/figures" "$BUILDDIR/figures"
+
 pandoc reports/BAPIL_White_Paper_v1_bn.md \
   --from=markdown+raw_tex+implicit_figures \
   --standalone \
