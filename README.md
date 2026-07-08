@@ -261,6 +261,14 @@ If you use **BAPIL** in academic research, policy analysis, publications, presen
 
 ---
 
+## Licensing
+
+Unless otherwise noted, the source code, scripts, build files, and repository infrastructure are licensed under the **MIT License**. See the repository `LICENSE` file for details.
+
+The **BAPIL White Paper** and other research publications may be distributed under separate **Creative Commons licenses**, as indicated within those documents.
+
+---
+
 ## Project Status
 
 - **Status:** Active research and policy initiative
