@@ -214,7 +214,20 @@ bapil/
 │   ├── BAPIL_White_Paper_v1.md
 │   ├── BAPIL_White_Paper_v1_bn.md
 │   ├── references.bib
-│   └── figures/
+│   │
+│   ├── figures/
+│   │   ├── figure01.png
+│   │   ├── figure02.pdf
+│   │   └── ...
+│   │
+│   ├── build_bn_pdf.sh
+│   ├── bangla-pdf-header.tex
+│   ├── bangla-page-numbers.tex
+│   ├── fix-bangla-heading-spacing.tex
+│   ├── fix-bangla-headings.tex
+│   ├── fix-heading-spacing.tex
+│   ├── fix-heading4.tex
+│   └── fix-runin-headings.lua
 │
 ├── releases/
 │   ├── README.md
@@ -223,9 +236,28 @@ bapil/
 │       └── BAPIL_White_Paper_v1_bn.pdf
 │
 ├── research/
-├── docs/
+│   ├── AI_Governance_Literature_Review.md
+│   ├── Canada_AI_Governance_Study.md
+│   ├── Estonia_Digital_Government_Study.md
+│   ├── Finland_AI_Governance_Study.md
+│   ├── Singapore_GovTech_Study.md
+│   ├── South_Korea_AI_Hub_Study.md
+│   ├── UK_AI_Governance_Study.md
+│   └── United_Arab_Emirates_AI_Governance_Study.md
+│
 ├── scripts/
-└── assets/
+│
+├── docs/
+│
+├── assets/
+│   ├── logo/
+│   ├── banner/
+│   └── images/
+│
+└── .github/
+    ├── ISSUE_TEMPLATE/
+    ├── pull_request_template.md
+    └── workflows/
 ```
 
 ---
