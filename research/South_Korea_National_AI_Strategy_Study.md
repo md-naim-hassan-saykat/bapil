@@ -1,4 +1,4 @@
-# South Korea AI Hub Study
+# South Korea National AI Strategy Study
 
 ## Overview
 
