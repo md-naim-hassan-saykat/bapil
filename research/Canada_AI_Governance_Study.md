@@ -1,9 +1,9 @@
 # Canada's Responsible AI Governance Framework
 
-## Introduction
+## Overview
 
-* Canada’s role in global AI research.
-* Importance of responsible AI.
+* Canada's leadership in AI research and innovation.
+* Evolution of responsible AI governance in Canada.
 
 ## Pan-Canadian AI Strategy
 
@@ -40,9 +40,9 @@
 
 ## AI Ethics and Trust
 
-* Fairness.
-* Explainability.
-* Public trust.
+* Fairness
+* Transparency and explainability
+* Public trust
 
 ## Strengths and Challenges
 
@@ -60,21 +60,21 @@
 
 ## Lessons for Bangladesh
 
-* Government AI risk assessment.
-* Public-sector AI governance framework.
-* Transparency standards.
-* AI accountability mechanisms.
+* AI risk assessment for government systems
+* Public-sector AI governance framework
+* Transparency and accountability standards
+* Responsible AI implementation guidelines
 
 ## Potential BAPIL Applications
 
-* AI Governance Dashboard.
-* AI Risk Assessment Framework.
-* Public-sector AI Evaluation Toolkit.
-* Responsible AI Guidelines.
+* AI Governance Dashboard
+* AI Risk Assessment Framework
+* Responsible AI Guidelines
+* Public-Sector AI Evaluation Toolkit
 
 ## Relevance to BAPIL
 
-Canada demonstrates how responsible AI governance, risk assessment frameworks, and public-sector oversight mechanisms can support trustworthy and accountable AI adoption. The country’s experience with the Directive on Automated Decision-Making, Algorithmic Impact Assessment (AIA), and public-sector AI governance provides valuable insights for the development of AI governance frameworks, risk management methodologies, and policy intelligence systems within BAPIL.
+Canada demonstrates how responsible AI governance, risk assessment frameworks, and public-sector oversight mechanisms can support trustworthy and accountable AI adoption. The country’s experience with the Directive on Automated Decision-Making, Algorithmic Impact Assessment (AIA), and public-sector AI governance provides valuable lessons for the development of AI governance frameworks, risk management methodologies, and policy intelligence systems within BAPIL.
 
 ## Key Takeaways
 
@@ -85,9 +85,9 @@ Canada demonstrates how responsible AI governance, risk assessment frameworks, a
 5. Strong collaboration among government agencies, research institutions, and the private sector has contributed to Canada’s leadership in AI research and policy development.
 6. Risk-based AI governance frameworks can help public institutions identify, monitor, and mitigate potential harms while supporting innovation and service improvement.
 7. For Bangladesh, Canada offers a useful model for developing public-sector AI governance standards, AI risk assessment procedures, transparency requirements, and accountability mechanisms.
-8. Several Canadian practices could inform future BAPIL initiatives, including AI governance dashboards, policy risk assessment frameworks, responsible AI guidelines, and public-sector AI evaluation toolkits.
+8. Several Canadian practices could inform future BAPIL initiatives, particularly the development of AI governance dashboards, policy risk assessment frameworks, responsible AI guidelines, and public-sector AI evaluation toolkits.
 
-## References
+## Selected References
 
 1. [1] OECD Recommendation on AI.
 2. [4] OECD AI Principles.
