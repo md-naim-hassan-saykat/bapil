@@ -1,4 +1,4 @@
-# United Arab Emirates (UAE) AI Governance Study
+# UAE AI Government Innovation Study
 
 ## Overview
 
