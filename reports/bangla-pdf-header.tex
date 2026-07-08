@@ -5,7 +5,9 @@
 \usepackage{tocloft}
 \usepackage{setspace}
 
-\linespread{1.03}
+% Slightly more relaxed spacing, closer to previous 117-page version
+\linespread{1.06}
+
 \renewcommand{\contentsname}{সূচিপত্র}
 
 \setlength{\cftbeforesecskip}{0.55em}
@@ -13,6 +15,7 @@
 
 \renewcommand{\cftsecfont}{\bfseries}
 \renewcommand{\cftsecpagefont}{\bfseries}
+
 \renewcommand{\cftsubsecfont}{\normalfont}
 \renewcommand{\cftsubsecpagefont}{\normalfont}
 
@@ -41,6 +44,7 @@
   {1.4em}
   {0.7em}
 
+% Important: paragraph headings appear on their own line
 \titleformat{\paragraph}[block]
   {\normalfont\normalsize\bfseries}
   {}

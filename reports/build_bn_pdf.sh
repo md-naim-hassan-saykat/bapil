@@ -48,6 +48,7 @@ pandoc reports/BAPIL_White_Paper_v1_bn.md \
   --lua-filter=reports/fix-runin-headings.lua \
   --resource-path=reports:reports/figures:. \
   --include-in-header=reports/bangla-pdf-header.tex \
+  --pdf-engine=xelatex \
   -V fontsize=10pt \
   -V geometry:margin=0.7in \
   -V colorlinks=true \
@@ -57,25 +58,9 @@ pandoc reports/BAPIL_White_Paper_v1_bn.md \
   -V mainfont="Noto Serif Bengali" \
   -V sansfont="Noto Sans Bengali" \
   -V monofont="Menlo" \
-  -V mainfontoptions="Renderer=HarfBuzz,Script=Bengali" \
-  -V sansfontoptions="Renderer=HarfBuzz,Script=Bengali" \
-  -o "$BUILDDIR/BAPIL_White_Paper_v1_bn.tex"
-
-python3 - <<'PY'
-from pathlib import Path
-
-p = Path(".build/bn/BAPIL_White_Paper_v1_bn.tex")
-text = p.read_text(encoding="utf-8")
-text = "\n".join(line for line in text.splitlines() if "selnolig" not in line)
-p.write_text(text + "\n", encoding="utf-8")
-PY
-
-cd "$BUILDDIR"
-
-lualatex -interaction=nonstopmode -halt-on-error BAPIL_White_Paper_v1_bn.tex
-lualatex -interaction=nonstopmode -halt-on-error BAPIL_White_Paper_v1_bn.tex
-
-cp "$BUILDDIR/BAPIL_White_Paper_v1_bn.pdf" "$OUTDIR/BAPIL_White_Paper_v1_bn.pdf"
+  -V mainfontoptions="Script=Bengali" \
+  -V sansfontoptions="Script=Bengali" \
+  -o "$OUTDIR/BAPIL_White_Paper_v1_bn.pdf"
 
 open "$OUTDIR/BAPIL_White_Paper_v1_bn.pdf"
 mdls -name kMDItemNumberOfPages "$OUTDIR/BAPIL_White_Paper_v1_bn.pdf" || true
