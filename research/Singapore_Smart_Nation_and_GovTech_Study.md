@@ -1,4 +1,4 @@
-# Singapore Digital Government Study
+# Singapore Smart Nation and GovTech Study
 
 ## Overview
 
