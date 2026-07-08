@@ -5,9 +5,8 @@ ROOT="$(pwd)"
 BUILDDIR="$ROOT/.build"
 OUTDIR="$ROOT/releases/v1.0"
 
+rm -rf "$BUILDDIR"
 mkdir -p "$BUILDDIR" "$OUTDIR"
-
-cp reports/BAPIL_White_Paper_v1_bn.md reports/BAPIL_White_Paper_v1_bn.md.bak
 
 python3 - <<'PY'
 from pathlib import Path
@@ -15,6 +14,8 @@ import re
 
 path = Path("reports/BAPIL_White_Paper_v1_bn.md")
 text = path.read_text(encoding="utf-8")
+
+text = text.replace("সূচীপত্র", "সূচিপত্র")
 
 text = re.sub(
     r"\[([0-9০-৯]+[–-][0-9۰-۹]+),\s*([0-9۰-۹]+[–-][0-9۰-۹]+)\]",
@@ -94,7 +95,7 @@ local before_chapter1 = true
 function Header(el)
   local title = pandoc.utils.stringify(el)
 
-  if title == "সূচিপত্র" or title == "Contents" then
+  if title == "সূচিপত্র" or title == "সূচীপত্র" or title == "Contents" then
     return {}
   end
 
@@ -115,9 +116,6 @@ function Header(el)
   return el
 end
 LUA
-
-rm -rf "$BUILDDIR/figures"
-cp -R "$ROOT/reports/figures" "$BUILDDIR/figures"
 
 pandoc "$ROOT/reports/BAPIL_White_Paper_v1_bn.md" \
   --from=markdown+raw_tex+implicit_figures \
@@ -148,6 +146,9 @@ PY
 
 cd "$BUILDDIR"
 
+rm -f *.aux *.toc *.out *.log
+
+lualatex -interaction=nonstopmode -halt-on-error BAPIL_White_Paper_v1_bn.tex
 lualatex -interaction=nonstopmode -halt-on-error BAPIL_White_Paper_v1_bn.tex
 lualatex -interaction=nonstopmode -halt-on-error BAPIL_White_Paper_v1_bn.tex
 
