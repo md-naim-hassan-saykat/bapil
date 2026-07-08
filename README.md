@@ -210,27 +210,25 @@ bapil/
 ├── CHANGELOG.md
 ├── .gitignore
 │
-├── reports/
-│   ├── README.md
-│   ├── BAPIL_White_Paper_v1.md
-│   ├── BAPIL_White_Paper_v1_bn.md
-│   ├── references.bib
-│   │
-│   ├── figures/
-│   │   ├── figure01.png
-│   │   ├── figure01.pdf
-│   │   ├── figure02.png
-│   │   ├── figure02.pdf
-│   │   └── ...
-│   │
-│   ├── build_bn_pdf.sh
-│   ├── bangla-pdf-header.tex
-│   ├── bangla-page-numbers.tex
-│   ├── fix-bangla-heading-spacing.tex
-│   ├── fix-bangla-headings.tex
-│   ├── fix-heading-spacing.tex
-│   ├── fix-heading4.tex
-│   └── fix-runin-headings.lua
+reports/
+├── README.md
+├── BAPIL_White_Paper_v1.md
+├── BAPIL_White_Paper_v1_bn.md
+├── references.bib
+├── figures/
+│   ├── figure01.png
+│   ├── figure01.pdf
+│   ├── figure02.png
+│   ├── figure02.pdf
+│   └── ...
+├── build_bn_pdf.sh
+├── bangla-pdf-header.tex
+├── bangla-page-numbers.tex
+├── fix-bangla-heading-spacing.tex
+├── fix-bangla-headings.tex
+├── fix-heading-spacing.tex
+├── fix-heading4.tex
+└── fix-runin-headings.lua
 │
 ├── releases/
 │   ├── README.md
