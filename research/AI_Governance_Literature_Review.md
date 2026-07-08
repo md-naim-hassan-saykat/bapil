@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This document reviews major developments in AI governance, responsible AI, policy intelligence, digital government, and public sector innovation. The objective is to identify frameworks, principles, and best practices that may inform the development of the Bangladesh AI Policy & Innovation Lab (BAPIL).
+This document provides a structured review of major developments in AI governance, responsible AI, policy intelligence, digital government, and public sector innovation. Its objective is to identify concepts, frameworks, principles, and international best practices that may inform the development of the Bangladesh AI Policy & Innovation Lab (BAPIL).
 
 ## Key Research Questions
 
@@ -12,7 +12,7 @@ This document reviews major developments in AI governance, responsible AI, polic
 * How can AI support public policy and decision-making?
 * What institutional models exist for AI governance?
 
-## Core Topics
+## Research Themes
 
 ### Responsible AI
 
@@ -27,7 +27,7 @@ This document reviews major developments in AI governance, responsible AI, polic
 * Risk-based regulation
 * Compliance mechanisms
 * Regulatory sandboxes
-* International standards
+* International standards and governance frameworks
 
 ### Public Sector AI
 
@@ -35,6 +35,7 @@ This document reviews major developments in AI governance, responsible AI, polic
 * Policy intelligence systems
 * Decision-support tools
 * Public service modernization
+* Digital public infrastructure
 
 ### Data Governance
 
@@ -42,6 +43,7 @@ This document reviews major developments in AI governance, responsible AI, polic
 * Privacy protection
 * Data sharing
 * Open government data
+* Data stewardship
 
 ### AI Ethics
 
@@ -49,6 +51,7 @@ This document reviews major developments in AI governance, responsible AI, polic
 * Human rights considerations
 * Bias mitigation
 * Societal impact assessment
+* Transparency and contestability
 
 ### Major International Frameworks
 
@@ -60,7 +63,7 @@ This document reviews major developments in AI governance, responsible AI, polic
 
 ## Relevance to BAPIL
 
-AI governance is a foundational component of BAPIL. Understanding international frameworks, regulatory approaches, and responsible AI principles will help inform the design of policy intelligence systems, governance frameworks, and ethical guidelines relevant to the Bangladeshi context. Insights from this literature review will support the development of BAPIL’s research agenda, institutional structure, and policy recommendations.
+AI governance is a foundational component of BAPIL. Understanding international frameworks, regulatory approaches, and responsible AI principles will inform the design of policy intelligence systems, governance frameworks, and ethical guidelines relevant to the Bangladeshi context. Insights from this literature review will support the development of BAPIL’s research agenda, institutional structure, and policy recommendations.
 
 ## Key Takeaways
 
@@ -72,11 +75,11 @@ AI governance is a foundational component of BAPIL. Understanding international 
 6. International frameworks developed by OECD, UNESCO, NIST, the European Union, and other organizations provide valuable guidance for the design of national AI governance strategies.
 7. Effective AI governance requires collaboration among government, academia, industry, civil society, and international partners.
 8. The literature suggests that successful AI adoption depends not only on technological capability but also on institutional capacity, regulatory readiness, ethical safeguards, and public trust.
-9. These findings provide a conceptual foundation for BAPIL’s research agenda, governance framework, policy intelligence capabilities, and responsible AI principles.
+9. Collectively, these findings provide a conceptual foundation for BAPIL’s research agenda, governance framework, policy intelligence capabilities, and responsible AI principles.
 
 ## References
 
-### Primary International AI Governance Frameworks
+### Selected References
 
 1. [1] OECD Recommendation on Artificial Intelligence
 2. [4] OECD AI Principles
