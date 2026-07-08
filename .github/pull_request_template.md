@@ -17,7 +17,7 @@ Describe the changes made.
 
 ## Related Issue
 
-Closes #
+If applicable, reference the related GitHub issue (e.g., #12).
 
 ## Checklist
 
