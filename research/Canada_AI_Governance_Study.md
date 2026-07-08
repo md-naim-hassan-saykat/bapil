@@ -1,4 +1,4 @@
-# Canada's Responsible AI Governance Framework
+# Canada AI Governance Study
 
 ## Overview
 
