@@ -1,4 +1,4 @@
-# AI Governance Literature Review 
+# AI Governance Literature Review
 
 ## Purpose
 
