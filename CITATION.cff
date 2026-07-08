@@ -11,6 +11,7 @@ authors:
     given-names: "Md Naim Hassan"
     affiliation: "Université Paris-Saclay"
     country: "France"
+    orcid: "https://orcid.org/0000-0000-0000-0000"
 
 abstract: >
   Bangladesh AI Policy & Innovation Lab (BAPIL) is an independent
@@ -39,10 +40,10 @@ url: "https://github.com/md-naim-hassan-saykat/bapil"
 
 version: "1.0.0"
 
-doi: 10.5281/zenodo.12345678
+doi: "10.5281/zenodo.xxxxxxxx"
 
 identifiers:
   - type: doi
-    value: 10.5281/zenodo.12345678
+    value: "10.5281/zenodo.xxxxxxxx"
 
-date-released: "2026-07-//"
+date-released: "2026-07-07"
