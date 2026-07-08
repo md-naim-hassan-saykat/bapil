@@ -286,4 +286,4 @@ AI Governance, Policy Intelligence, Machine Learning, Data Analytics, and Public
 
 GitHub: https://github.com/md-naim-hassan-saykat
 
-Portfolio: https://md-naim-hassan-saykat.github.io/
+Portfolio: https://md-naim-hassan-saykat.github.io
