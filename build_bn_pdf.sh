@@ -20,7 +20,7 @@ function Header(el)
 
   if title == "সূচিপত্র" or title == "সূচীপত্র" or title == "Contents" then
     before_toc = false
-    return pandoc.RawBlock("latex", "\\clearpage\n\\section*{সূচিপত্র}\n\\tableofcontents\n\\clearpage")
+    return pandoc.RawBlock("latex", "\\clearpage\n\\tableofcontents\n\\clearpage")
   end
 
   if before_toc then
