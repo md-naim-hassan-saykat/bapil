@@ -1,8 +1,17 @@
-# Singapore GovTech Study
+# Singapore Digital Government Study
 
 ## Overview
 
 Singapore is widely recognized as one of the world’s leading digital governments. Through GovTech and the Smart Nation initiative, Singapore has integrated digital technologies and AI into public services, policymaking, and government operations.
+
+## National Digital Strategy
+
+### Objectives
+
+* Accelerate digital transformation across government
+* Improve citizen-centric public services
+* Foster AI-driven innovation
+* Strengthen digital economy competitiveness
 
 ## Key Initiatives
 
@@ -23,22 +32,45 @@ Singapore is widely recognized as one of the world’s leading digital governmen
 * AI governance testing framework
 * Responsible AI implementation
 
-### Governance Model
+## Governance Model
 
 * Centralized coordination
 * Cross-agency collaboration
 * Strong regulatory environment
+* Whole-of-government digital governance
+* Public-private collaboration
 
-### Lessons for Bangladesh
+## Strengths and Challenges
+
+### Strengths
+
+* Strong national digital strategy
+* Mature digital government ecosystem
+* Global leadership in AI governance
+
+### Challenges
+
+* Rapid technological change
+* Cybersecurity risks
+* Balancing innovation with regulation
+
+## Lessons for Bangladesh
 
 * Importance of digital infrastructure
 * Whole-of-government coordination
 * Investment in digital talent
 * Responsible AI deployment
 
+## Potential BAPIL Applications
+
+* Digital Government Framework
+* AI Governance Framework
+* Policy Intelligence Platform
+* Government Innovation Strategy
+
 ## Relevance to BAPIL
 
-Singapore demonstrates how coordinated digital transformation, strong government leadership, and responsible AI governance can support effective public service delivery and evidence-based policymaking. Lessons from GovTech, Smart Nation, and AI governance initiatives may provide valuable insights for the design of future BAPIL frameworks and policy intelligence capabilities.
+Singapore demonstrates how coordinated digital transformation, strong government leadership, and responsible AI governance can support effective public service delivery and evidence-based policymaking. Lessons from GovTech, Smart Nation, and AI governance initiatives provide valuable insights for the development of digital government frameworks, AI governance models, policy intelligence capabilities, and public-sector innovation initiatives within BAPIL.
 
 ## Key Takeaways
 
@@ -52,7 +84,7 @@ Singapore demonstrates how coordinated digital transformation, strong government
 8. For Bangladesh, Singapore offers valuable lessons in digital government modernization, AI governance, institutional coordination, digital talent development, and public-sector innovation.
 9. Several aspects of Singapore’s experience may inform future BAPIL initiatives, including policy intelligence platforms, AI governance frameworks, digital government modernization strategies, and evidence-based decision-support systems.
 
-## References
+## Selected References
 
 1. [17] World Bank GovTech.
 2. [20] GovTech Maturity Index.
