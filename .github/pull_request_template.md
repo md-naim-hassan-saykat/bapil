@@ -1,23 +1,25 @@
 # Summary
 
-Provide a brief description of the proposed changes.
+Provide a brief summary of the proposed changes and their purpose.
 
 ## Type of Change
 
 - [ ] Documentation
 - [ ] Research update
-- [ ] White paper
+- [ ] White Paper
+- [ ] Blueprint
+- [ ] Reference update
 - [ ] Bug fix
-- [ ] New feature
+- [ ] Repository maintenance
 - [ ] Other
 
 ## Description
 
-Describe the changes made.
+Describe the changes in sufficient detail for reviewers to understand what was modified and why.
 
 ## Related Issue
 
-If applicable, reference the related GitHub issue (e.g., #12).
+If applicable, reference the related GitHub issue (for example, `Closes #12` or `Related to #12`).
 
 ## Checklist
 
@@ -29,4 +31,4 @@ If applicable, reference the related GitHub issue (e.g., #12).
 
 ## Additional Notes
 
-Add any additional information here.
+Provide any additional context, assumptions, or information that may assist reviewers.
