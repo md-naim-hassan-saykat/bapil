@@ -254,26 +254,6 @@ reports/
 
 ---
 
-## Planned GitHub Issues
-
-### Issue #1
-
-Literature Review on AI Governance
-
-### Issue #2
-
-Study South Korea AI Hub
-
-### Issue #3
-
-Study Singapore GovTech
-
-### Issue #4
-
-Draft BAPIL Technical Architecture
-
----
-
 ## Project Status
 
 - **Status:** Active
