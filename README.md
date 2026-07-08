@@ -240,13 +240,13 @@ bapil/
 │
 ├── research/
 │   ├── AI_Governance_Literature_Review.md
-│   ├── Canada_AI_Governance_Study.md
+│   ├── Canada_Responsible_AI_Governance_Study.md
 │   ├── Estonia_Digital_Government_Study.md
-│   ├── Finland_AI_Governance_Study.md
-│   ├── Singapore_GovTech_Study.md
-│   ├── South_Korea_AI_Hub_Study.md
-│   ├── UK_AI_Governance_Study.md
-│   └── United_Arab_Emirates_AI_Governance_Study.md
+│   ├── Finland_AI_Readiness_Study.md
+│   ├── Singapore_Smart_Nation_and_GovTech_Study.md
+│   ├── South_Korea_National_AI_Strategy_Study.md
+│   ├── United_Kingdom_AI_Governance_Study.md
+│   └── UAE_AI_Government_Innovation_Study.md
 │
 └── .github/
     ├── ISSUE_TEMPLATE/
