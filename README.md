@@ -14,12 +14,12 @@
 - [Mission](#mission)
 - [Objectives](#objectives)
 - [Scope](#scope)
-- [Long-Term Vision (2026-2041)](#long-term-vision-20262041)
+- [Long-Term Vision (2026–2041)](#long-term-vision-20262041)
 - [Core Components](#core-components)
 - [White Paper Structure](#white-paper-structure)
 - [Research Roadmap](#research-roadmap)
 - [Repository Structure](#repository-structure)
-- [Planned GitHub Issues](#planned-github-issues)
+- [Citation](#citation)
 - [Project Status](#project-status)
 - [Current Status](#current-status)
 - [Disclaimer](#disclaimer)
@@ -138,7 +138,7 @@ Investigation of opportunities for AI entrepreneurship, innovation ecosystems, a
 
 ## White Paper Structure
 
-The BAPIL White Paper is planned around the following chapters:
+The BAPIL White Paper (Version 1.0) is organized into the following chapters:
 
 1. Executive Summary
 2. Why Bangladesh Needs AI Policy Intelligence
@@ -193,10 +193,11 @@ The BAPIL White Paper is planned around the following chapters:
 
 ### Phase 4 - Publication & Collaboration
 
-- White paper publication.
-- Academic dissemination.
-- Stakeholder engagement.
-- International collaboration opportunities.
+- White Paper Version 1.0 (completed)
+- Academic dissemination
+- Stakeholder engagement
+- International collaboration
+- Blueprint development
 
 ---
 
@@ -210,25 +211,25 @@ bapil/
 ├── CHANGELOG.md
 ├── .gitignore
 │
-reports/
-├── README.md
-├── BAPIL_White_Paper_v1.md
-├── BAPIL_White_Paper_v1_bn.md
-├── references.bib
-├── figures/
-│   ├── figure01.png
-│   ├── figure01.pdf
-│   ├── figure02.png
-│   ├── figure02.pdf
-│   └── ...
-├── build_bn_pdf.sh
-├── bangla-pdf-header.tex
-├── bangla-page-numbers.tex
-├── fix-bangla-heading-spacing.tex
-├── fix-bangla-headings.tex
-├── fix-heading-spacing.tex
-├── fix-heading4.tex
-└── fix-runin-headings.lua
+├── reports/
+│   ├── README.md
+│   ├── BAPIL_White_Paper_v1.md
+│   ├── BAPIL_White_Paper_v1_bn.md
+│   ├── references.bib
+│   ├── figures/
+│   │   ├── figure01.png
+│   │   ├── figure01.pdf
+│   │   ├── figure02.png
+│   │   ├── figure02.pdf
+│   │   └── ...
+│   ├── build_bn_pdf.sh
+│   ├── bangla-pdf-header.tex
+│   ├── bangla-page-numbers.tex
+│   ├── fix-bangla-heading-spacing.tex
+│   ├── fix-bangla-headings.tex
+│   ├── fix-heading-spacing.tex
+│   ├── fix-heading4.tex
+│   └── fix-runin-headings.lua
 │
 ├── releases/
 │   ├── README.md
@@ -254,20 +255,33 @@ reports/
 
 ---
 
+## Citation
+
+If you use **BAPIL** in academic research, policy analysis, publications, presentations, or derivative works, please cite this repository using the citation metadata provided in `CITATION.cff`.
+
+---
+
 ## Project Status
 
 - **Status:** Active research and policy initiative
 - **White Paper:** Version 1.0 prepared and released
 - **Repository Visibility:** Public
-- **Current Focus:** White Paper refinement, international AI governance studies, and future BAPIL blueprint planning
+- **Current Focus:** White Paper refinement, AI governance research, future blueprint development, and stakeholder engagement.
 
 ---
 
 ## Current Status
 
-**Project Stage:** Early-Stage Research & White Paper Development
+**Project Stage:** White Paper Version 1.0 Released
 
-This repository currently focuses on research, policy analysis, architecture design, and white-paper development.
+The repository currently contains:
+
+- English White Paper (v1.0)
+- Bangla White Paper (v1.0)
+- Supporting international AI governance studies
+- BAPIL conceptual framework and supporting documentation
+
+Future work includes blueprint development, expanded technical documentation, and continued research on AI governance and policy intelligence.
 
 ---
 
@@ -281,13 +295,20 @@ BAPIL is an independent research and innovation initiative. The project does not
 
 **Md Naim Hassan Saykat**
 
-Master's Student in Artificial Intelligence
-
+Master's Student in Artificial Intelligence  
 Université Paris-Saclay, France
 
-Research Interests:
-AI Governance, Policy Intelligence, Machine Learning, Data Analytics, and Public Sector Innovation
+**Research Interests**
 
-GitHub: https://github.com/md-naim-hassan-saykat
+- AI Governance
+- Policy Intelligence
+- Machine Learning
+- Data Analytics
+- Public Sector Innovation
 
-Portfolio: https://md-naim-hassan-saykat.github.io
+**GitHub**
+https://github.com/md-naim-hassan-saykat
+
+
+**Portfolio**
+https://md-naim-hassan-saykat.github.io
