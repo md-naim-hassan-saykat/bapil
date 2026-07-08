@@ -20,6 +20,7 @@
 - [Research Roadmap](#research-roadmap)
 - [Repository Structure](#repository-structure)
 - [Citation](#citation)
+- [Licensing](#licensing)
 - [Project Status](#project-status)
 - [Current Status](#current-status)
 - [Disclaimer](#disclaimer)
