@@ -256,10 +256,10 @@ reports/
 
 ## Project Status
 
-- **Status:** Active
-- **White Paper:** In Preparation
-- **Repository Visibility:** Private
-- **Current Focus:** Literature Review, Architecture Design, and Policy Intelligence Framework
+- **Status:** Active research and policy initiative
+- **White Paper:** Version 1.0 prepared and released
+- **Repository Visibility:** Public
+- **Current Focus:** White Paper refinement, international AI governance studies, and future BAPIL blueprint planning
 
 ---
 
