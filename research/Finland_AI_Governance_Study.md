@@ -1,6 +1,6 @@
-# Finland AI Governance and National AI Readiness: Lessons for Bangladesh
+# Finland AI Governance and AI Readiness Study
 
-## Introduction
+## Overview
 
 * Overview of Finland’s digital transformation journey.
 * Importance of AI literacy and education.
@@ -8,17 +8,27 @@
 
 ## National AI Strategy
 
-* Finland’s AI Programme (2017-2019).
-* Government objectives.
-* Key policy priorities.
+### Objectives
+
+* Promote AI research and innovation
+* Strengthen national AI competitiveness
+* Foster responsible AI adoption
+* Support economic growth through AI
+
+### Key Initiatives
+
+* Finland's AI Programme (2017–2019)
+* Government objectives
+* Key policy priorities
 
 ## Education and Digital Literacy
 
 ### Elements of AI
 
-* History of the initiative.
-* University of Helsinki and Reaktor collaboration.
-* Global impact.
+* Free online AI course for the general public
+* Joint initiative by the University of Helsinki and Reaktor
+* Designed to improve AI literacy and public understanding
+* Adopted internationally and translated into multiple languages
 
 ### Public AI Education
 
@@ -28,16 +38,17 @@
 
 ## Research and Innovation Ecosystem
 
-* Universities.
-* Research institutes.
-* Startup ecosystem.
-* Public-private collaboration.
+* Universities
+* Research institutes
+* Startup ecosystem
+* Public-private collaboration
 
 ## Digital Government and Public Services
 
-* E-government services.
-* Data-driven governance.
-* Digital identity systems.
+* Digital public services
+* Data-driven governance
+* Digital identity systems
+* Citizen-centric digital service delivery
 
 ## AI Governance and Ethics
 
@@ -67,9 +78,16 @@
 * University-industry partnerships.
 * AI readiness assessment.
 
+## Potential BAPIL Applications
+
+* National AI Literacy Framework
+* AI Education and Training Programs
+* AI Readiness Assessment Framework
+* Talent Development Strategy
+
 ## Relevance to BAPIL
 
-Finland demonstrates how AI literacy, digital skills development, and inclusive innovation policies can strengthen national AI readiness and long-term competitiveness. The country's experience with AI education initiatives, public awareness programs, research collaboration, and responsible AI governance may provide valuable insights for the development of talent development strategies, AI capacity-building programs, and policy intelligence capabilities within BAPIL.
+Finland demonstrates how AI literacy, digital skills development, and inclusive innovation policies can strengthen national AI readiness and long-term competitiveness. The country's experience with AI education initiatives, public awareness programs, research collaboration, and responsible AI governance provides valuable lessons for the development of talent development strategies, AI capacity-building programs, AI literacy initiatives, and policy intelligence capabilities within BAPIL.
 
 ## Key Takeaways
 
@@ -83,7 +101,7 @@ Finland demonstrates how AI literacy, digital skills development, and inclusive 
 8. For Bangladesh, Finland offers valuable lessons in AI literacy, teacher training, workforce development, university-industry partnerships, and national AI readiness assessment.
 9. Several aspects of Finland’s experience may inform future BAPIL initiatives, including AI education programs, public awareness campaigns, talent development strategies, responsible AI governance frameworks, and long-term national AI capacity-building efforts.
 
-## References
+## Selected References
 
 1. [26] Government AI Readiness Index 2024.
 2. [63] Finland Artificial Intelligence Programme.
