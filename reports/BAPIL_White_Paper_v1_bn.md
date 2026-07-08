@@ -30,7 +30,7 @@ Université Paris-Saclay, France
 
 # কপিরাইট ও লাইসেন্স
 
-**বাংলাদেশ AI Policy & Innovation Lab (BAPIL): হোয়াইট পেপার**
+**বাংলাদেশে AI নীতি ও উদ্ভাবনের জন্য একটি প্রস্তাবিত কাঠামো: Bangladesh AI Policy & Innovation Lab (BAPIL)**
 
 **সংস্করণ:** ১.০  
 **প্রকাশের তারিখ:** জুলাই ২০২৬
@@ -64,7 +64,7 @@ Université Paris-Saclay, France
 
 ## উদ্ধৃতি
 
-Saykat, M. N. H. (২০২৬)। *বাংলাদেশ AI Policy & Innovation Lab (BAPIL): হোয়াইট পেপার* (সংস্করণ ১.০)। Bangladesh AI Policy & Innovation Lab (BAPIL)।
+Saykat, M. N. H. (২০২৬)। বাংলাদেশে AI নীতি ও উদ্ভাবনের জন্য একটি প্রস্তাবিত কাঠামো: Bangladesh AI Policy & Innovation Lab (BAPIL) (হোয়াইট পেপার, সংস্করণ ১.০).
 
 \newpage
 
