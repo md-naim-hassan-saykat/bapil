@@ -1,4 +1,4 @@
-# Finland AI Governance and AI Readiness Study
+# Finland AI Readiness Study
 
 ## Overview
 
