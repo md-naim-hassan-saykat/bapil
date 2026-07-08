@@ -1,4 +1,4 @@
-# Finland AI Readiness Study f
+# Finland AI Readiness Study
 
 ## Overview
 
