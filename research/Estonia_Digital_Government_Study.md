@@ -1,4 +1,4 @@
-# Estonia Digital Government Study 
+# Estonia Digital Government Study
 
 ## Overview
 
