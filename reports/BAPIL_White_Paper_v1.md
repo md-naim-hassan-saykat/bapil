@@ -1942,7 +1942,7 @@ The objective is not to regulate AI directly but to contribute research, knowled
 
 ## Conclusion
 
-As Artificial Intelligence becomes increasingly important for governance, research, and public sector innovation, effective governance frameworks will be essential for ensuring responsible and trustworthy deployment [1, 5 ,6, 7, 15]. By emphasizing transparency, accountability, fairness, privacy, security, and human oversight, the proposed AI Governance Framework seeks to support the responsible exploration of AI within the BAPIL ecosystem [1, 4, 5, 6, 7, 15].
+As Artificial Intelligence becomes increasingly important for governance, research, and public sector innovation, effective governance frameworks will be essential for ensuring responsible and trustworthy deployment [1, 5, 6, 7, 15]. By emphasizing transparency, accountability, fairness, privacy, security, and human oversight, the proposed AI Governance Framework seeks to support the responsible exploration of AI within the BAPIL ecosystem [1, 4, 5, 6, 7, 15].
 
 The next chapter examines National Security and Cybersecurity considerations and discusses how emerging technologies may affect digital resilience, information integrity, and public-sector security [14, 34, 71, 72].
 
