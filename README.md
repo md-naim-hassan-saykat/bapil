@@ -4,6 +4,16 @@
 
 *An AI-Powered Policy Intelligence and Innovation Framework for Bangladesh*
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.xxxxxxxx.svg)](https://doi.org/10.5281/zenodo.xxxxxxxx)
+
+[![GitHub release](https://img.shields.io/github/v/release/md-naim-hassan-saykat/bapil)](https://github.com/md-naim-hassan-saykat/bapil/releases)
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
+[![Last Commit](https://img.shields.io/github/last-commit/md-naim-hassan-saykat/bapil)](https://github.com/md-naim-hassan-saykat/bapil)
+
+[![Repo Size](https://img.shields.io/github/repo-size/md-naim-hassan-saykat/bapil)](https://github.com/md-naim-hassan-saykat/bapil)
+
 ---
 
 ## Table of Contents
