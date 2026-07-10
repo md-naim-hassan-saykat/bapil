@@ -4220,7 +4220,7 @@ Available:
 Statistical Yearbook of Bangladesh 2024[EB/OL].
 Dhaka: Bangladesh Bureau of Statistics, 2025[2026-06-18].
 Available: 
-<https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-bbs/2024/12/517b375eefec4d09a9c00e9cb59c7e44.pdf> 
+<https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-bbs/2024/12/eca101901c5f41329d08ce583e842be8.pdf> 
 
 [32] ASPIRE TO INNOVATE (a2i).
 e-Nothi Impact Study[R/OL].
