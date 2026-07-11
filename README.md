@@ -171,8 +171,8 @@ The BAPIL White Paper (Version 1.0) is organized into the following chapters:
 11. AI Education & Talent Development
 12. Startup Ecosystem
 13. Resource Requirements & Funding Considerations
-14. Five-Year Roadmap (2026-2030)
-15. Long-Term Vision (2030-2041)
+14. Five-Year Roadmap (2026–2030)
+15. Long-Term Vision (2030–2041)
 16. Risks, Ethics, and Responsible AI
 17. Strategic Recommendations
 18. Conclusion
