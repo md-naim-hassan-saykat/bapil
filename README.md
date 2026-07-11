@@ -121,27 +121,27 @@ BAPIL's long-term aspiration is to serve as a research and innovation platform t
 
 ## Core Components
 
-#### AI Policy & Research Unit
+### AI Policy & Research Unit
 
 Research on AI-assisted policy analysis, governance frameworks, and public sector innovation.
 
-#### Data Analytics & Public Sentiment Unit
+### Data Analytics & Public Sentiment Unit
 
 Exploration of data-driven approaches for understanding public concerns, social trends, and citizen feedback.
 
-#### Digital Security & Misinformation Lab
+### Digital Security & Misinformation Lab
 
 Research on misinformation detection, digital trust, cybersecurity awareness, and information integrity.
 
-#### AI Governance & Ethics Unit
+### AI Governance & Ethics Unit
 
 Study of AI regulation, accountability, transparency, privacy, and ethical deployment practices.
 
-#### AI Education & Talent Development Unit
+### AI Education & Talent Development Unit
 
 Development of educational resources, training initiatives, and AI literacy programs.
 
-#### Innovation & Startup Collaboration Cell
+### Innovation & Startup Collaboration Cell
 
 Investigation of opportunities for AI entrepreneurship, innovation ecosystems, and technology transfer.
 
