@@ -64,7 +64,7 @@ lang: bn
 | **নথির ধরন** | হোয়াইট পেপার |
 | **লাইসেন্স** | Creative Commons Attribution 4.0 International (CC BY 4.0) |
 | **রিপোজিটরি** | <https://github.com/md-naim-hassan-saykat/bapil> |
-| **DOI** | Zenodo-এ প্রকাশের পর সংযোজিত হবে |
+| **DOI** | <https://doi.org/10.5281/zenodo.21360566> |
 
 \newpage
 
