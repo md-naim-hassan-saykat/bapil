@@ -270,7 +270,7 @@ bapil/
 
 If you use BAPIL in research, policy work, publications, or derivative projects, please cite:
 
-> Saykat, M. N. H. (2026). *Bangladesh AI Policy & Innovation Lab (BAPIL) White Paper* (Version 1.0). Zenodo. https://doi.org/10.5281/zenodo.21360565
+> Saykat, M. N. H. (2026). *Bangladesh AI Policy & Innovation Lab (BAPIL) White Paper* (Version 1.0). Zenodo. https://doi.org/10.5281/zenodo.21360566
 
 ---
 
