@@ -13,25 +13,30 @@ mkdir -p "$BUILDDIR" "$OUTDIR"
 cp -R "$ROOT/reports/figures" "$BUILDDIR/figures"
 
 cat > "$BUILDDIR/toc-before-bn-chapter1.lua" <<'LUA'
-local inserted = false
+local toc_inserted = false
 local before_chapter1 = true
 
 function Header(el)
   local title = pandoc.utils.stringify(el)
 
-  if title == "সূচিপত্র" or title == "Contents" then
+  -- Replace the Markdown TOC heading with the actual LaTeX TOC.
+  -- Both common Bangla spellings are supported.
+  if title == "সূচীপত্র" or title == "সূচিপত্র"
+      or title == "Contents" or title == "Table of Contents" then
+    if not toc_inserted then
+      toc_inserted = true
+      return pandoc.RawBlock("latex", "\\tableofcontents")
+    end
     return {}
   end
 
-  if (not inserted) and (title:match("^অধ্যায়%s*১:") or title:match("^অধ্যায়%s*১:")) then
-    inserted = true
+  -- Chapter 1 remains in its original position.
+  if title:match("^অধ্যায়%s*১:") or title:match("^অধ্যায়%s*১:") then
     before_chapter1 = false
-    return {
-      pandoc.RawBlock("latex", "\\clearpage\n\\tableofcontents\n\\clearpage"),
-      el
-    }
+    return el
   end
 
+  -- Preliminary headings are excluded from numbering and the TOC.
   if before_chapter1 then
     el.classes:insert("unnumbered")
     el.classes:insert("unlisted")
