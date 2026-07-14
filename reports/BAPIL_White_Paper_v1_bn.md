@@ -70,7 +70,7 @@ lang: bn
 
 ## উদ্ধৃতি
 
-Saykat, M. N. H. (২০২৬)। *Bangladesh AI Policy & Innovation Lab (BAPIL) White Paper* (সংস্করণ ১.০)। Zenodo। https://doi.org/10.5281/zenodo.21360566
+Saykat, M. N. H. (২০২৬)। *Bangladesh AI Policy & Innovation Lab (BAPIL) White Paper* (সংস্করণ ১.০)। Zenodo <https://doi.org/10.5281/zenodo.21360566>
 
 \newpage
 
