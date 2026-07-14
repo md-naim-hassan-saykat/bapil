@@ -1,7 +1,4 @@
 ---
-title: ""
-author: ""
-date: ""
 lang: en
 ---
 
