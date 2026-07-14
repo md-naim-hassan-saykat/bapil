@@ -56,13 +56,13 @@ License: <https://creativecommons.org/licenses/by/4.0/>
 | **Document Type** | White Paper |
 | **License** | Creative Commons Attribution 4.0 International (CC BY 4.0) |
 | **Repository** | <https://github.com/md-naim-hassan-saykat/bapil> |
-| **DOI** | To be added following Zenodo publication |
+| **DOI** | <https://doi.org/10.5281/zenodo.21360566> |
 
 \newpage
 
 ## Citation
 
-Saykat, M. N. H. (2026). *Bangladesh AI Policy & Innovation Lab (BAPIL): White Paper* (Version 1.0). Bangladesh AI Policy & Innovation Lab (BAPIL).
+Saykat, M. N. H. (2026). *Bangladesh AI Policy & Innovation Lab (BAPIL) White Paper* (v1.0). Zenodo. https://doi.org/10.5281/zenodo.21360566
 
 \newpage
 
