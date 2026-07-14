@@ -6,6 +6,8 @@
 
 [![GitHub release](https://img.shields.io/github/v/release/md-naim-hassan-saykat/bapil)](https://github.com/md-naim-hassan-saykat/bapil/releases)
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21360565.svg)](https://doi.org/10.5281/zenodo.21360565)
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 [![Last Commit](https://img.shields.io/github/last-commit/md-naim-hassan-saykat/bapil)](https://github.com/md-naim-hassan-saykat/bapil)
@@ -266,7 +268,9 @@ bapil/
 
 ## Citation
 
-If you use **BAPIL** in academic research, policy analysis, publications, presentations, or derivative works, please cite this repository using the citation metadata provided in `CITATION.cff`.
+If you use BAPIL in research, policy work, publications, or derivative projects, please cite:
+
+> Saykat, M. N. H. (2026). *Bangladesh AI Policy & Innovation Lab (BAPIL) White Paper* (Version 1.0). Zenodo. https://doi.org/10.5281/zenodo.21360565
 
 ---
 
