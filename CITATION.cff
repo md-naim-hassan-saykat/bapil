@@ -33,3 +33,9 @@ keywords:
 license: "MIT"
 
 version: "1.0"
+
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.21360565"
+
+date-released: "2026-07-14"
