@@ -70,7 +70,7 @@ lang: bn
 
 ## উদ্ধৃতি
 
-Saykat, M. N. H. (২০২৬)। বাংলাদেশে AI নীতি ও উদ্ভাবনের জন্য একটি প্রস্তাবিত কাঠামো: Bangladesh AI Policy & Innovation Lab (BAPIL) (হোয়াইট পেপার, সংস্করণ ১.০).
+Saykat, M. N. H. (২০২৬)। *Bangladesh AI Policy & Innovation Lab (BAPIL) White Paper* (সংস্করণ ১.০)। Zenodo। https://doi.org/10.5281/zenodo.21360566
 
 \newpage
 
