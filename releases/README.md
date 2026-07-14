@@ -4,7 +4,7 @@ This directory contains the official release packages for the Bangladesh AI Poli
 
 ## Version 1.0
 
-**Release Date:** 2026-07-07
+**Release Date:** 2026-07-14
 
 | File | Language | Description |
 |------|----------|-------------|
