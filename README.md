@@ -266,19 +266,15 @@ bapil/
 
 ---
 
----
-
 ## DOI
 
-The archived and citable version of the BAPIL White Paper is available through Zenodo.
+BAPIL is archived on Zenodo.
 
-**Version-specific DOI (Version 1.0):**
-https://doi.org/10.5281/zenodo.21360566
+**Latest archived version:**
+https://doi.org/10.5281/zenodo.21363967
 
-For the latest archived version of the repository, please refer to the Zenodo record:
-https://zenodo.org/records/21360566
-
----
+**Concept DOI (all versions):**
+https://doi.org/10.5281/zenodo.21360565
 
 ---
 
