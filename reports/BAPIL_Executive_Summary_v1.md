@@ -4,7 +4,7 @@ lang: en
 
 # Bangladesh AI Policy & Innovation Lab (BAPIL)
 
-## EXECUTIVE SUMMARY
+## Executive Summary Accompanying the Bangladesh AI Policy & Innovation Lab (BAPIL) White Paper (Version 1.0)
 
 ### An Evidence-Based AI Policy and Innovation Framework for Bangladesh
 
@@ -22,7 +22,7 @@ July 2026
 
 ---
 
-*This Executive Summary presents the principal findings, proposed framework, expected national value, and priority recommendations of the Bangladesh AI Policy & Innovation Lab (BAPIL) White Paper. It is intended for senior policymakers, government agencies, academic institutions, industry leaders, development partners, and other stakeholders considering the responsible use of Artificial Intelligence in Bangladesh.*
+*This Executive Summary presents the principal findings, proposed framework, expected strategic impact, and key strategic recommendations of the Bangladesh AI Policy & Innovation Lab (BAPIL) White Paper. It is intended for senior policymakers, government agencies, academic institutions, industry leaders, development partners, and other stakeholders considering the responsible use of Artificial Intelligence in Bangladesh.*
 
 \newpage
 
@@ -36,7 +36,7 @@ July 2026
 | **Author** | Md Naim Hassan Saykat |
 | **Affiliation** | Université Paris-Saclay, France |
 | **Language** | English |
-| **Document Type** | Executive Summary / Policy Brief |
+| **Document Type** | Executive Summary accompanying the BAPIL White Paper (Version 1.0) |
 | **License** | Creative Commons Attribution 4.0 International (CC BY 4.0) |
 | **Full White Paper** | <https://doi.org/10.5281/zenodo.21363967> |
 | **Repository** | <https://github.com/md-naim-hassan-saykat/bapil> |
@@ -49,13 +49,19 @@ Saykat, M. N. H. (2026). *Bangladesh AI Policy & Innovation Lab (BAPIL): Executi
 
 BAPIL is an independent research and innovation initiative. This document does not represent any government institution, ministry, political organization, or official policy position. Its proposals are intended to support research, informed discussion, stakeholder consultation, and future policy development.
 
+## References Note
+
+The numbered citations used throughout this Executive Summary correspond to the complete bibliography of the **Bangladesh AI Policy & Innovation Lab (BAPIL) White Paper (Version 1.0)**. For complete reference details, readers are encouraged to consult the full White Paper:
+
+**DOI:** <https://doi.org/10.5281/zenodo.21363967>
+
 \newpage
 
 # Executive Summary
 
 Artificial Intelligence (AI) is increasingly shaping governance, public administration, economic planning, national security, scientific research, and public service delivery. Governments around the world are exploring how AI, data analytics, digital infrastructure, and knowledge-management systems can improve institutional effectiveness, policy evaluation, and citizen outcomes [1–17, 21, 26].
 
-Bangladesh has established important foundations through Digital Bangladesh, Smart Bangladesh, expanding digital public services, national data systems, and emerging AI initiatives. However, public institutions now face growing volumes of policy documents, administrative data, citizen feedback, budget information, research outputs, and rapidly changing technological risks. These developments create an urgent need for stronger capabilities in evidence synthesis, policy analysis, data governance, strategic foresight, and responsible AI oversight [28–33, 82, 83].
+Bangladesh has established strong digital foundations through Bangladesh’s digital-transformation programmes, expanding digital public services, national data initiatives, and emerging AI programmes. However, growing policy complexity, rapidly expanding public-sector data, and evolving technological risks require stronger capabilities in policy analysis, evidence synthesis, data governance, strategic foresight, responsible AI oversight, and data-driven decision support [28–33, 82, 83].
 
 The **Bangladesh AI Policy & Innovation Lab (BAPIL)** is proposed as an independent, multidisciplinary research framework for exploring how AI and data-driven technologies can support evidence-based policymaking, responsible AI governance, digital government, institutional learning, and national innovation. BAPIL is not proposed as a policymaking authority. Rather, it is envisioned as a research, policy-intelligence, and collaboration platform that can develop methodologies, governance frameworks, technical prototypes, and knowledge resources for use by policymakers, researchers, universities, industry, civil society, and development partners [1, 3, 5, 7, 17, 21, 24, 25].
 
@@ -77,6 +83,8 @@ BAPIL proposes that Bangladesh establish a coordinated capability for:
 ## Vision
 
 > To contribute to a future where governance, policymaking, and innovation in Bangladesh are supported by trustworthy, transparent, ethical, inclusive, and evidence-based AI systems.
+
+BAPIL seeks to complement existing national initiatives by providing research, policy intelligence, technical innovation, and multidisciplinary collaboration rather than serving as a policymaking authority.
 
 ![](figures/figure01.png)
 
@@ -168,7 +176,7 @@ Initial research and prototype work could include:
 
 These pilots should begin as controlled research prototypes, use authorized and appropriate data, undergo independent evaluation, and remain subject to human oversight.
 
-# Expected National Value
+# Expected Strategic Impact
 
 | Stakeholder | Potential Value |
 |---|---|
@@ -180,7 +188,7 @@ These pilots should begin as controlled research prototypes, use authorized and 
 
 \newpage
 
-# Priority Recommendations
+# Key Strategic Recommendations
 
 ## Priority 1 - Establish a National AI Policy-Intelligence Capability
 
@@ -251,7 +259,7 @@ BAPIL should be developed according to the principle that AI supports human inst
 
 The framework should distinguish clearly among research prototypes, advisory tools, and operational government systems. No experimental model should be treated as an authoritative policymaking mechanism without appropriate validation, authorization, accountability, and legal review.
 
-# Decision Requested from Stakeholders
+# Next Steps for Stakeholders
 
 Government agencies and partner institutions are invited to consider the following initial actions:
 
@@ -263,7 +271,9 @@ Government agencies and partner institutions are invited to consider the followi
 
 # Conclusion
 
-Bangladesh has an opportunity to move beyond isolated AI applications toward a coordinated, responsible, and evidence-based national capability. The proposed BAPIL framework offers a practical foundation for policy intelligence, AI governance, Bangla-language technology, public-sector innovation, talent development, and multi-stakeholder collaboration.
+Collectively, the recommendations presented in this Executive Summary provide a phased, research-oriented pathway for strengthening Bangladesh's AI governance, policy intelligence, and innovation ecosystem.
+
+Bangladesh has an opportunity to move beyond isolated AI applications toward a coordinated, responsible, and evidence-based national capability. The proposed BAPIL framework offers a practical foundation for policy intelligence, responsible AI governance, Bangla-language technology, public-sector innovation, talent development, and multi-stakeholder collaboration.
 
 Its success would depend not only on technology, but also on institutional leadership, trustworthy data, ethical governance, cybersecurity, skilled people, transparent processes, and public trust. BAPIL is therefore proposed as a long-term research and collaboration platform—one that supports existing national initiatives and helps ensure that AI contributes to public benefit, inclusive development, institutional resilience, and Bangladesh's long-term transformation.
 
