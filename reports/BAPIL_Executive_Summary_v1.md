@@ -4,7 +4,7 @@ lang: en
 
 # Bangladesh AI Policy & Innovation Lab (BAPIL)
 
-## Executive Summary Accompanying the Bangladesh AI Policy & Innovation Lab (BAPIL) White Paper (Version 1.0)
+## Executive Summary Accompanying the BAPIL White Paper (Version 1.0)
 
 ### An Evidence-Based AI Policy and Innovation Framework for Bangladesh
 
@@ -43,7 +43,7 @@ July 2026
 
 ## Citation
 
-Saykat, M. N. H. (2026). *Bangladesh AI Policy & Innovation Lab (BAPIL): Executive Summary* (Version 1.0). Accompanying executive summary to the BAPIL White Paper. Full report available at <https://doi.org/10.5281/zenodo.21363967>.
+Saykat, M. N. H. (2026). *Bangladesh AI Policy & Innovation Lab (BAPIL): Executive Summary* (Version 1.0). Accompanying executive summary to the BAPIL White Paper. DOI: <https://doi.org/10.5281/zenodo.21363967>
 
 ## Disclaimer
 
@@ -61,7 +61,7 @@ The numbered citations used throughout this Executive Summary correspond to the 
 
 Artificial Intelligence (AI) is increasingly shaping governance, public administration, economic planning, national security, scientific research, and public service delivery. Governments around the world are exploring how AI, data analytics, digital infrastructure, and knowledge-management systems can improve institutional effectiveness, policy evaluation, and citizen outcomes [1–17, 21, 26].
 
-Bangladesh has established strong digital foundations through Bangladesh’s digital-transformation programmes, expanding digital public services, national data initiatives, and emerging AI programmes. However, growing policy complexity, rapidly expanding public-sector data, and evolving technological risks require stronger capabilities in policy analysis, evidence synthesis, data governance, strategic foresight, responsible AI oversight, and data-driven decision support [28–33, 82, 83].
+Bangladesh has established strong digital foundations through national digital-transformation programmes, expanding digital public services, national data initiatives, and emerging AI programmes. However, growing policy complexity, rapidly expanding public-sector data, and evolving technological risks require stronger capabilities in policy analysis, evidence synthesis, data governance, strategic foresight, responsible AI oversight, and data-driven decision support [28–33, 82, 83].
 
 The **Bangladesh AI Policy & Innovation Lab (BAPIL)** is proposed as an independent, multidisciplinary research framework for exploring how AI and data-driven technologies can support evidence-based policymaking, responsible AI governance, digital government, institutional learning, and national innovation. BAPIL is not proposed as a policymaking authority. Rather, it is envisioned as a research, policy-intelligence, and collaboration platform that can develop methodologies, governance frameworks, technical prototypes, and knowledge resources for use by policymakers, researchers, universities, industry, civil society, and development partners [1, 3, 5, 7, 17, 21, 24, 25].
 
@@ -222,9 +222,9 @@ Provide tailored training for policymakers, civil servants, educators, technical
 
 Integrate cybersecurity, privacy, information integrity, incident readiness, critical-infrastructure protection, and continuous risk assessment into AI-related programs [14, 34, 71, 72].
 
-## Priority 9 - Support Existing National AI Initiatives
+## Priority 9 - Support Existing and Emerging National AI Initiatives
 
-Position BAPIL as a complementary research and policy-intelligence capability that supports, rather than duplicates, Smart Bangladesh, the Bangladesh AI Hub, digital-government programs, national data institutions, and related initiatives [29, 30, 35, 36].
+Position BAPIL as a complementary research and policy-intelligence capability that supports, rather than duplicates, existing and emerging national digital-transformation, AI, data-governance, and public-sector innovation initiatives [29, 30, 35, 36].
 
 ## Priority 10 - Develop Long-Term AI Strategy and Foresight
 
