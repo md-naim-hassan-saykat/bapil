@@ -43,7 +43,7 @@ July 2026
 
 ## Citation
 
-Saykat, M. N. H. (2026). *Bangladesh AI Policy & Innovation Lab (BAPIL): Executive Summary* (Version 1.0). Accompanying executive summary to the BAPIL White Paper. DOI: <https://doi.org/10.5281/zenodo.21363967>
+Saykat, M. N. H. (2026). *Bangladesh AI Policy & Innovation Lab (BAPIL): Executive Summary* (Version 1.0). Accompanying executive summary to the BAPIL White Paper. DOI: https://doi.org/10.5281/zenodo.21363967
 
 ## Disclaimer
 
