@@ -85,7 +85,7 @@ BAPIL proposes that Bangladesh establish a coordinated capability for:
 
 BAPIL seeks to complement existing national initiatives by providing research, policy intelligence, technical innovation, and multidisciplinary collaboration rather than serving as a policymaking authority.
 
-![](figures/figure01.png)
+![Conceptual positioning of BAPIL within the broader Bangladesh AI ecosystem.](figures/figure01.png)
 
 *Figure 1. Conceptual positioning of BAPIL within the broader Bangladesh AI ecosystem.*
 
@@ -148,7 +148,7 @@ The proposed framework combines research, data, governance, technical prototypin
 
 BAPIL would operate as a research and knowledge platform that transforms diverse information sources into structured evidence and policy insight.
 
-![](figures/figure05.png)
+![Conceptual AI-enabled policy-intelligence workflow.](figures/figure05.png)
 
 *Figure 2. Conceptual AI-enabled policy-intelligence workflow.*
 
