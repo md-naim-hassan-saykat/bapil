@@ -4,7 +4,7 @@ lang: en
 
 # Bangladesh AI Policy & Innovation Lab (BAPIL)
 
-## Executive Summary Accompanying the BAPIL White Paper (Version 1.0)
+## Executive Summary Accompanying the BAPIL White Paper (Version 1.0.1)
 
 ### An Evidence-Based AI Policy and Innovation Framework for Bangladesh
 
@@ -36,14 +36,15 @@ July 2026
 | **Author** | Md Naim Hassan Saykat |
 | **Affiliation** | Université Paris-Saclay, France |
 | **Language** | English |
-| **Document Type** | Executive Summary accompanying the BAPIL White Paper (Version 1.0) |
+| **Document Type** | Executive Summary Accompanying the BAPIL White Paper (Version 1.0.1) |
 | **License** | Creative Commons Attribution 4.0 International (CC BY 4.0) |
+| **Executive Summary DOI** | <https://doi.org/10.5281/zenodo.NEW_DOI> |
 | **Full White Paper** | <https://doi.org/10.5281/zenodo.21363967> |
 | **Repository** | <https://github.com/md-naim-hassan-saykat/bapil> |
 
 ## Citation
 
-Saykat, M. N. H. (2026). *Bangladesh AI Policy & Innovation Lab (BAPIL): Executive Summary* (Version 1.0). Accompanying executive summary to the BAPIL White Paper. DOI: https://doi.org/10.5281/zenodo.21363967
+Saykat, M. N. H. (2026). *Bangladesh AI Policy & Innovation Lab (BAPIL): Executive Summary* (Version 1.0). Accompanying executive summary to the BAPIL White Paper (Version 1.0.1). https://doi.org/10.5281/zenodo.NEW_DOI
 
 ## Disclaimer
 
@@ -51,9 +52,7 @@ BAPIL is an independent research and innovation initiative. This document does n
 
 ## References Note
 
-The numbered citations used throughout this Executive Summary correspond to the complete bibliography of the **Bangladesh AI Policy & Innovation Lab (BAPIL) White Paper (Version 1.0)**. For complete reference details, readers are encouraged to consult the full White Paper:
-
-**DOI:** <https://doi.org/10.5281/zenodo.21363967>
+The numbered citations used throughout this Executive Summary correspond to the complete bibliography of the **Bangladesh AI Policy & Innovation Lab (BAPIL) White Paper (Version 1.0.1)**. For complete reference details, readers are encouraged to consult the **Full White Paper DOI:** <https://doi.org/10.5281/zenodo.21363967>
 
 \newpage
 
@@ -65,7 +64,7 @@ Bangladesh has established strong digital foundations through national digital-t
 
 The **Bangladesh AI Policy & Innovation Lab (BAPIL)** is proposed as an independent, multidisciplinary research framework for exploring how AI and data-driven technologies can support evidence-based policymaking, responsible AI governance, digital government, institutional learning, and national innovation. BAPIL is not proposed as a policymaking authority. Rather, it is envisioned as a research, policy-intelligence, and collaboration platform that can develop methodologies, governance frameworks, technical prototypes, and knowledge resources for use by policymakers, researchers, universities, industry, civil society, and development partners [1, 3, 5, 7, 17, 21, 24, 25].
 
-The framework is designed to complement existing national institutions and initiatives rather than duplicate them. Its purpose is to help bridge the gap between AI research, government decision-making, public-sector modernization, Bangla-language technology, and responsible innovation.
+The framework is designed to complement existing national institutions and initiatives rather than duplicate them. Its purpose is to help bridge the gap between AI research, government decision-making, public-sector modernisation, Bangla-language technology, and responsible innovation.
 
 ## Core Proposition
 
@@ -208,7 +207,7 @@ Develop trusted Bangla datasets, language resources, evaluation benchmarks, spee
 
 ## Priority 5 - Expand National AI Research Capacity
 
-Support graduate and doctoral research, shared computing resources, interdisciplinary laboratories, competitive research funding, international partnerships, and public-private research programs [16, 27, 35, 36, 54–56, 70, 73, 77].
+Support graduate and doctoral research, shared computing resources, interdisciplinary laboratories, competitive research funding, international partnerships, and public-private research programmes [16, 27, 35, 36, 54–56, 70, 73, 77].
 
 ## Priority 6 - Build Government-Academia-Industry-Civil Society Collaboration
 
@@ -220,7 +219,7 @@ Provide tailored training for policymakers, civil servants, educators, technical
 
 ## Priority 8 - Strengthen Cybersecurity and Digital Resilience
 
-Integrate cybersecurity, privacy, information integrity, incident readiness, critical-infrastructure protection, and continuous risk assessment into AI-related programs [14, 34, 71, 72].
+Integrate cybersecurity, privacy, information integrity, incident readiness, critical-infrastructure protection, and continuous risk assessment into AI-related programmes [14, 34, 71, 72].
 
 ## Priority 9 - Support Existing and Emerging National AI Initiatives
 
@@ -236,7 +235,7 @@ Establish mechanisms for horizon scanning, scenario analysis, emerging-technolog
 |---|---|---|
 | **Phase 1: Foundation** | Stakeholder consultation, institutional mapping, data and legal review, research agenda, governance principles | Scoping report, governance charter, pilot selection criteria, risk register |
 | **Phase 2: Research and Prototyping** | Controlled prototypes, Bangla AI research, policy-search and analytics tools, evaluation methods | Pilot systems, technical reports, datasets and benchmarks where appropriate |
-| **Phase 3: Institutional Collaboration** | Joint programs with government, universities, industry, civil society, and development partners | Research partnerships, training programs, policy dialogues, independent reviews |
+| **Phase 3: Institutional Collaboration** | Joint programmes with government, universities, industry, civil society, and development partners | Research partnerships, training programmes, policy dialogues, independent reviews |
 | **Phase 4: Evaluation and Scale-Up** | Impact assessment, security testing, ethical review, institutional adoption decisions | Evaluation reports, revised governance guidance, scale-up recommendations |
 | **Long-Term: 2030–2041** | National capability, international collaboration, foresight, sustainable research infrastructure | Mature policy-intelligence ecosystem, Bangla AI capacity, regional partnerships |
 
@@ -279,11 +278,11 @@ Its success would depend not only on technology, but also on institutional leade
 
 # Resources
 
-**Full White Paper:**  
-<https://doi.org/10.5281/zenodo.21363967>
+**Executive Summary DOI:**  
+<https://doi.org/10.5281/zenodo.NEW_DOI>
 
-**Zenodo Record:**  
-<https://zenodo.org/records/21363967>
+**Full White Paper DOI:**  
+<https://doi.org/10.5281/zenodo.21363967>
 
 **GitHub Repository:**  
 <https://github.com/md-naim-hassan-saykat/bapil>
