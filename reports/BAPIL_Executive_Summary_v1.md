@@ -290,6 +290,4 @@ Its success would depend not only on technology, but also on institutional leade
 
 \vspace{-0.3cm}
 
-\noindent\rule{\textwidth}{0.4pt}\\[-0.15cm]
-
-\noindent © 2026 Md Naim Hassan Saykat. Licensed under CC BY 4.0.
+\noindent\small © 2026 Md Naim Hassan Saykat. Licensed under CC BY 4.0.
