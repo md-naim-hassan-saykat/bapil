@@ -17,12 +17,12 @@ Université Paris-Saclay, France
 
 July 2026
 
-**Full White Paper:** <https://doi.org/10.5281/zenodo.21363967>  
+**Full White Paper DOI:** <https://doi.org/10.5281/zenodo.21363967> 
 **Repository:** <https://github.com/md-naim-hassan-saykat/bapil>
 
 ---
 
-*This Executive Summary presents the principal findings, proposed framework, expected strategic impact, and key strategic recommendations of the Bangladesh AI Policy & Innovation Lab (BAPIL) White Paper. It is intended for senior policymakers, government agencies, academic institutions, industry leaders, development partners, and other stakeholders considering the responsible use of Artificial Intelligence in Bangladesh.*
+*This Executive Summary presents the principal findings, proposed framework, expected strategic impact, and key strategic recommendations of the Bangladesh AI Policy & Innovation Lab (BAPIL) White Paper. It is intended for senior policymakers, government agencies, academic institutions, industry leaders, development partners, and other stakeholders considering the responsible use of artificial intelligence in Bangladesh.*
 
 \newpage
 
@@ -39,7 +39,7 @@ July 2026
 | **Document Type** | Executive Summary Accompanying the BAPIL White Paper (Version 1.0.1) |
 | **License** | Creative Commons Attribution 4.0 International (CC BY 4.0) |
 | **Executive Summary DOI** | <https://doi.org/10.5281/zenodo.NEW_DOI> |
-| **Full White Paper** | <https://doi.org/10.5281/zenodo.21363967> |
+| **Full White Paper DOI** | <https://doi.org/10.5281/zenodo.21363967> |
 | **Repository** | <https://github.com/md-naim-hassan-saykat/bapil> |
 
 ## Citation
@@ -52,7 +52,9 @@ BAPIL is an independent research and innovation initiative. This document does n
 
 ## References Note
 
-The numbered citations used throughout this Executive Summary correspond to the complete bibliography of the **Bangladesh AI Policy & Innovation Lab (BAPIL) White Paper (Version 1.0.1)**. For complete reference details, readers are encouraged to consult the **Full White Paper DOI:** <https://doi.org/10.5281/zenodo.21363967>
+The numbered citations used throughout this Executive Summary correspond to the complete bibliography of the **Bangladesh AI Policy & Innovation Lab (BAPIL) White Paper (Version 1.0.1)**. For complete reference details, readers are encouraged to consult the full White Paper.
+
+**Full White Paper DOI:** <https://doi.org/10.5281/zenodo.21363967>
 
 \newpage
 
@@ -160,7 +162,7 @@ The operating model contains five linked stages:
 | **2. Data Management and Governance** | Data quality, metadata, interoperability, access control, privacy, security, documentation, and provenance |
 | **3. AI and Analytics** | Search, NLP, forecasting, trend analysis, clustering, knowledge graphs, summarization, and scenario-support methods |
 | **4. Knowledge and Decision Support** | Dashboards, policy briefs, evidence maps, alerts, comparison tools, and institutional knowledge repositories |
-| **5. Human Review and Governance** | Expert validation, authorized decision-making, audit trails, transparency, accountability, and continuous evaluation |
+| **5. Human Review and Governance** | Expert validation, authorised decision-making, audit trails, transparency, accountability, and continuous evaluation |
 
 ## Illustrative Pilot Projects
 
@@ -168,7 +170,7 @@ Initial research and prototype work could include:
 
 - **Bangladesh Policy Search Engine:** semantic search across policies, laws, regulations, strategies, and public reports;
 - **Budget Intelligence Dashboard:** analysis of allocations, expenditure trends, development priorities, and project implementation;
-- **Citizen Feedback Analyzer:** topic discovery, sentiment analysis, issue monitoring, and consultation summaries;
+- **Citizen Feedback Analyser:** topic discovery, sentiment analysis, issue monitoring, and consultation summaries;
 - **Bangla Policy Foundation Model:** domain-specific Bangla AI for policy research, public administration, and knowledge management;
 - **Policy Impact and Monitoring Tools:** structured indicators, implementation tracking, and evidence-based review;
 - **Misinformation and Information-Integrity Research:** detection, risk analysis, and digital-resilience support.
@@ -256,7 +258,7 @@ BAPIL should be developed according to the principle that AI supports human inst
 - public-interest evaluation and stakeholder consultation;
 - compliance with applicable laws, policies, and institutional mandates.
 
-The framework should distinguish clearly among research prototypes, advisory tools, and operational government systems. No experimental model should be treated as an authoritative policymaking mechanism without appropriate validation, authorization, accountability, and legal review.
+The framework should distinguish clearly among research prototypes, advisory tools, and operational government systems. No experimental model should be treated as an authoritative policymaking mechanism without appropriate validation, authorisation, accountability, and legal review.
 
 # Next Steps for Stakeholders
 
@@ -266,7 +268,7 @@ Government agencies and partner institutions are invited to consider the followi
 2. Identify priority policy or administrative challenges suitable for a limited research pilot.
 3. Nominate technical, policy, legal, data-governance, and ethics focal points for consultation.
 4. Assess opportunities for collaboration with universities, national AI initiatives, industry, civil society, and development partners.
-5. Consider a structured feasibility study before any institutional establishment or operational deployment.
+5. Consider conducting a structured feasibility study before establishing any formal institutional structure or undertaking operational deployment.
 
 # Conclusion
 
