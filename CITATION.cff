@@ -1,8 +1,8 @@
 cff-version: 1.2.0
 
-message: "If you use BAPIL in research, policy work, publications, or derivative projects, please cite this work using the metadata below."
+message: "If you use BAPIL in research, policy work, publications, or derivative projects, please cite the repository or the preferred publication using the metadata below."
 
-title: "Bangladesh AI Policy & Innovation Lab (BAPIL) White Paper"
+title: "Bangladesh AI Policy & Innovation Lab (BAPIL)"
 
 type: software
 
@@ -16,9 +16,9 @@ abstract: >
   research initiative exploring artificial intelligence, policy
   intelligence, responsible AI governance, digital government,
   and evidence-based policymaking for Bangladesh. This repository
-  contains the BAPIL White Paper, supporting international AI
-  governance studies, technical documentation, and related
-  research materials.
+  contains the BAPIL White Paper, Executive Summary, supporting
+  international AI governance studies, technical documentation,
+  and related research materials.
 
 keywords:
   - Artificial Intelligence
@@ -29,6 +29,9 @@ keywords:
   - Digital Government
   - Responsible AI
   - Evidence-Based Policymaking
+  - AI Policy
+  - GovTech
+  - Public Sector Innovation
 
 license: "MIT"
 
@@ -38,4 +41,18 @@ identifiers:
   - type: doi
     value: "10.5281/zenodo.21360565"
 
+repository-code: "https://github.com/md-naim-hassan-saykat/bapil"
+
 date-released: "2026-07-14"
+
+preferred-citation:
+  type: report
+  title: "Bangladesh AI Policy & Innovation Lab (BAPIL) White Paper"
+  authors:
+    - family-names: "Saykat"
+      given-names: "Md Naim Hassan"
+  version: "1.0"
+  year: 2026
+  identifiers:
+    - type: doi
+      value: "10.5281/zenodo.21363967"
