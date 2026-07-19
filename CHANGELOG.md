@@ -18,18 +18,24 @@ The format is inspired by [Keep a Changelog](https://keepachangelog.com/en/1.1.0
 
 ---
 
-## [1.0] - 2026-07-14
+## [1.0] - 2026-07-19
 
 ### Added
 
 - Initial public release of the BAPIL repository.
 - English White Paper (Version 1.0).
 - Bangla White Paper (Version 1.0).
+- English Executive Summary (Version 1.0).
+- Bangla Executive Summary (Version 1.0).
+- Zenodo DOI for the White Paper.
+- Zenodo DOI for the Executive Summary.
 - International AI governance research studies.
 - Citation metadata (`CITATION.cff`).
 - MIT License (`LICENSE`).
 - Project documentation (`README.md`).
+- Release documentation (`releases/README.md`).
 - White Paper release package.
+- Executive Summary release package.
 - Figure assets for the White Paper.
 - PDF build scripts and LaTeX configuration files.
 
@@ -37,9 +43,13 @@ The format is inspired by [Keep a Changelog](https://keepachangelog.com/en/1.1.0
 
 - Repository reorganized into a structured research project.
 - Figure filenames standardized using leading zeros (`figure01`, `figure02`, ...).
-- Documentation improved for consistency and navigation.
+- Repository documentation expanded and reorganized for improved consistency and navigation.
+- Release directory updated to include standalone Executive Summary publications.
 
 ### Fixed
 
-- Bangla PDF formatting and heading spacing.
+- Bangla White Paper PDF formatting and heading spacing.
+- Bangla White Paper table of contents generation.
+- Executive Summary PDF pagination and layout.
+- Bangla Executive Summary figure caption rendering.
 - Figure references and PDF generation workflow.
