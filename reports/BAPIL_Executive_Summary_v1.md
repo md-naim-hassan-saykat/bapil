@@ -17,7 +17,8 @@ Université Paris-Saclay, France
 
 July 2026
 
-**Full White Paper DOI:** <https://doi.org/10.5281/zenodo.21363967> 
+**Full White Paper DOI:** <https://doi.org/10.5281/zenodo.21363967>
+
 **Repository:** <https://github.com/md-naim-hassan-saykat/bapil>
 
 ---
