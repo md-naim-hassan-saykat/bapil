@@ -151,7 +151,7 @@ Investigation of opportunities for AI entrepreneurship, innovation ecosystems, a
 
 The BAPIL White Paper (Version 1.0) is organized into the following chapters:
 
-1. Executive Summary
+1. Executive Summary (also published separately)
 2. Why Bangladesh Needs AI Policy Intelligence
 3. Global Examples
    - Singapore
@@ -245,6 +245,8 @@ bapil/
 ├── releases/
 │   ├── README.md
 │   └── v1.0/
+│       ├── BAPIL_Executive_Summary_v1.pdf
+│       ├── BAPIL_Executive_Summary_v1_bn.pdf
 │       ├── BAPIL_White_Paper_v1.pdf
 │       └── BAPIL_White_Paper_v1_bn.pdf
 │
@@ -268,12 +270,16 @@ bapil/
 
 ## DOI
 
-BAPIL is archived on Zenodo.
+### White Paper (Version 1.0)
 
-**Latest archived version:**
 https://doi.org/10.5281/zenodo.21363967
 
-**Concept DOI (all versions):**
+### Executive Summary (Version 1.0)
+
+https://doi.org/10.5281/zenodo.21441172
+
+### Concept DOI (all versions)
+
 https://doi.org/10.5281/zenodo.21360565
 
 ---
@@ -309,6 +315,8 @@ The **BAPIL White Paper** and other research publications may be distributed und
 
 The repository currently contains:
 
+- English Executive Summary (v1.0)
+- Bangla Executive Summary (v1.0)
 - English White Paper (v1.0)
 - Bangla White Paper (v1.0)
 - Supporting international AI governance studies
