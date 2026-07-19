@@ -4,12 +4,14 @@ This directory contains the official release packages for the Bangladesh AI Poli
 
 ## Version 1.0
 
-**Release Date:** 2026-07-14
+**Release Date:** 2026-07-19
 
 | File | Language | Description |
 |------|----------|-------------|
-| `v1.0/BAPIL_White_Paper_v1.pdf` | English | English White Paper (Version 1.0) |
-| `v1.0/BAPIL_White_Paper_v1_bn.pdf` | Bangla | Bangla White Paper (Version 1.0) |
+| `v1.0/BAPIL_Executive_Summary_v1.pdf` | English | Executive Summary (Version 1.0) |
+| `v1.0/BAPIL_Executive_Summary_v1_bn.pdf` | Bangla | Executive Summary (Version 1.0) |
+| `v1.0/BAPIL_White_Paper_v1.pdf` | English | White Paper (Version 1.0) |
+| `v1.0/BAPIL_White_Paper_v1_bn.pdf` | Bangla | White Paper (Version 1.0) |
 
 The editable Markdown source files are maintained in the [`reports/`](../reports/) directory.
 
