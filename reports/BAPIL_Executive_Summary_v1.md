@@ -161,7 +161,7 @@ The operating model contains five linked stages:
 |---|---|
 | **1. Data and Evidence Sources** | Government data, policy documents, legislation, budgets, statistics, research publications, public consultations, and other authorised sources |
 | **2. Data Management and Governance** | Data quality, metadata, interoperability, access control, privacy, security, documentation, and provenance |
-| **3. AI and Analytics** | Search, NLP, forecasting, trend analysis, clustering, knowledge graphs, summarization, and scenario-support methods |
+| **3. AI and Analytics** | Search, NLP, forecasting, trend analysis, clustering, knowledge graphs, summarisation, and scenario-support methods |
 | **4. Knowledge and Decision Support** | Dashboards, policy briefs, evidence maps, alerts, comparison tools, and institutional knowledge repositories |
 | **5. Human Review and Governance** | Expert validation, authorised decision-making, audit trails, transparency, accountability, and continuous evaluation |
 
