@@ -134,7 +134,7 @@ The proposed framework combines research, data, governance, technical prototypin
    Transparency, fairness, accountability, privacy, explainability, human oversight, procurement guidance, audit mechanisms, and risk-management research.
 
 4. **Bangla-Language AI and Knowledge Systems**  
-   Bangla policy search, question answering, summarization, translation, speech technologies, and domain-specific language resources.
+   Bangla policy search, question answering, summarisation, translation, speech technologies, and domain-specific language resources.
 
 5. **National Security, Cybersecurity, and Digital Resilience Research**  
    Secure AI adoption, information integrity, cyber-risk awareness, the resilience of critical systems, and misinformation research.
@@ -176,7 +176,7 @@ Initial research and prototype work could include:
 - **Policy Impact and Monitoring Tools:** structured indicators, implementation tracking, and evidence-based review;
 - **Misinformation and Information-Integrity Research:** detection, risk analysis, and digital-resilience support.
 
-These pilots should begin as controlled research prototypes, use authorized and appropriate data, undergo independent evaluation, and remain subject to human oversight.
+These pilots should begin as controlled research prototypes, use authorised and appropriate data, undergo independent evaluation, and remain subject to human oversight.
 
 # Expected Strategic Impact
 
@@ -196,7 +196,7 @@ These pilots should begin as controlled research prototypes, use authorized and 
 
 Support institutional capacity for AI-assisted evidence synthesis, policy analysis, implementation monitoring, and strategic foresight. Begin with limited, high-value research pilots and clearly defined governance arrangements.
 
-## Priority 2 - Develop a Responsible-AI Governance Framework
+## Priority 2 - Develop a Responsible AI Governance Framework
 
 Create principles, standards, and operational guidance covering human oversight, transparency, fairness, privacy, security, explainability, accountability, procurement, auditability, and redress [1, 4–9, 14, 15].
 
