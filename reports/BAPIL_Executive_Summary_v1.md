@@ -287,3 +287,7 @@ Its success would depend not only on technology, but also on institutional leade
 
 **GitHub Repository:**  
 <https://github.com/md-naim-hassan-saykat/bapil>
+
+---
+
+© 2026 Md Naim Hassan Saykat. Licensed under CC BY 4.0.
