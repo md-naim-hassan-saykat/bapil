@@ -48,7 +48,7 @@ Saykat, M. N. H. (2026). *Bangladesh AI Policy & Innovation Lab (BAPIL): Executi
 
 ## Disclaimer
 
-BAPIL is an independent research and innovation initiative. This document does not represent any government institution, ministry, political organization, or official policy position. Its proposals are intended to support research, informed discussion, stakeholder consultation, and future policy development.
+BAPIL is an independent research and innovation initiative. This document does not represent any government institution, ministry, political organisation, or official policy position. Its proposals are intended to support research, informed discussion, stakeholder consultation, and future policy development.
 
 ## References Note
 
@@ -95,11 +95,11 @@ BAPIL seeks to complement existing national initiatives by providing research, p
 
 ## 1. Increasing Policy and Information Complexity
 
-Government agencies must increasingly interpret large and diverse information sources, including laws, policies, national plans, budgets, administrative records, public consultations, statistical data, international standards, and research evidence. Manual review alone is often slow, fragmented, and difficult to scale. AI-assisted search, summarization, knowledge graphs, comparative analysis, and monitoring tools could help institutions access relevant evidence more efficiently while preserving human authority over decisions [10, 17, 18, 20, 21, 38, 42].
+Government agencies must increasingly interpret large and diverse information sources, including laws, policies, national plans, budgets, administrative records, public consultations, statistical data, international standards, and research evidence. Manual review alone is often slow, fragmented, and difficult to scale. AI-assisted search, summarisation, knowledge graphs, comparative analysis, and monitoring tools could help institutions access relevant evidence more efficiently while preserving human authority over decisions [10, 17, 18, 20, 21, 38, 42].
 
 ## 2. Need for Evidence-Based and Data-Informed Governance
 
-Policy choices increasingly require timely evidence, scenario analysis, implementation monitoring, and evaluation. BAPIL would explore decision-support methods that help authorized officials compare alternatives, identify trends, assess risks, and monitor outcomes. Such systems should augment human judgment, institutional responsibility, and democratic accountability rather than replace them [4, 5, 15, 17, 21].
+Policy choices increasingly require timely evidence, scenario analysis, implementation monitoring, and evaluation. BAPIL would explore decision-support methods that help authorised officials compare alternatives, identify trends, assess risks, and monitor outcomes. Such systems should augment human judgment, institutional responsibility, and democratic accountability rather than replace them [4, 5, 15, 17, 21].
 
 ## 3. Responsible AI and Regulatory Readiness
 
@@ -156,7 +156,7 @@ The operating model contains five linked stages:
 
 | Stage | Purpose |
 |---|---|
-| **1. Data and Evidence Sources** | Government data, policy documents, legislation, budgets, statistics, research publications, public consultations, and other authorized sources |
+| **1. Data and Evidence Sources** | Government data, policy documents, legislation, budgets, statistics, research publications, public consultations, and other authorised sources |
 | **2. Data Management and Governance** | Data quality, metadata, interoperability, access control, privacy, security, documentation, and provenance |
 | **3. AI and Analytics** | Search, NLP, forecasting, trend analysis, clustering, knowledge graphs, summarization, and scenario-support methods |
 | **4. Knowledge and Decision Support** | Dashboards, policy briefs, evidence maps, alerts, comparison tools, and institutional knowledge repositories |
