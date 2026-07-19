@@ -92,8 +92,6 @@ BAPIL seeks to complement existing national initiatives by providing research, p
 
 ![Conceptual positioning of BAPIL within the broader Bangladesh AI ecosystem.](figures/figure01.png)
 
-*Figure 1. Conceptual positioning of BAPIL within the broader Bangladesh AI ecosystem.*
-
 \newpage
 
 # Why Bangladesh Needs BAPIL
@@ -154,8 +152,6 @@ The proposed framework combines research, data, governance, technical prototypin
 BAPIL would operate as a research and knowledge platform that transforms diverse information sources into structured evidence and policy insight.
 
 ![Conceptual AI-enabled policy-intelligence workflow.](figures/figure05.png)
-
-*Figure 2. Conceptual AI-enabled policy-intelligence workflow.*
 
 The operating model contains five linked stages:
 
