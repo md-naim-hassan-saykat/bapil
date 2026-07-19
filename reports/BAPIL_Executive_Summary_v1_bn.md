@@ -17,8 +17,11 @@ lang: bn
 
 জুলাই ২০২৬
 
-**সম্পূর্ণ শ্বেতপত্রের DOI:** <https://doi.org/10.5281/zenodo.21363967>  
-**গিটহাব রিপোজিটরি:** <https://github.com/md-naim-hassan-saykat/bapil>
+**সম্পূর্ণ শ্বেতপত্রের DOI:** 
+<https://doi.org/10.5281/zenodo.21363967>
+
+**গিটহাব রিপোজিটরি:** 
+<https://github.com/md-naim-hassan-saykat/bapil>
 
 ---
 
