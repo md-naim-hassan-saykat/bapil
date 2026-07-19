@@ -41,13 +41,13 @@ July 2026
 | **Language** | English |
 | **Document Type** | Executive Summary Accompanying the BAPIL White Paper (Version 1.0.1) |
 | **License** | Creative Commons Attribution 4.0 International (CC BY 4.0) |
-| **Executive Summary DOI** | <https://doi.org/10.5281/zenodo.NEW_DOI> |
+| **Executive Summary DOI** | <https://doi.org/10.5281/zenodo.21441172> |
 | **Full White Paper DOI** | <https://doi.org/10.5281/zenodo.21363967> |
 | **Repository** | <https://github.com/md-naim-hassan-saykat/bapil> |
 
 ## Citation
 
-Saykat, M. N. H. (2026). *Bangladesh AI Policy & Innovation Lab (BAPIL): Executive Summary* (Version 1.0). Executive summary accompanying the *Bangladesh AI Policy & Innovation Lab (BAPIL) White Paper* (Version 1.0.1). https://doi.org/10.5281/zenodo.NEW_DOI
+Saykat, M. N. H. (2026). *Bangladesh AI Policy & Innovation Lab (BAPIL): Executive Summary* (Version 1.0). Executive summary accompanying the *Bangladesh AI Policy & Innovation Lab (BAPIL) White Paper* (Version 1.0.1). https://doi.org/10.5281/zenodo.21441172
 
 ## Disclaimer
 
@@ -284,7 +284,7 @@ Its success would depend not only on technology, but also on institutional leade
 # Resources
 
 **Executive Summary DOI:**  
-<https://doi.org/10.5281/zenodo.NEW_DOI>
+<https://doi.org/10.5281/zenodo.21441172>
 
 **Full White Paper DOI:**  
 <https://doi.org/10.5281/zenodo.21363967>
