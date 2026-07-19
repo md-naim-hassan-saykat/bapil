@@ -286,9 +286,15 @@ https://doi.org/10.5281/zenodo.21360565
 
 ## Citation
 
-If you use BAPIL in research, policy work, publications, or derivative projects, please cite:
+If you use BAPIL in research, policy work, publications, or derivative projects, please cite the appropriate publication.
 
-> Saykat, M. N. H. (2026). *Bangladesh AI Policy & Innovation Lab (BAPIL) White Paper* (Version 1.0). Zenodo. https://doi.org/10.5281/zenodo.21360566
+### White Paper
+
+> Saykat, M. N. H. (2026). *Bangladesh AI Policy & Innovation Lab (BAPIL) White Paper* (Version 1.0). Zenodo. https://doi.org/10.5281/zenodo.21363967
+
+### Executive Summary
+
+> Saykat, M. N. H. (2026). *Bangladesh AI Policy & Innovation Lab (BAPIL): Executive Summary* (Version 1.0). Executive summary accompanying the *Bangladesh AI Policy & Innovation Lab (BAPIL) White Paper* (Version 1.0.1). Zenodo. https://doi.org/10.5281/zenodo.21441172
 
 ---
 
