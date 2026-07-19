@@ -277,6 +277,8 @@ Bangladesh has an opportunity to move beyond isolated AI applications toward a c
 
 Its success would depend not only on technology, but also on institutional leadership, trustworthy data, ethical governance, cybersecurity, skilled people, transparent processes, and public trust. BAPIL is therefore proposed as a long-term research and collaboration platform that supports existing national initiatives and helps ensure that AI contributes to public benefit, inclusive development, institutional resilience, and Bangladesh's long-term transformation.
 
+\vspace{-0.4cm}
+
 # Resources
 
 **Executive Summary DOI:**  
