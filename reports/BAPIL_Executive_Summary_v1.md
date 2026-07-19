@@ -44,7 +44,7 @@ July 2026
 
 ## Citation
 
-Saykat, M. N. H. (2026). *Bangladesh AI Policy & Innovation Lab (BAPIL): Executive Summary* (Version 1.0). Accompanying executive summary to the BAPIL White Paper (Version 1.0.1). https://doi.org/10.5281/zenodo.NEW_DOI
+Saykat, M. N. H. (2026). *Bangladesh AI Policy & Innovation Lab (BAPIL): Executive Summary* (Version 1.0). Executive summary accompanying the *Bangladesh AI Policy & Innovation Lab (BAPIL) White Paper* (Version 1.0.1). https://doi.org/10.5281/zenodo.NEW_DOI
 
 ## Disclaimer
 
@@ -58,7 +58,7 @@ The numbered citations used throughout this Executive Summary correspond to the 
 
 # Executive Summary
 
-Artificial Intelligence (AI) is increasingly shaping governance, public administration, economic planning, national security, scientific research, and public service delivery. Governments around the world are exploring how AI, data analytics, digital infrastructure, and knowledge-management systems can improve institutional effectiveness, policy evaluation, and citizen outcomes [1–17, 21, 26].
+Artificial Intelligence (AI) is increasingly shaping governance, public administration, economic planning, national security, scientific research, and public service delivery. Governments around the world are exploring how AI, data analytics, digital infrastructure, and knowledge management systems can improve institutional effectiveness, policy evaluation, and citizen outcomes [1–17, 21, 26].
 
 Bangladesh has established strong digital foundations through national digital-transformation programmes, expanding digital public services, national data initiatives, and emerging AI programmes. However, growing policy complexity, rapidly expanding public-sector data, and evolving technological risks require stronger capabilities in policy analysis, evidence synthesis, data governance, strategic foresight, responsible AI oversight, and data-driven decision support [28–33, 82, 83].
 
@@ -103,7 +103,7 @@ Policy choices increasingly require timely evidence, scenario analysis, implemen
 
 ## 3. Responsible AI and Regulatory Readiness
 
-As AI adoption expands across public and private sectors, Bangladesh will need stronger frameworks for transparency, accountability, fairness, privacy, cybersecurity, explainability, procurement, auditability, and human oversight. Establishing responsible-AI practices early can reduce institutional risk and increase public trust [1, 4–9, 14, 15, 50, 51, 68, 69].
+As AI adoption expands across public and private sectors, Bangladesh will need stronger frameworks for transparency, accountability, fairness, privacy, cybersecurity, explainability, procurement, auditability, and human oversight. Establishing responsible AI practices early can reduce institutional risk and increase public trust [1, 4–9, 14, 15, 50, 51, 68, 69].
 
 ## 4. Bangla-Language AI and Digital Inclusion
 
@@ -134,7 +134,7 @@ The proposed framework combines research, data, governance, technical prototypin
    Bangla policy search, question answering, summarization, translation, speech technologies, and domain-specific language resources.
 
 5. **National Security, Cybersecurity, and Digital Resilience Research**  
-   Secure AI adoption, information integrity, cyber-risk awareness, critical-system resilience, and misinformation research.
+   Secure AI adoption, information integrity, cyber-risk awareness, the resilience of critical systems, and misinformation research.
 
 6. **AI Education and Talent Development**  
    Interdisciplinary curricula, public-sector training, graduate research, professional development, and broader AI literacy.
@@ -183,7 +183,7 @@ These pilots should begin as controlled research prototypes, use authorized and 
 | **Universities and Researchers** | Shared research agendas, interdisciplinary collaboration, graduate research opportunities, open methods, and international partnerships |
 | **Industry and Startups** | Responsible innovation pathways, research collaboration, public-interest technology opportunities, and stronger technology-transfer networks |
 | **Citizens and Civil Society** | Greater accessibility, transparency, participation, Bangla-language services, and stronger safeguards for public-interest AI |
-| **Development Partners** | A structured platform for capacity building, technical cooperation, evaluation, and alignment with responsible-AI principles |
+| **Development Partners** | A structured platform for capacity building, technical cooperation, evaluation, and alignment with responsible AI principles |
 
 \newpage
 
@@ -234,7 +234,7 @@ Establish mechanisms for horizon scanning, scenario analysis, emerging-technolog
 | Phase | Indicative Focus | Illustrative Outputs |
 |---|---|---|
 | **Phase 1: Foundation** | Stakeholder consultation, institutional mapping, data and legal review, research agenda, governance principles | Scoping report, governance charter, pilot selection criteria, risk register |
-| **Phase 2: Research and Prototyping** | Controlled prototypes, Bangla AI research, policy-search and analytics tools, evaluation methods | Pilot systems, technical reports, datasets and benchmarks where appropriate |
+| **Phase 2: Research and Prototyping** | Controlled prototypes, Bangla AI research, policy search and analytics tools, evaluation methods | Pilot systems, technical reports, datasets and benchmarks where appropriate |
 | **Phase 3: Institutional Collaboration** | Joint programmes with government, universities, industry, civil society, and development partners | Research partnerships, training programmes, policy dialogues, independent reviews |
 | **Phase 4: Evaluation and Scale-Up** | Impact assessment, security testing, ethical review, institutional adoption decisions | Evaluation reports, revised governance guidance, scale-up recommendations |
 | **Long-Term: 2030–2041** | National capability, international collaboration, foresight, sustainable research infrastructure | Mature policy-intelligence ecosystem, Bangla AI capacity, regional partnerships |
