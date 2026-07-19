@@ -279,15 +279,10 @@ Its success would depend not only on technology, but also on institutional leade
 
 # Resources
 
-**Executive Summary DOI:**  
-<https://doi.org/10.5281/zenodo.21441172>
+**Executive Summary DOI:** <https://doi.org/10.5281/zenodo.21441172>
 
-**Full White Paper DOI:**  
-<https://doi.org/10.5281/zenodo.21363967>
+**Full White Paper DOI:** <https://doi.org/10.5281/zenodo.21363967>
 
-**GitHub Repository:**  
-<https://github.com/md-naim-hassan-saykat/bapil>
-
-\vspace{-0.3cm}
+**GitHub Repository:** <https://github.com/md-naim-hassan-saykat/bapil>
 
 \noindent\small © 2026 Md Naim Hassan Saykat. Licensed under CC BY 4.0.
