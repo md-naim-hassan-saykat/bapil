@@ -1,0 +1,32 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\setmainfont{Latin Modern Roman}
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali]
+\usepackage[Latin,Bengali]{ucharclasses}
+\setTransitionsFor{Bengali}{\begingroup\bengalifont}{\endgroup}
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{17cm}
+{\large\bfseries Table 6.}\ {\large Strengths, weaknesses, opportunities and threats (SWOT)}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=0.377\hsize\raggedright\arraybackslash}X>{\hsize=1.623\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{Category} & \textbf{Factors} \\
+\midrule
+\textbf{Strengths} & Large digital service footprint (national portal, e-services, e-Nothi); experience with digital transformation at scale; a large, young and digitally active population; active Bangla NLP research community; existing national AI programmes \\
+\textbf{Weaknesses} & Scattered and often scanned official documents; inconsistent metadata and licences; scarce compute; limited AI assurance skills; few independent evaluations; dependence on project funding \\
+\textbf{Opportunities} & National AI policy drafting from Q4 2026; new data laws and the national data exchange; open-weight models that run locally; Bangla as a large-language opportunity; development-partner interest in digital public goods \\
+\textbf{Threats} & Political and institutional change; misinformation and synthetic media; cyber attacks and outages; vendor lock-in; erosion of trust if AI tools fail visibly; talent migration \\
+\bottomrule
+\end{tabularx}
+\par\vspace{3pt}{\scriptsize\color{gray} Source: BAPIL Technical Blueprint, Version 1.0 (2026). CC BY 4.0.}
+\end{minipage}
+\end{document}

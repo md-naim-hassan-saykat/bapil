@@ -1,0 +1,35 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\setmainfont{Latin Modern Roman}
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali]
+\usepackage[Latin,Bengali]{ucharclasses}
+\setTransitionsFor{Bengali}{\begingroup\bengalifont}{\endgroup}
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{17cm}
+{\large\bfseries Table 29.}\ {\large Model selection criteria and weights}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=1.114\hsize\raggedright\arraybackslash}X>{\hsize=0.343\hsize\raggedright\arraybackslash}X>{\hsize=1.543\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{Criterion} & \textbf{Weight} & \textbf{Evidence} \\
+\midrule
+Bangla and English quality on BanglaPolicyQA & 30\% & Retrieval and answer metrics of Table 28 on the frozen benchmark \\
+Faithfulness to cited sources & 20\% & Citation precision and unsupported-claim rate \\
+Safety and robustness & 15\% & Red-team results; prompt-injection success rate; refusal behaviour \\
+Deployability on local hardware & 15\% & Memory and latency at the target quantisation on pilot GPUs \\
+Licence and openness & 10\% & Licence terms; availability of weights; usage restrictions \\
+Transparency and documentation & 10\% & Model card quality; training-data disclosure [50] \\
+\bottomrule
+\end{tabularx}
+\par\vspace{5pt}{\footnotesize\itshape A model that fails any safety threshold in Table 28 is excluded regardless of its total score.}
+\par\vspace{3pt}{\scriptsize\color{gray} Source: BAPIL Technical Blueprint, Version 1.0 (2026). CC BY 4.0.}
+\end{minipage}
+\end{document}

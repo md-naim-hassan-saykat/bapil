@@ -1,0 +1,37 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\setmainfont{Latin Modern Roman}
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali]
+\usepackage[Latin,Bengali]{ucharclasses}
+\setTransitionsFor{Bengali}{\begingroup\bengalifont}{\endgroup}
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{17cm}
+{\large\bfseries Table 53.}\ {\large Logical framework (36-month programme)}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=0.592\hsize\raggedright\arraybackslash}X>{\hsize=1.232\hsize\raggedright\arraybackslash}X>{\hsize=1.232\hsize\raggedright\arraybackslash}X>{\hsize=0.900\hsize\raggedright\arraybackslash}X>{\hsize=1.043\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{Level} & \textbf{Narrative summary} & \textbf{Indicators} & \textbf{Means of verification} & \textbf{Assumptions} \\
+\midrule
+\textbf{Impact} & Public policy in Bangladesh is better grounded in evidence, and AI in the public sector is trusted and well governed & Official documents citing BAPIL evidence; trust measures in user surveys & Document analysis; independent evaluation & Political commitment to evidence-based policy continues \\
+\textbf{Outcome 1} & Officials and researchers find and cite authoritative evidence faster and more reliably & Time saved on evidence search; monthly active users & Time-to-evidence studies; usage logs & Agencies release staff time for pilots \\
+\textbf{Outcome 2} & AI systems in BAPIL's scope are governed transparently and safely & 100\% registered; serious incidents handled in time & Transparency register; incident records & ERRC remains independent and resourced \\
+\textbf{Outcome 3} & National capacity in Bangla policy AI grows & Officials trained; fellows; open datasets reused & Training records; download and citation counts & Trained staff stay in relevant posts \\
+\textbf{Output 1} & Policy search and budget dataset piloted with users & Pilots passing G3; Recall@10 & Gate records; benchmark reports & Data access granted on time \\
+\textbf{Output 2} & Open benchmark, corpus and evaluation methods published & Benchmark questions; releases with DOIs & Zenodo and GitHub records & Annotators available \\
+\textbf{Output 3} & Governance system operational & Charter adopted; ERRC decisions published & Board minutes; register & Members nominated on time \\
+\textbf{Output 4} & Officials and specialists trained & Officials trained by programme & Attendance and assessment records & Agencies nominate participants \\
+\textbf{Activities} & Workplan of Chapter 15 and the work packages of the pilots & Milestones MS1 to MS9 & Progress reports & Funding released as planned \\
+\bottomrule
+\end{tabularx}
+\par\vspace{3pt}{\scriptsize\color{gray} Source: BAPIL Technical Blueprint, Version 1.0 (2026). CC BY 4.0.}
+\end{minipage}
+\end{document}

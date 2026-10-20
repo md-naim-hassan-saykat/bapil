@@ -1,0 +1,41 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\setmainfont{Noto Serif}
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali]
+\usepackage[Latin,Bengali]{ucharclasses}
+\setTransitionsFor{Bengali}{\begingroup\bengalifont}{\endgroup}
+\usepackage{newunicodechar}
+\newunicodechar{।}{{\bengalifont\char"0964}}
+\newunicodechar{॥}{{\bengalifont\char"0965}}
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{17cm}
+{\large\bfseries সারণি ২৭।}\ {\large বাংলা টেক্সটের চ্যালেঞ্জ ও প্রমিতকরণ নিয়ম}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=0.750\hsize\raggedright\arraybackslash}X>{\hsize=0.947\hsize\raggedright\arraybackslash}X>{\hsize=1.303\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{চ্যালেঞ্জ} & \textbf{উদাহরণ} & \textbf{নিয়ম বা পদ্ধতি} \\
+\midrule
+নুকতাযুক্ত বর্ণের বিকল্প এনকোডিং & য় একটি কোড পয়েন্ট অথবা য + নুকতা & ইউনিকোড NFC (U+09DC, U+09DD, U+09DF সামঞ্জস্যপূর্ণভাবে বিশ্লিষ্ট করে) \\
+পুরোনো রীতির খণ্ড-ত & ৎ-এর বদলে ত + হসন্ত + ZWJ & শূন্য-প্রস্থ অক্ষর অপসারণের আগে অনুক্রমটি U+09CE-তে রূপান্তর \\
+শূন্য-প্রস্থ অক্ষর & শব্দের ভেতরে ZWJ, ZWNJ, সফট হাইফেন & মিলের জন্য অপসারণ; প্রদর্শনের জন্য মূলরূপ সংরক্ষণ \\
+বাংলা ও ইংরেজি অঙ্ক & ২০২৬ ও 2026 & মিলের জন্য বাংলা অঙ্ককে ইংরেজি অঙ্কে রূপান্তর \\
+বিভক্তি ও প্রত্যয় & নীতি, নীতির, নীতিসমূহের & হালকা প্রত্যয় অপসারণ; মূলরূপ ও শব্দমূল উভয়ই সূচিবদ্ধ \\
+বানানভেদ ও বানান-সংস্কার & সরকারী ও সরকারি; ভিন্ন এনকোডিংয়ে লেখা জাতীয় & ভাষা-সম্পাদকদের রক্ষিত বিকল্প-তালিকা; প্রথমে NFC \\
+ভাষা-মিশ্রণ ও রোমান হরফে বাংলা & budget বরাদ্দ; bajet-এর মতো রোমান হরফের প্রশ্ন & দ্বিভাষিক শব্দকোষ; পরবর্তী সংস্করণে প্রতিবর্ণীকরণের বিকল্প \\
+যুক্তাক্ষরে OCR ত্রুটি & ক্ষ, ষ্ণ, ন্ত্র ভুল পড়া & পৃষ্ঠাভিত্তিক OCR-মানের স্কোর; মানব-সংশোধনের সারি \\
+বঙ্গাব্দ তারিখ & বঙ্গাব্দে দেওয়া তারিখ & যেখানে দেওয়া আছে সেখানে খ্রিস্টাব্দ ও বঙ্গাব্দ উভয় তারিখ সংরক্ষণ \\
+নামের প্রতিবর্ণীকরণ & মন্ত্রণালয় ও স্থানের নামের একাধিক বানান & বিকল্পসহ নামের প্রামাণ্য তালিকা \\
+\bottomrule
+\end{tabularx}
+\par\vspace{3pt}{\scriptsize\color{gray} উৎস: BAPIL কারিগরি ব্লুপ্রিন্ট, সংস্করণ ১.০ (২০২৬)। CC BY 4.0।}
+\end{minipage}
+\end{document}

@@ -1,0 +1,34 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\setmainfont{Latin Modern Roman}
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali]
+\usepackage[Latin,Bengali]{ucharclasses}
+\setTransitionsFor{Bengali}{\begingroup\bengalifont}{\endgroup}
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{17cm}
+{\large\bfseries Table 17.}\ {\large Competency framework by role family and level}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=0.870\hsize\raggedright\arraybackslash}X>{\hsize=1.043\hsize\raggedright\arraybackslash}X>{\hsize=1.043\hsize\raggedright\arraybackslash}X>{\hsize=1.043\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{Role family} & \textbf{Aware} & \textbf{Practitioner} & \textbf{Expert} \\
+\midrule
+Public leaders & What AI can and cannot do; risk tiers; when to ask for evidence & Sponsor pilots; read evaluation reports; apply procurement clauses & Set strategy; chair reviews; balance innovation and safeguards \\
+Policy analysts & Use cited search; verify sources; recognise abstention & Design evidence questions; spot bias and gaps; brief on limitations & Co-design tools; define benchmarks; train peers \\
+Governance, legal and ethics staff & Data classes; prohibited uses; DPIA basics & Run tier assessments, DPIAs and gate reviews & Lead ERRC work; audit systems; shape national guidance \\
+Data stewards & Metadata and licences; data classes & Quality metrics; agreements through the data exchange & Design catalogues and data-sharing frameworks \\
+ML and NLP engineers & Bangla text basics; evaluation metrics & Build retrieval and evaluation pipelines; write model cards & Adapt models; red-team; lead benchmark design \\
+Platform and security engineers & Zones; secrets handling; logging & Infrastructure as code; SBOMs; incident response & Zero-trust design; threat modelling for AI systems \\
+\bottomrule
+\end{tabularx}
+\par\vspace{3pt}{\scriptsize\color{gray} Source: BAPIL Technical Blueprint, Version 1.0 (2026). CC BY 4.0.}
+\end{minipage}
+\end{document}

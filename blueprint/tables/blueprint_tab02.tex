@@ -1,0 +1,31 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\setmainfont{Latin Modern Roman}
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali]
+\usepackage[Latin,Bengali]{ucharclasses}
+\setTransitionsFor{Bengali}{\begingroup\bengalifont}{\endgroup}
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{22cm}
+{\large\bfseries Table 2.}\ {\large System maturity classes used throughout this Blueprint}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=0.709\hsize\raggedright\arraybackslash}X>{\hsize=1.418\hsize\raggedright\arraybackslash}X>{\hsize=0.927\hsize\raggedright\arraybackslash}X>{\hsize=0.927\hsize\raggedright\arraybackslash}X>{\hsize=1.036\hsize\raggedright\arraybackslash}X>{\hsize=0.982\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{Class} & \textbf{Definition} & \textbf{Users} & \textbf{Permitted data} & \textbf{Example} & \textbf{Approval} \\
+\midrule
+\textbf{R} Research prototype & Experimental system used to test methods; outputs never used for official decisions & BAPIL researchers and research partners & P0; P1 under a data-sharing agreement & Benchmark experiments with open models & Gates G0 and G1 \\
+\textbf{A} Advisory tool & Used by officials as one input among several; a person reviews every output before use & Officials in pilot agencies & P0 and P1; de-identified P2 only & Policy Search pilot in two to three agencies & Gates G2 and G3; ERRC approval for tier T2 \\
+\textbf{O} Operational system & Integrated into agency workflows and owned and operated by the agency, not by BAPIL & Host agency staff and, where intended, the public & As authorised by law and the agency & Agency-operated search service & Gate G4 with host-agency legal review \\
+\bottomrule
+\end{tabularx}
+\par\vspace{3pt}{\scriptsize\color{gray} Source: BAPIL Technical Blueprint, Version 1.0 (2026). CC BY 4.0.}
+\end{minipage}
+\end{document}

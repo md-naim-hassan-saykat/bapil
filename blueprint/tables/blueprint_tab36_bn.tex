@@ -1,0 +1,41 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\setmainfont{Noto Serif}
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali]
+\usepackage[Latin,Bengali]{ucharclasses}
+\setTransitionsFor{Bengali}{\begingroup\bengalifont}{\endgroup}
+\usepackage{newunicodechar}
+\newunicodechar{।}{{\bengalifont\char"0964}}
+\newunicodechar{॥}{{\bengalifont\char"0965}}
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{17cm}
+{\large\bfseries সারণি ৩৬।}\ {\large রেফারেন্স বাস্তবায়নের মডিউলসমূহ}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=0.819\hsize\raggedright\arraybackslash}X>{\hsize=1.735\hsize\raggedright\arraybackslash}X>{\hsize=0.771\hsize\raggedright\arraybackslash}X>{\hsize=0.675\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{মডিউল} & \textbf{কী করে} & \textbf{প্রয়োজনীয়তা} & \textbf{পরীক্ষা} \\
+\midrule
+bapil.text & বাংলার ইউনিকোড প্রমিতকরণ, অঙ্ক একীকরণ, হালকা বাংলা প্রত্যয় অপসারণ, দ্বিভাষিক শব্দকোষ সম্প্রসারণ & FR-01, NFR-01 & test\_text \\
+bapil.corpus & Markdown নথি লোড, উদ্ধৃতিযোগ্য অনুচ্ছেদে বিভাজন, উৎস-তথ্য ও SHA-256 চেকসাম সংরক্ষণ & FR-03 & test\_corpus \\
+bapil.search & ভাষা-সচেতন টোকেনাইজেশন ও আন্তঃভাষিক প্রশ্ন-সম্প্রসারণসহ অনুচ্ছেদভিত্তিক BM25 সূচি & FR-01 & test\_search \\
+bapil.answer & নিষ্কাশনমূলক উত্তর, যার প্রতিটি বাক্যে উদ্ধৃতি থাকে; প্রমাণ-সীমার নিচে বিরত থাকে & FR-02, NFR-08 & test\_answer \\
+bapil.risk & সংযুক্তি খ-এর ঝুঁকি-স্তর প্রশ্নমালা ও স্কোরিং নিয়ম; স্তর, কারণ ও আবশ্যিক নিয়ন্ত্রণ প্রদান & FR-07, GR-02, GR-06 & test\_risk \\
+bapil.registry & JSON স্কিমায় যাচাইকৃত এআই ব্যবস্থা নিবন্ধন; জনসমক্ষে স্বচ্ছতা নিবন্ধন রপ্তানি & FR-06, FR-09 & test\_registry \\
+bapil.evaluate & সংস্করণকৃত প্রশ্নসেটে Recall@k, MRR ও nDCG; JSON প্রতিবেদন & FR-08 & test\_evaluate \\
+bapil.audit & যাচাই-সুবিধাসহ হ্যাশ-শৃঙ্খলিত, হস্তক্ষেপ-শনাক্তযোগ্য JSONL নিরীক্ষা লগ & GR-04 & test\_audit \\
+bapil.api & Python স্ট্যান্ডার্ড লাইব্রেরিভিত্তিক ন্যূনতম JSON HTTP API (অনুসন্ধান, উত্তর, ঝুঁকি) & FR-10 & test\_api \\
+bapil.cli & কমান্ড লাইন: index, search, ask, assess, evaluate, register, verify-log & সব & test\_cli \\
+\bottomrule
+\end{tabularx}
+\par\vspace{3pt}{\scriptsize\color{gray} উৎস: BAPIL কারিগরি ব্লুপ্রিন্ট, সংস্করণ ১.০ (২০২৬)। CC BY 4.0।}
+\end{minipage}
+\end{document}

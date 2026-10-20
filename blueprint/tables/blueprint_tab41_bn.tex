@@ -1,0 +1,41 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\setmainfont{Noto Serif}
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali]
+\usepackage[Latin,Bengali]{ucharclasses}
+\setTransitionsFor{Bengali}{\begingroup\bengalifont}{\endgroup}
+\usepackage{newunicodechar}
+\newunicodechar{।}{{\bengalifont\char"0964}}
+\newunicodechar{॥}{{\bengalifont\char"0965}}
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{22cm}
+{\large\bfseries সারণি ৪১।}\ {\large আন্তর্জাতিক ও জাতীয় কাঠামোর সঙ্গে BAPIL নিয়ন্ত্রণ-ক্ষেত্রের নির্দেশক সংযোগ-সারণি}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=1.102\hsize\raggedright\arraybackslash}X>{\hsize=0.907\hsize\raggedright\arraybackslash}X>{\hsize=1.037\hsize\raggedright\arraybackslash}X>{\hsize=0.778\hsize\raggedright\arraybackslash}X>{\hsize=1.037\hsize\raggedright\arraybackslash}X>{\hsize=0.972\hsize\raggedright\arraybackslash}X>{\hsize=1.167\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{BAPIL নিয়ন্ত্রণ-ক্ষেত্র} & \textbf{OECD এআই নীতিমালা} & \textbf{UNESCO সুপারিশ} & \textbf{NIST AI RMF 1.0} & \textbf{ISO/\allowbreak{}IEC 42001:2023} & \textbf{ইইউ এআই আইন} & \textbf{বাংলাদেশ (খসড়া নীতি ও আইন)} \\
+\midrule
+শাসন ও জবাবদিহি & ১.৫ জবাবদিহি & দায়িত্ব ও জবাবদিহি & GOVERN & অনুচ্ছেদ ৫ ও ৬; পরিশিষ্ট A.2, A.3 & অনু. ১৭, অনু. ২৬ & প্রস্তাবিত স্বাধীন তত্ত্বাবধান কমিটি \\
+ঝুঁকি মূল্যায়ন ও স্তরবিন্যাস & ১.৪ দৃঢ়তা, নিরাপত্তা ও সুরক্ষা & আনুপাতিকতা; নৈতিক প্রভাব মূল্যায়ন & MAP & অনুচ্ছেদ ৬.১, ৮.২ থেকে ৮.৪; A.5 & অনু. ৫, ৯, ২৭ & নিষিদ্ধ, উচ্চ, সীমিত ও নিম্ন ঝুঁকির শ্রেণি; উচ্চ ঝুঁকিতে AIA \\
+ডেটা শাসন ও গোপনীয়তা & ১.২ মানবাধিকার, গোপনীয়তাসহ & গোপনীয়তা ও উপাত্ত সুরক্ষা & MAP, MEASURE & A.7 এআই ব্যবস্থার ডেটা & অনু. ১০ & ব্যক্তিগত উপাত্ত সুরক্ষা আইন ২০২৬; জাতীয় উপাত্ত ব্যবস্থাপনা আইন ২০২৬ \\
+ন্যায্যতা ও বৈষম্যহীনতা & ১.২ ন্যায্যতা & ন্যায্যতা ও বৈষম্যহীনতা & MEASURE & A.5, A.7 & অনু. ১০(২)(চ) & খসড়া নীতিতে প্রস্তাবিত পক্ষপাত-নিরীক্ষা \\
+স্বচ্ছতা ও নথিভুক্তি & ১.৩ স্বচ্ছতা ও ব্যাখ্যাযোগ্যতা & স্বচ্ছতা ও ব্যাখ্যাযোগ্যতা & GOVERN, MAP & A.6, A.8 & অনু. ১১, ১৩, ৫০ & এআই-সৃষ্ট কনটেন্টে লেবেল (খসড়া নীতি) \\
+মানবিক তত্ত্বাবধান & ১.২ মানব-কর্তৃত্ব ও তত্ত্বাবধান & মানবিক তত্ত্বাবধান ও নির্ধারণ & MANAGE & A.9 এআই ব্যবস্থার ব্যবহার & অনু. ১৪ & উচ্চ-ঝুঁকিপূর্ণ ব্যবহারে মানবিক তত্ত্বাবধান (খসড়া নীতি) \\
+দৃঢ়তা, নিরাপত্তা ও নির্ভুলতা & ১.৪ দৃঢ়তা, নিরাপত্তা ও সুরক্ষা & নিরাপত্তা ও সুরক্ষা & MEASURE & A.6 যাচাই ও বৈধকরণ & অনু. ১৫ & সংশোধিত সাইবার নিরাপত্তা আইন ২০২৬ \\
+পর্যবেক্ষণ ও ঘটনা & ১.৪, ১.৫ & বহু-অংশীজন ও অভিযোজনক্ষম শাসন & MANAGE & অনুচ্ছেদ ৯ ও ১০ & অনু. ৭২, ৭৩ & তত্ত্বাবধান কমিটির নিরীক্ষা (খসড়া নীতি) \\
+অংশীজন সম্পৃক্ততা ও প্রতিকার & ১.৩ ফলাফল চ্যালেঞ্জের সুযোগ & সচেতনতা ও সাক্ষরতা; বহু-অংশীজন শাসন & GOVERN 5 & A.8 আগ্রহী পক্ষের জন্য তথ্য & অনু. ৮৫, ৮৬ & জাতীয় এআই নীতিতে জন-পরামর্শ \\
+\bottomrule
+\end{tabularx}
+\par\vspace{5pt}{\footnotesize\itshape শুধু দিকনির্দেশনার জন্য নির্দেশক সংযোগ; এটি আইনি সম্মতি-মূল্যায়ন নয়। কানাডার স্বয়ংক্রিয় সিদ্ধান্তগ্রহণ নির্দেশনা ঝুঁকি-স্তর পদ্ধতিকে প্রভাবিত করেছে (অধ্যায় ১৩)।}
+\par\vspace{3pt}{\scriptsize\color{gray} উৎস: BAPIL কারিগরি ব্লুপ্রিন্ট, সংস্করণ ১.০ (২০২৬)। CC BY 4.0।}
+\end{minipage}
+\end{document}

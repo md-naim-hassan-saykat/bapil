@@ -1,0 +1,40 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\setmainfont{Noto Serif}
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali]
+\usepackage[Latin,Bengali]{ucharclasses}
+\setTransitionsFor{Bengali}{\begingroup\bengalifont}{\endgroup}
+\usepackage{newunicodechar}
+\newunicodechar{।}{{\bengalifont\char"0964}}
+\newunicodechar{॥}{{\bengalifont\char"0965}}
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{22cm}
+{\large\bfseries সারণি ৫০।}\ {\large নির্দেশক ৩৬ মাসের বাজেট (কোটি টাকা)}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=2.278\hsize\raggedright\arraybackslash}X>{\hsize=0.759\hsize\raggedright\arraybackslash}X>{\hsize=0.759\hsize\raggedright\arraybackslash}X>{\hsize=0.759\hsize\raggedright\arraybackslash}X>{\hsize=0.759\hsize\raggedright\arraybackslash}X>{\hsize=0.684\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{খাত} & \textbf{বছর ১} & \textbf{বছর ২} & \textbf{বছর ৩} & \textbf{মোট} & \textbf{অংশ} \\
+\midrule
+মূল জনবল & ১.৮২ & ২.৮৮ & ৩.৫৫ & ৮.২৫ & ৪৫\% \\
+ভাষা-সম্পাদক ও ফেলোশিপ & ০.৪১ & ০.৬৩ & ০.৭৩ & ১.৭৬ & ১০\% \\
+কম্পিউটিং ও হোস্টিং & ১.৩৯ & ১.৩৭ & ০.৭৫ & ৩.৫১ & ১৯\% \\
+ডেটা ও টীকাকরণ & ০.৩৮ & ০.৪৪ & ০.৩৫ & ১.১৭ & ৬\% \\
+প্রশিক্ষণ ও সম্প্রসারণ & ০.২৩ & ০.৪২ & ০.৪২ & ১.০৭ & ৬\% \\
+শাসন, নিরীক্ষা ও মূল্যায়ন & ০.২৮ & ০.৩৬ & ০.৪১ & ১.০৫ & ৬\% \\
+পরোক্ষ ব্যয় ও আপৎকালীন সংস্থান (১০\%) & ০.৪৫ & ০.৬১ & ০.৬২ & ১.৬৮ & ৯\% \\
+\textbf{মোট} & \textbf{৪.৯৬} & \textbf{৬.৭১} & \textbf{৬.৮৩} & \textbf{১৮.৪৯} & \textbf{১০০\%} \\
+\bottomrule
+\end{tabularx}
+\par\vspace{5pt}{\footnotesize\itshape blueprint/\allowbreak{}src/\allowbreak{}budget\_model.py দ্বারা সারণি ৪৯-এর অনুমান থেকে হিসাবকৃত। পূর্ণসংখ্যায় রূপান্তরের কারণে মোট সামান্য ভিন্ন হতে পারে। মোট অঙ্ক প্রায় ১.৪৯ মিলিয়ন মার্কিন ডলারের সমতুল্য, যা বাংলাদেশ এআই হাব প্রকল্পের প্রতিবেদিত ১৯২.৬৬ কোটি টাকা ব্যয়ের এক-দশমাংশেরও কম [35]।}
+\par\vspace{3pt}{\scriptsize\color{gray} উৎস: BAPIL কারিগরি ব্লুপ্রিন্ট, সংস্করণ ১.০ (২০২৬)। CC BY 4.0।}
+\end{minipage}
+\end{document}

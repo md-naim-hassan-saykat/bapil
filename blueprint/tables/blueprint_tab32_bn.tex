@@ -1,0 +1,37 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\setmainfont{Noto Serif}
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali]
+\usepackage[Latin,Bengali]{ucharclasses}
+\setTransitionsFor{Bengali}{\begingroup\bengalifont}{\endgroup}
+\usepackage{newunicodechar}
+\newunicodechar{।}{{\bengalifont\char"0964}}
+\newunicodechar{॥}{{\bengalifont\char"0965}}
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{17cm}
+{\large\bfseries সারণি ৩২।}\ {\large NIST CSF 2.0-এর কার্যাবলির সঙ্গে নিরাপত্তা-নিয়ন্ত্রণের সংযোগ}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=0.377\hsize\raggedright\arraybackslash}X>{\hsize=1.623\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{কার্যাবলি} & \textbf{BAPIL নিয়ন্ত্রণ} \\
+\midrule
+\textbf{শাসন} & সনদ ও নিরাপত্তা নীতি; মনোনীত নিরাপত্তা প্রধান; ঝুঁকি নিবন্ধন; সরবরাহকারী ও নির্ভরতা নীতি; এআই-নির্দিষ্ট ঝুঁকিতে ERRC-এর তত্ত্বাবধান \\
+\textbf{শনাক্তকরণ} & সম্পদ ও ডেটার তালিকা; ডেটা শ্রেণিবিন্যাস (P0 থেকে P3); OWASP LLM ঝুঁকিসহ প্রতিটি ব্যবস্থার হুমকি-মডেল; নির্ভরতার SBOM \\
+\textbf{সুরক্ষা} & MFA-সহ একক সাইন-অন; ন্যূনতম-সুবিধার ভূমিকা; পরিবহন ও সংরক্ষণকালে এনক্রিপশন; সুরক্ষিত কন্টেইনার; গোপন তথ্য ব্যবস্থাপনা; কর্মী প্রশিক্ষণ \\
+\textbf{সনাক্তকরণ} & কেন্দ্রীভূত লগ ও সতর্কতা; প্রশ্নের পরিমাণে অস্বাভাবিকতা শনাক্তকরণ; দৈনিক নিরীক্ষা-শৃঙ্খল যাচাই; CI-তে দুর্বলতা স্ক্যান \\
+\textbf{সাড়া} & স্তরভিত্তিক ঘটনা-প্রতিক্রিয়া পরিকল্পনা; যোগাযোগ প্রটোকল; এআই ঘটনায় ERRC পর্যালোচনা; প্রয়োজনে আইনগত বিজ্ঞপ্তি \\
+\textbf{পুনরুদ্ধার} & অফলাইন এনক্রিপ্টেড ব্যাকআপ; ত্রৈমাসিক পুনরুদ্ধার মহড়া; নথিভুক্ত পুনরুদ্ধার-লক্ষ্য; ঘটনা-পরবর্তী পর্যালোচনার সারাংশ প্রকাশ \\
+\bottomrule
+\end{tabularx}
+\par\vspace{3pt}{\scriptsize\color{gray} উৎস: BAPIL কারিগরি ব্লুপ্রিন্ট, সংস্করণ ১.০ (২০২৬)। CC BY 4.0।}
+\end{minipage}
+\end{document}

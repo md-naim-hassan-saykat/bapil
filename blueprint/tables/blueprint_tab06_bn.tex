@@ -1,0 +1,35 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\setmainfont{Noto Serif}
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali]
+\usepackage[Latin,Bengali]{ucharclasses}
+\setTransitionsFor{Bengali}{\begingroup\bengalifont}{\endgroup}
+\usepackage{newunicodechar}
+\newunicodechar{।}{{\bengalifont\char"0964}}
+\newunicodechar{॥}{{\bengalifont\char"0965}}
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{17cm}
+{\large\bfseries সারণি ৬।}\ {\large শক্তি, দুর্বলতা, সুযোগ ও হুমকি (SWOT)}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=0.377\hsize\raggedright\arraybackslash}X>{\hsize=1.623\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{শ্রেণি} & \textbf{উপাদান} \\
+\midrule
+\textbf{শক্তি} & বিস্তৃত ডিজিটাল সেবা-ব্যবস্থা (জাতীয় তথ্য বাতায়ন, ই-সেবা, ই-নথি); বৃহৎ পরিসরে ডিজিটাল রূপান্তরের অভিজ্ঞতা; বিপুল, তরুণ ও ডিজিটালভাবে সক্রিয় জনগোষ্ঠী; সক্রিয় বাংলা NLP গবেষক সম্প্রদায়; বিদ্যমান জাতীয় এআই কর্মসূচি \\
+\textbf{দুর্বলতা} & বিক্ষিপ্ত ও প্রায়ই স্ক্যানকৃত সরকারি নথি; অসামঞ্জস্যপূর্ণ মেটাডেটা ও লাইসেন্স; দুষ্প্রাপ্য কম্পিউটিং; সীমিত এআই নিশ্চয়তা-দক্ষতা; স্বাধীন মূল্যায়ন কম; প্রকল্প-অর্থায়নের ওপর নির্ভরতা \\
+\textbf{সুযোগ} & ২০২৬-এর চতুর্থ ত্রৈমাসিক থেকে জাতীয় এআই নীতি প্রণয়ন; নতুন উপাত্ত-আইন ও জাতীয় ডেটা বিনিময়; স্থানীয়ভাবে চালনাযোগ্য উন্মুক্ত-ওজন মডেল; বৃহৎ ভাষা হিসেবে বাংলার সম্ভাবনা; ডিজিটাল জনসম্পদে উন্নয়ন সহযোগীদের আগ্রহ \\
+\textbf{হুমকি} & রাজনৈতিক ও প্রাতিষ্ঠানিক পরিবর্তন; ভুল তথ্য ও কৃত্রিম মিডিয়া; সাইবার আক্রমণ ও বিপর্যয়; বিক্রেতার উপর নির্ভরতা; দৃশ্যমান ব্যর্থতায় আস্থাক্ষয়; মেধা পাচার \\
+\bottomrule
+\end{tabularx}
+\par\vspace{3pt}{\scriptsize\color{gray} উৎস: BAPIL কারিগরি ব্লুপ্রিন্ট, সংস্করণ ১.০ (২০২৬)। CC BY 4.0।}
+\end{minipage}
+\end{document}

@@ -1,0 +1,41 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\setmainfont{Noto Serif}
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali]
+\usepackage[Latin,Bengali]{ucharclasses}
+\setTransitionsFor{Bengali}{\begingroup\bengalifont}{\endgroup}
+\usepackage{newunicodechar}
+\newunicodechar{।}{{\bengalifont\char"0964}}
+\newunicodechar{॥}{{\bengalifont\char"0965}}
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{17cm}
+{\large\bfseries সারণি ১১।}\ {\large অগ্রাধিকারপ্রাপ্ত ব্যবহারকারী-গল্প ও গ্রহণযোগ্যতার মানদণ্ড}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=0.333\hsize\raggedright\arraybackslash}X>{\hsize=1.619\hsize\raggedright\arraybackslash}X>{\hsize=1.619\hsize\raggedright\arraybackslash}X>{\hsize=0.429\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{আইডি} & \textbf{ব্যবহারকারী-গল্প} & \textbf{গ্রহণযোগ্যতার মানদণ্ড} & \textbf{প্রয়ো.} \\
+\midrule
+US-01 & নীতি-বিশ্লেষক হিসেবে আমি বাংলায় খুঁজি এবং প্রাসঙ্গিক ইংরেজি ও বাংলা অনুচ্ছেদ পাই & উভয় ভাষায় বেঞ্চমার্কের অন্তত ৮৫\% প্রশ্নে শীর্ষ ১০ ফলাফলে সঠিক অনুচ্ছেদ থাকে & FR-01 \\
+US-02 & বিশ্লেষক হিসেবে আমি এমন সংক্ষিপ্ত উত্তর পাই যার প্রতিটি বাক্য উৎসের সঙ্গে যুক্ত & উত্তরের ১০০\% বাক্যে অনুচ্ছেদ-শনাক্তকারী; উদ্ধৃতির নির্ভুলতা কমপক্ষে ০.৯৫ & FR-02 \\
+US-03 & বিশ্লেষক হিসেবে ব্যবস্থা না জানলে আমাকে তা জানানো হয় & উত্তরযোগ্য নয় এমন প্রশ্নে অন্তত ৯০\% সঠিক বিরতি; কারণ প্রদর্শিত & FR-02 \\
+US-04 & পর্যালোচক হিসেবে আমি দেখতে পারি নথি কোথা থেকে এসেছে এবং বদলেছে কিনা & প্রতিটি অনুচ্ছেদ উৎস URL, তারিখ, চেকসামে পৌঁছায়; চেকসাম অমিলে সতর্কতা & FR-03 \\
+US-05 & বাজেট বিশ্লেষক হিসেবে আমি এক ফাইলে পাঁচ বছরের বরাদ্দ ডাউনলোড করি & পদ্ধতিগত টীকাসহ CSV ও Parquet; ৯৯\% নমুনায় মান উৎসের সঙ্গে মেলে & FR-04 \\
+US-06 & পরামর্শ পরিচালনাকারী হিসেবে আমি ব্যক্তিকে উন্মোচিত না করেই বিষয় দেখি & প্রতিটি বিষয়ে অন্তত ২০টি মতামতের সামষ্টিক ফলাফল; ফলাফলে নাম বা যোগাযোগ-তথ্য নেই & FR-05 \\
+US-07 & ERRC হিসেবে আমি প্রতিটি এআই ব্যবস্থা, তার স্তর ও গেটের অবস্থা দেখি & নিবন্ধনে ১০০\% ব্যবস্থা তালিকাভুক্ত; প্রতি রিলিজে স্বয়ংক্রিয় রপ্তানি & FR-06, FR-09 \\
+US-08 & নিরীক্ষক হিসেবে আমি যাচাই করতে পারি লগ পরিবর্তিত হয়নি & হ্যাশ-শৃঙ্খল যাচাই উত্তীর্ণ; যেকোনো সম্পাদনা, অপসারণ বা ক্রম-পরিবর্তন শনাক্ত & GR-04 \\
+US-09 & ডেভেলপার হিসেবে আমি একটি নথিভুক্ত API ব্যবহার করি & উদাহরণসহ সংস্করণকৃত এন্ডপয়েন্ট; ভাঙনমূলক পরিবর্তন শুধু নতুন সংস্করণে & FR-10 \\
+US-10 & ধীর সংযোগে মোবাইল ব্যবহারকারী হিসেবেও আমি খুঁজতে পারি & অনুসন্ধান পৃষ্ঠা ৫০০ কিলোবাইটের নিচে; 3G-তে ব্যবহারযোগ্য; WCAG 2.2 AA যাচাই উত্তীর্ণ & NFR-05 \\
+\bottomrule
+\end{tabularx}
+\par\vspace{3pt}{\scriptsize\color{gray} উৎস: BAPIL কারিগরি ব্লুপ্রিন্ট, সংস্করণ ১.০ (২০২৬)। CC BY 4.0।}
+\end{minipage}
+\end{document}

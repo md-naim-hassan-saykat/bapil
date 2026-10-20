@@ -1,0 +1,33 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\setmainfont{Latin Modern Roman}
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali]
+\usepackage[Latin,Bengali]{ucharclasses}
+\setTransitionsFor{Bengali}{\begingroup\bengalifont}{\endgroup}
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{22cm}
+{\large\bfseries Table 12.}\ {\large Assessment of institutional operating-model options}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=1.793\hsize\raggedright\arraybackslash}X>{\hsize=0.897\hsize\raggedright\arraybackslash}X>{\hsize=0.759\hsize\raggedright\arraybackslash}X>{\hsize=0.759\hsize\raggedright\arraybackslash}X>{\hsize=0.759\hsize\raggedright\arraybackslash}X>{\hsize=0.931\hsize\raggedright\arraybackslash}X>{\hsize=1.103\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{Option} & \textbf{Independence} & \textbf{Data access} & \textbf{Policy uptake} & \textbf{Speed to start} & \textbf{Sustainability} & \textbf{Verdict} \\
+\midrule
+\textbf{A.} Unit embedded in a government agency & Low & High & High & Medium & Medium & Not recommended for Phase 1 \\
+\textbf{B.} University research centre & High & Low & Low & High & Medium & Partial fit \\
+\textbf{C.} Hybrid: university-anchored lab with a government MoU and a multi-stakeholder board & High & Medium to high & Medium to high & High & Medium to high & \textbf{Recommended} \\
+\textbf{D.} Independent non-profit foundation & High & Low to medium & Medium & Low & Medium & Option for a later stage \\
+\bottomrule
+\end{tabularx}
+\par\vspace{5pt}{\footnotesize\itshape Qualitative assessment by the author against five criteria; to be validated in the Phase 1 feasibility study (Deliverable D1.3).}
+\par\vspace{3pt}{\scriptsize\color{gray} Source: BAPIL Technical Blueprint, Version 1.0 (2026). CC BY 4.0.}
+\end{minipage}
+\end{document}

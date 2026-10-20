@@ -1,0 +1,44 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\setmainfont{Latin Modern Roman}
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali]
+\usepackage[Latin,Bengali]{ucharclasses}
+\setTransitionsFor{Bengali}{\begingroup\bengalifont}{\endgroup}
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{17cm}
+{\large\bfseries Table 24.}\ {\large Document metadata fields (policy\_document schema)}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=0.762\hsize\raggedright\arraybackslash}X>{\hsize=1.667\hsize\raggedright\arraybackslash}X>{\hsize=0.429\hsize\raggedright\arraybackslash}X>{\hsize=1.143\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{Field} & \textbf{Description} & \textbf{Required} & \textbf{Example} \\
+\midrule
+id & Persistent identifier inside the corpus & Yes & bd-act-2009-20 \\
+title & Title in Bangla and English where available & Yes & Right to Information Act, 2009 \\
+publisher & Organisation that published the document & Yes & Legislative and Parliamentary Affairs Division \\
+issuing\_body & Body that issued the instrument & No & Parliament \\
+document\_type & Act, ordinance, rule, gazette, budget, plan, statistics, parliamentary paper, policy, report & Yes & act \\
+date\_issued & Date of issue & Yes & 2009-04-06 \\
+version & Version or amendment state & No & as amended to 2026 \\
+language & Languages of the text & Yes & bn, en \\
+source\_url & Where the original was obtained & Yes & http:/\allowbreak{}/\allowbreak{}bdlaws.minlaw.gov.bd/\allowbreak{}... \\
+retrieved & Date retrieved & Yes & 2027-02-01 \\
+reuse\_terms & Licence or reuse conditions & No & Government publication; terms confirmed \\
+data\_class & P0, P1 or P2 & Yes & P0 \\
+sha256 & Checksum of the original file & Yes & 64 hexadecimal characters \\
+extraction & Method (born digital or OCR), quality score, tool & Yes & ocr, 0.93, tesseract 5 \\
+supersedes & Identifier of an earlier version & No & bd-act-2009-20-v1 \\
+\bottomrule
+\end{tabularx}
+\par\vspace{5pt}{\footnotesize\itshape Examples are illustrative. The machine-readable schema is implementation/\allowbreak{}schemas/\allowbreak{}policy\_document.schema.json.}
+\par\vspace{3pt}{\scriptsize\color{gray} Source: BAPIL Technical Blueprint, Version 1.0 (2026). CC BY 4.0.}
+\end{minipage}
+\end{document}

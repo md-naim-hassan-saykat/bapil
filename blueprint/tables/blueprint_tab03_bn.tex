@@ -1,0 +1,48 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\setmainfont{Noto Serif}
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali]
+\usepackage[Latin,Bengali]{ucharclasses}
+\setTransitionsFor{Bengali}{\begingroup\bengalifont}{\endgroup}
+\usepackage{newunicodechar}
+\newunicodechar{।}{{\bengalifont\char"0964}}
+\newunicodechar{॥}{{\bengalifont\char"0965}}
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{17cm}
+{\large\bfseries সারণি ৩।}\ {\large হোয়াইট পেপারের অধ্যায় থেকে ব্লুপ্রিন্টের অধ্যায়}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=0.892\hsize\raggedright\arraybackslash}X>{\hsize=0.649\hsize\raggedright\arraybackslash}X>{\hsize=1.459\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{হোয়াইট পেপারের অধ্যায় (১.০)} & \textbf{ব্লুপ্রিন্টের অধ্যায়} & \textbf{ব্লুপ্রিন্ট যা যোগ করে} \\
+\midrule
+২. কেন বাংলাদেশের এআই নীতি-বুদ্ধিমত্তা প্রয়োজন & ২, ৪ & ভিত্তি-সূচক, ঘাটতি বিশ্লেষণ, ব্যবহারকারী-চরিত্র ও পরীক্ষাযোগ্য প্রয়োজনীয়তা \\
+৩. বৈশ্বিক উদাহরণ & ৫, ১৩, ১৪ & দৃষ্টান্ত থেকে অভিযোজিত প্রাতিষ্ঠানিক পছন্দ ও নিয়ন্ত্রণ, কাঠামো-সংযোগ সারণিসহ \\
+৪. বাংলাদেশে এআই-এর বর্তমান চিত্র & ২, ৩, ১৪ & পরিস্থিতি বিশ্লেষণ, অংশীজন নিবন্ধন ও ২০২৬ সালের আইনি কাঠামো \\
+৫. BAPIL-এর রূপকল্প & ১, ১৬ & পরিসরের সীমারেখা, পরিপক্বতা শ্রেণি ও ২০২৬-২০৪১ কৌশলগত রোডম্যাপ \\
+৬. BAPIL-এর স্থাপত্য & ৭, ৮, ১০ & বারোটি নামযুক্ত উপাদান, ইন্টারফেস, ডেটা-নিয়ম, হোস্টিং ও নিরাপত্তা অঞ্চল \\
+৭. নীতি-বুদ্ধিমত্তা ড্যাশবোর্ড & ৭, ১২ & API বিনির্দেশ ও পাইলট বিনির্দেশ (P1, P2, P5) \\
+৮. বাংলা নীতি ফাউন্ডেশন মডেল & ৯, ১২ & বাংলা টেক্সটের নিয়ম, BanglaPolicyQA বেঞ্চমার্ক ও প্রমাণনির্ভর মডেল-পথ \\
+৯. এআই শাসন কাঠামো & ১৩, সংযুক্তি খ, ঙ থেকে ট & ঝুঁকি-স্তর, জীবনচক্র-গেট, সনদ, কার্যপরিধি ও চেকলিস্ট \\
+১০. জাতীয় নিরাপত্তা ও সাইবার নিরাপত্তা & ১০ & NIST CSF 2.0 সংযোগ, এআই-নির্দিষ্ট হুমকি, ঘটনার স্তর ও পুনরুদ্ধার-লক্ষ্য \\
+১১. এআই শিক্ষা ও মেধা & ৬ & জনবল পরিকল্পনা, দক্ষতা কাঠামো ও প্রশিক্ষণ পাঠ্যক্রম \\
+১২. স্টার্টআপ ইকোসিস্টেম & ৩, ১৭ & শিল্পখাতের সম্পৃক্ততা ও বাজার উন্মুক্ত রাখার ক্রয়-শর্ত \\
+১৩. সম্পদ ও অর্থায়ন & ১৭ & ব্যয়-মডেল, দিগন্তভিত্তিক অর্থায়ন-মিশ্রণ ও টেকসইতা পরিকল্পনা \\
+১৪. পাঁচ বছরের রোডম্যাপ & ১৫ & মাইলফলক, ডেলিভারেবল ও গেটসহ ৩৬ মাসের কর্মপরিকল্পনা \\
+১৫. দীর্ঘমেয়াদি রূপকল্প & ১৬ & ২০৪১ ও তার পরবর্তী সময় পর্যন্ত দিগন্ত, নির্দেশক লক্ষ্য, পরিস্থিতি ও পর্যালোচনা-সূচক \\
+১৬. ঝুঁকি, নৈতিকতা ও দায়িত্বশীল এআই & ১৩, ১৯ & ঝুঁকি নিবন্ধন, তাপ-মানচিত্র ও পরিচালনাগত নিশ্চয়তা \\
+১৭. কৌশলগত সুপারিশ & ২১ & কর্তৃপক্ষের জন্য ছয়টি সুনির্দিষ্ট সিদ্ধান্ত \\
+পরিশিষ্ট ক. পাইলট প্রকল্প & ১২ & ব্যবহারকারী, ডেটা, স্তর, পরিসর ও উত্তরণ-মানদণ্ডসহ পূর্ণ বিনির্দেশ \\
+\bottomrule
+\end{tabularx}
+\par\vspace{3pt}{\scriptsize\color{gray} উৎস: BAPIL কারিগরি ব্লুপ্রিন্ট, সংস্করণ ১.০ (২০২৬)। CC BY 4.0।}
+\end{minipage}
+\end{document}

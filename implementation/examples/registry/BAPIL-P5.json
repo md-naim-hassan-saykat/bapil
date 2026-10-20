@@ -1,0 +1,30 @@
+{
+  "system_id": "BAPIL-P5",
+  "name": {
+    "en": "National AI Readiness Observatory",
+    "bn": "জাতীয় এআই প্রস্তুতি পর্যবেক্ষণকেন্দ্র"
+  },
+  "purpose": {
+    "en": "Indicator framework and annual report on AI readiness using public indicators and surveys.",
+    "bn": "উন্মুক্ত সূচক ও জরিপের ভিত্তিতে এআই প্রস্তুতির সূচক কাঠামো ও বার্ষিক প্রতিবেদন।"
+  },
+  "owner": {
+    "unit": "AI Governance and Ethics Unit",
+    "accountable": "Pilot lead (to be appointed)"
+  },
+  "maturity_class": "R",
+  "risk_tier": "T1",
+  "data_classes": [
+    "P0"
+  ],
+  "gate_status": {
+    "gate": "G0",
+    "date": "2026-10-21",
+    "approved_by": "Pending constitution of governance bodies"
+  },
+  "limitations": {
+    "en": "Composite indicators simplify complex realities; sources differ in coverage and timeliness.",
+    "bn": "যৌগিক সূচক জটিল বাস্তবতাকে সরল করে; উৎসভেদে ব্যাপ্তি ও হালনাগাদের পার্থক্য রয়েছে।"
+  },
+  "contact": "https://github.com/md-naim-hassan-saykat/bapil/issues"
+}

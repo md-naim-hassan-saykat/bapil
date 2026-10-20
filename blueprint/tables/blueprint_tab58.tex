@@ -1,0 +1,44 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\setmainfont{Latin Modern Roman}
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali]
+\usepackage[Latin,Bengali]{ucharclasses}
+\setTransitionsFor{Bengali}{\begingroup\bengalifont}{\endgroup}
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{17cm}
+{\large\bfseries Table 58.}\ {\large Requirements traceability matrix}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=0.588\hsize\raggedright\arraybackslash}X>{\hsize=1.765\hsize\raggedright\arraybackslash}X>{\hsize=0.588\hsize\raggedright\arraybackslash}X>{\hsize=1.118\hsize\raggedright\arraybackslash}X>{\hsize=0.941\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{Requirement} & \textbf{Summary} & \textbf{Component} & \textbf{Code module} & \textbf{Verification} \\
+\midrule
+FR-01 & Bilingual search & C2, C4 & bapil.text, bapil.search & test\_text, test\_search \\
+FR-02 & Cited answers and abstention & C5 & bapil.answer & test\_answer \\
+FR-03 & Provenance at ingestion & C2, C3 & bapil.corpus & test\_corpus \\
+FR-04 & Dashboards & C6, C7 & Specified only & Pilot P2 acceptance \\
+FR-05 & Aggregate feedback analysis & C6 & Specified only & Pilot P3 DPIA and acceptance \\
+FR-06 & AI system register & C12 & bapil.registry & test\_registry \\
+FR-07 & Risk-tier assessment & C12 & bapil.risk & test\_risk \\
+FR-08 & Evaluation harness & C11 & bapil.evaluate & test\_evaluate \\
+FR-09 & Transparency register & C12 & bapil.registry (export) & test\_registry \\
+FR-10 & Versioned API & C8 & bapil.api & test\_api \\
+NFR-01 & Language parity & C2, C4 & bapil.text glossary and normaliser & test\_text; benchmark \\
+NFR-07 & Reproducibility & All & CI workflow; no external dependencies & GitHub Actions \\
+NFR-08 & Explainability & C5 & bapil.answer (sources and scores) & test\_answer \\
+GR-02 & Gate before build & C12 & bapil.risk & test\_risk \\
+GR-04 & Tamper-evident logs & C10 & bapil.audit & test\_audit \\
+GR-06 & Prohibited uses & C12 & bapil.risk (T0 screen) & test\_risk \\
+\bottomrule
+\end{tabularx}
+\par\vspace{3pt}{\scriptsize\color{gray} Source: BAPIL Technical Blueprint, Version 1.0 (2026). CC BY 4.0.}
+\end{minipage}
+\end{document}

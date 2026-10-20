@@ -1,0 +1,37 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\setmainfont{Latin Modern Roman}
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali]
+\usepackage[Latin,Bengali]{ucharclasses}
+\setTransitionsFor{Bengali}{\begingroup\bengalifont}{\endgroup}
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{17cm}
+{\large\bfseries Table 26.}\ {\large Indicative retention schedule}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=1.040\hsize\raggedright\arraybackslash}X>{\hsize=0.920\hsize\raggedright\arraybackslash}X>{\hsize=1.040\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{Record type} & \textbf{Retention} & \textbf{Disposal or archive} \\
+\midrule
+Original public documents (P0) & Indefinite & Archived with checksums; superseded versions kept \\
+Extracted text and index & Until superseded & Rebuilt from originals; old index versions kept for one year for reproducibility \\
+Audit logs (queries, sources, outputs) & 5 years & Archived read-only; then deleted \\
+Query text in logs & 2 years & Truncated to aggregate statistics \\
+Raw consultation submissions (P2) & Deleted within 90 days of de-identification & Secure deletion with certificate \\
+De-identified analysis data & Duration of the pilot plus 2 years & Deleted or archived under agreement \\
+Model artefacts and evaluation reports & Life of the system plus 3 years & Archived on Zenodo where licences allow \\
+Incident records and ERRC decisions & 7 years & Summaries published; full records archived \\
+\bottomrule
+\end{tabularx}
+\par\vspace{5pt}{\footnotesize\itshape Subject to legal review against the Personal Data Protection Act, 2026, the National Data Management Act, 2026 and any rules issued under them.}
+\par\vspace{3pt}{\scriptsize\color{gray} Source: BAPIL Technical Blueprint, Version 1.0 (2026). CC BY 4.0.}
+\end{minipage}
+\end{document}

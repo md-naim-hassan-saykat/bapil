@@ -1,0 +1,41 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\setmainfont{Noto Serif}
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali]
+\usepackage[Latin,Bengali]{ucharclasses}
+\setTransitionsFor{Bengali}{\begingroup\bengalifont}{\endgroup}
+\usepackage{newunicodechar}
+\newunicodechar{।}{{\bengalifont\char"0964}}
+\newunicodechar{॥}{{\bengalifont\char"0965}}
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{17cm}
+{\large\bfseries সারণি ৫২।}\ {\large এআই পণ্য ও সেবা ক্রয়ের আদর্শ শর্ত}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=0.732\hsize\raggedright\arraybackslash}X>{\hsize=1.317\hsize\raggedright\arraybackslash}X>{\hsize=0.951\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{শর্ত} & \textbf{প্রয়োজনীয়তা} & \textbf{উদ্দেশ্য} \\
+\midrule
+ডেটা-অবস্থান ও মালিকানা & সরকারি ডেটা বাংলাদেশে থাকবে ও সরকারের সম্পত্তি থাকবে; বিক্রেতার মডেল প্রশিক্ষণে ব্যবহার নয় & ডেটা ও সার্বভৌমত্ব সুরক্ষা (NFR-02) \\
+মূল্যায়নের অধিকার & চুক্তির আগে ও পরে ক্রেতা BanglaPolicyQA ও রেড-টিম পরীক্ষায় পণ্য যাচাই করতে পারবেন & দাবির নয়, প্রমাণের ভিত্তিতে সিদ্ধান্ত \\
+বাংলা কর্মদক্ষতার গ্রহণযোগ্যতা & গ্রহণের শর্ত সম্মত বাংলা ও ইংরেজি সীমা অর্জন & বাংলা প্রথম শ্রেণির ভাষা \\
+নথিভুক্তি & প্রতিটি সংস্করণের সঙ্গে মডেল কার্ড, ডেটাশিট, SBOM ও জ্ঞাত সীমাবদ্ধতা প্রদান & স্বচ্ছতা ও নিরীক্ষা \\
+স্থানান্তরযোগ্যতা ও প্রস্থান & উন্মুক্ত ফরম্যাট; সব ডেটা ও কনফিগারেশন রপ্তানি; চুক্তি শেষে রূপান্তর-সহায়তা & নির্ভরশীলতা এড়ানো (R10) \\
+সোর্স কোড & সম্ভব হলে উন্মুক্ত সোর্স; অন্যথায় এসক্রো ও নিরীক্ষার অধিকার & দীর্ঘমেয়াদি রক্ষণাবেক্ষণযোগ্যতা \\
+নিরাপত্তা ও ঘটনা & সারণি ৩২-এর নিয়ন্ত্রণ মেনে চলা; দুর্বলতা প্রকাশ; ২৪ ঘণ্টার মধ্যে ঘটনার বিজ্ঞপ্তি & নিরাপত্তা ও জবাবদিহি \\
+পরিবর্তন নিয়ন্ত্রণ & মডেল বা বড় নির্ভরতা পরিবর্তনের আগে নোটিশ ও পুনর্মূল্যায়ন & স্থিতিশীল ও মূল্যায়িত আচরণ (G5) \\
+প্রবেশযোগ্যতা & প্রমাণসহ WCAG 2.2 লেভেল AA সামঞ্জস্য & অন্তর্ভুক্তি (NFR-05) \\
+সততা & স্বার্থের সংঘাত ঘোষণা; মূল্যায়ন বা শাসনে কোনো প্রভাব নয় & স্বাধীনতা \\
+\bottomrule
+\end{tabularx}
+\par\vspace{3pt}{\scriptsize\color{gray} উৎস: BAPIL কারিগরি ব্লুপ্রিন্ট, সংস্করণ ১.০ (২০২৬)। CC BY 4.0।}
+\end{minipage}
+\end{document}

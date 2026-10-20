@@ -1,0 +1,97 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/md-naim-hassan-saykat/bapil/implementation/schemas/risk_assessment.schema.json",
+  "title": "BAPIL risk-tier questionnaire",
+  "description": "Input to bapil.risk.assess (Blueprint Annex B).",
+  "type": "object",
+  "required": [
+    "system_id",
+    "prohibited",
+    "scores"
+  ],
+  "properties": {
+    "system_id": {
+      "type": "string"
+    },
+    "context": {
+      "type": "string"
+    },
+    "prohibited": {
+      "type": "object",
+      "properties": {
+        "social_scoring": {
+          "type": "boolean"
+        },
+        "mass_biometric_surveillance": {
+          "type": "boolean"
+        },
+        "opinion_profiling": {
+          "type": "boolean"
+        },
+        "deceptive_synthetic_media": {
+          "type": "boolean"
+        },
+        "manipulation_of_vulnerabilities": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false
+    },
+    "scores": {
+      "type": "object",
+      "required": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "D5",
+        "D6",
+        "D7"
+      ],
+      "properties": {
+        "D1": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 3
+        },
+        "D2": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 3
+        },
+        "D3": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 3
+        },
+        "D4": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 3
+        },
+        "D5": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 3
+        },
+        "D6": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 3
+        },
+        "D7": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 3
+        }
+      },
+      "additionalProperties": false
+    },
+    "rationale": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    }
+  }
+}

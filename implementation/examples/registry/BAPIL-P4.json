@@ -1,0 +1,30 @@
+{
+  "system_id": "BAPIL-P4",
+  "name": {
+    "en": "Bangla Policy Foundation Model (Stages 0 and 1)",
+    "bn": "বাংলা নীতি ফাউন্ডেশন মডেল (পর্যায় ০ ও ১)"
+  },
+  "purpose": {
+    "en": "Evaluation of open models with retrieval on BanglaPolicyQA; evidence-gated domain adaptation.",
+    "bn": "BanglaPolicyQA-তে উদ্ধারসহ উন্মুক্ত মডেলের মূল্যায়ন; প্রমাণনির্ভর ডোমেইন অভিযোজন।"
+  },
+  "owner": {
+    "unit": "AI Policy and Research Unit",
+    "accountable": "Pilot lead (to be appointed)"
+  },
+  "maturity_class": "R",
+  "risk_tier": "T1",
+  "data_classes": [
+    "P0"
+  ],
+  "gate_status": {
+    "gate": "G0",
+    "date": "2026-10-21",
+    "approved_by": "Pending constitution of governance bodies"
+  },
+  "limitations": {
+    "en": "Research prototype; not for official use; performance outside the benchmark is unknown.",
+    "bn": "গবেষণা প্রোটোটাইপ; সরকারি ব্যবহারের জন্য নয়; বেঞ্চমার্কের বাইরে কর্মক্ষমতা অজানা।"
+  },
+  "contact": "https://github.com/md-naim-hassan-saykat/bapil/issues"
+}

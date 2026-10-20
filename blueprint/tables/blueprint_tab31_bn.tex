@@ -1,0 +1,38 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\setmainfont{Noto Serif}
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali]
+\usepackage[Latin,Bengali]{ucharclasses}
+\setTransitionsFor{Bengali}{\begingroup\bengalifont}{\endgroup}
+\usepackage{newunicodechar}
+\newunicodechar{।}{{\bengalifont\char"0964}}
+\newunicodechar{॥}{{\bengalifont\char"0965}}
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{17cm}
+{\large\bfseries সারণি ৩১।}\ {\large দিগন্তভিত্তিক নির্দেশক অবকাঠামো-আকার}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=0.828\hsize\raggedright\arraybackslash}X>{\hsize=1.057\hsize\raggedright\arraybackslash}X>{\hsize=1.057\hsize\raggedright\arraybackslash}X>{\hsize=1.057\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{সম্পদ} & \textbf{পাইলট (২০২৭ থেকে ২০২৮)} & \textbf{সম্প্রসারণ (২০২৯ থেকে ২০৩০)} & \textbf{জাতীয় নেটওয়ার্ক (২০৩১ থেকে)} \\
+\midrule
+পরিবেশ & উন্নয়ন, পরীক্ষা, উৎপাদন & সঙ্গে স্টেজিং ও দুর্যোগ-পুনরুদ্ধার সাইট & অংশীদার সংস্থায় সমন্বিত প্রয়োগ \\
+অ্যাপ্লিকেশন সার্ভার & ২ থেকে ৩টি সাধারণ-উদ্দেশ্য সার্ভার & ৬ থেকে ৮টি সার্ভার বা সমতুল্য ভার্চুয়াল সক্ষমতা & যৌথ সরকারি ক্লাউড সক্ষমতা \\
+ইনফারেন্স GPU & ১ থেকে ২টি ডেটা-সেন্টার GPU & ৪ থেকে ৮টি GPU & জাতীয় এআই কম্পিউটিং থেকে বরাদ্দ \\
+অভিযোজন-কম্পিউটিং & নেই (পর্যায় ০) & সময়সীমিত জাতীয় বরাদ্দ (পর্যায় ১) & নির্ধারিত জাতীয় বরাদ্দ (যৌক্তিক হলে পর্যায় ২) \\
+সংরক্ষণক্ষমতা & ব্যাকআপসহ ১০ থেকে ২০ টেরাবাইট & প্রায় ১০০ টেরাবাইট & সংগ্রহজুড়ে কয়েকশ টেরাবাইট \\
+ব্যবহারকারী & প্রায় ৫০ জন পর্যন্ত পাইলট ব্যবহারকারী & কয়েকশ ব্যবহারকারী & মন্ত্রণালয়জুড়ে হাজারো ব্যবহারকারী \\
+\bottomrule
+\end{tabularx}
+\par\vspace{5pt}{\footnotesize\itshape সম্ভাব্যতা সমীক্ষার (ডেলিভারেবল D1.3) পরিকল্পনা-অনুমান, ক্রয়-বিনির্দেশ নয়।}
+\par\vspace{3pt}{\scriptsize\color{gray} উৎস: BAPIL কারিগরি ব্লুপ্রিন্ট, সংস্করণ ১.০ (২০২৬)। CC BY 4.0।}
+\end{minipage}
+\end{document}

@@ -1,0 +1,21 @@
+**Table 3.** From White Paper chapters to Blueprint chapters
+
+| White Paper chapter (v1.0) | Blueprint chapter | What the Blueprint adds |
+|----------------------|----------------|------------------------------------|
+| 2. Why Bangladesh needs AI policy intelligence | 2, 4 | Baseline indicators, gap analysis, user personas and testable requirements |
+| 3. Global examples | 5, 13, 14 | Institutional choices and controls adapted from the cases, with a framework crosswalk |
+| 4. Current AI landscape in Bangladesh | 2, 3, 14 | Situation analysis, stakeholder register and the 2026 legal framework |
+| 5. BAPIL vision | 1, 16 | Scope boundaries, maturity classes and a 2026-2041 strategic roadmap |
+| 6. BAPIL architecture | 7, 8, 10 | Twelve named components, interfaces, data rules, hosting and security zones |
+| 7. Policy Intelligence Dashboard | 7, 12 | API specification and pilot specifications (P1, P2, P5) |
+| 8. Bangla Policy Foundation Model | 9, 12 | Bangla text rules, BanglaPolicyQA benchmark and an evidence-gated model path |
+| 9. AI governance framework | 13, Annexes B, E to J | Risk tiers, lifecycle gates, charter, terms of reference and checklists |
+| 10. National security and cybersecurity | 10 | NIST CSF 2.0 mapping, AI-specific threats, incident levels and recovery targets |
+| 11. AI education and talent | 6 | Staffing plan, competency framework and training curriculum |
+| 12. Startup ecosystem | 3, 17 | Industry engagement and procurement clauses that keep markets open |
+| 13. Resources and funding | 17 | Cost model, funding mix by horizon and sustainability plan |
+| 14. Five-year roadmap | 15 | 36-month workplan with milestones, deliverables and gates |
+| 15. Long-term vision | 16 | Horizons, indicative targets, scenarios and review triggers to 2041 and beyond |
+| 16. Risks, ethics and responsible AI | 13, 19 | Risk register, heat map and operational assurance |
+| 17. Strategic recommendations | 21 | Six concrete decisions for the authorities |
+| Appendix A. Pilot projects | 12 | Full specifications with users, data, tier, scope and exit criteria |

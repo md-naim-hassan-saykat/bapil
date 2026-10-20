@@ -1,0 +1,31 @@
+{
+  "system_id": "BAPIL-P1",
+  "name": {
+    "en": "Bangladesh Policy Search Engine",
+    "bn": "বাংলাদেশ নীতি অনুসন্ধান ইঞ্জিন"
+  },
+  "purpose": {
+    "en": "Bilingual search and cited extractive answers over officially published laws, plans and budget documents.",
+    "bn": "সরকারিভাবে প্রকাশিত আইন, পরিকল্পনা ও বাজেট নথিতে দ্বিভাষিক অনুসন্ধান ও উদ্ধৃতিসহ নিষ্কাশনমূলক উত্তর।"
+  },
+  "owner": {
+    "unit": "AI Policy and Research Unit",
+    "accountable": "Pilot lead (to be appointed)",
+    "host_agency_product_owner": "To be named by host agency"
+  },
+  "maturity_class": "A",
+  "risk_tier": "T2",
+  "data_classes": [
+    "P0"
+  ],
+  "gate_status": {
+    "gate": "G0",
+    "date": "2026-10-21",
+    "approved_by": "Pending constitution of governance bodies"
+  },
+  "limitations": {
+    "en": "Covers only ingested documents; scanned PDFs may contain OCR errors; outputs must be verified against the cited source.",
+    "bn": "শুধু গৃহীত নথি অন্তর্ভুক্ত; স্ক্যানকৃত PDF-এ OCR ত্রুটি থাকতে পারে; উদ্ধৃত উৎসের সঙ্গে ফলাফল যাচাই করতে হবে।"
+  },
+  "contact": "https://github.com/md-naim-hassan-saykat/bapil/issues"
+}

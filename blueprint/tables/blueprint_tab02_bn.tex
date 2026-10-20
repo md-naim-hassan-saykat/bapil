@@ -1,0 +1,34 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\setmainfont{Noto Serif}
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali]
+\usepackage[Latin,Bengali]{ucharclasses}
+\setTransitionsFor{Bengali}{\begingroup\bengalifont}{\endgroup}
+\usepackage{newunicodechar}
+\newunicodechar{।}{{\bengalifont\char"0964}}
+\newunicodechar{॥}{{\bengalifont\char"0965}}
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{22cm}
+{\large\bfseries সারণি ২।}\ {\large এই ব্লুপ্রিন্টে ব্যবহৃত ব্যবস্থার পরিপক্বতা শ্রেণি}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=0.709\hsize\raggedright\arraybackslash}X>{\hsize=1.418\hsize\raggedright\arraybackslash}X>{\hsize=0.927\hsize\raggedright\arraybackslash}X>{\hsize=0.927\hsize\raggedright\arraybackslash}X>{\hsize=1.036\hsize\raggedright\arraybackslash}X>{\hsize=0.982\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{শ্রেণি} & \textbf{সংজ্ঞা} & \textbf{ব্যবহারকারী} & \textbf{অনুমোদিত ডেটা} & \textbf{উদাহরণ} & \textbf{অনুমোদন} \\
+\midrule
+\textbf{R} গবেষণা প্রোটোটাইপ & পদ্ধতি পরীক্ষার জন্য পরীক্ষামূলক ব্যবস্থা; এর ফলাফল কখনো সরকারি সিদ্ধান্তে ব্যবহৃত হয় না & BAPIL গবেষক ও গবেষণা অংশীদার & P0; ডেটা-বিনিময় চুক্তির অধীনে P1 & উন্মুক্ত মডেল দিয়ে বেঞ্চমার্ক পরীক্ষা & গেট G0 ও G1 \\
+\textbf{A} পরামর্শমূলক সরঞ্জাম & কর্মকর্তারা একাধিক উৎসের একটি হিসেবে ব্যবহার করেন; প্রতিটি ফলাফল ব্যবহারের আগে একজন মানুষ পর্যালোচনা করেন & পাইলট সংস্থার কর্মকর্তা & P0 ও P1; শুধু পরিচয়-অপসারিত P2 & দুই থেকে তিনটি সংস্থায় নীতি অনুসন্ধান পাইলট & গেট G2 ও G3; T2 স্তরের জন্য ERRC অনুমোদন \\
+\textbf{O} পরিচালনাগত ব্যবস্থা & সংস্থার কর্মপ্রবাহে সংযুক্ত; মালিকানা ও পরিচালনা সংস্থার, BAPIL-এর নয় & আয়োজক সংস্থার কর্মী এবং প্রযোজ্য ক্ষেত্রে জনসাধারণ & আইন ও সংস্থার অনুমোদন অনুযায়ী & সংস্থা-পরিচালিত অনুসন্ধান সেবা & আয়োজক সংস্থার আইনি পর্যালোচনাসহ গেট G4 \\
+\bottomrule
+\end{tabularx}
+\par\vspace{3pt}{\scriptsize\color{gray} উৎস: BAPIL কারিগরি ব্লুপ্রিন্ট, সংস্করণ ১.০ (২০২৬)। CC BY 4.0।}
+\end{minipage}
+\end{document}

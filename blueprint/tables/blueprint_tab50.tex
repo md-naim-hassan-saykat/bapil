@@ -1,0 +1,37 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\setmainfont{Latin Modern Roman}
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali]
+\usepackage[Latin,Bengali]{ucharclasses}
+\setTransitionsFor{Bengali}{\begingroup\bengalifont}{\endgroup}
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{22cm}
+{\large\bfseries Table 50.}\ {\large Indicative 36-month budget (Tk crore)}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=2.278\hsize\raggedright\arraybackslash}X>{\hsize=0.759\hsize\raggedright\arraybackslash}X>{\hsize=0.759\hsize\raggedright\arraybackslash}X>{\hsize=0.759\hsize\raggedright\arraybackslash}X>{\hsize=0.759\hsize\raggedright\arraybackslash}X>{\hsize=0.684\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{Category} & \textbf{Year 1} & \textbf{Year 2} & \textbf{Year 3} & \textbf{Total} & \textbf{Share} \\
+\midrule
+Core staff & 1.82 & 2.88 & 3.55 & 8.25 & 45\% \\
+Language editors and fellowships & 0.41 & 0.63 & 0.73 & 1.76 & 10\% \\
+Compute and hosting & 1.39 & 1.37 & 0.75 & 3.51 & 19\% \\
+Data and annotation & 0.38 & 0.44 & 0.35 & 1.17 & 6\% \\
+Training and outreach & 0.23 & 0.42 & 0.42 & 1.07 & 6\% \\
+Governance, audit and evaluation & 0.28 & 0.36 & 0.41 & 1.05 & 6\% \\
+Overheads and contingency (10\%) & 0.45 & 0.61 & 0.62 & 1.68 & 9\% \\
+\textbf{Total} & \textbf{4.96} & \textbf{6.71} & \textbf{6.83} & \textbf{18.49} & \textbf{100\%} \\
+\bottomrule
+\end{tabularx}
+\par\vspace{5pt}{\footnotesize\itshape Computed from the assumptions in Table 49 by blueprint/\allowbreak{}src/\allowbreak{}budget\_model.py. Totals may differ slightly because of rounding. The total is equivalent to about USD 1.49 million, or under one tenth of the reported Tk 192.66 crore cost of the Bangladesh AI Hub project [35].}
+\par\vspace{3pt}{\scriptsize\color{gray} Source: BAPIL Technical Blueprint, Version 1.0 (2026). CC BY 4.0.}
+\end{minipage}
+\end{document}

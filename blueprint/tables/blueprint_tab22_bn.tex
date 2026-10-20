@@ -1,0 +1,35 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\setmainfont{Noto Serif}
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali]
+\usepackage[Latin,Bengali]{ucharclasses}
+\setTransitionsFor{Bengali}{\begingroup\bengalifont}{\endgroup}
+\usepackage{newunicodechar}
+\newunicodechar{।}{{\bengalifont\char"0964}}
+\newunicodechar{॥}{{\bengalifont\char"0965}}
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{17cm}
+{\large\bfseries সারণি ২২।}\ {\large ডেটা শ্রেণিবিন্যাস ও ব্যবস্থাপনার নিয়ম}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=0.693\hsize\raggedright\arraybackslash}X>{\hsize=0.990\hsize\raggedright\arraybackslash}X>{\hsize=1.188\hsize\raggedright\arraybackslash}X>{\hsize=1.386\hsize\raggedright\arraybackslash}X>{\hsize=0.743\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{শ্রেণি} & \textbf{বিবরণ} & \textbf{উদাহরণ} & \textbf{ব্যবস্থাপনার নিয়ম} & \textbf{পাইলটে ব্যবহার} \\
+\midrule
+\textbf{P0} উন্মুক্ত & সরকারিভাবে প্রকাশিত ও জনসাধারণের জন্য উদ্দিষ্ট & আইন, গেজেট, বাজেট নথি, পরিকল্পনা, পরিসংখ্যান প্রকাশনা & উৎস-তথ্য ও অখণ্ডতা যাচাই; উৎসের শর্ত সাপেক্ষে পুনর্ব্যবহার & হ্যাঁ \\
+\textbf{P1} অভ্যন্তরীণ & অপ্রকাশিত, ব্যক্তিগত নয় এমন তথ্য & চুক্তির অধীনে বিনিময়কৃত খসড়া প্রতিবেদন, প্রশাসনিক মেটাডেটা & ডেটা-বিনিময় চুক্তি; ভূমিকাভিত্তিক প্রবেশাধিকার; বাংলাদেশে সংরক্ষণ & সীমিত, চুক্তির অধীনে \\
+\textbf{P2} ব্যক্তিগত & ব্যক্তিকে শনাক্তযোগ্য তথ্য & নামসহ পরামর্শ-মতামত, জরিপের মাইক্রোডেটা & ব্যক্তিগত উপাত্ত সুরক্ষা আইন ২০২৬ অনুযায়ী আইনগত ভিত্তি; DPIA; বিশ্লেষণের আগে পরিচয়-অপসারণ; ERRC অনুমোদন & শুধু সম্মতিপ্রাপ্ত ও পরিচয়-অপসারিত \\
+\textbf{P3} সংবেদনশীল বা সংরক্ষিত & সংবেদনশীল ব্যক্তিগত বা নিরাপত্তা-শ্রেণিভুক্ত তথ্য & স্বাস্থ্য, বায়োমেট্রিক, আর্থিক বা শিশুদের ডেটা; নিরাপত্তা-সংক্রান্ত ডেটা & BAPIL-এর কাজে বর্জিত & না \\
+\bottomrule
+\end{tabularx}
+\par\vspace{3pt}{\scriptsize\color{gray} উৎস: BAPIL কারিগরি ব্লুপ্রিন্ট, সংস্করণ ১.০ (২০২৬)। CC BY 4.0।}
+\end{minipage}
+\end{document}

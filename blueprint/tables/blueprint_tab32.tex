@@ -1,0 +1,34 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\setmainfont{Latin Modern Roman}
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali]
+\usepackage[Latin,Bengali]{ucharclasses}
+\setTransitionsFor{Bengali}{\begingroup\bengalifont}{\endgroup}
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{17cm}
+{\large\bfseries Table 32.}\ {\large Security controls mapped to the NIST CSF 2.0 functions}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=0.377\hsize\raggedright\arraybackslash}X>{\hsize=1.623\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{Function} & \textbf{BAPIL controls} \\
+\midrule
+\textbf{Govern} & Charter and security policy; named security lead; risk register; supplier and dependency policy; ERRC oversight of AI-specific risks \\
+\textbf{Identify} & Asset and data inventory; data classification (P0 to P3); threat model per system including OWASP LLM risks; dependency SBOMs \\
+\textbf{Protect} & Single sign-on with MFA; least-privilege roles; encryption in transit and at rest; hardened containers; secrets management; staff training \\
+\textbf{Detect} & Centralised logging and alerting; anomaly detection on query volumes; daily audit-chain verification; vulnerability scanning in CI \\
+\textbf{Respond} & Incident response plan with severity levels; communication protocol; ERRC review of AI incidents; legal notification where required \\
+\textbf{Recover} & Offline encrypted backups; quarterly restore drills; documented recovery targets; post-incident reviews published in summary \\
+\bottomrule
+\end{tabularx}
+\par\vspace{3pt}{\scriptsize\color{gray} Source: BAPIL Technical Blueprint, Version 1.0 (2026). CC BY 4.0.}
+\end{minipage}
+\end{document}

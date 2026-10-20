@@ -1,0 +1,71 @@
+% ---- shared by English and Bangla Blueprint documents (XeLaTeX) ----
+\usepackage{xurl}
+\usepackage{etoolbox}
+\usepackage{titlesec}
+\usepackage{tocloft}
+\usepackage{fancyhdr}
+\usepackage{caption}
+\usepackage[table]{xcolor}
+\usepackage{newunicodechar}
+\definecolor{bapilrule}{HTML}{1F2937}
+\captionsetup{labelformat=empty, labelsep=none, font=small, justification=centering, skip=6pt}
+\captionsetup[table]{justification=raggedright, singlelinecheck=false, position=top}
+% Bangla script support inside any text (fonts switch automatically by Unicode block)
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali, NFSSFamily=bnserif]
+\newfontfamily\bengalisansfont{Noto Sans Bengali}[Script=Bengali, NFSSFamily=bnsans]
+\usepackage[Latin,Bengali]{ucharclasses}
+% group-free switching: remember the surrounding family, keep series and shape (bold, italic)
+\makeatletter
+\def\BN@saved{\rmdefault}
+\def\BN@serif{bnserif}
+\def\BN@sans{bnsans}
+\newcommand\BNin{\edef\BN@tmp{\f@family}%
+  \ifx\BN@tmp\BN@serif\else\ifx\BN@tmp\BN@sans\else\let\BN@saved\BN@tmp\fi\fi
+  \fontfamily{bnserif}\selectfont}
+\newcommand\BNout{\fontfamily{\BN@saved}\selectfont}
+\makeatother
+\setTransitionsFor{Bengali}{\BNin}{\BNout}
+\newunicodechar{।}{{\bengalifont\char"0964}}
+\newunicodechar{॥}{{\bengalifont\char"0965}}
+% tables: smaller type, light rules
+\AtBeginEnvironment{longtable}{\small\setlength{\tabcolsep}{4pt}\renewcommand{\arraystretch}{1.18}}
+% headings
+\titleformat{\section}{\normalfont\Large\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{2.0em}{1.0em}
+\titleformat{\subsection}{\normalfont\large\bfseries}{}{0pt}{}
+\titlespacing*{\subsection}{0pt}{1.4em}{0.6em}
+\titleformat{\subsubsection}{\normalfont\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\subsubsection}{0pt}{1.1em}{0.4em}
+% table of contents
+\setcounter{tocdepth}{2}
+\setlength{\cftbeforesecskip}{0.5em}
+\renewcommand{\cftsecfont}{\bfseries}
+\renewcommand{\cftsecpagefont}{\bfseries}
+\setlength{\cftsubsecindent}{1.6em}
+% lists: compact, modest bullets
+\usepackage{enumitem}
+\setlist{itemsep=0.15em, topsep=0.4em, parsep=0pt}
+\setlist[itemize,1]{label={\small\textbullet}}
+% page style
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.3pt}
+\fancyfoot[C]{\small\thepage}
+\linespread{1.06}
+\setlength{\emergencystretch}{3em}
+\sloppy
+% parts in the table of contents
+\renewcommand{\cftpartfont}{\large\bfseries}
+\renewcommand{\cftpartpagefont}{\large\bfseries}
+\setlength{\cftbeforepartskip}{1.3em}
+% lists of figures and tables: the visible label ("Figure 3.") is part of each caption
+\renewcommand{\cftfigpresnum}{\setbox0\hbox\bgroup}
+\renewcommand{\cftfigaftersnum}{\egroup}
+\setlength{\cftfignumwidth}{0pt}
+\setlength{\cftfigindent}{0pt}
+\renewcommand{\cfttabpresnum}{\setbox0\hbox\bgroup}
+\renewcommand{\cfttabaftersnum}{\egroup}
+\setlength{\cfttabnumwidth}{0pt}
+\setlength{\cfttabindent}{0pt}
+\setlength{\cftbeforefigskip}{0.25em}
+\setlength{\cftbeforetabskip}{0.25em}

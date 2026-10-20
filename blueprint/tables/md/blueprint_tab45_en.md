@@ -1,0 +1,12 @@
+**Table 45.** Strategic horizons, 2026 to 2041 and beyond
+
+| Horizon | Period | Strategic aim | Priority actions | Institutional form | Signal to move on |
+|--------------|----------|----------------------|----------------------------------|-------------------|---------------------|
+| **H0** Foundation | Q4 2026 | Prepare a safe, open start | Publish this Blueprint and code; brief the ICT Division and custodians; offer input to national AI policy drafting; select host institution | Independent research initiative | Decisions D1, D2 and D4 taken |
+| **H1** Short term | 2027 to 2028 | Prove value with public data | Charter, ERRC and register; P1 and P2 pilots; BanglaPolicyQA v0; 300 officials trained; mid-term evaluation | University-anchored lab under MoU (Option C) | P1 and P2 pass G3; positive mid-term evaluation |
+| **H2** Medium term | 2029 to 2030 | Adopt, scale and align with national policy | G4 adoption of P1 and P2 by agencies; BPFM Stage 1 if justified; benchmark v1; Blueprint 2.0; align with the national AI policy cycle ending 2030 | Lab with multi-year core funding; agency service agreements | Tools in operational use; sustained funding agreed |
+| **H3** Long term | 2031 to 2035 | Build a national policy-intelligence network | Federated search across ministries and divisions; Bangla policy model maintained as a public good; standard assurance used across government; regional training hubs | Consider an independent public-interest foundation (Option D) or statutory centre | Assurance methods used beyond BAPIL; network in most ministries |
+| **H4** Vision | 2036 to 2041 | Trusted AI-enabled policy system for a knowledge economy | Evidence services embedded in policy cycles; open Bangla language resources across domains; regional and South-South cooperation; contribution to Perspective Plan 2041 and ICT Masterplan 2041 goals | Mature national institution with international partnerships | Independent review at 2041 confirms public value |
+| **Beyond 2041** | After 2041 | Keep the capability adaptive and accountable | Periodic renewal of mission and charter; sunset or merger if the function is fully absorbed by government; preserve open archives | Determined by the 2041 review | Charter renewal decision |
+
+*Note.* Horizons H1 and H2 correspond to the 36-month roadmap of Chapter 15 (indicative start January 2027). Later horizons are strategic intentions, reviewed at the points in Table 48.

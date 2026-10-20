@@ -1,0 +1,47 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\setmainfont{Noto Serif}
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali]
+\usepackage[Latin,Bengali]{ucharclasses}
+\setTransitionsFor{Bengali}{\begingroup\bengalifont}{\endgroup}
+\usepackage{newunicodechar}
+\newunicodechar{।}{{\bengalifont\char"0964}}
+\newunicodechar{॥}{{\bengalifont\char"0965}}
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{17cm}
+{\large\bfseries সারণি ৫৮।}\ {\large প্রয়োজনীয়তা অনুসরণযোগ্যতা ম্যাট্রিক্স}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=0.588\hsize\raggedright\arraybackslash}X>{\hsize=1.765\hsize\raggedright\arraybackslash}X>{\hsize=0.588\hsize\raggedright\arraybackslash}X>{\hsize=1.118\hsize\raggedright\arraybackslash}X>{\hsize=0.941\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{প্রয়োজনীয়তা} & \textbf{সারাংশ} & \textbf{উপাদান} & \textbf{কোড মডিউল} & \textbf{যাচাই} \\
+\midrule
+FR-01 & দ্বিভাষিক অনুসন্ধান & C2, C4 & bapil.text, bapil.search & test\_text, test\_search \\
+FR-02 & উদ্ধৃতিসহ উত্তর ও বিরত থাকা & C5 & bapil.answer & test\_answer \\
+FR-03 & গ্রহণের সময় উৎস-তথ্য & C2, C3 & bapil.corpus & test\_corpus \\
+FR-04 & ড্যাশবোর্ড & C6, C7 & শুধু বিনির্দেশিত & পাইলট P2 গ্রহণ \\
+FR-05 & সামষ্টিক মতামত বিশ্লেষণ & C6 & শুধু বিনির্দেশিত & পাইলট P3-এর DPIA ও গ্রহণ \\
+FR-06 & এআই ব্যবস্থা নিবন্ধন & C12 & bapil.registry & test\_registry \\
+FR-07 & ঝুঁকি-স্তর মূল্যায়ন & C12 & bapil.risk & test\_risk \\
+FR-08 & মূল্যায়ন কাঠামো & C11 & bapil.evaluate & test\_evaluate \\
+FR-09 & স্বচ্ছতা নিবন্ধন & C12 & bapil.registry (রপ্তানি) & test\_registry \\
+FR-10 & সংস্করণকৃত API & C8 & bapil.api & test\_api \\
+NFR-01 & ভাষাগত সমতা & C2, C4 & bapil.text শব্দকোষ ও প্রমিতকারী & test\_text; বেঞ্চমার্ক \\
+NFR-07 & পুনরুৎপাদনযোগ্যতা & সব & CI ওয়ার্কফ্লো; বাহ্যিক নির্ভরতা নেই & GitHub Actions \\
+NFR-08 & ব্যাখ্যাযোগ্যতা & C5 & bapil.answer (উৎস ও স্কোর) & test\_answer \\
+GR-02 & নির্মাণের আগে গেট & C12 & bapil.risk & test\_risk \\
+GR-04 & হস্তক্ষেপ-শনাক্তযোগ্য লগ & C10 & bapil.audit & test\_audit \\
+GR-06 & নিষিদ্ধ ব্যবহার & C12 & bapil.risk (T0 যাচাই) & test\_risk \\
+\bottomrule
+\end{tabularx}
+\par\vspace{3pt}{\scriptsize\color{gray} উৎস: BAPIL কারিগরি ব্লুপ্রিন্ট, সংস্করণ ১.০ (২০২৬)। CC BY 4.0।}
+\end{minipage}
+\end{document}

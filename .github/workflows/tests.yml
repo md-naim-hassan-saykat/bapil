@@ -1,0 +1,33 @@
+name: tests
+
+on:
+  push:
+    paths: ["implementation/**", ".github/workflows/tests.yml"]
+  pull_request:
+    paths: ["implementation/**", ".github/workflows/tests.yml"]
+
+permissions:
+  contents: read
+
+jobs:
+  unit-tests:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.10", "3.11", "3.12", "3.13"]
+    defaults:
+      run:
+        working-directory: implementation
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Unit tests (standard library only)
+        run: python -m unittest discover -s tests -v
+      - name: Demonstration evaluation
+        run: |
+          PYTHONPATH=src python -m bapil.cli evaluate benchmarks/demo_questions.json \
+            --corpus ../reports ../blueprint --json build/eval_report.json
+      - name: Register validation
+        run: PYTHONPATH=src python -m bapil.cli register examples/registry
