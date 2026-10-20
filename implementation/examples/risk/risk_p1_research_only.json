@@ -1,0 +1,24 @@
+{
+  "system_id": "BAPIL-P1-R",
+  "context": "Use by BAPIL researchers only",
+  "prohibited": {
+    "social_scoring": false,
+    "mass_biometric_surveillance": false,
+    "opinion_profiling": false,
+    "deceptive_synthetic_media": false,
+    "manipulation_of_vulnerabilities": false
+  },
+  "scores": {
+    "D1": 1,
+    "D2": 0,
+    "D3": 0,
+    "D4": 1,
+    "D5": 1,
+    "D6": 0,
+    "D7": 0
+  },
+  "rationale": {
+    "D1": "Informs analysts",
+    "D7": "Internal researchers"
+  }
+}

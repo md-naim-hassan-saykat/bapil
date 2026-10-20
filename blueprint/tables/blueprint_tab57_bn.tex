@@ -1,0 +1,37 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\setmainfont{Noto Serif}
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali]
+\usepackage[Latin,Bengali]{ucharclasses}
+\setTransitionsFor{Bengali}{\begingroup\bengalifont}{\endgroup}
+\usepackage{newunicodechar}
+\newunicodechar{।}{{\bengalifont\char"0964}}
+\newunicodechar{॥}{{\bengalifont\char"0965}}
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{17cm}
+{\large\bfseries সারণি ৫৭।}\ {\large সংশ্লিষ্ট কর্তৃপক্ষের কাছে প্রত্যাশিত সিদ্ধান্ত}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=0.276\hsize\raggedright\arraybackslash}X>{\hsize=2.023\hsize\raggedright\arraybackslash}X>{\hsize=1.103\hsize\raggedright\arraybackslash}X>{\hsize=0.598\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{নং} & \textbf{সিদ্ধান্ত} & \textbf{দায়িত্বপ্রাপ্ত কর্তৃপক্ষ} & \textbf{সময়} \\
+\midrule
+D1 & জাতীয় এআই নীতি প্রণয়ন-প্রক্রিয়ায় এই ব্লুপ্রিন্টকে কারিগরি উপকরণ হিসেবে গ্রহণ & ডাক, টেলিযোগাযোগ ও তথ্যপ্রযুক্তি মন্ত্রণালয় (আইসিটি বিভাগ) & ২০২৬-এর চতুর্থ ত্রৈমাসিক \\
+D2 & একজন মনোনীত সরকারি ফোকাল পয়েন্ট ও আয়োজক প্রতিষ্ঠানের সঙ্গে সমঝোতা স্মারকসহ ১২ মাসের প্রথম ধাপের পাইলট অনুমোদন & আইসিটি বিভাগ ও আয়োজক প্রতিষ্ঠান & ৯০ দিনের মধ্যে \\
+D3 & ইতিমধ্যে প্রকাশিত নথিসংগ্রহে কাঠামোবদ্ধভাবে একসঙ্গে প্রবেশাধিকার অনুমোদন ও ডেটা-রক্ষক মনোনয়ন & লেজিসলেটিভ ও সংসদ বিষয়ক বিভাগ, অর্থ বিভাগ, পরিকল্পনা কমিশন, বিবিএস, এটুআই & ১২০ দিনের মধ্যে \\
+D4 & স্টিয়ারিং বোর্ড ও একটি স্বাধীন নৈতিকতা ও ঝুঁকি পর্যালোচনা কমিটিতে সদস্য মনোনয়ন & আইসিটি বিভাগ, একাডেমিয়া, নাগরিক সমাজ & ৯০ দিনের মধ্যে \\
+D5 & দ্বিতীয় ধাপের বাজেট নির্ধারণকারী সম্ভাব্যতা ও ব্যয়-নিরূপণ সমীক্ষা পরিচালনার নির্দেশ & আইসিটি বিভাগ বা কোনো উন্নয়ন সহযোগী & মাস ৬-এর মধ্যে \\
+D6 & সুরক্ষাসীমা নিশ্চিত করা: G4 সিদ্ধান্ত ছাড়া A শ্রেণির বাইরে কোনো প্রয়োগ নয় এবং নিষিদ্ধ শ্রেণিতে কোনো ব্যবহার নয় & স্টিয়ারিং বোর্ড & সনদ গ্রহণের সময় \\
+\bottomrule
+\end{tabularx}
+\par\vspace{3pt}{\scriptsize\color{gray} উৎস: BAPIL কারিগরি ব্লুপ্রিন্ট, সংস্করণ ১.০ (২০২৬)। CC BY 4.0।}
+\end{minipage}
+\end{document}

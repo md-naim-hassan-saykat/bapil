@@ -1,0 +1,36 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\setmainfont{Noto Serif}
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali]
+\usepackage[Latin,Bengali]{ucharclasses}
+\setTransitionsFor{Bengali}{\begingroup\bengalifont}{\endgroup}
+\usepackage{newunicodechar}
+\newunicodechar{।}{{\bengalifont\char"0964}}
+\newunicodechar{॥}{{\bengalifont\char"0965}}
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{17cm}
+{\large\bfseries সারণি ৪০।}\ {\large মানবিক তত্ত্বাবধানের ধরন}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=0.712\hsize\raggedright\arraybackslash}X>{\hsize=1.312\hsize\raggedright\arraybackslash}X>{\hsize=0.975\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{ধরন} & \textbf{বিবরণ} & \textbf{ব্যবহারক্ষেত্র} \\
+\midrule
+মানুষ প্রক্রিয়ার ভেতরে & ব্যবহারের আগে একজন মানুষ প্রতিটি ফলাফল পর্যালোচনা করেন & A শ্রেণির সব ব্যবহার (P1 পাইলট; P3 সারাংশ) \\
+মানুষ প্রক্রিয়ার ওপরে & মানুষ নমুনা ও পর্যবেক্ষণ-সংকেত পর্যালোচনা করেন; হস্তক্ষেপ করতে পারেন & R শ্রেণির গবেষণা-সরঞ্জাম; প্রকাশিত ডেটার ড্যাশবোর্ড \\
+মানুষের কর্তৃত্ব & কর্তৃত্ব ও জবাবদিহি সিদ্ধান্তগ্রহণকারী কর্মকর্তার কাছে থাকে & প্রতিটি ব্যবহার; সনদে লিপিবদ্ধ \\
+চ্যালেঞ্জের সুযোগ & ব্যবহারকারী ও জনসাধারণ ত্রুটি চিহ্নিত করে সাড়া পেতে পারেন & পোর্টালের "সমস্যা জানান" লিংক; ঘটনা-প্রক্রিয়া \\
+প্রকাশের আগে দ্বৈত যাচাই & প্রকাশের আগে দুইজন মানুষ যেকোনো এআই-সহায়িত টেক্সট যাচাই করেন & প্রতিবেদন, সংক্ষিপ্তসার ও জনসমক্ষে সারাংশ \\
+\bottomrule
+\end{tabularx}
+\par\vspace{3pt}{\scriptsize\color{gray} উৎস: BAPIL কারিগরি ব্লুপ্রিন্ট, সংস্করণ ১.০ (২০২৬)। CC BY 4.0।}
+\end{minipage}
+\end{document}

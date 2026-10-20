@@ -1,0 +1,23 @@
+{
+  "system_id": "EXAMPLE-SCORING",
+  "context": "Hypothetical citizen trust score (prohibited)",
+  "prohibited": {
+    "social_scoring": true,
+    "mass_biometric_surveillance": false,
+    "opinion_profiling": false,
+    "deceptive_synthetic_media": false,
+    "manipulation_of_vulnerabilities": false
+  },
+  "scores": {
+    "D1": 3,
+    "D2": 3,
+    "D3": 3,
+    "D4": 3,
+    "D5": 3,
+    "D6": 2,
+    "D7": 3
+  },
+  "rationale": {
+    "note": "Prohibited use"
+  }
+}

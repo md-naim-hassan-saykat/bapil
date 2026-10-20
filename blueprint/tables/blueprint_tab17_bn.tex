@@ -1,0 +1,37 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\setmainfont{Noto Serif}
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali]
+\usepackage[Latin,Bengali]{ucharclasses}
+\setTransitionsFor{Bengali}{\begingroup\bengalifont}{\endgroup}
+\usepackage{newunicodechar}
+\newunicodechar{।}{{\bengalifont\char"0964}}
+\newunicodechar{॥}{{\bengalifont\char"0965}}
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{17cm}
+{\large\bfseries সারণি ১৭।}\ {\large ভূমিকা-পরিবার ও স্তরভিত্তিক দক্ষতা কাঠামো}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=0.870\hsize\raggedright\arraybackslash}X>{\hsize=1.043\hsize\raggedright\arraybackslash}X>{\hsize=1.043\hsize\raggedright\arraybackslash}X>{\hsize=1.043\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{ভূমিকা-পরিবার} & \textbf{সচেতন} & \textbf{চর্চাকারী} & \textbf{বিশেষজ্ঞ} \\
+\midrule
+জনপ্রশাসনের নেতৃত্ব & এআই কী পারে ও পারে না; ঝুঁকি-স্তর; কখন প্রমাণ চাইতে হবে & পাইলটে পৃষ্ঠপোষকতা; মূল্যায়ন প্রতিবেদন পড়া; ক্রয়-শর্ত প্রয়োগ & কৌশল নির্ধারণ; পর্যালোচনায় সভাপতিত্ব; উদ্ভাবন ও সুরক্ষার ভারসাম্য \\
+নীতি-বিশ্লেষক & উদ্ধৃতিভিত্তিক অনুসন্ধান; উৎস যাচাই; বিরতি চেনা & প্রমাণ-প্রশ্ন নকশা; পক্ষপাত ও ঘাটতি শনাক্ত; সীমাবদ্ধতা অবহিত করা & সরঞ্জামের সহ-নকশা; বেঞ্চমার্ক নির্ধারণ; সহকর্মীদের প্রশিক্ষণ \\
+শাসন, আইন ও নৈতিকতা কর্মী & ডেটা-শ্রেণি; নিষিদ্ধ ব্যবহার; DPIA-র মৌলিক ধারণা & স্তর মূল্যায়ন, DPIA ও গেট পর্যালোচনা পরিচালনা & ERRC-এর কাজে নেতৃত্ব; ব্যবস্থা নিরীক্ষা; জাতীয় নির্দেশিকা গঠন \\
+ডেটা-তত্ত্বাবধায়ক & মেটাডেটা ও লাইসেন্স; ডেটা-শ্রেণি & মানের মাপকাঠি; ডেটা বিনিময়ের মাধ্যমে চুক্তি & ক্যাটালগ ও ডেটা-বিনিময় কাঠামো নকশা \\
+ML ও NLP প্রকৌশলী & বাংলা টেক্সটের মৌলিক বিষয়; মূল্যায়নের মাপকাঠি & উদ্ধার ও মূল্যায়ন পাইপলাইন নির্মাণ; মডেল কার্ড লেখা & মডেল অভিযোজন; রেড-টিমিং; বেঞ্চমার্ক নকশায় নেতৃত্ব \\
+প্ল্যাটফর্ম ও নিরাপত্তা প্রকৌশলী & অঞ্চল; গোপন তথ্য ব্যবস্থাপনা; লগ & কোড-হিসেবে অবকাঠামো; SBOM; ঘটনা-প্রতিক্রিয়া & জিরো-ট্রাস্ট নকশা; এআই ব্যবস্থার হুমকি-মডেলিং \\
+\bottomrule
+\end{tabularx}
+\par\vspace{3pt}{\scriptsize\color{gray} উৎস: BAPIL কারিগরি ব্লুপ্রিন্ট, সংস্করণ ১.০ (২০২৬)। CC BY 4.0।}
+\end{minipage}
+\end{document}

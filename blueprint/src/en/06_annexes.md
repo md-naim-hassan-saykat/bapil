@@ -1,0 +1,446 @@
+# Annex A: Requirements Traceability Matrix
+
+<!-- TABLE:58 -->
+
+Requirements not listed here are verified through pilot acceptance criteria (Table 38), security testing (Chapter 10) or governance review (Chapter 13).
+
+\newpage
+
+# Annex B: Risk-Tier Questionnaire
+
+## B.1 Prohibited-Use Screening
+
+Answer *yes* or *no*. Any *yes* places the system in tier T0, and work stops.
+
+1. Does the system score or rank individuals for general social trustworthiness or behaviour (social scoring)?
+2. Does it perform mass or indiscriminate biometric identification or surveillance?
+3. Does it infer or profile individuals' political opinions, religious beliefs or similar protected characteristics?
+4. Does it generate deceptive synthetic media depicting real people?
+5. Does it use manipulative techniques that exploit vulnerabilities such as age, disability or economic hardship?
+
+## B.2 Scored Dimensions
+
+<!-- TABLE:59 -->
+
+## B.3 Tiering Rules
+
+1. Any *yes* in B.1 gives **T0 Prohibited**.
+2. Otherwise, the system is **T3 High** if the total score is 13 or more, or D1 = 3, or D2 = 3, or both D2 and D3 are 2 or more.
+3. Otherwise, the system is **T2 Limited** if the total score is 6 or more, or D1 = 2, or D7 is 2 or more.
+4. Otherwise, the system is **T1 Low**.
+
+The rules are implemented in `bapil.risk` and tested against the examples in `implementation/examples/risk/`, including a prohibited social-scoring example (T0) and a benefit-eligibility example (T3).
+
+## B.4 Worked Example: Pilot P1 in Class A Use
+
+Scores: D1 = 2 (informs official decisions on policies), D2 = 0 (public documents), D3 = 0 (no individuals affected), D4 = 1, D5 = 1 (person reviews every output), D6 = 0 (no individuals affected), D7 = 1 (officials). Total = 5. No high-risk condition applies; because D1 = 2, the result is **T2 Limited**, requiring ERRC review, red-team testing, human review of every output and user training. The same system used only by BAPIL researchers (D1 = 1, D7 = 0) scores 3 and is **T1 Low**. This calculation is reproduced by `python -m bapil.cli assess examples/risk/risk_p1_policy_search.json`.
+
+\newpage
+
+# Annex C: Templates
+
+## C.1 AI System Record (summary of fields)
+
+| Field | Description |
+|---|---|
+| `system_id` | Unique identifier, for example `BAPIL-P1` |
+| `name` | Name in English and Bangla |
+| `purpose` | What the system is for and what it is not for |
+| `owner` | Accountable person and unit; host-agency product owner if any |
+| `maturity_class` | R, A or O |
+| `risk_tier` | T0 to T3, with the date and reference of the latest assessment |
+| `data_classes` | Data classes used (P0 to P3) |
+| `models` | Models and versions, with links to model cards |
+| `evaluation` | Benchmark version and headline results |
+| `gate_status` | Latest gate passed and date |
+| `oversight` | Human oversight patterns applied (Table 40) |
+| `limitations` | Known limitations and failure modes |
+| `contact` | How to report a problem or complaint |
+
+The full JSON schema is `implementation/schemas/ai_system_record.schema.json`.
+
+## C.2 Model Card (headings)
+
+Model details; intended use and out-of-scope uses; training and adaptation data; evaluation data and results by language; fairness and robustness analysis; limitations and risks; ethical considerations; environmental and compute cost; versioning and contact [99].
+
+## C.3 Datasheet for a Dataset (headings)
+
+Motivation (why the dataset was created and by whom); composition (what it contains, data classes, languages, known gaps); collection process (sources, dates, reuse terms); preprocessing (extraction, OCR, normalisation, de-identification); uses (intended and not recommended); distribution (licence, DOI); maintenance (owner, update schedule, how errors are reported) [100].
+
+## C.4 Incident Report (headings)
+
+Reference number; date and time; system and version; reporter (optional); description; affected users or groups; severity (Table 34); immediate action; root cause; corrective action; ERRC review; public summary.
+
+## C.5 Evaluation Report (headings)
+
+System and version; benchmark version and split; metrics by language and document type (Table 28); comparison with the previous release and with thresholds; error analysis with examples; red-team and security results; known limitations; recommendation for the next gate.
+
+\newpage
+
+# Annex D: Publication, Versioning and DOI Policy
+
+1. **Separate records per publication.** The White Paper, Executive Summary and this Blueprint each have their own Zenodo record and DOI. The Blueprint record contains the English and Bangla Blueprint, Summary and Decision Memo, in PDF and Markdown, plus figures and tables in LaTeX, PDF and PNG.
+2. **Related identifiers.** The Blueprint record declares that it *is supplement to* the White Paper (10.5281/zenodo.21363967), *references* the Executive Summary (10.5281/zenodo.21441172) and *is supplemented by* the GitHub repository release that contains the reference implementation.
+3. **DOI reservation.** The DOI is reserved on Zenodo before publication so that it can be printed in the documents; the PDFs are then rebuilt and uploaded.
+4. **Repository releases.** Repository releases use semantic versioning. Release v1.1.0 adds the Blueprint and the reference implementation.
+5. **New versions.** Corrections produce a new version of the same Zenodo record (for example 1.0.1); substantive revisions produce Blueprint 2.0 (Milestone MS9).
+6. **Licences.** Documents are CC BY 4.0; code is MIT.
+7. **Language precedence.** The English edition is authoritative. Where the Bangla edition differs in interpretation, the English edition prevails.
+
+\newpage
+
+# Annex E: Draft BAPIL Charter
+
+This draft is offered for adoption by the Steering Board at Milestone MS1, after consultation (Table 8) and legal review (Section 14.3).
+
+**Article 1. Name and status.** The Bangladesh AI Policy & Innovation Lab (BAPIL) is a research, policy-intelligence and capacity-building initiative hosted by [host institution] under a Memorandum of Understanding with the ICT Division.
+
+**Article 2. Mission.** BAPIL helps Bangladesh use artificial intelligence for evidence-based policymaking, responsible AI governance, Bangla-language technology and public-sector innovation, through open research, tools, methods and training.
+
+**Article 3. Boundaries.** BAPIL does not make policy, regulate, perform operational security functions or operate production government systems. It works with public data first, provides advice and not decisions, and never builds or supports surveillance.
+
+**Article 4. Prohibited uses.** BAPIL will not build, pilot, evaluate for deployment or otherwise support any system for social scoring; mass or indiscriminate biometric identification or surveillance; profiling of political opinions, religious beliefs or similar protected characteristics; deceptive synthetic media depicting real people; or manipulation that exploits vulnerabilities.
+
+**Article 5. Governance.** BAPIL is governed by a Steering Board, an independent Ethics and Risk Review Committee (ERRC) and a Technical Architecture Board, with the composition and powers set out in their terms of reference (Annexes F and G).
+
+**Article 6. The ERRC veto.** No system of tier T2 or above may pass Gates G2 or G4 without the approval of the ERRC. ERRC decisions to refuse or suspend are binding and can be reversed only by the ERRC itself.
+
+**Article 7. Registration and transparency.** Every AI system is registered before work begins. A public transparency register lists each system's purpose, owner, tier, maturity class, data classes, evaluation summary, limitations and complaint contact.
+
+**Article 8. Openness.** Code, benchmarks, evaluation reports and non-sensitive data are published openly with persistent identifiers. Exceptions for security or privacy are recorded in writing and reviewed annually.
+
+**Article 9. Data protection.** BAPIL complies with the Personal Data Protection Act, 2026, the National Data Management Act, 2026 and related rules, and applies the data classification and safeguards of this Blueprint, which may be stricter than the law requires.
+
+**Article 10. Independence and integrity.** Researchers decide methods and publish results. No funder may control research results or governance decisions. Conflicts of interest are declared and managed.
+
+**Article 11. Transfer and withdrawal.** Tools that pass Gate G4 are transferred to agency ownership with documentation and support. BAPIL withdraws from any activity that conflicts with this charter.
+
+**Article 12. Review and amendment.** The charter is reviewed at each strategic review (Table 48). Amendments require a two-thirds majority of the Steering Board after consultation with the ERRC; Articles 3, 4 and 6 can be weakened only after public consultation.
+
+\newpage
+
+# Annex F: Terms of Reference of the Ethics and Risk Review Committee
+
+**Purpose.** To provide independent review of the ethical, legal and societal risks of BAPIL's AI systems and research, and to hold a binding veto over tier T2 and T3 work.
+
+**Composition.** Five to seven members, a majority external to BAPIL and the host institution, covering law and human rights, data protection, ethics, the relevant policy domains, Bangla language and civil society, with gender balance. The chair is an external member. Members serve three-year terms, renewable once.
+
+**Responsibilities.**
+
+* Review tier T2 and T3 systems at Gates G1, G2 and G4, and any reclassification of P2 data.
+* Review serious incidents and decide on suspension.
+* Approve research protocols involving people or sensitive topics, including P6.
+* Advise the Steering Board on charter amendments and on the risk register.
+* Publish summaries of its decisions within thirty days.
+
+**Powers.** The ERRC may approve, approve with conditions, refuse or suspend. Refusal and suspension are binding. The ERRC may commission independent expert advice within its budget.
+
+**Procedure.** The ERRC meets at least quarterly and as needed for gate reviews. A quorum is a majority of members including at least two external members. Decisions are taken by consensus where possible and otherwise by majority; dissenting opinions are recorded. Members declare conflicts and withdraw from related decisions.
+
+**Resources.** The ERRC has a secretariat provided by the governance analyst and a budget for honoraria and expert advice, protected in the annual plan.
+
+\newpage
+
+# Annex G: Terms of Reference of the Steering Board and the Technical Architecture Board
+
+## G.1 Steering Board
+
+**Purpose.** To set BAPIL's strategy, approve its plans and budgets, and hold its leadership to account.
+
+**Composition.** Seven to nine members: the ICT Division (co-chair), the host institution (co-chair), the Planning Commission, a data custodian agency, an academic member from another university, a civil-society member and an industry member, with at least one member from outside Dhaka and with gender balance. The Director attends without a vote.
+
+**Responsibilities.** Adopt the charter; approve the annual plan and budget; approve partnerships and senior appointments; take G4 adoption decisions jointly with host agencies; review the risk register quarterly; conduct the strategic reviews in Table 48.
+
+**Procedure.** Meets quarterly; quorum of a majority including both co-chairs or their delegates; minutes published in summary.
+
+## G.2 Technical Architecture Board
+
+**Purpose.** To ensure that BAPIL's systems are well designed, secure, interoperable and maintainable.
+
+**Composition.** BAPIL's lead engineers, the security lead and two external technical reviewers.
+
+**Responsibilities.** Set architecture and security standards; approve designs at G1; approve models and major dependencies; maintain architecture decision records; review security test results.
+
+**Procedure.** Meets monthly and as needed for design reviews; decisions recorded as ADRs in the repository.
+
+\newpage
+
+# Annex H: Data Protection Impact Assessment Template
+
+A DPIA is required before any processing of P2 data and is recommended for any new use of P1 data.
+
+1. **Description of processing.** Purpose; data subjects; categories of data; sources; recipients; retention; systems used.
+2. **Lawful basis.** Basis under the Personal Data Protection Act, 2026; consent wording and records where consent is the basis.
+3. **Necessity and proportionality.** Why the data is needed; why less sensitive data would not work; minimisation measures.
+4. **Rights of data subjects.** How access, correction, deletion and objection are handled; confirmation that no automated decisions are made about individuals.
+5. **Risks to individuals.** Re-identification, disclosure, misuse, discrimination, chilling effects; likelihood and severity of each.
+6. **Measures.** De-identification method; aggregation thresholds; access control; encryption; retention and deletion; staff training.
+7. **Residual risk and decision.** Remaining risks after measures; recommendation; approval by the governance analyst and the ERRC; review date.
+8. **Consultation.** Views of the data custodian, the data protection officer of the host institution and, where appropriate, representatives of data subjects.
+
+\newpage
+
+# Annex I: Outline of a Data-Sharing Agreement
+
+1. **Parties and contacts.**
+2. **Purpose.** The specific research or pilot purpose; prohibition of other uses.
+3. **Data description.** Datasets, fields, period, format, data class (Table 22).
+4. **Legal basis.** Applicable provisions of the 2026 Acts and any rules; use of the national data exchange where available.
+5. **Security.** Controls required (Table 32), hosting in Bangladesh, access list.
+6. **Outputs.** Permitted outputs (for example, aggregate results only), review of outputs before publication, attribution.
+7. **Retention and deletion.** Retention period (Table 26), deletion method and certificate.
+8. **Audit and reporting.** Custodian's right to audit; incident notification within 24 hours.
+9. **Intellectual property and licensing.** Ownership of source data and of derived outputs; open licensing of BAPIL outputs where permitted.
+10. **Term, review and termination.**
+11. **Transparency.** Listing of the agreement, without confidential details, in the transparency register.
+
+\newpage
+
+# Annex J: Gate Checklists
+
+## G0 Register and screen
+
+* AI system record created in the register.
+* Prohibited-use screening completed; no *yes* answers.
+* Tier assessment completed (Annex B) and recorded.
+* Owner and product owner named.
+
+## G1 Design review
+
+* Data plan with data classes and sources; reuse terms recorded.
+* DPIA approved where P2 data is involved.
+* Architecture reviewed and approved by the TAB; threat model includes AI-specific risks (Table 33).
+* Evaluation plan with benchmark version and thresholds.
+* ERRC review completed for tier T2 and T3.
+
+## G2 Pre-pilot readiness
+
+* Benchmark results meet the thresholds in Table 28.
+* Red-team and security tests passed; findings resolved or accepted.
+* Model card and datasheets published.
+* User training materials ready; incident procedure in place.
+* ERRC approval for tier T2.
+
+## G3 Pilot
+
+* Pilot users enrolled and trained; human oversight patterns applied (Table 40).
+* Monitoring and audit logging active; incidents reviewed monthly.
+* User feedback and time-to-evidence data collected.
+* Pilot report with results against exit criteria.
+
+## G4 Adoption decision
+
+* Independent evaluation completed and published.
+* Host agency acceptance; agency legal review completed.
+* Operating, support and funding arrangements agreed; transfer plan approved.
+* Joint decision by the Steering Board and the host agency; ERRC approval for tier T2.
+
+## G5 Update or retire
+
+* Change assessed; re-evaluation completed on the current benchmark.
+* Register and model card updated.
+* For retirement: users informed, data retained or deleted per schedule, archive created.
+
+\newpage
+
+# Annex K: BanglaPolicyQA Annotation Guidelines (Summary)
+
+1. **Question writing.** Questions are written by domain experts from real analyst tasks, in natural Bangla or English, including some romanised Bangla and variant spellings. Each question should have a clear answer in the corpus, except for a designated share (about 10%) of unanswerable questions.
+2. **Gold passages.** A second annotator, who did not write the question, finds the passage or passages that answer it and records their identifiers. A passage is gold only if it alone supports the answer.
+3. **Graded relevance.** Passages are marked 2 (fully answers), 1 (partly answers or provides necessary context) or 0 (not relevant).
+4. **Adjudication.** Disagreements are resolved by a third annotator; agreement rates are reported in the datasheet.
+5. **Balance.** The question set is balanced across languages, document types (laws, plans, budgets, statistics) and issuing bodies, and covers different periods.
+6. **Quality control.** A random 10% of items is re-annotated each version; items with errors are corrected and logged.
+7. **Ethics and licensing.** Annotators are paid fairly and credited; questions contain no personal data; the benchmark is released under CC BY 4.0 with source attribution.
+8. **Splits and freezing.** Each version has a public development split and a private test split; versions are frozen and archived with a DOI.
+
+\newpage
+
+# Annex L: Glossary
+
+| Term | Meaning in this Blueprint |
+|---|---|
+| Abstention | The system's refusal to answer when the evidence is insufficient, with the closest sources and the reason shown |
+| Adoption decision (G4) | The decision to transfer a tool to agency ownership as a class O system, or to stop |
+| AI system register | The internal record of every AI system, from which the public transparency register is generated |
+| BanglaPolicyQA | BAPIL's open benchmark of policy questions in Bangla and English with gold passages |
+| Citation precision | The share of cited passages that actually support the statement they are attached to |
+| Corpus version | An identifier of the exact set of documents and passages used for a result, enabling reproduction |
+| Data class | The sensitivity class of data, from P0 (public) to P3 (sensitive personal data) |
+| Extractive answer | An answer made of sentences selected from source passages, each with its citation |
+| Gate | A documented decision point (G0 to G5) that a system must pass to move forward |
+| Horizon | A period of the strategic roadmap (H0 to H4, and beyond 2041) |
+| Maturity class | The status of a system: R (research), A (advisory) or O (operational, agency-owned) |
+| Passage | A short section of a document, the unit of search and citation |
+| Product owner | A named official in a host agency who defines needs and accepts or rejects a pilot |
+| Risk tier | The level of risk of a system, from T0 (prohibited) to T3 (high), which sets the required controls |
+| Transparency register | The public list of BAPIL's AI systems with their purpose, tier, evaluation and limitations |
+
+\newpage
+
+# Annex M: Walkthrough of the Reference Implementation
+
+This annex shows, step by step, what the reference implementation does with a question. It uses the two small test documents in `implementation/tests/fixtures/` (a sample policy note in English and its Bangla counterpart), so that the results are short, stable and can be reproduced exactly by anyone with the repository.
+
+## M.1 A Cited Answer in English
+
+```bash
+python -m bapil.cli ask --corpus tests/fixtures --log build/audit.jsonl \
+  "When is a data protection impact assessment required?"
+```
+
+```text
+Q: When is a data protection impact assessment required?
+Confidence: high
+1. A data protection impact assessment is required before any processing
+   of personal data at scale. [policy_en#p1]
+2. বৃহৎ পরিসরে ব্যক্তিগত উপাত্ত প্রক্রিয়াকরণের আগে প্রভাব মূল্যায়ন আবশ্যিক। [policy_bn#p1]
+3. Personal data must be processed only with consent. [policy_en#p1]
+Sources:
+  - [policy_en#p1] Sample Policy Note > Data Protection
+  - [policy_bn#p1] নমুনা নীতি-নোট > উপাত্ত সুরক্ষা
+```
+
+Three features are visible. Every sentence carries the identifier of the passage it was taken from. The second sentence comes from the Bangla document, retrieved for an English question because the bilingual glossary links *data protection* with উপাত্ত সুরক্ষা and *impact assessment* with প্রভাব মূল্যায়ন. And the answer is extractive: each sentence appears word for word in the cited source.
+
+## M.2 A Cited Answer in Bangla
+
+```text
+Q: বাজেট নথি কখন প্রকাশিত হয়?
+Confidence: medium
+1. প্রতি অর্থবছরে বাজেট নথি প্রকাশিত হয় যাতে নাগরিকেরা সরকারি ব্যয়
+   অনুসরণ করতে পারেন। [policy_bn#p2]
+2. জাতীয় বাজেটে মন্ত্রণালয়সমূহের জন্য অর্থ বরাদ্দ করা হয়। [policy_bn#p2]
+3. ২০২৬ সালের বাজেটে নতুন বরাদ্দ রয়েছে। [policy_bn#p2]
+Sources:
+  - [policy_bn#p2] নমুনা নীতি-নোট > বাজেট স্বচ্ছতা
+  - [policy_en#p2] Sample Policy Note > Budget Transparency
+```
+
+The Bangla question is answered from the Bangla passage, and the English passage on the same topic is listed among the sources. Confidence is reported as a band (high, medium or low) based on the evidence score and the share of query terms covered, not as a single number that could suggest false precision.
+
+## M.3 Abstention
+
+```text
+Q: What is the boiling point of water in Kelvin?
+ABSTAINED (no_matching_passages). Closest sources:
+```
+
+The question is outside the corpus, no passage matches, and the system says so instead of producing an answer. In the larger demonstration corpus, the system abstained correctly on all six out-of-scope questions (Section 11.5).
+
+## M.4 The Machine-Readable Response
+
+The same answer can be returned as JSON (option `--json`, or the `/v1/answer` endpoint of the API). An extract:
+
+```text
+{
+ "question": "When is a data protection impact assessment required?",
+ "abstained": false,
+ "confidence": "high",
+ "evidence": {"top_score": 7.881, "coverage": 1.0},
+ "answer": [
+  {"text": "A data protection impact assessment is required before ...",
+   "citation": {"pid": "policy_en#p1", "doc_id": "policy_en",
+                "heading": "Sample Policy Note > Data Protection"}},
+  ...
+ ],
+ "sources": [
+  {"pid": "policy_en#p1", "lang": "en", "score": 7.8812,
+   "matched_terms": ["assessment", "data", "impact", "protection", "required"],
+   "provenance": {"path": "tests/fixtures/policy_en.md",
+                  "sha256": "b85002b0b751...", "data_class": "P0"}},
+  ...
+ ],
+ "corpus_version": "3c204e06a617"
+}
+```
+
+The response carries the evidence used to decide whether to answer, the terms that matched, the provenance of each source including its checksum and data class, and the corpus version. Together these allow any answer to be reproduced and audited later.
+
+## M.5 The Audit Log
+
+Each answer is written to an append-only log in which every record contains the hash of the previous one:
+
+```text
+{"hash":"760a77ff...","payload":{"abstained":false,
+ "pids":["policy_en#p1","policy_bn#p1","policy_en#p1"],
+ "q":"When is a data protection impact assessment required?"},
+ "prev":"00000000...","ts":"...","type":"answer"}
+```
+
+```bash
+python -m bapil.cli verify-log build/audit.jsonl
+# build/audit.jsonl: 3 entries, chain intact
+```
+
+If any record is edited, deleted or reordered, verification fails and reports the first broken link. This is the mechanism behind requirement GR-04 and user story US-08.
+
+## M.6 A Risk-Tier Assessment
+
+```bash
+python -m bapil.cli assess examples/risk/risk_p1_policy_search.json
+```
+
+```text
+BAPIL-P1: T2 Limited (total 5)
+  reason:   D1 = 2: informs official decisions on policies or programmes
+  control:  All T1 controls
+  control:  ERRC review
+  control:  Red-team test
+  control:  Human review of every output in use
+  control:  User training
+  control:  Incident procedure
+  control:  Quarterly monitoring report
+  approver: ERRC and Steering Board
+```
+
+The result reproduces the worked example in Annex B.4: the tier, the reason, the controls that become mandatory and the bodies that must approve.
+
+\newpage
+
+# Annex N: Contribution to the National AI Policy Elements
+
+The draft National AI Policy 2026-2030 proposed several elements [88]. The table shows how BAPIL's design could support each of them if they are retained in the final policy.
+
+| Draft policy element | How BAPIL can contribute | Where in this Blueprint |
+|---|---|---|
+| Risk categories (prohibited, high, limited, low) | Operational tiering method with a questionnaire, rules and tested code | Chapter 13; Annex B |
+| Algorithmic impact assessment for high-risk uses | Impact assessment template and worked examples; DPIA template | Annexes B and H |
+| Independent oversight committee | Tested model of an ethics and risk committee with a binding veto and publication duty | Chapter 5; Annex F |
+| Labelling of AI-generated content | Labelling and verification rules for generative features | Section 13.8 |
+| Bangla-based national LLM | Open benchmark, governed corpus, evaluation protocol and an evidence-gated adaptation path | Chapter 9 |
+| Centralised national compute | Modest pilot footprint and use of shared compute for adaptation | Chapter 10 |
+| AI Innovation Fund | Open challenges and procurement clauses that keep markets open and fair | Chapter 17 |
+| Skills and AI literacy | Competency framework, six training programmes and fellowships | Chapter 6 |
+| Public-sector AI adoption | Gate-based path from pilot to agency ownership; transparency register | Chapters 12 and 13 |
+
+\newpage
+
+# Annex O: Indicative First-Year Work Plan for Pilot P1
+
+| Months | Activities | Outputs | Gate |
+|---|---|---|---|
+| 1 to 2 | Appoint pilot lead and product owners; interview 15 to 20 analysts; register the system | User research summary; AI system record | G0 |
+| 2 to 4 | Harvest laws, plans and budget documents; extraction and OCR; metadata and quality checks | Corpus release 0.1 with quality report | |
+| 3 to 5 | Design review; threat model; evaluation plan; draft user interface in Bangla and English | Approved design; evaluation plan | G1 |
+| 4 to 7 | Build search and answer services; bilingual glossary; portal; audit logging | Internal alpha | |
+| 5 to 8 | Write and annotate BanglaPolicyQA v0 questions; baseline evaluation | Benchmark v0 (500 questions); baseline report | |
+| 8 to 9 | Red-team and security tests; fix findings; train pilot users; ERRC review | Readiness evidence; model card | G2 |
+| 9 to 12 | Pilot with 30 or more analysts in two to three agencies; monthly problem reviews; time-to-evidence study | Pilot report; user survey; Year 1 results | G3 |
+
+\newpage
+
+{{REFERENCES}}
+
+\newpage
+
+# Contact
+
+**Md Naim Hassan Saykat**  
+Independent Researcher, Bangladesh  
+ORCID: <https://orcid.org/{{ORCID}}>
+
+**GitHub:** <https://github.com/md-naim-hassan-saykat>  
+**Repository:** <https://github.com/md-naim-hassan-saykat/bapil>
+
+Comments, corrections and proposals for collaboration are welcome through the repository's issue tracker.

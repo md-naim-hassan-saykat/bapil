@@ -1,0 +1,36 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\setmainfont{Latin Modern Roman}
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali]
+\usepackage[Latin,Bengali]{ucharclasses}
+\setTransitionsFor{Bengali}{\begingroup\bengalifont}{\endgroup}
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{17cm}
+{\large\bfseries Table 5.}\ {\large Capability gap analysis}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=0.876\hsize\raggedright\arraybackslash}X>{\hsize=1.237\hsize\raggedright\arraybackslash}X>{\hsize=1.237\hsize\raggedright\arraybackslash}X>{\hsize=1.237\hsize\raggedright\arraybackslash}X>{\hsize=0.412\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{Capability} & \textbf{Current state} & \textbf{Gap} & \textbf{Blueprint response} & \textbf{Chapter} \\
+\midrule
+Access to official documents & Published across many sites, often as scanned PDF & No unified, searchable, cited collection in Bangla and English & Governed P0 corpus and Policy Search (P1) & 8, 12 \\
+Bangla language technology & Research models and datasets exist [46, 48, 49, 81] & No policy-domain benchmark; uneven OCR and normalisation & BanglaPolicyQA, normalisation rules, staged BPFM & 9 \\
+AI governance practice & Draft policy categories; new data laws & No operational risk-tiering, gates or transparency register in use & Risk tiers, gates, ERRC, register & 13 \\
+Data stewardship & Open data portal and statistical releases [31, 33] & Inconsistent metadata, licences and quality [78, 79] & DCAT metadata, quality metrics, NRDEX agreements & 8 \\
+Compute & Scarce in universities [80] & No shared, governed environment for public-interest AI & Modest pilot hosting; shared national compute for adaptation & 10 \\
+Skills in government & Strong digital service experience & Limited AI literacy and assurance skills & Six training programmes and fellowships & 6 \\
+Evaluation culture & Project reporting focused on outputs & Few published, reproducible evaluations of AI tools & Benchmarks, KPIs, independent evaluation, DOIs & 18 \\
+Coordination & Several national digital and AI programmes & Risk of duplication and unclear roles & Division-of-labour MoU and stakeholder plan & 3, 5 \\
+\bottomrule
+\end{tabularx}
+\par\vspace{3pt}{\scriptsize\color{gray} Source: BAPIL Technical Blueprint, Version 1.0 (2026). CC BY 4.0.}
+\end{minipage}
+\end{document}

@@ -1,0 +1,15 @@
+**Table 43.** Compliance checklist against the Bangladesh framework
+
+| Area | Requirement (as reported) | BAPIL control | Evidence |
+|-----------------|--------------------------|------------------------|------------------|
+| Consent and lawful basis (PDPA 2026) | Explicit consent for collection and use of personal data | P0-first; consent records for P3 pilot data | Consent forms; DPIA |
+| Data-subject rights (PDPA 2026) | Access, correction, deletion; restriction of automated decisions | No automated decisions on individuals; rights-request procedure | Procedure; request log |
+| Sensitive and children's data (PDPA 2026) | Enhanced protection; restrictions on profiling minors | P3 data excluded by charter | Charter; data inventory |
+| Data custody and exchange (NDMA 2026) | Custodian duties; approved data exchange | Data-sharing agreements; use of NRDEX where available | Signed agreements |
+| Source code (NDMA 2026) | National source code repository for government software | Open-source code; mirror to national repository when available | Repository links |
+| Security duties (Cyber Security Act 2026) | Protection of systems and data; incident handling | NIST CSF 2.0 controls; incident plan | Security reviews; drills |
+| Harmful AI-generated content (2026 amendment) | Removal of harmful synthetic content | No generation of synthetic media; research protocols for P6 | ERRC approvals |
+| Proactive disclosure (RTI Act 2009) | Publication of public information | Open publications; transparency register | Published register |
+| Draft national AI policy | Risk categories; impact assessment; oversight | Tier system aligned; impact assessments for T2 and T3 | Assessments; register |
+
+*Note.* Requirements summarise press and secondary descriptions [84, 85, 86, 87, 88] and must be confirmed against the gazetted texts by the legal review (Section 14.3).

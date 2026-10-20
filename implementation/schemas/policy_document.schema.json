@@ -1,0 +1,131 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/md-naim-hassan-saykat/bapil/implementation/schemas/policy_document.schema.json",
+  "title": "BAPIL policy document metadata record",
+  "description": "Metadata for one document in the BAPIL corpus (Blueprint Section 8.5 and Table 24). Aligned with W3C DCAT 3 and the FAIR principles.",
+  "type": "object",
+  "required": [
+    "id",
+    "title",
+    "publisher",
+    "document_type",
+    "date_issued",
+    "language",
+    "source_url",
+    "retrieved",
+    "data_class",
+    "sha256",
+    "extraction"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Persistent identifier inside the corpus"
+    },
+    "title": {
+      "type": "object",
+      "properties": {
+        "bn": {
+          "type": "string"
+        },
+        "en": {
+          "type": "string"
+        }
+      },
+      "minProperties": 1
+    },
+    "publisher": {
+      "type": "string"
+    },
+    "issuing_body": {
+      "type": "string"
+    },
+    "document_type": {
+      "type": "string",
+      "enum": [
+        "act",
+        "ordinance",
+        "rule",
+        "gazette_notification",
+        "budget_document",
+        "plan",
+        "statistical_release",
+        "parliamentary_paper",
+        "policy",
+        "report",
+        "other"
+      ]
+    },
+    "date_issued": {
+      "type": "string",
+      "format": "date"
+    },
+    "version": {
+      "type": "string"
+    },
+    "language": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "bn",
+          "en"
+        ]
+      },
+      "minItems": 1
+    },
+    "source_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "retrieved": {
+      "type": "string",
+      "format": "date"
+    },
+    "reuse_terms": {
+      "type": "string"
+    },
+    "data_class": {
+      "type": "string",
+      "enum": [
+        "P0",
+        "P1",
+        "P2"
+      ]
+    },
+    "sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "extraction": {
+      "type": "object",
+      "required": [
+        "method"
+      ],
+      "properties": {
+        "method": {
+          "type": "string",
+          "enum": [
+            "born_digital",
+            "ocr"
+          ]
+        },
+        "quality_score": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "tool": {
+          "type": "string"
+        }
+      }
+    },
+    "supersedes": {
+      "type": "string"
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

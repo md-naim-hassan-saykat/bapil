@@ -1,0 +1,36 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\setmainfont{Latin Modern Roman}
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali]
+\usepackage[Latin,Bengali]{ucharclasses}
+\setTransitionsFor{Bengali}{\begingroup\bengalifont}{\endgroup}
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{17cm}
+{\large\bfseries Table 4.}\ {\large Selected baseline indicators for Bangladesh}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=1.045\hsize\raggedright\arraybackslash}X>{\hsize=1.545\hsize\raggedright\arraybackslash}X>{\hsize=1.000\hsize\raggedright\arraybackslash}X>{\hsize=0.409\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{Indicator} & \textbf{Reported value} & \textbf{Implication for BAPIL} & \textbf{Source} \\
+\midrule
+UN E-Government Development Index (EGDI), 2024 & Rank 100 of 193, score 0.6570 (rank 111 in 2022); highest EGDI among least developed countries & Digital service foundations exist to build on & [21, 107] \\
+ITU Global Cybersecurity Index, 2024 & Reported in the top tier & Frameworks exist; resilience under stress still needs testing & [71, 108] \\
+Oxford Insights Government AI Readiness Index, 2023 & Rank 82 & Room to improve on governance, data and capacity pillars & [26, 80] \\
+University AI compute, 2025 estimates & 2 to 55 GPUs per surveyed department; public universities at the low end & Use shared national compute; keep pilot models small & [80] \\
+Data protection and data management & Personal Data Protection Act, 2026 and National Data Management Act, 2026 passed in April 2026 & Clear legal basis for a public-data-first design & [85, 86] \\
+National AI policy & Draft 2026-2030 consulted in January 2026; new drafting from Q4 2026 & Timely window for technical input & [88, 91] \\
+Network resilience & A nationwide disruption in July 2024 exposed single points of failure & Plan for offline operation, backups and recovery & [108] \\
+\bottomrule
+\end{tabularx}
+\par\vspace{5pt}{\footnotesize\itshape Indices measure different things over different years and should not be compared directly. Values are as reported in the cited sources.}
+\par\vspace{3pt}{\scriptsize\color{gray} Source: BAPIL Technical Blueprint, Version 1.0 (2026). CC BY 4.0.}
+\end{minipage}
+\end{document}

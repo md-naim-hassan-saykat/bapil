@@ -1,0 +1,33 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\setmainfont{Latin Modern Roman}
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali]
+\usepackage[Latin,Bengali]{ucharclasses}
+\setTransitionsFor{Bengali}{\begingroup\bengalifont}{\endgroup}
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{17cm}
+{\large\bfseries Table 35.}\ {\large Business continuity and disaster recovery targets (pilot phase)}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=1.266\hsize\raggedright\arraybackslash}X>{\hsize=0.709\hsize\raggedright\arraybackslash}X>{\hsize=0.709\hsize\raggedright\arraybackslash}X>{\hsize=1.316\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{Service} & \textbf{Recovery point (RPO)} & \textbf{Recovery time (RTO)} & \textbf{Method} \\
+\midrule
+Portal and API & Not applicable (stateless) & 8 hours & Redeploy containers from version control \\
+Document store and catalogue & 24 hours & 24 hours & Nightly encrypted backups; offline copy weekly \\
+Search index & Rebuildable & 48 hours & Rebuild from document store \\
+Audit log & 1 hour & 24 hours & Continuous replication; hash-chain verification after restore \\
+AI system register and governance records & 24 hours & 24 hours & Versioned in a repository with offline mirror \\
+\bottomrule
+\end{tabularx}
+\par\vspace{3pt}{\scriptsize\color{gray} Source: BAPIL Technical Blueprint, Version 1.0 (2026). CC BY 4.0.}
+\end{minipage}
+\end{document}

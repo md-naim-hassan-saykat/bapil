@@ -1,0 +1,36 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\setmainfont{Noto Serif}
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali]
+\usepackage[Latin,Bengali]{ucharclasses}
+\setTransitionsFor{Bengali}{\begingroup\bengalifont}{\endgroup}
+\usepackage{newunicodechar}
+\newunicodechar{।}{{\bengalifont\char"0964}}
+\newunicodechar{॥}{{\bengalifont\char"0965}}
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{22cm}
+{\large\bfseries সারণি ১২।}\ {\large প্রাতিষ্ঠানিক পরিচালন-মডেলের বিকল্পসমূহের মূল্যায়ন}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=1.793\hsize\raggedright\arraybackslash}X>{\hsize=0.897\hsize\raggedright\arraybackslash}X>{\hsize=0.759\hsize\raggedright\arraybackslash}X>{\hsize=0.759\hsize\raggedright\arraybackslash}X>{\hsize=0.759\hsize\raggedright\arraybackslash}X>{\hsize=0.931\hsize\raggedright\arraybackslash}X>{\hsize=1.103\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{বিকল্প} & \textbf{স্বাধীনতা} & \textbf{ডেটা প্রবেশাধিকার} & \textbf{নীতিতে প্রয়োগ} & \textbf{শুরুর গতি} & \textbf{টেকসইতা} & \textbf{সিদ্ধান্ত} \\
+\midrule
+\textbf{ক.} সরকারি সংস্থার অভ্যন্তরীণ ইউনিট & নিম্ন & উচ্চ & উচ্চ & মাঝারি & মাঝারি & প্রথম ধাপের জন্য সুপারিশকৃত নয় \\
+\textbf{খ.} বিশ্ববিদ্যালয়ভিত্তিক গবেষণা কেন্দ্র & উচ্চ & নিম্ন & নিম্ন & উচ্চ & মাঝারি & আংশিক উপযুক্ত \\
+\textbf{গ.} মিশ্র মডেল: সরকারি সমঝোতা স্মারক (MoU) ও বহু-অংশীজন বোর্ডসহ বিশ্ববিদ্যালয়-ভিত্তিক ল্যাব & উচ্চ & মাঝারি থেকে উচ্চ & মাঝারি থেকে উচ্চ & উচ্চ & মাঝারি থেকে উচ্চ & \textbf{সুপারিশকৃত} \\
+\textbf{ঘ.} স্বাধীন অলাভজনক ফাউন্ডেশন & উচ্চ & নিম্ন থেকে মাঝারি & মাঝারি & নিম্ন & মাঝারি & পরবর্তী ধাপের বিকল্প \\
+\bottomrule
+\end{tabularx}
+\par\vspace{5pt}{\footnotesize\itshape পাঁচটি মানদণ্ডে লেখকের গুণগত মূল্যায়ন; প্রথম ধাপের সম্ভাব্যতা সমীক্ষায় (ডেলিভারেবল D1.3) যাচাই করা হবে।}
+\par\vspace{3pt}{\scriptsize\color{gray} উৎস: BAPIL কারিগরি ব্লুপ্রিন্ট, সংস্করণ ১.০ (২০২৬)। CC BY 4.0।}
+\end{minipage}
+\end{document}

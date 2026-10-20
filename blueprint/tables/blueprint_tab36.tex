@@ -1,0 +1,38 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\setmainfont{Latin Modern Roman}
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali]
+\usepackage[Latin,Bengali]{ucharclasses}
+\setTransitionsFor{Bengali}{\begingroup\bengalifont}{\endgroup}
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{17cm}
+{\large\bfseries Table 36.}\ {\large Reference implementation modules}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=0.819\hsize\raggedright\arraybackslash}X>{\hsize=1.735\hsize\raggedright\arraybackslash}X>{\hsize=0.771\hsize\raggedright\arraybackslash}X>{\hsize=0.675\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{Module} & \textbf{What it does} & \textbf{Requirements} & \textbf{Tests} \\
+\midrule
+bapil.text & Unicode normalisation for Bangla, digit folding, light Bangla suffix stripping, bilingual glossary expansion & FR-01, NFR-01 & test\_text \\
+bapil.corpus & Loads Markdown documents, splits them into cited passages, records provenance and SHA-256 checksums & FR-03 & test\_corpus \\
+bapil.search & BM25 index over passages with language-aware tokenisation and cross-lingual query expansion & FR-01 & test\_search \\
+bapil.answer & Extractive answers in which every sentence carries a citation; abstains below an evidence threshold & FR-02, NFR-08 & test\_answer \\
+bapil.risk & Risk-tier questionnaire and scoring rules of Annex B, returning tier, reasons and required controls & FR-07, GR-02, GR-06 & test\_risk \\
+bapil.registry & AI system register validated against a JSON schema; exports the public transparency register & FR-06, FR-09 & test\_registry \\
+bapil.evaluate & Recall@k, MRR and nDCG over a versioned question set; JSON report & FR-08 & test\_evaluate \\
+bapil.audit & Hash-chained, tamper-evident JSONL audit log with verification & GR-04 & test\_audit \\
+bapil.api & Minimal JSON HTTP API (search, answer, risk) on the Python standard library & FR-10 & test\_api \\
+bapil.cli & Command line: index, search, ask, assess, evaluate, register, verify-log & All & test\_cli \\
+\bottomrule
+\end{tabularx}
+\par\vspace{3pt}{\scriptsize\color{gray} Source: BAPIL Technical Blueprint, Version 1.0 (2026). CC BY 4.0.}
+\end{minipage}
+\end{document}

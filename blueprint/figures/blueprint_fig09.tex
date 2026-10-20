@@ -1,0 +1,69 @@
+\documentclass[border=8pt]{standalone}
+\usepackage{fontspec}
+\setmainfont{TeX Gyre Heros}
+\setsansfont{TeX Gyre Heros}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,shapes.geometric,shapes.misc,shapes.symbols,fit,backgrounds,calc,chains}
+\definecolor{ink}{HTML}{111827}
+\definecolor{band}{HTML}{F3F4F6}
+\definecolor{band2}{HTML}{E5E7EB}
+\definecolor{accent}{HTML}{1D4ED8}
+\definecolor{accentlight}{HTML}{DBEAFE}
+\definecolor{warn}{HTML}{B91C1C}
+\definecolor{warnlight}{HTML}{FEE2E2}
+\definecolor{ok}{HTML}{047857}
+\definecolor{oklight}{HTML}{D1FAE5}
+\tikzset{
+  >={Stealth[length=2.6mm]},
+  box/.style={draw=ink, line width=0.6pt, rounded corners=9pt, fill=white, align=center,
+              inner sep=4pt, font=\small},
+  pill/.style={box, rounded corners=13pt},
+  key/.style={box, fill=accentlight, draw=accent, line width=0.9pt},
+  soft/.style={box, fill=band},
+  dec/.style={draw=ink, line width=0.6pt, diamond, aspect=2.2, align=center, inner sep=1.5pt,
+              font=\footnotesize, fill=white},
+  arr/.style={->, draw=ink, line width=0.6pt},
+  darr/.style={->, draw=ink, line width=0.6pt, dashed},
+  lbl/.style={font=\footnotesize, fill=white, inner sep=1.5pt},
+  layer/.style={draw=band2, fill=band, rounded corners=6pt},
+  title/.style={font=\bfseries\small, align=left, anchor=west},
+}
+\begin{document}
+\sffamily\hyphenpenalty=10000\exhyphenpenalty=10000
+
+\begin{tikzpicture}
+\tikzset{zone/.style={draw=ink, line width=0.6pt, rounded corners=8pt, fill=band},
+         zc/.style={box, minimum height=10mm, font=\footnotesize, text width=26mm},
+         zt/.style={font=\bfseries\footnotesize, anchor=north east}}
+\draw[draw=accent, line width=1pt, dashed, rounded corners=10pt] (-3mm,8mm) rectangle (150mm,-117mm);
+\node[font=\bfseries\footnotesize, text=accent, anchor=north east] at (148mm,6mm) {Hosted in Bangladesh: National Data Center or accredited facility};
+\node[pill, minimum width=40mm, minimum height=10mm, font=\footnotesize] (users) at (18mm,22mm) {Users (internet, VPN)};
+\draw[zone] (0,-2mm) rectangle (110mm,-26mm); \node[zt] at (108mm,-3mm) {Public zone (DMZ)};
+\node[zc] (waf) at (18mm,-16mm) {WAF and rate limits};
+\node[zc] (portal) at (52mm,-16mm) {Portal};
+\node[zc] (api) at (88mm,-16mm) {API gateway};
+\draw[zone] (0,-31mm) rectangle (110mm,-55mm); \node[zt] at (108mm,-32mm) {Application zone};
+\node[zc] (search) at (18mm,-45mm) {Search service};
+\node[zc] (answer) at (52mm,-45mm) {Answer service};
+\node[zc] (analytics) at (88mm,-45mm) {Analytics};
+\draw[zone] (0,-60mm) rectangle (110mm,-84mm); \node[zt] at (108mm,-61mm) {Model zone (no internet egress)};
+\node[key, zc, text width=30mm] (gpu) at (52mm,-74mm) {Open-weight model inference on local GPUs};
+\draw[zone] (0,-89mm) rectangle (110mm,-113mm); \node[zt] at (108mm,-90mm) {Data zone (encrypted at rest)};
+\node[zc] (idx) at (18mm,-103mm) {Search index};
+\node[zc] (bak) at (52mm,-103mm) {Offline backups};
+\node[zc] (docs) at (88mm,-103mm) {Document store};
+\draw[zone, fill=accentlight] (116mm,-2mm) rectangle (147mm,-113mm);
+\node[font=\bfseries\footnotesize, align=center, anchor=north, text width=29mm] at (131.5mm,-4mm) {Management zone};
+\foreach \y/\k in {-30/{Identity provider},-52/{Logging and SIEM},-74/{CI/CD and SBOM},-96/{Key management}} \node[zc, text width=24mm, draw=accent] at (131.5mm,\y mm) {\k};
+\draw[arr] (users) -- (waf);
+\draw[arr] (waf) -- (portal); \draw[arr] (portal) -- (api);
+\draw[arr] (api) -- (analytics);
+\draw[arr] (api.south west) -- (answer.north east);
+\draw[arr] (answer) -- (search);
+\draw[arr] (answer) -- (gpu);
+\draw[arr] (search) -- (idx);
+\draw[arr] (analytics) -- (docs);
+\draw[arr] (docs.west) -- (bak.east);
+\draw[darr, <->] (113mm,-20mm) -- node[lbl, rotate=90, fill=white]{mutual TLS} (113mm,-95mm);
+\end{tikzpicture}
+\end{document}

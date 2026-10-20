@@ -1,0 +1,39 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\setmainfont{Noto Serif}
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali]
+\usepackage[Latin,Bengali]{ucharclasses}
+\setTransitionsFor{Bengali}{\begingroup\bengalifont}{\endgroup}
+\usepackage{newunicodechar}
+\newunicodechar{।}{{\bengalifont\char"0964}}
+\newunicodechar{॥}{{\bengalifont\char"0965}}
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{17cm}
+{\large\bfseries সারণি ২১।}\ {\large প্রাথমিক স্থাপত্য-সিদ্ধান্ত রেকর্ড}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=0.429\hsize\raggedright\arraybackslash}X>{\hsize=1.048\hsize\raggedright\arraybackslash}X>{\hsize=1.381\hsize\raggedright\arraybackslash}X>{\hsize=1.143\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{ADR} & \textbf{সিদ্ধান্ত} & \textbf{যৌক্তিকতা} & \textbf{বিবেচিত বিকল্প} \\
+\midrule
+০০১ & উন্মুক্ত ইন্টারফেসসহ মডুলার সেবা & অন্যগুলো পুনর্লিখন ছাড়াই উপাদান প্রতিস্থাপনযোগ্য; নির্ভরশীলতা এড়ানো & একক অ্যাপ্লিকেশন; একক বিক্রেতার প্যাকেজ \\
+০০২ & উৎপাদনের আগে উদ্ধার & উত্তর সরকারি পাঠের সঙ্গে অনুসরণযোগ্য থাকে; উদ্ভাবিত বিষয়বস্তু কমে & শুধু উৎপাদনমূলক সহকারী; উদ্ধারবিহীন ফাইন-টিউনকৃত মডেল \\
+০০৩ & বাংলাদেশে হোস্টকৃত উন্মুক্ত-ওজন মডেল & ডেটা-অবস্থান; সংস্করণের ওপর নিয়ন্ত্রণ; বিদেশে ডেটা পাঠানো হয় না & সব ডেটা-শ্রেণির জন্য বাণিজ্যিক API মডেল \\
+০০৪ & শব্দভিত্তিক ও ঘন ভেক্টরের মিশ্র উদ্ধার & শব্দভিত্তিক অনুসন্ধান স্বচ্ছ ও সঠিক শব্দে শক্তিশালী; ঘন অনুসন্ধান সমার্থক প্রকাশ ধরে & শুধু ঘন; শুধু শব্দভিত্তিক \\
+০০৫ & শুধু-সংযোজনযোগ্য, হ্যাশ-শৃঙ্খলিত নিরীক্ষা লগ & ব্যবস্থা কী করেছে তার স্বাধীন যাচাই & সাধারণ অ্যাপ্লিকেশন লগ \\
+০০৬ & কন্টেইনার ও কোড-হিসেবে অবকাঠামো & পুনরুৎপাদনযোগ্য ও নিরীক্ষাযোগ্য পরিবেশ & হাতে কনফিগার করা সার্ভার \\
+০০৭ & প্রথমে প্রবেশযোগ্যতা ও স্বল্প ব্যান্ডউইথ & ঢাকার বাইরে ও মোবাইলে ব্যবহারকারীর কাছে পৌঁছানো & ডেস্কটপ-প্রধান ইন্টারফেস \\
+০০৮ & প্রথমে উন্মুক্ত ডেটা (P0) & শাসন পরিণত হওয়ার সময় গোপনীয়তা-ঝুঁকি ছাড়াই মূল্য সৃষ্টি & প্রশাসনিক রেকর্ড দিয়ে শুরু \\
+\bottomrule
+\end{tabularx}
+\par\vspace{3pt}{\scriptsize\color{gray} উৎস: BAPIL কারিগরি ব্লুপ্রিন্ট, সংস্করণ ১.০ (২০২৬)। CC BY 4.0।}
+\end{minipage}
+\end{document}

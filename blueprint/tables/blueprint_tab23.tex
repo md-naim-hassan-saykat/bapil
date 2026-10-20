@@ -1,0 +1,39 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\setmainfont{Latin Modern Roman}
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali]
+\usepackage[Latin,Bengali]{ucharclasses}
+\setTransitionsFor{Bengali}{\begingroup\bengalifont}{\endgroup}
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{22cm}
+{\large\bfseries Table 23.}\ {\large Initial inventory of public data sources for the pilot corpus}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=1.189\hsize\raggedright\arraybackslash}X>{\hsize=1.189\hsize\raggedright\arraybackslash}X>{\hsize=1.245\hsize\raggedright\arraybackslash}X>{\hsize=0.623\hsize\raggedright\arraybackslash}X>{\hsize=0.453\hsize\raggedright\arraybackslash}X>{\hsize=1.302\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{Source} & \textbf{Custodian} & \textbf{Content} & \textbf{Format} & \textbf{Class} & \textbf{Access note} \\
+\midrule
+Laws of Bangladesh (bdlaws.minlaw.gov.bd) & Legislative and Parliamentary Affairs Division & Acts and ordinances in Bangla and English & HTML & P0 & Confirm reuse terms; request bulk export (Decision D3) \\
+Bangladesh Gazette (dpp.gov.bd) & Department of Printing and Publications & Gazette notifications & PDF, often scanned & P0 & OCR quality is a key risk (R3) \\
+National budget documents (mof.gov.bd) & Finance Division & Budget speeches, MTBF, allocations & PDF, spreadsheets & P0 & Basis of Pilot P2 \\
+Development plans (plancomm.gov.bd) & Planning Commission & Five-year plans, perspective plan, ADP & PDF, spreadsheets & P0 & Versioning across plan revisions \\
+Official statistics (bbs.gov.bd) & Bangladesh Bureau of Statistics & Yearbooks and survey reports & PDF, spreadsheets & P0 & Aggregates only; microdata excluded \\
+Open Government Data (data.gov.bd) & ICT Division and a2i & Machine-readable datasets & CSV, spreadsheets, API & P0 & Check dataset-level licences \\
+National Portal (bangladesh.gov.bd) & ICT Division and a2i & Office information, services, notices & HTML & P0 & High volume; prioritise by ministry \\
+Parliament (parliament.gov.bd) & Bangladesh Parliament Secretariat & Bills, debates, committee reports & PDF & P0 & Mixed scanned and digital \\
+e-Nothi records & a2i and ministries & Administrative files & Internal system & P1 to P3 & Out of scope for pilots \\
+BAPIL publications (this repository) & BAPIL & White Paper, Executive Summary, Blueprint, studies & Markdown, PDF & P0 & Demonstration corpus of the reference implementation \\
+\bottomrule
+\end{tabularx}
+\par\vspace{5pt}{\footnotesize\itshape Custodians and access terms must be confirmed with each agency before ingestion. Listing a source does not imply any agreement with its custodian.}
+\par\vspace{3pt}{\scriptsize\color{gray} Source: BAPIL Technical Blueprint, Version 1.0 (2026). CC BY 4.0.}
+\end{minipage}
+\end{document}

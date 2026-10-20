@@ -1,0 +1,33 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\setmainfont{Latin Modern Roman}
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali]
+\usepackage[Latin,Bengali]{ucharclasses}
+\setTransitionsFor{Bengali}{\begingroup\bengalifont}{\endgroup}
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{17cm}
+{\large\bfseries Table 8.}\ {\large Consultation and engagement plan by phase}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=0.744\hsize\raggedright\arraybackslash}X>{\hsize=1.302\hsize\raggedright\arraybackslash}X>{\hsize=1.209\hsize\raggedright\arraybackslash}X>{\hsize=0.744\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{Phase} & \textbf{Purpose} & \textbf{Activities} & \textbf{Outputs} \\
+\midrule
+Pre-launch (Q4 2026 to Q1 2027) & Test the Blueprint with decision-makers and experts & Briefings with the ICT Division and custodians; expert roundtables; public comment period on the repository & Comment log; Blueprint 1.1 corrections \\
+Launch (months 1 to 6) & Agree roles, data access and safeguards & Charter consultation; ERRC nominations; data custodian workshops & Adopted charter; data access plan \\
+Build (months 4 to 15) & Design with real users & Co-design sessions; usability tests in Bangla and English; monthly demonstrations & User-tested pilots; backlog published \\
+Evaluate (months 12 to 24) & Learn what works & User surveys; time-to-evidence studies; open review of results & Evaluation reports with DOIs \\
+Decide and scale (months 24 to 36) & Decide adoption and next steps & Adoption workshops with host agencies; public hearing on Blueprint 2.0 & Adoption memos; Blueprint 2.0 \\
+\bottomrule
+\end{tabularx}
+\par\vspace{3pt}{\scriptsize\color{gray} Source: BAPIL Technical Blueprint, Version 1.0 (2026). CC BY 4.0.}
+\end{minipage}
+\end{document}

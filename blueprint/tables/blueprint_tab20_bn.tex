@@ -1,0 +1,36 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\setmainfont{Noto Serif}
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali]
+\usepackage[Latin,Bengali]{ucharclasses}
+\setTransitionsFor{Bengali}{\begingroup\bengalifont}{\endgroup}
+\usepackage{newunicodechar}
+\newunicodechar{।}{{\bengalifont\char"0964}}
+\newunicodechar{॥}{{\bengalifont\char"0965}}
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{17cm}
+{\large\bfseries সারণি ২০।}\ {\large API বিনির্দেশ (সংস্করণ ১)}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=1.105\hsize\raggedright\arraybackslash}X>{\hsize=0.407\hsize\raggedright\arraybackslash}X>{\hsize=1.163\hsize\raggedright\arraybackslash}X>{\hsize=1.512\hsize\raggedright\arraybackslash}X>{\hsize=0.814\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{এন্ডপয়েন্ট} & \textbf{পদ্ধতি} & \textbf{প্যারামিটার} & \textbf{প্রতিক্রিয়া} & \textbf{ত্রুটি} \\
+\midrule
+/\allowbreak{}v1/\allowbreak{}health & GET & নেই & status, version, corpus\_version, documents, passages & নেই \\
+/\allowbreak{}v1/\allowbreak{}search & GET & q (১ থেকে ৫০০ অক্ষর); k (১ থেকে ৫০, ডিফল্ট ১০) & query, corpus\_version, results: pid, doc\_id, heading, lang, score, matched\_terms, text, provenance & ৪০০ অনুপস্থিত বা অবৈধ প্যারামিটার \\
+/\allowbreak{}v1/\allowbreak{}answer & GET & q (১ থেকে ৫০০ অক্ষর) & abstained; confidence; evidence (top\_score, coverage); উদ্ধৃতিসহ উত্তর-বাক্য; sources; corpus\_version & ৪০০ অনুপস্থিত প্যারামিটার \\
+/\allowbreak{}v1/\allowbreak{}risk/\allowbreak{}assess & POST & JSON প্রশ্নমালা (সংযুক্তি খ-এর স্কিমা) & system\_id, tier, tier\_name, total, reasons, controls, approver & ৪০০ অবৈধ প্রশ্নমালা; ৪০০ বডি ৬৪ কিলোবাইটের বেশি \\
+সকল এন্ডপয়েন্ট &  &  & UTF-8 JSON; প্রতিটি অনুরোধ নিরীক্ষা-শৃঙ্খলে লগকৃত & ৪০৪ অজানা পথ \\
+\bottomrule
+\end{tabularx}
+\par\vspace{3pt}{\scriptsize\color{gray} উৎস: BAPIL কারিগরি ব্লুপ্রিন্ট, সংস্করণ ১.০ (২০২৬)। CC BY 4.0।}
+\end{minipage}
+\end{document}

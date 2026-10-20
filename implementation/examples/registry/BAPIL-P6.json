@@ -1,0 +1,30 @@
+{
+  "system_id": "BAPIL-P6",
+  "name": {
+    "en": "Information-integrity research",
+    "bn": "তথ্য-অখণ্ডতা গবেষণা"
+  },
+  "purpose": {
+    "en": "Review and benchmarking of Bangla misinformation and synthetic-media detection methods on public research datasets.",
+    "bn": "উন্মুক্ত গবেষণা ডেটাসেটে বাংলা ভুল তথ্য ও কৃত্রিম মিডিয়া শনাক্তকরণ পদ্ধতির পর্যালোচনা ও বেঞ্চমার্ক।"
+  },
+  "owner": {
+    "unit": "Digital Security and Misinformation Lab",
+    "accountable": "Pilot lead (to be appointed)"
+  },
+  "maturity_class": "R",
+  "risk_tier": "T2",
+  "data_classes": [
+    "P0"
+  ],
+  "gate_status": {
+    "gate": "G0",
+    "date": "2026-10-21",
+    "approved_by": "Pending constitution of governance bodies"
+  },
+  "limitations": {
+    "en": "Research only; no monitoring of individuals or groups; detection methods have known false-positive risks.",
+    "bn": "শুধু গবেষণা; কোনো ব্যক্তি বা গোষ্ঠীর ওপর নজরদারি নয়; শনাক্তকরণ পদ্ধতিতে ভুল-ইতিবাচক ঝুঁকি রয়েছে।"
+  },
+  "contact": "https://github.com/md-naim-hassan-saykat/bapil/issues"
+}

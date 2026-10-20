@@ -1,0 +1,40 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\setmainfont{Latin Modern Roman}
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali]
+\usepackage[Latin,Bengali]{ucharclasses}
+\setTransitionsFor{Bengali}{\begingroup\bengalifont}{\endgroup}
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{17cm}
+{\large\bfseries Table 16.}\ {\large Indicative core staffing plan (full-time equivalents)}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=2.000\hsize\raggedright\arraybackslash}X>{\hsize=0.667\hsize\raggedright\arraybackslash}X>{\hsize=0.667\hsize\raggedright\arraybackslash}X>{\hsize=0.667\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{Role} & \textbf{Months 1-12} & \textbf{Months 13-24} & \textbf{Months 25-36} \\
+\midrule
+Director and principal investigator & 1 & 1 & 1 \\
+Policy research lead and analysts & 1 & 2 & 3 \\
+Machine learning and Bangla NLP engineers & 2 & 3 & 4 \\
+Data engineers & 1 & 2 & 2 \\
+Software and platform (DevSecOps) engineers & 1 & 2 & 2 \\
+Security engineer & 0.5 & 1 & 1 \\
+Governance, legal and ethics analysts & 1 & 1 & 2 \\
+User experience and accessibility designer & 0.5 & 1 & 1 \\
+Programme and partnership coordinator & 1 & 1 & 1 \\
+Training and outreach officers & 0 & 1 & 2 \\
+\textbf{Total core staff} & \textbf{9} & \textbf{15} & \textbf{19} \\
+\bottomrule
+\end{tabularx}
+\par\vspace{5pt}{\footnotesize\itshape Excludes part-time ERRC members, advisers, visiting fellows and graduate students. Costs are to be set in the feasibility study (D1.3).}
+\par\vspace{3pt}{\scriptsize\color{gray} Source: BAPIL Technical Blueprint, Version 1.0 (2026). CC BY 4.0.}
+\end{minipage}
+\end{document}

@@ -1,0 +1,38 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\setmainfont{Latin Modern Roman}
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali]
+\usepackage[Latin,Bengali]{ucharclasses}
+\setTransitionsFor{Bengali}{\begingroup\bengalifont}{\endgroup}
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{17cm}
+{\large\bfseries Table 43.}\ {\large Compliance checklist against the Bangladesh framework}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=0.800\hsize\raggedright\arraybackslash}X>{\hsize=1.224\hsize\raggedright\arraybackslash}X>{\hsize=1.129\hsize\raggedright\arraybackslash}X>{\hsize=0.847\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{Area} & \textbf{Requirement (as reported)} & \textbf{BAPIL control} & \textbf{Evidence} \\
+\midrule
+Consent and lawful basis (PDPA 2026) & Explicit consent for collection and use of personal data & P0-first; consent records for P3 pilot data & Consent forms; DPIA \\
+Data-subject rights (PDPA 2026) & Access, correction, deletion; restriction of automated decisions & No automated decisions on individuals; rights-request procedure & Procedure; request log \\
+Sensitive and children's data (PDPA 2026) & Enhanced protection; restrictions on profiling minors & P3 data excluded by charter & Charter; data inventory \\
+Data custody and exchange (NDMA 2026) & Custodian duties; approved data exchange & Data-sharing agreements; use of NRDEX where available & Signed agreements \\
+Source code (NDMA 2026) & National source code repository for government software & Open-source code; mirror to national repository when available & Repository links \\
+Security duties (Cyber Security Act 2026) & Protection of systems and data; incident handling & NIST CSF 2.0 controls; incident plan & Security reviews; drills \\
+Harmful AI-generated content (2026 amendment) & Removal of harmful synthetic content & No generation of synthetic media; research protocols for P6 & ERRC approvals \\
+Proactive disclosure (RTI Act 2009) & Publication of public information & Open publications; transparency register & Published register \\
+Draft national AI policy & Risk categories; impact assessment; oversight & Tier system aligned; impact assessments for T2 and T3 & Assessments; register \\
+\bottomrule
+\end{tabularx}
+\par\vspace{5pt}{\footnotesize\itshape Requirements summarise press and secondary descriptions [84, 85, 86, 87, 88] and must be confirmed against the gazetted texts by the legal review (Section 14.3).}
+\par\vspace{3pt}{\scriptsize\color{gray} Source: BAPIL Technical Blueprint, Version 1.0 (2026). CC BY 4.0.}
+\end{minipage}
+\end{document}

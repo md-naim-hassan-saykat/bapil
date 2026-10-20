@@ -1,0 +1,37 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\setmainfont{Latin Modern Roman}
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali]
+\usepackage[Latin,Bengali]{ucharclasses}
+\setTransitionsFor{Bengali}{\begingroup\bengalifont}{\endgroup}
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{17cm}
+{\large\bfseries Table 37.}\ {\large From reference implementation to production}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=0.916\hsize\raggedright\arraybackslash}X>{\hsize=1.060\hsize\raggedright\arraybackslash}X>{\hsize=1.398\hsize\raggedright\arraybackslash}X>{\hsize=0.627\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{Capability} & \textbf{Reference implementation} & \textbf{Production replacement} & \textbf{When} \\
+\midrule
+Corpus storage & JSON file & PostgreSQL catalogue and S3-compatible object store & Months 1 to 6 \\
+Ingestion & Markdown loader & PDF and HTML extraction with Bangla OCR and quality scoring & Months 1 to 9 \\
+Lexical search & In-memory BM25 & OpenSearch or PostgreSQL full-text search & Months 4 to 9 \\
+Dense retrieval & Not included & Multilingual embeddings in a vector index; hybrid ranking & Months 6 to 12 \\
+Answers & Extractive with citations & Extractive first; optional open-weight LLM rephrasing behind citation verification & After G2 evidence \\
+API & Standard-library HTTP server & API gateway with authentication, quotas and versioning & Months 6 to 9 \\
+Identity & None & Single sign-on with MFA and roles & Before G3 \\
+Audit log & Hash-chained JSONL file & Append-only store with replication and external anchoring & Before G3 \\
+Register and risk tool & CLI and JSON files & Governance workbench web application & Months 9 to 15 \\
+\bottomrule
+\end{tabularx}
+\par\vspace{3pt}{\scriptsize\color{gray} Source: BAPIL Technical Blueprint, Version 1.0 (2026). CC BY 4.0.}
+\end{minipage}
+\end{document}

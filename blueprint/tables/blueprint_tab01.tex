@@ -1,0 +1,34 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\setmainfont{Latin Modern Roman}
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali]
+\usepackage[Latin,Bengali]{ucharclasses}
+\setTransitionsFor{Bengali}{\begingroup\bengalifont}{\endgroup}
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{17cm}
+{\large\bfseries Table 1.}\ {\large The BAPIL document family and persistent identifiers}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=0.815\hsize\raggedright\arraybackslash}X>{\hsize=0.598\hsize\raggedright\arraybackslash}X>{\hsize=1.413\hsize\raggedright\arraybackslash}X>{\hsize=1.033\hsize\raggedright\arraybackslash}X>{\hsize=1.141\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{Output} & \textbf{Version} & \textbf{Purpose} & \textbf{Primary audience} & \textbf{Identifier} \\
+\midrule
+\textbf{White Paper} & 1.0 (repository release v1.0.1) & Conceptual framework, international lessons, vision to 2041 & All stakeholders & 10.5281/\allowbreak{}zenodo.21363967 \\
+\textbf{Executive Summary} & 1.0 & Concise summary of the White Paper & Senior policymakers & 10.5281/\allowbreak{}zenodo.21441172 \\
+\textbf{Technical Blueprint} (this document) & 1.0 & Buildable design: institution, architecture, data, governance, delivery plan & Ministries, agencies, technical teams, partners & DOI reserved on Zenodo at publication \\
+\textbf{Blueprint Summary} & 1.0 & Short summary of the Blueprint & Decision-makers & Same record as the Blueprint \\
+\textbf{Decision Memo} & 1.0 & One page: decisions requested from authorities & Ministers, secretaries, agency heads & Same record as the Blueprint \\
+\textbf{Reference implementation} & 0.1.0 (repository release v1.1.0) & Runnable, tested prototype of core Blueprint components & Engineers, researchers, auditors & GitHub repository; archived with the record \\
+\bottomrule
+\end{tabularx}
+\par\vspace{3pt}{\scriptsize\color{gray} Source: BAPIL Technical Blueprint, Version 1.0 (2026). CC BY 4.0.}
+\end{minipage}
+\end{document}

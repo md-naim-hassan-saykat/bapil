@@ -1,0 +1,31 @@
+{
+  "system_id": "BAPIL-P3",
+  "name": {
+    "en": "Citizen Feedback Analyser",
+    "bn": "নাগরিক মতামত বিশ্লেষক"
+  },
+  "purpose": {
+    "en": "Aggregate topic and sentiment summaries of consented, de-identified public consultation submissions.",
+    "bn": "সম্মতিপ্রাপ্ত ও পরিচয়-অপসারিত জন-পরামর্শ মতামতের সামষ্টিক বিষয় ও মনোভাবের সারাংশ।"
+  },
+  "owner": {
+    "unit": "Data Analytics and Public Sentiment Unit",
+    "accountable": "Pilot lead (to be appointed)"
+  },
+  "maturity_class": "R",
+  "risk_tier": "T2",
+  "data_classes": [
+    "P1",
+    "P2"
+  ],
+  "gate_status": {
+    "gate": "G0",
+    "date": "2026-10-21",
+    "approved_by": "Pending constitution of governance bodies"
+  },
+  "limitations": {
+    "en": "Requires an approved DPIA before any data is processed; results are aggregate only and may under-represent groups less likely to respond.",
+    "bn": "কোনো ডেটা প্রক্রিয়াকরণের আগে অনুমোদিত DPIA আবশ্যিক; ফলাফল শুধু সামষ্টিক এবং কম অংশগ্রহণকারী গোষ্ঠী কম প্রতিনিধিত্ব পেতে পারে।"
+  },
+  "contact": "https://github.com/md-naim-hassan-saykat/bapil/issues"
+}

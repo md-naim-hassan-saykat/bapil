@@ -10,11 +10,37 @@ The format is inspired by [Keep a Changelog](https://keepachangelog.com/en/1.1.0
 
 ### Planned
 
-- BAPIL Blueprint
+- BanglaPolicyQA benchmark (version 0)
 - Additional international AI governance studies
-- Expanded technical architecture documentation
-- Policy intelligence prototype
-- Expanded implementation roadmap
+- Pilot P1 (Bangladesh Policy Search Engine) alpha
+
+---
+
+## [1.1.0] - 2026-10
+
+### Added
+
+- BAPIL Technical Blueprint, Version 1.0, in English and Bangla (`blueprint/`, PDFs in `releases/v1.1/`): five parts, 21 chapters and 15 annexes, including an indicative 36-month budget and a strategic roadmap for 2026 to 2041 and beyond.
+- Blueprint Summary, Version 1.0, in English and Bangla.
+- One-page Decision Memo for ministries and relevant authorities, in English and Bangla.
+- Fifteen Blueprint figures as TikZ (LaTeX), PDF and PNG, each in English and Bangla.
+- Fifty-nine Blueprint tables as standalone LaTeX, PDF, PNG and Markdown, each in English and Bangla.
+- Single-source build system for the Blueprint (`blueprint/build_blueprint.sh`, table and figure generators, Pandoc filter, XeLaTeX headers with automatic Bangla and Latin font switching).
+- Reference implementation (`implementation/`, version 0.1.0): Bangla normalisation, bilingual BM25 search, cited extractive answers with abstention, risk tiers, AI system register and transparency export, evaluation metrics, hash-chained audit log, CLI and JSON API, with 49 unit tests.
+- JSON Schemas for policy-document metadata, AI system records and risk questionnaires; example records for pilots P1 to P6.
+- Bilingual demonstration question set and evaluation report.
+- GitHub Actions workflows for tests and for rebuilding the Blueprint PDFs.
+- Zenodo metadata, description and upload checklist for the Blueprint record.
+
+### Changed
+
+- README: Technical Blueprint and reference implementation sections, updated repository structure, DOI badge now points to the concept DOI image and link consistently.
+- Research roadmap and project status updated.
+
+### Fixed
+
+- `reports/README.md`: missing closing backtick in the build-script entry.
+- White Paper reference [38] is cited in the Blueprint with the correct co-author (A. Piktus); the White Paper source is unchanged.
 
 ---
 

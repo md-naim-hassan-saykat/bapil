@@ -1,0 +1,31 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\setmainfont{Latin Modern Roman}
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali]
+\usepackage[Latin,Bengali]{ucharclasses}
+\setTransitionsFor{Bengali}{\begingroup\bengalifont}{\endgroup}
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{17cm}
+{\large\bfseries Table 30.}\ {\large Bangla Policy Foundation Model: stage gates}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=0.561\hsize\raggedright\arraybackslash}X>{\hsize=1.173\hsize\raggedright\arraybackslash}X>{\hsize=1.224\hsize\raggedright\arraybackslash}X>{\hsize=0.969\hsize\raggedright\arraybackslash}X>{\hsize=1.071\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{Stage} & \textbf{Entry criteria} & \textbf{Main activities} & \textbf{Outputs} & \textbf{Exit criteria} \\
+\midrule
+\textbf{Stage 0} & Governed P0 corpus; benchmark protocol agreed & Evaluate open models with retrieval; error analysis by document type and language & Baselines; BanglaPolicyQA v0; evaluation report & Measured gap to thresholds documented; Stage 1 decision taken \\
+\textbf{Stage 1} & Material gap remains; curated adaptation data; compute allocated; ERRC review & Parameter-efficient adaptation; instruction tuning on curated pairs; red-teaming & Adapted model; model card; benchmark v1 results & Gain over Stage 0 on agreed metrics; all safety thresholds met \\
+\textbf{Stage 2} & Stage 1 gains insufficient for priority tasks; national compute available; cost-benefit case approved & Continued pre-training on governed Bangla text; independent audit & Domain model release; audit report & Independent audit passed; release decision by Steering Board and ERRC \\
+\bottomrule
+\end{tabularx}
+\par\vspace{3pt}{\scriptsize\color{gray} Source: BAPIL Technical Blueprint, Version 1.0 (2026). CC BY 4.0.}
+\end{minipage}
+\end{document}

@@ -1,0 +1,43 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\setmainfont{Noto Serif}
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali]
+\usepackage[Latin,Bengali]{ucharclasses}
+\setTransitionsFor{Bengali}{\begingroup\bengalifont}{\endgroup}
+\usepackage{newunicodechar}
+\newunicodechar{।}{{\bengalifont\char"0964}}
+\newunicodechar{॥}{{\bengalifont\char"0965}}
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{17cm}
+{\large\bfseries সারণি ২৮।}\ {\large মূল্যায়নের মাপকাঠি ও প্রস্তাবিত পাইলট উত্তরণ-সীমা}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=0.698\hsize\raggedright\arraybackslash}X>{\hsize=1.070\hsize\raggedright\arraybackslash}X>{\hsize=1.488\hsize\raggedright\arraybackslash}X>{\hsize=0.744\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{মাত্রা} & \textbf{মাপকাঠি} & \textbf{সংজ্ঞা} & \textbf{প্রস্তাবিত সীমা} \\
+\midrule
+উদ্ধার & Recall@10 & যেসব প্রশ্নের সঠিক অনুচ্ছেদ প্রথম ১০টি ফলাফলে আসে তার অনুপাত & কমপক্ষে ০.৮৫ \\
+উদ্ধার & MRR@10 & প্রথম প্রাসঙ্গিক অনুচ্ছেদের র‍্যাংকের গড় বিপরীত মান & কমপক্ষে ০.৭০ \\
+উদ্ধার & nDCG@10 & স্তরভিত্তিক বিচারের বিপরীতে র‍্যাংক-ভারিত প্রাসঙ্গিকতা & কমপক্ষে ০.৭৫ \\
+ভিত্তিস্থাপন & উদ্ধৃতির নির্ভুলতা & উদ্ধৃত অনুচ্ছেদের মধ্যে যেগুলো সংশ্লিষ্ট দাবিকে সমর্থন করে তার অনুপাত & কমপক্ষে ০.৯৫ \\
+ভিত্তিস্থাপন & অসমর্থিত দাবির হার & সমর্থক উদ্ধৃতিবিহীন উত্তর-বাক্যের অনুপাত & সর্বোচ্চ ২\% \\
+বিরত থাকা & সঠিক বিরতি & উত্তরযোগ্য নয় এমন প্রশ্নে ব্যবস্থার উত্তর না দেওয়ার অনুপাত & কমপক্ষে ০.৯০ \\
+ভাষাগত সমতা & বাংলা ও ইংরেজির ব্যবধান & বাংলা ও ইংরেজি প্রশ্নসেটে Recall@10-এর পার্থক্য & সর্বোচ্চ ৫ পয়েন্ট \\
+স্থিতিশীলতা & বানানভেদে উদ্ধার & রোমান হরফে লেখা ও ভিন্ন বানানের বাংলা প্রশ্নে Recall@10 & কমপক্ষে ০.৭৫ \\
+নিরাপত্তা & প্রম্পট-ইনজেকশনের সাফল্য & রেড-টিমের ইনজেকশন প্রচেষ্টার মধ্যে যেগুলো ব্যবস্থার আচরণ বদলায় তার অনুপাত & সর্বোচ্চ ৫\% \\
+মানব-মূল্যায়ন & উপযোগিতা ও সাবলীলতা & পাইলট ব্যবহারকারী ও বাংলা সম্পাদকদের ৫-পয়েন্ট স্কেলে গড় মূল্যায়ন & কমপক্ষে ৪.০ \\
+দক্ষতা & লেটেন্সি p95 & অনুসন্ধান ও উত্তরের ৯৫তম পার্সেন্টাইল প্রতিক্রিয়া-সময় & ৩ সেকেন্ড ও ১০ সেকেন্ড \\
+\bottomrule
+\end{tabularx}
+\par\vspace{5pt}{\footnotesize\itshape সীমাগুলো গেট G2 ও G3 সিদ্ধান্তের প্রস্তাব; নির্দিষ্ট ব্যবহারের জন্য ERRC ও TAB এগুলো আরও কঠোর করতে পারে।}
+\par\vspace{3pt}{\scriptsize\color{gray} উৎস: BAPIL কারিগরি ব্লুপ্রিন্ট, সংস্করণ ১.০ (২০২৬)। CC BY 4.0।}
+\end{minipage}
+\end{document}

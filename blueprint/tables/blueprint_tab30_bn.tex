@@ -1,0 +1,34 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\setmainfont{Noto Serif}
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali]
+\usepackage[Latin,Bengali]{ucharclasses}
+\setTransitionsFor{Bengali}{\begingroup\bengalifont}{\endgroup}
+\usepackage{newunicodechar}
+\newunicodechar{।}{{\bengalifont\char"0964}}
+\newunicodechar{॥}{{\bengalifont\char"0965}}
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{17cm}
+{\large\bfseries সারণি ৩০।}\ {\large বাংলা নীতি ফাউন্ডেশন মডেল: পর্যায়ভিত্তিক গেট}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=0.561\hsize\raggedright\arraybackslash}X>{\hsize=1.173\hsize\raggedright\arraybackslash}X>{\hsize=1.224\hsize\raggedright\arraybackslash}X>{\hsize=0.969\hsize\raggedright\arraybackslash}X>{\hsize=1.071\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{পর্যায়} & \textbf{প্রবেশের মানদণ্ড} & \textbf{প্রধান কার্যক্রম} & \textbf{উৎপাদ} & \textbf{প্রস্থানের মানদণ্ড} \\
+\midrule
+\textbf{পর্যায় ০} & নিয়ন্ত্রিত P0 কর্পাস; বেঞ্চমার্ক প্রটোকল সম্মত & উদ্ধারসহ উন্মুক্ত মডেলের মূল্যায়ন; নথির ধরন ও ভাষাভিত্তিক ত্রুটি বিশ্লেষণ & ভিত্তিমান; BanglaPolicyQA v0; মূল্যায়ন প্রতিবেদন & সীমার সঙ্গে পরিমাপকৃত ঘাটতি নথিভুক্ত; পর্যায় ১-এর সিদ্ধান্ত গৃহীত \\
+\textbf{পর্যায় ১} & উল্লেখযোগ্য ঘাটতি অব্যাহত; বাছাইকৃত অভিযোজন-ডেটা; কম্পিউটিং বরাদ্দ; ERRC পর্যালোচনা & প্যারামিটার-দক্ষ অভিযোজন; বাছাইকৃত জোড়ায় নির্দেশনা-টিউনিং; রেড-টিমিং & অভিযোজিত মডেল; মডেল কার্ড; বেঞ্চমার্ক v1-এর ফলাফল & সম্মত মাপকাঠিতে পর্যায় ০-এর তুলনায় উন্নতি; সব নিরাপত্তা-সীমা অর্জিত \\
+\textbf{পর্যায় ২} & অগ্রাধিকারমূলক কাজে পর্যায় ১-এর উন্নতি অপর্যাপ্ত; জাতীয় কম্পিউটিং উপলব্ধ; ব্যয়-উপযোগিতার যুক্তি অনুমোদিত & নিয়ন্ত্রিত বাংলা টেক্সটে অব্যাহত প্রাক-প্রশিক্ষণ; স্বাধীন নিরীক্ষা & ডোমেইন মডেল প্রকাশ; নিরীক্ষা প্রতিবেদন & স্বাধীন নিরীক্ষা উত্তীর্ণ; স্টিয়ারিং বোর্ড ও ERRC-এর প্রকাশ-সিদ্ধান্ত \\
+\bottomrule
+\end{tabularx}
+\par\vspace{3pt}{\scriptsize\color{gray} উৎস: BAPIL কারিগরি ব্লুপ্রিন্ট, সংস্করণ ১.০ (২০২৬)। CC BY 4.0।}
+\end{minipage}
+\end{document}

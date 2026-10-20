@@ -1,0 +1,71 @@
+\documentclass[border=8pt]{standalone}
+\usepackage{fontspec}
+\setmainfont{Noto Sans}
+\setsansfont{Noto Sans}
+\newfontfamily\bengalifont{Noto Sans Bengali}[Script=Bengali]
+\usepackage[Latin,Bengali]{ucharclasses}
+\setTransitionsFor{Bengali}{\begingroup\bengalifont}{\endgroup}
+\usepackage{newunicodechar}
+\newunicodechar{।}{{\bengalifont\char"0964}}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,shapes.geometric,shapes.misc,shapes.symbols,fit,backgrounds,calc,chains}
+\definecolor{ink}{HTML}{111827}
+\definecolor{band}{HTML}{F3F4F6}
+\definecolor{band2}{HTML}{E5E7EB}
+\definecolor{accent}{HTML}{1D4ED8}
+\definecolor{accentlight}{HTML}{DBEAFE}
+\definecolor{warn}{HTML}{B91C1C}
+\definecolor{warnlight}{HTML}{FEE2E2}
+\definecolor{ok}{HTML}{047857}
+\definecolor{oklight}{HTML}{D1FAE5}
+\tikzset{
+  >={Stealth[length=2.6mm]},
+  box/.style={draw=ink, line width=0.6pt, rounded corners=9pt, fill=white, align=center,
+              inner sep=4pt, font=\small},
+  pill/.style={box, rounded corners=13pt},
+  key/.style={box, fill=accentlight, draw=accent, line width=0.9pt},
+  soft/.style={box, fill=band},
+  dec/.style={draw=ink, line width=0.6pt, diamond, aspect=2.2, align=center, inner sep=1.5pt,
+              font=\footnotesize, fill=white},
+  arr/.style={->, draw=ink, line width=0.6pt},
+  darr/.style={->, draw=ink, line width=0.6pt, dashed},
+  lbl/.style={font=\footnotesize, fill=white, inner sep=1.5pt},
+  layer/.style={draw=band2, fill=band, rounded corners=6pt},
+  title/.style={font=\bfseries\small, align=left, anchor=west},
+}
+\begin{document}
+\sffamily\hyphenpenalty=10000\exhyphenpenalty=10000
+
+\begin{tikzpicture}
+\def\L{27mm}\def\C{30.5mm}\def\R{17mm}
+\tikzset{hd/.style={box, rounded corners=5pt, minimum width=\C-1.5mm, minimum height=13mm, text width=\C-3mm, font=\footnotesize, inner sep=2pt},
+         cell/.style={box, rounded corners=4pt, minimum width=\C-1.5mm, minimum height=\R-2mm, text width=\C-4mm, font=\scriptsize, inner sep=1.5pt},
+         ln/.style={font=\footnotesize\bfseries, text width=\L-3mm, align=left, anchor=west}}
+\foreach \c/\col in {0/ink!10,1/accentlight,2/accent!30,3/accent!45,4/accent!60,5/ink!20} {
+  \node[hd, fill=\col] (h\c) at (\L+\c*\C+0.5*\C, 0) {};
+}
+\node[hd, fill=ink!10] at (h0) {\textbf{H0 ভিত্তি}\\চতুর্থ ত্রৈমাসিক ২০২৬}; \node[hd, fill=accentlight] at (h1) {\textbf{H1 স্বল্পমেয়াদি}\\২০২৭ থেকে ২০২৮};
+\node[hd, fill=accent!30] at (h2) {\textbf{H2 মধ্যমেয়াদি}\\২০২৯ থেকে ২০৩০}; \node[hd, fill=accent!45] at (h3) {\textbf{H3 দীর্ঘমেয়াদি}\\২০৩১ থেকে ২০৩৫};
+\node[hd, fill=accent!60] at (h4) {\textbf{H4 রূপকল্প}\\২০৩৬ থেকে ২০৪১}; \node[hd, fill=ink!20] at (h5) {\textbf{২০৪১-এর পরে}\\২০৪১-এর পর};
+\draw[arr, line width=1.2pt] (\L,-9.5mm) -- (\L+6*\C+3mm,-9.5mm);
+\newcommand{\lane}[8]{%
+  \fill[band, rounded corners=4pt] (0,-12mm-#1*\R) rectangle (\L+6*\C,-12mm-#1*\R-\R+0.8mm);
+  \node[ln] at (0.5mm,-12mm-#1*\R-0.5*\R) {#2};
+  \node[cell] at (\L+0.5*\C,-12mm-#1*\R-0.5*\R) {#3};
+  \node[cell] at (\L+1.5*\C,-12mm-#1*\R-0.5*\R) {#4};
+  \node[cell] at (\L+2.5*\C,-12mm-#1*\R-0.5*\R) {#5};
+  \node[cell] at (\L+3.5*\C,-12mm-#1*\R-0.5*\R) {#6};
+  \node[cell] at (\L+4.5*\C,-12mm-#1*\R-0.5*\R) {#7};
+  \node[cell] at (\L+5.5*\C,-12mm-#1*\R-0.5*\R) {#8};}
+\lane{0}{প্রতিষ্ঠান}{ব্লুপ্রিন্ট প্রকাশ; আয়োজক নির্বাচন}{সমঝোতা স্মারকের অধীনে ল্যাব; সনদ; ERRC ও TAB}{বহুবর্ষী অর্থায়ন; সংস্থার সঙ্গে সেবা-চুক্তি}{ফাউন্ডেশন বা সংবিধিবদ্ধ কেন্দ্র বিবেচনা}{পরিণত জাতীয় প্রতিষ্ঠান}{সনদ নবায়ন বা কাজটি সরকারে আত্তীকৃত}
+\lane{1}{প্ল্যাটফর্ম ও ডেটা}{রেফারেন্স বাস্তবায়ন (v1.1.0)}{P0 কর্পাস; P1 অনুসন্ধান; P2 বাজেট-ডেটা}{সংস্থার G4 গ্রহণ; মিশ্র অনুসন্ধান}{মন্ত্রণালয়জুড়ে সমন্বিত অনুসন্ধান}{প্রতিটি নীতিচক্রে প্রমাণ-সেবা}{অভিযোজনক্ষম, উন্মুক্ত সেবা}
+\lane{2}{বাংলা এআই}{দ্বিভাষিক প্রমিতকরণ ও শব্দকোষ}{BanglaPolicyQA v0; পর্যায় ০ ভিত্তিমান}{বেঞ্চমার্ক v1; যৌক্তিক হলে পর্যায় ১}{জনসম্পদ হিসেবে বাংলা নীতি মডেল}{বিভিন্ন ক্ষেত্রে উন্মুক্ত বাংলা সম্পদ}{নিরবচ্ছিন্ন নবায়ন}
+\lane{3}{শাসন}{স্তর, গেট ও সনদের নকশা}{নিবন্ধন ও গেট চালু}{ব্লুপ্রিন্ট ২.০; জাতীয় নীতির সঙ্গে সামঞ্জস্য}{সরকারজুড়ে অভিন্ন আশ্বাস-পদ্ধতি}{আঞ্চলিক ও দক্ষিণ-দক্ষিণ সহযোগিতা}{পর্যায়ক্রমিক স্বাধীন পর্যালোচনা}
+\lane{4}{জনবল}{সিদ্ধান্তগ্রহণকারীদের অবহিতকরণ}{৩০০ কর্মকর্তা প্রশিক্ষিত; ফেলো}{১,০০০ কর্মকর্তা প্রশিক্ষিত}{৫,০০০ প্রশিক্ষিত; আঞ্চলিক কেন্দ্র}{জনপ্রশাসন প্রশিক্ষণের অংশ}{আজীবন শিক্ষা}
+\foreach \c/\t in {1/{২০২৭, ২০২৮},2/{২০২৯, ২০৩০},3/{২০৩৫},4/{২০৪১}} {
+  \node[draw=ink, fill=white, diamond, inner sep=1.6pt] at (\L+\c*\C+0.5*\C-12mm,-12mm-5*\R-4mm) {};
+  \node[font=\scriptsize, anchor=west] at (\L+\c*\C+0.5*\C-10mm,-12mm-5*\R-4mm) {\t};
+}
+\node[font=\scriptsize\bfseries, anchor=west] at (0.5mm,-12mm-5*\R-4mm) {পর্যালোচনা};
+\end{tikzpicture}
+\end{document}

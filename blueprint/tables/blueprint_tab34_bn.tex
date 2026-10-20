@@ -1,0 +1,35 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\setmainfont{Noto Serif}
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali]
+\usepackage[Latin,Bengali]{ucharclasses}
+\setTransitionsFor{Bengali}{\begingroup\bengalifont}{\endgroup}
+\usepackage{newunicodechar}
+\newunicodechar{।}{{\bengalifont\char"0964}}
+\newunicodechar{॥}{{\bengalifont\char"0965}}
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{17cm}
+{\large\bfseries সারণি ৩৪।}\ {\large ঘটনার গুরুত্ব-স্তর ও প্রতিক্রিয়ার সময়}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=0.565\hsize\raggedright\arraybackslash}X>{\hsize=1.600\hsize\raggedright\arraybackslash}X>{\hsize=0.659\hsize\raggedright\arraybackslash}X>{\hsize=1.176\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{স্তর} & \textbf{উদাহরণ} & \textbf{প্রথম প্রতিক্রিয়া} & \textbf{ঊর্ধ্বতন অবহিতকরণ ও বিজ্ঞপ্তি} \\
+\midrule
+\textbf{SEV1} সংকটপূর্ণ & ব্যক্তিগত ডেটা উন্মোচিত; ব্যবস্থার নিয়ন্ত্রণ হারানো; সরকারি সিদ্ধান্তে নির্ভর করা ক্ষতিকর ফলাফল & ১ ঘণ্টার মধ্যে & পরিচালক, ERRC সভাপতি ও আয়োজক সংস্থাকে তাৎক্ষণিকভাবে; প্রয়োজনে আইনগত বিজ্ঞপ্তি; ব্যবস্থা স্থগিত \\
+\textbf{SEV2} উচ্চ & পদ্ধতিগতভাবে ভুল বা পক্ষপাতদুষ্ট উত্তর; নিষিদ্ধ ব্যবহারের প্রচেষ্টা; দীর্ঘ বিপর্যয় & ৪ ঘণ্টার মধ্যে & ২৪ ঘণ্টার মধ্যে পরিচালক ও ERRC; ৩০ দিনের মধ্যে জনসমক্ষে সারাংশ \\
+\textbf{SEV3} মাঝারি & বিচ্ছিন্ন ভুল উত্তর প্রতিবেদিত; আংশিক বিপর্যয়; ব্যর্থ ব্যাকআপ & ১ কর্মদিবসের মধ্যে & ইউনিট প্রধান; মাসিক ঘটনা-সভায় পর্যালোচনা \\
+\textbf{SEV4} নিম্ন & দৃশ্যগত ত্রুটি; নথিভুক্তির ঘাটতি & ৩ কর্মদিবসের মধ্যে & কাজের তালিকায় অনুসরণ \\
+\bottomrule
+\end{tabularx}
+\par\vspace{3pt}{\scriptsize\color{gray} উৎস: BAPIL কারিগরি ব্লুপ্রিন্ট, সংস্করণ ১.০ (২০২৬)। CC BY 4.0।}
+\end{minipage}
+\end{document}

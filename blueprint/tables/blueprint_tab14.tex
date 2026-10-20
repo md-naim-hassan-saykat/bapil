@@ -1,0 +1,34 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\setmainfont{Latin Modern Roman}
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali]
+\usepackage[Latin,Bengali]{ucharclasses}
+\setTransitionsFor{Bengali}{\begingroup\bengalifont}{\endgroup}
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{17cm}
+{\large\bfseries Table 14.}\ {\large Governance bodies, composition and decision rights}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=0.782\hsize\raggedright\arraybackslash}X>{\hsize=1.195\hsize\raggedright\arraybackslash}X>{\hsize=1.287\hsize\raggedright\arraybackslash}X>{\hsize=0.736\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{Body} & \textbf{Composition} & \textbf{Key responsibilities} & \textbf{Decision rights} \\
+\midrule
+\textbf{Steering Board} & 7 to 9 members: ICT Division (co-chair), host institution (co-chair), Planning Commission, a data custodian agency, academia, civil society, industry; BAPIL Director as secretary & Strategy, annual plan and budget; partnership approvals; joint G4 adoption decisions with host agencies & Approves plans and budgets \\
+\textbf{Ethics and Risk Review Committee (ERRC)} & 5 to 7 members, majority external: law and human rights, data protection, ethics, domain experts, civil society, technical reviewer & Reviews tier T2 and T3 systems at G1, G2 and G4; reviews incidents; publishes decision summaries & Binding veto on pilots and deployment \\
+\textbf{Technical Architecture Board (TAB)} & Lead engineers, security lead, two external technical reviewers & Architecture and security standards; design reviews; model and dependency approvals & Approves designs at G1 \\
+\textbf{International Advisory Panel} & Invited experts serving in a personal capacity & Peer review of methods, benchmarks and governance; international linkages & Advisory only \\
+\textbf{Director and units} & Director, six thematic units from the White Paper, and a cross-cutting platform engineering team & Delivery of research, pilots, training and publications & Operational decisions within approved plans \\
+\textbf{Host-agency product owners} & Named officials in each agency piloting a tool & Define needs, recruit pilot users, accept or reject at G3 and G4 & Acceptance of pilots in their agency \\
+\bottomrule
+\end{tabularx}
+\par\vspace{3pt}{\scriptsize\color{gray} Source: BAPIL Technical Blueprint, Version 1.0 (2026). CC BY 4.0.}
+\end{minipage}
+\end{document}
