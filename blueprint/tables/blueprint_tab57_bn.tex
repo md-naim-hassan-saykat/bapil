@@ -1,9 +1,26 @@
 \documentclass[border=10pt]{standalone}
 \usepackage{fontspec}
-\setmainfont{Noto Serif}
-\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali]
+\setmainfont{Noto Serif}[Ligatures=TeXOff]
+\XeTeXgenerateactualtext=1
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali, NFSSFamily=bnfam]
 \usepackage[Latin,Bengali]{ucharclasses}
-\setTransitionsFor{Bengali}{\begingroup\bengalifont}{\endgroup}
+% group-free font switching (as in header-common.tex): robust inside braces, cells and quotes
+\makeatletter
+\def\BN@saved{\rmdefault}
+\def\BN@bn{bnfam}
+\newcommand\BNin{\edef\BN@tmp{\f@family}\ifx\BN@tmp\BN@bn\else\let\BN@saved\BN@tmp\fi\fontfamily{bnfam}\selectfont}
+\newcommand\BNout{\fontfamily{\BN@saved}\selectfont}
+\makeatother
+\setTransitionsFor{Bengali}{\BNin}{\BNout}
+% Typographic quotes and dashes are not in a ucharclasses class (class 0), so a Bangla word right
+% after “ or ‘ would not trigger the Bangla font. Treat them as Latin so that every switch fires.
+\XeTeXcharclass"2018=\XeTeXcharclass`A
+\XeTeXcharclass"2019=\XeTeXcharclass`A
+\XeTeXcharclass"201C=\XeTeXcharclass`A
+\XeTeXcharclass"201D=\XeTeXcharclass`A
+\XeTeXcharclass"2013=\XeTeXcharclass`A
+\XeTeXcharclass"2014=\XeTeXcharclass`A
+\XeTeXcharclass"2026=\XeTeXcharclass`A
 \usepackage{newunicodechar}
 \newunicodechar{।}{{\bengalifont\char"0964}}
 \newunicodechar{॥}{{\bengalifont\char"0965}}
@@ -25,14 +42,14 @@
 \rowcolor{white}\textbf{নং} & \textbf{সিদ্ধান্ত} & \textbf{দায়িত্বপ্রাপ্ত কর্তৃপক্ষ} & \textbf{সময়} \\
 \midrule
 D1 & জাতীয় এআই নীতি প্রণয়ন-প্রক্রিয়ায় এই ব্লুপ্রিন্টকে কারিগরি উপকরণ হিসেবে গ্রহণ & ডাক, টেলিযোগাযোগ ও তথ্যপ্রযুক্তি মন্ত্রণালয় (আইসিটি বিভাগ) & ২০২৬-এর চতুর্থ ত্রৈমাসিক \\
-D2 & একজন মনোনীত সরকারি ফোকাল পয়েন্ট ও আয়োজক প্রতিষ্ঠানের সঙ্গে সমঝোতা স্মারকসহ ১২ মাসের প্রথম ধাপের পাইলট অনুমোদন & আইসিটি বিভাগ ও আয়োজক প্রতিষ্ঠান & ৯০ দিনের মধ্যে \\
+D2 & ১২ মাসের প্রথম ধাপের পাইলট অনুমোদন, একজন সরকারি ফোকাল পয়েন্ট মনোনয়ন, স্বাগতিক প্রতিষ্ঠানের সঙ্গে সমঝোতা স্মারক সম্পাদন এবং প্রথম বছরের অর্থায়নের (প্রায় ৪.৭ কোটি টাকা, সারণি ৫০) প্রতিশ্রুতি বা উৎস নির্ধারণ & আইসিটি বিভাগ ও স্বাগতিক প্রতিষ্ঠান & ৯০ দিনের মধ্যে \\
 D3 & ইতিমধ্যে প্রকাশিত নথিসংগ্রহে কাঠামোবদ্ধভাবে একসঙ্গে প্রবেশাধিকার অনুমোদন ও ডেটা-রক্ষক মনোনয়ন & লেজিসলেটিভ ও সংসদ বিষয়ক বিভাগ, অর্থ বিভাগ, পরিকল্পনা কমিশন, বিবিএস, এটুআই & ১২০ দিনের মধ্যে \\
-D4 & স্টিয়ারিং বোর্ডে সদস্য মনোনয়ন, এবং একটি স্বাধীন মনোনয়ন প্যানেলের উন্মুক্ত আহ্বানের মাধ্যমে ERRC সদস্য বাছাইয়ে সম্মতি & আইসিটি বিভাগ ও আয়োজক প্রতিষ্ঠান (স্টিয়ারিং বোর্ড); স্বাধীন প্যানেল (ERRC) & ৯০ দিনের মধ্যে \\
+D4 & স্টিয়ারিং বোর্ডে সদস্য মনোনয়ন, এবং একটি স্বাধীন মনোনয়ন প্যানেলের উন্মুক্ত আহ্বানের মাধ্যমে ERRC সদস্য বাছাইয়ে সম্মতি & আইসিটি বিভাগ ও স্বাগতিক প্রতিষ্ঠান (স্টিয়ারিং বোর্ড); স্বাধীন প্যানেল (ERRC) & ৯০ দিনের মধ্যে \\
 D5 & দ্বিতীয় ধাপের বাজেট নির্ধারণকারী সম্ভাব্যতা ও ব্যয়-নিরূপণ সমীক্ষা পরিচালনার নির্দেশ & আইসিটি বিভাগ বা কোনো উন্নয়ন সহযোগী & মাস ৬-এর মধ্যে \\
 D6 & সুরক্ষাসীমা নিশ্চিত করা: G4 সিদ্ধান্ত ছাড়া A শ্রেণির বাইরে কোনো প্রয়োগ নয় এবং নিষিদ্ধ শ্রেণিতে কোনো ব্যবহার নয় & স্টিয়ারিং বোর্ড & সনদ গ্রহণের সময় \\
 \bottomrule
 \end{tabularx}
 \par\vspace{5pt}{\footnotesize\itshape এসব সিদ্ধান্তের কোনোটিই কোনো সংবিধিবদ্ধ সংস্থা সৃষ্টি করে না বা BAPIL-কে আইনি ক্ষমতা দেয় না। মাস ১-এর আগে প্রয়োজনীয় অনুমোদন ও চুক্তির তালিকা সংযুক্তি ন-তে (সারণি ৬৫) দেওয়া আছে।}
-\par\vspace{3pt}{\scriptsize\color{gray} উৎস: BAPIL কারিগরি ব্লুপ্রিন্ট, সংস্করণ ১.০ (২০২৬)। CC BY 4.0।}
+\par\vspace{3pt}{\scriptsize\color{gray} উৎস: BAPIL টেকনিক্যাল ব্লুপ্রিন্ট, সংস্করণ ১.০ (২০২৬)। CC BY 4.0।}
 \end{minipage}
 \end{document}

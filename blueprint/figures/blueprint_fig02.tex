@@ -1,6 +1,7 @@
 \documentclass[border=8pt]{standalone}
 \usepackage{fontspec}
-\setmainfont{TeX Gyre Heros}
+\setmainfont{TeX Gyre Heros}[Ligatures=TeXOff]
+\XeTeXgenerateactualtext=1
 \setsansfont{TeX Gyre Heros}
 \usepackage{tikz}
 \usetikzlibrary{arrows.meta,positioning,shapes.geometric,shapes.misc,shapes.symbols,fit,backgrounds,calc,chains}
@@ -40,8 +41,8 @@
 \draw[ink, line width=0.6pt] (0,0) rectangle (\W,\H);
 \draw[ink!50, dashed] (0.5*\W,0) -- (0.5*\W,\H);
 \draw[ink!50, dashed] (0,0.5*\H) -- (\W,0.5*\H);
-\draw[arr] (0,-6mm) -- node[below=1mm, font=\small]{Interest in BAPIL's work} (\W,-6mm);
-\draw[arr] (-6mm,0) -- node[above=1mm, font=\small, rotate=90]{Influence over BAPIL's success} (-6mm,\H);
+\draw[arr] (0,-6mm) -- node[below=1mm, font=\small]{Interest in BAPIL’s work} (\W,-6mm);
+\draw[arr] (-6mm,0) -- node[above=1mm, font=\small, rotate=90]{Influence over BAPIL’s success} (-6mm,\H);
 \node[font=\small\bfseries, anchor=north west, text=ink!70] at (2mm,\H-2mm) {Keep satisfied};
 \node[font=\small\bfseries, anchor=north east, text=accent] at (\W-2mm,\H-2mm) {Manage closely};
 \node[font=\small\bfseries, anchor=south west, text=ink!70] at (2mm,2mm) {Monitor};

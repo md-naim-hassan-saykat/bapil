@@ -185,29 +185,37 @@ The BAPIL White Paper (Version 1.0) is organized into the following chapters:
 
 ## Technical Blueprint
 
-The **BAPIL Technical Blueprint (Version 1.0)** turns the White Paper into a buildable plan. It is published in English and Bangla, with a Blueprint Summary and a one-page Decision Memo for ministries and relevant authorities.
+**Bangladesh AI Policy & Innovation Lab (BAPIL): Technical Blueprint**, Version 1.0, October 2026  
+**বাংলাদেশ এআই পলিসি অ্যান্ড ইনোভেশন ল্যাব (BAPIL): টেকনিক্যাল ব্লুপ্রিন্ট**, সংস্করণ ১.০, অক্টোবর ২০২৬
+
+The Technical Blueprint turns the White Paper into a buildable plan. It is published in English (authoritative) and Bangla, with a short Blueprint Summary in both languages. The files below are prepared for repository release v1.1.0; the release and the Blueprint's Zenodo DOI do not exist yet (see [Versioning](#versioning-and-release-status)).
 
 | Publication | English | Bangla |
 |---|---|---|
-| Technical Blueprint | [PDF](releases/v1.1/BAPIL_Technical_Blueprint_v1.pdf) · [Markdown](blueprint/BAPIL_Technical_Blueprint_v1.md) | [PDF](releases/v1.1/BAPIL_Technical_Blueprint_v1_bn.pdf) · [Markdown](blueprint/BAPIL_Technical_Blueprint_v1_bn.md) |
-| Blueprint Summary | [PDF](releases/v1.1/BAPIL_Blueprint_Summary_v1.pdf) · [Markdown](blueprint/BAPIL_Blueprint_Summary_v1.md) | [PDF](releases/v1.1/BAPIL_Blueprint_Summary_v1_bn.pdf) · [Markdown](blueprint/BAPIL_Blueprint_Summary_v1_bn.md) |
-| Decision Memo (one page) | [PDF](releases/v1.1/BAPIL_Decision_Memo_v1.pdf) · [Markdown](blueprint/BAPIL_Decision_Memo_v1.md) | [PDF](releases/v1.1/BAPIL_Decision_Memo_v1_bn.pdf) · [Markdown](blueprint/BAPIL_Decision_Memo_v1_bn.md) |
+| Technical Blueprint (publication PDF) | [BAPIL_Technical_Blueprint_en.pdf](releases/v1.1/BAPIL_Technical_Blueprint_en.pdf) | [BAPIL_Technical_Blueprint_bn.pdf](releases/v1.1/BAPIL_Technical_Blueprint_bn.pdf) |
+| Technical Blueprint (assembled Markdown) | [BAPIL_Technical_Blueprint_en.md](blueprint/BAPIL_Technical_Blueprint_en.md) | [BAPIL_Technical_Blueprint_bn.md](blueprint/BAPIL_Technical_Blueprint_bn.md) |
+| Editable master sources | [`blueprint/src/en/`](blueprint/src/en/) | [`blueprint/src/bn/`](blueprint/src/bn/) |
+| Blueprint Summary | [PDF](releases/v1.1/BAPIL_Blueprint_Summary_en.pdf) · [Markdown](blueprint/BAPIL_Blueprint_Summary_en.md) | [PDF](releases/v1.1/BAPIL_Blueprint_Summary_bn.pdf) · [Markdown](blueprint/BAPIL_Blueprint_Summary_bn.md) |
+
+The editable masters are Markdown chapter files in [`blueprint/src/`](blueprint/src/); tables are Python data (`tables_*.py`), figures are TikZ (`make_figures.py`), the budget is computed by `budget_model.py` (also exported as CSV to [`blueprint/data/`](blueprint/data/)), and new references are in `refs_new.md`. One command rebuilds every table, figure and PDF: `blueprint/build_blueprint.sh` (tools, fonts and steps in [`blueprint/README.md`](blueprint/README.md)).
 
 The Blueprint specifies:
 
 1. 26 requirements traced to components, code and tests;
-2. an institutional design (university-anchored lab, government MoU, Steering Board, independent Ethics and Risk Review Committee with a binding veto, Technical Architecture Board);
+2. an institutional design (university-anchored lab, government MoU, Steering Board, independent Ethics and Risk Review Committee with a binding veto within the limits of the host's statutes, Technical Architecture Board);
 3. a reference architecture of twelve open components hosted in Bangladesh;
-4. data rules (four data classes, public data first) aligned with the Personal Data Protection Act, 2026 and the National Data Management Act, 2026;
-5. a bilingual, citation-grounded retrieval design that answers with citations or abstains, the open BanglaPolicyQA benchmark and a staged path to a Bangla Policy Foundation Model;
+4. data rules (four data classes, public data first) aligned with the data-protection and data-management framework of 2025 and 2026 as reported;
+5. a bilingual, citation-grounded retrieval design that answers with citations or abstains, the open BanglaPolicyQA benchmark and a staged, evidence-gated path to Bangla domain adaptation;
 6. six pilots with users, data, risk tier, scope and exit criteria;
 7. responsible-AI assurance: risk tiers T0 to T3, lifecycle gates G0 to G5, model cards and a public transparency register;
-8. a 36-month delivery plan with an indicative budget (about Tk 20.4 crore, with low and high scenarios; a planning estimate, not approved funding), staffing and training plan, financing and procurement clauses, logical framework, KPIs, risk register and research agenda;
-9. a strategic roadmap for 2026 to 2041 and beyond (short, medium and long-term horizons, indicative targets, scenarios and review points);
+8. a 36-month delivery plan with an indicative budget (about Tk 20.4 crore in the base case, about Tk 22.2 crore with known omissions and a 10% contingency, low and high scenarios of about Tk 17.9 and 25.3 crore; planning estimates, not approved funding), staffing and training plan, financing and procurement clauses, logical framework, KPIs, risk register and research agenda;
+9. a strategic roadmap for 2026 to 2041 and beyond (horizons, indicative targets, scenarios and review points);
 10. six decisions for the authorities;
-11. evidence and readiness annexes: the evidence status of every key claim, budget reconciliation, an evaluation protocol with sample sizes, the status and limits of each governance body, preconditions for starting, risk monitoring, and a revision history with unresolved items.
+11. evidence and readiness annexes: the evidence status of key claims, budget reconciliation and scenarios, an evaluation protocol with sample sizes, the status and limits of each governance body, preconditions for starting, risk monitoring and a register of unresolved items.
 
-The Blueprint has five parts, 21 chapters and 22 annexes (about 130 pages in each language), including an indicative 36-month budget. All fifteen figures and sixty-nine tables are available as LaTeX, PDF and PNG in English and Bangla under [`blueprint/figures/`](blueprint/figures/) and [`blueprint/tables/`](blueprint/tables/). See [`blueprint/README.md`](blueprint/README.md) for the sources and the build.
+The Blueprint has five parts, 21 chapters, 22 annexes, 68 tables and 15 figures (about 140 pages in English and 136 in Bangla). All figures and tables are also available as LaTeX, PDF and PNG in English and Bangla under [`blueprint/figures/`](blueprint/figures/) and [`blueprint/tables/`](blueprint/tables/).
+
+**Known limitations.** Legal descriptions rest on press reports and secondary legal commentary; the gazetted texts were not reviewed and need confirmation by qualified Bangladesh counsel. No pilot, benchmark or governance body exists yet, and all quality thresholds are proposed targets. The reference implementation is a research prototype tested only on Linux. The Bangla edition has had an editorial review by the author but not yet an independent professional copy-edit. The full list, with owners, is the unresolved-items register (Annex V, Table 68).
 
 ---
 
@@ -250,7 +258,7 @@ python -m unittest discover -s tests
 
 - White Paper Version 1.0 (completed)
 - Executive Summary Version 1.0 (completed)
-- Technical Blueprint Version 1.0 with reference implementation (completed)
+- Technical Blueprint Version 1.0 with reference implementation (prepared; release v1.1.0 pending)
 - Academic dissemination
 - Stakeholder engagement
 - International collaboration
@@ -274,14 +282,16 @@ bapil/
 │   ├── figures/                  # figure01 ... figure06 (PNG, PDF)
 │   └── build_bn_pdf.sh, *.tex, *.lua
 │
-├── blueprint/                    # Technical Blueprint (v1.0)
-│   ├── BAPIL_Technical_Blueprint_v1.md / _bn.md
-│   ├── BAPIL_Blueprint_Summary_v1.md / _bn.md
-│   ├── BAPIL_Decision_Memo_v1.md / _bn.md
+├── blueprint/                    # Technical Blueprint (Version 1.0)
+│   ├── BAPIL_Technical_Blueprint_en.md / _bn.md   # assembled (generated) Markdown
+│   ├── BAPIL_Blueprint_Summary_en.md / _bn.md
+│   ├── src/                      # editable masters: en/, bn/, tables_*.py, figures, budget model, headers
 │   ├── figures/                  # blueprint_fig01 ... 15 (TeX, PDF, PNG; EN and BN)
-│   ├── tables/                   # blueprint_tab01 ... 69 (TeX, PDF, PNG; EN and BN) + md/
-│   ├── src/                      # sources, generators, LaTeX headers, Pandoc filter
-│   ├── zenodo/                   # Zenodo metadata and upload checklist
+│   ├── tables/                   # blueprint_tab01 ... 68 (TeX, PDF, PNG; EN and BN) + md/
+│   ├── data/                     # budget model outputs as CSV
+│   ├── review/                   # internal pre-publication review records (not part of the publication)
+│   ├── zenodo/                   # Zenodo metadata draft and upload checklist
+│   ├── MANIFEST.md, SOURCES_AND_LICENCES.md, QA_REPORT.md, CHANGES.md
 │   └── build_blueprint.sh
 │
 ├── implementation/               # reference implementation (Python, MIT)
@@ -291,7 +301,7 @@ bapil/
 │
 ├── releases/
 │   ├── v1.0/                     # White Paper and Executive Summary PDFs
-│   └── v1.1/                     # Technical Blueprint, Summary and Decision Memo PDFs
+│   └── v1.1/                     # Technical Blueprint and Summary PDFs (EN, BN), prepared for release v1.1.0
 │
 ├── research/                     # international case studies and literature review
 │
@@ -299,6 +309,18 @@ bapil/
     ├── workflows/                # tests.yml, build-blueprint.yml
     └── pull_request_template.md
 ```
+
+---
+
+## Versioning and Release Status
+
+| Concept | Technical Blueprint |
+|---|---|
+| Document version | 1.0 (October 2026) |
+| Source revision | the commit that contains these files on the `blueprint-v1.0` branch |
+| Git tag | `v1.1.0` proposed; not yet created (existing tags: `v1.0`, `v1.0.1`) |
+| GitHub release | v1.1.0 proposed; not yet published |
+| DOI | not yet assigned; a new Zenodo record is created only after the GitHub release exists |
 
 ---
 
@@ -314,7 +336,7 @@ https://doi.org/10.5281/zenodo.21441172
 
 ### Technical Blueprint (Version 1.0)
 
-DOI to be added on publication (separate Zenodo record).
+Not yet assigned. A separate Zenodo record will be created after GitHub release v1.1.0 exists.
 
 ### Concept DOI (all versions)
 
@@ -359,7 +381,7 @@ The **BAPIL White Paper** and other research publications may be distributed und
 
 ## Current Status
 
-**Project Stage:** Technical Blueprint Version 1.0 Released
+**Project Stage:** Technical Blueprint Version 1.0 prepared for release
 
 The repository currently contains:
 
@@ -367,7 +389,7 @@ The repository currently contains:
 - Bangla Executive Summary (v1.0)
 - English White Paper (v1.0)
 - Bangla White Paper (v1.0)
-- English and Bangla Technical Blueprint, Blueprint Summary and Decision Memo (v1.0)
+- English and Bangla Technical Blueprint and Blueprint Summary (Version 1.0, prepared for release v1.1.0)
 - Reference implementation with tests and continuous integration
 - Supporting international AI governance studies
 - BAPIL conceptual framework and supporting documentation

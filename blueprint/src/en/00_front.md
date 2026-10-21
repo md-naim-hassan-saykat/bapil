@@ -57,8 +57,8 @@ The source code of the reference implementation described in Chapter 11 is licen
 | **ORCID** | <https://orcid.org/{{ORCID}}> |
 | **Language** | English (a Bangla edition is published alongside) |
 | **Document Type** | Technical Blueprint |
-| **Structure** | Five parts, 21 chapters, 22 annexes, 69 tables and 15 figures |
-| **Revision status** | Revised after an evidence audit in October 2026; changes and unresolved items in Annex V |
+| **Structure** | Five parts, 21 chapters, 22 annexes, 68 tables and 15 figures |
+| **Evidence status** | Key claims checked against their sources in October 2026 (Annex P); unresolved items in Annex V |
 | **License** | Creative Commons Attribution 4.0 International (CC BY 4.0) |
 | **Blueprint DOI** | {{DOI_LINK}} |
 | **Builds on** | White Paper, Version 1.0: <https://doi.org/10.5281/zenodo.21363967> |
@@ -77,38 +77,38 @@ This Blueprint is an independent research and policy-design document prepared by
 
 The Blueprint is organised in five parts. Readers with limited time can use the following routes:
 
-* **Decision-makers:** the Overview at a Glance, Chapter 16 (strategic roadmap to 2041), Chapter 21 (decisions) and the one-page Decision Memo published with this Blueprint.
+* **Decision-makers:** the Overview at a Glance, Chapter 16 (strategic roadmap to 2041) and Chapter 21 (decisions).
 * **Programme managers:** add Chapters 3, 5, 6, 12, 15, 17, 18 and 19.
 * **Technical teams:** Part III (Chapters 7 to 11) with Annexes A, C, K, M and R.
 * **Legal, governance and ethics specialists:** Chapters 8, 13 and 14 with Annexes B, E, F, H, I, J, S and T.
 * **Researchers and universities:** Chapters 9, 11 and 20 with Annex K.
 * **Development partners and finance reviewers:** Chapters 2, 16, 17 and 18 with Annexes Q and T.
-* **Reviewers checking the evidence:** Annex P, which states the status of every key claim, and Annex V, which lists all changes and unresolved items.
+* **Reviewers checking the evidence:** Annex P, which states the status of every key claim, and Annex V, which lists the unresolved items.
 
 The words **must**, **should** and **may** carry their usual normative meaning: a requirement marked *must* is a condition of the design, *should* is a strong recommendation, and *may* is optional.
 
 ## Status of This Blueprint and Its Artefacts
 
-This Blueprint is a proposal. To avoid confusing what exists with what is planned, the table states the status of each element at the time of writing. Claims in the text are classified in the same way in Annex P, using the labels defined there (verified fact, source-reported fact, research finding, author's analysis, design recommendation, planning assumption, proposed target, unverified claim and future milestone).
+This Blueprint is a proposal. To avoid confusing what exists with what is planned, the table states the status of each element at the time of writing. Claims in the text are classified in the same way in Annex P, using the labels defined there (verified fact, source-reported fact, research finding, author’s analysis, design recommendation, planning assumption, proposed target, unverified claim and future milestone).
 
 | Element | Status at the time of writing (October 2026) |
 |---|---|
 | Institution, Steering Board, ERRC and TAB | Design recommendation. Nothing has been approved, constituted or funded |
 | Legal analysis | Summary based on press reports and secondary legal commentary. The gazetted texts and their commencement provisions have not been reviewed; confirmation by qualified Bangladesh counsel is required |
-| Reference implementation | Research prototype (version 0.1.0) with 49 passing unit tests, released in repository release v1.1.0 together with this Blueprint. Not a production system; not tested with users |
+| Reference implementation | Research prototype (package version 0.1.0) with 49 unit tests passing locally on Python 3.13. It is to be issued in repository release v1.1.0 with this Blueprint; readers can check whether the release is listed at <https://github.com/md-naim-hassan-saykat/bapil/releases>. If it is not listed, the code is not yet public. Not a production system; not tested with users |
 | BanglaPolicyQA benchmark | Planned. Protocol and annotation guidelines exist; no questions have been written |
 | Evaluation thresholds | Proposed targets. No pilot results exist |
 | Pilots P1 to P6 | Proposed |
 | Budget | Planning estimate computed from stated assumptions; not a quotation and not approved funding |
 | Long-term targets (2028 to 2041) | Proposed targets, revised at each strategic review |
 
-Items that remain unresolved, with their owners and how they will be resolved, are listed in Annex V (Table 69).
+Items that remain unresolved, with their owners and how they will be resolved, are listed in Annex V (Table 68).
 
 \newpage
 
 # Overview at a Glance
 
-**The problem.** Bangladesh's laws, gazettes, budgets, plans and statistics are published across many websites and formats, often as scanned Bangla PDFs. Officials and researchers spend a large share of their time finding, checking and citing these sources. At the same time, the country is putting in place a new legal framework for data and a national AI policy, but has no operational method for governing AI systems in the public sector and no open Bangla benchmark for policy search.
+**The problem.** Bangladesh’s laws, gazettes, budgets, plans and statistics are published across many websites and formats, often as scanned Bangla PDFs. Officials and researchers spend a large share of their time finding, checking and citing these sources. At the same time, the country is putting in place a new legal framework for data and a national AI policy, but has no operational method for governing AI systems in the public sector and no open Bangla benchmark for policy search.
 
 **The proposal.** The Bangladesh AI Policy & Innovation Lab (BAPIL) is a university-anchored lab under a Memorandum of Understanding (MoU) with the ICT Division. It builds open, bilingual tools that help officials find and cite official evidence, develops and publishes the methods needed to govern public-sector AI safely, and trains people to use both.
 
@@ -116,7 +116,7 @@ Items that remain unresolved, with their owners and how they will be resolved, a
 
 **How risk is controlled.** Public data first; advice, not decisions; no surveillance. Every system is placed in a risk tier (T0 prohibited to T3 high) and must pass lifecycle gates (G0 to G5) before it moves forward. The Ethics and Risk Review Committee has a binding veto over tier T2 and T3 work.
 
-**What already exists, and what does not.** A small, tested reference implementation of the core components (bilingual normalisation and search, cited answers with abstention, risk-tier assessment, the AI system register, evaluation and a tamper-evident audit log) is released with this Blueprint on GitHub and archived with it under a DOI. It is a research prototype, not a production system. The institution, the pilots, the benchmark and the funding do not yet exist; they are what this Blueprint proposes.
+**What already exists, and what does not.** A small, tested reference implementation of the core components (bilingual normalisation and search, cited answers with abstention, risk-tier assessment, the AI system register, evaluation and a tamper-evident audit log) is issued with this Blueprint in GitHub release v1.1.0 and archived with the Blueprint’s Zenodo record, which is published only after that release exists (Annex D). It is a research prototype, not a production system. The institution, the pilots, the benchmark and the funding do not yet exist; they are what this Blueprint proposes.
 
 **The long view.** A strategic roadmap sets five horizons: foundation (Q4 2026), short term (2027 to 2028), medium term (2029 to 2030), long term (2031 to 2035) and vision (2036 to 2041), followed by a charter renewal decision after 2041. It is aligned with the national AI policy cycle and with the 2041 national plans, and it is reviewed at fixed points and whenever major events occur.
 

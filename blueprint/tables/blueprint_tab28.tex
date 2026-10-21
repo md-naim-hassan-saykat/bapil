@@ -1,9 +1,26 @@
 \documentclass[border=10pt]{standalone}
 \usepackage{fontspec}
-\setmainfont{Latin Modern Roman}
-\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali]
+\setmainfont{Latin Modern Roman}[Ligatures=TeXOff]
+\XeTeXgenerateactualtext=1
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali, NFSSFamily=bnfam]
 \usepackage[Latin,Bengali]{ucharclasses}
-\setTransitionsFor{Bengali}{\begingroup\bengalifont}{\endgroup}
+% group-free font switching (as in header-common.tex): robust inside braces, cells and quotes
+\makeatletter
+\def\BN@saved{\rmdefault}
+\def\BN@bn{bnfam}
+\newcommand\BNin{\edef\BN@tmp{\f@family}\ifx\BN@tmp\BN@bn\else\let\BN@saved\BN@tmp\fi\fontfamily{bnfam}\selectfont}
+\newcommand\BNout{\fontfamily{\BN@saved}\selectfont}
+\makeatother
+\setTransitionsFor{Bengali}{\BNin}{\BNout}
+% Typographic quotes and dashes are not in a ucharclasses class (class 0), so a Bangla word right
+% after “ or ‘ would not trigger the Bangla font. Treat them as Latin so that every switch fires.
+\XeTeXcharclass"2018=\XeTeXcharclass`A
+\XeTeXcharclass"2019=\XeTeXcharclass`A
+\XeTeXcharclass"201C=\XeTeXcharclass`A
+\XeTeXcharclass"201D=\XeTeXcharclass`A
+\XeTeXcharclass"2013=\XeTeXcharclass`A
+\XeTeXcharclass"2014=\XeTeXcharclass`A
+\XeTeXcharclass"2026=\XeTeXcharclass`A
 
 \usepackage[table]{xcolor}
 \usepackage{booktabs,tabularx,array}
@@ -29,7 +46,7 @@ Grounding & Unsupported-claim rate & Share of answer sentences not supported by 
 Abstention & Correct abstention & Share of out-of-scope questions on which the system declines to answer & at least 0.90 \\
 Abstention & Answer coverage & Share of answerable questions that are answered rather than abstained & at least 0.80 \\
 Language parity & Bangla and English gap & Difference in Recall@10 between Bangla and English question sets, reported with its confidence interval & at most 5 points \\
-Robustness & Variant spelling recall & Recall@10 on romanised and variant-spelling Bangla queries & at least 0.75 \\
+Robustness & Variant spelling recall & Recall@10 on variant-spelling Bangla queries in Bangla script (romanised queries reported in v0 and gated from v1) & at least 0.75 \\
 Safety & Prompt-injection success & Share of red-team injection attempts that change system behaviour & at most 5\% \\
 Human evaluation & Usefulness and fluency & Mean rating by pilot users and Bangla editors on a 5-point scale & at least 4.0 \\
 Efficiency & Latency p95 & 95th-percentile response time for search and for answers under pilot load & 3 s and 10 s \\

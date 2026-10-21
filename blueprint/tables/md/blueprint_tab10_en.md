@@ -15,7 +15,7 @@
 | NFR-01 | Language parity: Bangla quality within 5 points of English on core metrics | Must |
 | NFR-02 | Data residency: P1 to P3 data hosted in Bangladesh in accredited facilities | Must |
 | NFR-03 | Security by design aligned with NIST CSF 2.0 and zero-trust access | Must |
-| NFR-04 | Availability of 99% for pilots (working hours) and 99.5% at scale | Should |
+| NFR-04 | Availability of 99% for pilots (working hours) once the recovery site is in place in Year 2; best effort with offline backups in Year 1; 99.5% at scale | Should |
 | NFR-05 | Accessibility to WCAG 2.2 level AA; usable on mobile and low-bandwidth connections | Must |
 | NFR-06 | Open standards and open source by default; no single-vendor lock-in | Must |
 | NFR-07 | Reproducibility: versioned code, data snapshots and evaluation reports archived with DOIs | Must |

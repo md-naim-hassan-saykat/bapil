@@ -1,9 +1,26 @@
 \documentclass[border=10pt]{standalone}
 \usepackage{fontspec}
-\setmainfont{Noto Serif}
-\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali]
+\setmainfont{Noto Serif}[Ligatures=TeXOff]
+\XeTeXgenerateactualtext=1
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali, NFSSFamily=bnfam]
 \usepackage[Latin,Bengali]{ucharclasses}
-\setTransitionsFor{Bengali}{\begingroup\bengalifont}{\endgroup}
+% group-free font switching (as in header-common.tex): robust inside braces, cells and quotes
+\makeatletter
+\def\BN@saved{\rmdefault}
+\def\BN@bn{bnfam}
+\newcommand\BNin{\edef\BN@tmp{\f@family}\ifx\BN@tmp\BN@bn\else\let\BN@saved\BN@tmp\fi\fontfamily{bnfam}\selectfont}
+\newcommand\BNout{\fontfamily{\BN@saved}\selectfont}
+\makeatother
+\setTransitionsFor{Bengali}{\BNin}{\BNout}
+% Typographic quotes and dashes are not in a ucharclasses class (class 0), so a Bangla word right
+% after “ or ‘ would not trigger the Bangla font. Treat them as Latin so that every switch fires.
+\XeTeXcharclass"2018=\XeTeXcharclass`A
+\XeTeXcharclass"2019=\XeTeXcharclass`A
+\XeTeXcharclass"201C=\XeTeXcharclass`A
+\XeTeXcharclass"201D=\XeTeXcharclass`A
+\XeTeXcharclass"2013=\XeTeXcharclass`A
+\XeTeXcharclass"2014=\XeTeXcharclass`A
+\XeTeXcharclass"2026=\XeTeXcharclass`A
 \usepackage{newunicodechar}
 \newunicodechar{।}{{\bengalifont\char"0964}}
 \newunicodechar{॥}{{\bengalifont\char"0965}}
@@ -37,7 +54,7 @@ FR-10 & প্রোগ্রাম্যাটিক প্রবেশাধ�
 NFR-01 & ভাষাগত সমতা: মূল মাপকাঠিতে বাংলার মান ইংরেজির তুলনায় ৫ পয়েন্টের মধ্যে & আবশ্যিক \\
 NFR-02 & ডেটা-অবস্থান: P1 থেকে P3 ডেটা বাংলাদেশে স্বীকৃত স্থাপনায় সংরক্ষিত & আবশ্যিক \\
 NFR-03 & NIST CSF 2.0 ও জিরো-ট্রাস্ট প্রবেশাধিকারের সঙ্গে সামঞ্জস্যপূর্ণ নকশাগত নিরাপত্তা & আবশ্যিক \\
-NFR-04 & পাইলটে ৯৯\% (কর্মঘণ্টায়) এবং সম্প্রসারিত পর্যায়ে ৯৯.৫\% প্রাপ্যতা & প্রয়োজনীয় \\
+NFR-04 & দ্বিতীয় বছরে পুনরুদ্ধার-স্থাপনা চালু হলে পাইলটে ৯৯\% (কর্মঘণ্টায়); প্রথম বছরে অফলাইন ব্যাকআপসহ সর্বোচ্চ প্রচেষ্টা; সম্প্রসারিত পর্যায়ে ৯৯.৫\% প্রাপ্যতা & প্রয়োজনীয় \\
 NFR-05 & WCAG 2.2 AA মানের প্রবেশযোগ্যতা; মোবাইল ও স্বল্প-ব্যান্ডউইথে ব্যবহারযোগ্য & আবশ্যিক \\
 NFR-06 & ডিফল্টভাবে উন্মুক্ত মানদণ্ড ও উন্মুক্ত সোর্স; একক বিক্রেতার উপর নির্ভরশীলতা নয় & আবশ্যিক \\
 NFR-07 & পুনরুৎপাদনযোগ্যতা: সংস্করণকৃত কোড, ডেটা স্ন্যাপশট ও মূল্যায়ন প্রতিবেদন DOI-সহ সংরক্ষিত & আবশ্যিক \\
@@ -53,6 +70,6 @@ GR-06 & নিষিদ্ধ ব্যবহার (স্তর T0) BAPIL স�
 \bottomrule
 \end{tabularx}
 \par\vspace{5pt}{\footnotesize\itshape অগ্রাধিকার MoSCoW রীতি অনুসরণ করে (আবশ্যিক, প্রয়োজনীয়, ঐচ্ছিক)। প্রয়োজনীয়তার আইডিগুলো সংযুক্তি ক-তে উপাদান, কোড মডিউল ও পরীক্ষার সঙ্গে সংযুক্ত করা হয়েছে।}
-\par\vspace{3pt}{\scriptsize\color{gray} উৎস: BAPIL কারিগরি ব্লুপ্রিন্ট, সংস্করণ ১.০ (২০২৬)। CC BY 4.0।}
+\par\vspace{3pt}{\scriptsize\color{gray} উৎস: BAPIL টেকনিক্যাল ব্লুপ্রিন্ট, সংস্করণ ১.০ (২০২৬)। CC BY 4.0।}
 \end{minipage}
 \end{document}

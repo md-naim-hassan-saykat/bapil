@@ -1,10 +1,27 @@
 \documentclass[border=8pt]{standalone}
 \usepackage{fontspec}
-\setmainfont{Noto Sans}
+\setmainfont{Noto Sans}[Ligatures=TeXOff]
+\XeTeXgenerateactualtext=1
 \setsansfont{Noto Sans}
-\newfontfamily\bengalifont{Noto Sans Bengali}[Script=Bengali]
+\newfontfamily\bengalifont{Noto Sans Bengali}[Script=Bengali, NFSSFamily=bnfam]
 \usepackage[Latin,Bengali]{ucharclasses}
-\setTransitionsFor{Bengali}{\begingroup\bengalifont}{\endgroup}
+% group-free font switching (as in header-common.tex): robust inside braces, cells and quotes
+\makeatletter
+\def\BN@saved{\rmdefault}
+\def\BN@bn{bnfam}
+\newcommand\BNin{\edef\BN@tmp{\f@family}\ifx\BN@tmp\BN@bn\else\let\BN@saved\BN@tmp\fi\fontfamily{bnfam}\selectfont}
+\newcommand\BNout{\fontfamily{\BN@saved}\selectfont}
+\makeatother
+\setTransitionsFor{Bengali}{\BNin}{\BNout}
+% Typographic quotes and dashes are not in a ucharclasses class (class 0), so a Bangla word right
+% after “ or ‘ would not trigger the Bangla font. Treat them as Latin so that every switch fires.
+\XeTeXcharclass"2018=\XeTeXcharclass`A
+\XeTeXcharclass"2019=\XeTeXcharclass`A
+\XeTeXcharclass"201C=\XeTeXcharclass`A
+\XeTeXcharclass"201D=\XeTeXcharclass`A
+\XeTeXcharclass"2013=\XeTeXcharclass`A
+\XeTeXcharclass"2014=\XeTeXcharclass`A
+\XeTeXcharclass"2026=\XeTeXcharclass`A
 \usepackage{newunicodechar}
 \newunicodechar{।}{{\bengalifont\char"0964}}
 \usepackage{tikz}
@@ -38,7 +55,7 @@
 
 \begin{tikzpicture}[node distance=8mm and 8mm]
 \node[soft, minimum width=40mm, minimum height=11mm] (gov) at (-35mm,0) {সরকার (আইসিটি বিভাগ)};
-\node[soft, minimum width=40mm, minimum height=11mm] (host) at (35mm,0) {আয়োজক প্রতিষ্ঠান};
+\node[soft, minimum width=40mm, minimum height=11mm] (host) at (35mm,0) {স্বাগতিক প্রতিষ্ঠান};
 \node[key, minimum width=62mm, minimum height=13mm] (sb) at (0,-22mm) {\textbf{স্টিয়ারিং বোর্ড}\\{\footnotesize কৌশল, পরিকল্পনা, বাজেট, যৌথ G4 সিদ্ধান্ত}};
 \draw[arr] (gov.south) |- node[lbl, pos=0.3]{সমঝোতা স্মারক} (sb.west);
 \draw[arr] (host.south) |- (sb.east);

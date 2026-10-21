@@ -1,9 +1,26 @@
 \documentclass[border=10pt]{standalone}
 \usepackage{fontspec}
-\setmainfont{Noto Serif}
-\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali]
+\setmainfont{Noto Serif}[Ligatures=TeXOff]
+\XeTeXgenerateactualtext=1
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali, NFSSFamily=bnfam]
 \usepackage[Latin,Bengali]{ucharclasses}
-\setTransitionsFor{Bengali}{\begingroup\bengalifont}{\endgroup}
+% group-free font switching (as in header-common.tex): robust inside braces, cells and quotes
+\makeatletter
+\def\BN@saved{\rmdefault}
+\def\BN@bn{bnfam}
+\newcommand\BNin{\edef\BN@tmp{\f@family}\ifx\BN@tmp\BN@bn\else\let\BN@saved\BN@tmp\fi\fontfamily{bnfam}\selectfont}
+\newcommand\BNout{\fontfamily{\BN@saved}\selectfont}
+\makeatother
+\setTransitionsFor{Bengali}{\BNin}{\BNout}
+% Typographic quotes and dashes are not in a ucharclasses class (class 0), so a Bangla word right
+% after “ or ‘ would not trigger the Bangla font. Treat them as Latin so that every switch fires.
+\XeTeXcharclass"2018=\XeTeXcharclass`A
+\XeTeXcharclass"2019=\XeTeXcharclass`A
+\XeTeXcharclass"201C=\XeTeXcharclass`A
+\XeTeXcharclass"201D=\XeTeXcharclass`A
+\XeTeXcharclass"2013=\XeTeXcharclass`A
+\XeTeXcharclass"2014=\XeTeXcharclass`A
+\XeTeXcharclass"2026=\XeTeXcharclass`A
 \usepackage{newunicodechar}
 \newunicodechar{।}{{\bengalifont\char"0964}}
 \newunicodechar{॥}{{\bengalifont\char"0965}}
@@ -32,7 +49,7 @@
 বিরত থাকা & সঠিক বিরতি & আওতাবহির্ভূত প্রশ্নে ব্যবস্থার উত্তর না দেওয়ার অনুপাত & কমপক্ষে ০.৯০ \\
 বিরত থাকা & উত্তর-আওতা & উত্তরযোগ্য প্রশ্নের মধ্যে যেগুলোর উত্তর দেওয়া হয়, বিরত থাকা হয় না, তার অনুপাত & কমপক্ষে ০.৮০ \\
 ভাষাগত সমতা & বাংলা ও ইংরেজির ব্যবধান & বাংলা ও ইংরেজি প্রশ্নসেটে Recall@10-এর পার্থক্য, আস্থা-ব্যবধানসহ প্রতিবেদিত & সর্বোচ্চ ৫ পয়েন্ট \\
-স্থিতিশীলতা & বানানভেদে উদ্ধার & রোমান হরফে লেখা ও ভিন্ন বানানের বাংলা প্রশ্নে Recall@10 & কমপক্ষে ০.৭৫ \\
+স্থিতিশীলতা & বানানভেদে উদ্ধার & বাংলা হরফে ভিন্ন বানানের প্রশ্নে Recall@10 (রোমান হরফের প্রশ্ন v0-তে প্রতিবেদিত, v1 থেকে গেটের অধীনে) & কমপক্ষে ০.৭৫ \\
 নিরাপত্তা & প্রম্পট-ইনজেকশনের সাফল্য & রেড-টিমের ইনজেকশন প্রচেষ্টার মধ্যে যেগুলো ব্যবস্থার আচরণ বদলায় তার অনুপাত & সর্বোচ্চ ৫\% \\
 মানব-মূল্যায়ন & উপযোগিতা ও সাবলীলতা & পাইলট ব্যবহারকারী ও বাংলা সম্পাদকদের ৫-পয়েন্ট স্কেলে গড় মূল্যায়ন & কমপক্ষে ৪.০ \\
 দক্ষতা & লেটেন্সি p95 & পাইলট-চাপে অনুসন্ধান ও উত্তরের ৯৫তম পার্সেন্টাইল প্রতিক্রিয়া-সময় & ৩ সেকেন্ড ও ১০ সেকেন্ড \\
@@ -40,6 +57,6 @@
 \bottomrule
 \end{tabularx}
 \par\vspace{5pt}{\footnotesize\itshape সব মান প্রস্তাবিত লক্ষ্য, পরিমাপকৃত ফলাফল নয়। সংযুক্তি দ-এর (সারণি ৬৩) নমুনার আকার, বিচার-পদ্ধতি ও সিদ্ধান্ত-নিয়ম অনুযায়ী এগুলো ব্যক্তিগত পরীক্ষা-অংশে পরিমাপ করা হয়; নির্দিষ্ট ব্যবহারের জন্য ERRC ও TAB এগুলো আরও কঠোর করতে পারে।}
-\par\vspace{3pt}{\scriptsize\color{gray} উৎস: BAPIL কারিগরি ব্লুপ্রিন্ট, সংস্করণ ১.০ (২০২৬)। CC BY 4.0।}
+\par\vspace{3pt}{\scriptsize\color{gray} উৎস: BAPIL টেকনিক্যাল ব্লুপ্রিন্ট, সংস্করণ ১.০ (২০২৬)। CC BY 4.0।}
 \end{minipage}
 \end{document}

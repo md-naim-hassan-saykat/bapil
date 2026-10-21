@@ -12,4 +12,4 @@
 | Contingency (5%) | 0.21 | 0.33 | 0.36 | 0.89 | 4% |
 | **Total** | **4.73** | **7.49** | **8.21** | **20.43** | **100%** |
 
-*Note.* Computed from the assumptions in Table 49 by blueprint/src/budget_model.py. Figures are rounded independently, so rows and columns may not add exactly: the unrounded total is Tk 204,264,136 (Tk 20.43 crore), while the rounded annual totals add to Tk 20.43 crore. Equivalent to about USD 1.65 million. A planning estimate: no funds have been approved or committed.
+*Note.* Computed from the assumptions in Table 49 by blueprint/src/budget_model.py. Figures are rounded independently, so rows and columns may not add exactly: the unrounded total is Tk 204,264,136 (Tk 20.43 crore), while the rounded annual totals add to Tk 20.43 crore. Rounded rows add to 4.74, 7.48, 8.22 and 20.42; the totals shown are computed from unrounded values. Equivalent to about USD 1.65 million. A planning estimate: no funds have been approved or committed.

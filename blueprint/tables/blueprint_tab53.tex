@@ -1,9 +1,26 @@
 \documentclass[border=10pt]{standalone}
 \usepackage{fontspec}
-\setmainfont{Latin Modern Roman}
-\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali]
+\setmainfont{Latin Modern Roman}[Ligatures=TeXOff]
+\XeTeXgenerateactualtext=1
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali, NFSSFamily=bnfam]
 \usepackage[Latin,Bengali]{ucharclasses}
-\setTransitionsFor{Bengali}{\begingroup\bengalifont}{\endgroup}
+% group-free font switching (as in header-common.tex): robust inside braces, cells and quotes
+\makeatletter
+\def\BN@saved{\rmdefault}
+\def\BN@bn{bnfam}
+\newcommand\BNin{\edef\BN@tmp{\f@family}\ifx\BN@tmp\BN@bn\else\let\BN@saved\BN@tmp\fi\fontfamily{bnfam}\selectfont}
+\newcommand\BNout{\fontfamily{\BN@saved}\selectfont}
+\makeatother
+\setTransitionsFor{Bengali}{\BNin}{\BNout}
+% Typographic quotes and dashes are not in a ucharclasses class (class 0), so a Bangla word right
+% after “ or ‘ would not trigger the Bangla font. Treat them as Latin so that every switch fires.
+\XeTeXcharclass"2018=\XeTeXcharclass`A
+\XeTeXcharclass"2019=\XeTeXcharclass`A
+\XeTeXcharclass"201C=\XeTeXcharclass`A
+\XeTeXcharclass"201D=\XeTeXcharclass`A
+\XeTeXcharclass"2013=\XeTeXcharclass`A
+\XeTeXcharclass"2014=\XeTeXcharclass`A
+\XeTeXcharclass"2026=\XeTeXcharclass`A
 
 \usepackage[table]{xcolor}
 \usepackage{booktabs,tabularx,array}
@@ -23,7 +40,7 @@
 \midrule
 \textbf{Impact} & Public policy in Bangladesh is better grounded in evidence, and AI in the public sector is trusted and well governed & Official documents citing BAPIL evidence; trust measures in user surveys & Document analysis; independent evaluation & Political commitment to evidence-based policy continues \\
 \textbf{Outcome 1} & Officials and researchers find and cite authoritative evidence faster and more reliably & Time saved on evidence search; monthly active users & Time-to-evidence studies; usage logs & Agencies release staff time for pilots \\
-\textbf{Outcome 2} & AI systems in BAPIL's scope are governed transparently and safely & 100\% registered; serious incidents handled in time & Transparency register; incident records & ERRC remains independent and resourced \\
+\textbf{Outcome 2} & AI systems in BAPIL’s scope are governed transparently and safely & 100\% registered; serious incidents handled in time & Transparency register; incident records & ERRC remains independent and resourced \\
 \textbf{Outcome 3} & National capacity in Bangla policy AI grows & Officials trained; fellows; open datasets reused & Training records; download and citation counts & Trained staff stay in relevant posts \\
 \textbf{Output 1} & Policy search and budget dataset piloted with users & Pilots passing G3; Recall@10 & Gate records; benchmark reports & Data access granted on time \\
 \textbf{Output 2} & Open benchmark, corpus and evaluation methods published & Benchmark questions; releases with DOIs & Zenodo and GitHub records & Annotators available \\

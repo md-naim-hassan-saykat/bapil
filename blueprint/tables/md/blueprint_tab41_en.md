@@ -12,4 +12,4 @@
 | Monitoring and incidents | 1.4, 1.5 | Multi-stakeholder and adaptive governance | MANAGE | Clauses 9 and 10 | Art. 72, 73 | Audits by oversight committee (draft policy) |
 | Stakeholder engagement and redress | 1.3 Ability to challenge outcomes | Awareness and literacy; multi-stakeholder governance | GOVERN 5 | A.8 Information for interested parties | Art. 85, 86 | Public consultation on the national AI policy |
 
-*Note.* Indicative mapping for orientation only; it is not a legal compliance assessment. Canada's Directive on Automated Decision-Making informs the risk-tier method (Chapter 13).
+*Note.* Indicative mapping for orientation only; it is not a legal compliance assessment. Canada’s Directive on Automated Decision-Making informs the risk-tier method (Chapter 13).

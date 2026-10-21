@@ -24,8 +24,9 @@ jobs:
         run: blueprint/build_blueprint.sh
       - uses: actions/upload-artifact@v4
         with:
-          name: bapil-blueprint-v1.1
+          name: bapil-technical-blueprint
           path: |
             releases/v1.1/*.pdf
+            blueprint/data/*
             blueprint/figures/*
             blueprint/tables/*

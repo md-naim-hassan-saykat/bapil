@@ -1,9 +1,26 @@
 \documentclass[border=10pt]{standalone}
 \usepackage{fontspec}
-\setmainfont{Noto Serif}
-\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali]
+\setmainfont{Noto Serif}[Ligatures=TeXOff]
+\XeTeXgenerateactualtext=1
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali, NFSSFamily=bnfam]
 \usepackage[Latin,Bengali]{ucharclasses}
-\setTransitionsFor{Bengali}{\begingroup\bengalifont}{\endgroup}
+% group-free font switching (as in header-common.tex): robust inside braces, cells and quotes
+\makeatletter
+\def\BN@saved{\rmdefault}
+\def\BN@bn{bnfam}
+\newcommand\BNin{\edef\BN@tmp{\f@family}\ifx\BN@tmp\BN@bn\else\let\BN@saved\BN@tmp\fi\fontfamily{bnfam}\selectfont}
+\newcommand\BNout{\fontfamily{\BN@saved}\selectfont}
+\makeatother
+\setTransitionsFor{Bengali}{\BNin}{\BNout}
+% Typographic quotes and dashes are not in a ucharclasses class (class 0), so a Bangla word right
+% after “ or ‘ would not trigger the Bangla font. Treat them as Latin so that every switch fires.
+\XeTeXcharclass"2018=\XeTeXcharclass`A
+\XeTeXcharclass"2019=\XeTeXcharclass`A
+\XeTeXcharclass"201C=\XeTeXcharclass`A
+\XeTeXcharclass"201D=\XeTeXcharclass`A
+\XeTeXcharclass"2013=\XeTeXcharclass`A
+\XeTeXcharclass"2014=\XeTeXcharclass`A
+\XeTeXcharclass"2026=\XeTeXcharclass`A
 \usepackage{newunicodechar}
 \newunicodechar{।}{{\bengalifont\char"0964}}
 \newunicodechar{॥}{{\bengalifont\char"0965}}
@@ -32,13 +49,13 @@ C5 & উত্তর সেবা & উদ্ধার, উদ্ধৃতি, �
 C6 & বিশ্লেষণ ইঞ্জিন & বাজেট নিষ্কাশন, সূচক, বিষয়-মডেল & Python, pandas, DuckDB & পরিকল্পিত \\
 C7 & পোর্টাল ও ড্যাশবোর্ড & দ্বিভাষিক ও প্রবেশযোগ্য ব্যবহারকারী ইন্টারফেস & ওয়েব ফ্রেমওয়ার্ক; Apache Superset & পরিকল্পিত \\
 C8 & API গেটওয়ে & সংস্করণকৃত REST API, কোটা, হার-সীমা & FastAPI, Kong & bapil.api (স্ট্যান্ডার্ড লাইব্রেরি) \\
-C9 & পরিচয় ও প্রবেশাধিকার & একক সাইন-অন, ভূমিকাভিত্তিক প্রবেশাধিকার, বহু-স্তর প্রমাণীকরণ & Keycloak & পরিকল্পিত \\
+C9 & পরিচয় ও প্রবেশাধিকার & একক সাইন-অন, ভূমিকাভিত্তিক প্রবেশাধিকার, বহু-উপাদান প্রমাণীকরণ & Keycloak & পরিকল্পিত \\
 C10 & নিরীক্ষা ও পর্যবেক্ষণযোগ্যতা & হস্তক্ষেপ-শনাক্তযোগ্য লগ, মেট্রিক, ট্রেসিং & OpenTelemetry, Prometheus, Grafana & bapil.audit (হ্যাশ-শৃঙ্খলিত JSONL) \\
 C11 & মডেল রেজিস্ট্রি ও মূল্যায়ন & মডেল কার্ড, সংস্করণকৃত মূল্যায়ন, বেঞ্চমার্ক & MLflow & bapil.evaluate \\
 C12 & শাসন কর্মক্ষেত্র & এআই ব্যবস্থা নিবন্ধন, ঝুঁকি মূল্যায়ন, ঘটনা, স্বচ্ছতা নিবন্ধন & হালকা ওয়েব অ্যাপ্লিকেশন & bapil.risk, bapil.registry \\
 \bottomrule
 \end{tabularx}
 \par\vspace{5pt}{\footnotesize\itshape প্রযুক্তিগুলো সম্ভাব্য বিকল্প, বাধ্যতামূলক নয়; চূড়ান্ত পছন্দ কারিগরি স্থাপত্য বোর্ড NFR-02, NFR-03 ও NFR-06 অনুযায়ী নির্ধারণ করবে।}
-\par\vspace{3pt}{\scriptsize\color{gray} উৎস: BAPIL কারিগরি ব্লুপ্রিন্ট, সংস্করণ ১.০ (২০২৬)। CC BY 4.0।}
+\par\vspace{3pt}{\scriptsize\color{gray} উৎস: BAPIL টেকনিক্যাল ব্লুপ্রিন্ট, সংস্করণ ১.০ (২০২৬)। CC BY 4.0।}
 \end{minipage}
 \end{document}

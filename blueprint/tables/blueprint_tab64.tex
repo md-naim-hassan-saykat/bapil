@@ -1,9 +1,26 @@
 \documentclass[border=10pt]{standalone}
 \usepackage{fontspec}
-\setmainfont{Latin Modern Roman}
-\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali]
+\setmainfont{Latin Modern Roman}[Ligatures=TeXOff]
+\XeTeXgenerateactualtext=1
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali, NFSSFamily=bnfam]
 \usepackage[Latin,Bengali]{ucharclasses}
-\setTransitionsFor{Bengali}{\begingroup\bengalifont}{\endgroup}
+% group-free font switching (as in header-common.tex): robust inside braces, cells and quotes
+\makeatletter
+\def\BN@saved{\rmdefault}
+\def\BN@bn{bnfam}
+\newcommand\BNin{\edef\BN@tmp{\f@family}\ifx\BN@tmp\BN@bn\else\let\BN@saved\BN@tmp\fi\fontfamily{bnfam}\selectfont}
+\newcommand\BNout{\fontfamily{\BN@saved}\selectfont}
+\makeatother
+\setTransitionsFor{Bengali}{\BNin}{\BNout}
+% Typographic quotes and dashes are not in a ucharclasses class (class 0), so a Bangla word right
+% after “ or ‘ would not trigger the Bangla font. Treat them as Latin so that every switch fires.
+\XeTeXcharclass"2018=\XeTeXcharclass`A
+\XeTeXcharclass"2019=\XeTeXcharclass`A
+\XeTeXcharclass"201C=\XeTeXcharclass`A
+\XeTeXcharclass"201D=\XeTeXcharclass`A
+\XeTeXcharclass"2013=\XeTeXcharclass`A
+\XeTeXcharclass"2014=\XeTeXcharclass`A
+\XeTeXcharclass"2026=\XeTeXcharclass`A
 
 \usepackage[table]{xcolor}
 \usepackage{booktabs,tabularx,array}
@@ -21,16 +38,16 @@
 \arrayrulecolor{bapilrule}\toprule
 \rowcolor{white}\textbf{Body} & \textbf{Status and basis} & \textbf{Membership and appointment} & \textbf{Chair and secretariat} & \textbf{Decision rights and limits} & \textbf{Reporting and transparency} & \textbf{Independence and conflicts} \\
 \midrule
-\textbf{Steering Board} & Proposed; created by the MoU and the host agreement; no statutory power & 7 to 9 members nominated by their organisations; academic and civil-society members chosen by open call; 3-year terms & Co-chairs from the ICT Division and the host; secretariat in the Director's office & Approves plans, budgets, partnerships and senior appointments; joint G4 decisions with agencies; cannot override an ERRC refusal or the law & Meets quarterly; decisions and minutes published in summary; annual report & Annual declarations; recusal; the industry member does not vote on procurement in its sector \\
-\textbf{Ethics and Risk Review Committee (ERRC)} & Proposed; established by the charter; binding inside BAPIL through the charter and host agreement, not by statute & 5 to 7 members, a majority external, selected through an open call by the independent nominations panel and confirmed by the Steering Board; 3-year terms, renewable once; removal only for cause by two thirds of the Board after a hearing & External chair elected by members; secretariat provided by the governance analyst & Approves, approves with conditions, refuses or suspends tier T2 and T3 work at G1, G2 and G4; refusal is binding; cannot authorise what the law or the host forbids & Decision summaries within 30 days; dissent recorded; annual report & Majority external; no member employed by a supplier under evaluation; protected budget; staff may raise concerns directly \\
-\textbf{Technical Architecture Board (TAB)} & Proposed; internal technical body under the Director & Lead engineers, the security lead and two external reviewers appointed by the Director with Board approval & Chief engineer; secretariat in the platform team & Approves designs at G1, models and major dependencies; maintains ADRs & ADRs public in the repository; meets monthly & External reviewers declare commercial interests and do not review their employers' products \\
-\textbf{International Advisory Panel} & Proposed; advisory only & Invited by the Steering Board; personal capacity; 2-year terms & Chair chosen by members; secretariat in the Director's office & None; gives advice on methods, benchmarks and governance & Annual note published & Declarations of interest \\
+\textbf{Steering Board} & Proposed; created by the MoU and the host agreement; no statutory power & 7 to 9 members nominated by their organisations; academic and civil-society members chosen by open call; 3-year terms & Co-chairs from the ICT Division and the host; secretariat in the Director’s office & Approves plans, budgets, partnerships and senior appointments; joint G4 decisions with agencies; cannot override an ERRC refusal or the law & Meets quarterly; decisions and minutes published in summary; annual report & Annual declarations; recusal; the industry member does not vote on procurement in its sector \\
+\textbf{Ethics and Risk Review Committee (ERRC)} & Proposed; established by the charter; binding on BAPIL through the charter, and on the host only as far as its statutes and the host agreement allow; not by statute & 5 to 7 members, a majority external, selected through an open call by the independent nominations panel and confirmed by the Steering Board; 3-year terms, renewable once; removal only for cause by two thirds of the Board after a hearing & External chair elected by members; secretariat provided by the governance analyst & Approves, approves with conditions, refuses or suspends tier T2 and T3 work at G1, G2 and G4; refusal is binding; cannot authorise what the law or the host forbids & Decision summaries within 30 days; dissent recorded; annual report & Majority external; no member employed by a supplier under evaluation; protected budget; staff may raise concerns directly \\
+\textbf{Technical Architecture Board (TAB)} & Proposed; internal technical body under the Director & Lead engineers, the security lead and two external reviewers appointed by the Director with Board approval & Chief engineer; secretariat in the platform team & Approves designs at G1, models and major dependencies; maintains ADRs & ADRs public in the repository; meets monthly & External reviewers declare commercial interests and do not review their employers’ products \\
+\textbf{International Advisory Panel} & Proposed; advisory only & Invited by the Steering Board; personal capacity; 2-year terms & Chair chosen by members; secretariat in the Director’s office & None; gives advice on methods, benchmarks and governance & Annual note published & Declarations of interest \\
 \textbf{Director} & Proposed post; employee of the host institution & Appointed by the host through open competition and confirmed by the Steering Board & Not applicable & Operational decisions within approved plans and budgets; may stop any pilot & Monthly reports to the Board & Host employment rules; declarations \\
 \textbf{Host-agency product owners} & Officials designated in writing by their agencies & Designated by the agency head & Not applicable & Define needs; accept or reject pilots at G3 and G4 in their agency & Pilot reports & Act under agency rules; receive no payment from BAPIL \\
-\textbf{Independent nominations panel} & Proposed; convened once for each ERRC term & Three people of standing in law, ethics and civil society, invited by the host institution's research ethics committee & Members choose a convener & Shortlists and recommends ERRC members & Publishes the call and selection criteria & Members may not serve on the ERRC they select \\
+\textbf{Independent nominations panel} & Proposed; convened once for each ERRC term & Three people of standing in law, ethics and civil society, invited by the host institution’s research ethics committee & Members choose a convener & Shortlists and recommends ERRC members & Publishes the call and selection criteria & Members may not serve on the ERRC they select \\
 \bottomrule
 \end{tabularx}
-\par\vspace{5pt}{\footnotesize\itshape None of these bodies exists yet. BAPIL's internal rules apply in addition to the law and never in place of it; where the law, a regulator or the host institution requires otherwise, the legal requirement prevails.}
+\par\vspace{5pt}{\footnotesize\itshape None of these bodies exists yet. BAPIL’s internal rules apply in addition to the law and never in place of it; where the law, a regulator or the host institution requires otherwise, the legal requirement prevails.}
 \par\vspace{3pt}{\scriptsize\color{gray} Source: BAPIL Technical Blueprint, Version 1.0 (2026). CC BY 4.0.}
 \end{minipage}
 \end{document}

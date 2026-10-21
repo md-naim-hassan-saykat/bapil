@@ -1,0 +1,7 @@
+step,total_tk,change_tk
+"Initial planning estimate made while drafting (constant prices, full staffing from month 1, no separate contingency)",184868200.0,
+Year 2 and 3 amounts restated at Year 1 prices,182888200.0,-1980000.0
+Explicit escalation of taka costs (8% a year),197907828.8,15019628.8
+Year 1 recruitment ramp (75% of positions filled on average),192900078.8,-5007750.0
+"Evaluation items added (out-of-scope set, citation judgements, annual system audit)",195383086.8,2483008.0
+Separate contingency of 5% of direct costs,204264136.2,8881049.4

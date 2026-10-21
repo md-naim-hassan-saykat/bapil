@@ -8,5 +8,6 @@
 | **Base case total** | **4.73** | **7.49** | **8.21** | **20.43** |
 | Low scenario total | 4.20 | 6.58 | 7.16 | 17.93 |
 | High scenario total | 5.76 | 9.46 | 10.03 | 25.25 |
+| Adjusted base case: known omissions added and 10% contingency (Section 17.2) | 5.29 | 8.10 | 8.85 | 22.24 |
 
-*Note.* Low scenario: staff costs 15% lower, escalation 6%, equipment 20% cheaper, Tk 120 per US dollar. High scenario: staff costs 20% higher, escalation 10%, equipment 25% dearer (for example import duty and VAT), Tk 135 per US dollar, contingency 10% and USD 20,000 of cloud compute for Stage 1 adaptation. Figures are rounded independently.
+*Note.* Low scenario: staff costs 15% lower, escalation 6%, equipment 20% cheaper, Tk 120 per US dollar. High scenario: staff costs 20% higher, escalation 10%, equipment 25% dearer (for example import duty and VAT), Tk 135 per US dollar, contingency 10% and USD 20,000 of cloud compute for Stage 1 adaptation. Adjusted base case: base-case assumptions plus Tk 15 lakh a year for engagement events, P5 survey data, travel and open-access fees, a computer (USD 1,200) for each of 19 new staff, and a 10% contingency. Figures are rounded independently.

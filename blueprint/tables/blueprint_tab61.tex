@@ -1,9 +1,26 @@
 \documentclass[border=10pt]{standalone}
 \usepackage{fontspec}
-\setmainfont{Latin Modern Roman}
-\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali]
+\setmainfont{Latin Modern Roman}[Ligatures=TeXOff]
+\XeTeXgenerateactualtext=1
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali, NFSSFamily=bnfam]
 \usepackage[Latin,Bengali]{ucharclasses}
-\setTransitionsFor{Bengali}{\begingroup\bengalifont}{\endgroup}
+% group-free font switching (as in header-common.tex): robust inside braces, cells and quotes
+\makeatletter
+\def\BN@saved{\rmdefault}
+\def\BN@bn{bnfam}
+\newcommand\BNin{\edef\BN@tmp{\f@family}\ifx\BN@tmp\BN@bn\else\let\BN@saved\BN@tmp\fi\fontfamily{bnfam}\selectfont}
+\newcommand\BNout{\fontfamily{\BN@saved}\selectfont}
+\makeatother
+\setTransitionsFor{Bengali}{\BNin}{\BNout}
+% Typographic quotes and dashes are not in a ucharclasses class (class 0), so a Bangla word right
+% after “ or ‘ would not trigger the Bangla font. Treat them as Latin so that every switch fires.
+\XeTeXcharclass"2018=\XeTeXcharclass`A
+\XeTeXcharclass"2019=\XeTeXcharclass`A
+\XeTeXcharclass"201C=\XeTeXcharclass`A
+\XeTeXcharclass"201D=\XeTeXcharclass`A
+\XeTeXcharclass"2013=\XeTeXcharclass`A
+\XeTeXcharclass"2014=\XeTeXcharclass`A
+\XeTeXcharclass"2026=\XeTeXcharclass`A
 
 \usepackage[table]{xcolor}
 \usepackage{booktabs,tabularx,array}
@@ -14,22 +31,22 @@
 
 \begin{document}
 \begin{minipage}{17cm}
-{\large\bfseries Table 61.}\ {\large Reconciliation of the indicative budget with the draft before this review (Tk crore, 36 months)}\par\vspace{7pt}
+{\large\bfseries Table 61.}\ {\large Reconciliation of the base case with the initial planning estimate (Tk crore, 36 months)}\par\vspace{7pt}
 \small
 \rowcolors{2}{bapilstripe}{white}
 \begin{tabularx}{\linewidth}{@{}>{\hsize=1.974\hsize\raggedright\arraybackslash}X>{\hsize=0.513\hsize\raggedright\arraybackslash}X>{\hsize=0.513\hsize\raggedright\arraybackslash}X@{}}
 \arrayrulecolor{bapilrule}\toprule
 \rowcolor{white}\textbf{Step} & \textbf{36-month total} & \textbf{Change} \\
 \midrule
-Pre-audit draft budget (October 2026) & 18.49 & Starting point \\
+Initial planning estimate made while drafting (constant prices, full staffing from month 1, no separate contingency) & 18.49 & Starting point \\
 Year 2 and 3 amounts restated at Year 1 prices & 18.29 & -0.20 \\
 Explicit escalation of taka costs (8\% a year) & 19.79 & +1.50 \\
 Year 1 recruitment ramp (75\% of positions filled on average) & 19.29 & -0.50 \\
 Evaluation items added (out-of-scope set, citation judgements, annual system audit) & 19.54 & +0.25 \\
-\textbf{Separate contingency of 5\% of direct costs = revised base case} & \textbf{20.43} & +0.89 \\
+\textbf{Separate contingency of 5\% of direct costs = base case} & \textbf{20.43} & +0.89 \\
 \bottomrule
 \end{tabularx}
-\par\vspace{5pt}{\footnotesize\itshape Each step is computed by blueprint/\allowbreak{}src/\allowbreak{}budget\_model.py (function bridge) by switching one assumption at a time. The draft's annual totals (4.96, 6.71 and 6.83) added to 18.50 only because each was rounded separately; the unrounded draft total was Tk 18.4868 crore.}
+\par\vspace{5pt}{\footnotesize\itshape Each step is computed by blueprint/\allowbreak{}src/\allowbreak{}budget\_model.py (function bridge) by switching one assumption at a time. The initial estimate’s annual totals (4.96, 6.71 and 6.83) add to 18.50 only because each was rounded separately; its unrounded total was Tk 18.4868 crore.}
 \par\vspace{3pt}{\scriptsize\color{gray} Source: BAPIL Technical Blueprint, Version 1.0 (2026). CC BY 4.0.}
 \end{minipage}
 \end{document}

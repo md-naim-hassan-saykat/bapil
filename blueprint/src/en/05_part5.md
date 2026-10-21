@@ -6,7 +6,7 @@
 
 ## 15.1 Overview
 
-The delivery plan covers the 36 months after the Phase 1 MoU takes effect. Month 1 is the first month in which the MoU, the host agreement and Year 1 funding are all in place (Annex T, Table 65); January 2027 is the earliest plausible start if decisions are taken in the fourth quarter of 2026, and a later start moves every date in this chapter by the same amount. It implements Phases 2 to 4 of the White Paper's five-year roadmap (2026-2030) in concrete terms and corresponds to horizons H1 and the first year of H2 in the strategic roadmap (Chapter 16).
+The delivery plan covers the 36 months after the Phase 1 MoU takes effect. Month 1 is the first month in which the MoU, the host agreement and Year 1 funding are all in place (Annex T, Table 65). How soon that can happen depends on the funding route. With grant, partner or host funding already available, January 2027 is the earliest plausible start. If Year 1 funding must come through the government development budget, project approval can take many months: a comparable technical-assistance proposal submitted in December 2025 was still awaiting approval in June 2026 [35]. On that route a start in the second half of 2027 is more realistic. A later start moves every date in this chapter by the same amount. It implements Phases 2 to 4 of the White Paper’s five-year roadmap (2026-2030) in concrete terms and corresponds to horizons H1 and the first year of H2 in the strategic roadmap (Chapter 16).
 
 <!-- FIGURE:12 -->
 
@@ -65,7 +65,7 @@ The critical path runs through four dependencies: the MoU and host agreement (wi
 
 ## 16.1 Why a Long-Term Roadmap
 
-Pilots prove that something works; institutions make it last. A 36-month plan is the right unit for delivery, but decisions taken in the first years (on data standards, open publication, governance and institutional form) shape what is possible for decades. Bangladesh's national plans already look to 2041: the Perspective Plan 2041 and the ICT Masterplan 2041 set long-term goals for a knowledge-based economy and digital government [29, 30], and the draft national AI policy covers 2026 to 2030 [88]. This chapter connects BAPIL's short-term pilots to those horizons through a strategy that is ambitious in direction but cautious in commitment.
+Pilots prove that something works; institutions make it last. A 36-month plan is the right unit for delivery, but decisions taken in the first years (on data standards, open publication, governance and institutional form) shape what is possible for decades. Bangladesh’s national plans already look to 2041: the Perspective Plan 2041 and the ICT Masterplan 2041 set long-term goals for a knowledge-based economy and digital government [29, 30], and the draft national AI policy covers 2026 to 2030 [88]. This chapter connects BAPIL’s short-term pilots to those horizons through a strategy that is ambitious in direction but cautious in commitment.
 
 ## 16.2 Strategic Principles for the Long Term
 
@@ -85,7 +85,7 @@ Five principles guide every horizon:
 
 ## 16.4 Horizon 0: Foundation (Q4 2026)
 
-The foundation horizon is already under way. Its purpose is to prepare a safe, open start. The Blueprint, the Summary, the Decision Memo and the reference implementation are to be published together with persistent identifiers. Briefings are offered to the ICT Division, the data custodians and the national AI policy drafting team, and the Blueprint is offered as a technical input to that process. A host institution is identified through an open call. The horizon ends when decisions D1, D2 and D4 (Chapter 21) are taken.
+The foundation horizon is already under way. Its purpose is to prepare a safe, open start. The Blueprint, the Summary and the reference implementation are to be published together with persistent identifiers. Briefings are offered to the ICT Division, the data custodians and the national AI policy drafting team, and the Blueprint is offered as a technical input to that process. A host institution is identified through an open call. The horizon ends when decisions D1, D2 and D4 (Chapter 21) are taken.
 
 ## 16.5 Horizon 1: Short Term (2027 to 2028)
 
@@ -111,7 +111,7 @@ In the medium term, successful tools pass Gate G4 and are adopted by agencies as
 
 **Strategic aim:** build a national policy-intelligence network on shared standards.
 
-If the medium term succeeds, the long term extends the approach across government. A federated search connects document collections maintained by ministries and divisions, using the same metadata, quality and assurance standards. A maintained Bangla policy model, if evaluation supports it, is kept as a public good available to agencies and researchers. BAPIL's risk-tiering, gate and register methods, refined through practice, are offered as a common assurance approach for public-sector AI, in coordination with the authority that oversees the national AI policy. Regional training hubs at universities outside Dhaka multiply the capacity programme, with a target of about 5,000 officials trained by 2035.
+If the medium term succeeds, the long term extends the approach across government. A federated search connects document collections maintained by ministries and divisions, using the same metadata, quality and assurance standards. A maintained Bangla policy model, if evaluation supports it, is kept as a public good available to agencies and researchers. BAPIL’s risk-tiering, gate and register methods, refined through practice, are offered as a common assurance approach for public-sector AI, in coordination with the authority that oversees the national AI policy. Regional training hubs at universities outside Dhaka multiply the capacity programme, with a target of about 5,000 officials trained by 2035.
 
 At this horizon the institutional form is reconsidered. Options include an independent public-interest foundation (Option D), a statutory centre attached to government, or a smaller BAPIL focused on research and evaluation while agencies operate the services. The choice is made at the 2035 strategic review against four criteria: independence, sustainability, policy uptake and public trust.
 
@@ -136,7 +136,7 @@ The targets express the scale of ambition at each horizon. They are deliberately
 The roadmap is aligned with four reference points:
 
 * **Perspective Plan 2041 and ICT Masterplan 2041** [29, 30]: long-term goals for a knowledge-based economy, digital government and human capital, to which horizons H3 and H4 contribute directly.
-* **National AI policy, 2026 to 2030** [88, 91]: risk categories, oversight, a Bangla-based national LLM, national compute and an innovation fund. BAPIL's tiers, benchmark and governed corpus are designed to support these elements, and horizon H2 ends with a contribution to the next policy cycle.
+* **National AI policy, 2026 to 2030** [88, 91]: risk categories, oversight, a Bangla-based national LLM, national compute and an innovation fund. BAPIL’s tiers, benchmark and governed corpus are designed to support these elements, and horizon H2 ends with a contribution to the next policy cycle.
 * **Data protection and data management laws, 2026** [85, 86]: the legal basis for public-data-first design and for data exchange through national infrastructure.
 * **Sustainable Development Goals** [23]: in particular goals on quality education, industry and innovation, and peace, justice and strong institutions, through capacity building, open innovation and transparent, accountable public institutions.
 
@@ -180,30 +180,32 @@ The Blueprint gives an indicative budget for the 36-month plan, built from expli
 
 <!-- TABLE:50 -->
 
-The indicative budget is about Tk 20.4 crore over three years: Tk 4.7 crore in Year 1, Tk 7.5 crore in Year 2 and Tk 8.2 crore in Year 3, or about USD 1.65 million. It replaces a draft estimate of Tk 18.49 crore prepared before the October 2026 review: the earlier figure had no escalation and no separate contingency, and assumed full staffing from month 1. Table 61 in Annex Q reconciles the two step by step; it also shows that the draft's annual totals (4.96, 6.71 and 6.83, which add to 18.50) differed from its total only through rounding. Four features of the budget matter for decision-makers:
+The indicative budget is about Tk 20.4 crore over three years: Tk 4.7 crore in Year 1, Tk 7.5 crore in Year 2 and Tk 8.2 crore in Year 3, or about USD 1.65 million. It supersedes an initial planning estimate of Tk 18.49 crore made while the Blueprint was being drafted, which had no escalation and no separate contingency and assumed full staffing from month 1. Table 61 in Annex Q reconciles the two step by step; it also shows that the initial estimate’s annual totals (4.96, 6.71 and 6.83, which add to 18.50) differed from its total only through rounding. Four features of the budget matter for decision-makers:
 
 * **People are the main cost.** Core staff, language editors and fellows account for about half of the total (52%). The largest single driver is the salary needed to recruit and keep machine learning and Bangla NLP engineers.
 * **Equipment is front-loaded.** Compute and hosting take about 17% of the total, most of it in Years 1 and 2 when servers and GPUs are bought. About a fifth (21%) of direct costs are one-time (equipment, benchmark creation, studies and evaluations) and the rest recur (Table 62). Model adaptation (BPFM Stage 1) assumes in-kind access to shared national compute; the high scenario includes cloud compute in case it is not available.
 * **Assurance is funded explicitly.** About 6% goes to governance, legal review, audits and independent evaluation, and about 7% to data and annotation, including the benchmark and citation judgements. These costs are protected in the annual plan so that safeguards are not cut when budgets are tight.
-* **Uncertainty is shown, not hidden.** A low scenario gives about Tk 17.9 crore and a high scenario about Tk 25.3 crore (Table 62). Import duty and VAT on equipment are excluded from the base case because they depend on the host's exemption status.
+* **Uncertainty is shown, not hidden.** A low scenario gives about Tk 17.9 crore and a high scenario about Tk 25.3 crore (Table 62). Import duty and VAT on equipment are excluded from the base case because they depend on the host’s exemption status.
 
 The budget is most sensitive to staff costs. A 20% change in staff costs changes the total by about Tk 2.0 crore; filling all Year 1 posts from month 1 adds about Tk 0.5 crore; equipment 25% dearer adds about Tk 0.7 crore; escalation of 10% instead of 8% adds about Tk 0.4 crore; and a 10% weaker taka adds only about Tk 0.3 crore, because only equipment is priced in US dollars. For scale only, the total is about a tenth of the Tk 192.66 crore proposed for the KOICA-supported AI hub technical assistance project [35] and below the Tk 200 to 250 crore AI Innovation Fund proposed in the draft national AI policy [88]; neither figure is an approved allocation, and the projects are not comparable in scope.
 
-These are planning estimates. No funds have been requested, approved or committed, and the feasibility and costing study (Deliverable D1.3) will replace each assumption with quotations, the host's salary scale and its overhead rate.
+Three limits of the base case should be noted. First, it does not yet include consultation and engagement events, survey data collection for P5, staff travel other than for training, open-access publication fees, or computers for staff. An allowance of about Tk 15 lakh a year for the first four items and about USD 1,200 per new staff member for computers (planning assumptions) would add about Tk 0.9 crore with overheads and contingency. Second, a 5% contingency is low for an estimate made before any quotation; with a 10% contingency and these allowances, the base case would be about Tk 22.2 crore (the adjusted base case in Table 62). Third, the high scenario (about Tk 25.3 crore) remains the prudent planning ceiling until the feasibility study replaces these assumptions.
+
+These are planning estimates. No funds have been requested, approved or committed, and the feasibility and costing study (Deliverable D1.3) will replace each assumption with quotations, the host’s salary scale and its overhead rate.
 
 ## 17.3 Budget Beyond 36 Months
 
-Beyond the 36-month plan, budgets are set at each strategic review (Table 48), and Blueprint 2.0 will contain a costed plan for horizon H2. As a planning range, a lab that maintains the Year 3 team, the benchmark and the evaluation function would need about Tk 7.5 to 9 crore a year in 2029 and 2030: recurring costs in Year 3, with overheads and contingency, are about Tk 7.3 crore at Year 3 prices (Table 62), before further escalation. A national network in horizon H3, with regional training hubs and support for federated search, would need more, but much of the operating cost of adopted tools should then sit in the budgets of the agencies that use them, under service agreements, rather than in BAPIL's own budget.
+Beyond the 36-month plan, budgets are set at each strategic review (Table 48), and Blueprint 2.0 will contain a costed plan for horizon H2. As a planning range, a lab that maintains the Year 3 team, the benchmark and the evaluation function would need about Tk 7.5 to 9 crore a year in 2029 and 2030: recurring direct costs in Year 3 are Tk 6.35 crore (Table 62); with 15% overheads and contingency they are about Tk 7.3 crore at Year 3 prices, before further escalation. A national network in horizon H3, with regional training hubs and support for federated search, would need more, but much of the operating cost of adopted tools should then sit in the budgets of the agencies that use them, under service agreements, rather than in BAPIL’s own budget.
 
 ## 17.4 Funding Model
 
-Funding should be diversified, as set out in Appendix C of the White Paper: a government contribution under the MoU, research grants, development-partner support for specific pilots, and industry support for open benchmarks, all under conflict-of-interest rules that protect research independence. Over time, the mix should shift towards stable public funding and service agreements with agencies that use BAPIL's tools.
+Funding should be diversified, as set out in Appendix C of the White Paper: a government contribution under the MoU, research grants, development-partner support for specific pilots, and industry support for open benchmarks, all under conflict-of-interest rules that protect research independence. Over time, the mix should shift towards stable public funding and service agreements with agencies that use BAPIL’s tools.
 
 <!-- TABLE:51 -->
 
 ## 17.5 Value for Money
 
-Value for money is assessed at the mid-term and final evaluations using four measures: economy (cost of inputs compared with benchmarks), efficiency (cost per output, such as cost per indexed document or per trained official), effectiveness (time saved and quality of evidence for users) and equity (reach beyond Dhaka and to under-served groups). Time saved by analysts is the most direct benefit, but it should not be overstated. Valuing an analyst's time at about Tk 500 an hour (based on grade 9 basic pay of Tk 44,000 a month plus allowances) [109], 300 users who each save four hours a month save time worth about Tk 0.7 crore a year, which is less than a tenth of the Year 3 budget. This is an illustrative calculation, not a forecast. Time savings alone therefore justify the cost only at the scale of the long-term targets (thousands of regular users, Table 46). In the short term, the case rests as much on the quality of evidence, the open benchmark and the governance methods as on time saved. The time-to-evidence studies in P1 provide the data to test this calculation.
+Value for money is assessed at the mid-term and final evaluations using four measures: economy (cost of inputs compared with benchmarks), efficiency (cost per output, such as cost per indexed document or per trained official), effectiveness (time saved and quality of evidence for users) and equity (reach beyond Dhaka and to under-served groups). Time saved by analysts is the most direct benefit, but it should not be overstated. Valuing an analyst’s time at about Tk 500 an hour (a planning assumption: grade 9 basic pay of Tk 44,000 a month [109] is about Tk 250 an hour, and the assumption allows for allowances, benefits and overheads of about the same amount), 300 users who each save four hours a month save time worth about Tk 0.7 crore a year, which is less than a tenth of the Year 3 budget. This is an illustrative calculation, not a forecast. Time savings alone therefore justify the cost only at the scale of the long-term targets (thousands of regular users, Table 46). In the short term, the case rests as much on the quality of evidence, the open benchmark and the governance methods as on time saved. The time-to-evidence studies in P1 provide the data to test this calculation.
 
 ## 17.6 Procuring AI Products and Services
 
@@ -213,11 +215,11 @@ Where BAPIL or a partner agency buys AI products or services, contracts should i
 
 ## 17.7 Open Innovation and the Startup Ecosystem
 
-The White Paper emphasised collaboration with Bangladesh's startup ecosystem. BAPIL supports it in three ways that do not compromise independence: by publishing open data, benchmarks and code that startups can build on; by running open challenges on well-defined problems (for example, Bangla OCR correction or table extraction from budget documents) with transparent evaluation; and by offering a clear, fair route for startups to provide services under the procurement clauses above. BAPIL does not endorse products and does not give any company privileged access to data.
+The White Paper emphasised collaboration with Bangladesh’s startup ecosystem. BAPIL supports it in three ways that do not compromise independence: by publishing open data, benchmarks and code that startups can build on; by running open challenges on well-defined problems (for example, Bangla OCR correction or table extraction from budget documents) with transparent evaluation; and by offering a clear, fair route for startups to provide services under the procurement clauses above. BAPIL does not endorse products and does not give any company privileged access to data.
 
 ## 17.8 Financial Governance
 
-The host institution manages BAPIL's funds under its audited financial procedures, with a separate cost centre. The annual plan and budget are approved by the Steering Board, financial reports are presented quarterly, and an annual summary of income by source and expenditure by category is published.
+The host institution manages BAPIL’s funds under its audited financial procedures, with a separate cost centre. The annual plan and budget are approved by the Steering Board, financial reports are presented quarterly, and an annual summary of income by source and expenditure by category is published.
 
 \newpage
 
@@ -225,7 +227,7 @@ The host institution manages BAPIL's funds under its audited financial procedure
 
 ## 18.1 Theory of Change
 
-BAPIL's theory of change is straightforward: **if** officials and researchers can find authoritative evidence faster and more reliably, in Bangla and English, through tools that are transparent and governed, **then** policy analysis becomes better grounded and more efficient, and trust in public-sector AI grows.
+BAPIL’s theory of change is straightforward: **if** officials and researchers can find authoritative evidence faster and more reliably, in Bangla and English, through tools that are transparent and governed, **then** policy analysis becomes better grounded and more efficient, and trust in public-sector AI grows.
 
 <!-- FIGURE:14 -->
 
@@ -248,7 +250,7 @@ The indicators at months 12 and 36 are proposed targets, consistent with the lon
 * **User surveys and interviews** each quarter during pilots.
 * **Document analysis** to identify official documents and policy briefs that cite BAPIL evidence.
 * **Independent evaluation** at months 18 and 36 by evaluators without a stake in BAPIL, and at each long-term review.
-* **Usage statistics** from the audit logs, reported only in aggregate; individual users' queries are never reported.
+* **Usage statistics** from the audit logs, reported only in aggregate; individual users’ queries are never reported.
 
 ## 18.5 Evaluation Questions
 
@@ -265,7 +267,7 @@ Each evaluation also asks a governance question: did the tiers, gates and ERRC w
 
 ## 18.6 Learning and Publication
 
-Evaluation reports are published with DOIs, including negative results. Each pilot ends with a short "what we learned" note covering what worked, what failed and what should change in the next Blueprint version. Lessons feed directly into the strategic reviews (Table 48) and into revisions of this Blueprint.
+Evaluation reports are published with DOIs, including negative results. Each pilot ends with a short “what we learned” note covering what worked, what failed and what should change in the next Blueprint version. Lessons feed directly into the strategic reviews (Table 48) and into revisions of this Blueprint.
 
 \newpage
 
@@ -285,11 +287,11 @@ For each risk, Annex U (Table 67) adds an early-warning indicator, a contingency
 
 ## 19.3 Priority Risks
 
-Four risks deserve particular attention. **Data access (R2)** is the most likely cause of delay; starting with already-published documents means that useful work can begin even if formal agreements take time. **Key-person dependency (R16)** is a serious risk for any small, new institution; documentation, deputies and shared ownership reduce it. **Incorrect answers (R4)** are the most serious technical risk; extractive answering, mandatory citations, abstention and class A use reduce it to a level that can be managed through training and monitoring. **Mission creep (R6)** is unlikely but would be very damaging to public trust; the charter's prohibited-use list, the ERRC veto and the public transparency register are designed to make it visible and preventable.
+Four risks deserve particular attention. **Data access (R2)** is the most likely cause of delay; starting with already-published documents means that useful work can begin even if formal agreements take time. **Key-person dependency (R16)** is a serious risk for any small, new institution; documentation, deputies and shared ownership reduce it. **Incorrect answers (R4)** are the most serious technical risk; extractive answering, mandatory citations, abstention and class A use reduce it to a level that can be managed through training and monitoring. **Mission creep (R6)** is unlikely but would be very damaging to public trust; the charter’s prohibited-use list, the ERRC veto and the public transparency register are designed to make it visible and preventable.
 
 ## 19.4 Risk Appetite
 
-BAPIL's risk appetite differs by area. It has a **low appetite** for risks to privacy, rights and public trust, which are controlled by strict boundaries and the ERRC veto. It has a **moderate appetite** for delivery and technical risks, accepting that some pilots will fail and treating failure as information. It has a **higher appetite** for research risk, since exploring methods that may not work is part of its mission, provided the research is safe and its results are published.
+BAPIL’s risk appetite differs by area. It has a **low appetite** for risks to privacy, rights and public trust, which are controlled by strict boundaries and the ERRC veto. It has a **moderate appetite** for delivery and technical risks, accepting that some pilots will fail and treating failure as information. It has a **higher appetite** for research risk, since exploring methods that may not work is part of its mission, provided the research is safe and its results are published.
 
 ## 19.5 Escalation
 
@@ -301,7 +303,7 @@ Risks whose rating rises to high likelihood and high impact are escalated to the
 
 ## 20.1 Research as a Core Function
 
-BAPIL is a research institution as well as a builder of tools. Its research agenda serves three purposes: to answer questions that matter for the design of its own systems; to contribute open knowledge on Bangla language technology and public-sector AI governance; and to build national research capacity. Research questions are chosen where BAPIL's position (access to real policy tasks, a governed corpus and a functioning governance system) allows it to produce evidence that others cannot.
+BAPIL is a research institution as well as a builder of tools. Its research agenda serves three purposes: to answer questions that matter for the design of its own systems; to contribute open knowledge on Bangla language technology and public-sector AI governance; and to build national research capacity. Research questions are chosen where BAPIL’s position (access to real policy tasks, a governed corpus and a functioning governance system) allows it to produce evidence that others cannot.
 
 ## 20.2 Research Questions
 
@@ -313,7 +315,7 @@ Research outputs are published open access with DOIs: datasets and benchmarks on
 
 ## 20.4 Research Ethics
 
-All research involving people (surveys, interviews, user studies) is approved by the host institution's research ethics committee and, where relevant, the ERRC. Participation is voluntary and informed, data is minimised and de-identified, and results are reported in aggregate. Research on information integrity follows the specific protocol required for pilot P6.
+All research involving people (surveys, interviews, user studies) is approved by the host institution’s research ethics committee and, where relevant, the ERRC. Participation is voluntary and informed, data is minimised and de-identified, and results are reported in aggregate. Research on information integrity follows the specific protocol required for pilot P6.
 
 \newpage
 
@@ -325,13 +327,13 @@ All research involving people (surveys, interviews, user studies) is approved by
 
 ## 21.2 What Happens After the Decisions
 
-If decisions D1, D2 and D4 are taken, the first 90-day plan in Section 15.4 can start immediately. Decision D3 unlocks the full P1 corpus; without it, P1 can still begin on documents already downloadable from official websites. Decision D5 sets the budget for Phase 2. Decision D6 ensures that the safeguards in this Blueprint are binding from the first day.
+When decisions D1, D2 and D4 are taken and the MoU, host agreement and Year 1 funding are in place (Annex T), the 90-day plan in Section 15.4 can start. Decision D3 unlocks the full P1 corpus; without it, P1 can still begin on documents already downloadable from official websites. Decision D5 sets the budget for Phase 2. Decision D6 ensures that the safeguards in this Blueprint are binding from the first day.
 
 ## 21.3 Immediate Next Steps (Q4 2026 to Q1 2027)
 
 While the decisions are considered, the following steps can proceed without commitment of public funds:
 
-* publication of this Blueprint, the Summary, the Decision Memo and the reference implementation with persistent identifiers;
+* publication of this Blueprint, the Summary and the reference implementation with persistent identifiers;
 * briefings for the ICT Division, the data custodians and the national AI policy drafting team, with the Blueprint offered as a technical input;
 * expert roundtables and a public comment period, with a published comment log feeding into Blueprint 1.1 (Table 8);
 * preparation of the host-institution call, the draft charter and the terms of reference for consultation (Annexes E to G);

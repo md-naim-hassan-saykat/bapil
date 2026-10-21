@@ -1,9 +1,26 @@
 \documentclass[border=10pt]{standalone}
 \usepackage{fontspec}
-\setmainfont{Noto Serif}
-\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali]
+\setmainfont{Noto Serif}[Ligatures=TeXOff]
+\XeTeXgenerateactualtext=1
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali, NFSSFamily=bnfam]
 \usepackage[Latin,Bengali]{ucharclasses}
-\setTransitionsFor{Bengali}{\begingroup\bengalifont}{\endgroup}
+% group-free font switching (as in header-common.tex): robust inside braces, cells and quotes
+\makeatletter
+\def\BN@saved{\rmdefault}
+\def\BN@bn{bnfam}
+\newcommand\BNin{\edef\BN@tmp{\f@family}\ifx\BN@tmp\BN@bn\else\let\BN@saved\BN@tmp\fi\fontfamily{bnfam}\selectfont}
+\newcommand\BNout{\fontfamily{\BN@saved}\selectfont}
+\makeatother
+\setTransitionsFor{Bengali}{\BNin}{\BNout}
+% Typographic quotes and dashes are not in a ucharclasses class (class 0), so a Bangla word right
+% after “ or ‘ would not trigger the Bangla font. Treat them as Latin so that every switch fires.
+\XeTeXcharclass"2018=\XeTeXcharclass`A
+\XeTeXcharclass"2019=\XeTeXcharclass`A
+\XeTeXcharclass"201C=\XeTeXcharclass`A
+\XeTeXcharclass"201D=\XeTeXcharclass`A
+\XeTeXcharclass"2013=\XeTeXcharclass`A
+\XeTeXcharclass"2014=\XeTeXcharclass`A
+\XeTeXcharclass"2026=\XeTeXcharclass`A
 \usepackage{newunicodechar}
 \newunicodechar{।}{{\bengalifont\char"0964}}
 \newunicodechar{॥}{{\bengalifont\char"0965}}
@@ -24,12 +41,12 @@
 \arrayrulecolor{bapilrule}\toprule
 \rowcolor{white}\textbf{স্তর} & \textbf{উদাহরণ} & \textbf{প্রথম প্রতিক্রিয়া} & \textbf{ঊর্ধ্বতন অবহিতকরণ ও বিজ্ঞপ্তি} \\
 \midrule
-\textbf{SEV1} সংকটপূর্ণ & ব্যক্তিগত ডেটা উন্মোচিত; ব্যবস্থার নিয়ন্ত্রণ হারানো; সরকারি সিদ্ধান্তে নির্ভর করা ক্ষতিকর ফলাফল & ১ ঘণ্টার মধ্যে & পরিচালক, ERRC সভাপতি ও আয়োজক সংস্থাকে তাৎক্ষণিকভাবে; প্রয়োজনে আইনগত বিজ্ঞপ্তি; ব্যবস্থা স্থগিত \\
+\textbf{SEV1} সংকটপূর্ণ & ব্যক্তিগত ডেটা উন্মোচিত; ব্যবস্থার নিয়ন্ত্রণ হারানো; সরকারি সিদ্ধান্তে নির্ভর করা ক্ষতিকর ফলাফল & ১ ঘণ্টার মধ্যে & পরিচালক, ERRC সভাপতি ও স্বাগতিক সংস্থাকে তাৎক্ষণিকভাবে; প্রয়োজনে আইনগত বিজ্ঞপ্তি; ব্যবস্থা স্থগিত \\
 \textbf{SEV2} উচ্চ & পদ্ধতিগতভাবে ভুল বা পক্ষপাতদুষ্ট উত্তর; নিষিদ্ধ ব্যবহারের প্রচেষ্টা; দীর্ঘ বিপর্যয় & ৪ ঘণ্টার মধ্যে & ২৪ ঘণ্টার মধ্যে পরিচালক ও ERRC; ৩০ দিনের মধ্যে জনসমক্ষে সারাংশ \\
 \textbf{SEV3} মাঝারি & বিচ্ছিন্ন ভুল উত্তর প্রতিবেদিত; আংশিক বিপর্যয়; ব্যর্থ ব্যাকআপ & ১ কর্মদিবসের মধ্যে & ইউনিট প্রধান; মাসিক ঘটনা-সভায় পর্যালোচনা \\
 \textbf{SEV4} নিম্ন & দৃশ্যগত ত্রুটি; নথিভুক্তির ঘাটতি & ৩ কর্মদিবসের মধ্যে & কাজের তালিকায় অনুসরণ \\
 \bottomrule
 \end{tabularx}
-\par\vspace{3pt}{\scriptsize\color{gray} উৎস: BAPIL কারিগরি ব্লুপ্রিন্ট, সংস্করণ ১.০ (২০২৬)। CC BY 4.0।}
+\par\vspace{3pt}{\scriptsize\color{gray} উৎস: BAPIL টেকনিক্যাল ব্লুপ্রিন্ট, সংস্করণ ১.০ (২০২৬)। CC BY 4.0।}
 \end{minipage}
 \end{document}

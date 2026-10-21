@@ -12,7 +12,7 @@ Four operating models were assessed against five criteria: independence, data ac
 
 <!-- TABLE:12 -->
 
-**Option C is recommended for Phase 1.** A lab anchored in a public or private university gives academic independence, the ability to hire researchers and engage graduate students, and a credible home for open research. A Memorandum of Understanding with the ICT Division (Ministry of Posts, Telecommunications and Information Technology) provides a channel for policy questions, data access agreements and the eventual transfer of successful tools. A multi-stakeholder Steering Board keeps both sides accountable. Option D, an independent non-profit foundation, corresponds to the "mature research ecosystem" stage in Appendix C of the White Paper and is reconsidered at the end of the 36-month plan and again in the long-term horizon (Chapter 16).
+**Option C is recommended for Phase 1.** A lab anchored in a public or private university gives academic independence, the ability to hire researchers and engage graduate students, and a credible home for open research. A Memorandum of Understanding with the ICT Division (Ministry of Posts, Telecommunications and Information Technology) provides a channel for policy questions, data access agreements and the eventual transfer of successful tools. A multi-stakeholder Steering Board keeps both sides accountable. Option D, an independent non-profit foundation, corresponds to the “mature research ecosystem” stage in Appendix C of the White Paper and is reconsidered at the end of the 36-month plan and again in the long-term horizon (Chapter 16).
 
 ## 5.2 Selecting the Host Institution
 
@@ -28,7 +28,7 @@ The call should be open to public and private universities and to consortia led 
 
 Two features deserve emphasis. First, the **Ethics and Risk Review Committee (ERRC)** has a binding veto over pilots and deployments of tier T2 and above, a majority of external members selected through an open call by an independent nominations panel, and an obligation to publish summaries of its decisions (terms of reference in Annex F). Second, **host-agency product owners** are named officials inside each agency that pilots a tool. They define the need, recruit users and accept or reject the result, so that pilots answer real questions rather than technical curiosity.
 
-All of these bodies are proposals. None has statutory powers: they would be created by the MoU, the host agreement and the charter, and their decisions bind BAPIL and its host by agreement, not by law. They do not replace any statutory body. In particular, the ERRC is not the independent oversight committee that the draft national AI policy proposes to create by an Act of Parliament [88], and BAPIL's data rules apply in addition to, never instead of, the duties set by the data-protection and data-management laws and the oversight of the authorities created under them. Annex S sets out, for each body, its status, appointment process, decision rights and their limits, reporting line and conflict-of-interest safeguards.
+All of these bodies are proposals. None has statutory powers: they would be created by the MoU, the host agreement and the charter, and their decisions bind BAPIL through the charter, and bind the host only to the extent the host’s statutes allow and the host agreement provides; they do not bind anyone by law. Whether the host’s governing body can accept a binding external veto must be confirmed by the legal review (Section 14.3) before the host agreement is signed; if it cannot, the host agreement must provide that the host will not proceed with a tier T2 or T3 system that the ERRC has refused. They do not replace any statutory body. In particular, the ERRC is not the independent oversight committee that the draft national AI policy proposes to create by an Act of Parliament [88], and BAPIL’s data rules apply in addition to, never instead of, the duties set by the data-protection and data-management laws and the oversight of the authorities created under them. Annex S sets out, for each body, its status, appointment process, decision rights and their limits, reporting line and conflict-of-interest safeguards.
 
 ## 5.4 Decision Rights and Accountability
 
@@ -47,7 +47,7 @@ The Steering Board adopts a charter at Milestone MS1. A full draft is provided i
 * require registration of every AI system in the AI system register before work begins;
 * set conflict-of-interest rules for board members, staff and partners, including vendors;
 * define how successful tools are transferred to agencies and how BAPIL withdraws;
-* state that the charter operates within the law: where a statute, a regulator or the host institution's rules require something different, the legal requirement prevails.
+* state that the charter operates within the law: where a statute, a regulator or the host institution’s rules require something different, the legal requirement prevails.
 
 ## 5.6 Units and Ways of Working
 
@@ -67,7 +67,7 @@ A policy-intelligence lab is valuable only if its evidence is trusted. The follo
 
 ## 5.8 Transfer to Agencies and Exit
 
-Successful tools must not depend on BAPIL forever. When a tool passes Gate G4, a transfer plan is agreed with the host agency covering: ownership of code, data and infrastructure; staff training and handover; service levels and support during a transition period (typically six to twelve months); the budget line from which the agency will operate the service; and BAPIL's continuing role in benchmarks and independent evaluation. Code remains open, so that other agencies can reuse it. If BAPIL itself must close, the charter requires that open archives, benchmarks and code are preserved, that data held under agreements is returned or deleted, and that users of any remaining services are given notice and alternatives.
+Successful tools must not depend on BAPIL forever. When a tool passes Gate G4, a transfer plan is agreed with the host agency covering: ownership of code, data and infrastructure; staff training and handover; service levels and support during a transition period (typically six to twelve months); the budget line from which the agency will operate the service; and BAPIL’s continuing role in benchmarks and independent evaluation. Code remains open, so that other agencies can reuse it. If BAPIL itself must close, the charter requires that open archives, benchmarks and code are preserved, that data held under agreements is returned or deleted, and that users of any remaining services are given notice and alternatives.
 
 ## 5.9 Institutional Evolution
 
@@ -79,7 +79,7 @@ The institutional form is expected to change as BAPIL matures. Option C is appro
 
 ## 6.1 The Capacity Challenge
 
-Talent is both BAPIL's most important resource and one of its main risks (R7 in Chapter 19). Experienced AI engineers, Bangla NLP specialists and AI governance practitioners are scarce and in demand by industry and international organisations. At the same time, the long-term value of BAPIL depends less on its own staff than on the skills it builds in government, universities and civil society. This chapter therefore covers both the core team and the national capacity programme.
+Talent is both BAPIL’s most important resource and one of its main risks (R7 in Chapter 19). Experienced AI engineers, Bangla NLP specialists and AI governance practitioners are scarce and in demand by industry and international organisations. At the same time, the long-term value of BAPIL depends less on its own staff than on the skills it builds in government, universities and civil society. This chapter therefore covers both the core team and the national capacity programme.
 
 ## 6.2 Core Team
 
@@ -91,7 +91,7 @@ The team grows from about nine to nineteen full-time equivalents over three year
 
 Recruitment follows open, merit-based procedures with published job descriptions, diverse interview panels and a commitment to gender balance. To compete for scarce skills, BAPIL should offer:
 
-* salaries benchmarked against the university's research positions and adjusted for scarce skills, within the host's rules;
+* salaries benchmarked against the university’s research positions and adjusted for scarce skills, within the host’s rules;
 * meaningful work on public-interest problems with open publication and credit;
 * time for research and professional development, including conference attendance;
 * flexible and remote work arrangements, which also allow diaspora and out-of-Dhaka participation; and

@@ -1,9 +1,26 @@
 \documentclass[border=10pt]{standalone}
 \usepackage{fontspec}
-\setmainfont{Noto Serif}
-\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali]
+\setmainfont{Noto Serif}[Ligatures=TeXOff]
+\XeTeXgenerateactualtext=1
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali, NFSSFamily=bnfam]
 \usepackage[Latin,Bengali]{ucharclasses}
-\setTransitionsFor{Bengali}{\begingroup\bengalifont}{\endgroup}
+% group-free font switching (as in header-common.tex): robust inside braces, cells and quotes
+\makeatletter
+\def\BN@saved{\rmdefault}
+\def\BN@bn{bnfam}
+\newcommand\BNin{\edef\BN@tmp{\f@family}\ifx\BN@tmp\BN@bn\else\let\BN@saved\BN@tmp\fi\fontfamily{bnfam}\selectfont}
+\newcommand\BNout{\fontfamily{\BN@saved}\selectfont}
+\makeatother
+\setTransitionsFor{Bengali}{\BNin}{\BNout}
+% Typographic quotes and dashes are not in a ucharclasses class (class 0), so a Bangla word right
+% after “ or ‘ would not trigger the Bangla font. Treat them as Latin so that every switch fires.
+\XeTeXcharclass"2018=\XeTeXcharclass`A
+\XeTeXcharclass"2019=\XeTeXcharclass`A
+\XeTeXcharclass"201C=\XeTeXcharclass`A
+\XeTeXcharclass"201D=\XeTeXcharclass`A
+\XeTeXcharclass"2013=\XeTeXcharclass`A
+\XeTeXcharclass"2014=\XeTeXcharclass`A
+\XeTeXcharclass"2026=\XeTeXcharclass`A
 \usepackage{newunicodechar}
 \newunicodechar{।}{{\bengalifont\char"0964}}
 \newunicodechar{॥}{{\bengalifont\char"0965}}
@@ -17,22 +34,22 @@
 
 \begin{document}
 \begin{minipage}{17cm}
-{\large\bfseries সারণি ৬১।}\ {\large এই পর্যালোচনার আগের খসড়ার সঙ্গে নির্দেশক বাজেটের মিলকরণ (কোটি টাকা, ৩৬ মাস)}\par\vspace{7pt}
+{\large\bfseries সারণি ৬১।}\ {\large প্রাথমিক পরিকল্পনা-প্রাক্কলনের সঙ্গে মূল হিসাবের মিলকরণ (কোটি টাকা, ৩৬ মাস)}\par\vspace{7pt}
 \small
 \rowcolors{2}{bapilstripe}{white}
 \begin{tabularx}{\linewidth}{@{}>{\hsize=1.974\hsize\raggedright\arraybackslash}X>{\hsize=0.513\hsize\raggedright\arraybackslash}X>{\hsize=0.513\hsize\raggedright\arraybackslash}X@{}}
 \arrayrulecolor{bapilrule}\toprule
 \rowcolor{white}\textbf{ধাপ} & \textbf{৩৬ মাসের মোট} & \textbf{পরিবর্তন} \\
 \midrule
-পর্যালোচনার আগের খসড়া বাজেট (অক্টোবর ২০২৬) & ১৮.৪৯ & সূচনাবিন্দু \\
+খসড়া প্রণয়নের সময়ের প্রাথমিক পরিকল্পনা-প্রাক্কলন (স্থির মূল্য, মাস ১ থেকে পূর্ণ জনবল, পৃথক আপৎকালীন সংস্থান নেই) & ১৮.৪৯ & সূচনাবিন্দু \\
 দ্বিতীয় ও তৃতীয় বছরের অঙ্ক প্রথম বছরের মূল্যে পুনর্নির্ধারণ & ১৮.২৯ & -০.২০ \\
 টাকায় পরিশোধ্য ব্যয়ে সুস্পষ্ট মূল্যবৃদ্ধি (বছরে ৮\%) & ১৯.৭৯ & +১.৫০ \\
 প্রথম বছরের ধাপে ধাপে নিয়োগ (গড়ে ৭৫\% পদ পূরণ) & ১৯.২৯ & -০.৫০ \\
 মূল্যায়নের নতুন উপাদান (আওতাবহির্ভূত প্রশ্নসেট, উদ্ধৃতি-বিচার, ব্যবস্থাগুলোর বার্ষিক নিরীক্ষা) & ১৯.৫৪ & +০.২৫ \\
-\textbf{প্রত্যক্ষ ব্যয়ের ৫\% পৃথক আপৎকালীন সংস্থান = সংশোধিত মূল হিসাব} & \textbf{২০.৪৩} & +০.৮৯ \\
+\textbf{প্রত্যক্ষ ব্যয়ের ৫\% পৃথক আপৎকালীন সংস্থান = মূল হিসাব} & \textbf{২০.৪৩} & +০.৮৯ \\
 \bottomrule
 \end{tabularx}
-\par\vspace{5pt}{\footnotesize\itshape প্রতিটি ধাপ blueprint/\allowbreak{}src/\allowbreak{}budget\_model.py (bridge ফাংশন) দ্বারা একবারে একটি অনুমান বদলে হিসাব করা হয়েছে। খসড়ার বার্ষিক মোট (৪.৯৬, ৬.৭১ ও ৬.৮৩) যোগ করলে ১৮.৫০ হতো কেবল প্রতিটি আলাদাভাবে আসন্নীকৃত হওয়ায়; আসন্নীকরণের আগে খসড়ার মোট ছিল ১৮.৪৮৬৮ কোটি টাকা।}
-\par\vspace{3pt}{\scriptsize\color{gray} উৎস: BAPIL কারিগরি ব্লুপ্রিন্ট, সংস্করণ ১.০ (২০২৬)। CC BY 4.0।}
+\par\vspace{5pt}{\footnotesize\itshape প্রতিটি ধাপ blueprint/\allowbreak{}src/\allowbreak{}budget\_model.py (bridge ফাংশন) দ্বারা একবারে একটি অনুমান বদলে হিসাব করা হয়েছে। প্রাথমিক প্রাক্কলনের বার্ষিক মোট (৪.৯৬, ৬.৭১ ও ৬.৮৩) যোগ করলে ১৮.৫০ হয় কেবল প্রতিটি আলাদাভাবে আসন্নীকৃত হওয়ায়; আসন্নীকরণের আগে এর মোট ছিল ১৮.৪৮৬৮ কোটি টাকা।}
+\par\vspace{3pt}{\scriptsize\color{gray} উৎস: BAPIL টেকনিক্যাল ব্লুপ্রিন্ট, সংস্করণ ১.০ (২০২৬)। CC BY 4.0।}
 \end{minipage}
 \end{document}

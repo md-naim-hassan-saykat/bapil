@@ -2,7 +2,9 @@
 # Build every BAPIL Blueprint output from source (Linux or macOS).
 #   tables  : blueprint/tables/*.tex|pdf|png + md snippets
 #   figures : blueprint/figures/*.tex|pdf|png
-#   docs    : blueprint/*.md (assembled)  ->  releases/v1.1/*.pdf
+#   data    : blueprint/data/budget_*.csv (from src/budget_model.py)
+#   docs    : blueprint/*.md (assembled)  ->  releases/v1.1/BAPIL_Technical_Blueprint_{en,bn}.pdf
+#             and BAPIL_Blueprint_Summary_{en,bn}.pdf
 # Requirements: python3 (3.10+), pandoc (3.x), XeLaTeX (TeX Live), pdftoppm (poppler),
 #               fonts: Latin Modern, TeX Gyre Heros, Noto Serif, Noto Sans, Noto Serif Bengali,
 #               Noto Sans Bengali, DejaVu Sans Mono.
@@ -22,10 +24,13 @@ while [[ $# -gt 0 ]]; do
   shift
 done
 mkdir -p "$OUT"
+# fixed timestamps in every generated PDF (reproducible builds); see metadata.json
+export SOURCE_DATE_EPOCH="${SOURCE_DATE_EPOCH:-$(python3 -c "import json;print(json.load(open('$SRC/metadata.json'))['source_date_epoch'])")}"
 
 if [[ $SKIP_ASSETS -eq 0 ]]; then
   python3 "$SRC/make_tables.py"
   python3 "$SRC/make_figures.py"
+  python3 "$SRC/budget_model.py" --csv "$ROOT/blueprint/data" >/dev/null   # budget as CSV
 fi
 
 # Assemble once so the evaluation corpus contains the current documents
@@ -44,33 +49,55 @@ rm -f implementation/build_tests.log
 
 python3 "$SRC/assemble.py"
 
+# PDF metadata (title, author, subject, keywords) from blueprint/src/metadata.json, written to a
+# small YAML file: pandoc always reads files as UTF-8, whereas command-line values depend on the locale.
+META_DIR="$(mktemp -d)"
+trap 'rm -rf "$META_DIR"' EXIT
+# The PDF info dictionary shows only the publication month (no day), and a fixed
+# SOURCE_DATE_EPOCH makes repeated builds reproducible.
+python3 - "$SRC/metadata.json" "$META_DIR/pubdate.tex" <<'PY'
+import json, sys
+m = json.load(open(sys.argv[1], encoding="utf-8"))
+open(sys.argv[2], "w", encoding="utf-8").write(
+    "\\AtBeginDocument{\\hypersetup{pdfcreationdate={%s},pdfmoddate={%s}}}\n" % (m["pdf_date"], m["pdf_date"]))
+PY
+pdf_meta () {  # pdf_meta <titlekey> <lang>  ->  path of a YAML metadata file
+  python3 - "$SRC/metadata.json" "$1" "$2" "$META_DIR/$1_$2.yaml" <<'PY'
+import json, sys
+m = json.load(open(sys.argv[1], encoding="utf-8"))
+key, lang, out = sys.argv[2], sys.argv[3], sys.argv[4]
+q = lambda s: json.dumps(s, ensure_ascii=False)   # JSON strings are valid YAML scalars
+with open(out, "w", encoding="utf-8") as fh:
+    fh.write("title-meta: %s\nauthor-meta: %s\nsubject: %s\nkeywords: %s\n" % (
+        q(m[key + "_" + lang]), q(m["author"]), q(m["subject_" + lang]), q(", ".join(m["keywords"]))))
+PY
+  echo "$META_DIR/$1_$2.yaml"
+}
+
 build_pdf () {
-  local name="$1" lang="$2" kind="$3"
+  local name="$1" lang="$2" titlekey="$3"
   [[ -n "$ONLY" && "$ONLY" != "$name" ]] && return 0
-  local headers=(--include-in-header="$SRC/header-common.tex")
+  local headers=(--include-in-header="$SRC/header-common.tex" --include-in-header="$SRC/header-$lang.tex"
+                 --include-in-header="$META_DIR/pubdate.tex")
+  [[ "$name" == *Summary* ]] && headers+=(--include-in-header="$SRC/header-summary-$lang.tex")
   local vars=(-V colorlinks=true -V linkcolor=black -V urlcolor=black -V toccolor=black
-              -V monofont="DejaVu Sans Mono" -V monofontoptions="Scale=0.84")
-  if [[ "$kind" == "memo" ]]; then
-    headers+=(--include-in-header="$SRC/header-memo.tex")
-    vars+=(-V documentclass=extarticle -V fontsize=10pt -V geometry:margin=0.5in -V geometry:top=0.45in -V geometry:bottom=0.4in)
-  else
-    headers+=(--include-in-header="$SRC/header-$lang.tex")
-    [[ "$name" == *Summary* ]] && headers+=(--include-in-header="$SRC/header-summary-$lang.tex")
-    vars+=(-V fontsize=10pt -V geometry:margin=0.8in)
-  fi
+              -V monofont="DejaVu Sans Mono" -V monofontoptions="Scale=0.84"
+              -V fontsize=10pt -V geometry:margin=0.8in
+              --metadata-file="$(pdf_meta "$titlekey" "$lang")")
   # some minimal TeX installations lack lmodern.sty, which the pandoc template loads by default
   kpsewhich lmodern.sty >/dev/null 2>&1 || vars+=(-V fontfamily=fontspec)
+  # Quotation marks: the sources already hold the final characters (“ ” ‘ ’, see src/typography.py).
+  # Pandoc's smart extension and the TeX ligature mapping are both switched off, so the PDF text
+  # contains exactly the characters of the source (with TeX ligatures, a straight " used to print as ”).
   if [[ "$lang" == "bn" ]]; then
     headers+=(--include-in-header="$SRC/header-bn-num.tex")
     vars+=(-V mainfont="Noto Serif" -V sansfont="Noto Sans")
   else
     vars+=(-V mainfont="Latin Modern Roman" -V sansfont="TeX Gyre Heros")
   fi
-  # Bangla fonts lack curly quotes: keep straight quotes in Bangla editions
-  local from="markdown+raw_tex-implicit_figures"
-  [[ "$lang" == "bn" ]] && from="markdown+raw_tex-implicit_figures-smart"
+  vars+=(-V mainfontoptions="Ligatures=TeXOff" -V sansfontoptions="Ligatures=TeXOff")
   pandoc "blueprint/$name.md" \
-    --from="$from" \
+    --from="markdown+raw_tex-implicit_figures-smart" \
     --standalone \
     --lua-filter="$SRC/blueprint-filter.lua" \
     --resource-path="blueprint:." \
@@ -81,9 +108,13 @@ build_pdf () {
   echo "built releases/v1.1/$name.pdf"
 }
 
-build_pdf BAPIL_Technical_Blueprint_v1    en doc
-build_pdf BAPIL_Technical_Blueprint_v1_bn bn doc
-build_pdf BAPIL_Blueprint_Summary_v1      en doc
-build_pdf BAPIL_Blueprint_Summary_v1_bn   bn doc
-build_pdf BAPIL_Decision_Memo_v1          en memo
-build_pdf BAPIL_Decision_Memo_v1_bn       bn memo
+# Check the quotation-mark convention in the sources (fails the build on straight quotes in prose)
+python3 "$SRC/typography.py" --check "$SRC"/en/*.md "$SRC"/bn/*.md "$SRC"/*.src.md "$SRC"/refs_new.md
+
+build_pdf BAPIL_Technical_Blueprint_en en title
+build_pdf BAPIL_Technical_Blueprint_bn bn title
+build_pdf BAPIL_Blueprint_Summary_en   en summary_title
+build_pdf BAPIL_Blueprint_Summary_bn   bn summary_title
+
+# Manifest of all deliverables with checksums
+python3 "$ROOT/blueprint/make_manifest.py"

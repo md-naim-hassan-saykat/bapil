@@ -38,7 +38,7 @@ NEW_FIGS["02"] = {
 \node[sh] at (124mm,12mm) {«cit»};
 \node[sh] at (70mm,14mm) {«media»};
 \end{tikzpicture}""",
-    "en": {"interest": "Interest in BAPIL's work", "influence": "Influence over BAPIL's success",
+    "en": {"interest": "Interest in BAPIL’s work", "influence": "Influence over BAPIL’s success",
            "q1": "Keep satisfied", "q2": "Manage closely", "q3": "Monitor", "q4": "Keep informed and involved",
            "ict": "ICT Division", "plan": "Planning Commission", "fin": "Finance Division", "cab": "Cabinet Division",
            "ndma": "Data Management Authority", "lpad": "Legislative Division", "bbs": "BBS",
@@ -185,7 +185,7 @@ NEW_FIGS["13"] = {
            "h2": "H2 মধ্যমেয়াদি", "p2": "২০২৯ থেকে ২০৩০", "h3": "H3 দীর্ঘমেয়াদি", "p3": "২০৩১ থেকে ২০৩৫",
            "h4": "H4 রূপকল্প", "p4": "২০৩৬ থেকে ২০৪১", "h5": "২০৪১-এর পরে", "p5": "২০৪১-এর পর",
            "l1": "প্রতিষ্ঠান", "l2": "প্ল্যাটফর্ম ও ডেটা", "l3": "বাংলা এআই", "l4": "শাসন", "l5": "জনবল",
-           "a0": "ব্লুপ্রিন্ট প্রকাশ; আয়োজক নির্বাচন", "a1": "সমঝোতা স্মারকের অধীনে ল্যাব; সনদ; ERRC ও TAB",
+           "a0": "ব্লুপ্রিন্ট প্রকাশ; স্বাগতিক নির্বাচন", "a1": "সমঝোতা স্মারকের অধীনে ল্যাব; সনদ; ERRC ও TAB",
            "a2": "বহুবর্ষী অর্থায়ন; সংস্থার সঙ্গে সেবা-চুক্তি", "a3": "ফাউন্ডেশন বা সংবিধিবদ্ধ কেন্দ্র বিবেচনা",
            "a4": "পরিণত জাতীয় প্রতিষ্ঠান", "a5": "সনদ নবায়ন বা কাজটি সরকারে আত্তীকৃত",
            "b0": "রেফারেন্স বাস্তবায়ন (v1.1.0)", "b1": "P0 কর্পাস; P1 অনুসন্ধান; P2 বাজেট-ডেটা",

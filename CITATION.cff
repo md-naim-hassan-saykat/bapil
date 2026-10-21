@@ -9,6 +9,7 @@ type: software
 authors:
   - family-names: "Saykat"
     given-names: "Md Naim Hassan"
+    affiliation: "Université Paris-Saclay"
     orcid: "https://orcid.org/0009-0007-5270-3970"
 
 abstract: >
@@ -17,7 +18,7 @@ abstract: >
   intelligence, responsible AI governance, digital government,
   and evidence-based policymaking for Bangladesh. This repository
   contains the BAPIL White Paper, Executive Summary, Technical
-  Blueprint (with Blueprint Summary and Decision Memo), a tested
+  Blueprint (with Blueprint Summary), a tested
   reference implementation, supporting international AI governance
   studies and related research materials.
 
@@ -36,7 +37,9 @@ keywords:
 
 license: "MIT"
 
-version: "1.1.0"
+# version and date-released describe the latest published release; update them to 1.1.0
+# and the release date only when GitHub release v1.1.0 has been published.
+version: "1.0"
 
 identifiers:
   - type: doi
@@ -44,7 +47,7 @@ identifiers:
 
 repository-code: "https://github.com/md-naim-hassan-saykat/bapil"
 
-date-released: "2026-10-21"
+date-released: "2026-07-14"
 
 preferred-citation:
   type: report
