@@ -57,7 +57,7 @@ The source code of the reference implementation described in Chapter 11 is licen
 | **ORCID** | <https://orcid.org/{{ORCID}}> |
 | **Language** | English (a Bangla edition is published alongside) |
 | **Document Type** | Technical Blueprint |
-| **Structure** | Five parts, 21 chapters, 15 annexes, 59 tables and 15 figures |
+| **Structure** | Five parts, 21 chapters, 21 annexes, 67 tables and 15 figures |
 | **License** | Creative Commons Attribution 4.0 International (CC BY 4.0) |
 | **Blueprint DOI** | {{DOI_LINK}} |
 | **Builds on** | White Paper, Version 1.0: <https://doi.org/10.5281/zenodo.21363967> |
@@ -70,7 +70,7 @@ Saykat, M. N. H. (2026). *Bangladesh AI Policy & Innovation Lab (BAPIL): Technic
 
 ## Disclaimer
 
-This Blueprint is an independent research and policy-design document prepared by the author in an individual capacity. It does not represent the official position of the Government of Bangladesh, any ministry, agency, university or other organisation. Institutions, laws and programmes are named only to describe the context in which BAPIL would operate; naming them does not imply endorsement, partnership or agreement. Legal descriptions are summaries for planning purposes and are not legal advice. Cost, staffing and long-term targets are indicative planning assumptions to be validated by a feasibility study and revised at each strategic review.
+This Blueprint is an independent research and policy-design document prepared by the author in an individual capacity. It does not represent the official position of the Government of Bangladesh, any ministry, agency, university or other organisation. Institutions, laws and programmes are named only to describe the context in which BAPIL would operate; naming them does not imply endorsement, partnership or agreement. Legal descriptions are summaries for planning purposes and are not legal advice. Cost, staffing and long-term targets are indicative planning assumptions to be validated by a feasibility study and revised at each strategic review. No funding has been requested, approved or committed, and none of the governance bodies described here has been constituted.
 
 ## How to Read This Blueprint
 
@@ -78,12 +78,28 @@ The Blueprint is organised in five parts. Readers with limited time can use the 
 
 * **Decision-makers:** the Overview at a Glance, Chapter 16 (strategic roadmap to 2041), Chapter 21 (decisions) and the one-page Decision Memo published with this Blueprint.
 * **Programme managers:** add Chapters 3, 5, 6, 12, 15, 17, 18 and 19.
-* **Technical teams:** Part III (Chapters 7 to 11) with Annexes A, C, K and M.
-* **Legal, governance and ethics specialists:** Chapters 8, 13 and 14 with Annexes B, E, F, H, I and J.
+* **Technical teams:** Part III (Chapters 7 to 11) with Annexes A, C, K, M and R.
+* **Legal, governance and ethics specialists:** Chapters 8, 13 and 14 with Annexes B, E, F, H, I, J, S and T.
 * **Researchers and universities:** Chapters 9, 11 and 20 with Annex K.
-* **Development partners:** Chapters 2, 16, 17 and 18.
+* **Development partners and finance reviewers:** Chapters 2, 16, 17 and 18 with Annexes Q and T.
+* **Reviewers checking the evidence:** Annex P, which states the status of every key claim.
 
 The words **must**, **should** and **may** carry their usual normative meaning: a requirement marked *must* is a condition of the design, *should* is a strong recommendation, and *may* is optional.
+
+## Status of This Blueprint and Its Artefacts
+
+This Blueprint is a proposal. To avoid confusing what exists with what is planned, the table states the status of each element at the time of writing. Claims in the text are classified in the same way in Annex P, using the labels defined there (verified fact, source-reported fact, research finding, author's analysis, design recommendation, planning assumption, proposed target, unverified claim and future milestone).
+
+| Element | Status at the time of writing (October 2026) |
+|---|---|
+| Institution, Steering Board, ERRC and TAB | Design recommendation. Nothing has been approved, constituted or funded |
+| Legal analysis | Summary based on press reports and secondary legal commentary. The gazetted texts and their commencement provisions have not been reviewed; confirmation by qualified Bangladesh counsel is required |
+| Reference implementation | Research prototype (version 0.1.0) with 49 passing unit tests, released in repository release v1.1.0 together with this Blueprint. Not a production system; not tested with users |
+| BanglaPolicyQA benchmark | Planned. Protocol and annotation guidelines exist; no questions have been written |
+| Evaluation thresholds | Proposed targets. No pilot results exist |
+| Pilots P1 to P6 | Proposed |
+| Budget | Planning estimate computed from stated assumptions; not a quotation and not approved funding |
+| Long-term targets (2028 to 2041) | Proposed targets, revised at each strategic review |
 
 \newpage
 
@@ -97,11 +113,13 @@ The words **must**, **should** and **may** carry their usual normative meaning: 
 
 **How risk is controlled.** Public data first; advice, not decisions; no surveillance. Every system is placed in a risk tier (T0 prohibited to T3 high) and must pass lifecycle gates (G0 to G5) before it moves forward. The Ethics and Risk Review Committee has a binding veto over tier T2 and T3 work.
 
-**What already exists.** A tested reference implementation of the core components (bilingual normalisation and search, cited answers with abstention, risk-tier assessment, the AI system register, evaluation and a tamper-evident audit log) is published on GitHub and archived with a DOI.
+**What already exists, and what does not.** A small, tested reference implementation of the core components (bilingual normalisation and search, cited answers with abstention, risk-tier assessment, the AI system register, evaluation and a tamper-evident audit log) is released with this Blueprint on GitHub and archived with it under a DOI. It is a research prototype, not a production system. The institution, the pilots, the benchmark and the funding do not yet exist; they are what this Blueprint proposes.
 
 **The long view.** A strategic roadmap sets five horizons: foundation (Q4 2026), short term (2027 to 2028), medium term (2029 to 2030), long term (2031 to 2035) and vision (2036 to 2041), followed by a charter renewal decision after 2041. It is aligned with the national AI policy cycle and with the 2041 national plans, and it is reviewed at fixed points and whenever major events occur.
 
-**What is asked of the authorities.** Six decisions (Chapter 21): accept the Blueprint as a technical input to national AI policy drafting; approve a 12-month Phase 1 pilot; authorise bulk access to already-public documents; nominate members of the Steering Board and the independent committee; commission a feasibility and costing study; and confirm the guardrails.
+**What it would cost.** An indicative budget, built from stated assumptions, is about Tk 20.4 crore over 36 months (Tk 17.9 to 25.3 crore across low and high scenarios). It is a planning estimate for a feasibility study to confirm, not approved funding (Chapter 17 and Annex Q).
+
+**What is asked of the authorities.** Six decisions (Chapter 21): accept the Blueprint as a technical input to national AI policy drafting; approve a 12-month Phase 1 pilot; authorise bulk access to already-public documents; nominate Steering Board members and agree an independent selection process for the ethics committee; commission a feasibility and costing study; and confirm the guardrails.
 
 \newpage
 
@@ -127,6 +145,7 @@ The words **must**, **should** and **may** carry their usual normative meaning: 
 | ERRC | Ethics and Risk Review Committee |
 | FTE | Full-Time Equivalent |
 | GPU | Graphics Processing Unit |
+| KOICA | Korea International Cooperation Agency |
 | KPI | Key Performance Indicator |
 | LLM | Large Language Model |
 | LoRA | Low-Rank Adaptation |
@@ -148,6 +167,7 @@ The words **must**, **should** and **may** carry their usual normative meaning: 
 | SSO | Single Sign-On |
 | SWOT | Strengths, Weaknesses, Opportunities, Threats |
 | TAB | Technical Architecture Board |
+| VAT | Value Added Tax |
 | WCAG | Web Content Accessibility Guidelines |
 
 \newpage

@@ -37,6 +37,6 @@
       {"identifier": "https://github.com/md-naim-hassan-saykat/bapil/tree/v1.1.0", "relation": "isSupplementedBy", "scheme": "url", "resource_type": "software"},
       {"identifier": "https://github.com/md-naim-hassan-saykat/bapil", "relation": "isDocumentedBy", "scheme": "url", "resource_type": "software"}
     ],
-    "notes": "Languages: English (authoritative) and Bengali. Contents: Technical Blueprint, Blueprint Summary and one-page Decision Memo in English and Bangla (PDF and Markdown); fifteen figures and fifty-nine tables in LaTeX, PDF and PNG; source code of the reference implementation (MIT). Independent research document; it does not represent any official government position."
+    "notes": "Languages: English (authoritative) and Bengali. Contents: Technical Blueprint, Blueprint Summary and one-page Decision Memo in English and Bangla (PDF and Markdown); fifteen figures and sixty-seven tables in LaTeX, PDF and PNG; source code of the reference implementation (MIT). Independent research document; it does not represent any official government position."
   }
 }

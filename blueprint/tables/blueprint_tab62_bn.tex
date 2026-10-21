@@ -1,0 +1,38 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\setmainfont{Noto Serif}
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali]
+\usepackage[Latin,Bengali]{ucharclasses}
+\setTransitionsFor{Bengali}{\begingroup\bengalifont}{\endgroup}
+\usepackage{newunicodechar}
+\newunicodechar{।}{{\bengalifont\char"0964}}
+\newunicodechar{॥}{{\bengalifont\char"0965}}
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{17cm}
+{\large\bfseries সারণি ৬২।}\ {\large ব্যয়ের ধরনভিত্তিক বাজেট, নিম্ন, মূল ও উচ্চ পরিস্থিতিসহ (কোটি টাকা)}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=2.530\hsize\raggedright\arraybackslash}X>{\hsize=0.602\hsize\raggedright\arraybackslash}X>{\hsize=0.602\hsize\raggedright\arraybackslash}X>{\hsize=0.602\hsize\raggedright\arraybackslash}X>{\hsize=0.663\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{বিষয়} & \textbf{বছর ১} & \textbf{বছর ২} & \textbf{বছর ৩} & \textbf{মোট} \\
+\midrule
+এককালীন প্রত্যক্ষ ব্যয় (যন্ত্রপাতি, বেঞ্চমার্ক তৈরি, সমীক্ষা ও মূল্যায়ন) & ১.৪২ & ১.৪৬ & ০.৭৯ & ৩.৬৭ \\
+পুনরাবৃত্ত প্রত্যক্ষ ব্যয় (জনবল, সম্পাদক, ফেলো, হোস্টিং, OCR, প্রশিক্ষণ, আশ্বাস) & ২.৬৯ & ৫.০৫ & ৬.৩৫ & ১৪.১০ \\
+আয়োজকের পরোক্ষ ব্যয় ও আপৎকালীন সংস্থান & ০.৬২ & ০.৯৮ & ১.০৭ & ২.৬৬ \\
+\textbf{মূল হিসাবের মোট} & \textbf{৪.৭৩} & \textbf{৭.৪৯} & \textbf{৮.২১} & \textbf{২০.৪৩} \\
+নিম্ন পরিস্থিতির মোট & ৪.২০ & ৬.৫৮ & ৭.১৬ & ১৭.৯৩ \\
+উচ্চ পরিস্থিতির মোট & ৫.৭৬ & ৯.৪৬ & ১০.০৩ & ২৫.২৫ \\
+\bottomrule
+\end{tabularx}
+\par\vspace{5pt}{\footnotesize\itshape নিম্ন পরিস্থিতি: জনবল-ব্যয় ১৫\% কম, মূল্যবৃদ্ধি ৬\%, যন্ত্রপাতি ২০\% সস্তা, প্রতি মার্কিন ডলারে ১২০ টাকা। উচ্চ পরিস্থিতি: জনবল-ব্যয় ২০\% বেশি, মূল্যবৃদ্ধি ১০\%, যন্ত্রপাতি ২৫\% বেশি দামি (যেমন আমদানি শুল্ক ও ভ্যাট), প্রতি মার্কিন ডলারে ১৩৫ টাকা, আপৎকালীন সংস্থান ১০\% এবং পর্যায় ১ অভিযোজনের জন্য ২০,০০০ মার্কিন ডলারের ক্লাউড কম্পিউটিং। প্রতিটি অঙ্ক আলাদাভাবে আসন্নীকৃত।}
+\par\vspace{3pt}{\scriptsize\color{gray} উৎস: BAPIL কারিগরি ব্লুপ্রিন্ট, সংস্করণ ১.০ (২০২৬)। CC BY 4.0।}
+\end{minipage}
+\end{document}

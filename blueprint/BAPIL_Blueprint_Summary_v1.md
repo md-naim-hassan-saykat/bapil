@@ -24,7 +24,7 @@ October 2026
 
 ---
 
-*This summary presents the main design choices, safeguards, delivery plan, strategic roadmap to 2041 and decisions set out in the BAPIL Technical Blueprint (five parts, 21 chapters, 15 annexes). Figure and table numbers follow the full Blueprint. The Blueprint, this summary and the one-page Decision Memo are independent research documents and do not represent any official position.*
+*This summary presents the main design choices, safeguards, delivery plan, strategic roadmap to 2041 and decisions set out in the BAPIL Technical Blueprint (five parts, 21 chapters, 21 annexes). Figure and table numbers follow the full Blueprint. The Blueprint, this summary and the one-page Decision Memo are independent research documents and do not represent any official position. BAPIL is a proposal: no institution has been created and no funding has been approved.*
 
 \newpage
 
@@ -32,7 +32,7 @@ October 2026
 
 The Bangladesh AI Policy & Innovation Lab (BAPIL) is a proposed independent research and policy-intelligence platform that helps Bangladesh use artificial intelligence for evidence-based policymaking, responsible AI governance, Bangla-language technology and public-sector innovation. The White Paper (Version 1.0) set out the vision; the Technical Blueprint turns it into a buildable plan.
 
-The timing is favourable. Bangladesh enacted the Personal Data Protection Act, 2026 and the National Data Management Act, 2026 in April 2026, revised its cyber-security law, released a draft National AI Policy 2026-2030 for consultation in January 2026, and announced that drafting of a national AI policy would begin in the fourth quarter of 2026 [85, 86, 87, 88, 91]. A concrete, open blueprint with working code can be a technical input to that process.
+The timing is favourable. As reported, Bangladesh converted its 2025 data ordinances into the Personal Data Protection Act, 2026 and the National Data Management Act, 2026 in April 2026 (which provisions are in force is still to be confirmed), revised its cyber-security law, released a draft National AI Policy 2026-2030 for consultation in January 2026, and announced that drafting of a national AI policy would begin in the fourth quarter of 2026 [85, 86, 87, 88, 91]. A concrete, open blueprint with working code can be a technical input to that process.
 
 ![](figures/blueprint_fig01.png)
 
@@ -49,9 +49,10 @@ The timing is favourable. Bangladesh enacted the Personal Data Protection Act, 2
 7. **Six pilots** with users, data, risk tier, scope and exit criteria.
 8. **Security and hosting** in Bangladesh, with controls for AI-specific threats.
 9. **An assurance system:** risk tiers T0 to T3, lifecycle gates G0 to G5, model cards and a public transparency register.
-10. **A tested reference implementation** on GitHub, a 36-month delivery plan, staffing and training, financing and procurement clauses, a logical framework, KPIs, a risk register and a research agenda.
+10. **A small, tested reference implementation** (a research prototype, not a production system) released on GitHub with the Blueprint, a 36-month delivery plan, staffing and training, financing and procurement clauses, a logical framework, KPIs, a risk register and a research agenda.
 11. **A strategic roadmap for 2026 to 2041 and beyond,** with five horizons, indicative targets, scenarios and fixed review points.
 12. **Six decisions** for the authorities.
+13. **Evidence and readiness annexes:** the evidence status of every key claim, budget reconciliation and scenarios, an evaluation protocol with sample sizes, the status and limits of each governance body, the preconditions for starting, and risk monitoring.
 
 \newpage
 
@@ -151,11 +152,11 @@ Targets are indicative and revised at fixed reviews (2027, 2028, 2029, 2030, 203
 
 # 9. People, Resources and Financing
 
-The core team grows from about 9 to 19 full-time equivalents over three years. Pilot computing needs are modest (two to three servers and one or two inference GPUs), with any model adaptation using shared national compute. An indicative budget built from stated assumptions comes to about Tk 18.5 crore over 36 months (Tk 5.0, 6.7 and 6.8 crore in Years 1 to 3, about USD 1.5 million), with people at about 55% of the total; the feasibility and costing study in month 6 confirms or replaces each assumption. The total is under one tenth of the reported cost of the Bangladesh AI Hub project [35]. Funding is diversified, with a growing share of core public funding and agency service agreements over time; no single non-government funder provides more than 30% of the budget. Model procurement clauses protect data, guarantee the right to evaluate and prevent lock-in.
+The core team grows from about 9 to 19 full-time equivalents over three years. Pilot computing needs are modest (two to three servers and one or two inference GPUs), with any model adaptation using shared national compute. An indicative budget built from stated assumptions comes to about Tk 20.4 crore over 36 months (Tk 4.7, 7.5 and 8.2 crore in Years 1 to 3, about USD 1.65 million), including 8% annual escalation, host overheads and a 5% contingency, with people at about half of the total. Low and high scenarios give about Tk 17.9 and 25.3 crore. It is a planning estimate, not approved funding; the feasibility and costing study in month 6 confirms or replaces each assumption. Funding is diversified, with a growing share of core public funding and agency service agreements over time; no single non-government funder provides more than 30% of the budget. Model procurement clauses protect data, guarantee the right to evaluate and prevent lock-in.
 
 # 10. Reference Implementation and Research
 
-The repository contains a tested, dependency-free Python implementation of the core ideas: Bangla normalisation, bilingual BM25 search, cited extractive answers with abstention, risk-tier assessment, an AI system register with transparency export, evaluation metrics and a hash-chained audit log, with a command line and a small JSON API. Continuous integration runs the tests and rebuilds the published documents from source. A research agenda of six questions, from Bangla retrieval to institutional design, leads to open datasets, evaluation reports and peer-reviewed publications, starting with a journal manuscript on the framework planned for 2027.
+The repository contains a tested, dependency-free Python implementation of the core ideas: Bangla normalisation, bilingual BM25 search, cited extractive answers with abstention, risk-tier assessment, an AI system register with transparency export, evaluation metrics and a hash-chained audit log, with a command line and a small JSON API. Continuous-integration workflows are configured to run the tests and rebuild the published documents from source. It has not been deployed or tested with users; the evaluation thresholds in the Blueprint are proposed targets, with a measurement protocol, not results. A research agenda of six questions, from Bangla retrieval to institutional design, leads to open datasets, evaluation reports and peer-reviewed publications, starting with a journal manuscript on the framework planned for 2027.
 
 \newpage
 
@@ -168,9 +169,11 @@ The repository contains a tested, dependency-free Python implementation of the c
 | D1 | Accept this Blueprint as a technical input to the national AI policy drafting process | Ministry of Posts, Telecommunications and Information Technology (ICT Division) | Q4 2026 |
 | D2 | Approve a 12-month Phase 1 pilot with a named government focal point and an MoU with a host institution | ICT Division and host institution | Within 90 days |
 | D3 | Authorise structured bulk access to already-public document collections and nominate data custodians | Legislative and Parliamentary Affairs Division, Finance Division, Planning Commission, BBS, a2i | Within 120 days |
-| D4 | Nominate members to the Steering Board and an independent Ethics and Risk Review Committee | ICT Division, academia, civil society | Within 90 days |
+| D4 | Nominate Steering Board members, and agree that ERRC members are selected through an open call by an independent nominations panel | ICT Division and host institution (Steering Board); independent panel (ERRC) | Within 90 days |
 | D5 | Commission the feasibility and costing study that sets the Phase 2 budget | ICT Division or a development partner | By month 6 |
 | D6 | Confirm guardrails: no deployment beyond class A without a G4 decision, and no use in prohibited categories | Steering Board | At charter adoption |
+
+*Note.* None of these decisions creates a statutory body or gives BAPIL legal powers. The approvals and agreements needed before month 1 are listed in Annex T (Table 65).
 
 # Resources
 
@@ -194,12 +197,6 @@ Smart Bangladesh: ICT Master Plan 2041[EB/OL].
 Dhaka: ICT Division, Government of the People’s Republic of Bangladesh, 2024[2026-06-18].
 Available: 
 <https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-moa/2024/12/a01255f61d29443eabbf948ef97c290e.pdf>
-
-[35] THE BUSINESS STANDARD (TBS).
-Govt to establish AI hub with Tk192.66cr project backed by Koica[EB/OL].
-Dhaka: The Business Standard, 2026[2026-06-18].
-Available:
-<https://www.tbsnews.net/tech/govt-establish-ai-hub-tk19266cr-project-backed-koica-1462206>
 
 [85] SECURITI.
 An Overview of Bangladesh's Personal Data Protection Act, 2026[EB/OL].

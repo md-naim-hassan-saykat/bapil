@@ -1,6 +1,57 @@
 # -*- coding: utf-8 -*-
 """Blueprint tables added in the expanded edition: Part V (roadmap 2026-2041, financing, M&E, research)."""
 
+import budget_model as _bm
+
+_BN = str.maketrans("0123456789", "০১২৩৪৫৬৭৮৯")
+_CAT_BN = {
+    "Core staff": "মূল জনবল",
+    "Language editors and fellowships": "ভাষা-সম্পাদক ও ফেলোশিপ",
+    "Compute and hosting": "কম্পিউটিং ও হোস্টিং",
+    "Data and annotation": "ডেটা ও টীকাকরণ",
+    "Training and outreach": "প্রশিক্ষণ ও সম্প্রসারণ",
+    "Governance, audit and evaluation": "শাসন, নিরীক্ষা ও মূল্যায়ন",
+    "Host overheads (10%)": "আয়োজকের পরোক্ষ ব্যয় (১০%)",
+    "Contingency (5%)": "আপৎকালীন সংস্থান (৫%)",
+}
+
+
+def _budget_rows():
+    rows = _bm.budget()
+    by_year, total = _bm.totals()
+    en, bn = [], []
+    for k, v in rows.items():
+        cells = ["%.2f" % _bm.crore(x) for x in v] + ["%.2f" % _bm.crore(sum(v)), "%.0f%%" % (100 * sum(v) / total)]
+        en.append([k] + cells)
+        bn.append([_CAT_BN[k]] + [c.translate(_BN) for c in cells])
+    tot = ["**%.2f**" % _bm.crore(x) for x in by_year] + ["**%.2f**" % _bm.crore(total), "**100%**"]
+    en.append(["**Total**"] + tot)
+    bn.append(["**মোট**"] + [c.translate(_BN) for c in tot])
+    return en, bn
+
+
+_B_EN, _B_BN = _budget_rows()
+_B_TOTAL = _bm.totals()[1]
+_B_ROUNDED = sum(round(_bm.crore(x), 2) for x in _bm.totals()[0])
+_B_UNROUNDED = format(round(_B_TOTAL), ",")
+
+
+def _lakh(n):
+    """Indian digit grouping (2,04,26,68,96) for the Bangla edition."""
+    s = str(int(round(n)))
+    head, tail = s[:-3], s[-3:]
+    parts = []
+    while len(head) > 2:
+        parts.insert(0, head[-2:])
+        head = head[:-2]
+    if head:
+        parts.insert(0, head)
+    return ",".join(parts + [tail]) if parts else tail
+
+
+_B_UNROUNDED_BN = _lakh(_B_TOTAL)
+_B_USD = _B_TOTAL / _bm.BASE["usd_to_bdt"] / 1e6
+
 TABLES_E = [
     # ------------------------------------------------------------------ 45
     {
@@ -128,28 +179,36 @@ TABLES_E = [
             "en": [
                 ["Exchange rate", "Tk 124 per US dollar", "Bangladesh Bank weighted average rate of Tk 123.65 on 19 October 2026 [110]"],
                 ["Core staff", "9, 15 and 19 full-time equivalents in Years 1, 2 and 3", "Staffing plan (Table 16)"],
-                ["Staff cost", "Fully loaded monthly cost per FTE: Director Tk 3.0 lakh; ML and Bangla NLP engineers Tk 2.0 lakh; security engineer Tk 1.8 lakh; policy, data and platform staff Tk 1.5 lakh; governance and UX staff Tk 1.25 lakh; coordinator Tk 0.9 lakh; training officers Tk 0.8 lakh", "Above the basic pay of the Ninth National Pay Scale 2026 (Tk 20,000 to Tk 156,000 per month) to compete for scarce AI skills [109]"],
-                ["Language editors and fellows", "Part-time editors Tk 12 to 15 lakh per year; 6, 10 and 12 fellows at Tk 40,000 per month", "Fellowship programme (Section 6.6)"],
-                ["Equipment", "General-purpose servers USD 12,000 each; GPU inference servers (L40S class) USD 25,000 each; storage USD 6,000 to 8,000 per year of growth", "Single L40S card about USD 7,500 in 2025, plus chassis, memory and storage [111]"],
-                ["Hosting and operations", "Tk 25 lakh rising to Tk 45 lakh per year", "Data-centre space, power, bandwidth, licences and a development cloud"],
-                ["Model adaptation compute", "Provided in kind from shared national compute", "Table 31; draft national AI policy [88]"],
-                ["Benchmark annotation", "2,000 questions by month 30 at Tk 2,500 each, including adjudication", "BanglaPolicyQA plan (Section 9.4, Annex K)"],
+                ["Year 1 recruitment", "75% of Year 1 positions filled on average", "Director appointed in months 1 to 3; other posts filled in months 2 to 6 (Section 15.4)"],
+                ["Staff cost", "Fully loaded monthly cost per FTE at Year 1 prices: Director Tk 3.0 lakh; ML and Bangla NLP engineers Tk 2.0 lakh; security engineer Tk 1.8 lakh; policy, data and platform staff Tk 1.5 lakh; governance and UX staff Tk 1.25 lakh; coordinator Tk 0.9 lakh; training officers Tk 0.8 lakh", "Above the basic pay of the Ninth National Pay Scale 2026 (Tk 20,000 to Tk 156,000 per month, approved by the Cabinet in August 2026) to compete for scarce AI skills [109]"],
+                ["Escalation", "8% a year on taka costs in Years 2 and 3", "Point-to-point inflation of 8.34% in September 2026, as reported [118]; the host's increment rules may differ"],
+                ["Language editors and fellows", "Part-time editors Tk 12 to 14 lakh a year; 6, 10 and 12 fellows at Tk 40,000 a month (Year 1 prices)", "Fellowship programme (Section 6.6)"],
+                ["Equipment", "General-purpose servers USD 12,000 each; GPU inference servers (L40S class) USD 25,000 each; storage USD 6,000 to 12,000 a year", "Single L40S card about USD 7,500 and a four-GPU server about USD 47,000 to 49,000 in 2025 [111]"],
+                ["Import duty and VAT on equipment", "Not included in the base case; 25% added in the high scenario", "Depends on the host's exemption status; input required from the host's procurement office"],
+                ["Hosting and operations", "Tk 25 lakh rising to Tk 38 lakh a year (Year 1 prices)", "Data-centre space, power, bandwidth, licences and a development cloud"],
+                ["Model adaptation compute", "In kind from shared national compute; USD 20,000 of cloud GPU time on public (P0) data in the high scenario", "Table 31; draft national AI policy [88]; cloud prices in [111]"],
+                ["Benchmark and evaluation data", "2,000 answerable questions by month 30 at Tk 2,500; 300 out-of-scope questions at Tk 600; 2,000 citation-support judgements at Tk 500", "BanglaPolicyQA plan (Section 9.4); evaluation protocol (Annex R)"],
                 ["Training", "500 officials by month 36 at Tk 15,000 per participant, plus specialist courses", "Training curriculum (Table 18)"],
-                ["Evaluation and assurance", "Mid-term evaluation Tk 20 lakh; final evaluation Tk 25 lakh; annual penetration test and red team", "Chapters 13 and 18"],
-                ["Overheads and contingency", "10% of all other costs", "To be confirmed against the host institution's policy"],
+                ["Evaluation and assurance", "Legal review Tk 8 lakh; baseline study Tk 6 lakh; mid-term evaluation Tk 20 lakh; final evaluation Tk 25 lakh; annual penetration test and red team Tk 6 lakh; annual independent audit of systems Tk 3 lakh", "Chapters 13, 14 and 18"],
+                ["Host overheads", "10% of direct costs", "To be confirmed against the host institution's policy"],
+                ["Contingency", "5% of direct costs, released only by Steering Board decision", "Allowance for estimating uncertainty; scenarios in Annex Q"],
             ],
             "bn": [
                 ["বিনিময় হার", "প্রতি মার্কিন ডলারে ১২৪ টাকা", "১৯ অক্টোবর ২০২৬-এ বাংলাদেশ ব্যাংকের ভারিত গড় হার ১২৩.৬৫ টাকা [110]"],
                 ["মূল জনবল", "প্রথম, দ্বিতীয় ও তৃতীয় বছরে ৯, ১৫ ও ১৯ পূর্ণকালীন সমতুল্য", "জনবল পরিকল্পনা (সারণি ১৬)"],
-                ["জনবলের ব্যয়", "প্রতি পূর্ণকালীন সমতুল্যের পূর্ণ মাসিক ব্যয়: পরিচালক ৩.০ লাখ টাকা; ML ও বাংলা NLP প্রকৌশলী ২.০ লাখ; নিরাপত্তা প্রকৌশলী ১.৮ লাখ; নীতি, ডেটা ও প্ল্যাটফর্ম কর্মী ১.৫ লাখ; শাসন ও UX কর্মী ১.২৫ লাখ; সমন্বয়ক ০.৯ লাখ; প্রশিক্ষণ কর্মকর্তা ০.৮ লাখ", "দুর্লভ এআই দক্ষতার প্রতিযোগিতায় নবম জাতীয় বেতন স্কেল ২০২৬-এর মূল বেতনের (মাসিক ২০,০০০ থেকে ১,৫৬,০০০ টাকা) ওপরে [109]"],
-                ["ভাষা-সম্পাদক ও ফেলো", "খণ্ডকালীন সম্পাদক বছরে ১২ থেকে ১৫ লাখ টাকা; মাসিক ৪০,০০০ টাকায় ৬, ১০ ও ১২ জন ফেলো", "ফেলোশিপ কর্মসূচি (অনুচ্ছেদ ৬.৬)"],
-                ["যন্ত্রপাতি", "সাধারণ-উদ্দেশ্য সার্ভার প্রতিটি ১২,০০০ মার্কিন ডলার; GPU ইনফারেন্স সার্ভার (L40S শ্রেণি) প্রতিটি ২৫,০০০ মার্কিন ডলার; সংরক্ষণক্ষমতা বছরে ৬,০০০ থেকে ৮,০০০ মার্কিন ডলার", "২০২৫ সালে একটি L40S কার্ড প্রায় ৭,৫০০ মার্কিন ডলার, সঙ্গে চেসিস, মেমরি ও সংরক্ষণক্ষমতা [111]"],
-                ["হোস্টিং ও পরিচালনা", "বছরে ২৫ লাখ থেকে ৪৫ লাখ টাকা", "ডেটা-সেন্টারের স্থান, বিদ্যুৎ, ব্যান্ডউইথ, লাইসেন্স ও উন্নয়ন-ক্লাউড"],
-                ["মডেল অভিযোজনের কম্পিউটিং", "যৌথ জাতীয় কম্পিউটিং থেকে বস্তুগত সহায়তা", "সারণি ৩১; খসড়া জাতীয় এআই নীতি [88]"],
-                ["বেঞ্চমার্ক টীকাকরণ", "মাস ৩০-এর মধ্যে ২,০০০ প্রশ্ন, নিষ্পত্তিসহ প্রতিটি ২,৫০০ টাকা", "BanglaPolicyQA পরিকল্পনা (অনুচ্ছেদ ৯.৪, সংযুক্তি ট)"],
+                ["প্রথম বছরের নিয়োগ", "প্রথম বছরে গড়ে ৭৫% পদ পূরণ", "মাস ১ থেকে ৩-এ পরিচালক নিয়োগ; মাস ২ থেকে ৬-এ অন্যান্য পদ পূরণ (অনুচ্ছেদ ১৫.৪)"],
+                ["জনবলের ব্যয়", "প্রথম বছরের মূল্যে প্রতি পূর্ণকালীন সমতুল্যের পূর্ণ মাসিক ব্যয়: পরিচালক ৩.০ লাখ টাকা; ML ও বাংলা NLP প্রকৌশলী ২.০ লাখ; নিরাপত্তা প্রকৌশলী ১.৮ লাখ; নীতি, ডেটা ও প্ল্যাটফর্ম কর্মী ১.৫ লাখ; শাসন ও UX কর্মী ১.২৫ লাখ; সমন্বয়ক ০.৯ লাখ; প্রশিক্ষণ কর্মকর্তা ০.৮ লাখ", "দুর্লভ এআই দক্ষতার প্রতিযোগিতায় নবম জাতীয় বেতন স্কেল ২০২৬-এর (আগস্ট ২০২৬-এ মন্ত্রিসভায় অনুমোদিত) মূল বেতনের (মাসিক ২০,০০০ থেকে ১,৫৬,০০০ টাকা) ওপরে [109]"],
+                ["মূল্যবৃদ্ধি", "দ্বিতীয় ও তৃতীয় বছরে টাকায় পরিশোধ্য ব্যয়ে বছরে ৮%", "সেপ্টেম্বর ২০২৬-এ পয়েন্ট-টু-পয়েন্ট মূল্যস্ফীতি ৮.৩৪% বলে প্রতিবেদিত [118]; আয়োজকের বেতনবৃদ্ধির নিয়ম ভিন্ন হতে পারে"],
+                ["ভাষা-সম্পাদক ও ফেলো", "খণ্ডকালীন সম্পাদক বছরে ১২ থেকে ১৪ লাখ টাকা; মাসিক ৪০,০০০ টাকায় ৬, ১০ ও ১২ জন ফেলো (প্রথম বছরের মূল্যে)", "ফেলোশিপ কর্মসূচি (অনুচ্ছেদ ৬.৬)"],
+                ["যন্ত্রপাতি", "সাধারণ-উদ্দেশ্য সার্ভার প্রতিটি ১২,০০০ মার্কিন ডলার; GPU ইনফারেন্স সার্ভার (L40S শ্রেণি) প্রতিটি ২৫,০০০ মার্কিন ডলার; সংরক্ষণক্ষমতা বছরে ৬,০০০ থেকে ১২,০০০ মার্কিন ডলার", "২০২৫ সালে একটি L40S কার্ড প্রায় ৭,৫০০ মার্কিন ডলার এবং চার-GPU সার্ভার প্রায় ৪৭,০০০ থেকে ৪৯,০০০ মার্কিন ডলার [111]"],
+                ["যন্ত্রপাতির আমদানি শুল্ক ও ভ্যাট", "মূল হিসাবে অন্তর্ভুক্ত নয়; উচ্চ পরিস্থিতিতে ২৫% যোগ", "আয়োজকের অব্যাহতির অবস্থার ওপর নির্ভরশীল; আয়োজকের ক্রয় দপ্তর থেকে তথ্য প্রয়োজন"],
+                ["হোস্টিং ও পরিচালনা", "বছরে ২৫ লাখ থেকে ৩৮ লাখ টাকা (প্রথম বছরের মূল্যে)", "ডেটা-সেন্টারের স্থান, বিদ্যুৎ, ব্যান্ডউইথ, লাইসেন্স ও উন্নয়ন-ক্লাউড"],
+                ["মডেল অভিযোজনের কম্পিউটিং", "যৌথ জাতীয় কম্পিউটিং থেকে বস্তুগত সহায়তা; উচ্চ পরিস্থিতিতে উন্মুক্ত (P0) ডেটায় ২০,০০০ মার্কিন ডলারের ক্লাউড GPU সময়", "সারণি ৩১; খসড়া জাতীয় এআই নীতি [88]; ক্লাউডের মূল্য [111]"],
+                ["বেঞ্চমার্ক ও মূল্যায়ন-ডেটা", "মাস ৩০-এর মধ্যে ২,৫০০ টাকা দরে ২,০০০ উত্তরযোগ্য প্রশ্ন; ৬০০ টাকা দরে ৩০০ আওতাবহির্ভূত প্রশ্ন; ৫০০ টাকা দরে ২,০০০ উদ্ধৃতি-সমর্থন বিচার", "BanglaPolicyQA পরিকল্পনা (অনুচ্ছেদ ৯.৪); মূল্যায়ন প্রটোকল (সংযুক্তি দ)"],
                 ["প্রশিক্ষণ", "মাস ৩৬-এর মধ্যে ৫০০ কর্মকর্তা, অংশগ্রহণকারীপ্রতি ১৫,০০০ টাকা, সঙ্গে বিশেষায়িত কোর্স", "প্রশিক্ষণ পাঠ্যক্রম (সারণি ১৮)"],
-                ["মূল্যায়ন ও আশ্বাস", "মধ্যমেয়াদি মূল্যায়ন ২০ লাখ টাকা; চূড়ান্ত মূল্যায়ন ২৫ লাখ টাকা; বার্ষিক অনুপ্রবেশ পরীক্ষা ও রেড-টিম", "অধ্যায় ১৩ ও ১৮"],
-                ["পরোক্ষ ব্যয় ও আপৎকালীন সংস্থান", "অন্যান্য সব ব্যয়ের ১০%", "আয়োজক প্রতিষ্ঠানের নীতির সঙ্গে মিলিয়ে নিশ্চিত করতে হবে"],
+                ["মূল্যায়ন ও আশ্বাস", "আইনি পর্যালোচনা ৮ লাখ টাকা; ভিত্তি সমীক্ষা ৬ লাখ; মধ্যমেয়াদি মূল্যায়ন ২০ লাখ; চূড়ান্ত মূল্যায়ন ২৫ লাখ; বার্ষিক অনুপ্রবেশ পরীক্ষা ও রেড-টিম ৬ লাখ; ব্যবস্থাগুলোর বার্ষিক স্বাধীন নিরীক্ষা ৩ লাখ", "অধ্যায় ১৩, ১৪ ও ১৮"],
+                ["আয়োজকের পরোক্ষ ব্যয়", "প্রত্যক্ষ ব্যয়ের ১০%", "আয়োজক প্রতিষ্ঠানের নীতির সঙ্গে মিলিয়ে নিশ্চিত করতে হবে"],
+                ["আপৎকালীন সংস্থান", "প্রত্যক্ষ ব্যয়ের ৫%, শুধু স্টিয়ারিং বোর্ডের সিদ্ধান্তে ব্যবহারযোগ্য", "প্রাক্কলনের অনিশ্চয়তার জন্য সংস্থান; পরিস্থিতি-বিশ্লেষণ সংযুক্তি থ-তে"],
             ],
         },
         "note": {"en": "Planning assumptions for the costing study (Deliverable D1.3), not quotations. The model is published as blueprint/src/budget_model.py so that any assumption can be changed and the budget regenerated.",
@@ -163,11 +222,11 @@ TABLES_E = [
         "cols": {"en": ["Category", "Year 1", "Year 2", "Year 3", "Total", "Share"],
                  "bn": ["খাত", "বছর ১", "বছর ২", "বছর ৩", "মোট", "অংশ"]},
         "rows": {
-            "en": [['Core staff', '1.82', '2.88', '3.55', '8.25', '45%'], ['Language editors and fellowships', '0.41', '0.63', '0.73', '1.76', '10%'], ['Compute and hosting', '1.39', '1.37', '0.75', '3.51', '19%'], ['Data and annotation', '0.38', '0.44', '0.35', '1.17', '6%'], ['Training and outreach', '0.23', '0.42', '0.42', '1.07', '6%'], ['Governance, audit and evaluation', '0.28', '0.36', '0.41', '1.05', '6%'], ['Overheads and contingency (10%)', '0.45', '0.61', '0.62', '1.68', '9%'], ['**Total**', '**4.96**', '**6.71**', '**6.83**', '**18.49**', '**100%**']],
-            "bn": [['মূল জনবল', '১.৮২', '২.৮৮', '৩.৫৫', '৮.২৫', '৪৫%'], ['ভাষা-সম্পাদক ও ফেলোশিপ', '০.৪১', '০.৬৩', '০.৭৩', '১.৭৬', '১০%'], ['কম্পিউটিং ও হোস্টিং', '১.৩৯', '১.৩৭', '০.৭৫', '৩.৫১', '১৯%'], ['ডেটা ও টীকাকরণ', '০.৩৮', '০.৪৪', '০.৩৫', '১.১৭', '৬%'], ['প্রশিক্ষণ ও সম্প্রসারণ', '০.২৩', '০.৪২', '০.৪২', '১.০৭', '৬%'], ['শাসন, নিরীক্ষা ও মূল্যায়ন', '০.২৮', '০.৩৬', '০.৪১', '১.০৫', '৬%'], ['পরোক্ষ ব্যয় ও আপৎকালীন সংস্থান (১০%)', '০.৪৫', '০.৬১', '০.৬২', '১.৬৮', '৯%'], ['**মোট**', '**৪.৯৬**', '**৬.৭১**', '**৬.৮৩**', '**১৮.৪৯**', '**১০০%**']],
+            "en": _B_EN,
+            "bn": _B_BN,
         },
-        "note": {"en": "Computed from the assumptions in Table 49 by blueprint/src/budget_model.py. Totals may differ slightly because of rounding. The total is equivalent to about USD 1.49 million, or under one tenth of the reported Tk 192.66 crore cost of the Bangladesh AI Hub project [35].",
-                 "bn": "blueprint/src/budget_model.py দ্বারা সারণি ৪৯-এর অনুমান থেকে হিসাবকৃত। পূর্ণসংখ্যায় রূপান্তরের কারণে মোট সামান্য ভিন্ন হতে পারে। মোট অঙ্ক প্রায় ১.৪৯ মিলিয়ন মার্কিন ডলারের সমতুল্য, যা বাংলাদেশ এআই হাব প্রকল্পের প্রতিবেদিত ১৯২.৬৬ কোটি টাকা ব্যয়ের এক-দশমাংশেরও কম [35]।"},
+        "note": {"en": "Computed from the assumptions in Table 49 by blueprint/src/budget_model.py. Figures are rounded independently, so rows and columns may not add exactly: the unrounded total is Tk %s (Tk %.2f crore), while the rounded annual totals add to Tk %.2f crore. Equivalent to about USD %.2f million. A planning estimate: no funds have been approved or committed." % (_B_UNROUNDED, _bm.crore(_B_TOTAL), _B_ROUNDED, _B_USD),
+                 "bn": ("blueprint/src/budget_model.py দ্বারা সারণি ৪৯-এর অনুমান থেকে হিসাবকৃত। প্রতিটি অঙ্ক আলাদাভাবে আসন্নীকৃত, তাই সারি ও কলামের যোগফল হুবহু না-ও মিলতে পারে: আসন্নীকরণের আগের মোট %s টাকা (%.2f কোটি টাকা), আর আসন্নীকৃত বার্ষিক মোটের যোগফল %.2f কোটি টাকা। প্রায় %.2f মিলিয়ন মার্কিন ডলারের সমতুল্য। এটি পরিকল্পনা-প্রাক্কলন: কোনো অর্থ অনুমোদিত বা প্রতিশ্রুত হয়নি।" % (_B_UNROUNDED_BN, _bm.crore(_B_TOTAL), _B_ROUNDED, _B_USD)).translate(_BN)},
     },
     # ------------------------------------------------------------------ 51
     {

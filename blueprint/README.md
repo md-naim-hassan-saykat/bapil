@@ -15,6 +15,10 @@ This directory contains the **BAPIL Technical Blueprint**, which turns the BAPIL
 
 The PDF editions are in [`../releases/v1.1/`](../releases/v1.1/). The Markdown files above are **generated** from the sources in `src/`; edit the sources, not the generated files.
 
+## Audit and revision
+
+Before publication the draft was audited against its sources (October 2026). [`review/BAPIL_Blueprint_Audit_and_Revision_Report.md`](review/BAPIL_Blueprint_Audit_and_Revision_Report.md) (and its PDF) contains the executive review and scores, the issue register, the claim verification matrix, the budget reconciliation, the change log and the publication checklist. Annex P of the Blueprint summarises the evidence status of every key claim. Build the report with `review/build_report.sh`.
+
 ## Figures and tables
 
 Every figure and table is published in three formats, in English and Bangla:
@@ -25,7 +29,7 @@ Every figure and table is published in three formats, in English and Bangla:
 | `tables/` | `blueprint_tabNN.tex` (standalone LaTeX), `.pdf` (vector), `.png` (220 dpi); `_bn` suffix for Bangla |
 | `tables/md/` | Markdown versions used inside the documents |
 
-Fifteen figures: document family, stakeholder map, governance model, reference architecture, request sequence, data lifecycle, retrieval pipeline, foundation-model path, deployment zones, risk-tier flow, lifecycle gates, 36-month roadmap, strategic roadmap 2026 to 2041 and beyond, theory of change and risk heat map. Fifty-nine tables, from the document family (Table 1) to the risk-tier questionnaire (Table 59).
+Fifteen figures: document family, stakeholder map, governance model, reference architecture, request sequence, data lifecycle, retrieval pipeline, foundation-model path, deployment zones, risk-tier flow, lifecycle gates, 36-month roadmap, strategic roadmap 2026 to 2041 and beyond, theory of change and risk heat map. Sixty-seven tables, from the document family (Table 1) to risk monitoring (Table 67).
 
 ## Sources
 
@@ -33,7 +37,7 @@ Fifteen figures: document family, stakeholder map, governance model, reference a
 |---|---|
 | `src/*.src.md` | Document sources with `<!-- TABLE:NN -->`, `<!-- FIGURE:NN -->` and `<!-- INCLUDE:file -->` markers |
 | `src/en/`, `src/bn/` | The Technical Blueprint in parts (front matter, Parts I to V, annexes), English and Bangla |
-| `src/tables_a.py` to `src/tables_e.py` | Single source for all tables (English and Bangla); `make_tables.py` maps the first-edition numbers to the final numbering |
+| `src/tables_a.py` to `src/tables_f.py` | Single source for all tables (English and Bangla); `make_tables.py` maps the first-edition numbers to the final numbering |
 | `src/figures_new.py` | TikZ sources of the figures added in the expanded edition |
 | `src/budget_model.py` | Indicative 36-month budget model behind Tables 49 and 50 |
 | `src/make_tables.py` | Generates table `.tex`, `.pdf`, `.png` and Markdown |

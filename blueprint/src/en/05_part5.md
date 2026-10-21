@@ -6,7 +6,7 @@
 
 ## 15.1 Overview
 
-The delivery plan covers the 36 months after the Phase 1 MoU takes effect, with January 2027 as an indicative start. It implements Phases 2 to 4 of the White Paper's five-year roadmap (2026-2030) in concrete terms and corresponds to horizons H1 and the first year of H2 in the strategic roadmap (Chapter 16).
+The delivery plan covers the 36 months after the Phase 1 MoU takes effect. Month 1 is the first month in which the MoU, the host agreement and Year 1 funding are all in place (Annex T, Table 65); January 2027 is the earliest plausible start if decisions are taken in the fourth quarter of 2026, and a later start moves every date in this chapter by the same amount. It implements Phases 2 to 4 of the White Paper's five-year roadmap (2026-2030) in concrete terms and corresponds to horizons H1 and the first year of H2 in the strategic roadmap (Chapter 16).
 
 <!-- FIGURE:12 -->
 
@@ -85,7 +85,7 @@ Five principles guide every horizon:
 
 ## 16.4 Horizon 0: Foundation (Q4 2026)
 
-The foundation horizon is already under way. Its purpose is to prepare a safe, open start. The Blueprint, the Summary, the Decision Memo and the reference implementation are published with persistent identifiers. Briefings are offered to the ICT Division, the data custodians and the national AI policy drafting team, and the Blueprint is offered as a technical input to that process. A host institution is identified through an open call. The horizon ends when decisions D1, D2 and D4 (Chapter 21) are taken.
+The foundation horizon is already under way. Its purpose is to prepare a safe, open start. The Blueprint, the Summary, the Decision Memo and the reference implementation are to be published together with persistent identifiers. Briefings are offered to the ICT Division, the data custodians and the national AI policy drafting team, and the Blueprint is offered as a technical input to that process. A host institution is identified through an open call. The horizon ends when decisions D1, D2 and D4 (Chapter 21) are taken.
 
 ## 16.5 Horizon 1: Short Term (2027 to 2028)
 
@@ -172,7 +172,7 @@ Long-term sustainability rests on four pillars. **Financial:** a growing share o
 
 ## 17.1 Costing Approach
 
-The Blueprint now gives an indicative budget for the 36-month plan, built from explicit assumptions rather than from a lump-sum estimate. The costing model takes the staffing plan (Table 16), the capacity plan (Table 31), the benchmark and training targets, and the evaluation schedule, applies the unit costs in Table 49, and adds 10% for host overheads and contingency. The model is published in the repository (`blueprint/src/budget_model.py`), so that the feasibility and costing study (Deliverable D1.3, month 6) can replace any assumption with a quotation or an agreed salary scale and regenerate the budget. Until then, every figure in this chapter is a planning estimate, not a commitment of funds.
+The Blueprint gives an indicative budget for the 36-month plan, built from explicit assumptions rather than from a lump-sum estimate. The costing model takes the staffing plan (Table 16), the capacity plan (Table 31), the benchmark, evaluation and training targets, and the evaluation schedule; applies the unit costs in Table 49 at Year 1 prices; assumes that 75% of Year 1 posts are filled on average while recruitment is under way; escalates taka costs by 8% a year in Years 2 and 3; and adds 10% for host overheads and a separate 5% contingency. The model is published in the repository (`blueprint/src/budget_model.py`), so that the feasibility and costing study (Deliverable D1.3, month 6) can replace any assumption with a quotation or an agreed salary scale and regenerate the budget. Until then, every figure in this chapter is a planning estimate, not a commitment of funds.
 
 <!-- TABLE:49 -->
 
@@ -180,18 +180,20 @@ The Blueprint now gives an indicative budget for the 36-month plan, built from e
 
 <!-- TABLE:50 -->
 
-The indicative budget is about Tk 18.5 crore over three years: Tk 5.0 crore in Year 1, Tk 6.7 crore in Year 2 and Tk 6.8 crore in Year 3. Four features of the budget matter for decision-makers:
+The indicative budget is about Tk 20.4 crore over three years: Tk 4.7 crore in Year 1, Tk 7.5 crore in Year 2 and Tk 8.2 crore in Year 3, or about USD 1.65 million. It replaces a draft estimate of Tk 18.49 crore prepared before the October 2026 review: the earlier figure had no escalation and no separate contingency, and assumed full staffing from month 1. Table 61 in Annex Q reconciles the two step by step; it also shows that the draft's annual totals (4.96, 6.71 and 6.83, which add to 18.50) differed from its total only through rounding. Four features of the budget matter for decision-makers:
 
-* **People are the main cost.** Core staff, language editors and fellows account for about 55% of the total. The largest single driver is the salary needed to recruit and keep machine learning and Bangla NLP engineers.
-* **Equipment is front-loaded.** Compute and hosting take about 19% of the total, but most of it falls in Years 1 and 2 when servers and GPUs are bought. Model adaptation (BPFM Stage 1) assumes in-kind access to shared national compute; if that is not available, a separate allocation would be needed.
-* **Assurance is funded explicitly.** About 6% goes to governance, audits and independent evaluation. These costs are protected in the annual plan so that safeguards are not cut when budgets are tight.
-* **Scale relative to national programmes.** The total is under one tenth of the reported cost of the Bangladesh AI Hub project (Tk 192.66 crore) [35], and well below the Tk 200 to 250 crore AI Innovation Fund proposed in the draft national AI policy [88].
+* **People are the main cost.** Core staff, language editors and fellows account for about half of the total (52%). The largest single driver is the salary needed to recruit and keep machine learning and Bangla NLP engineers.
+* **Equipment is front-loaded.** Compute and hosting take about 17% of the total, most of it in Years 1 and 2 when servers and GPUs are bought. About a fifth (21%) of direct costs are one-time (equipment, benchmark creation, studies and evaluations) and the rest recur (Table 62). Model adaptation (BPFM Stage 1) assumes in-kind access to shared national compute; the high scenario includes cloud compute in case it is not available.
+* **Assurance is funded explicitly.** About 6% goes to governance, legal review, audits and independent evaluation, and about 7% to data and annotation, including the benchmark and citation judgements. These costs are protected in the annual plan so that safeguards are not cut when budgets are tight.
+* **Uncertainty is shown, not hidden.** A low scenario gives about Tk 17.9 crore and a high scenario about Tk 25.3 crore (Table 62). Import duty and VAT on equipment are excluded from the base case because they depend on the host's exemption status.
 
-The budget is most sensitive to staff costs and the exchange rate. A 20% change in core staff costs changes the total by about Tk 1.8 crore; a 10% change in the exchange rate changes it by only about Tk 0.3 crore, because only equipment is priced in US dollars.
+The budget is most sensitive to staff costs. A 20% change in staff costs changes the total by about Tk 2.0 crore; filling all Year 1 posts from month 1 adds about Tk 0.5 crore; equipment 25% dearer adds about Tk 0.7 crore; escalation of 10% instead of 8% adds about Tk 0.4 crore; and a 10% weaker taka adds only about Tk 0.3 crore, because only equipment is priced in US dollars. For scale only, the total is about a tenth of the Tk 192.66 crore proposed for the KOICA-supported AI hub technical assistance project [35] and below the Tk 200 to 250 crore AI Innovation Fund proposed in the draft national AI policy [88]; neither figure is an approved allocation, and the projects are not comparable in scope.
+
+These are planning estimates. No funds have been requested, approved or committed, and the feasibility and costing study (Deliverable D1.3) will replace each assumption with quotations, the host's salary scale and its overhead rate.
 
 ## 17.3 Budget Beyond 36 Months
 
-Beyond the 36-month plan, budgets are set at each strategic review (Table 48), and Blueprint 2.0 will contain a costed plan for horizon H2. As a planning range, a lab that maintains the Year 3 team, the benchmark and the evaluation function would need about Tk 7 to 9 crore a year in 2029 and 2030. A national network in horizon H3, with regional training hubs and support for federated search, would need more, but much of the operating cost of adopted tools should then sit in the budgets of the agencies that use them, under service agreements, rather than in BAPIL's own budget.
+Beyond the 36-month plan, budgets are set at each strategic review (Table 48), and Blueprint 2.0 will contain a costed plan for horizon H2. As a planning range, a lab that maintains the Year 3 team, the benchmark and the evaluation function would need about Tk 7.5 to 9 crore a year in 2029 and 2030: recurring costs in Year 3, with overheads and contingency, are about Tk 7.3 crore at Year 3 prices (Table 62), before further escalation. A national network in horizon H3, with regional training hubs and support for federated search, would need more, but much of the operating cost of adopted tools should then sit in the budgets of the agencies that use them, under service agreements, rather than in BAPIL's own budget.
 
 ## 17.4 Funding Model
 
@@ -201,7 +203,7 @@ Funding should be diversified, as set out in Appendix C of the White Paper: a go
 
 ## 17.5 Value for Money
 
-Value for money is assessed at the mid-term and final evaluations using four measures: economy (cost of inputs compared with benchmarks), efficiency (cost per output, such as cost per indexed document or per trained official), effectiveness (time saved and quality of evidence for users) and equity (reach beyond Dhaka and to under-served groups). Time saved by analysts is the most direct benefit, but it should not be overstated. Valuing an analyst's time at about Tk 500 an hour (based on grade 9 basic pay of Tk 44,000 a month plus allowances) [109], 300 users who each save four hours a month save time worth about Tk 0.7 crore a year, which is roughly a tenth of the Year 3 budget. Time savings alone therefore justify the cost only at the scale of the long-term targets (thousands of regular users, Table 46). In the short term, the case rests as much on the quality of evidence, the open benchmark and the governance methods as on time saved. The time-to-evidence studies in P1 provide the data to test this calculation.
+Value for money is assessed at the mid-term and final evaluations using four measures: economy (cost of inputs compared with benchmarks), efficiency (cost per output, such as cost per indexed document or per trained official), effectiveness (time saved and quality of evidence for users) and equity (reach beyond Dhaka and to under-served groups). Time saved by analysts is the most direct benefit, but it should not be overstated. Valuing an analyst's time at about Tk 500 an hour (based on grade 9 basic pay of Tk 44,000 a month plus allowances) [109], 300 users who each save four hours a month save time worth about Tk 0.7 crore a year, which is less than a tenth of the Year 3 budget. This is an illustrative calculation, not a forecast. Time savings alone therefore justify the cost only at the scale of the long-term targets (thousands of regular users, Table 46). In the short term, the case rests as much on the quality of evidence, the open benchmark and the governance methods as on time saved. The time-to-evidence studies in P1 provide the data to test this calculation.
 
 ## 17.6 Procuring AI Products and Services
 
@@ -237,7 +239,7 @@ The logical framework sets out the results chain with indicators, means of verif
 
 <!-- TABLE:54 -->
 
-The indicators at months 12 and 36 are consistent with the long-term targets in Table 46, which extend them to 2041.
+The indicators at months 12 and 36 are proposed targets, consistent with the long-term targets in Table 46, which extend them to 2041. Each is measured by the methods below and, for quality indicators, by the protocol in Annex R.
 
 ## 18.4 Methods
 
@@ -278,6 +280,8 @@ The risk register is owned by the Director, reviewed quarterly by the Steering B
 ## 19.2 Risk Register
 
 <!-- TABLE:55 -->
+
+For each risk, Annex U (Table 67) adds an early-warning indicator, a contingency if the risk occurs, a residual rating after mitigation and a review frequency.
 
 ## 19.3 Priority Risks
 
@@ -335,6 +339,6 @@ While the decisions are considered, the following steps can proceed without comm
 
 ## 21.4 Conclusion
 
-Bangladesh has the data foundations, the institutions and the talent to build a trustworthy AI policy-intelligence capability, and it is now putting in place the legal framework and national AI policy within which such a capability must operate. This Blueprint shows how to start small, safely and openly: with public documents, a bilingual search and answer service that always shows its sources, a governance system with real decision rights, and pilots that must prove their value before they grow. It also shows how that start can grow, horizon by horizon, into a national capability that supports the 2041 goals, without ever relaxing the safeguards that make it trustworthy. The reference implementation shows that the core ideas already work. The next step belongs to the authorities and partners who can decide to test them on real policy questions.
+Bangladesh has the data foundations, the institutions and the talent to build a trustworthy AI policy-intelligence capability, and it is now putting in place the legal framework and national AI policy within which such a capability must operate. This Blueprint shows how to start small, safely and openly: with public documents, a bilingual search and answer service that always shows its sources, a governance system with real decision rights, and pilots that must prove their value before they grow. It also shows how that start can grow, horizon by horizon, into a national capability that supports the 2041 goals, without ever relaxing the safeguards that make it trustworthy. The reference implementation shows that the core mechanisms can be built and tested on a small scale; whether they help officials with real policy questions is what the pilot is designed to find out. That next step belongs to the authorities and partners who can decide to test them.
 
 \newpage

@@ -1,19 +1,54 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Indicative 36-month budget model for the BAPIL Technical Blueprint (Chapter 17).
+"""Indicative 36-month budget model for the BAPIL Technical Blueprint (Chapter 17, Annex Q).
 
-Every figure in Tables 49 and 50 of the Blueprint is computed here from the stated
-assumptions, so that the feasibility study (Deliverable D1.3) can change an assumption
-and regenerate the budget. Amounts are in Bangladeshi taka (Tk); 1 crore = 10,000,000 and
-1 lakh = 100,000. Run: python3 budget_model.py
+Every figure in Tables 49, 50, 61 and 62 of the Blueprint is computed here from stated
+assumptions, so that the feasibility and costing study (Deliverable D1.3) can change an
+assumption and regenerate the budget. Amounts are in Bangladeshi taka (Tk);
+1 crore = 10,000,000 and 1 lakh = 100,000. All figures are planning estimates, not
+quotations and not approved funding.
+
+Run: python3 budget_model.py
 """
 
-USD_TO_BDT = 124  # Bangladesh Bank weighted average rate was Tk 123.65 on 19 October 2026
+CRORE = 10_000_000
+
+# ----------------------------------------------------------------- base-case assumptions
+BASE = {
+    # Bangladesh Bank weighted average rate was Tk 123.65 per USD on 19 October 2026
+    "usd_to_bdt": 124,
+    # Annual escalation of taka costs in Years 2 and 3. Point-to-point CPI inflation was
+    # 8.34% in September 2026 (BBS, as reported); the host's increment rules may differ.
+    "escalation": 0.08,
+    # Average share of Year 1 staff positions filled (recruitment takes place in months 1 to 6)
+    "ramp_y1": 0.75,
+    # Multiplier on the fully loaded staff costs below (1.0 = base case)
+    "staff_factor": 1.0,
+    # Multiplier on equipment prices (1.0 = base case, before any import duty or VAT)
+    "equipment_factor": 1.0,
+    # Host institution overhead on direct costs, and a separate contingency on direct costs
+    "overhead_rate": 0.10,
+    "contingency_rate": 0.05,
+    # Compute for Stage 1 model adaptation if shared national compute is not available (USD, Year 2)
+    "adaptation_compute_usd": 0,
+    # Switches used only to reconcile with the pre-audit draft (Annex Q, Table 61)
+    "legacy_amounts": False,     # Year 2 and 3 amounts as in the draft (implicit price growth)
+    "new_eval_items": True,      # out-of-scope set, citation judgements and annual system audit
+}
+
+# Year 2 and 3 amounts used in the pre-audit draft, which included implicit price growth
+LEGACY = {
+    "LANGUAGE_EDITORS": (1_200_000, 1_500_000, 1_500_000),
+    "HOSTING_OPS": (2_500_000, 3_500_000, 4_500_000),
+    "SPECIALIST_COURSES": (800_000, 1_200_000, 1_200_000),
+    "ERRC and board honoraria": (800_000, 900_000, 900_000),
+    "Penetration test and red team": (600_000, 700_000, 700_000),
+}
 
 # Fully loaded monthly cost per full-time equivalent (salary, allowances, provident fund,
-# festival bonus and recruitment), in Tk. The Ninth National Pay Scale (2026) sets basic pay
-# from Tk 20,000 (grade 20) to Tk 156,000 (grade 1); research contracts for scarce AI skills
-# are assumed to pay above the equivalent grade.
+# festival bonus and recruitment), in Tk, at Year 1 prices. The Ninth National Pay Scale (2026)
+# sets basic pay from Tk 20,000 (grade 20) to Tk 156,000 (grade 1); research contracts for
+# scarce AI skills are assumed to pay above the equivalent grade.
 MONTHLY_COST = {
     "Director and principal investigator": 300_000,
     "Policy research lead and analysts": 150_000,
@@ -41,72 +76,208 @@ FTE = {
     "Training and outreach officers": (0, 1, 2),
 }
 
-LANGUAGE_EDITORS = (1_200_000, 1_500_000, 1_500_000)      # part-time Bangla editors per year
-FELLOWS = (6, 10, 12)                                       # graduate fellows per year
+LANGUAGE_EDITORS = (1_200_000, 1_400_000, 1_400_000)   # part-time Bangla editors, Year 1 prices
+FELLOWS = (6, 10, 12)                                  # graduate fellows per year
 FELLOW_STIPEND_MONTHLY = 40_000
 
-# Compute and hosting, in US dollars (equipment) and Tk (operations)
+# Equipment in US dollars (one-time): servers, GPU inference servers (L40S class), storage
 EQUIPMENT_USD = (
-    3 * 12_000 + 2 * 25_000 + 6_000,  # Year 1: 3 servers, 2 GPU inference servers (L40S class), 20 TB storage
-    2 * 12_000 + 2 * 25_000 + 8_000,  # Year 2: staging and disaster-recovery capacity, 2 more GPU servers
+    3 * 12_000 + 2 * 25_000 + 6_000,  # Year 1: 3 servers, 2 GPU inference servers, 20 TB storage
+    2 * 12_000 + 2 * 25_000 + 8_000,  # Year 2: staging and disaster-recovery capacity
     1 * 12_000 + 12_000,              # Year 3: replacement and storage growth
 )
-HOSTING_OPS = (2_500_000, 3_500_000, 4_500_000)  # data-centre space, power, bandwidth, licences, development cloud
+HOSTING_OPS = (2_500_000, 3_200_000, 3_800_000)  # data-centre space, power, bandwidth, licences, development cloud
 
 # Data and annotation
-BENCHMARK_ITEMS = (500, 800, 700)        # BanglaPolicyQA questions written and adjudicated per year (2,000 by month 30)
-COST_PER_ITEM = 2_500                    # writing, gold-passage search and adjudication
+BENCHMARK_ITEMS = (500, 800, 700)       # answerable BanglaPolicyQA questions per year (2,000 by month 30)
+COST_PER_ITEM = 2_500                   # question writing, gold-passage search and adjudication
+OUT_OF_SCOPE_ITEMS = (200, 100, 0)      # out-of-scope questions for abstention testing (no gold passages)
+COST_PER_OUT_OF_SCOPE = 600
+CITATION_JUDGEMENTS = (400, 800, 800)   # answer sentences judged by two annotators for citation support
+COST_PER_JUDGEMENT = 500
 OCR_CORRECTION = (2_000_000, 2_000_000, 1_500_000)
 DATA_AGREEMENTS = (500_000, 400_000, 300_000)
 
 # Training (Table 18): officials trained per year and average cost per participant
 OFFICIALS_TRAINED = (100, 200, 200)     # 500 by month 36 (Table 54)
 COST_PER_PARTICIPANT = 15_000           # venue, materials, travel for programmes outside Dhaka
-SPECIALIST_COURSES = (800_000, 1_200_000, 1_200_000)   # T3 to T5 cohorts and materials in two languages
+SPECIALIST_COURSES = (800_000, 1_100_000, 1_100_000)
 
-# Governance, audit and evaluation
+# Governance, audit and evaluation (one-time items are marked in ONE_TIME_GOVERNANCE)
 GOVERNANCE = (
-    {"ERRC and board honoraria": 800_000, "Legal review": 800_000, "Penetration test and red team": 600_000, "Baseline study": 600_000},
-    {"ERRC and board honoraria": 900_000, "Penetration test and red team": 700_000, "Independent mid-term evaluation": 2_000_000},
-    {"ERRC and board honoraria": 900_000, "Penetration test and red team": 700_000, "Independent final evaluation": 2_500_000},
+    {"ERRC and board honoraria": 800_000, "Legal review": 800_000, "Penetration test and red team": 600_000,
+     "Baseline study": 600_000, "Annual independent audit of systems": 300_000},
+    {"ERRC and board honoraria": 800_000, "Penetration test and red team": 600_000,
+     "Independent mid-term evaluation": 2_000_000, "Annual independent audit of systems": 300_000},
+    {"ERRC and board honoraria": 800_000, "Penetration test and red team": 600_000,
+     "Independent final evaluation": 2_500_000, "Annual independent audit of systems": 300_000},
 )
+ONE_TIME_GOVERNANCE = {"Legal review", "Baseline study", "Independent mid-term evaluation", "Independent final evaluation"}
 
-OVERHEAD_RATE = 0.10  # host overheads and contingency on all other costs
+CATEGORIES = [
+    "Core staff",
+    "Language editors and fellowships",
+    "Compute and hosting",
+    "Data and annotation",
+    "Training and outreach",
+    "Governance, audit and evaluation",
+]
 
-CRORE = 10_000_000
+SCENARIOS = {
+    "low": dict(BASE, staff_factor=0.85, escalation=0.06, equipment_factor=0.80, usd_to_bdt=120),
+    "base": dict(BASE),
+    "high": dict(BASE, staff_factor=1.20, escalation=0.10, equipment_factor=1.25, usd_to_bdt=135,
+                 contingency_rate=0.10, adaptation_compute_usd=20_000),
+}
 
 
-def budget():
+def _esc(p, y):
+    """Price index for year y (0, 1, 2) relative to Year 1 prices."""
+    return (1 + p["escalation"]) ** y
+
+
+def lines(p=None):
+    """Return {category: [(item, one_time, (y1, y2, y3)), ...]} in Tk."""
+    p = dict(BASE, **(p or {}))
+    out = {c: [] for c in CATEGORIES}
     years = range(3)
-    staff = [sum(MONTHLY_COST[r] * 12 * FTE[r][y] for r in FTE) for y in years]
-    people_other = [LANGUAGE_EDITORS[y] + FELLOWS[y] * FELLOW_STIPEND_MONTHLY * 12 for y in years]
-    compute = [EQUIPMENT_USD[y] * USD_TO_BDT + HOSTING_OPS[y] for y in years]
-    data = [BENCHMARK_ITEMS[y] * COST_PER_ITEM + OCR_CORRECTION[y] + DATA_AGREEMENTS[y] for y in years]
-    training = [OFFICIALS_TRAINED[y] * COST_PER_PARTICIPANT + SPECIALIST_COURSES[y] for y in years]
-    governance = [sum(GOVERNANCE[y].values()) for y in years]
-    rows = {
-        "Core staff": staff,
-        "Language editors and fellowships": people_other,
-        "Compute and hosting": compute,
-        "Data and annotation": data,
-        "Training and outreach": training,
-        "Governance, audit and evaluation": governance,
-    }
-    subtotal = [sum(v[y] for v in rows.values()) for y in years]
-    rows["Overheads and contingency (10%)"] = [subtotal[y] * OVERHEAD_RATE for y in years]
+    staff = []
+    for y in years:
+        cost = sum(MONTHLY_COST[r] * 12 * FTE[r][y] for r in FTE) * p["staff_factor"] * _esc(p, y)
+        if y == 0:
+            cost *= p["ramp_y1"]
+        staff.append(cost)
+    out["Core staff"].append(("Core staff salaries and on-costs", False, tuple(staff)))
+    ed = LEGACY["LANGUAGE_EDITORS"] if p["legacy_amounts"] else LANGUAGE_EDITORS
+    host = LEGACY["HOSTING_OPS"] if p["legacy_amounts"] else HOSTING_OPS
+    spec = LEGACY["SPECIALIST_COURSES"] if p["legacy_amounts"] else SPECIALIST_COURSES
+    out["Language editors and fellowships"] += [
+        ("Part-time Bangla language editors", False, tuple(ed[y] * _esc(p, y) for y in years)),
+        ("Graduate fellowships", False, tuple(FELLOWS[y] * FELLOW_STIPEND_MONTHLY * 12 * _esc(p, y) for y in years)),
+    ]
+    equip = [EQUIPMENT_USD[y] * p["equipment_factor"] * p["usd_to_bdt"] for y in years]
+    out["Compute and hosting"] += [
+        ("Servers, GPUs and storage", True, tuple(equip)),
+        ("Hosting, power, bandwidth and licences", False, tuple(host[y] * _esc(p, y) for y in years)),
+    ]
+    if p["adaptation_compute_usd"]:
+        out["Compute and hosting"].append(
+            ("Stage 1 adaptation compute (if no national compute)", True, (0, p["adaptation_compute_usd"] * p["usd_to_bdt"], 0)))
+    new = 1 if p["new_eval_items"] else 0
+    out["Data and annotation"] += [
+        ("Benchmark questions and gold passages", True, tuple(BENCHMARK_ITEMS[y] * COST_PER_ITEM * _esc(p, y) for y in years)),
+        ("Out-of-scope questions for abstention tests", True, tuple(new * OUT_OF_SCOPE_ITEMS[y] * COST_PER_OUT_OF_SCOPE * _esc(p, y) for y in years)),
+        ("Citation-support judgements", False, tuple(new * CITATION_JUDGEMENTS[y] * COST_PER_JUDGEMENT * _esc(p, y) for y in years)),
+        ("OCR correction", False, tuple(OCR_CORRECTION[y] * _esc(p, y) for y in years)),
+        ("Data agreements and custodian liaison", False, tuple(DATA_AGREEMENTS[y] * _esc(p, y) for y in years)),
+    ]
+    out["Training and outreach"] += [
+        ("Training of officials", False, tuple(OFFICIALS_TRAINED[y] * COST_PER_PARTICIPANT * _esc(p, y) for y in years)),
+        ("Specialist courses and bilingual materials", False, tuple(spec[y] * _esc(p, y) for y in years)),
+    ]
+    items = sorted({k for g in GOVERNANCE for k in g})
+    for k in items:
+        amounts = [GOVERNANCE[y].get(k, 0) for y in years]
+        if p["legacy_amounts"] and k in LEGACY:
+            amounts = list(LEGACY[k])
+        if not p["new_eval_items"] and k == "Annual independent audit of systems":
+            amounts = [0, 0, 0]
+        out["Governance, audit and evaluation"].append(
+            (k, k in ONE_TIME_GOVERNANCE, tuple(amounts[y] * _esc(p, y) for y in years)))
+    return out, p
+
+
+def budget(p=None):
+    """Category totals by year, plus overhead and contingency rows, in Tk."""
+    ls, p = lines(p)
+    rows = {c: [sum(v[2][y] for v in ls[c]) for y in range(3)] for c in CATEGORIES}
+    direct = [sum(rows[c][y] for c in CATEGORIES) for y in range(3)]
+    rows["Host overheads (%d%%)" % round(100 * p["overhead_rate"])] = [d * p["overhead_rate"] for d in direct]
+    rows["Contingency (%d%%)" % round(100 * p["contingency_rate"])] = [d * p["contingency_rate"] for d in direct]
     return rows
+
+
+def totals(p=None):
+    rows = budget(p)
+    by_year = [sum(v[y] for v in rows.values()) for y in range(3)]
+    return by_year, sum(by_year)
+
+
+def one_time_recurring(p=None):
+    """Direct costs split into one-time and recurring, by year (Tk), before overheads and contingency."""
+    ls, p = lines(p)
+    one = [0.0, 0.0, 0.0]
+    rec = [0.0, 0.0, 0.0]
+    for c in CATEGORIES:
+        for _, is_one, vals in ls[c]:
+            for y in range(3):
+                (one if is_one else rec)[y] += vals[y]
+    return one, rec
+
+
+def sensitivity():
+    """Change in the 36-month total (Tk) for single-factor changes from the base case."""
+    _, base = totals()
+    cases = {
+        "Staff costs 20% higher": dict(staff_factor=1.2),
+        "Staff costs 20% lower": dict(staff_factor=0.8),
+        "Exchange rate Tk 136 (10% weaker taka)": dict(usd_to_bdt=124 * 1.1),
+        "Escalation 10% a year instead of 8%": dict(escalation=0.10),
+        "Year 1 recruitment complete from month 1": dict(ramp_y1=1.0),
+        "Equipment 25% dearer (duties, VAT or prices)": dict(equipment_factor=1.25),
+    }
+    return {k: totals(v)[1] - base for k, v in cases.items()}
+
+
+def bridge():
+    """Step-by-step reconciliation from the pre-audit draft (Tk 18.49 crore) to the base case."""
+    steps = [
+        ("Pre-audit draft budget (October 2026)",
+         dict(legacy_amounts=True, new_eval_items=False, escalation=0.0, ramp_y1=1.0, contingency_rate=0.0)),
+        ("Year 2 and 3 amounts restated at Year 1 prices",
+         dict(new_eval_items=False, escalation=0.0, ramp_y1=1.0, contingency_rate=0.0)),
+        ("Explicit escalation of taka costs (8% a year)",
+         dict(new_eval_items=False, ramp_y1=1.0, contingency_rate=0.0)),
+        ("Year 1 recruitment ramp (75% of positions filled on average)",
+         dict(new_eval_items=False, contingency_rate=0.0)),
+        ("Evaluation items added (out-of-scope set, citation judgements, annual system audit)",
+         dict(contingency_rate=0.0)),
+        ("Separate contingency of 5% of direct costs", dict()),
+    ]
+    out = []
+    prev = None
+    for label, p in steps:
+        t = totals(p)[1]
+        out.append((label, t, None if prev is None else t - prev))
+        prev = t
+    return out
+
+
+def crore(x):
+    return x / CRORE
 
 
 def main():
     rows = budget()
-    total_all = sum(sum(v) for v in rows.values())
+    by_year, total = totals()
     print("%-36s %8s %8s %8s %9s %6s" % ("Category (Tk crore)", "Year 1", "Year 2", "Year 3", "Total", "Share"))
     for k, v in rows.items():
         t = sum(v)
-        print("%-36s %8.2f %8.2f %8.2f %9.2f %5.0f%%" % (k, v[0] / CRORE, v[1] / CRORE, v[2] / CRORE, t / CRORE, 100 * t / total_all))
-    totals = [sum(v[y] for v in rows.values()) for y in range(3)]
-    print("%-36s %8.2f %8.2f %8.2f %9.2f" % ("Total", totals[0] / CRORE, totals[1] / CRORE, totals[2] / CRORE, total_all / CRORE))
-    print("Total in US dollars: %.2f million" % (total_all / USD_TO_BDT / 1e6))
+        print("%-36s %8.2f %8.2f %8.2f %9.2f %5.0f%%" % (k, crore(v[0]), crore(v[1]), crore(v[2]), crore(t), 100 * t / total))
+    print("%-36s %8.2f %8.2f %8.2f %9.2f" % ("Total", crore(by_year[0]), crore(by_year[1]), crore(by_year[2]), crore(total)))
+    print("Unrounded total: Tk %s; sum of rounded annual totals: %.2f crore"
+          % (format(round(total), ","), sum(round(crore(x), 2) for x in by_year)))
+    print("Total in US dollars: %.2f million" % (total / BASE["usd_to_bdt"] / 1e6))
+    one, rec = one_time_recurring()
+    print("One-time direct:  ", [round(crore(x), 2) for x in one], round(crore(sum(one)), 2))
+    print("Recurring direct: ", [round(crore(x), 2) for x in rec], round(crore(sum(rec)), 2))
+    for name, p in SCENARIOS.items():
+        y, t = totals(p)
+        print("Scenario %-5s: %s total %.2f" % (name, [round(crore(x), 2) for x in y], crore(t)))
+    for label, t, d in bridge():
+        print("Bridge: %-80s %6.2f %s" % (label, crore(t), "" if d is None else "%+.2f" % crore(d)))
+    for k, d in sensitivity().items():
+        print("Sensitivity: %-46s %+.2f crore" % (k, crore(d)))
 
 
 if __name__ == "__main__":

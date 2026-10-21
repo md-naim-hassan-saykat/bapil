@@ -61,6 +61,7 @@ build_pdf () {
   # some minimal TeX installations lack lmodern.sty, which the pandoc template loads by default
   kpsewhich lmodern.sty >/dev/null 2>&1 || vars+=(-V fontfamily=fontspec)
   if [[ "$lang" == "bn" ]]; then
+    headers+=(--include-in-header="$SRC/header-bn-num.tex")
     vars+=(-V mainfont="Noto Serif" -V sansfont="Noto Sans")
   else
     vars+=(-V mainfont="Latin Modern Roman" -V sansfont="TeX Gyre Heros")

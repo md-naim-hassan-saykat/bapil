@@ -14,16 +14,18 @@
 
 \begin{document}
 \begin{minipage}{17cm}
-{\large\bfseries Table 30.}\ {\large Bangla Policy Foundation Model: stage gates}\par\vspace{7pt}
+{\large\bfseries Table 30.}\ {\large Bangla Policy Foundation Model: an evidence-gated ladder}\par\vspace{7pt}
 \small
 \rowcolors{2}{bapilstripe}{white}
-\begin{tabularx}{\linewidth}{@{}>{\hsize=0.561\hsize\raggedright\arraybackslash}X>{\hsize=1.173\hsize\raggedright\arraybackslash}X>{\hsize=1.224\hsize\raggedright\arraybackslash}X>{\hsize=0.969\hsize\raggedright\arraybackslash}X>{\hsize=1.071\hsize\raggedright\arraybackslash}X@{}}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=0.619\hsize\raggedright\arraybackslash}X>{\hsize=1.143\hsize\raggedright\arraybackslash}X>{\hsize=1.190\hsize\raggedright\arraybackslash}X>{\hsize=0.810\hsize\raggedright\arraybackslash}X>{\hsize=1.238\hsize\raggedright\arraybackslash}X@{}}
 \arrayrulecolor{bapilrule}\toprule
-\rowcolor{white}\textbf{Stage} & \textbf{Entry criteria} & \textbf{Main activities} & \textbf{Outputs} & \textbf{Exit criteria} \\
+\rowcolor{white}\textbf{Step} & \textbf{Entry criteria} & \textbf{Main activities} & \textbf{Outputs} & \textbf{Exit or adoption criteria} \\
 \midrule
-\textbf{Stage 0} & Governed P0 corpus; benchmark protocol agreed & Evaluate open models with retrieval; error analysis by document type and language & Baselines; BanglaPolicyQA v0; evaluation report & Measured gap to thresholds documented; Stage 1 decision taken \\
-\textbf{Stage 1} & Material gap remains; curated adaptation data; compute allocated; ERRC review & Parameter-efficient adaptation; instruction tuning on curated pairs; red-teaming & Adapted model; model card; benchmark v1 results & Gain over Stage 0 on agreed metrics; all safety thresholds met \\
-\textbf{Stage 2} & Stage 1 gains insufficient for priority tasks; national compute available; cost-benefit case approved & Continued pre-training on governed Bangla text; independent audit & Domain model release; audit report & Independent audit passed; release decision by Steering Board and ERRC \\
+\textbf{Stage 0a} Lexical and metadata search & Governed P0 corpus with metadata & BM25 with bilingual expansion; filters by document type, issuing body and year; abstention & Baseline results on BanglaPolicyQA v0 & Baseline published; remains the transparent fallback for every later step \\
+\textbf{Stage 0b} Dense retrieval and reranking & Stage 0a baseline; open multilingual embedding and reranking models shortlisted (Table 29) & Hybrid retrieval; reranking; ablation by language and document type & Hybrid configuration; evaluation report & Adopted only if Recall@10 or nDCG@10 improves by more than the confidence interval, with no safety metric worse \\
+\textbf{Stage 0c} Answers with existing models & Retrieval meets its thresholds; citation-judgement protocol ready (Annex R) & Extractive answers; optional rephrasing by an open model with sentence-level citation checks & Answer service; citation results & Citation precision and unsupported-claim thresholds met (Table 28); otherwise extractive answers only \\
+\textbf{Stage 1} Targeted adaptation & Residual errors after Stage 0 documented by category and attributable to the model rather than to retrieval or data; curated data; compute; ERRC review & Parameter-efficient adaptation (LoRA); instruction tuning on curated pairs; red-teaming & Adapted model; model card; cost report & Gain over Stage 0c larger than the confidence interval on agreed metrics; all safety thresholds met \\
+\textbf{Stage 2} Dedicated domain model & Stage 1 insufficient for priority tasks; enough governed Bangla text; national compute; cost-benefit case approved; coordination with any national Bangla LLM & Continued pre-training of an existing open model on governed Bangla text; independent audit & Domain model release; audit report & Independent audit passed; release decision by Steering Board and ERRC. Training a new model from scratch is out of scope (Section 9.7) \\
 \bottomrule
 \end{tabularx}
 \par\vspace{3pt}{\scriptsize\color{gray} Source: BAPIL Technical Blueprint, Version 1.0 (2026). CC BY 4.0.}
