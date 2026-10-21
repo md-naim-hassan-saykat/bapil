@@ -216,7 +216,7 @@ The deployment is divided into five zones. The **public zone** exposes only the 
 
 <!-- TABLE:31 -->
 
-For the pilots, a modest footprint is sufficient: two to three general-purpose servers for the application and data zones, and one or two inference GPUs able to serve a quantised open model of roughly 7 to 14 billion parameters, plus around 10 to 20 TB of storage including backups. Stage 1 adaptation of the BPFM requires time-limited access to a larger GPU pool, which should come from shared national compute. These figures are planning assumptions for the feasibility study.
+For the pilots, a modest footprint is sufficient: two to three general-purpose servers for the application and data zones, and two GPU inference servers (one or two GPUs each) able to serve a quantised open model of roughly 7 to 14 billion parameters, plus around 10 to 20 TB of storage including backups. In Year 2 a second pair of GPU servers and two more general-purpose servers add staging and a recovery site, as costed in Table 49. Stage 1 adaptation of the BPFM requires time-limited access to a larger GPU pool, which should come from shared national compute. These figures are planning assumptions for the feasibility study.
 
 ## 10.4 Security Framework
 

@@ -8,7 +8,7 @@ lang: en
 
 # About This Report
 
-This report records an audit of the pre-publication draft of the *Bangladesh AI Policy & Innovation Lab (BAPIL): Technical Blueprint, Version 1.0* (English and Bangla builds of 21 October 2026, 117 and 116 pages), and the revision that followed. The revised Blueprint (137 pages in English, 131 in Bangla) is Deliverable 6 of the review mandate and is not reproduced here; this report contains the other deliverables: the executive review (Section 1), the issue register (Section 2), the claim verification matrix (Section 3), the technical and financial validation (Section 4), the governance and implementation redesign (Section 5), the change log (Section 6), the final quality assessment (Section 7) and the publication readiness checklist (Section 8).
+This report records an audit of the pre-publication draft of the *Bangladesh AI Policy & Innovation Lab (BAPIL): Technical Blueprint, Version 1.0* (English and Bangla builds of 21 October 2026, 117 and 116 pages), and the revision that followed. The revised Blueprint (140 pages in English, 134 in Bangla) is Deliverable 6 of the review mandate and is not reproduced here; this report contains the other deliverables: the executive review (Section 1), the issue register (Section 2), the claim verification matrix (Section 3), the technical and financial validation (Section 4), the governance and implementation redesign (Section 5), the change log (Section 6), the final quality assessment (Section 7) and the publication readiness checklist (Section 8). The revision was made in two passes: the first applied the corrections in the issue register; the second re-read every section, including those the first pass did not need to change, and fixed the remaining internal inconsistencies (issues I-35 to I-41). The Blueprint itself now carries its revision history and an unresolved-items register (Annex V, Tables 68 and 69).
 
 **Who carried out the audit.** The audit was carried out with the assistance of an AI model (Claude), working to a multidisciplinary review mandate supplied by the author. It is not an independent external review by a panel of human experts, and it does not replace review by qualified Bangladesh legal counsel, a public-finance specialist or an independent evaluator. Where this report says a claim was "verified", it means the claim was checked against the source named, on the date given.
 
@@ -98,6 +98,13 @@ Severity: Critical (misleads on project status or legal position), High (materia
 | I-32 | Zenodo record 21363967 | Record licence shows MIT while the White Paper text states CC BY 4.0; affiliation shows Université Paris-Saclay | Metadata (outside the Blueprint) | Low | Zenodo record page, 22 Oct 2026 | Recommend correcting the record metadata | Open |
 | I-33 | Statutory texts | Gazetted texts, commencement and rules not reviewed | Legal | Critical | bdlaws refuses automated retrieval | Legal review scope defined (14.3) | Open (needs counsel) |
 | I-34 | References 1 to 83 | Not re-verified item by item | Citation | Medium | Inherited from the White Paper | Stated in Annex P | Open |
+| I-35 | Table 44 MS1; 15.4; Summary | MoU signed at month 3, although month 1 is now defined by the MoU | Internal consistency | Medium | Annex T definition of month 1 | MS1 and first 90 days aligned; "before month 1" added to the Summary | Resolved |
+| I-36 | Annex E; 14.3 | Charter adopted at MS1 "after legal review", but the review is due before MS2 | Internal consistency | Medium | Table 44 sequence | Charter adopted at MS1 and confirmed after the legal review | Resolved |
+| I-37 | 10.3; Table 31; Summary; Memo | One or two inference GPUs, while the budget buys two GPU servers in Year 1 and two more in Year 2 | Internal consistency | Medium | Table 49 equipment | Capacity text and Table 31 matched to the budget | Resolved |
+| I-38 | Table 31 | No adaptation compute in 2027 to 2028, though Stage 1 may start at month 13 | Internal consistency | Low | Section 9.7 | Allocation from month 13 if Stage 1 is approved | Resolved |
+| I-39 | Table 54 | Time saved "user-reported", while Annex R measures it in crossover studies | Measurement | Medium | Annex R | KPI measured by time-to-evidence studies | Resolved |
+| I-40 | Table 18 | Training targets (240 people in Year 1) not reconciled with the KPI of 100 officials and the budget | Internal consistency | Low | Tables 49, 54 | Counting rule stated; specialist cohorts funded from the specialist line | Resolved |
+| I-41 | Tables 25, 48 | OCR error-rate sampling unspecified; calendar dates assume a January 2027 start | Measurement; schedule | Low | Not stated | Notes added | Resolved |
 
 # 3. Claim Verification Matrix
 
@@ -214,6 +221,8 @@ The revision keeps the original institutional model (a university-anchored lab u
 | References | [113] to [121] added | New evidence | As listed | Citation | None |
 | Summary and Memo (EN, BN) | Status lines; legal qualification; budget figures; D4; targets wording | Consistency | Body | Consistency | None |
 | Bangla edition | All revisions translated; Bangla numerals in lists, citations, quarter labels; acronyms KOICA and VAT | I-31; consistency | Automated EN and BN number comparison | Editorial | Full copy-edit not done |
+| Second pass (Ch. 10, 15; Annex E; Tables 18, 25, 31, 44, 48, 54; Summary; Memo) | MS1 and first 90 days; charter sequence; GPU capacity; Stage 1 compute; KPI measurement; training counts; OCR sampling; calendar caveat | I-35 to I-41 | Cross-checks between plan, budget and protocol | Consistency | None |
+| New Annex V; Tables 68, 69; Document Information | Revision history and unresolved-items register inside the Blueprint; revision status row | Keep the change log and open items with the document | This report | Traceability | Items U1 to U14 |
 
 **Material deletions.** None of substance. The unsupported phrases ("under implementation", "core ideas already work", "published on GitHub and archived with a DOI", the labelling attribution) were replaced, not silently removed.
 

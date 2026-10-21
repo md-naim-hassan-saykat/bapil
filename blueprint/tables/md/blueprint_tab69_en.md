@@ -1,0 +1,20 @@
+**Table 69.** Unresolved items register
+
+| ID | Unresolved item | Why it is unresolved | Owner | How and when it is resolved | Affects |
+|------|--------------------------|----------------------|----------------|--------------------|----------------|
+| U1 | Commencement dates and provisions in force of the PDPA 2026, NDMA 2026 and Cyber Security Act 2026, and any rules issued | Gazetted texts not reviewed; official database blocks automated retrieval | Host institution with legal counsel | Independent legal review before MS2 (Section 14.3) | Ch. 2, 8, 14; Tables 42, 43 |
+| U2 | Whether NRDEX, the national source-code repository and chief data officers are retained in the Acts | Described only for the 2025 ordinances | Legal counsel | Same legal review | Sect. 8.8, 8.11, 10.8 |
+| U3 | Status of the 2026 data-residency amendment after the Act | Not confirmed in available sources | Legal counsel | Same legal review | Sect. 8.12; Table 43 |
+| U4 | Public GitHub release v1.1.0 and the Blueprint DOI | Not yet published at the time of writing | Author | Publish the release, then the DOI record (Annex D), before circulation | Table 1; Ch. 11; Annex D |
+| U5 | Government approval of the AI hub technical assistance project | Pending in June 2026; later status not found | Author, with the ICT Division | Check before Blueprint 1.1 | Sect. 3.6, 17.2; Table 42 |
+| U6 | Budget inputs: host salary scale, overhead rate, equipment quotations, duty and VAT status | No host selected; no quotations | Feasibility and costing study | Deliverable D1.3 by month 6 | Ch. 17; Tables 49, 50, 61, 62 |
+| U7 | In-kind access to national compute for Stage 1 | Draft policy only | ICT Division; National Data Center | Confirm by MS2; otherwise use the high-scenario allocation | Sect. 9.7, 10.3; Table 31 |
+| U8 | BanglaPolicyQA does not exist; all quality targets are unmeasured | Work not yet funded | Work package 6 | Benchmark v0 at MS3; first results at G2 | Ch. 9, 12; Tables 28, 54, 63 |
+| U9 | No host institution, governance body or government focal point | Decisions not yet taken | ICT Division; host | Decisions D2 and D4; MS1 | Ch. 5; Annexes S, T |
+| U10 | No funding requested or approved | Proposal stage | ICT Division or partners | Decisions D2 and D5; before month 1 | Ch. 15, 17; Table 65 |
+| U11 | References 1 to 83 not re-verified item by item | Inherited from the White Paper | Author | Check before Blueprint 1.1 | References |
+| U12 | Gazette status of the Ninth National Pay Scale | Only Cabinet approval reported | Feasibility study | D1.3 | Sect. 17.5; Table 49 |
+| U13 | 2023 AI readiness rank taken from a secondary source | Index report not checked | Author | Check before Blueprint 1.1 | Sect. 2.2; Table 4 |
+| U14 | Full copy-edit of the Bangla edition by a native editor | Not yet done | Author | Before Blueprint 1.1 | Bangla edition |
+
+*Note.* Each item is marked in the text where it applies ("to be confirmed", "proposed" or "planning estimate"). The register is updated at every Blueprint version.

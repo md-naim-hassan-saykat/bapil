@@ -29,7 +29,7 @@ Every figure and table is published in three formats, in English and Bangla:
 | `tables/` | `blueprint_tabNN.tex` (standalone LaTeX), `.pdf` (vector), `.png` (220 dpi); `_bn` suffix for Bangla |
 | `tables/md/` | Markdown versions used inside the documents |
 
-Fifteen figures: document family, stakeholder map, governance model, reference architecture, request sequence, data lifecycle, retrieval pipeline, foundation-model path, deployment zones, risk-tier flow, lifecycle gates, 36-month roadmap, strategic roadmap 2026 to 2041 and beyond, theory of change and risk heat map. Sixty-seven tables, from the document family (Table 1) to risk monitoring (Table 67).
+Fifteen figures: document family, stakeholder map, governance model, reference architecture, request sequence, data lifecycle, retrieval pipeline, foundation-model path, deployment zones, risk-tier flow, lifecycle gates, 36-month roadmap, strategic roadmap 2026 to 2041 and beyond, theory of change and risk heat map. Sixty-nine tables, from the document family (Table 1) to the unresolved items register (Table 69).
 
 ## Sources
 

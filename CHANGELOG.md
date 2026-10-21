@@ -20,11 +20,11 @@ The format is inspired by [Keep a Changelog](https://keepachangelog.com/en/1.1.0
 
 ### Added
 
-- BAPIL Technical Blueprint, Version 1.0, in English and Bangla (`blueprint/`, PDFs in `releases/v1.1/`): five parts, 21 chapters and 21 annexes, including an indicative 36-month budget with scenarios, a strategic roadmap for 2026 to 2041 and beyond, and annexes on evidence status, evaluation protocol, governance status, preconditions and risk monitoring.
+- BAPIL Technical Blueprint, Version 1.0, in English and Bangla (`blueprint/`, PDFs in `releases/v1.1/`): five parts, 21 chapters and 22 annexes, including an indicative 36-month budget with scenarios, a strategic roadmap for 2026 to 2041 and beyond, and annexes on evidence status, evaluation protocol, governance status, preconditions, risk monitoring, revision history and unresolved items.
 - Blueprint Summary, Version 1.0, in English and Bangla.
 - One-page Decision Memo for ministries and relevant authorities, in English and Bangla.
 - Fifteen Blueprint figures as TikZ (LaTeX), PDF and PNG, each in English and Bangla.
-- Sixty-seven Blueprint tables as standalone LaTeX, PDF, PNG and Markdown, each in English and Bangla.
+- Sixty-nine Blueprint tables as standalone LaTeX, PDF, PNG and Markdown, each in English and Bangla.
 - Single-source build system for the Blueprint (`blueprint/build_blueprint.sh`, table and figure generators, Pandoc filter, XeLaTeX headers with automatic Bangla and Latin font switching, and Bangla numerals for page numbers, list numbers and citations in the Bangla editions).
 - Audit and Revision Report for the Blueprint (`blueprint/review/`): issue register, claim verification, budget reconciliation, quality scores and publication checklist.
 - Security policy (`SECURITY.md`).

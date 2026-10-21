@@ -14,4 +14,4 @@
 | Training and outreach officers | 0 | 1 | 2 |
 | **Total core staff** | **9** | **15** | **19** |
 
-*Note.* Excludes part-time ERRC members, advisers, visiting fellows and graduate students. Costs are to be set in the feasibility study (D1.3).
+*Note.* Excludes part-time ERRC members, advisers, visiting fellows and graduate students. Indicative costs are in Table 49; final costs are set by the feasibility study (D1.3).

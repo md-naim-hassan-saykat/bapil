@@ -46,7 +46,7 @@ The White Paper described six architectural layers, a Policy Intelligence Dashbo
 14. **A 36-month delivery plan** and a **strategic roadmap for 2026 to 2041 and beyond** (Chapters 15 and 16).
 15. **Financing, procurement, monitoring and evaluation, risk management and a research agenda** (Chapters 17 to 20).
 16. **Six decisions** for the authorities (Chapter 21).
-17. **Evidence and readiness annexes:** the status of every key claim, budget reconciliation and scenarios, the evaluation protocol, the status and limits of each governance body, the preconditions for starting, and risk monitoring (Annexes P to U).
+17. **Evidence and readiness annexes:** the status of every key claim, budget reconciliation and scenarios, the evaluation protocol, the status and limits of each governance body, the preconditions for starting, risk monitoring, and a revision history with an unresolved-items register (Annexes P to V).
 
 <!-- TABLE:03 -->
 

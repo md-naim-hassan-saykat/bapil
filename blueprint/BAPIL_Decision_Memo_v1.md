@@ -32,7 +32,7 @@ lang: en
 
 **Long-term path (Blueprint Chapter 16).** Pilots and governance proven with public data (2027 to 2028); tools adopted by agencies and aligned with the next national AI policy cycle (2029 to 2030); a national policy-intelligence network on shared standards (2031 to 2035); evidence services embedded in policy cycles by 2041, with charter renewal only if a 2041 review confirms public value. Targets are reviewed in 2027, 2028, 2029, 2030, 2035 and 2041.
 
-**Resources.** About 9 full-time staff in Year 1, rising to 19; two to three servers and one or two inference GPUs. Indicative budget: about Tk 20.4 crore over 36 months (Tk 4.7 crore in Year 1; scenarios Tk 17.9 to 25.3 crore), including escalation and contingency. A planning estimate, not approved funding; confirmed by the month-6 costing study.
+**Resources.** About 9 full-time staff in Year 1, rising to 19; two to three servers and two GPU inference servers (more in Year 2 for recovery). Indicative budget: about Tk 20.4 crore over 36 months (Tk 4.7 crore in Year 1; scenarios Tk 17.9 to 25.3 crore), including escalation and contingency. A planning estimate, not approved funding; confirmed by the month-6 costing study.
 
 **Links.** Blueprint: DOI to be assigned on publication (reserved on Zenodo) · White Paper: <https://doi.org/10.5281/zenodo.21363967> · Code: <https://github.com/md-naim-hassan-saykat/bapil>
 

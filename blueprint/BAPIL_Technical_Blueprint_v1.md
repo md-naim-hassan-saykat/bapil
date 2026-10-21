@@ -57,7 +57,8 @@ The source code of the reference implementation described in Chapter 11 is licen
 | **ORCID** | <https://orcid.org/0009-0007-5270-3970> |
 | **Language** | English (a Bangla edition is published alongside) |
 | **Document Type** | Technical Blueprint |
-| **Structure** | Five parts, 21 chapters, 21 annexes, 67 tables and 15 figures |
+| **Structure** | Five parts, 21 chapters, 22 annexes, 69 tables and 15 figures |
+| **Revision status** | Revised after an evidence audit in October 2026; changes and unresolved items in Annex V |
 | **License** | Creative Commons Attribution 4.0 International (CC BY 4.0) |
 | **Blueprint DOI** | DOI to be assigned on publication (reserved on Zenodo) |
 | **Builds on** | White Paper, Version 1.0: <https://doi.org/10.5281/zenodo.21363967> |
@@ -82,7 +83,7 @@ The Blueprint is organised in five parts. Readers with limited time can use the 
 * **Legal, governance and ethics specialists:** Chapters 8, 13 and 14 with Annexes B, E, F, H, I, J, S and T.
 * **Researchers and universities:** Chapters 9, 11 and 20 with Annex K.
 * **Development partners and finance reviewers:** Chapters 2, 16, 17 and 18 with Annexes Q and T.
-* **Reviewers checking the evidence:** Annex P, which states the status of every key claim.
+* **Reviewers checking the evidence:** Annex P, which states the status of every key claim, and Annex V, which lists all changes and unresolved items.
 
 The words **must**, **should** and **may** carry their usual normative meaning: a requirement marked *must* is a condition of the design, *should* is a strong recommendation, and *may* is optional.
 
@@ -100,6 +101,8 @@ This Blueprint is a proposal. To avoid confusing what exists with what is planne
 | Pilots P1 to P6 | Proposed |
 | Budget | Planning estimate computed from stated assumptions; not a quotation and not approved funding |
 | Long-term targets (2028 to 2041) | Proposed targets, revised at each strategic review |
+
+Items that remain unresolved, with their owners and how they will be resolved, are listed in Annex V (Table 69).
 
 \newpage
 
@@ -247,7 +250,7 @@ The White Paper described six architectural layers, a Policy Intelligence Dashbo
 14. **A 36-month delivery plan** and a **strategic roadmap for 2026 to 2041 and beyond** (Chapters 15 and 16).
 15. **Financing, procurement, monitoring and evaluation, risk management and a research agenda** (Chapters 17 to 20).
 16. **Six decisions** for the authorities (Chapter 21).
-17. **Evidence and readiness annexes:** the status of every key claim, budget reconciliation and scenarios, the evaluation protocol, the status and limits of each governance body, the preconditions for starting, and risk monitoring (Annexes P to U).
+17. **Evidence and readiness annexes:** the status of every key claim, budget reconciliation and scenarios, the evaluation protocol, the status and limits of each governance body, the preconditions for starting, risk monitoring, and a revision history with an unresolved-items register (Annexes P to V).
 
 **Table 3.** From White Paper chapters to Blueprint chapters
 
@@ -707,7 +710,7 @@ Talent is both BAPIL's most important resource and one of its main risks (R7 in 
 | Training and outreach officers | 0 | 1 | 2 |
 | **Total core staff** | **9** | **15** | **19** |
 
-*Note.* Excludes part-time ERRC members, advisers, visiting fellows and graduate students. Costs are to be set in the feasibility study (D1.3).
+*Note.* Excludes part-time ERRC members, advisers, visiting fellows and graduate students. Indicative costs are in Table 49; final costs are set by the feasibility study (D1.3).
 
 The team grows from about nine to nineteen full-time equivalents over three years. Bangla language expertise is embedded in the machine learning team and complemented by part-time language editors. Graduate fellows from partner universities work on benchmark creation, evaluation and research papers, which also builds national talent. Diaspora researchers can contribute remotely through visiting fellowships.
 
@@ -751,7 +754,7 @@ The competency framework sets out what different groups need to know at three le
 | **T5** Bangla NLP and MLOps | Engineers in agencies and universities | Bangla text processing; retrieval; evaluation; model cards; secure deployment | 10 days | Blended | 30 |
 | **T6** BAPIL fellowships | Graduate fellows | Research placement on a pilot or benchmark with mentoring | 6 to 12 months | Placement | 10 |
 
-*Note.* All course materials are published in Bangla and English under CC BY 4.0. Year 1 targets add up to the KPI of 100 trained officials plus specialist and fellowship cohorts.
+*Note.* All course materials are published in Bangla and English under CC BY 4.0. The KPI of 100 trained officials in Year 1 counts T2 participants; T1 briefings and the specialist cohorts T3 to T5 are counted separately and funded from the specialist-course line of the budget (Table 49).
 
 The curriculum follows three design rules. First, **training uses the real tools and real documents**, so that officials practise on the policy questions they face. Second, **every programme teaches limitations**: participants learn how and why AI systems fail, how to recognise abstention and uncertainty, and when not to rely on an output. Third, **materials are open**: slides, exercises and recorded sessions are published in Bangla and English under CC BY 4.0 so that other institutions can reuse them.
 
@@ -951,6 +954,8 @@ Data quality is measured, not assumed. Each dimension below has a metric and a t
 | Uniqueness | Share of duplicate documents detected and merged | Duplicates under 1% |
 | Language parity | Share of documents with both Bangla and English titles where both exist | At least 95% |
 
+*Note.* Pilot targets. The OCR character error rate is measured on a stratified sample of at least 50 pages per corpus release, checked by two people.
+
 ## 8.7 Bangla Text Quality
 
 Much official Bangla text is published as scanned PDF. OCR errors, inconsistent Unicode encodings (for example, the letter য় written as one code point or as two) and mixed Bangla and ASCII digits all damage search quality. The ingestion component therefore (a) prefers born-digital sources, (b) applies Unicode normalisation and digit folding, (c) records an OCR quality score for every page, and (d) routes low-quality pages to a human correction queue. These corrections become a public dataset in their own right, useful to the wider Bangla NLP community [46, 48]. The detailed rules are set out in Chapter 9 (Table 27).
@@ -1148,16 +1153,16 @@ The deployment is divided into five zones. The **public zone** exposes only the 
 
 | Resource | Pilot (2027 to 2028) | Scale (2029 to 2030) | National network (2031 onwards) |
 |------------------|-----------------------|-----------------------|-----------------------|
-| Environments | Development, test, production | Plus staging and a disaster-recovery site | Federated deployments in partner agencies |
+| Environments | Development, test and production; staging and a recovery site added in Year 2 | Production capacity expanded across sites | Federated deployments in partner agencies |
 | Application servers | 2 to 3 general-purpose servers | 6 to 8 servers or equivalent virtual capacity | Shared government cloud capacity |
-| Inference GPUs | 1 to 2 data-centre GPUs | 4 to 8 GPUs | Allocation from national AI compute |
-| Adaptation compute | None (Stage 0) | Time-limited national allocation (Stage 1) | Scheduled national allocation (Stage 2 if justified) |
+| Inference GPUs | 2 GPU inference servers (1 to 2 GPUs each); 2 more in Year 2 for staging and recovery | 4 to 8 GPUs in production | Allocation from national AI compute |
+| Adaptation compute | None in Stage 0; time-limited national allocation from month 13 if Stage 1 is approved | Time-limited national allocation (Stage 1) | Scheduled national allocation (Stage 2 if justified) |
 | Storage | 10 to 20 TB including backups | About 100 TB | Several hundred TB across collections |
 | Users | Up to about 50 pilot users | Several hundred users | Thousands of users across ministries |
 
-*Note.* Planning assumptions for the feasibility study (Deliverable D1.3), not procurement specifications.
+*Note.* Planning assumptions for the feasibility study (Deliverable D1.3), not procurement specifications. The pilot column matches the equipment in the budget (Table 49).
 
-For the pilots, a modest footprint is sufficient: two to three general-purpose servers for the application and data zones, and one or two inference GPUs able to serve a quantised open model of roughly 7 to 14 billion parameters, plus around 10 to 20 TB of storage including backups. Stage 1 adaptation of the BPFM requires time-limited access to a larger GPU pool, which should come from shared national compute. These figures are planning assumptions for the feasibility study.
+For the pilots, a modest footprint is sufficient: two to three general-purpose servers for the application and data zones, and two GPU inference servers (one or two GPUs each) able to serve a quantised open model of roughly 7 to 14 billion parameters, plus around 10 to 20 TB of storage including backups. In Year 2 a second pair of GPU servers and two more general-purpose servers add staging and a recovery site, as costed in Table 49. Stage 1 adaptation of the BPFM requires time-limited access to a larger GPU pool, which should come from shared national compute. These figures are planning assumptions for the feasibility study.
 
 ## 10.4 Security Framework
 
@@ -1297,7 +1302,7 @@ python -m unittest discover -s tests
 
 ## 11.5 Demonstration Results
 
-Running `python -m bapil.cli evaluate benchmarks/demo_questions.json` over a corpus of 1724 passages from 10 BAPIL documents gives the following results (corpus version `a51f4fba517b`):
+Running `python -m bapil.cli evaluate benchmarks/demo_questions.json` over a corpus of 1740 passages from 10 BAPIL documents gives the following results (corpus version `fc593e783920`):
 
 | Question set | Questions | Recall@5 | Recall@10 | MRR@10 | nDCG@10 |
 |---|---|---|---|---|---|
@@ -1648,7 +1653,7 @@ The plan is organised in ten work packages, which correspond to the rows of Figu
 
 | Milestone | Month | Achievement | Key deliverables | Gate |
 |---------|--------|----------------------------------------|----------------------|--------|
-| MS1 | 3 | Host institution and government MoU signed; Steering Board, ERRC and TAB constituted; charter adopted | D1.1 Charter; D1.2 Risk and ethics procedures | G0 |
+| MS1 | 3 | Director appointed; Steering Board, ERRC and TAB constituted; charter adopted (the MoU and host agreement are in place from month 1) | D1.1 Charter; D1.2 Risk and ethics procedures | G0 |
 | MS2 | 6 | Feasibility and costing study complete; P0 data access confirmed; benchmark protocol agreed | D1.3 Feasibility study; D1.4 Data access plan | G1 |
 | MS3 | 9 | P1 Policy Search alpha in internal use; BanglaPolicyQA v0 (500 questions) | D2.1 P1 alpha; D2.2 Benchmark v0 | G2 |
 | MS4 | 12 | P1 pilot with 30 or more users in two to three agencies; P2 dashboard v1 public; Year 1 report | D2.3 Pilot report; D2.4 Open budget dataset | G3 |
@@ -1658,11 +1663,11 @@ The plan is organised in ten work packages, which correspond to the rows of Figu
 | MS8 | 30 | BPFM Stage 1 model with model card if approved; benchmark v1 (2,000 questions) | D4.1 Model and model card; D4.2 Benchmark v1 | G2 |
 | MS9 | 36 | Final evaluation; sustainability plan; Blueprint version 2.0 | D4.3 Final evaluation; D4.4 Blueprint 2.0 | Review |
 
-*Note.* Month 1 is the month the Phase 1 MoU takes effect; an indicative calendar start is January 2027.
+*Note.* Month 1 is the first month in which the MoU, the host agreement and Year 1 funding are all in place (Annex T); January 2027 is the earliest plausible calendar start.
 
 ## 15.4 The First 90, 180 and 365 Days
 
-**Days 1 to 90.** Sign the MoU; appoint the Director; constitute the Steering Board, ERRC and TAB; adopt the charter; open the AI system register; publish the transparency register (initially listing P1, P2 and P4 at G0); start the legal review; begin ingestion of laws and budget documents.
+**Days 1 to 90.** With the MoU, host agreement and Year 1 funding in place (Annex T): appoint the Director; constitute the Steering Board, ERRC and TAB; adopt the charter; open the AI system register; publish the transparency register (initially listing P1, P2 and P4 at G0); start the legal review; begin ingestion of laws and budget documents.
 
 **Days 91 to 180.** Complete the feasibility and costing study; sign data-access arrangements with the first custodians; agree the BanglaPolicyQA protocol and recruit annotators; complete G1 design reviews for P1 and P2; run the first training session for pilot users.
 
@@ -1833,6 +1838,8 @@ In every scenario, the core of BAPIL is protected: the governed corpus, policy s
 | 2041 | Vision review | Has BAPIL delivered public value aligned with the 2041 plans? | Renew charter, merge into government or close with archives preserved |
 | Any time | Event triggers | New law or rules; serious incident; major technology shift; loss of funding | Extraordinary Steering Board review within 30 days |
 
+*Note.* Calendar dates assume that month 1 is January 2027; if the plan starts later, the first three reviews move with it (Annex T).
+
 Each review produces a short published report that compares results with targets, records the scenario that best describes conditions at the time, and sets or revises the targets for the next horizon. Event triggers ensure that the strategy also responds to the unexpected.
 
 ## 16.15 What Could Make the Strategy Fail
@@ -1996,7 +2003,7 @@ The logical framework sets out the results chain with indicators, means of verif
 | Output | Open releases archived with a DOI (including this Blueprint) | 3 | 5 | 10 |
 | Output | Officials trained in responsible AI and the tools | 0 | 100 | 500 |
 | Outcome | Monthly active pilot users | 0 | 30 | 300 |
-| Outcome | Median time saved on evidence search, user-reported | Baseline study | 30% | 50% |
+| Outcome | Median time saved on evidence search, measured in time-to-evidence studies (Annex R) | Baseline study | 30% | 50% |
 | Outcome | Agencies with signed data or collaboration agreements | 0 | 3 | 10 |
 | Quality | Recall@10 on Bangla and English questions | Not yet measured | 0.85 | 0.90 |
 | Governance | Pilots listed in the transparency register with model cards | Not applicable | 100% | 100% |
@@ -2278,7 +2285,7 @@ System and version; benchmark version and split; metrics by language and documen
 
 # Annex E: Draft BAPIL Charter
 
-This draft is offered for adoption by the Steering Board at Milestone MS1, after consultation (Table 8) and legal review (Section 14.3).
+This draft is offered for adoption by the Steering Board at Milestone MS1, after consultation (Table 8). It is confirmed or amended after the independent legal review (Section 14.3), which is completed before Milestone MS2.
 
 **Article 1. Name and status.** The Bangladesh AI Policy & Innovation Lab (BAPIL) is a research, policy-intelligence and capacity-building initiative hosted by [host institution] under a Memorandum of Understanding with the ICT Division.
 
@@ -2837,6 +2844,57 @@ Table 55 lists the eighteen registered risks with their mitigations and owners. 
 | R18 | Flood or cyclone warnings; frequent power outages | Switch to the recovery site; offline operation | M/M | Before each monsoon and after drills |
 
 *Note.* Residual ratings are likelihood and impact after the mitigations in Table 55: L = low, M = medium, H = high. Owners are those named in Table 55.
+
+\newpage
+
+# Annex V: Revision History and Unresolved Items
+
+This annex records how the Blueprint changed after the October 2026 audit and lists every item that could not be resolved with the evidence available. Nothing of substance was deleted: statements that the evidence did not support were replaced with qualified wording, and the original claims are recorded in Annex P and in the Audit and Revision Report.
+
+**Table 68.** Revision history: changes made after the October 2026 audit
+
+| Where | Change | Reason | Evidence or calculation |
+|----------------|------------------------------------|--------------------------|------------------|
+| Front matter | Status table; disclaimer and Overview revised; budget added to the Overview; counts updated | Separate what exists from what is proposed | Repository check, 22 October 2026; Annex P |
+| Ch. 1 | Legal timing qualified; method step 6 (audit); implementation described as a research prototype | Avoid overstating legal and software status | [84, 85, 86, 113] |
+| Ch. 2; Table 4 | Primary sources for EGDI and GCI; corrected citation for the 2023 AI readiness rank; legal summary rewritten | Accuracy and source quality | [80, 119, 120] |
+| Ch. 3 | AI Hub described as a proposal with a signed grant agreement, not a project under implementation | Source shows a proposal awaiting approval | [35, 117] |
+| Ch. 5; Annexes E to G | Legal status of bodies; independent selection of ERRC members; removal for cause; precedence of law (Article 13); charter confirmed after legal review | Independence and legal accuracy | Annex S |
+| Ch. 8, 10 | Chief data officers, NRDEX and the source-code repository attributed to the instruments that describe them; residency amendment; stricter-reading rule; GPU capacity matched to the budget | Correct attribution; internal consistency | [84, 113, 115]; Table 49 |
+| Ch. 9; Tables 28, 30 | Benchmark composition, splits and statistical rationale; decision rule; refined metric definitions; five-step model ladder with feasibility estimates | Make targets measurable; avoid assuming a new model is needed | Wilson intervals; [121] |
+| Ch. 11; SECURITY.md | Maturity terms defined; CI described as configured; security and dependency practice | Distinguish prototype from production | Repository |
+| Ch. 12, 13 | P1 exit tied to the protocol; complaints and appeals; labelling presented as BAPIL's rule | Measurability; accountability; correct attribution | [89]; Annex R |
+| Ch. 14; Tables 41 to 43 | Chronology of ordinances and Acts; enactment separated from commencement; legal review scope; new Section 14.7 | Legal statements rest on secondary sources | [84 to 89, 106, 113 to 116] |
+| Ch. 15; Tables 44, 48 | Month 1 defined by MoU, host agreement and funding; MS1 and first 90 days aligned; calendar caveat | Implementation realism | Annex T |
+| Ch. 17; Tables 49, 50 | Budget revised from Tk 18.49 to 20.43 crore: escalation, recruitment ramp, separate contingency, evaluation items; scenarios and sensitivity; rounding explained | Financial transparency | budget_model.py; [118]; Table 61 |
+| Ch. 18, 19; Tables 16, 18, 25, 54 | KPIs labelled as targets; time saved measured, not self-reported; training counts reconciled with the budget; OCR sampling; link to risk monitoring | Consistency between plan, budget and measurement | Annex R; Table 49 |
+| Ch. 21; Table 57 | Conclusion reworded; Decision D4 revised; note that no decision creates a statutory body | Overclaim; independence | Annex S |
+| Annexes P to V | Evidence status; budget reconciliation and scenarios; evaluation protocol; governance status; preconditions and work packages; risk monitoring; this revision history and unresolved items | Review mandate | As listed in each annex |
+| References | References 113 to 121 added | New evidence | As listed |
+| Bangla edition | All revisions translated; Bangla numerals for lists, citations, page numbers and chart labels | Bilingual consistency; editorial quality | Automated comparison of numbers by section |
+
+*Note.* The full issue register, claim verification matrix and scores are in the separate Audit and Revision Report in the repository (blueprint/review/).
+
+**Table 69.** Unresolved items register
+
+| ID | Unresolved item | Why it is unresolved | Owner | How and when it is resolved | Affects |
+|------|--------------------------|----------------------|----------------|--------------------|----------------|
+| U1 | Commencement dates and provisions in force of the PDPA 2026, NDMA 2026 and Cyber Security Act 2026, and any rules issued | Gazetted texts not reviewed; official database blocks automated retrieval | Host institution with legal counsel | Independent legal review before MS2 (Section 14.3) | Ch. 2, 8, 14; Tables 42, 43 |
+| U2 | Whether NRDEX, the national source-code repository and chief data officers are retained in the Acts | Described only for the 2025 ordinances | Legal counsel | Same legal review | Sect. 8.8, 8.11, 10.8 |
+| U3 | Status of the 2026 data-residency amendment after the Act | Not confirmed in available sources | Legal counsel | Same legal review | Sect. 8.12; Table 43 |
+| U4 | Public GitHub release v1.1.0 and the Blueprint DOI | Not yet published at the time of writing | Author | Publish the release, then the DOI record (Annex D), before circulation | Table 1; Ch. 11; Annex D |
+| U5 | Government approval of the AI hub technical assistance project | Pending in June 2026; later status not found | Author, with the ICT Division | Check before Blueprint 1.1 | Sect. 3.6, 17.2; Table 42 |
+| U6 | Budget inputs: host salary scale, overhead rate, equipment quotations, duty and VAT status | No host selected; no quotations | Feasibility and costing study | Deliverable D1.3 by month 6 | Ch. 17; Tables 49, 50, 61, 62 |
+| U7 | In-kind access to national compute for Stage 1 | Draft policy only | ICT Division; National Data Center | Confirm by MS2; otherwise use the high-scenario allocation | Sect. 9.7, 10.3; Table 31 |
+| U8 | BanglaPolicyQA does not exist; all quality targets are unmeasured | Work not yet funded | Work package 6 | Benchmark v0 at MS3; first results at G2 | Ch. 9, 12; Tables 28, 54, 63 |
+| U9 | No host institution, governance body or government focal point | Decisions not yet taken | ICT Division; host | Decisions D2 and D4; MS1 | Ch. 5; Annexes S, T |
+| U10 | No funding requested or approved | Proposal stage | ICT Division or partners | Decisions D2 and D5; before month 1 | Ch. 15, 17; Table 65 |
+| U11 | References 1 to 83 not re-verified item by item | Inherited from the White Paper | Author | Check before Blueprint 1.1 | References |
+| U12 | Gazette status of the Ninth National Pay Scale | Only Cabinet approval reported | Feasibility study | D1.3 | Sect. 17.5; Table 49 |
+| U13 | 2023 AI readiness rank taken from a secondary source | Index report not checked | Author | Check before Blueprint 1.1 | Sect. 2.2; Table 4 |
+| U14 | Full copy-edit of the Bangla edition by a native editor | Not yet done | Author | Before Blueprint 1.1 | Bangla edition |
+
+*Note.* Each item is marked in the text where it applies ("to be confirmed", "proposed" or "planning estimate"). The register is updated at every Blueprint version.
 
 \newpage
 

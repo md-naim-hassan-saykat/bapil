@@ -1,0 +1,23 @@
+**Table 68.** Revision history: changes made after the October 2026 audit
+
+| Where | Change | Reason | Evidence or calculation |
+|----------------|------------------------------------|--------------------------|------------------|
+| Front matter | Status table; disclaimer and Overview revised; budget added to the Overview; counts updated | Separate what exists from what is proposed | Repository check, 22 October 2026; Annex P |
+| Ch. 1 | Legal timing qualified; method step 6 (audit); implementation described as a research prototype | Avoid overstating legal and software status | [84, 85, 86, 113] |
+| Ch. 2; Table 4 | Primary sources for EGDI and GCI; corrected citation for the 2023 AI readiness rank; legal summary rewritten | Accuracy and source quality | [80, 119, 120] |
+| Ch. 3 | AI Hub described as a proposal with a signed grant agreement, not a project under implementation | Source shows a proposal awaiting approval | [35, 117] |
+| Ch. 5; Annexes E to G | Legal status of bodies; independent selection of ERRC members; removal for cause; precedence of law (Article 13); charter confirmed after legal review | Independence and legal accuracy | Annex S |
+| Ch. 8, 10 | Chief data officers, NRDEX and the source-code repository attributed to the instruments that describe them; residency amendment; stricter-reading rule; GPU capacity matched to the budget | Correct attribution; internal consistency | [84, 113, 115]; Table 49 |
+| Ch. 9; Tables 28, 30 | Benchmark composition, splits and statistical rationale; decision rule; refined metric definitions; five-step model ladder with feasibility estimates | Make targets measurable; avoid assuming a new model is needed | Wilson intervals; [121] |
+| Ch. 11; SECURITY.md | Maturity terms defined; CI described as configured; security and dependency practice | Distinguish prototype from production | Repository |
+| Ch. 12, 13 | P1 exit tied to the protocol; complaints and appeals; labelling presented as BAPIL's rule | Measurability; accountability; correct attribution | [89]; Annex R |
+| Ch. 14; Tables 41 to 43 | Chronology of ordinances and Acts; enactment separated from commencement; legal review scope; new Section 14.7 | Legal statements rest on secondary sources | [84 to 89, 106, 113 to 116] |
+| Ch. 15; Tables 44, 48 | Month 1 defined by MoU, host agreement and funding; MS1 and first 90 days aligned; calendar caveat | Implementation realism | Annex T |
+| Ch. 17; Tables 49, 50 | Budget revised from Tk 18.49 to 20.43 crore: escalation, recruitment ramp, separate contingency, evaluation items; scenarios and sensitivity; rounding explained | Financial transparency | budget_model.py; [118]; Table 61 |
+| Ch. 18, 19; Tables 16, 18, 25, 54 | KPIs labelled as targets; time saved measured, not self-reported; training counts reconciled with the budget; OCR sampling; link to risk monitoring | Consistency between plan, budget and measurement | Annex R; Table 49 |
+| Ch. 21; Table 57 | Conclusion reworded; Decision D4 revised; note that no decision creates a statutory body | Overclaim; independence | Annex S |
+| Annexes P to V | Evidence status; budget reconciliation and scenarios; evaluation protocol; governance status; preconditions and work packages; risk monitoring; this revision history and unresolved items | Review mandate | As listed in each annex |
+| References | References 113 to 121 added | New evidence | As listed |
+| Bangla edition | All revisions translated; Bangla numerals for lists, citations, page numbers and chart labels | Bilingual consistency; editorial quality | Automated comparison of numbers by section |
+
+*Note.* The full issue register, claim verification matrix and scores are in the separate Audit and Revision Report in the repository (blueprint/review/).
