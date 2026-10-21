@@ -462,7 +462,7 @@ FIGS["09"] = {
 }
 \foreach \q in {0,...,11} {
   \pgfmathtruncatemacro{\qq}{mod(\q,4)+1}
-  \node[font=\scriptsize] at (\L+\q*3*\x+1.5*\x,-2.5mm) {Q\qq};
+  \node[font=\scriptsize] at (\L+\q*3*\x+1.5*\x,-2.5mm) {«qlab»};
 }
 \foreach \m in {0,3,...,36} \draw[band2, line width=0.4pt] (\L+\m*\x,-5mm) -- (\L+\m*\x,-5mm-10*\h-2mm);
 % rows: label, start month (0-based), end month, style
@@ -490,12 +490,14 @@ FIGS["09"] = {
            "w1": "Institution, charter, governance", "w2": "Data access and corpus", "w3": "P1 Policy Search",
            "w4": "P2 Budget dashboard", "w5": "P3 Feedback analyser", "w6": "P4 Bangla foundation model",
            "w7": "P5 Readiness observatory", "w8": "P6 Information integrity", "w9": "Training and capacity",
-           "w10": "Independent evaluation", "ms": "Milestones"},
+           "w10": "Independent evaluation", "ms": "Milestones", "qlab": "Q\\qq"},
     "bn": {"y1": "বছর ১ (২০২৭)", "y2": "বছর ২ (২০২৮)", "y3": "বছর ৩ (২০২৯)",
            "w1": "প্রতিষ্ঠান, সনদ, শাসন", "w2": "ডেটা প্রবেশাধিকার ও কর্পাস", "w3": "P1 নীতি অনুসন্ধান",
            "w4": "P2 বাজেট ড্যাশবোর্ড", "w5": "P3 মতামত বিশ্লেষক", "w6": "P4 বাংলা ফাউন্ডেশন মডেল",
            "w7": "P5 প্রস্তুতি পর্যবেক্ষণকেন্দ্র", "w8": "P6 তথ্য-অখণ্ডতা", "w9": "প্রশিক্ষণ ও সক্ষমতা",
-           "w10": "স্বাধীন মূল্যায়ন", "ms": "মাইলফলক"},
+           "w10": "স্বাধীন মূল্যায়ন", "ms": "মাইলফলক",
+           # quarter ticks as Bangla ordinals (1st to 4th quarter)
+           "qlab": "\\ifcase\\qq\\or ১ম\\or ২য়\\or ৩য়\\or ৪র্থ\\fi"},
 }
 
 

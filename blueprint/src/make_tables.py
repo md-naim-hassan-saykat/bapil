@@ -26,6 +26,7 @@ from tables_b import TABLES_B  # noqa: E402
 from tables_c import TABLES_C  # noqa: E402
 from tables_d import TABLES_D  # noqa: E402
 from tables_e import TABLES_E, RISK_EXTRA  # noqa: E402
+from tables_f import TABLES_F  # noqa: E402
 
 # The first edition numbered its tables 01 to 22. The expanded edition keeps those
 # definitions in tables_a.py and tables_b.py and renumbers them here.
@@ -46,7 +47,7 @@ def _all_tables():
             for lang in ("en", "bn"):
                 t["rows"][lang] = t["rows"][lang] + RISK_EXTRA[lang]
         out.append(t)
-    out += TABLES_C + TABLES_D + TABLES_E
+    out += TABLES_C + TABLES_D + TABLES_E + TABLES_F
     ids = [t["id"] for t in out]
     dup = {i for i in ids if ids.count(i) > 1}
     if dup:

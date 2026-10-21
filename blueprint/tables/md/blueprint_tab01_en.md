@@ -7,4 +7,4 @@
 | **Technical Blueprint** (this document) | 1.0 | Buildable design: institution, architecture, data, governance, delivery plan | Ministries, agencies, technical teams, partners | DOI reserved on Zenodo at publication |
 | **Blueprint Summary** | 1.0 | Short summary of the Blueprint | Decision-makers | Same record as the Blueprint |
 | **Decision Memo** | 1.0 | One page: decisions requested from authorities | Ministers, secretaries, agency heads | Same record as the Blueprint |
-| **Reference implementation** | 0.1.0 (repository release v1.1.0) | Runnable, tested prototype of core Blueprint components | Engineers, researchers, auditors | GitHub repository; archived with the record |
+| **Reference implementation** | 0.1.0 (repository release v1.1.0, issued with this Blueprint) | Research prototype of core Blueprint components with unit tests; not a production system | Engineers, researchers, auditors | GitHub repository; archived with the record |

@@ -179,3 +179,58 @@ Better Criteria for Better Evaluation: Revised Evaluation Criteria Definitions a
 Paris: Organisation for Economic Co-operation and Development, 2019[2026-10-21].
 Available:
 <https://www.oecd.org/en/publications/better-criteria-for-better-evaluation_15a9c26b-en.html>
+
+[113] GREENLEAF G, AL RAZI Y.
+Bangladesh's unconventional data privacy Ordinance[J/OL].
+Privacy Laws & Business International Report, 2026-06-01[2026-10-22].
+Available:
+<https://www.privacylaws.com/reports-gateway/articles/int201/int201bangladesh/>
+
+[114] KHAN M T I.
+The Personal Data Protection Ordinance 2025: What Every Bangladeshi Business Must Do Before the Clock Runs Out[EB/OL].
+Dhaka: Sovereign Chambers of Law, 2026-04-23[2026-10-22].
+Available:
+<https://bd-scl.com/insights/personal-data-protection-ordinance-2025-compliance.html>
+
+[115] DIGITAL POLICY ALERT.
+Bangladesh: Personal Data Protection (Amendment) Ordinance, 2026 (Ordinance No. 23 of 2026)[EB/OL].
+St. Gallen: Digital Policy Alert, 2026[2026-10-22].
+Available:
+<https://digitalpolicyalert.org/change/18757-personal-data-protection-amendment-ordinance-2026-ordinance-no-23-of-2026>
+
+[116] AZAM A H M S.
+Bangladesh Data Protection and Data Management Framework: A Governance-Capacity Assessment of the 2025 Ordinances and 2026 Acts[EB/OL].
+SSRN, 2026-09-14[2026-10-22].
+Available:
+<https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7436740>
+
+[117] THE DAILY OBSERVER.
+BD, KOICA sign $13m grant deal for AI tech experts[EB/OL].
+Dhaka: The Daily Observer, 2026-08-26[2026-10-22].
+Available:
+<https://observerbd.com/news/590061>
+
+[118] DHAKA TRIBUNE.
+Inflation rises in September[EB/OL].
+Dhaka: Dhaka Tribune, 2026-10-07[2026-10-22].
+Available:
+<https://www.dhakatribune.com/business/421534/inflation-rises-in-september>
+
+[119] BANGLADESH e-GOVERNMENT COMPUTER INCIDENT RESPONSE TEAM (BGD e-GOV CIRT).
+Who We Are[EB/OL].
+Dhaka: BGD e-GOV CIRT, 2026[2026-10-22].
+Available:
+<https://cirt.gov.bd/who-we-are>
+
+[120] UNITED NATIONS DEPARTMENT OF ECONOMIC AND SOCIAL AFFAIRS (UN DESA).
+UN E-Government Knowledgebase: Bangladesh country data[DB/OL].
+New York: United Nations, 2024[2026-10-22].
+Available:
+<https://publicadministration.un.org/egovkb/en-us/Data/Country-Information/id/14-Bangladesh>
+
+[121] KAPLAN J, MCCANDLISH S, HENIGHAN T, BROWN T B, CHESS B, CHILD R, GRAY S, RADFORD A, WU J, AMODEI D.
+Scaling Laws for Neural Language Models[EB/OL].
+Ithaca, NY: arXiv, 2020[2026-10-22].
+DOI: 10.48550/arXiv.2001.08361.
+Available:
+<https://arxiv.org/abs/2001.08361>

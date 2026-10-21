@@ -1,0 +1,35 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\setmainfont{Latin Modern Roman}
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali]
+\usepackage[Latin,Bengali]{ucharclasses}
+\setTransitionsFor{Bengali}{\begingroup\bengalifont}{\endgroup}
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{17cm}
+{\large\bfseries Table 62.}\ {\large Budget by cost type, with low, base and high scenarios (Tk crore)}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=2.530\hsize\raggedright\arraybackslash}X>{\hsize=0.602\hsize\raggedright\arraybackslash}X>{\hsize=0.602\hsize\raggedright\arraybackslash}X>{\hsize=0.602\hsize\raggedright\arraybackslash}X>{\hsize=0.663\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{Item} & \textbf{Year 1} & \textbf{Year 2} & \textbf{Year 3} & \textbf{Total} \\
+\midrule
+One-time direct costs (equipment, benchmark creation, studies and evaluations) & 1.42 & 1.46 & 0.79 & 3.67 \\
+Recurring direct costs (staff, editors, fellows, hosting, OCR, training, assurance) & 2.69 & 5.05 & 6.35 & 14.10 \\
+Host overheads and contingency & 0.62 & 0.98 & 1.07 & 2.66 \\
+\textbf{Base case total} & \textbf{4.73} & \textbf{7.49} & \textbf{8.21} & \textbf{20.43} \\
+Low scenario total & 4.20 & 6.58 & 7.16 & 17.93 \\
+High scenario total & 5.76 & 9.46 & 10.03 & 25.25 \\
+\bottomrule
+\end{tabularx}
+\par\vspace{5pt}{\footnotesize\itshape Low scenario: staff costs 15\% lower, escalation 6\%, equipment 20\% cheaper, Tk 120 per US dollar. High scenario: staff costs 20\% higher, escalation 10\%, equipment 25\% dearer (for example import duty and VAT), Tk 135 per US dollar, contingency 10\% and USD 20,000 of cloud compute for Stage 1 adaptation. Figures are rounded independently.}
+\par\vspace{3pt}{\scriptsize\color{gray} Source: BAPIL Technical Blueprint, Version 1.0 (2026). CC BY 4.0.}
+\end{minipage}
+\end{document}

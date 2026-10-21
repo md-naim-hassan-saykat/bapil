@@ -21,4 +21,4 @@
 | R17 | Technology obsolescence over the long horizon | M | M | Modular design and ADRs; model re-selection at reviews; investment in data and evaluation rather than one model | TAB |
 | R18 | Floods, cyclones, power or network outages affecting hosting | M | H | Disaster-recovery site; offline backups; recovery targets of Table 35; low-bandwidth design | Platform lead |
 
-*Note.* L = low, M = medium, H = high. The register is reviewed quarterly by the Steering Board.
+*Note.* L = low, M = medium, H = high. The register is reviewed quarterly by the Steering Board. Early-warning indicators, contingencies, residual ratings and review frequencies are given in Annex U (Table 67).

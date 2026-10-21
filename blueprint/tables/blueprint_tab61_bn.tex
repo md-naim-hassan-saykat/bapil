@@ -1,0 +1,38 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\setmainfont{Noto Serif}
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali]
+\usepackage[Latin,Bengali]{ucharclasses}
+\setTransitionsFor{Bengali}{\begingroup\bengalifont}{\endgroup}
+\usepackage{newunicodechar}
+\newunicodechar{।}{{\bengalifont\char"0964}}
+\newunicodechar{॥}{{\bengalifont\char"0965}}
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{17cm}
+{\large\bfseries সারণি ৬১।}\ {\large এই পর্যালোচনার আগের খসড়ার সঙ্গে নির্দেশক বাজেটের মিলকরণ (কোটি টাকা, ৩৬ মাস)}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=1.974\hsize\raggedright\arraybackslash}X>{\hsize=0.513\hsize\raggedright\arraybackslash}X>{\hsize=0.513\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{ধাপ} & \textbf{৩৬ মাসের মোট} & \textbf{পরিবর্তন} \\
+\midrule
+পর্যালোচনার আগের খসড়া বাজেট (অক্টোবর ২০২৬) & ১৮.৪৯ & সূচনাবিন্দু \\
+দ্বিতীয় ও তৃতীয় বছরের অঙ্ক প্রথম বছরের মূল্যে পুনর্নির্ধারণ & ১৮.২৯ & -০.২০ \\
+টাকায় পরিশোধ্য ব্যয়ে সুস্পষ্ট মূল্যবৃদ্ধি (বছরে ৮\%) & ১৯.৭৯ & +১.৫০ \\
+প্রথম বছরের ধাপে ধাপে নিয়োগ (গড়ে ৭৫\% পদ পূরণ) & ১৯.২৯ & -০.৫০ \\
+মূল্যায়নের নতুন উপাদান (আওতাবহির্ভূত প্রশ্নসেট, উদ্ধৃতি-বিচার, ব্যবস্থাগুলোর বার্ষিক নিরীক্ষা) & ১৯.৫৪ & +০.২৫ \\
+\textbf{প্রত্যক্ষ ব্যয়ের ৫\% পৃথক আপৎকালীন সংস্থান = সংশোধিত মূল হিসাব} & \textbf{২০.৪৩} & +০.৮৯ \\
+\bottomrule
+\end{tabularx}
+\par\vspace{5pt}{\footnotesize\itshape প্রতিটি ধাপ blueprint/\allowbreak{}src/\allowbreak{}budget\_model.py (bridge ফাংশন) দ্বারা একবারে একটি অনুমান বদলে হিসাব করা হয়েছে। খসড়ার বার্ষিক মোট (৪.৯৬, ৬.৭১ ও ৬.৮৩) যোগ করলে ১৮.৫০ হতো কেবল প্রতিটি আলাদাভাবে আসন্নীকৃত হওয়ায়; আসন্নীকরণের আগে খসড়ার মোট ছিল ১৮.৪৮৬৮ কোটি টাকা।}
+\par\vspace{3pt}{\scriptsize\color{gray} উৎস: BAPIL কারিগরি ব্লুপ্রিন্ট, সংস্করণ ১.০ (২০২৬)। CC BY 4.0।}
+\end{minipage}
+\end{document}

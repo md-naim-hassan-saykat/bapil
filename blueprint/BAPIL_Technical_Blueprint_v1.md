@@ -57,7 +57,7 @@ The source code of the reference implementation described in Chapter 11 is licen
 | **ORCID** | <https://orcid.org/0009-0007-5270-3970> |
 | **Language** | English (a Bangla edition is published alongside) |
 | **Document Type** | Technical Blueprint |
-| **Structure** | Five parts, 21 chapters, 15 annexes, 59 tables and 15 figures |
+| **Structure** | Five parts, 21 chapters, 21 annexes, 67 tables and 15 figures |
 | **License** | Creative Commons Attribution 4.0 International (CC BY 4.0) |
 | **Blueprint DOI** | DOI to be assigned on publication (reserved on Zenodo) |
 | **Builds on** | White Paper, Version 1.0: <https://doi.org/10.5281/zenodo.21363967> |
@@ -70,7 +70,7 @@ Saykat, M. N. H. (2026). *Bangladesh AI Policy & Innovation Lab (BAPIL): Technic
 
 ## Disclaimer
 
-This Blueprint is an independent research and policy-design document prepared by the author in an individual capacity. It does not represent the official position of the Government of Bangladesh, any ministry, agency, university or other organisation. Institutions, laws and programmes are named only to describe the context in which BAPIL would operate; naming them does not imply endorsement, partnership or agreement. Legal descriptions are summaries for planning purposes and are not legal advice. Cost, staffing and long-term targets are indicative planning assumptions to be validated by a feasibility study and revised at each strategic review.
+This Blueprint is an independent research and policy-design document prepared by the author in an individual capacity. It does not represent the official position of the Government of Bangladesh, any ministry, agency, university or other organisation. Institutions, laws and programmes are named only to describe the context in which BAPIL would operate; naming them does not imply endorsement, partnership or agreement. Legal descriptions are summaries for planning purposes and are not legal advice. Cost, staffing and long-term targets are indicative planning assumptions to be validated by a feasibility study and revised at each strategic review. No funding has been requested, approved or committed, and none of the governance bodies described here has been constituted.
 
 ## How to Read This Blueprint
 
@@ -78,12 +78,28 @@ The Blueprint is organised in five parts. Readers with limited time can use the 
 
 * **Decision-makers:** the Overview at a Glance, Chapter 16 (strategic roadmap to 2041), Chapter 21 (decisions) and the one-page Decision Memo published with this Blueprint.
 * **Programme managers:** add Chapters 3, 5, 6, 12, 15, 17, 18 and 19.
-* **Technical teams:** Part III (Chapters 7 to 11) with Annexes A, C, K and M.
-* **Legal, governance and ethics specialists:** Chapters 8, 13 and 14 with Annexes B, E, F, H, I and J.
+* **Technical teams:** Part III (Chapters 7 to 11) with Annexes A, C, K, M and R.
+* **Legal, governance and ethics specialists:** Chapters 8, 13 and 14 with Annexes B, E, F, H, I, J, S and T.
 * **Researchers and universities:** Chapters 9, 11 and 20 with Annex K.
-* **Development partners:** Chapters 2, 16, 17 and 18.
+* **Development partners and finance reviewers:** Chapters 2, 16, 17 and 18 with Annexes Q and T.
+* **Reviewers checking the evidence:** Annex P, which states the status of every key claim.
 
 The words **must**, **should** and **may** carry their usual normative meaning: a requirement marked *must* is a condition of the design, *should* is a strong recommendation, and *may* is optional.
+
+## Status of This Blueprint and Its Artefacts
+
+This Blueprint is a proposal. To avoid confusing what exists with what is planned, the table states the status of each element at the time of writing. Claims in the text are classified in the same way in Annex P, using the labels defined there (verified fact, source-reported fact, research finding, author's analysis, design recommendation, planning assumption, proposed target, unverified claim and future milestone).
+
+| Element | Status at the time of writing (October 2026) |
+|---|---|
+| Institution, Steering Board, ERRC and TAB | Design recommendation. Nothing has been approved, constituted or funded |
+| Legal analysis | Summary based on press reports and secondary legal commentary. The gazetted texts and their commencement provisions have not been reviewed; confirmation by qualified Bangladesh counsel is required |
+| Reference implementation | Research prototype (version 0.1.0) with 49 passing unit tests, released in repository release v1.1.0 together with this Blueprint. Not a production system; not tested with users |
+| BanglaPolicyQA benchmark | Planned. Protocol and annotation guidelines exist; no questions have been written |
+| Evaluation thresholds | Proposed targets. No pilot results exist |
+| Pilots P1 to P6 | Proposed |
+| Budget | Planning estimate computed from stated assumptions; not a quotation and not approved funding |
+| Long-term targets (2028 to 2041) | Proposed targets, revised at each strategic review |
 
 \newpage
 
@@ -97,11 +113,13 @@ The words **must**, **should** and **may** carry their usual normative meaning: 
 
 **How risk is controlled.** Public data first; advice, not decisions; no surveillance. Every system is placed in a risk tier (T0 prohibited to T3 high) and must pass lifecycle gates (G0 to G5) before it moves forward. The Ethics and Risk Review Committee has a binding veto over tier T2 and T3 work.
 
-**What already exists.** A tested reference implementation of the core components (bilingual normalisation and search, cited answers with abstention, risk-tier assessment, the AI system register, evaluation and a tamper-evident audit log) is published on GitHub and archived with a DOI.
+**What already exists, and what does not.** A small, tested reference implementation of the core components (bilingual normalisation and search, cited answers with abstention, risk-tier assessment, the AI system register, evaluation and a tamper-evident audit log) is released with this Blueprint on GitHub and archived with it under a DOI. It is a research prototype, not a production system. The institution, the pilots, the benchmark and the funding do not yet exist; they are what this Blueprint proposes.
 
 **The long view.** A strategic roadmap sets five horizons: foundation (Q4 2026), short term (2027 to 2028), medium term (2029 to 2030), long term (2031 to 2035) and vision (2036 to 2041), followed by a charter renewal decision after 2041. It is aligned with the national AI policy cycle and with the 2041 national plans, and it is reviewed at fixed points and whenever major events occur.
 
-**What is asked of the authorities.** Six decisions (Chapter 21): accept the Blueprint as a technical input to national AI policy drafting; approve a 12-month Phase 1 pilot; authorise bulk access to already-public documents; nominate members of the Steering Board and the independent committee; commission a feasibility and costing study; and confirm the guardrails.
+**What it would cost.** An indicative budget, built from stated assumptions, is about Tk 20.4 crore over 36 months (Tk 17.9 to 25.3 crore across low and high scenarios). It is a planning estimate for a feasibility study to confirm, not approved funding (Chapter 17 and Annex Q).
+
+**What is asked of the authorities.** Six decisions (Chapter 21): accept the Blueprint as a technical input to national AI policy drafting; approve a 12-month Phase 1 pilot; authorise bulk access to already-public documents; nominate Steering Board members and agree an independent selection process for the ethics committee; commission a feasibility and costing study; and confirm the guardrails.
 
 \newpage
 
@@ -127,6 +145,7 @@ The words **must**, **should** and **may** carry their usual normative meaning: 
 | ERRC | Ethics and Risk Review Committee |
 | FTE | Full-Time Equivalent |
 | GPU | Graphics Processing Unit |
+| KOICA | Korea International Cooperation Agency |
 | KPI | Key Performance Indicator |
 | LLM | Large Language Model |
 | LoRA | Low-Rank Adaptation |
@@ -148,6 +167,7 @@ The words **must**, **should** and **may** carry their usual normative meaning: 
 | SSO | Single Sign-On |
 | SWOT | Strengths, Weaknesses, Opportunities, Threats |
 | TAB | Technical Architecture Board |
+| VAT | Value Added Tax |
 | WCAG | Web Content Accessibility Guidelines |
 
 \newpage
@@ -174,7 +194,7 @@ The BAPIL White Paper (Version 1.0) set out a vision: an independent research an
 
 This Blueprint answers the next question: **what exactly would be built, by whom, under which rules, in what order, with what resources, and with what evidence of success?** It translates each element of the White Paper into requirements, institutional arrangements, technical components, data rules, assurance procedures, a delivery plan, a long-term strategy and decisions for the authorities.
 
-The timing matters. During 2025 and 2026 Bangladesh enacted a new data-protection and data-management framework and revised its cyber-security law [84, 85, 86, 87]. A draft National AI Policy 2026-2030 was released for public consultation in January 2026 [88, 89], and in August 2026 the government announced that drafting of a national AI policy would begin in the fourth quarter of 2026 with a joint team from government, the private sector, academia and research [90, 91]. A concrete, openly licensed blueprint with working code can serve as a technical input to that process, and a roadmap that looks to 2041 can help connect short pilots to the long-term goals of the Perspective Plan 2041 and the ICT Masterplan 2041 [29, 30].
+The timing matters. During 2025 and 2026 Bangladesh adopted a new data-protection and data-management framework, first by ordinance and then, as reported, by Acts of Parliament, and revised its cyber-security law [84, 85, 86, 87]. Which provisions are in force, and from when, still has to be confirmed (Chapter 14). A draft National AI Policy 2026-2030 was released for public consultation in January 2026 [88, 89], and in August 2026 the government announced that drafting of a national AI policy would begin in the fourth quarter of 2026 with a joint team from government, the private sector, academia and research [90, 91]. A concrete, openly licensed blueprint with working code can serve as a technical input to that process, and a roadmap that looks to 2041 can help connect short pilots to the long-term goals of the Perspective Plan 2041 and the ICT Masterplan 2041 [29, 30].
 
 ## 1.2 The BAPIL Document Family
 
@@ -191,7 +211,7 @@ The timing matters. During 2025 and 2026 Bangladesh enacted a new data-protectio
 | **Technical Blueprint** (this document) | 1.0 | Buildable design: institution, architecture, data, governance, delivery plan | Ministries, agencies, technical teams, partners | DOI reserved on Zenodo at publication |
 | **Blueprint Summary** | 1.0 | Short summary of the Blueprint | Decision-makers | Same record as the Blueprint |
 | **Decision Memo** | 1.0 | One page: decisions requested from authorities | Ministers, secretaries, agency heads | Same record as the Blueprint |
-| **Reference implementation** | 0.1.0 (repository release v1.1.0) | Runnable, tested prototype of core Blueprint components | Engineers, researchers, auditors | GitHub repository; archived with the record |
+| **Reference implementation** | 0.1.0 (repository release v1.1.0, issued with this Blueprint) | Research prototype of core Blueprint components with unit tests; not a production system | Engineers, researchers, auditors | GitHub repository; archived with the record |
 
 ## 1.3 Maturity Classes
 
@@ -220,13 +240,14 @@ The White Paper described six architectural layers, a Policy Intelligence Dashbo
 7. **Data rules**: a four-class data classification, a source inventory, metadata, quality, retention and a public-data-first policy (Chapter 8, Annex I).
 8. **AI and language design**: a bilingual, citation-grounded retrieval pipeline, Bangla text rules, an evaluation benchmark, model selection criteria and a staged path for the Bangla Policy Foundation Model (Chapter 9, Annex K).
 9. **Infrastructure, security and continuity** specifications (Chapter 10).
-10. **A tested reference implementation** published on GitHub and archived on Zenodo (Chapter 11).
+10. **A tested reference implementation** at research-prototype level, released on GitHub with this Blueprint and archived with it on Zenodo (Chapter 11).
 11. **Full pilot specifications** for six pilots (Chapter 12).
 12. **An operational assurance system**: risk tiers, lifecycle gates, human oversight, documentation and a framework crosswalk (Chapter 13, Annexes B, C, H and J).
 13. **Legal alignment** with the Bangladesh instruments in force or in preparation (Chapter 14).
 14. **A 36-month delivery plan** and a **strategic roadmap for 2026 to 2041 and beyond** (Chapters 15 and 16).
 15. **Financing, procurement, monitoring and evaluation, risk management and a research agenda** (Chapters 17 to 20).
 16. **Six decisions** for the authorities (Chapter 21).
+17. **Evidence and readiness annexes:** the status of every key claim, budget reconciliation and scenarios, the evaluation protocol, the status and limits of each governance body, the preconditions for starting, and risk monitoring (Annexes P to U).
 
 **Table 3.** From White Paper chapters to Blueprint chapters
 
@@ -271,10 +292,11 @@ The Blueprint was prepared in five steps, each of which can be checked against t
 3. **Design against reference frameworks.** Requirements and controls were derived from the OECD AI Principles, the UNESCO Recommendation, the NIST AI Risk Management Framework, ISO/IEC 42001, the EU AI Act and Canada's Directive on Automated Decision-Making [1, 4, 5, 6, 7, 68, 92], and adapted to Bangladesh's draft national AI policy categories [88].
 4. **Implementation as a test of design.** The core ideas (bilingual search, cited answers with abstention, risk tiers, the register, evaluation and audit) were implemented and tested in code. Where implementation revealed a gap in the design, the design was corrected.
 5. **Planning and review.** Delivery, resources, risks and long-term strategy were planned with explicit assumptions, so that each can be tested by the feasibility study and the strategic reviews.
+6. **Audit and revision.** In October 2026, before publication, the whole draft was audited against its sources: external claims were re-checked, the budget was recomputed from its line items, and claims were classified by their evidence status (Annex P). Statutory texts on the official laws database could not be retrieved by automated means, so legal descriptions remain summaries to be confirmed by counsel.
 
 ## 1.7 Summary of the Design
 
-In one paragraph: BAPIL is established as a **university-anchored lab with a government MoU and a multi-stakeholder Steering Board**, an **independent Ethics and Risk Review Committee with a binding veto**, and a **Technical Architecture Board**. It builds an **open, modular platform** whose core is a **bilingual, citation-grounded policy search and answer service** over officially published documents. Six pilots are run under **risk tiers and lifecycle gates** aligned with international frameworks and with Bangladesh's new data laws. A **36-month plan** delivers a policy search pilot and an open budget dataset in Year 1, evaluated adoption decisions in Year 2, and a governed Bangla domain model and Blueprint 2.0 in Year 3. A **strategic roadmap** then carries the capability through medium-term adoption (2029 to 2030), a national policy-intelligence network (2031 to 2035) and a mature, trusted institution by 2041. A **reference implementation** of the core components already exists, is tested, and is archived with a DOI.
+In one paragraph: BAPIL is established as a **university-anchored lab with a government MoU and a multi-stakeholder Steering Board**, an **independent Ethics and Risk Review Committee with a binding veto**, and a **Technical Architecture Board**. It builds an **open, modular platform** whose core is a **bilingual, citation-grounded policy search and answer service** over officially published documents. Six pilots are run under **risk tiers and lifecycle gates** aligned with international frameworks and with Bangladesh's new data laws. A **36-month plan** delivers a policy search pilot and an open budget dataset in Year 1, evaluated adoption decisions in Year 2, and a governed Bangla domain model and Blueprint 2.0 in Year 3. A **strategic roadmap** then carries the capability through medium-term adoption (2029 to 2030), a national policy-intelligence network (2031 to 2035) and a mature, trusted institution by 2041. A small **reference implementation** of the core components is released with this Blueprint; it is a tested research prototype, not a deployed system.
 
 \newpage
 
@@ -300,7 +322,7 @@ A blueprint is only as good as its understanding of the starting point. This cha
 
 *Note.* Indices measure different things over different years and should not be compared directly. Values are as reported in the cited sources.
 
-The indicators point in a consistent direction. Bangladesh has a substantial digital government foundation: the United Nations E-Government Survey 2024 placed the country 100th of 193, eleven places higher than in 2022 [21, 107], and the national portal and electronic file system are in wide use [32, 83]. Cyber-security frameworks have been strengthened and Bangladesh has been reported in the top tier of the ITU Global Cybersecurity Index, although commentators note that the index measures the existence of frameworks more than their performance under stress [71, 108]. AI readiness is lower: Bangladesh was ranked 82nd in the 2023 Government AI Readiness Index, and university AI departments report very limited GPU capacity [26, 80]. The legal framework for data has just been renewed [85, 86], and the national AI policy is being drafted [88, 91].
+The indicators point in a consistent direction. Bangladesh has a substantial digital government foundation: the United Nations E-Government Survey 2024 placed the country 100th of 193, eleven places higher than in 2022 [21, 107, 120], and the national portal and electronic file system are in wide use [32, 83]. Cyber-security frameworks have been strengthened: Bangladesh was designated a Tier 1 role-model country in the ITU Global Cybersecurity Index 2024, although commentators note that the index measures the existence of frameworks more than their performance under stress [71, 108, 119]. AI readiness is lower: Bangladesh was reported as 82nd in the 2023 Government AI Readiness Index, and university AI departments report very limited GPU capacity [80]. The legal framework for data has just been renewed [85, 86], and the national AI policy is being drafted [88, 91].
 
 ## 2.3 Digital Government Foundations
 
@@ -326,7 +348,7 @@ Bangla is one of the most widely spoken languages in the world, but it remains u
 
 ## 2.6 Legal and Policy Context
 
-The legal framework is described in detail in Chapter 14. In summary, the Personal Data Protection Act, 2026 and the National Data Management Act, 2026 establish citizens' rights over personal data, custodial duties for public data and a national data exchange [84, 85, 86]. The cyber-security law was revised in 2026, including an amendment on the removal of harmful AI-generated content [86, 87]. The draft national AI policy proposes risk categories, impact assessment, an oversight committee, a Bangla-based national LLM, centralised compute and an innovation fund [88]. Together these create both a legal basis for a public-data-first design and a policy window in which a tested blueprint can be useful.
+The legal framework is described in Chapter 14. In summary, and as reported in secondary sources, the Personal Data Protection Act, 2026 and the National Data Management Act, 2026 replaced the 2025 ordinances; they recognise citizens' rights over personal data and, as described for the ordinances, provide for a national data management authority and a national data exchange [84, 85, 86, 116]. Under the 2025 ordinance some provisions did not commence immediately [113], so which duties are already operative must be confirmed. The cyber-security law was revised in 2026, including an amendment on the removal of harmful AI-generated content [86, 87]. The draft national AI policy proposes risk categories, impact assessment, an independent oversight committee to be created by an Act of Parliament, a Bangla-based national LLM, centralised compute and an innovation fund [88]. Together these create both a legal basis for a public-data-first design and a policy window in which a tested blueprint can be useful.
 
 ## 2.7 Capability Gap Analysis
 
@@ -437,7 +459,7 @@ Although BAPIL's first users are officials and researchers, its ultimate benefic
 
 ## 3.6 Coordination with National Programmes
 
-BAPIL complements, and must not duplicate, existing programmes. The Bangladesh AI Hub (implemented by the ICT Division with KOICA support) focuses on skills, startups and adoption [35, 36]; BAPIL focuses on policy intelligence, governance methods and open evaluation. The draft national AI policy envisages a Bangla-based national LLM, centralised compute at the National Data Center and an AI Innovation Fund [88]; BAPIL's benchmark and governed corpus can serve those efforts, and BAPIL should use shared national compute rather than build its own large cluster. A short division-of-labour MoU between BAPIL, the AI Hub and other relevant programmes should be signed at Milestone MS2 and reviewed annually.
+BAPIL complements, and must not duplicate, existing programmes. A KOICA-supported project to build AI skills and an AI hub, to be implemented by the Bangladesh Hi-Tech Park Authority under the ICT Division, focuses on skills, startups and adoption: its technical assistance project proposal (Tk 192.66 crore) was awaiting government approval in June 2026, and a USD 13 million grant agreement for 2026 to 2029 was reported signed in August 2026 [35, 36, 117]. BAPIL focuses on policy intelligence, governance methods and open evaluation. The draft national AI policy envisages a Bangla-based national LLM, centralised compute at the National Data Center and an AI Innovation Fund [88]; BAPIL's benchmark and governed corpus can serve those efforts, and BAPIL should use shared national compute rather than build its own large cluster. A short division-of-labour MoU between BAPIL, the AI Hub and other relevant programmes should be signed at Milestone MS2 and reviewed annually.
 
 \newpage
 
@@ -595,7 +617,9 @@ The call should be open to public and private universities and to consortia led 
 | **Director and units** | Director, six thematic units from the White Paper, and a cross-cutting platform engineering team | Delivery of research, pilots, training and publications | Operational decisions within approved plans |
 | **Host-agency product owners** | Named officials in each agency piloting a tool | Define needs, recruit pilot users, accept or reject at G3 and G4 | Acceptance of pilots in their agency |
 
-Two features deserve emphasis. First, the **Ethics and Risk Review Committee (ERRC)** has a binding veto over pilots and deployments of tier T2 and above, a majority of external members, and an obligation to publish summaries of its decisions (terms of reference in Annex F). Second, **host-agency product owners** are named officials inside each agency that pilots a tool. They define the need, recruit users and accept or reject the result, so that pilots answer real questions rather than technical curiosity.
+Two features deserve emphasis. First, the **Ethics and Risk Review Committee (ERRC)** has a binding veto over pilots and deployments of tier T2 and above, a majority of external members selected through an open call by an independent nominations panel, and an obligation to publish summaries of its decisions (terms of reference in Annex F). Second, **host-agency product owners** are named officials inside each agency that pilots a tool. They define the need, recruit users and accept or reject the result, so that pilots answer real questions rather than technical curiosity.
+
+All of these bodies are proposals. None has statutory powers: they would be created by the MoU, the host agreement and the charter, and their decisions bind BAPIL and its host by agreement, not by law. They do not replace any statutory body. In particular, the ERRC is not the independent oversight committee that the draft national AI policy proposes to create by an Act of Parliament [88], and BAPIL's data rules apply in addition to, never instead of, the duties set by the data-protection and data-management laws and the oversight of the authorities created under them. Annex S sets out, for each body, its status, appointment process, decision rights and their limits, reporting line and conflict-of-interest safeguards.
 
 ## 5.4 Decision Rights and Accountability
 
@@ -630,7 +654,8 @@ The Steering Board adopts a charter at Milestone MS1. A full draft is provided i
 * commit to open publication of code, benchmarks and evaluation reports, subject only to security and privacy exceptions recorded in writing;
 * require registration of every AI system in the AI system register before work begins;
 * set conflict-of-interest rules for board members, staff and partners, including vendors;
-* define how successful tools are transferred to agencies and how BAPIL withdraws.
+* define how successful tools are transferred to agencies and how BAPIL withdraws;
+* state that the charter operates within the law: where a statute, a regulator or the host institution's rules require something different, the legal requirement prevails.
 
 ## 5.6 Units and Ways of Working
 
@@ -938,7 +963,7 @@ Clear roles make data governance work in practice:
 * **The BAPIL data lead** is accountable for the corpus, the catalogue, quality metrics and data agreements.
 * **Data stewards** in each pilot team maintain metadata, check quality and handle correction queues.
 * **The governance analyst** checks data classes, approves reclassification with the ERRC where required, and maintains the records of processing.
-* **Chief data officers** in partner agencies, where appointed under the new data-management framework, coordinate agreements and the use of the national data exchange [84].
+* **Chief data officers** in partner agencies, where appointed under the data-protection framework (a role whose provisions did not commence immediately under the 2025 ordinance [113]), coordinate agreements and the use of the national data exchange.
 
 ## 8.9 Retention and Disposal
 
@@ -963,11 +988,11 @@ Data that BAPIL creates from public sources (for example, the budget dataset fro
 
 ## 8.11 Data Access Agreements
 
-Where data is not already public, access is governed by a written data-sharing agreement that states purpose, data class, retention, security controls, permitted outputs and audit rights (outline in Annex I). Where the national data exchange (NRDEX) provided for under the new data-management framework is available, BAPIL should use it rather than bilateral transfers [84]. Agreements are listed in the transparency register, without confidential details.
+Where data is not already public, access is governed by a written data-sharing agreement that states purpose, data class, retention, security controls, permitted outputs and audit rights (outline in Annex I). Where the national data exchange (NRDEX), described for the 2025 data-management ordinance [84], is available under the Act, BAPIL should use it rather than bilateral transfers. Agreements are listed in the transparency register, without confidential details.
 
 ## 8.12 Personal Data
 
-The Personal Data Protection Act, 2026 recognises citizens' rights over their personal data, requires consent and gives enhanced protection to sensitive and children's data; data subjects may restrict automated decisions based on their data [84, 85]. BAPIL's design responds conservatively: P2 data is used only in pilot P3, only with consent, only after a DPIA (template in Annex H), only in de-identified form and only for aggregate results; P3 data is never used. Commentators have argued that the new framework leaves broad room for state access to data [106]; BAPIL's own safeguards therefore do not rely on legal minimums alone.
+As reported, the personal data protection framework recognises citizens' rights over their personal data, requires consent and gives enhanced protection to sensitive and children's data, and data subjects may restrict automated decisions based on their data [84, 85]; a 2026 amendment to the ordinance added residency requirements for specified data [115]. Which of these provisions of the 2026 Act are in force, and from when, is to be confirmed by the legal review (Section 14.3); until then BAPIL applies the stricter reading. BAPIL's design responds conservatively: P2 data is used only in pilot P3, only with consent, only after a DPIA (template in Annex H), only in de-identified form and only for aggregate results; P3 data is never used. Commentators have argued that the new framework leaves broad room for state access to data [106]; BAPIL's own safeguards therefore do not rely on legal minimums alone.
 
 \newpage
 
@@ -1020,8 +1045,9 @@ Two principles guide these rules. First, normalisation is applied for **matching
 No responsible deployment is possible without measurement. BAPIL will build and publish **BanglaPolicyQA**, an open benchmark of policy questions in Bangla and English with gold passages from official documents. Annotation guidelines are given in Annex K.
 
 * **Construction.** Domain experts write questions from real analyst tasks; a second expert locates the gold passages; disagreements are adjudicated. Questions cover laws, plans, budgets and statistics, and include unanswerable questions and variant spellings (romanised Bangla, alternative spellings).
-* **Size.** Version 0 has 500 questions (Milestone MS3); version 1 has 2,000 (MS8).
-* **Splits.** Each version has a public development set and a private held-out test set, so that results cannot be inflated by tuning to the test questions (risk R15).
+* **Size.** Version 0 has 500 answerable questions (Milestone MS3) plus 200 out-of-scope questions for testing abstention; version 1 has 2,000 answerable questions (MS8).
+* **Splits.** Each version has a public development set (40%) and a private held-out test set (60%), so that results cannot be inflated by tuning to the test questions (risk R15).
+* **Statistical rationale.** With about 300 answerable test questions, Recall@10 near 0.85 is estimated to within about plus or minus 4 points (95% interval), which is precise enough for a pass or fail decision on the overall threshold. Each language has only about 150 test questions in version 0, so the Bangla and English gap cannot yet be estimated precisely; language parity becomes a release condition from version 1 (Annex R).
 * **Documentation.** The benchmark has a datasheet [100] describing sources, annotators, licences and known limitations.
 * **Use.** Every model, retrieval configuration and release is evaluated on the same frozen benchmark version, and results are published with the release.
 
@@ -1029,23 +1055,25 @@ No responsible deployment is possible without measurement. BAPIL will build and 
 
 | Dimension | Metric | Definition | Proposed threshold |
 |---------------|-----------------------|--------------------------------|----------------|
-| Retrieval | Recall@10 | Share of questions whose gold passage appears in the top 10 results | at least 0.85 |
+| Retrieval | Recall@10 | Share of answerable test questions with at least one gold passage in the top 10 results | at least 0.85 |
 | Retrieval | MRR@10 | Mean reciprocal rank of the first relevant passage | at least 0.70 |
 | Retrieval | nDCG@10 | Rank-weighted relevance against graded judgements | at least 0.75 |
-| Grounding | Citation precision | Share of cited passages that support the claim they are attached to | at least 0.95 |
-| Grounding | Unsupported-claim rate | Share of answer sentences with no supporting citation | at most 2% |
-| Abstention | Correct abstention | Share of unanswerable questions on which the system declines to answer | at least 0.90 |
-| Language parity | Bangla and English gap | Difference in Recall@10 between Bangla and English question sets | at most 5 points |
+| Grounding | Citation precision | Share of answer sentences whose cited passage fully supports the sentence, judged by two trained annotators | at least 0.95 |
+| Grounding | Unsupported-claim rate | Share of answer sentences not supported by any retrieved passage, judged on the same sample | at most 2% |
+| Abstention | Correct abstention | Share of out-of-scope questions on which the system declines to answer | at least 0.90 |
+| Abstention | Answer coverage | Share of answerable questions that are answered rather than abstained | at least 0.80 |
+| Language parity | Bangla and English gap | Difference in Recall@10 between Bangla and English question sets, reported with its confidence interval | at most 5 points |
 | Robustness | Variant spelling recall | Recall@10 on romanised and variant-spelling Bangla queries | at least 0.75 |
 | Safety | Prompt-injection success | Share of red-team injection attempts that change system behaviour | at most 5% |
 | Human evaluation | Usefulness and fluency | Mean rating by pilot users and Bangla editors on a 5-point scale | at least 4.0 |
-| Efficiency | Latency p95 | 95th-percentile response time for search and for answers | 3 s and 10 s |
+| Efficiency | Latency p95 | 95th-percentile response time for search and for answers under pilot load | 3 s and 10 s |
+| Reliability | Availability | Share of working hours in which search is available during the pilot | at least 99% |
 
-*Note.* Thresholds are proposals for Gate G2 and G3 decisions; the ERRC and TAB may tighten them for specific uses.
+*Note.* All values are proposed targets, not measured results. They are measured on the private test split with the sample sizes, judging procedure and decision rule in Annex R (Table 63); the ERRC and TAB may tighten them for specific uses.
 
 ## 9.5 Evaluation Protocol
 
-Results are only useful if they are comparable and honest. Every evaluation therefore follows the same protocol. The benchmark version and split, the corpus version, the model and configuration are recorded. Metrics are reported separately for Bangla and English and for each document type, not only as a single average. Uncertainty is reported with bootstrap confidence intervals, so that small differences between systems are not over-interpreted. A change is treated as an improvement only if it is better on the agreed primary metric without being worse on any safety threshold. Error analysis with concrete examples accompanies every report, and the full outputs are archived so that others can re-score them.
+Results are only useful if they are comparable and honest. Every evaluation therefore follows the same protocol. The benchmark version and split, the corpus version, the model and configuration are recorded. Metrics are reported separately for Bangla and English and for each document type, not only as a single average. Uncertainty is reported with bootstrap confidence intervals, so that small differences between systems are not over-interpreted. A change is treated as an improvement only if it is better on the agreed primary metric by more than the confidence interval, without being worse on any safety threshold. A gate threshold is met when the point estimate on the private test split meets it and the 95% interval is no wider than plus or minus 5 points; if the interval is wider, more items are annotated before the decision. Citation precision is judged by two trained annotators who do not know which system version produced an answer, and their agreement is reported. Retrieval recall is never treated as evidence that answers are correct, and the presence of a citation is never treated as evidence that it supports the sentence: each is measured separately. The full protocol, with sample sizes and responsibilities, is in Annex R (Table 63). Error analysis with concrete examples accompanies every report, and the full outputs are archived so that others can re-score them.
 
 ## 9.6 Model Selection
 
@@ -1064,27 +1092,31 @@ The Blueprint does not commit to a particular model vendor. Candidate models are
 
 *Note.* A model that fails any safety threshold in Table 28 is excluded regardless of its total score.
 
-## 9.7 The Bangla Policy Foundation Model: a Staged Path
+## 9.7 The Bangla Policy Foundation Model: an Evidence-Gated Path
 
-The White Paper proposed a Bangla Policy Foundation Model (BPFM) as a long-term research direction. Training a large model from scratch is expensive and, for many policy tasks, unnecessary. The Blueprint therefore sets out a staged path in which each step must be justified by evidence.
+The White Paper proposed a Bangla Policy Foundation Model (BPFM) as a long-term research direction. This Blueprint does not assume that a dedicated model is necessary. For policy search, most of the value comes from a well-governed corpus, good retrieval and careful citation, and a larger model is not automatically better on narrow, citation-bound tasks. The Blueprint therefore sets out a ladder in which each step must be justified by measured residual errors that the previous step cannot fix.
 
 ![](figures/blueprint_fig08.png)
 
 *Figure 8. Staged, evidence-gated development path for the Bangla Policy Foundation Model (BPFM).*
 
-* **Stage 0 (months 1 to 12).** Retrieval over existing open models; no training. Establish baselines on BanglaPolicyQA v0.
-* **Stage 1 (months 13 to 30).** If the measured gap to the thresholds is material and governed data and compute are ready, apply parameter-efficient domain adaptation such as LoRA [103] on the governed public corpus, followed by instruction tuning on curated question-answer pairs. Publish a model card.
-* **Stage 2 (after month 30, only if justified).** Continued pre-training on shared national compute, coordinated with any national Bangla LLM effort, with an independent audit before release.
+* **Stage 0 (months 1 to 12)** has three steps: (0a) lexical and metadata search, which also remains the transparent fallback; (0b) multilingual dense retrieval and reranking, adopted only if it measurably improves retrieval; and (0c) answers built with existing open models, extractive first, with generated rephrasing enabled only if citation checks pass. Baselines are established on BanglaPolicyQA v0.
+* **Stage 1 (months 13 to 30), targeted adaptation.** If residual errors are documented by category and can be attributed to the model rather than to retrieval or data, and governed data and compute are ready, apply parameter-efficient domain adaptation such as LoRA [103] on the governed public corpus, followed by instruction tuning on curated question-answer pairs. Publish a model card.
+* **Stage 2 (after month 30, only if justified), a dedicated domain model.** Continued pre-training of an existing open model on governed Bangla text, coordinated with any national Bangla LLM effort, with an independent audit before release.
 
-**Table 30.** Bangla Policy Foundation Model: stage gates
+**Table 30.** Bangla Policy Foundation Model: an evidence-gated ladder
 
-| Stage | Entry criteria | Main activities | Outputs | Exit criteria |
-|-----------|-----------------------|------------------------|-------------------|---------------------|
-| **Stage 0** | Governed P0 corpus; benchmark protocol agreed | Evaluate open models with retrieval; error analysis by document type and language | Baselines; BanglaPolicyQA v0; evaluation report | Measured gap to thresholds documented; Stage 1 decision taken |
-| **Stage 1** | Material gap remains; curated adaptation data; compute allocated; ERRC review | Parameter-efficient adaptation; instruction tuning on curated pairs; red-teaming | Adapted model; model card; benchmark v1 results | Gain over Stage 0 on agreed metrics; all safety thresholds met |
-| **Stage 2** | Stage 1 gains insufficient for priority tasks; national compute available; cost-benefit case approved | Continued pre-training on governed Bangla text; independent audit | Domain model release; audit report | Independent audit passed; release decision by Steering Board and ERRC |
+| Step | Entry criteria | Main activities | Outputs | Exit or adoption criteria |
+|-------------|------------------------|-------------------------|-----------------|--------------------------|
+| **Stage 0a** Lexical and metadata search | Governed P0 corpus with metadata | BM25 with bilingual expansion; filters by document type, issuing body and year; abstention | Baseline results on BanglaPolicyQA v0 | Baseline published; remains the transparent fallback for every later step |
+| **Stage 0b** Dense retrieval and reranking | Stage 0a baseline; open multilingual embedding and reranking models shortlisted (Table 29) | Hybrid retrieval; reranking; ablation by language and document type | Hybrid configuration; evaluation report | Adopted only if Recall@10 or nDCG@10 improves by more than the confidence interval, with no safety metric worse |
+| **Stage 0c** Answers with existing models | Retrieval meets its thresholds; citation-judgement protocol ready (Annex R) | Extractive answers; optional rephrasing by an open model with sentence-level citation checks | Answer service; citation results | Citation precision and unsupported-claim thresholds met (Table 28); otherwise extractive answers only |
+| **Stage 1** Targeted adaptation | Residual errors after Stage 0 documented by category and attributable to the model rather than to retrieval or data; curated data; compute; ERRC review | Parameter-efficient adaptation (LoRA); instruction tuning on curated pairs; red-teaming | Adapted model; model card; cost report | Gain over Stage 0c larger than the confidence interval on agreed metrics; all safety thresholds met |
+| **Stage 2** Dedicated domain model | Stage 1 insufficient for priority tasks; enough governed Bangla text; national compute; cost-benefit case approved; coordination with any national Bangla LLM | Continued pre-training of an existing open model on governed Bangla text; independent audit | Domain model release; audit report | Independent audit passed; release decision by Steering Board and ERRC. Training a new model from scratch is out of scope (Section 9.7) |
 
-At each gate the default is to remain at the current stage. This keeps cost proportionate and prevents model-building from becoming an end in itself. In the long-term horizon (Chapter 16), a maintained Bangla policy model may become a public good shared across government, but only if evaluation shows that it adds value over general models with retrieval.
+Training a new foundation model from scratch is out of scope, and a rough calculation shows why. Training compute is approximately six times the number of parameters times the number of training tokens [121]. A 7-billion-parameter model trained on one trillion tokens therefore needs about 4 × 10^22^ operations, or tens of thousands of GPU-hours on current data-centre GPUs. More importantly, it needs a trillion tokens of suitable text: the governed policy corpus planned here (about 25,000 documents by month 36, Table 54) is of the order of a few hundred million tokens if documents average about 10,000 tokens, more than three orders of magnitude short. By contrast, continued pre-training of an existing 7 to 8-billion-parameter model on 5 to 10 billion tokens of governed Bangla text needs about 2 to 5 × 10^20^ operations, a few hundred to a few thousand GPU-hours, which shared national compute could provide. The binding constraints for Stage 2 would then be whether that much governed Bangla text can be assembled at all, and the staff needed to curate and evaluate it, rather than compute. These are order-of-magnitude planning estimates (author's analysis), to be replaced by measured figures before any Stage 2 decision.
+
+If Stage 2 is ever justified, its minimum viable scope is one model of about 7 to 8 billion parameters, adapted for Bangla policy search and question answering only, released with a model card, a datasheet for its training data, an independent audit and a comparison with Stage 1 on the same frozen benchmark. At each gate the default is to remain at the current step. This keeps cost proportionate and prevents model-building from becoming an end in itself. In the long-term horizon (Chapter 16), a maintained Bangla policy model may become a public good shared across government, but only if evaluation shows that it adds value over general models with retrieval.
 
 ## 9.8 Human Factors
 
@@ -1190,7 +1222,7 @@ The July 2024 nationwide disruption showed how single points of failure can magn
 
 ## 10.8 Supply Chain and Openness
 
-Every release has a software bill of materials, pinned dependencies and recorded checksums for model weights. Code is published openly, which supports external review and aligns with the national source-code repository provided for in the new data-management framework [84]. Secrets never appear in code, prompts or logs.
+Every release has a software bill of materials, pinned dependencies and recorded checksums for model weights. Code is published openly, which supports external review and aligns with the national source-code repository described for the 2025 data-management ordinance [84]. Secrets never appear in code, prompts or logs.
 
 \newpage
 
@@ -1198,7 +1230,9 @@ Every release has a software bill of materials, pinned dependencies and recorded
 
 ## 11.1 Purpose
 
-A blueprint is more credible when its core ideas run. The repository therefore contains a **reference implementation** of the components that define BAPIL's approach: bilingual normalisation and search, citation-grounded answers with abstention, risk-tier assessment, the AI system register and transparency export, evaluation metrics and a tamper-evident audit log. It is a teaching and testing artefact, not a production system.
+A blueprint is more credible when its core ideas run. The repository therefore contains a **reference implementation** of the components that define BAPIL's approach: bilingual normalisation and search, citation-grounded answers with abstention, risk-tier assessment, the AI system register and transparency export, evaluation metrics and a tamper-evident audit log.
+
+The Blueprint uses maturity terms precisely. A *conceptual design* exists only on paper; a *prototype* or *proof of concept* shows that an idea can work; a *reference implementation* is a small, documented and tested program that shows the intended behaviour of a design so that others can study and reproduce it; a *tested software release* is a versioned release that has passed a defined test suite; and a *production deployment* serves real users under service levels. The code described here is a reference implementation at research-prototype level, issued as a tested software release (package version 0.1.0 in repository release v1.1.0) with 49 unit tests. It has not been deployed, load-tested, security-audited or used by officials. Everything else in Part III (dense retrieval, the portal, authentication, OCR and the production security controls) is design, not yet implementation (Table 37).
 
 ## 11.2 Design Choices
 
@@ -1263,13 +1297,13 @@ python -m unittest discover -s tests
 
 ## 11.5 Demonstration Results
 
-Running `python -m bapil.cli evaluate benchmarks/demo_questions.json` over a corpus of 1633 passages from 10 BAPIL documents gives the following results (corpus version `a86e1a1be5cb`):
+Running `python -m bapil.cli evaluate benchmarks/demo_questions.json` over a corpus of 1724 passages from 10 BAPIL documents gives the following results (corpus version `a51f4fba517b`):
 
 | Question set | Questions | Recall@5 | Recall@10 | MRR@10 | nDCG@10 |
 |---|---|---|---|---|---|
-| All questions | 24 | 0.83 | 0.92 | 0.71 | 0.62 |
-| English questions | 12 | 0.83 | 0.92 | 0.80 | 0.58 |
-| Bangla questions | 12 | 0.83 | 0.92 | 0.62 | 0.67 |
+| All questions | 24 | 0.83 | 0.92 | 0.72 | 0.63 |
+| English questions | 12 | 0.83 | 0.92 | 0.80 | 0.59 |
+| Bangla questions | 12 | 0.83 | 0.92 | 0.63 | 0.67 |
 
 Correct abstention on 6 out-of-scope questions: 1.00. Unit tests: 49 passed.
 
@@ -1281,7 +1315,7 @@ The unit tests cover every module and are organised by component: Bangla and Eng
 
 ## 11.7 Continuous Integration
 
-Two GitHub Actions workflows run on every change: one runs the unit tests on several Python versions; the other rebuilds the Blueprint tables, figures and PDFs with XeLaTeX and the Noto fonts, so that published documents can always be regenerated from source.
+Two GitHub Actions workflows are configured to run on every change once the repository is updated: one runs the unit tests on Python 3.10 to 3.13; the other rebuilds the Blueprint tables, figures and PDFs with XeLaTeX and the Noto fonts, so that published documents can always be regenerated from source. The workflows run with read-only repository permissions. Because the package uses only the Python standard library, it has no third-party dependency chain to pin or audit; any future dependency must be pinned, listed in a software bill of materials and approved by the TAB. A security policy in the repository (`SECURITY.md`) explains how to report vulnerabilities privately.
 
 ## 11.8 From Reference Implementation to Production
 
@@ -1344,7 +1378,7 @@ P1 and P2 start first because they use only P0 data, share the ingestion and sea
 * **Risk tier.** T1 when used by researchers only; T2 when used by officials in their work (Annex B worked example).
 * **Safeguards.** Class A use only; every output reviewed by the user before use; audit logging; monthly review of reported problems.
 * **Evaluation.** Benchmark metrics in Table 28; a time-to-evidence study comparing tasks with and without the tool; user satisfaction survey.
-* **Exit criterion.** Recall@10 of at least 0.85, citation precision of at least 0.95 and 30 or more active users rating the tool useful.
+* **Exit criterion.** Recall@10 of at least 0.85 and citation precision of at least 0.95, measured on the private test split under the protocol in Annex R, and 30 or more active users rating the tool useful. These are proposed targets; no results exist yet.
 * **Path after the pilot.** If the exit criterion is met, a G4 adoption decision transfers the service to an agency owner, with BAPIL continuing to maintain the benchmark and evaluation.
 
 ## 12.4 Pilot P2: Budget Intelligence Dashboard
@@ -1470,13 +1504,15 @@ Every system in the register has a model card [99] and, for each dataset, a data
 
 An incident is any event in which a system produces or contributes to a harmful, misleading, discriminatory or insecure outcome, or in which a safeguard fails. Users and the public can report incidents through the portal. The procedure sets time limits by severity (Table 34): for example, acknowledgement within one working day and a published summary for serious incidents within thirty days. The ERRC reviews all serious incidents and may suspend a system.
 
+Complaints follow the same channel. A complaint is acknowledged within one working day and answered within thirty days. A complainant who is not satisfied may ask the ERRC to review the decision; a complaint about the ERRC itself goes to the Steering Board co-chairs and is examined in the annual independent audit. These internal routes do not limit any legal remedy: complainants may also go to the authorities established under the data-protection and data-management laws or to the courts, and BAPIL cooperates with them.
+
 ## 13.7 Fairness and Language Equity
 
 Fairness in BAPIL's systems has a specific, measurable meaning: the systems must work as well in Bangla as in English, and as well for documents from different issuing bodies, regions and periods. Benchmark results are therefore reported by language and document type, and the parity target (NFR-01) is a release condition. For P3, fairness also means that minority views in consultations are not lost in aggregation; topic validation by people checks this.
 
 ## 13.8 Assurance for Generative Features
 
-If and when generative features are enabled (for example, rephrasing extracted sentences into a fluent summary), additional controls apply. Every generated sentence must be verified against the passage it cites, and any sentence that cannot be verified is removed. The system prompt and model version are recorded in the audit log. Red-team tests cover prompt injection through documents, attempts to make the system produce content outside the corpus, and requests for prohibited outputs. Generated text is always labelled as such, consistent with the draft national AI policy's emphasis on labelling AI-generated content [88]. A generative feature is treated as a significant change and must pass Gate G5 (re-evaluation) before release.
+If and when generative features are enabled (for example, rephrasing extracted sentences into a fluent summary), additional controls apply. Every generated sentence must be verified against the passage it cites, and any sentence that cannot be verified is removed. The system prompt and model version are recorded in the audit log. Red-team tests cover prompt injection through documents, attempts to make the system produce content outside the corpus, and requests for prohibited outputs. Generated text is always labelled as such. This is BAPIL's own rule; it is consistent with the draft national AI policy's measures against false or misleading AI-generated content [89], but the draft, as reported, does not itself prescribe labelling. A generative feature is treated as a significant change and must pass Gate G5 (re-evaluation) before release.
 
 ## 13.9 Assurance for Procured and Third-Party AI
 
@@ -1498,7 +1534,7 @@ The control areas map onto the main international frameworks, which helps partne
 | Risk assessment and tiering | 1.4 Robustness, security and safety | Proportionality; ethical impact assessment | MAP | Clauses 6.1, 8.2 to 8.4; A.5 | Art. 5, Art. 9, Art. 27 | Prohibited, high, limited and low risk categories; AIA for high risk |
 | Data governance and privacy | 1.2 Human rights, incl. privacy | Privacy and data protection | MAP, MEASURE | A.7 Data for AI systems | Art. 10 | PDPA 2026; National Data Management Act 2026 |
 | Fairness and non-discrimination | 1.2 Fairness | Fairness and non-discrimination | MEASURE | A.5, A.7 | Art. 10(2)(f) | Bias audits proposed in draft policy |
-| Transparency and documentation | 1.3 Transparency and explainability | Transparency and explainability | GOVERN, MAP | A.6, A.8 | Art. 11, 13, 50 | Labelling of AI-generated content (draft policy) |
+| Transparency and documentation | 1.3 Transparency and explainability | Transparency and explainability | GOVERN, MAP | A.6, A.8 | Art. 11, 13, 50 | Measures against AI-generated false or misleading content (draft policy) |
 | Human oversight | 1.2 Human agency and oversight | Human oversight and determination | MANAGE | A.9 Use of AI systems | Art. 14 | Human oversight for high-risk uses (draft policy) |
 | Robustness, security and accuracy | 1.4 Robustness, security and safety | Safety and security | MEASURE | A.6 Verification and validation | Art. 15 | Cyber Security Act 2026 as amended |
 | Monitoring and incidents | 1.4, 1.5 | Multi-stakeholder and adaptive governance | MANAGE | Clauses 9 and 10 | Art. 72, 73 | Audits by oversight committee (draft policy) |
@@ -1512,33 +1548,35 @@ The control areas map onto the main international frameworks, which helps partne
 
 ## 14.1 A Changing Framework
 
-Bangladesh's legal framework for data and digital technology changed substantially between late 2025 and mid-2026. The Personal Data Protection Ordinance, 2025 and the National Data Governance Ordinance, 2025 were gazetted in November 2025 [84]; Parliament subsequently enacted the Personal Data Protection Act, 2026 and the National Data Management Act, 2026 in April 2026 [85, 86]. A Cyber Security Bill, 2026 was passed in April 2026 [86], and an amendment aimed at the removal of harmful AI-generated content was passed on 30 June 2026 [87]. Detailed rules under these Acts may still be issued.
+Bangladesh's legal framework for data and digital technology changed substantially between late 2025 and mid-2026. The Personal Data Protection Ordinance, 2025 and the National Data Management Ordinance, 2025 (called the National Data Governance Ordinance in some English reports) were gazetted in November 2025 [84, 106]. According to secondary legal commentary, the personal data protection ordinance came into force immediately except for its sections on chief data officers, complaints and offences [113], and an 18-month compliance window was described [114]. A Personal Data Protection (Amendment) Ordinance, 2026, on the residency of specified data, was promulgated in February 2026 [115]. Parliament then passed bills to convert the ordinances into Acts: the National Data Management Bill, 2026 and the Cyber Security Bill, 2026 were reported passed on 10 April 2026 [86], and the Personal Data Protection Act, 2026 was reported enacted in April 2026 [85, 116]. A Cyber Security (Amendment) Bill, 2026, aimed at the removal of harmful AI-generated content, was reported passed by 30 June 2026 [87].
+
+Three points of caution follow. First, these statements come from press reports and secondary commentary; the gazetted texts were not reviewed for this edition because the official laws database does not permit automated retrieval. Second, enactment is not the same as commencement: whether each provision of the 2026 Acts is in force, and whether the deferred provisions of the ordinances were carried over, must be confirmed. Third, implementing rules may still be issued. Until the legal review confirms the position, BAPIL applies the stricter reading of each obligation.
 
 **Table 42.** Bangladesh legal and policy instruments relevant to BAPIL (status as reported, October 2026)
 
 | Instrument | Status | Relevance | Blueprint design response |
-|---------------------|-----------------------|------------------------|---------------------------|
-| Personal Data Protection Act, 2026 | Passed by Parliament in April 2026, replacing the 2025 Ordinance [85, 86] | Consent; data-subject rights including restricting automated decisions; enhanced protection of sensitive and children's data | P0-first; DPIA before any P2 work; P3 excluded; no automated decisions about individuals |
-| National Data Management Act, 2026 | Passed in April 2026, succeeding the National Data Governance Ordinance, 2025 [84, 86] | National data authority; responsible data exchange (NRDEX); national source code repository; chief data officers | Use NRDEX agreements for data access; publish code openly; coordinate with agency chief data officers |
-| Cyber Security Act, 2026 and amendment | Bill passed 10 April 2026; amendment on harmful AI-generated content passed 30 June 2026 [86, 87] | Security duties, critical information infrastructure, removal of harmful synthetic content | NIST CSF 2.0 controls; incident reporting; information-integrity research kept within law and rights |
+|------------------|---------------------------------|-------------------------|----------------------|
+| Personal Data Protection Act, 2026 | Reported as enacted in April 2026 (Act 63 of 2026), replacing the Personal Data Protection Ordinance, 2025 [85, 116]. Under the Ordinance, the sections on chief data officers, complaints and offences did not commence immediately, and an 18-month compliance window was reported [113, 114]. Commencement of each provision of the Act, and any rules: to be confirmed | Consent; data-subject rights including restricting automated decisions; enhanced protection of sensitive and children's data; chief data officers; residency of specified data (2026 amendment ordinance) [115] | P0-first; DPIA before any P2 work; P3 excluded; no automated decisions about individuals; hosting in Bangladesh |
+| National Data Management Act, 2026 | Bill reported passed on 10 April 2026 [86], succeeding the National Data Management Ordinance, 2025 (called the National Data Governance Ordinance in some English reports) [84, 106]. Commencement and rules: to be confirmed | National Data Management Authority; responsible data exchange (NRDEX); national source code repository (as described for the 2025 Ordinance [84]; to be confirmed in the Act) | Use NRDEX agreements where available; publish code openly; coordinate with the Authority and agency data officers |
+| Cyber Security Act, 2026 and amendment | Bill reported passed on 10 April 2026 [86]; Cyber Security (Amendment) Bill, 2026 on harmful and defamatory AI-generated content reported passed by 30 June 2026 [87]. Commencement: to be confirmed | Security duties; critical information infrastructure; removal and blocking of harmful AI-generated content | NIST CSF 2.0 controls; incident reporting; information-integrity research kept within law and rights |
 | Right to Information Act, 2009 | In force [105] | Proactive disclosure of public information | Supports the P0 corpus and the public transparency register |
-| National AI policy | Draft 2026-2030 released for consultation in January 2026; new drafting process announced for Q4 2026 [88, 89, 91] | Risk categories, impact assessment, oversight committee, Bangla LLM, national compute, AI innovation fund | Tiers aligned to draft categories; Blueprint offered as technical input; BPFM coordinated with national LLM plans |
+| National AI policy | Draft 2026-2030 released for public consultation in late January 2026 [88, 89]; formulation by a joint team announced to begin in Q4 2026 [91]. Not adopted | Risk categories; algorithmic impact assessment; an independent oversight committee to be created by an Act of Parliament; Bangla LLM; national compute; AI innovation fund of Tk 200 to 250 crore to 2030 (proposed) [88] | Tiers aligned to draft categories; Blueprint offered as technical input; BPFM coordinated with national LLM plans |
 | Long-term national plans | Perspective Plan 2041 and ICT Master Plan 2041 [29, 30] | Long-term digital transformation goals | Roadmap aligned to the 2041 horizon and adaptable to plan revisions |
-| Bangladesh AI Hub (KOICA and ICT Division) | Project under implementation [35, 36] | Skills, startups, AI adoption | Complementary division of labour; shared benchmarks and open data |
+| AI Hub and AI skills project (KOICA, ICT Division, Bangladesh Hi-Tech Park Authority) | Technical assistance project proposal of Tk 192.66 crore awaiting government approval in June 2026 [35]; USD 13 million grant agreement (Record of Discussion) reported signed in August 2026 for 2026 to 2029 [117]. Not reported as operational | Skills, startups, AI adoption | Complementary division of labour; shared benchmarks and open data |
 
-*Note.* Status is taken from press and secondary sources available in October 2026 and must be confirmed against the gazetted texts. This table is not legal advice.
+*Note.* Status is taken from press reports and secondary legal commentary available in October 2026. The gazetted texts and their commencement provisions were not reviewed for this edition (Annex P) and must be confirmed by qualified Bangladesh counsel. This table is not legal advice.
 
 ## 14.2 Implications for BAPIL
 
 * **Lawful basis and minimisation.** Because public data needs no consent and carries no personal-data risk, the public-data-first policy is the main legal safeguard. Any P2 processing requires a documented lawful basis and a DPIA.
 * **Automated decisions.** The right to restrict automated decisions reinforces the design rule that BAPIL never automates decisions about individuals.
-* **Data exchange.** The national data exchange and the coordinating role of chief data officers create a lawful route for data access agreements, which BAPIL should use.
+* **Data exchange.** If the national data exchange and the coordinating role of chief data officers operate under the Acts as described for the ordinances, they create a lawful route for data access agreements, which BAPIL should use.
 * **Information integrity.** Research on misinformation must respect freedom of expression and privacy; the June 2026 amendment's focus on removing harmful AI-generated content makes clear, documented research protocols particularly important.
 * **National AI policy.** The tier system is aligned with the draft policy's categories so that BAPIL systems would be classified consistently if those categories are adopted. The Blueprint is offered as an input to the drafting process announced for the fourth quarter of 2026 [91].
 
 ## 14.3 Legal Review
 
-Before Milestone MS2, the host institution should commission an independent legal review of the charter, the data classification, the data-sharing agreement template and the DPIA template against the gazetted texts of the 2026 Acts and any rules issued under them. The review is published.
+Before Milestone MS2, the host institution should commission an independent legal review by qualified Bangladesh counsel. It should establish, from the gazetted texts: the enactment, publication and commencement dates of each relevant Act and amendment; which provisions are in force and which await notification or rules; whether BAPIL or its host is a data controller, processor or fiduciary for each pilot; the duties on custodians and on BAPIL for data access; and whether any element of the design needs a further approval. It should then review the charter, the data classification, the data-sharing agreement template and the DPIA template against those findings. The review is published, and Tables 42 and 43 are corrected accordingly.
 
 ## 14.4 Compliance Checklist
 
@@ -1552,13 +1590,14 @@ The checklist below turns the legal requirements, as currently reported, into BA
 | Data-subject rights (PDPA 2026) | Access, correction, deletion; restriction of automated decisions | No automated decisions on individuals; rights-request procedure | Procedure; request log |
 | Sensitive and children's data (PDPA 2026) | Enhanced protection; restrictions on profiling minors | P3 data excluded by charter | Charter; data inventory |
 | Data custody and exchange (NDMA 2026) | Custodian duties; approved data exchange | Data-sharing agreements; use of NRDEX where available | Signed agreements |
-| Source code (NDMA 2026) | National source code repository for government software | Open-source code; mirror to national repository when available | Repository links |
+| Data residency (PDPA amendment, 2026) | Specified categories of data to be kept in Bangladesh (scope and status under the Act to be confirmed) | All data above class P0 hosted in Bangladesh (NFR-02) | Hosting agreement |
+| Source code (NDMA 2026) | National source code repository for government software (as described for the 2025 Ordinance) | Open-source code; mirror to national repository when available | Repository links |
 | Security duties (Cyber Security Act 2026) | Protection of systems and data; incident handling | NIST CSF 2.0 controls; incident plan | Security reviews; drills |
 | Harmful AI-generated content (2026 amendment) | Removal of harmful synthetic content | No generation of synthetic media; research protocols for P6 | ERRC approvals |
 | Proactive disclosure (RTI Act 2009) | Publication of public information | Open publications; transparency register | Published register |
 | Draft national AI policy | Risk categories; impact assessment; oversight | Tier system aligned; impact assessments for T2 and T3 | Assessments; register |
 
-*Note.* Requirements summarise press and secondary descriptions [84, 85, 86, 87, 88] and must be confirmed against the gazetted texts by the legal review (Section 14.3).
+*Note.* Requirements summarise press reports and secondary legal commentary [84, 85, 86, 87, 88, 113, 114, 115]. Which provisions are in force, and from when, has not been confirmed. The legal review (Section 14.3) checks each line against the gazetted texts; until then BAPIL applies the stricter reading.
 
 ## 14.5 Right to Information and Proactive Disclosure
 
@@ -1567,6 +1606,10 @@ The Right to Information Act, 2009 gives citizens a right to information held by
 ## 14.6 Intellectual Property and Licensing
 
 Government publications are generally reusable for research and public-interest purposes, but reuse terms differ between sources and are not always stated. BAPIL records the reuse terms of every source (Table 24), seeks written confirmation from custodians for bulk use, and respects any restrictions. BAPIL's own outputs are licensed openly: documents and datasets under CC BY 4.0 and code under the MIT License. Benchmarks that contain extracts of official documents carry the source attribution required by the custodians.
+
+## 14.7 Legal Status of BAPIL's Own Arrangements
+
+BAPIL's charter, committees, tiers and gates are internal rules. They can bind BAPIL, its host and its partners only through the MoU, the host agreement, contracts and the charter; they cannot override a statute, the powers of a regulator or the host institution's own legal obligations, and where these conflict the legal requirement prevails. Phase 1 needs no new legislation: it can proceed under an MoU, a host agreement, data-sharing agreements, the host's procurement and ethics procedures and a funding agreement (Annex T, Table 65). Some long-term options would need more: a statutory centre (horizon H3) would need legislation, and any power to require agencies to share data or to follow BAPIL's methods would have to come from law or from a government decision, not from BAPIL.
 
 \newpage
 
@@ -1578,7 +1621,7 @@ Government publications are generally reusable for research and public-interest 
 
 ## 15.1 Overview
 
-The delivery plan covers the 36 months after the Phase 1 MoU takes effect, with January 2027 as an indicative start. It implements Phases 2 to 4 of the White Paper's five-year roadmap (2026-2030) in concrete terms and corresponds to horizons H1 and the first year of H2 in the strategic roadmap (Chapter 16).
+The delivery plan covers the 36 months after the Phase 1 MoU takes effect. Month 1 is the first month in which the MoU, the host agreement and Year 1 funding are all in place (Annex T, Table 65); January 2027 is the earliest plausible start if decisions are taken in the fourth quarter of 2026, and a later start moves every date in this chapter by the same amount. It implements Phases 2 to 4 of the White Paper's five-year roadmap (2026-2030) in concrete terms and corresponds to horizons H1 and the first year of H2 in the strategic roadmap (Chapter 16).
 
 ![](figures/blueprint_fig12.png)
 
@@ -1686,7 +1729,7 @@ Five principles guide every horizon:
 
 ## 16.4 Horizon 0: Foundation (Q4 2026)
 
-The foundation horizon is already under way. Its purpose is to prepare a safe, open start. The Blueprint, the Summary, the Decision Memo and the reference implementation are published with persistent identifiers. Briefings are offered to the ICT Division, the data custodians and the national AI policy drafting team, and the Blueprint is offered as a technical input to that process. A host institution is identified through an open call. The horizon ends when decisions D1, D2 and D4 (Chapter 21) are taken.
+The foundation horizon is already under way. Its purpose is to prepare a safe, open start. The Blueprint, the Summary, the Decision Memo and the reference implementation are to be published together with persistent identifiers. Briefings are offered to the ICT Division, the data custodians and the national AI policy drafting team, and the Blueprint is offered as a technical input to that process. A host institution is identified through an open call. The horizon ends when decisions D1, D2 and D4 (Chapter 21) are taken.
 
 ## 16.5 Horizon 1: Short Term (2027 to 2028)
 
@@ -1806,7 +1849,7 @@ Long-term sustainability rests on four pillars. **Financial:** a growing share o
 
 ## 17.1 Costing Approach
 
-The Blueprint now gives an indicative budget for the 36-month plan, built from explicit assumptions rather than from a lump-sum estimate. The costing model takes the staffing plan (Table 16), the capacity plan (Table 31), the benchmark and training targets, and the evaluation schedule, applies the unit costs in Table 49, and adds 10% for host overheads and contingency. The model is published in the repository (`blueprint/src/budget_model.py`), so that the feasibility and costing study (Deliverable D1.3, month 6) can replace any assumption with a quotation or an agreed salary scale and regenerate the budget. Until then, every figure in this chapter is a planning estimate, not a commitment of funds.
+The Blueprint gives an indicative budget for the 36-month plan, built from explicit assumptions rather than from a lump-sum estimate. The costing model takes the staffing plan (Table 16), the capacity plan (Table 31), the benchmark, evaluation and training targets, and the evaluation schedule; applies the unit costs in Table 49 at Year 1 prices; assumes that 75% of Year 1 posts are filled on average while recruitment is under way; escalates taka costs by 8% a year in Years 2 and 3; and adds 10% for host overheads and a separate 5% contingency. The model is published in the repository (`blueprint/src/budget_model.py`), so that the feasibility and costing study (Deliverable D1.3, month 6) can replace any assumption with a quotation or an agreed salary scale and regenerate the budget. Until then, every figure in this chapter is a planning estimate, not a commitment of funds.
 
 **Table 49.** Planning assumptions for the indicative budget
 
@@ -1814,15 +1857,19 @@ The Blueprint now gives an indicative budget for the 36-month plan, built from e
 |-------------------|------------------------------------|-----------------------------|
 | Exchange rate | Tk 124 per US dollar | Bangladesh Bank weighted average rate of Tk 123.65 on 19 October 2026 [110] |
 | Core staff | 9, 15 and 19 full-time equivalents in Years 1, 2 and 3 | Staffing plan (Table 16) |
-| Staff cost | Fully loaded monthly cost per FTE: Director Tk 3.0 lakh; ML and Bangla NLP engineers Tk 2.0 lakh; security engineer Tk 1.8 lakh; policy, data and platform staff Tk 1.5 lakh; governance and UX staff Tk 1.25 lakh; coordinator Tk 0.9 lakh; training officers Tk 0.8 lakh | Above the basic pay of the Ninth National Pay Scale 2026 (Tk 20,000 to Tk 156,000 per month) to compete for scarce AI skills [109] |
-| Language editors and fellows | Part-time editors Tk 12 to 15 lakh per year; 6, 10 and 12 fellows at Tk 40,000 per month | Fellowship programme (Section 6.6) |
-| Equipment | General-purpose servers USD 12,000 each; GPU inference servers (L40S class) USD 25,000 each; storage USD 6,000 to 8,000 per year of growth | Single L40S card about USD 7,500 in 2025, plus chassis, memory and storage [111] |
-| Hosting and operations | Tk 25 lakh rising to Tk 45 lakh per year | Data-centre space, power, bandwidth, licences and a development cloud |
-| Model adaptation compute | Provided in kind from shared national compute | Table 31; draft national AI policy [88] |
-| Benchmark annotation | 2,000 questions by month 30 at Tk 2,500 each, including adjudication | BanglaPolicyQA plan (Section 9.4, Annex K) |
+| Year 1 recruitment | 75% of Year 1 positions filled on average | Director appointed in months 1 to 3; other posts filled in months 2 to 6 (Section 15.4) |
+| Staff cost | Fully loaded monthly cost per FTE at Year 1 prices: Director Tk 3.0 lakh; ML and Bangla NLP engineers Tk 2.0 lakh; security engineer Tk 1.8 lakh; policy, data and platform staff Tk 1.5 lakh; governance and UX staff Tk 1.25 lakh; coordinator Tk 0.9 lakh; training officers Tk 0.8 lakh | Above the basic pay of the Ninth National Pay Scale 2026 (Tk 20,000 to Tk 156,000 per month, approved by the Cabinet in August 2026) to compete for scarce AI skills [109] |
+| Escalation | 8% a year on taka costs in Years 2 and 3 | Point-to-point inflation of 8.34% in September 2026, as reported [118]; the host's increment rules may differ |
+| Language editors and fellows | Part-time editors Tk 12 to 14 lakh a year; 6, 10 and 12 fellows at Tk 40,000 a month (Year 1 prices) | Fellowship programme (Section 6.6) |
+| Equipment | General-purpose servers USD 12,000 each; GPU inference servers (L40S class) USD 25,000 each; storage USD 6,000 to 12,000 a year | Single L40S card about USD 7,500 and a four-GPU server about USD 47,000 to 49,000 in 2025 [111] |
+| Import duty and VAT on equipment | Not included in the base case; 25% added in the high scenario | Depends on the host's exemption status; input required from the host's procurement office |
+| Hosting and operations | Tk 25 lakh rising to Tk 38 lakh a year (Year 1 prices) | Data-centre space, power, bandwidth, licences and a development cloud |
+| Model adaptation compute | In kind from shared national compute; USD 20,000 of cloud GPU time on public (P0) data in the high scenario | Table 31; draft national AI policy [88]; cloud prices in [111] |
+| Benchmark and evaluation data | 2,000 answerable questions by month 30 at Tk 2,500; 300 out-of-scope questions at Tk 600; 2,000 citation-support judgements at Tk 500 | BanglaPolicyQA plan (Section 9.4); evaluation protocol (Annex R) |
 | Training | 500 officials by month 36 at Tk 15,000 per participant, plus specialist courses | Training curriculum (Table 18) |
-| Evaluation and assurance | Mid-term evaluation Tk 20 lakh; final evaluation Tk 25 lakh; annual penetration test and red team | Chapters 13 and 18 |
-| Overheads and contingency | 10% of all other costs | To be confirmed against the host institution's policy |
+| Evaluation and assurance | Legal review Tk 8 lakh; baseline study Tk 6 lakh; mid-term evaluation Tk 20 lakh; final evaluation Tk 25 lakh; annual penetration test and red team Tk 6 lakh; annual independent audit of systems Tk 3 lakh | Chapters 13, 14 and 18 |
+| Host overheads | 10% of direct costs | To be confirmed against the host institution's policy |
+| Contingency | 5% of direct costs, released only by Steering Board decision | Allowance for estimating uncertainty; scenarios in Annex Q |
 
 *Note.* Planning assumptions for the costing study (Deliverable D1.3), not quotations. The model is published as blueprint/src/budget_model.py so that any assumption can be changed and the budget regenerated.
 
@@ -1832,29 +1879,32 @@ The Blueprint now gives an indicative budget for the 36-month plan, built from e
 
 | Category | Year 1 | Year 2 | Year 3 | Total | Share |
 |------------------------------|----------|----------|----------|----------|---------|
-| Core staff | 1.82 | 2.88 | 3.55 | 8.25 | 45% |
-| Language editors and fellowships | 0.41 | 0.63 | 0.73 | 1.76 | 10% |
-| Compute and hosting | 1.39 | 1.37 | 0.75 | 3.51 | 19% |
-| Data and annotation | 0.38 | 0.44 | 0.35 | 1.17 | 6% |
-| Training and outreach | 0.23 | 0.42 | 0.42 | 1.07 | 6% |
-| Governance, audit and evaluation | 0.28 | 0.36 | 0.41 | 1.05 | 6% |
-| Overheads and contingency (10%) | 0.45 | 0.61 | 0.62 | 1.68 | 9% |
-| **Total** | **4.96** | **6.71** | **6.83** | **18.49** | **100%** |
+| Core staff | 1.37 | 3.11 | 4.14 | 8.61 | 42% |
+| Language editors and fellowships | 0.41 | 0.67 | 0.84 | 1.91 | 9% |
+| Compute and hosting | 1.39 | 1.36 | 0.74 | 3.49 | 17% |
+| Data and annotation | 0.41 | 0.52 | 0.46 | 1.39 | 7% |
+| Training and outreach | 0.23 | 0.44 | 0.48 | 1.15 | 6% |
+| Governance, audit and evaluation | 0.31 | 0.40 | 0.49 | 1.20 | 6% |
+| Host overheads (10%) | 0.41 | 0.65 | 0.71 | 1.78 | 9% |
+| Contingency (5%) | 0.21 | 0.33 | 0.36 | 0.89 | 4% |
+| **Total** | **4.73** | **7.49** | **8.21** | **20.43** | **100%** |
 
-*Note.* Computed from the assumptions in Table 49 by blueprint/src/budget_model.py. Totals may differ slightly because of rounding. The total is equivalent to about USD 1.49 million, or under one tenth of the reported Tk 192.66 crore cost of the Bangladesh AI Hub project [35].
+*Note.* Computed from the assumptions in Table 49 by blueprint/src/budget_model.py. Figures are rounded independently, so rows and columns may not add exactly: the unrounded total is Tk 204,264,136 (Tk 20.43 crore), while the rounded annual totals add to Tk 20.43 crore. Equivalent to about USD 1.65 million. A planning estimate: no funds have been approved or committed.
 
-The indicative budget is about Tk 18.5 crore over three years: Tk 5.0 crore in Year 1, Tk 6.7 crore in Year 2 and Tk 6.8 crore in Year 3. Four features of the budget matter for decision-makers:
+The indicative budget is about Tk 20.4 crore over three years: Tk 4.7 crore in Year 1, Tk 7.5 crore in Year 2 and Tk 8.2 crore in Year 3, or about USD 1.65 million. It replaces a draft estimate of Tk 18.49 crore prepared before the October 2026 review: the earlier figure had no escalation and no separate contingency, and assumed full staffing from month 1. Table 61 in Annex Q reconciles the two step by step; it also shows that the draft's annual totals (4.96, 6.71 and 6.83, which add to 18.50) differed from its total only through rounding. Four features of the budget matter for decision-makers:
 
-* **People are the main cost.** Core staff, language editors and fellows account for about 55% of the total. The largest single driver is the salary needed to recruit and keep machine learning and Bangla NLP engineers.
-* **Equipment is front-loaded.** Compute and hosting take about 19% of the total, but most of it falls in Years 1 and 2 when servers and GPUs are bought. Model adaptation (BPFM Stage 1) assumes in-kind access to shared national compute; if that is not available, a separate allocation would be needed.
-* **Assurance is funded explicitly.** About 6% goes to governance, audits and independent evaluation. These costs are protected in the annual plan so that safeguards are not cut when budgets are tight.
-* **Scale relative to national programmes.** The total is under one tenth of the reported cost of the Bangladesh AI Hub project (Tk 192.66 crore) [35], and well below the Tk 200 to 250 crore AI Innovation Fund proposed in the draft national AI policy [88].
+* **People are the main cost.** Core staff, language editors and fellows account for about half of the total (52%). The largest single driver is the salary needed to recruit and keep machine learning and Bangla NLP engineers.
+* **Equipment is front-loaded.** Compute and hosting take about 17% of the total, most of it in Years 1 and 2 when servers and GPUs are bought. About a fifth (21%) of direct costs are one-time (equipment, benchmark creation, studies and evaluations) and the rest recur (Table 62). Model adaptation (BPFM Stage 1) assumes in-kind access to shared national compute; the high scenario includes cloud compute in case it is not available.
+* **Assurance is funded explicitly.** About 6% goes to governance, legal review, audits and independent evaluation, and about 7% to data and annotation, including the benchmark and citation judgements. These costs are protected in the annual plan so that safeguards are not cut when budgets are tight.
+* **Uncertainty is shown, not hidden.** A low scenario gives about Tk 17.9 crore and a high scenario about Tk 25.3 crore (Table 62). Import duty and VAT on equipment are excluded from the base case because they depend on the host's exemption status.
 
-The budget is most sensitive to staff costs and the exchange rate. A 20% change in core staff costs changes the total by about Tk 1.8 crore; a 10% change in the exchange rate changes it by only about Tk 0.3 crore, because only equipment is priced in US dollars.
+The budget is most sensitive to staff costs. A 20% change in staff costs changes the total by about Tk 2.0 crore; filling all Year 1 posts from month 1 adds about Tk 0.5 crore; equipment 25% dearer adds about Tk 0.7 crore; escalation of 10% instead of 8% adds about Tk 0.4 crore; and a 10% weaker taka adds only about Tk 0.3 crore, because only equipment is priced in US dollars. For scale only, the total is about a tenth of the Tk 192.66 crore proposed for the KOICA-supported AI hub technical assistance project [35] and below the Tk 200 to 250 crore AI Innovation Fund proposed in the draft national AI policy [88]; neither figure is an approved allocation, and the projects are not comparable in scope.
+
+These are planning estimates. No funds have been requested, approved or committed, and the feasibility and costing study (Deliverable D1.3) will replace each assumption with quotations, the host's salary scale and its overhead rate.
 
 ## 17.3 Budget Beyond 36 Months
 
-Beyond the 36-month plan, budgets are set at each strategic review (Table 48), and Blueprint 2.0 will contain a costed plan for horizon H2. As a planning range, a lab that maintains the Year 3 team, the benchmark and the evaluation function would need about Tk 7 to 9 crore a year in 2029 and 2030. A national network in horizon H3, with regional training hubs and support for federated search, would need more, but much of the operating cost of adopted tools should then sit in the budgets of the agencies that use them, under service agreements, rather than in BAPIL's own budget.
+Beyond the 36-month plan, budgets are set at each strategic review (Table 48), and Blueprint 2.0 will contain a costed plan for horizon H2. As a planning range, a lab that maintains the Year 3 team, the benchmark and the evaluation function would need about Tk 7.5 to 9 crore a year in 2029 and 2030: recurring costs in Year 3, with overheads and contingency, are about Tk 7.3 crore at Year 3 prices (Table 62), before further escalation. A national network in horizon H3, with regional training hubs and support for federated search, would need more, but much of the operating cost of adopted tools should then sit in the budgets of the agencies that use them, under service agreements, rather than in BAPIL's own budget.
 
 ## 17.4 Funding Model
 
@@ -1874,7 +1924,7 @@ Funding should be diversified, as set out in Appendix C of the White Paper: a go
 
 ## 17.5 Value for Money
 
-Value for money is assessed at the mid-term and final evaluations using four measures: economy (cost of inputs compared with benchmarks), efficiency (cost per output, such as cost per indexed document or per trained official), effectiveness (time saved and quality of evidence for users) and equity (reach beyond Dhaka and to under-served groups). Time saved by analysts is the most direct benefit, but it should not be overstated. Valuing an analyst's time at about Tk 500 an hour (based on grade 9 basic pay of Tk 44,000 a month plus allowances) [109], 300 users who each save four hours a month save time worth about Tk 0.7 crore a year, which is roughly a tenth of the Year 3 budget. Time savings alone therefore justify the cost only at the scale of the long-term targets (thousands of regular users, Table 46). In the short term, the case rests as much on the quality of evidence, the open benchmark and the governance methods as on time saved. The time-to-evidence studies in P1 provide the data to test this calculation.
+Value for money is assessed at the mid-term and final evaluations using four measures: economy (cost of inputs compared with benchmarks), efficiency (cost per output, such as cost per indexed document or per trained official), effectiveness (time saved and quality of evidence for users) and equity (reach beyond Dhaka and to under-served groups). Time saved by analysts is the most direct benefit, but it should not be overstated. Valuing an analyst's time at about Tk 500 an hour (based on grade 9 basic pay of Tk 44,000 a month plus allowances) [109], 300 users who each save four hours a month save time worth about Tk 0.7 crore a year, which is less than a tenth of the Year 3 budget. This is an illustrative calculation, not a forecast. Time savings alone therefore justify the cost only at the scale of the long-term targets (thousands of regular users, Table 46). In the short term, the case rests as much on the quality of evidence, the open benchmark and the governance methods as on time saved. The time-to-evidence studies in P1 provide the data to test this calculation.
 
 ## 17.6 Procuring AI Products and Services
 
@@ -1953,7 +2003,7 @@ The logical framework sets out the results chain with indicators, means of verif
 | Governance | Serious incidents (all handled within agreed time limits) | Not applicable | 0 | 0 |
 | Impact | Official documents or policy briefs citing BAPIL evidence | 0 | 5 | 30 |
 
-The indicators at months 12 and 36 are consistent with the long-term targets in Table 46, which extend them to 2041.
+The indicators at months 12 and 36 are proposed targets, consistent with the long-term targets in Table 46, which extend them to 2041. Each is measured by the methods below and, for quality indicators, by the protocol in Annex R.
 
 ## 18.4 Methods
 
@@ -2018,7 +2068,9 @@ The risk register is owned by the Director, reviewed quarterly by the Steering B
 | R17 | Technology obsolescence over the long horizon | M | M | Modular design and ADRs; model re-selection at reviews; investment in data and evaluation rather than one model | TAB |
 | R18 | Floods, cyclones, power or network outages affecting hosting | M | H | Disaster-recovery site; offline backups; recovery targets of Table 35; low-bandwidth design | Platform lead |
 
-*Note.* L = low, M = medium, H = high. The register is reviewed quarterly by the Steering Board.
+*Note.* L = low, M = medium, H = high. The register is reviewed quarterly by the Steering Board. Early-warning indicators, contingencies, residual ratings and review frequencies are given in Annex U (Table 67).
+
+For each risk, Annex U (Table 67) adds an early-warning indicator, a contingency if the risk occurs, a residual rating after mitigation and a review frequency.
 
 ## 19.3 Priority Risks
 
@@ -2076,9 +2128,11 @@ All research involving people (surveys, interviews, user studies) is approved by
 | D1 | Accept this Blueprint as a technical input to the national AI policy drafting process | Ministry of Posts, Telecommunications and Information Technology (ICT Division) | Q4 2026 |
 | D2 | Approve a 12-month Phase 1 pilot with a named government focal point and an MoU with a host institution | ICT Division and host institution | Within 90 days |
 | D3 | Authorise structured bulk access to already-public document collections and nominate data custodians | Legislative and Parliamentary Affairs Division, Finance Division, Planning Commission, BBS, a2i | Within 120 days |
-| D4 | Nominate members to the Steering Board and an independent Ethics and Risk Review Committee | ICT Division, academia, civil society | Within 90 days |
+| D4 | Nominate Steering Board members, and agree that ERRC members are selected through an open call by an independent nominations panel | ICT Division and host institution (Steering Board); independent panel (ERRC) | Within 90 days |
 | D5 | Commission the feasibility and costing study that sets the Phase 2 budget | ICT Division or a development partner | By month 6 |
 | D6 | Confirm guardrails: no deployment beyond class A without a G4 decision, and no use in prohibited categories | Steering Board | At charter adoption |
+
+*Note.* None of these decisions creates a statutory body or gives BAPIL legal powers. The approvals and agreements needed before month 1 are listed in Annex T (Table 65).
 
 ## 21.2 What Happens After the Decisions
 
@@ -2096,7 +2150,7 @@ While the decisions are considered, the following steps can proceed without comm
 
 ## 21.4 Conclusion
 
-Bangladesh has the data foundations, the institutions and the talent to build a trustworthy AI policy-intelligence capability, and it is now putting in place the legal framework and national AI policy within which such a capability must operate. This Blueprint shows how to start small, safely and openly: with public documents, a bilingual search and answer service that always shows its sources, a governance system with real decision rights, and pilots that must prove their value before they grow. It also shows how that start can grow, horizon by horizon, into a national capability that supports the 2041 goals, without ever relaxing the safeguards that make it trustworthy. The reference implementation shows that the core ideas already work. The next step belongs to the authorities and partners who can decide to test them on real policy questions.
+Bangladesh has the data foundations, the institutions and the talent to build a trustworthy AI policy-intelligence capability, and it is now putting in place the legal framework and national AI policy within which such a capability must operate. This Blueprint shows how to start small, safely and openly: with public documents, a bilingual search and answer service that always shows its sources, a governance system with real decision rights, and pilots that must prove their value before they grow. It also shows how that start can grow, horizon by horizon, into a national capability that supports the 2041 goals, without ever relaxing the safeguards that make it trustworthy. The reference implementation shows that the core mechanisms can be built and tested on a small scale; whether they help officials with real policy questions is what the pilot is designed to find out. That next step belongs to the authorities and partners who can decide to test them.
 
 \newpage
 
@@ -2215,7 +2269,7 @@ System and version; benchmark version and split; metrics by language and documen
 1. **Separate records per publication.** The White Paper, Executive Summary and this Blueprint each have their own Zenodo record and DOI. The Blueprint record contains the English and Bangla Blueprint, Summary and Decision Memo, in PDF and Markdown, plus figures and tables in LaTeX, PDF and PNG.
 2. **Related identifiers.** The Blueprint record declares that it *is supplement to* the White Paper (10.5281/zenodo.21363967), *references* the Executive Summary (10.5281/zenodo.21441172) and *is supplemented by* the GitHub repository release that contains the reference implementation.
 3. **DOI reservation.** The DOI is reserved on Zenodo before publication so that it can be printed in the documents; the PDFs are then rebuilt and uploaded.
-4. **Repository releases.** Repository releases use semantic versioning. Release v1.1.0 adds the Blueprint and the reference implementation.
+4. **Repository releases.** Repository releases use semantic versioning. Release v1.1.0 adds the Blueprint and the reference implementation. The Zenodo record for this Blueprint is published only after that release is publicly listed at <https://github.com/md-naim-hassan-saykat/bapil/releases>, so that every artefact the documents refer to can be checked by readers.
 5. **New versions.** Corrections produce a new version of the same Zenodo record (for example 1.0.1); substantive revisions produce Blueprint 2.0 (Milestone MS9).
 6. **Licences.** Documents are CC BY 4.0; code is MIT.
 7. **Language precedence.** The English edition is authoritative. Where the Bangla edition differs in interpretation, the English edition prevails.
@@ -2250,13 +2304,19 @@ This draft is offered for adoption by the Steering Board at Milestone MS1, after
 
 **Article 12. Review and amendment.** The charter is reviewed at each strategic review (Table 48). Amendments require a two-thirds majority of the Steering Board after consultation with the ERRC; Articles 3, 4 and 6 can be weakened only after public consultation.
 
+**Article 13. Precedence of law.** This charter operates within the law of Bangladesh and the rules of the host institution. Nothing in it overrides a statute, a regulator's powers or the host's legal obligations; where they conflict, the legal requirement prevails and the Steering Board amends the charter.
+
 \newpage
 
 # Annex F: Terms of Reference of the Ethics and Risk Review Committee
 
 **Purpose.** To provide independent review of the ethical, legal and societal risks of BAPIL's AI systems and research, and to hold a binding veto over tier T2 and T3 work.
 
-**Composition.** Five to seven members, a majority external to BAPIL and the host institution, covering law and human rights, data protection, ethics, the relevant policy domains, Bangla language and civil society, with gender balance. The chair is an external member. Members serve three-year terms, renewable once.
+**Composition.** Five to seven members, a majority external to BAPIL and the host institution, covering law and human rights, data protection, ethics, the relevant policy domains, Bangla language and civil society, with gender balance. The chair is an external member elected by the members. Members serve three-year terms, renewable once.
+
+**Appointment and removal.** Members are selected through a published open call by an independent nominations panel (Annex S) and confirmed by the Steering Board, which may decline a nominee only with written reasons. Government bodies may propose candidates but may not hold a majority of seats. A member can be removed only for cause, by a two-thirds vote of the Steering Board after a hearing.
+
+**Status.** The ERRC is created by the charter and the host agreement. Its decisions bind BAPIL and its host by agreement; it has no statutory powers and does not replace any regulator or the oversight committee proposed in the draft national AI policy.
 
 **Responsibilities.**
 
@@ -2378,7 +2438,7 @@ A DPIA is required before any processing of P2 data and is recommended for any n
 
 # Annex K: BanglaPolicyQA Annotation Guidelines (Summary)
 
-1. **Question writing.** Questions are written by domain experts from real analyst tasks, in natural Bangla or English, including some romanised Bangla and variant spellings. Each question should have a clear answer in the corpus, except for a designated share (about 10%) of unanswerable questions.
+1. **Question writing.** Questions are written by domain experts from real analyst tasks, in natural Bangla or English, including some romanised Bangla and variant spellings. Each answerable question should have a clear answer in the corpus. Out-of-scope questions, for testing abstention, are written as a separate set (200 in version 0) and need no gold passages.
 2. **Gold passages.** A second annotator, who did not write the question, finds the passage or passages that answer it and records their identifiers. A passage is gold only if it alone supports the answer.
 3. **Graded relevance.** Passages are marked 2 (fully answers), 1 (partly answers or provides necessary context) or 0 (not relevant).
 4. **Adjudication.** Disagreements are resolved by a third annotator; agreement rates are reported in the datasheet.
@@ -2397,7 +2457,7 @@ A DPIA is required before any processing of P2 data and is recommended for any n
 | Adoption decision (G4) | The decision to transfer a tool to agency ownership as a class O system, or to stop |
 | AI system register | The internal record of every AI system, from which the public transparency register is generated |
 | BanglaPolicyQA | BAPIL's open benchmark of policy questions in Bangla and English with gold passages |
-| Citation precision | The share of cited passages that actually support the statement they are attached to |
+| Citation precision | The share of answer sentences whose cited passage fully supports the sentence, as judged by trained annotators |
 | Corpus version | An identifier of the exact set of documents and passages used for a result, enabling reproduction |
 | Data class | The sensitivity class of data, from P0 (public) to P3 (sensitive personal data) |
 | Extractive answer | An answer made of sentences selected from source passages, each with its citation |
@@ -2540,7 +2600,7 @@ The draft National AI Policy 2026-2030 proposed several elements [88]. The table
 | Risk categories (prohibited, high, limited, low) | Operational tiering method with a questionnaire, rules and tested code | Chapter 13; Annex B |
 | Algorithmic impact assessment for high-risk uses | Impact assessment template and worked examples; DPIA template | Annexes B and H |
 | Independent oversight committee | Tested model of an ethics and risk committee with a binding veto and publication duty | Chapter 5; Annex F |
-| Labelling of AI-generated content | Labelling and verification rules for generative features | Section 13.8 |
+| Measures against false or misleading AI-generated content | Labelling (a BAPIL rule) and verification of generated text; research protocols for P6 | Section 13.8; Chapter 12 |
 | Bangla-based national LLM | Open benchmark, governed corpus, evaluation protocol and an evidence-gated adaptation path | Chapter 9 |
 | Centralised national compute | Modest pilot footprint and use of shared compute for adaptation | Chapter 10 |
 | AI Innovation Fund | Open challenges and procurement clauses that keep markets open and fair | Chapter 17 |
@@ -2560,6 +2620,223 @@ The draft National AI Policy 2026-2030 proposed several elements [88]. The table
 | 5 to 8 | Write and annotate BanglaPolicyQA v0 questions; baseline evaluation | Benchmark v0 (500 questions); baseline report | |
 | 8 to 9 | Red-team and security tests; fix findings; train pilot users; ERRC review | Readiness evidence; model card | G2 |
 | 9 to 12 | Pilot with 30 or more analysts in two to three agencies; monthly problem reviews; time-to-evidence study | Pilot report; user survey; Year 1 results | G3 |
+
+\newpage
+
+# Annex P: Evidence Status and Claim Verification
+
+This annex records the evidence behind the Blueprint's key factual claims, as checked on 21 and 22 October 2026, and what was changed as a result. It uses nine status labels:
+
+* **Verified fact:** confirmed against a primary or official source.
+* **Source-reported fact:** reported by a credible secondary source but not independently confirmed against the primary text.
+* **Research finding:** a result produced by the author's own analysis or code, with its limits stated.
+* **Author's analysis:** a calculation or judgement by the author from stated inputs.
+* **Design recommendation:** what the Blueprint proposes should be done.
+* **Planning assumption:** an input to planning, such as a unit cost, to be replaced by better data.
+* **Proposed target:** a value that a future measurement must reach.
+* **Unverified claim:** a statement that could not be checked; marked "to be confirmed" in the text.
+* **Future milestone:** something planned that has not yet happened.
+
+**Table 60.** Evidence status of key claims (verified on 21 to 22 October 2026)
+
+| Claim | Where | Status | Best available evidence | Action in this edition |
+|--------------------------|-------------|---------------|--------------------------|----------------------|
+| Bangladesh ranked 100 of 193 in the UN EGDI 2024, value 0.657 (111 in 2022) | Ch. 2; Table 4 | Verified fact | UN DESA E-Government Knowledgebase country data [120]; [21, 107] | Kept; primary source added |
+| Bangladesh in the top tier of the ITU Global Cybersecurity Index 2024 | Ch. 2; Table 4 | Verified fact (official national source) | BGD e-GOV CIRT: designated a Tier 1 role-model country [119] | Wording made specific |
+| Ranked 82nd in the 2023 Government AI Readiness Index | Ch. 2; Table 4 | Source-reported fact | Sultana et al., 2026 [80]; the index report itself was not re-checked | Citation corrected to [80] |
+| Personal Data Protection Act, 2026 enacted in April 2026 | Ch. 1, 2, 14; Tables 4, 42 | Source-reported fact, independently unverified | Securiti, June 2026 [85]; Azam, September 2026 [116]; title listed on the official laws database (text not reviewed) | Enactment and commencement separated; commencement marked to be confirmed |
+| National Data Management Bill, 2026 passed on 10 April 2026 | Ch. 2, 14; Table 42 | Source-reported fact | Daily Sun, 10 April 2026 [86] | Ordinance name corrected; features attributed to the 2025 Ordinance |
+| Under the 2025 Ordinance, the sections on chief data officers, complaints and offences did not commence immediately | Ch. 8, 14; Table 42 | Source-reported fact (secondary legal commentary) | Greenleaf and Al Razi, June 2026 [113]; 18-month compliance window reported [114] | Added; position under the Act referred to legal counsel |
+| Cyber Security Bill, 2026 passed on 10 April 2026; amendment on AI-generated content passed by 30 June 2026 | Ch. 14; Table 42 | Source-reported fact | [86], [87] | Wording qualified; commencement to be confirmed |
+| Draft National AI Policy 2026-2030 released for consultation in January 2026 | Ch. 1, 2, 14 | Source-reported fact | The Daily Star, 26 January 2026 [88]; The Financial Express, 29 January 2026 [89] | Kept |
+| The draft policy proposes labelling of AI-generated content | Sect. 13.8; Table 41; Annex N | Not supported by the cited sources | [88] and [89] describe measures against false or misleading AI-generated content | Corrected; labelling is now presented as BAPIL's own rule |
+| National AI policy drafting to begin in Q4 2026 with a joint team | Ch. 1, 14, 21 | Source-reported fact | The Daily Observer, 10 August 2026 [91] | Kept |
+| AI Hub project cost Tk 192.66 crore; project under implementation | Ch. 3, 17; Table 42 | Partly incorrect | Proposal awaiting approval in June 2026 [35]; USD 13 million grant agreement signed in August 2026 [117] | Status corrected; comparison kept for scale only |
+| Reference implementation published on GitHub and archived on Zenodo (release v1.1.0) | Front matter; Ch. 1, 11, 16, 21; Table 1 | Future milestone at the time of writing | Code with 49 passing unit tests exists in the repository's working branch; release v1.1.0 and the Blueprint DOI were not yet public on 22 October 2026 | Reworded as issued with this Blueprint; the DOI record is published only after the release exists (Annex D) |
+| Demonstration Recall@10 of 0.92 and 6 of 6 correct abstentions | Sect. 11.5 | Research finding (small demonstration) | Evaluation report generated by the build: 10 documents, about 1,700 passages, 24 questions | Kept with its limitation |
+| Recall@10 at least 0.85 and citation precision at least 0.95 | Ch. 9, 12; Tables 28, 38 | Proposed target | Not yet measured | Labelled as targets; measurement protocol added (Annex R) |
+| Budget of Tk 18.49 crore; annual totals 4.96, 6.71 and 6.83 | Ch. 17; Tables 49, 50; Summary; Memo | Planning assumption; rounding difference | Unrounded total Tk 18.4868 crore; annual figures rounded independently | Budget revised with escalation, recruitment ramp and contingency; reconciled in Table 61 |
+| Grade 9 basic pay of Tk 44,000 in the Ninth National Pay Scale | Sect. 17.5; Table 49 | Source-reported fact (Cabinet approval) | The Financial Express, 31 August 2026 [109]; gazette not seen | Kept; status noted |
+| Exchange rate of Tk 123.65 per US dollar on 19 October 2026 | Table 49 | Verified fact | Bangladesh Bank [110] | Kept |
+| Inflation of 8.34% in September 2026 | Table 49 | Source-reported fact | Dhaka Tribune, 7 October 2026, reporting BBS data [118] | Added as the basis for escalation |
+| L40S GPU card about USD 7,500 | Table 49 | Source-reported fact (vendor publication) | Modal, August 2025 [111] | Kept as a price basis; quotations required |
+| Analyst time saved worth about Tk 0.7 crore a year | Sect. 17.5 | Author's analysis | Calculation from [109] and assumed usage | Kept and labelled as illustrative |
+| Steering Board, ERRC and TAB with stated powers | Ch. 5; Annexes E to G | Design recommendation | No body has been constituted or approved | Status, appointment and limits set out in Annex S |
+| Long-term targets for 2028 to 2041 | Ch. 16; Table 46 | Proposed target | Not applicable | Kept; revised at strategic reviews |
+
+*Note.* Status labels are defined in Annex P. Web sources were consulted on 21 and 22 October 2026. The official Laws of Bangladesh database does not permit automated retrieval, so statutory texts were not reviewed directly.
+
+**What was and was not reviewed.** The full English text, all tables and figures, the budget model and the reference implementation were reviewed, and the Bangla edition was compared with the English edition for numbers, dates, tables and cross-references. External claims were checked against the sources listed in the references, using official sources where they could be retrieved. The official Laws of Bangladesh database does not permit automated retrieval, so statutory texts, gazette notifications and commencement provisions were not read directly; the legal descriptions in Chapter 14 remain summaries of secondary sources and require confirmation by qualified Bangladesh counsel. The bibliography inherited from the White Paper (references 1 to 83) was not re-verified item by item. A separate Audit and Revision Report in the repository lists every issue found, its severity and how it was resolved.
+
+\newpage
+
+# Annex Q: Budget Reconciliation, Cost Types and Scenarios
+
+The indicative budget in Chapter 17 (Table 50) is computed by `blueprint/src/budget_model.py` from the assumptions in Table 49. This annex reconciles it with the draft estimate that preceded the October 2026 review, separates one-time from recurring costs, and shows low and high scenarios.
+
+**Table 61.** Reconciliation of the indicative budget with the draft before this review (Tk crore, 36 months)
+
+| Step | 36-month total | Change |
+|--------------------------------------------------|-------------|-------------|
+| Pre-audit draft budget (October 2026) | 18.49 | Starting point |
+| Year 2 and 3 amounts restated at Year 1 prices | 18.29 | -0.20 |
+| Explicit escalation of taka costs (8% a year) | 19.79 | +1.50 |
+| Year 1 recruitment ramp (75% of positions filled on average) | 19.29 | -0.50 |
+| Evaluation items added (out-of-scope set, citation judgements, annual system audit) | 19.54 | +0.25 |
+| **Separate contingency of 5% of direct costs = revised base case** | **20.43** | +0.89 |
+
+*Note.* Each step is computed by blueprint/src/budget_model.py (function bridge) by switching one assumption at a time. The draft's annual totals (4.96, 6.71 and 6.83) added to 18.50 only because each was rounded separately; the unrounded draft total was Tk 18.4868 crore.
+
+**Table 62.** Budget by cost type, with low, base and high scenarios (Tk crore)
+
+| Item | Year 1 | Year 2 | Year 3 | Total |
+|------------------------------------------|----------|----------|----------|-----------|
+| One-time direct costs (equipment, benchmark creation, studies and evaluations) | 1.42 | 1.46 | 0.79 | 3.67 |
+| Recurring direct costs (staff, editors, fellows, hosting, OCR, training, assurance) | 2.69 | 5.05 | 6.35 | 14.10 |
+| Host overheads and contingency | 0.62 | 0.98 | 1.07 | 2.66 |
+| **Base case total** | **4.73** | **7.49** | **8.21** | **20.43** |
+| Low scenario total | 4.20 | 6.58 | 7.16 | 17.93 |
+| High scenario total | 5.76 | 9.46 | 10.03 | 25.25 |
+
+*Note.* Low scenario: staff costs 15% lower, escalation 6%, equipment 20% cheaper, Tk 120 per US dollar. High scenario: staff costs 20% higher, escalation 10%, equipment 25% dearer (for example import duty and VAT), Tk 135 per US dollar, contingency 10% and USD 20,000 of cloud compute for Stage 1 adaptation. Figures are rounded independently.
+
+**Sensitivity.** Changing one assumption at a time from the base case: staff costs 20% higher or lower change the total by about Tk 2.0 crore; filling all Year 1 posts from month 1 adds about Tk 0.5 crore; equipment 25% dearer adds about Tk 0.7 crore; escalation of 10% instead of 8% adds about Tk 0.4 crore; and a taka 10% weaker against the US dollar adds about Tk 0.3 crore.
+
+**Inputs still required.** The feasibility and costing study (Deliverable D1.3) should replace these assumptions with: the host's salary scale, increment rules and overhead rate; quotations for servers, GPUs and storage; the host's status for import duty and VAT; data-centre charges; confirmation of in-kind national compute; and agreed rates for annotators and trainers. Until then every figure here is an estimate, not approved funding.
+
+\newpage
+
+# Annex R: Evaluation Protocol and Release Gates
+
+This annex turns the thresholds of Table 28 into a measurement procedure. It distinguishes what is measured automatically from what needs human judgement, states minimum sample sizes and the decision rule for each gate, and names who is responsible.
+
+**Table 63.** Evaluation protocol and release-gate rules
+
+| Measure | Definition | Test set and sample | Method and responsibility | Decision rule |
+|---------------|--------------------------|----------------------|--------------------|----------------------|
+| Recall@10, MRR@10, nDCG@10 | For each answerable question, a hit if any gold passage is in the top 10; Recall@10 is the mean of hits. MRR and nDCG as in Table 28 | Private test split: at least 300 answerable questions in v0 (about 150 per language) and 1,200 in v1 | Automatic scoring by the evaluation team; script, outputs, configuration and corpus version archived | Threshold met if the point estimate meets it and the 95% interval is no wider than plus or minus 5 points (about 4 points at n = 300); otherwise annotate more items before deciding |
+| Citation precision | Share of sampled answer sentences whose cited passage fully supports the sentence (supported, partly supported or not supported; only supported counts) | 400 answer sentences drawn at random from test answers, at least 200 per language | Two trained annotators who do not know the system version; a third adjudicates; Cohen's kappa reported (target 0.70 or more) | Point estimate at least 0.95 (interval about plus or minus 2 points at n = 400) |
+| Unsupported-claim rate | Share of sampled sentences not supported by any retrieved passage | Same sample as citation precision | Same annotators | Point estimate at most 2% |
+| Correct abstention and answer coverage | Abstentions on out-of-scope questions; answers on answerable questions | 150 out-of-scope test questions in v0 (200 written: 50 development, 150 test); all answerable test questions | Automatic | Abstention at least 0.90 (interval about plus or minus 5 points); coverage at least 0.80 |
+| Language parity | Recall@10 for English minus Recall@10 for Bangla, with a bootstrap interval | Per-language test subsets | Automatic | Reported in v0, where the interval is too wide to decide; release condition from v1 onwards |
+| Robustness | Recall@10 on variant-spelling and romanised queries, on questions answered in OCR-derived documents, and on code-mixed queries | At least 100, 100 and 50 test items respectively | Automatic | Variant spelling at least 0.75; the other two reported with no gate in v0 |
+| Prompt injection and prohibited outputs | Share of red-team attempts (instructions hidden in documents or queries) that change behaviour; requests for prohibited outputs | At least 100 attempts, refreshed at each release | Security lead and an external red team | At most 5%; any leak of non-public data is a failure |
+| Privacy | Presence of P2 or P3 data in logs, outputs or evaluation sets; access-control tests | Log samples and automated scans | Governance analyst; annual independent audit | Zero findings |
+| Latency and availability | p95 response time; share of working hours available | Load test with 30 concurrent users at G2; monitoring during G3 | Platform lead | 3 s for search and 10 s for answers; at least 99% |
+| Usefulness | Mean rating on a 5-point scale | At least 30 pilot users; at least 100 answers rated by Bangla editors | Product owner and evaluation team | At least 4.0 |
+| P2 extraction accuracy | Share of extracted table cells that match the source document | Stratified random sample of at least 1,000 cells across years and ministries | Two independent checkers | At least 99% (interval about plus or minus 0.6 points) |
+| Time to evidence | Median time to find and cite authoritative evidence on matched tasks, with and without the tool | At least 20 analysts, 6 tasks each, crossover design | Evaluation team; independent evaluator at month 18 | Effect and interval reported; informs G4, no pass mark at G3 |
+| Reproducibility | Re-scoring of archived outputs on the private split | Every release used for a gate decision | Independent evaluator before G4 | Re-scored metrics within 1 point of those reported |
+
+*Note.* Intervals are 95% Wilson or bootstrap intervals. BanglaPolicyQA v0 has 500 answerable questions (40% public development, 60% private test) and 200 out-of-scope questions. Sample sizes are minimums; the ERRC and TAB may require more for tier T2 uses.
+
+Five rules apply to every evaluation:
+
+1. **Separate retrieval from answers.** Recall@10 measures whether the right passage was found; it says nothing about whether the answer is correct. Citation precision and the unsupported-claim rate measure answers, and are judged by people.
+2. **Judge support, not presence.** A citation counts only if the cited passage, read on its own, fully supports the sentence. Annotators see the sentence and the passage, not the system version.
+3. **Report uncertainty.** Every metric is reported with a 95% interval, by language and by document type. Differences smaller than the interval are not treated as improvements.
+4. **Freeze and archive.** Each gate decision uses a frozen benchmark version, a recorded corpus version and configuration, and archived outputs that an independent evaluator can re-score.
+5. **Fail safe.** If any safety measure (prompt injection, privacy, unsupported claims) misses its threshold, the system does not pass the gate, whatever its other results.
+
+\newpage
+
+# Annex S: Governance Bodies, Status and Safeguards
+
+This annex sets out, for each proposed body, its status, how its members are appointed, its decision rights and their limits, how it reports and how its independence is protected. It also explains how BAPIL relates to existing institutions.
+
+**Table 64.** Governance bodies: status, appointment, decision rights and safeguards
+
+| Body | Status and basis | Membership and appointment | Chair and secretariat | Decision rights and limits | Reporting and transparency | Independence and conflicts |
+|-------------------|------------------|----------------------|-------------|----------------------|----------------|-------------------|
+| **Steering Board** | Proposed; created by the MoU and the host agreement; no statutory power | 7 to 9 members nominated by their organisations; academic and civil-society members chosen by open call; 3-year terms | Co-chairs from the ICT Division and the host; secretariat in the Director's office | Approves plans, budgets, partnerships and senior appointments; joint G4 decisions with agencies; cannot override an ERRC refusal or the law | Meets quarterly; decisions and minutes published in summary; annual report | Annual declarations; recusal; the industry member does not vote on procurement in its sector |
+| **Ethics and Risk Review Committee (ERRC)** | Proposed; established by the charter; binding inside BAPIL through the charter and host agreement, not by statute | 5 to 7 members, a majority external, selected through an open call by the independent nominations panel and confirmed by the Steering Board; 3-year terms, renewable once; removal only for cause by two thirds of the Board after a hearing | External chair elected by members; secretariat provided by the governance analyst | Approves, approves with conditions, refuses or suspends tier T2 and T3 work at G1, G2 and G4; refusal is binding; cannot authorise what the law or the host forbids | Decision summaries within 30 days; dissent recorded; annual report | Majority external; no member employed by a supplier under evaluation; protected budget; staff may raise concerns directly |
+| **Technical Architecture Board (TAB)** | Proposed; internal technical body under the Director | Lead engineers, the security lead and two external reviewers appointed by the Director with Board approval | Chief engineer; secretariat in the platform team | Approves designs at G1, models and major dependencies; maintains ADRs | ADRs public in the repository; meets monthly | External reviewers declare commercial interests and do not review their employers' products |
+| **International Advisory Panel** | Proposed; advisory only | Invited by the Steering Board; personal capacity; 2-year terms | Chair chosen by members; secretariat in the Director's office | None; gives advice on methods, benchmarks and governance | Annual note published | Declarations of interest |
+| **Director** | Proposed post; employee of the host institution | Appointed by the host through open competition and confirmed by the Steering Board | Not applicable | Operational decisions within approved plans and budgets; may stop any pilot | Monthly reports to the Board | Host employment rules; declarations |
+| **Host-agency product owners** | Officials designated in writing by their agencies | Designated by the agency head | Not applicable | Define needs; accept or reject pilots at G3 and G4 in their agency | Pilot reports | Act under agency rules; receive no payment from BAPIL |
+| **Independent nominations panel** | Proposed; convened once for each ERRC term | Three people of standing in law, ethics and civil society, invited by the host institution's research ethics committee | Members choose a convener | Shortlists and recommends ERRC members | Publishes the call and selection criteria | Members may not serve on the ERRC they select |
+
+*Note.* None of these bodies exists yet. BAPIL's internal rules apply in addition to the law and never in place of it; where the law, a regulator or the host institution requires otherwise, the legal requirement prevails.
+
+**Relationship with existing institutions.** BAPIL is a research initiative inside a host institution and has no regulatory role. The authorities created under the data-protection and data-management laws, the cyber-security authorities and the courts keep their full powers over BAPIL's activities, as over any other organisation. The host institution's own governing bodies, finance rules, audit arrangements and research ethics committee continue to apply. The independent oversight committee proposed in the draft national AI policy would be created by an Act of Parliament [88]; if it is established, BAPIL would register its systems with it and follow its decisions, and the ERRC would continue only as BAPIL's internal review.
+
+**Overlaps and how they are resolved.** The Steering Board and the host's governing body both approve budgets: the host approves the financial framework and the Board approves the BAPIL plan within it. The ERRC and the host's research ethics committee both review research with people: the ethics committee decides on research ethics, and the ERRC decides on system risk; neither may approve what the other has refused. Joint G4 decisions are shared between the Steering Board and the host agency because the agency carries the operational and legal responsibility for a tool it adopts.
+
+\newpage
+
+# Annex T: Preconditions, Authorisations and Work Packages
+
+The 36-month clock cannot start until certain approvals, agreements and funds are in place. Table 65 lists them, with the instrument or authority each requires and its status. Table 66 then defines each work package with its owner, preconditions, acceptance tests, budget line, risks and decision gate.
+
+**Table 65.** Preconditions and authorisations before and early in the 36-month plan
+
+| Precondition | Why it is needed | Instrument or authority | Status (October 2026) | Needed by |
+|----------------------|-------------------|--------------------------|---------------|------------|
+| Host institution selected | Legal home for staff, funds and data | Open call (Section 5.2); resolution of the host's governing body | Not started | Before month 1 |
+| MoU with the ICT Division | Policy channel, data access and transfer route | MoU signed under the ICT Division's own approval procedures (Decision D2) | Requested; not decided | Month 1 (starts the clock) |
+| Year 1 funding committed | Salaries, equipment and studies | Government budget allocation under the applicable project-approval procedures, a research grant or a development-partner agreement (foreign grants through the Economic Relations Division) | No funding requested or approved | Month 1 |
+| Host agreement and separate cost centre | Financial governance (Section 17.8) | Host finance rules | Not started | Month 1 |
+| Director appointed | Single point of accountability | Host recruitment rules; Steering Board confirmation | Not started | Month 3 |
+| Steering Board and ERRC constituted; charter adopted | Decision rights and safeguards | Nominations (Decision D4); charter (Annex E) | Draft charter only | Month 3 (MS1) |
+| Reuse terms and bulk access for public documents | P1 corpus | Written confirmation from custodians (Decision D3); Right to Information requests as a fallback | Not started | Months 2 to 6 |
+| Independent legal review | Confirm which obligations apply and from when | Counsel engaged by the host (Section 14.3) | Not started | Before MS2 |
+| Hosting in Bangladesh | Requirement NFR-02 | Agreement with the National Data Center or the host's data centre | Not started | Month 4 |
+| Equipment procurement | Pilot infrastructure | Host's public procurement rules; confirmation of any duty and VAT exemption | Not started | Months 3 to 6 |
+| Research ethics approval | User studies, P3 and P6 | Host research ethics committee; ERRC | Not started | Before each study |
+| Data-sharing agreements for non-public data | P3 | Agreement (Annex I); DPIA (Annex H); NRDEX where available | Not started | Month 12 onwards |
+| Division-of-labour note with the AI Hub project | Avoid duplication | Letter or MoU with the ICT Division and the Bangladesh Hi-Tech Park Authority | Not started | MS2 |
+
+*Note.* Month 1 of the plan is the first month in which the MoU, the host agreement and Year 1 funding are all in place. January 2027 is the earliest plausible start if decisions D1, D2 and D4 are taken in the fourth quarter of 2026.
+
+**What does not need new legislation.** Phase 1 can proceed under an MoU, a host agreement, data-sharing agreements, the host's procurement and ethics procedures and a funding agreement. **What would.** A statutory centre (an option for horizon H3), any power to require agencies to share data or adopt BAPIL's methods, and the national oversight committee proposed in the draft policy would each need legislation or a formal government decision; none of them is assumed in the 36-month plan.
+
+**Table 66.** Work packages: owners, preconditions, acceptance tests and gates
+
+| Work package | Objective and accountable owner | Preconditions and dependencies | Deliverables and acceptance test | Budget line (Table 50) | Main risks (Table 55) | Gate and exit criterion |
+|---------------|--------------------|--------------------|-----------------------|--------------|-----------|------------------|
+| 1. Institution, charter and governance | Constitute governance and adopt the charter; Director | First six rows of Table 65 | Charter, terms of reference, register and policies; accepted when adopted by the Board and published | Core staff; governance | R1, R8, R16 | MS1; exit when all bodies meet as designed |
+| 2. Data access and corpus | Governed public corpus; data lead | Decision D3; hosting | Corpus releases with quality reports; accepted when Table 25 targets are met | Data and annotation; compute | R2, R3, R13 | MS2 and MS4; 5,000 documents with provenance by month 12 |
+| 3. P1 Policy Search | Cited search pilot; P1 lead with an agency product owner | Corpus from work package 2; benchmark v0; ERRC review (T2) | Alpha and pilot report; accepted when Table 28 thresholds are met under Table 63 and 30 users are active | Core staff; compute | R4, R11, R12 | G2 at month 9, G3 at month 12, G4 at month 24 |
+| 4. P2 Budget dashboard | Open budget dataset; P2 lead with a Finance Division product owner | Published budget documents | Dataset with DOI and dashboard; accepted at 99% accuracy on a 1,000-cell sample | Core staff; data | R2, R3 | G3 at month 12; G4 at month 24 |
+| 5. P3 Feedback analyser | Aggregate analysis of one consultation; P3 lead with the consultation owner | DPIA approved; consent wording approved by the ERRC | Analysis report; accepted when topics are validated by people with no re-identification | Core staff; governance | R5, R6 | G2 and G3 at month 15; stop if the DPIA is not approved |
+| 6. P4 Bangla foundation model | Benchmark and evidence-based model decision; ML lead | Corpus; annotators; compute for Stage 1 | Benchmark v0 and v1; Stage 1 decision memo; accepted under Table 30 | Data and annotation; compute | R15, R17 | MS3, MS6 and MS8 |
+| 7. P5 Readiness observatory | Indicator framework and annual report; policy lead | Public indicators | Framework and first report; accepted after peer review by the advisory panel and publication with data | Core staff | R9 | MS5 and MS7 |
+| 8. P6 Information integrity | Methods review; research lead | ERRC approval of the research protocol | Methods paper; accepted when the approved protocol was followed | Core staff; governance | R6, R14 | Stop if the protocol is not approved |
+| 9. Training and capacity | 500 officials trained; training lead | Tools available; host facilities | Programmes T1 to T6; accepted when pre- and post-tests show learning gains and 40% of trainees are women | Training and outreach | R7, R12 | MS4, MS7 and MS9 |
+| 10. Independent evaluation | Credible evidence for decisions; commissioned by the Steering Board | Funding; terms of reference | Baseline, mid-term and final evaluations; accepted when published with a DOI | Governance, audit and evaluation | R1, R8 | MS6 and MS9 |
+
+*Note.* Work packages correspond to the rows of Figure 12. Outputs, outcomes and impacts are separated in the logical framework (Table 53).
+
+\newpage
+
+# Annex U: Risk Monitoring
+
+Table 55 lists the eighteen registered risks with their mitigations and owners. This annex adds what is needed to manage them in practice: an early-warning indicator that can be checked, a contingency if the risk occurs, the residual rating after mitigation and how often each risk is reviewed.
+
+**Table 67.** Risk monitoring: early-warning indicators, contingencies and residual ratings
+
+| ID | Early-warning indicator | Contingency if the risk occurs | Residual (L/I) | Review frequency |
+|------|------------------------------|----------------------------|------------|----------------|
+| R1 | No government focal point named within 90 days of the request; change of senior sponsors | Continue as a university research lab on public data; seek another sponsor | M/M | Quarterly |
+| R2 | No reply from a custodian within 60 days; bulk access refused | Use documents already online; Right to Information requests; narrow the corpus | M/M | Monthly in Year 1 |
+| R3 | OCR quality score below 0.9 on more than 20% of pages | Increase manual correction; prioritise born-digital sources | M/L | Each corpus release |
+| R4 | Citation precision below 0.95; reports of wrong answers | Fall back to search-only mode; retrain users | L/H | Each release; monthly in pilots |
+| R5 | Any P2 data found in logs; access anomalies | Suspend P3; notify as the law requires; ERRC review | L/H | Monthly |
+| R6 | Requests to monitor individuals; scope changes touching tier T0 | ERRC refusal; publish the decision | L/H | At each gate |
+| R7 | Posts vacant for more than 3 months; more than 30% of offers refused | Use fellows and contractors; remote staff | M/M | Quarterly |
+| R8 | No Phase 2 funding commitment by month 18 | Scale down to the core: corpus, benchmark and governance | M/H | Quarterly |
+| R9 | Overlapping activities in AI Hub project plans | Joint work plan; divide work by function | L/M | Every six months |
+| R10 | A single vendor or model in more than one component without an exit plan | Re-tender; switch model on the benchmark | L/M | At each ADR |
+| R11 | Critical penetration-test findings; intrusion alerts | Isolate; restore from offline backup | L/H | Quarterly tests; continuous monitoring |
+| R12 | Monthly active users below half of target for two months | Co-design sprint; reconsider the pilot | M/M | Monthly |
+| R13 | New rules issued; findings of the legal review | Update procedures; pause affected processing | L/M | When rules are issued; quarterly |
+| R14 | Misuse reports; unusual aggregate query patterns | Restrict access; ERRC review | L/H | Monthly |
+| R15 | Gap of more than 5 points between development and test results; signs of test leakage | Refresh the test split | L/M | Each benchmark version |
+| R16 | Critical knowledge held by one person with no deputy | Activate the succession plan | M/M | Quarterly |
+| R17 | Re-selection shows the chosen model more than 5 points behind an alternative | Re-select through an ADR | L/M | Annually |
+| R18 | Flood or cyclone warnings; frequent power outages | Switch to the recovery site; offline operation | M/M | Before each monsoon and after drills |
+
+*Note.* Residual ratings are likelihood and impact after the mitigations in Table 55: L = low, M = medium, H = high. Owners are those named in Table 55.
 
 \newpage
 
@@ -3005,6 +3282,61 @@ Better Criteria for Better Evaluation: Revised Evaluation Criteria Definitions a
 Paris: Organisation for Economic Co-operation and Development, 2019[2026-10-21].
 Available:
 <https://www.oecd.org/en/publications/better-criteria-for-better-evaluation_15a9c26b-en.html>
+
+[113] GREENLEAF G, AL RAZI Y.
+Bangladesh's unconventional data privacy Ordinance[J/OL].
+Privacy Laws & Business International Report, 2026-06-01[2026-10-22].
+Available:
+<https://www.privacylaws.com/reports-gateway/articles/int201/int201bangladesh/>
+
+[114] KHAN M T I.
+The Personal Data Protection Ordinance 2025: What Every Bangladeshi Business Must Do Before the Clock Runs Out[EB/OL].
+Dhaka: Sovereign Chambers of Law, 2026-04-23[2026-10-22].
+Available:
+<https://bd-scl.com/insights/personal-data-protection-ordinance-2025-compliance.html>
+
+[115] DIGITAL POLICY ALERT.
+Bangladesh: Personal Data Protection (Amendment) Ordinance, 2026 (Ordinance No. 23 of 2026)[EB/OL].
+St. Gallen: Digital Policy Alert, 2026[2026-10-22].
+Available:
+<https://digitalpolicyalert.org/change/18757-personal-data-protection-amendment-ordinance-2026-ordinance-no-23-of-2026>
+
+[116] AZAM A H M S.
+Bangladesh Data Protection and Data Management Framework: A Governance-Capacity Assessment of the 2025 Ordinances and 2026 Acts[EB/OL].
+SSRN, 2026-09-14[2026-10-22].
+Available:
+<https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7436740>
+
+[117] THE DAILY OBSERVER.
+BD, KOICA sign $13m grant deal for AI tech experts[EB/OL].
+Dhaka: The Daily Observer, 2026-08-26[2026-10-22].
+Available:
+<https://observerbd.com/news/590061>
+
+[118] DHAKA TRIBUNE.
+Inflation rises in September[EB/OL].
+Dhaka: Dhaka Tribune, 2026-10-07[2026-10-22].
+Available:
+<https://www.dhakatribune.com/business/421534/inflation-rises-in-september>
+
+[119] BANGLADESH e-GOVERNMENT COMPUTER INCIDENT RESPONSE TEAM (BGD e-GOV CIRT).
+Who We Are[EB/OL].
+Dhaka: BGD e-GOV CIRT, 2026[2026-10-22].
+Available:
+<https://cirt.gov.bd/who-we-are>
+
+[120] UNITED NATIONS DEPARTMENT OF ECONOMIC AND SOCIAL AFFAIRS (UN DESA).
+UN E-Government Knowledgebase: Bangladesh country data[DB/OL].
+New York: United Nations, 2024[2026-10-22].
+Available:
+<https://publicadministration.un.org/egovkb/en-us/Data/Country-Information/id/14-Bangladesh>
+
+[121] KAPLAN J, MCCANDLISH S, HENIGHAN T, BROWN T B, CHESS B, CHILD R, GRAY S, RADFORD A, WU J, AMODEI D.
+Scaling Laws for Neural Language Models[EB/OL].
+Ithaca, NY: arXiv, 2020[2026-10-22].
+DOI: 10.48550/arXiv.2001.08361.
+Available:
+<https://arxiv.org/abs/2001.08361>
 
 
 \newpage

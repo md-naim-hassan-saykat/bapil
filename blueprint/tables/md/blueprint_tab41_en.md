@@ -6,7 +6,7 @@
 | Risk assessment and tiering | 1.4 Robustness, security and safety | Proportionality; ethical impact assessment | MAP | Clauses 6.1, 8.2 to 8.4; A.5 | Art. 5, Art. 9, Art. 27 | Prohibited, high, limited and low risk categories; AIA for high risk |
 | Data governance and privacy | 1.2 Human rights, incl. privacy | Privacy and data protection | MAP, MEASURE | A.7 Data for AI systems | Art. 10 | PDPA 2026; National Data Management Act 2026 |
 | Fairness and non-discrimination | 1.2 Fairness | Fairness and non-discrimination | MEASURE | A.5, A.7 | Art. 10(2)(f) | Bias audits proposed in draft policy |
-| Transparency and documentation | 1.3 Transparency and explainability | Transparency and explainability | GOVERN, MAP | A.6, A.8 | Art. 11, 13, 50 | Labelling of AI-generated content (draft policy) |
+| Transparency and documentation | 1.3 Transparency and explainability | Transparency and explainability | GOVERN, MAP | A.6, A.8 | Art. 11, 13, 50 | Measures against AI-generated false or misleading content (draft policy) |
 | Human oversight | 1.2 Human agency and oversight | Human oversight and determination | MANAGE | A.9 Use of AI systems | Art. 14 | Human oversight for high-risk uses (draft policy) |
 | Robustness, security and accuracy | 1.4 Robustness, security and safety | Safety and security | MEASURE | A.6 Verification and validation | Art. 15 | Cyber Security Act 2026 as amended |
 | Monitoring and incidents | 1.4, 1.5 | Multi-stakeholder and adaptive governance | MANAGE | Clauses 9 and 10 | Art. 72, 73 | Audits by oversight committee (draft policy) |

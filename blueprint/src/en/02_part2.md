@@ -26,7 +26,9 @@ The call should be open to public and private universities and to consortia led 
 
 <!-- TABLE:14 -->
 
-Two features deserve emphasis. First, the **Ethics and Risk Review Committee (ERRC)** has a binding veto over pilots and deployments of tier T2 and above, a majority of external members, and an obligation to publish summaries of its decisions (terms of reference in Annex F). Second, **host-agency product owners** are named officials inside each agency that pilots a tool. They define the need, recruit users and accept or reject the result, so that pilots answer real questions rather than technical curiosity.
+Two features deserve emphasis. First, the **Ethics and Risk Review Committee (ERRC)** has a binding veto over pilots and deployments of tier T2 and above, a majority of external members selected through an open call by an independent nominations panel, and an obligation to publish summaries of its decisions (terms of reference in Annex F). Second, **host-agency product owners** are named officials inside each agency that pilots a tool. They define the need, recruit users and accept or reject the result, so that pilots answer real questions rather than technical curiosity.
+
+All of these bodies are proposals. None has statutory powers: they would be created by the MoU, the host agreement and the charter, and their decisions bind BAPIL and its host by agreement, not by law. They do not replace any statutory body. In particular, the ERRC is not the independent oversight committee that the draft national AI policy proposes to create by an Act of Parliament [88], and BAPIL's data rules apply in addition to, never instead of, the duties set by the data-protection and data-management laws and the oversight of the authorities created under them. Annex S sets out, for each body, its status, appointment process, decision rights and their limits, reporting line and conflict-of-interest safeguards.
 
 ## 5.4 Decision Rights and Accountability
 
@@ -44,7 +46,8 @@ The Steering Board adopts a charter at Milestone MS1. A full draft is provided i
 * commit to open publication of code, benchmarks and evaluation reports, subject only to security and privacy exceptions recorded in writing;
 * require registration of every AI system in the AI system register before work begins;
 * set conflict-of-interest rules for board members, staff and partners, including vendors;
-* define how successful tools are transferred to agencies and how BAPIL withdraws.
+* define how successful tools are transferred to agencies and how BAPIL withdraws;
+* state that the charter operates within the law: where a statute, a regulator or the host institution's rules require something different, the legal requirement prevails.
 
 ## 5.6 Units and Ways of Working
 

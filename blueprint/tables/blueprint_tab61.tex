@@ -1,0 +1,35 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\setmainfont{Latin Modern Roman}
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali]
+\usepackage[Latin,Bengali]{ucharclasses}
+\setTransitionsFor{Bengali}{\begingroup\bengalifont}{\endgroup}
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{17cm}
+{\large\bfseries Table 61.}\ {\large Reconciliation of the indicative budget with the draft before this review (Tk crore, 36 months)}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=1.974\hsize\raggedright\arraybackslash}X>{\hsize=0.513\hsize\raggedright\arraybackslash}X>{\hsize=0.513\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{Step} & \textbf{36-month total} & \textbf{Change} \\
+\midrule
+Pre-audit draft budget (October 2026) & 18.49 & Starting point \\
+Year 2 and 3 amounts restated at Year 1 prices & 18.29 & -0.20 \\
+Explicit escalation of taka costs (8\% a year) & 19.79 & +1.50 \\
+Year 1 recruitment ramp (75\% of positions filled on average) & 19.29 & -0.50 \\
+Evaluation items added (out-of-scope set, citation judgements, annual system audit) & 19.54 & +0.25 \\
+\textbf{Separate contingency of 5\% of direct costs = revised base case} & \textbf{20.43} & +0.89 \\
+\bottomrule
+\end{tabularx}
+\par\vspace{5pt}{\footnotesize\itshape Each step is computed by blueprint/\allowbreak{}src/\allowbreak{}budget\_model.py (function bridge) by switching one assumption at a time. The draft's annual totals (4.96, 6.71 and 6.83) added to 18.50 only because each was rounded separately; the unrounded draft total was Tk 18.4868 crore.}
+\par\vspace{3pt}{\scriptsize\color{gray} Source: BAPIL Technical Blueprint, Version 1.0 (2026). CC BY 4.0.}
+\end{minipage}
+\end{document}

@@ -47,7 +47,7 @@
 }
 \foreach \q in {0,...,11} {
   \pgfmathtruncatemacro{\qq}{mod(\q,4)+1}
-  \node[font=\scriptsize] at (\L+\q*3*\x+1.5*\x,-2.5mm) {Q\qq};
+  \node[font=\scriptsize] at (\L+\q*3*\x+1.5*\x,-2.5mm) {\ifcase\qq\or ১ম\or ২য়\or ৩য়\or ৪র্থ\fi};
 }
 \foreach \m in {0,3,...,36} \draw[band2, line width=0.4pt] (\L+\m*\x,-5mm) -- (\L+\m*\x,-5mm-10*\h-2mm);
 % rows: label, start month (0-based), end month, style

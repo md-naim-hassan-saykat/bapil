@@ -185,6 +185,18 @@ def reference_section(text, lang):
     return head + "\n" + "\n\n".join(allrefs[n] for n in nums) + "\n"
 
 
+CITE_RE = re.compile(r"(?<![!\w\]])\[(\d[\d,\s\-]*)\](?![(\[])")
+
+
+def bn_citations(text):
+    """Bangla editions: write citation numbers such as [84, 85] and the reference
+    labels in Bangla digits. Code blocks and inline code are left untouched."""
+    parts = re.split(r"(```.*?```|`[^`\n]*`)", text, flags=re.S)
+    for i in range(0, len(parts), 2):
+        parts[i] = CITE_RE.sub(lambda m: "[%s]" % bn(m.group(1)), parts[i])
+    return "".join(parts)
+
+
 def figure_md(fid, lang):
     suffix = "" if lang == "en" else "_bn"
     label = ("Figure %d." % int(fid)) if lang == "en" else ("চিত্র %s।" % bn(int(fid)))
@@ -234,6 +246,8 @@ def assemble(name, lang, meta):
     if "{{REFERENCES}}" in text:
         body = text.split("{{REFERENCES}}")[0]
         text = text.replace("{{REFERENCES}}", reference_section(body, lang))
+    if lang == "bn":
+        text = bn_citations(text)
     leftover = re.findall(r"\{\{[A-Z_]+\}\}|<!-- (?:TABLE|FIGURE):", text)
     if leftover:
         raise SystemExit("unfilled markers in %s: %s" % (name, leftover[:5]))

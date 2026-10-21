@@ -1,0 +1,47 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\setmainfont{Latin Modern Roman}
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali]
+\usepackage[Latin,Bengali]{ucharclasses}
+\setTransitionsFor{Bengali}{\begingroup\bengalifont}{\endgroup}
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{17cm}
+{\large\bfseries Table 67.}\ {\large Risk monitoring: early-warning indicators, contingencies and residual ratings}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=0.326\hsize\raggedright\arraybackslash}X>{\hsize=1.630\hsize\raggedright\arraybackslash}X>{\hsize=1.522\hsize\raggedright\arraybackslash}X>{\hsize=0.652\hsize\raggedright\arraybackslash}X>{\hsize=0.870\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{ID} & \textbf{Early-warning indicator} & \textbf{Contingency if the risk occurs} & \textbf{Residual (L/\allowbreak{}I)} & \textbf{Review frequency} \\
+\midrule
+R1 & No government focal point named within 90 days of the request; change of senior sponsors & Continue as a university research lab on public data; seek another sponsor & M/\allowbreak{}M & Quarterly \\
+R2 & No reply from a custodian within 60 days; bulk access refused & Use documents already online; Right to Information requests; narrow the corpus & M/\allowbreak{}M & Monthly in Year 1 \\
+R3 & OCR quality score below 0.9 on more than 20\% of pages & Increase manual correction; prioritise born-digital sources & M/\allowbreak{}L & Each corpus release \\
+R4 & Citation precision below 0.95; reports of wrong answers & Fall back to search-only mode; retrain users & L/\allowbreak{}H & Each release; monthly in pilots \\
+R5 & Any P2 data found in logs; access anomalies & Suspend P3; notify as the law requires; ERRC review & L/\allowbreak{}H & Monthly \\
+R6 & Requests to monitor individuals; scope changes touching tier T0 & ERRC refusal; publish the decision & L/\allowbreak{}H & At each gate \\
+R7 & Posts vacant for more than 3 months; more than 30\% of offers refused & Use fellows and contractors; remote staff & M/\allowbreak{}M & Quarterly \\
+R8 & No Phase 2 funding commitment by month 18 & Scale down to the core: corpus, benchmark and governance & M/\allowbreak{}H & Quarterly \\
+R9 & Overlapping activities in AI Hub project plans & Joint work plan; divide work by function & L/\allowbreak{}M & Every six months \\
+R10 & A single vendor or model in more than one component without an exit plan & Re-tender; switch model on the benchmark & L/\allowbreak{}M & At each ADR \\
+R11 & Critical penetration-test findings; intrusion alerts & Isolate; restore from offline backup & L/\allowbreak{}H & Quarterly tests; continuous monitoring \\
+R12 & Monthly active users below half of target for two months & Co-design sprint; reconsider the pilot & M/\allowbreak{}M & Monthly \\
+R13 & New rules issued; findings of the legal review & Update procedures; pause affected processing & L/\allowbreak{}M & When rules are issued; quarterly \\
+R14 & Misuse reports; unusual aggregate query patterns & Restrict access; ERRC review & L/\allowbreak{}H & Monthly \\
+R15 & Gap of more than 5 points between development and test results; signs of test leakage & Refresh the test split & L/\allowbreak{}M & Each benchmark version \\
+R16 & Critical knowledge held by one person with no deputy & Activate the succession plan & M/\allowbreak{}M & Quarterly \\
+R17 & Re-selection shows the chosen model more than 5 points behind an alternative & Re-select through an ADR & L/\allowbreak{}M & Annually \\
+R18 & Flood or cyclone warnings; frequent power outages & Switch to the recovery site; offline operation & M/\allowbreak{}M & Before each monsoon and after drills \\
+\bottomrule
+\end{tabularx}
+\par\vspace{5pt}{\footnotesize\itshape Residual ratings are likelihood and impact after the mitigations in Table 55: L = low, M = medium, H = high. Owners are those named in Table 55.}
+\par\vspace{3pt}{\scriptsize\color{gray} Source: BAPIL Technical Blueprint, Version 1.0 (2026). CC BY 4.0.}
+\end{minipage}
+\end{document}

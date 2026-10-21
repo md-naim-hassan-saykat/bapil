@@ -102,7 +102,7 @@ Clear roles make data governance work in practice:
 * **The BAPIL data lead** is accountable for the corpus, the catalogue, quality metrics and data agreements.
 * **Data stewards** in each pilot team maintain metadata, check quality and handle correction queues.
 * **The governance analyst** checks data classes, approves reclassification with the ERRC where required, and maintains the records of processing.
-* **Chief data officers** in partner agencies, where appointed under the new data-management framework, coordinate agreements and the use of the national data exchange [84].
+* **Chief data officers** in partner agencies, where appointed under the data-protection framework (a role whose provisions did not commence immediately under the 2025 ordinance [113]), coordinate agreements and the use of the national data exchange.
 
 ## 8.9 Retention and Disposal
 
@@ -114,11 +114,11 @@ Data that BAPIL creates from public sources (for example, the budget dataset fro
 
 ## 8.11 Data Access Agreements
 
-Where data is not already public, access is governed by a written data-sharing agreement that states purpose, data class, retention, security controls, permitted outputs and audit rights (outline in Annex I). Where the national data exchange (NRDEX) provided for under the new data-management framework is available, BAPIL should use it rather than bilateral transfers [84]. Agreements are listed in the transparency register, without confidential details.
+Where data is not already public, access is governed by a written data-sharing agreement that states purpose, data class, retention, security controls, permitted outputs and audit rights (outline in Annex I). Where the national data exchange (NRDEX), described for the 2025 data-management ordinance [84], is available under the Act, BAPIL should use it rather than bilateral transfers. Agreements are listed in the transparency register, without confidential details.
 
 ## 8.12 Personal Data
 
-The Personal Data Protection Act, 2026 recognises citizens' rights over their personal data, requires consent and gives enhanced protection to sensitive and children's data; data subjects may restrict automated decisions based on their data [84, 85]. BAPIL's design responds conservatively: P2 data is used only in pilot P3, only with consent, only after a DPIA (template in Annex H), only in de-identified form and only for aggregate results; P3 data is never used. Commentators have argued that the new framework leaves broad room for state access to data [106]; BAPIL's own safeguards therefore do not rely on legal minimums alone.
+As reported, the personal data protection framework recognises citizens' rights over their personal data, requires consent and gives enhanced protection to sensitive and children's data, and data subjects may restrict automated decisions based on their data [84, 85]; a 2026 amendment to the ordinance added residency requirements for specified data [115]. Which of these provisions of the 2026 Act are in force, and from when, is to be confirmed by the legal review (Section 14.3); until then BAPIL applies the stricter reading. BAPIL's design responds conservatively: P2 data is used only in pilot P3, only with consent, only after a DPIA (template in Annex H), only in de-identified form and only for aggregate results; P3 data is never used. Commentators have argued that the new framework leaves broad room for state access to data [106]; BAPIL's own safeguards therefore do not rely on legal minimums alone.
 
 \newpage
 
@@ -156,8 +156,9 @@ Two principles guide these rules. First, normalisation is applied for **matching
 No responsible deployment is possible without measurement. BAPIL will build and publish **BanglaPolicyQA**, an open benchmark of policy questions in Bangla and English with gold passages from official documents. Annotation guidelines are given in Annex K.
 
 * **Construction.** Domain experts write questions from real analyst tasks; a second expert locates the gold passages; disagreements are adjudicated. Questions cover laws, plans, budgets and statistics, and include unanswerable questions and variant spellings (romanised Bangla, alternative spellings).
-* **Size.** Version 0 has 500 questions (Milestone MS3); version 1 has 2,000 (MS8).
-* **Splits.** Each version has a public development set and a private held-out test set, so that results cannot be inflated by tuning to the test questions (risk R15).
+* **Size.** Version 0 has 500 answerable questions (Milestone MS3) plus 200 out-of-scope questions for testing abstention; version 1 has 2,000 answerable questions (MS8).
+* **Splits.** Each version has a public development set (40%) and a private held-out test set (60%), so that results cannot be inflated by tuning to the test questions (risk R15).
+* **Statistical rationale.** With about 300 answerable test questions, Recall@10 near 0.85 is estimated to within about plus or minus 4 points (95% interval), which is precise enough for a pass or fail decision on the overall threshold. Each language has only about 150 test questions in version 0, so the Bangla and English gap cannot yet be estimated precisely; language parity becomes a release condition from version 1 (Annex R).
 * **Documentation.** The benchmark has a datasheet [100] describing sources, annotators, licences and known limitations.
 * **Use.** Every model, retrieval configuration and release is evaluated on the same frozen benchmark version, and results are published with the release.
 
@@ -165,7 +166,7 @@ No responsible deployment is possible without measurement. BAPIL will build and 
 
 ## 9.5 Evaluation Protocol
 
-Results are only useful if they are comparable and honest. Every evaluation therefore follows the same protocol. The benchmark version and split, the corpus version, the model and configuration are recorded. Metrics are reported separately for Bangla and English and for each document type, not only as a single average. Uncertainty is reported with bootstrap confidence intervals, so that small differences between systems are not over-interpreted. A change is treated as an improvement only if it is better on the agreed primary metric without being worse on any safety threshold. Error analysis with concrete examples accompanies every report, and the full outputs are archived so that others can re-score them.
+Results are only useful if they are comparable and honest. Every evaluation therefore follows the same protocol. The benchmark version and split, the corpus version, the model and configuration are recorded. Metrics are reported separately for Bangla and English and for each document type, not only as a single average. Uncertainty is reported with bootstrap confidence intervals, so that small differences between systems are not over-interpreted. A change is treated as an improvement only if it is better on the agreed primary metric by more than the confidence interval, without being worse on any safety threshold. A gate threshold is met when the point estimate on the private test split meets it and the 95% interval is no wider than plus or minus 5 points; if the interval is wider, more items are annotated before the decision. Citation precision is judged by two trained annotators who do not know which system version produced an answer, and their agreement is reported. Retrieval recall is never treated as evidence that answers are correct, and the presence of a citation is never treated as evidence that it supports the sentence: each is measured separately. The full protocol, with sample sizes and responsibilities, is in Annex R (Table 63). Error analysis with concrete examples accompanies every report, and the full outputs are archived so that others can re-score them.
 
 ## 9.6 Model Selection
 
@@ -173,19 +174,21 @@ The Blueprint does not commit to a particular model vendor. Candidate models are
 
 <!-- TABLE:29 -->
 
-## 9.7 The Bangla Policy Foundation Model: a Staged Path
+## 9.7 The Bangla Policy Foundation Model: an Evidence-Gated Path
 
-The White Paper proposed a Bangla Policy Foundation Model (BPFM) as a long-term research direction. Training a large model from scratch is expensive and, for many policy tasks, unnecessary. The Blueprint therefore sets out a staged path in which each step must be justified by evidence.
+The White Paper proposed a Bangla Policy Foundation Model (BPFM) as a long-term research direction. This Blueprint does not assume that a dedicated model is necessary. For policy search, most of the value comes from a well-governed corpus, good retrieval and careful citation, and a larger model is not automatically better on narrow, citation-bound tasks. The Blueprint therefore sets out a ladder in which each step must be justified by measured residual errors that the previous step cannot fix.
 
 <!-- FIGURE:08 -->
 
-* **Stage 0 (months 1 to 12).** Retrieval over existing open models; no training. Establish baselines on BanglaPolicyQA v0.
-* **Stage 1 (months 13 to 30).** If the measured gap to the thresholds is material and governed data and compute are ready, apply parameter-efficient domain adaptation such as LoRA [103] on the governed public corpus, followed by instruction tuning on curated question-answer pairs. Publish a model card.
-* **Stage 2 (after month 30, only if justified).** Continued pre-training on shared national compute, coordinated with any national Bangla LLM effort, with an independent audit before release.
+* **Stage 0 (months 1 to 12)** has three steps: (0a) lexical and metadata search, which also remains the transparent fallback; (0b) multilingual dense retrieval and reranking, adopted only if it measurably improves retrieval; and (0c) answers built with existing open models, extractive first, with generated rephrasing enabled only if citation checks pass. Baselines are established on BanglaPolicyQA v0.
+* **Stage 1 (months 13 to 30), targeted adaptation.** If residual errors are documented by category and can be attributed to the model rather than to retrieval or data, and governed data and compute are ready, apply parameter-efficient domain adaptation such as LoRA [103] on the governed public corpus, followed by instruction tuning on curated question-answer pairs. Publish a model card.
+* **Stage 2 (after month 30, only if justified), a dedicated domain model.** Continued pre-training of an existing open model on governed Bangla text, coordinated with any national Bangla LLM effort, with an independent audit before release.
 
 <!-- TABLE:30 -->
 
-At each gate the default is to remain at the current stage. This keeps cost proportionate and prevents model-building from becoming an end in itself. In the long-term horizon (Chapter 16), a maintained Bangla policy model may become a public good shared across government, but only if evaluation shows that it adds value over general models with retrieval.
+Training a new foundation model from scratch is out of scope, and a rough calculation shows why. Training compute is approximately six times the number of parameters times the number of training tokens [121]. A 7-billion-parameter model trained on one trillion tokens therefore needs about 4 × 10^22^ operations, or tens of thousands of GPU-hours on current data-centre GPUs. More importantly, it needs a trillion tokens of suitable text: the governed policy corpus planned here (about 25,000 documents by month 36, Table 54) is of the order of a few hundred million tokens if documents average about 10,000 tokens, more than three orders of magnitude short. By contrast, continued pre-training of an existing 7 to 8-billion-parameter model on 5 to 10 billion tokens of governed Bangla text needs about 2 to 5 × 10^20^ operations, a few hundred to a few thousand GPU-hours, which shared national compute could provide. The binding constraints for Stage 2 would then be whether that much governed Bangla text can be assembled at all, and the staff needed to curate and evaluate it, rather than compute. These are order-of-magnitude planning estimates (author's analysis), to be replaced by measured figures before any Stage 2 decision.
+
+If Stage 2 is ever justified, its minimum viable scope is one model of about 7 to 8 billion parameters, adapted for Bangla policy search and question answering only, released with a model card, a datasheet for its training data, an independent audit and a comparison with Stage 1 on the same frozen benchmark. At each gate the default is to remain at the current step. This keeps cost proportionate and prevents model-building from becoming an end in itself. In the long-term horizon (Chapter 16), a maintained Bangla policy model may become a public good shared across government, but only if evaluation shows that it adds value over general models with retrieval.
 
 ## 9.8 Human Factors
 
@@ -241,7 +244,7 @@ The July 2024 nationwide disruption showed how single points of failure can magn
 
 ## 10.8 Supply Chain and Openness
 
-Every release has a software bill of materials, pinned dependencies and recorded checksums for model weights. Code is published openly, which supports external review and aligns with the national source-code repository provided for in the new data-management framework [84]. Secrets never appear in code, prompts or logs.
+Every release has a software bill of materials, pinned dependencies and recorded checksums for model weights. Code is published openly, which supports external review and aligns with the national source-code repository described for the 2025 data-management ordinance [84]. Secrets never appear in code, prompts or logs.
 
 \newpage
 
@@ -249,7 +252,9 @@ Every release has a software bill of materials, pinned dependencies and recorded
 
 ## 11.1 Purpose
 
-A blueprint is more credible when its core ideas run. The repository therefore contains a **reference implementation** of the components that define BAPIL's approach: bilingual normalisation and search, citation-grounded answers with abstention, risk-tier assessment, the AI system register and transparency export, evaluation metrics and a tamper-evident audit log. It is a teaching and testing artefact, not a production system.
+A blueprint is more credible when its core ideas run. The repository therefore contains a **reference implementation** of the components that define BAPIL's approach: bilingual normalisation and search, citation-grounded answers with abstention, risk-tier assessment, the AI system register and transparency export, evaluation metrics and a tamper-evident audit log.
+
+The Blueprint uses maturity terms precisely. A *conceptual design* exists only on paper; a *prototype* or *proof of concept* shows that an idea can work; a *reference implementation* is a small, documented and tested program that shows the intended behaviour of a design so that others can study and reproduce it; a *tested software release* is a versioned release that has passed a defined test suite; and a *production deployment* serves real users under service levels. The code described here is a reference implementation at research-prototype level, issued as a tested software release (package version 0.1.0 in repository release v1.1.0) with 49 unit tests. It has not been deployed, load-tested, security-audited or used by officials. Everything else in Part III (dense retrieval, the portal, authentication, OCR and the production security controls) is design, not yet implementation (Table 37).
 
 ## 11.2 Design Choices
 
@@ -311,7 +316,7 @@ The unit tests cover every module and are organised by component: Bangla and Eng
 
 ## 11.7 Continuous Integration
 
-Two GitHub Actions workflows run on every change: one runs the unit tests on several Python versions; the other rebuilds the Blueprint tables, figures and PDFs with XeLaTeX and the Noto fonts, so that published documents can always be regenerated from source.
+Two GitHub Actions workflows are configured to run on every change once the repository is updated: one runs the unit tests on Python 3.10 to 3.13; the other rebuilds the Blueprint tables, figures and PDFs with XeLaTeX and the Noto fonts, so that published documents can always be regenerated from source. The workflows run with read-only repository permissions. Because the package uses only the Python standard library, it has no third-party dependency chain to pin or audit; any future dependency must be pinned, listed in a software bill of materials and approved by the TAB. A security policy in the repository (`SECURITY.md`) explains how to report vulnerabilities privately.
 
 ## 11.8 From Reference Implementation to Production
 
