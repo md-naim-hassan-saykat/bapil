@@ -1303,7 +1303,7 @@ implementation/
 ```bash
 cd implementation
 pip install -e .        # কোনো তৃতীয় পক্ষের নির্ভরতা নেই
-python -m bapil.cli index --corpus ../reports ../blueprint
+python -m bapil.cli index --corpus ../reports ../blueprint/BAPIL_*.md
 python -m bapil.cli search "data protection impact assessment"
 python -m bapil.cli ask "বাংলা নীতি ফাউন্ডেশন মডেল কেন প্রয়োজন?"
 python -m bapil.cli assess examples/risk/risk_p1_policy_search.json
@@ -1314,13 +1314,13 @@ python -m unittest discover -s tests
 
 ## ১১.৫ প্রদর্শনী ফলাফল
 
-`python -m bapil.cli evaluate benchmarks/demo_questions.json` কমান্ডটি ১১ টি BAPIL নথির ১৭৪৯ টি অনুচ্ছেদের কর্পাসে চালালে নিচের ফলাফল পাওয়া যায় (কর্পাস সংস্করণ `039375ccda33`):
+`python -m bapil.cli evaluate benchmarks/demo_questions.json` কমান্ডটি ৮ টি BAPIL নথির ১৭২২ টি অনুচ্ছেদের কর্পাসে চালালে নিচের ফলাফল পাওয়া যায় (কর্পাস সংস্করণ `08ee5e783c9a`):
 
 | প্রশ্নসেট | প্রশ্ন | Recall@5 | Recall@10 | MRR@10 | nDCG@10 |
 |---|---|---|---|---|---|
-| সব প্রশ্ন | ২৪ | ০.৮৩ | ০.৯২ | ০.৭২ | ০.৬৪ |
-| ইংরেজি প্রশ্ন | ১২ | ০.৮৩ | ০.৯২ | ০.৮০ | ০.৬০ |
-| বাংলা প্রশ্ন | ১২ | ০.৮৩ | ০.৯২ | ০.৬৪ | ০.৬৮ |
+| সব প্রশ্ন | ২৪ | ০.৮৩ | ০.৯২ | ০.৭২ | ০.৬৩ |
+| ইংরেজি প্রশ্ন | ১২ | ০.৮৩ | ০.৯২ | ০.৮০ | ০.৫৯ |
+| বাংলা প্রশ্ন | ১২ | ০.৮৩ | ০.৯২ | ০.৬৩ | ০.৬৭ |
 
 আওতাবহির্ভূত ৬ টি প্রশ্নে সঠিক বিরতির হার: ১.০০। ইউনিট পরীক্ষা: ৪৯টি পরীক্ষা উত্তীর্ণ।
 

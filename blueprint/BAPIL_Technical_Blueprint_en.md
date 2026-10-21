@@ -1290,7 +1290,7 @@ implementation/
 ```bash
 cd implementation
 pip install -e .        # no third-party dependencies
-python -m bapil.cli index --corpus ../reports ../blueprint
+python -m bapil.cli index --corpus ../reports ../blueprint/BAPIL_*.md
 python -m bapil.cli search "data protection impact assessment"
 python -m bapil.cli ask "বাংলা নীতি ফাউন্ডেশন মডেল কেন প্রয়োজন?"
 python -m bapil.cli assess examples/risk/risk_p1_policy_search.json
@@ -1301,13 +1301,13 @@ python -m unittest discover -s tests
 
 ## 11.5 Demonstration Results
 
-Running `python -m bapil.cli evaluate benchmarks/demo_questions.json` over a corpus of 1749 passages from 11 BAPIL documents gives the following results (corpus version `039375ccda33`):
+Running `python -m bapil.cli evaluate benchmarks/demo_questions.json` over a corpus of 1722 passages from 8 BAPIL documents gives the following results (corpus version `08ee5e783c9a`):
 
 | Question set | Questions | Recall@5 | Recall@10 | MRR@10 | nDCG@10 |
 |---|---|---|---|---|---|
-| All questions | 24 | 0.83 | 0.92 | 0.72 | 0.64 |
-| English questions | 12 | 0.83 | 0.92 | 0.80 | 0.60 |
-| Bangla questions | 12 | 0.83 | 0.92 | 0.64 | 0.68 |
+| All questions | 24 | 0.83 | 0.92 | 0.72 | 0.63 |
+| English questions | 12 | 0.83 | 0.92 | 0.80 | 0.59 |
+| Bangla questions | 12 | 0.83 | 0.92 | 0.63 | 0.67 |
 
 Correct abstention on 6 out-of-scope questions: 1.00. Unit tests: 49 passed.
 

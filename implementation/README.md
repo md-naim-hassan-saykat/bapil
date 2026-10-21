@@ -26,7 +26,7 @@ cd implementation
 pip install -e .            # no third-party dependencies
 # or, without installing:  export PYTHONPATH=src
 
-python -m bapil.cli index --corpus ../reports ../blueprint
+python -m bapil.cli index --corpus ../reports ../blueprint/BAPIL_*.md
 python -m bapil.cli search "data protection impact assessment"
 python -m bapil.cli ask "বাংলা নীতি ফাউন্ডেশন মডেল কেন প্রয়োজন?"
 python -m bapil.cli ask "Who won the 2022 FIFA World Cup?"          # abstains: out of scope
