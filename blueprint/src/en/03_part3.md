@@ -295,7 +295,7 @@ implementation/
 ```bash
 cd implementation
 pip install -e .        # no third-party dependencies
-python -m bapil.cli index --corpus ../reports ../blueprint
+python -m bapil.cli index --corpus ../reports ../blueprint/BAPIL_*.md
 python -m bapil.cli search "data protection impact assessment"
 python -m bapil.cli ask "বাংলা নীতি ফাউন্ডেশন মডেল কেন প্রয়োজন?"
 python -m bapil.cli assess examples/risk/risk_p1_policy_search.json

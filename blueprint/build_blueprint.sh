@@ -25,6 +25,7 @@ while [[ $# -gt 0 ]]; do
 done
 mkdir -p "$OUT"
 # fixed timestamps in every generated PDF (reproducible builds); see metadata.json
+export FORCE_SOURCE_DATE=1   # TeX uses SOURCE_DATE_EPOCH for its own time stamps too
 export SOURCE_DATE_EPOCH="${SOURCE_DATE_EPOCH:-$(python3 -c "import json;print(json.load(open('$SRC/metadata.json'))['source_date_epoch'])")}"
 
 if [[ $SKIP_ASSETS -eq 0 ]]; then
@@ -33,7 +34,9 @@ if [[ $SKIP_ASSETS -eq 0 ]]; then
   python3 "$SRC/budget_model.py" --csv "$ROOT/blueprint/data" >/dev/null   # budget as CSV
 fi
 
-# Assemble once so the evaluation corpus contains the current documents
+# Assemble once so the evaluation corpus contains the current documents. The previous evaluation
+# report is removed first, so the corpus never contains its own earlier results (deterministic builds).
+rm -f implementation/build/eval_report.json
 python3 "$SRC/assemble.py" >/dev/null
 
 # Reference implementation: unit tests and demonstration results (feed Chapter 11)
@@ -44,7 +47,7 @@ if ( cd implementation && python3 -m unittest discover -s tests > build_tests.lo
 fi
 rm -f implementation/build_tests.log
 ( cd implementation && PYTHONPATH=src python3 -m bapil.cli evaluate benchmarks/demo_questions.json \
-    --corpus ../reports ../blueprint --json build/eval_report.json --tests "$TESTS_SUMMARY" >/dev/null ) || \
+    --corpus ../reports ../blueprint/BAPIL_*.md --json build/eval_report.json --tests "$TESTS_SUMMARY" >/dev/null ) || \
   echo "warning: evaluation step failed; Chapter 11 will show a placeholder"
 
 python3 "$SRC/assemble.py"
