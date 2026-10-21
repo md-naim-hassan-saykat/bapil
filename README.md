@@ -205,9 +205,9 @@ The Blueprint specifies:
 8. a 36-month delivery plan with an indicative budget (about Tk 20.4 crore, with low and high scenarios; a planning estimate, not approved funding), staffing and training plan, financing and procurement clauses, logical framework, KPIs, risk register and research agenda;
 9. a strategic roadmap for 2026 to 2041 and beyond (short, medium and long-term horizons, indicative targets, scenarios and review points);
 10. six decisions for the authorities;
-11. evidence and readiness annexes: the evidence status of every key claim, budget reconciliation, an evaluation protocol with sample sizes, the status and limits of each governance body, preconditions for starting, and risk monitoring.
+11. evidence and readiness annexes: the evidence status of every key claim, budget reconciliation, an evaluation protocol with sample sizes, the status and limits of each governance body, preconditions for starting, risk monitoring, and a revision history with unresolved items.
 
-The Blueprint has five parts, 21 chapters and 21 annexes (about 130 pages in each language), including an indicative 36-month budget. All fifteen figures and sixty-seven tables are available as LaTeX, PDF and PNG in English and Bangla under [`blueprint/figures/`](blueprint/figures/) and [`blueprint/tables/`](blueprint/tables/). See [`blueprint/README.md`](blueprint/README.md) for the sources and the build.
+The Blueprint has five parts, 21 chapters and 22 annexes (about 130 pages in each language), including an indicative 36-month budget. All fifteen figures and sixty-nine tables are available as LaTeX, PDF and PNG in English and Bangla under [`blueprint/figures/`](blueprint/figures/) and [`blueprint/tables/`](blueprint/tables/). See [`blueprint/README.md`](blueprint/README.md) for the sources and the build.
 
 ---
 
@@ -279,7 +279,7 @@ bapil/
 │   ├── BAPIL_Blueprint_Summary_v1.md / _bn.md
 │   ├── BAPIL_Decision_Memo_v1.md / _bn.md
 │   ├── figures/                  # blueprint_fig01 ... 15 (TeX, PDF, PNG; EN and BN)
-│   ├── tables/                   # blueprint_tab01 ... 67 (TeX, PDF, PNG; EN and BN) + md/
+│   ├── tables/                   # blueprint_tab01 ... 69 (TeX, PDF, PNG; EN and BN) + md/
 │   ├── src/                      # sources, generators, LaTeX headers, Pandoc filter
 │   ├── zenodo/                   # Zenodo metadata and upload checklist
 │   └── build_blueprint.sh

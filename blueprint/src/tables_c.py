@@ -385,7 +385,7 @@ TABLES_C = [
                 ["**T6** BAPIL ফেলোশিপ", "স্নাতকোত্তর ফেলো", "মেন্টরিংসহ কোনো পাইলট বা বেঞ্চমার্কে গবেষণা-নিয়োজন", "৬ থেকে ১২ মাস", "নিয়োজন", "১০"],
             ],
         },
-        "note": {"en": "All course materials are published in Bangla and English under CC BY 4.0. Year 1 targets add up to the KPI of 100 trained officials plus specialist and fellowship cohorts.",
-                 "bn": "সকল কোর্স-উপকরণ বাংলা ও ইংরেজিতে CC BY 4.0 লাইসেন্সে প্রকাশিত হয়। প্রথম বছরের লক্ষ্য ১০০ প্রশিক্ষিত কর্মকর্তার KPI এবং বিশেষজ্ঞ ও ফেলোশিপ দলের সমষ্টি।"},
+        "note": {"en": "All course materials are published in Bangla and English under CC BY 4.0. The KPI of 100 trained officials in Year 1 counts T2 participants; T1 briefings and the specialist cohorts T3 to T5 are counted separately and funded from the specialist-course line of the budget (Table 49).",
+                 "bn": "সকল কোর্স-উপকরণ বাংলা ও ইংরেজিতে CC BY 4.0 লাইসেন্সে প্রকাশিত হয়। প্রথম বছরে ১০০ প্রশিক্ষিত কর্মকর্তার KPI-তে T2-এর অংশগ্রহণকারীরা গণ্য; T1 অবহিতকরণ ও বিশেষায়িত দল T3 থেকে T5 আলাদাভাবে গণ্য এবং বাজেটের বিশেষায়িত কোর্স-খাত থেকে অর্থায়িত (সারণি ৪৯)।"},
     },
 ]

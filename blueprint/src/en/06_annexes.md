@@ -91,7 +91,7 @@ System and version; benchmark version and split; metrics by language and documen
 
 # Annex E: Draft BAPIL Charter
 
-This draft is offered for adoption by the Steering Board at Milestone MS1, after consultation (Table 8) and legal review (Section 14.3).
+This draft is offered for adoption by the Steering Board at Milestone MS1, after consultation (Table 8). It is confirmed or amended after the independent legal review (Section 14.3), which is completed before Milestone MS2.
 
 **Article 1. Name and status.** The Bangladesh AI Policy & Innovation Lab (BAPIL) is a research, policy-intelligence and capacity-building initiative hosted by [host institution] under a Memorandum of Understanding with the ICT Division.
 
@@ -515,6 +515,16 @@ The 36-month clock cannot start until certain approvals, agreements and funds ar
 Table 55 lists the eighteen registered risks with their mitigations and owners. This annex adds what is needed to manage them in practice: an early-warning indicator that can be checked, a contingency if the risk occurs, the residual rating after mitigation and how often each risk is reviewed.
 
 <!-- TABLE:67 -->
+
+\newpage
+
+# Annex V: Revision History and Unresolved Items
+
+This annex records how the Blueprint changed after the October 2026 audit and lists every item that could not be resolved with the evidence available. Nothing of substance was deleted: statements that the evidence did not support were replaced with qualified wording, and the original claims are recorded in Annex P and in the Audit and Revision Report.
+
+<!-- TABLE:68 -->
+
+<!-- TABLE:69 -->
 
 \newpage
 

@@ -9,3 +9,5 @@
 | Consistency | Share of records valid against the metadata schema | 100% |
 | Uniqueness | Share of duplicate documents detected and merged | Duplicates under 1% |
 | Language parity | Share of documents with both Bangla and English titles where both exist | At least 95% |
+
+*Note.* Pilot targets. The OCR character error rate is measured on a stratified sample of at least 50 pages per corpus release, checked by two people.

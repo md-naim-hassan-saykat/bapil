@@ -57,7 +57,8 @@ The source code of the reference implementation described in Chapter 11 is licen
 | **ORCID** | <https://orcid.org/{{ORCID}}> |
 | **Language** | English (a Bangla edition is published alongside) |
 | **Document Type** | Technical Blueprint |
-| **Structure** | Five parts, 21 chapters, 21 annexes, 67 tables and 15 figures |
+| **Structure** | Five parts, 21 chapters, 22 annexes, 69 tables and 15 figures |
+| **Revision status** | Revised after an evidence audit in October 2026; changes and unresolved items in Annex V |
 | **License** | Creative Commons Attribution 4.0 International (CC BY 4.0) |
 | **Blueprint DOI** | {{DOI_LINK}} |
 | **Builds on** | White Paper, Version 1.0: <https://doi.org/10.5281/zenodo.21363967> |
@@ -82,7 +83,7 @@ The Blueprint is organised in five parts. Readers with limited time can use the 
 * **Legal, governance and ethics specialists:** Chapters 8, 13 and 14 with Annexes B, E, F, H, I, J, S and T.
 * **Researchers and universities:** Chapters 9, 11 and 20 with Annex K.
 * **Development partners and finance reviewers:** Chapters 2, 16, 17 and 18 with Annexes Q and T.
-* **Reviewers checking the evidence:** Annex P, which states the status of every key claim.
+* **Reviewers checking the evidence:** Annex P, which states the status of every key claim, and Annex V, which lists all changes and unresolved items.
 
 The words **must**, **should** and **may** carry their usual normative meaning: a requirement marked *must* is a condition of the design, *should* is a strong recommendation, and *may* is optional.
 
@@ -100,6 +101,8 @@ This Blueprint is a proposal. To avoid confusing what exists with what is planne
 | Pilots P1 to P6 | Proposed |
 | Budget | Planning estimate computed from stated assumptions; not a quotation and not approved funding |
 | Long-term targets (2028 to 2041) | Proposed targets, revised at each strategic review |
+
+Items that remain unresolved, with their owners and how they will be resolved, are listed in Annex V (Table 69).
 
 \newpage
 

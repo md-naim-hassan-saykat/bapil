@@ -31,7 +31,7 @@ The plan is organised in ten work packages, which correspond to the rows of Figu
 
 ## 15.4 The First 90, 180 and 365 Days
 
-**Days 1 to 90.** Sign the MoU; appoint the Director; constitute the Steering Board, ERRC and TAB; adopt the charter; open the AI system register; publish the transparency register (initially listing P1, P2 and P4 at G0); start the legal review; begin ingestion of laws and budget documents.
+**Days 1 to 90.** With the MoU, host agreement and Year 1 funding in place (Annex T): appoint the Director; constitute the Steering Board, ERRC and TAB; adopt the charter; open the AI system register; publish the transparency register (initially listing P1, P2 and P4 at G0); start the legal review; begin ingestion of laws and budget documents.
 
 **Days 91 to 180.** Complete the feasibility and costing study; sign data-access arrangements with the first custodians; agree the BanglaPolicyQA protocol and recruit annotators; complete G1 design reviews for P1 and P2; run the first training session for pilot users.
 

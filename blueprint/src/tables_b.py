@@ -160,7 +160,7 @@ TABLES_B = [
         },
         "rows": {
             "en": [
-                ["MS1", "3", "Host institution and government MoU signed; Steering Board, ERRC and TAB constituted; charter adopted", "D1.1 Charter; D1.2 Risk and ethics procedures", "G0"],
+                ["MS1", "3", "Director appointed; Steering Board, ERRC and TAB constituted; charter adopted (the MoU and host agreement are in place from month 1)", "D1.1 Charter; D1.2 Risk and ethics procedures", "G0"],
                 ["MS2", "6", "Feasibility and costing study complete; P0 data access confirmed; benchmark protocol agreed", "D1.3 Feasibility study; D1.4 Data access plan", "G1"],
                 ["MS3", "9", "P1 Policy Search alpha in internal use; BanglaPolicyQA v0 (500 questions)", "D2.1 P1 alpha; D2.2 Benchmark v0", "G2"],
                 ["MS4", "12", "P1 pilot with 30 or more users in two to three agencies; P2 dashboard v1 public; Year 1 report", "D2.3 Pilot report; D2.4 Open budget dataset", "G3"],
@@ -171,7 +171,7 @@ TABLES_B = [
                 ["MS9", "36", "Final evaluation; sustainability plan; Blueprint version 2.0", "D4.3 Final evaluation; D4.4 Blueprint 2.0", "Review"],
             ],
             "bn": [
-                ["MS1", "৩", "আয়োজক প্রতিষ্ঠান ও সরকারের সমঝোতা স্মারক স্বাক্ষর; স্টিয়ারিং বোর্ড, ERRC ও TAB গঠন; সনদ গ্রহণ", "D1.1 সনদ; D1.2 ঝুঁকি ও নৈতিকতা কার্যপ্রণালী", "G0"],
+                ["MS1", "৩", "পরিচালক নিয়োগ; স্টিয়ারিং বোর্ড, ERRC ও TAB গঠন; সনদ গ্রহণ (সমঝোতা স্মারক ও আয়োজক-চুক্তি মাস ১ থেকে বলবৎ)", "D1.1 সনদ; D1.2 ঝুঁকি ও নৈতিকতা কার্যপ্রণালী", "G0"],
                 ["MS2", "৬", "সম্ভাব্যতা ও ব্যয়-নিরূপণ সমীক্ষা সম্পন্ন; P0 ডেটা প্রবেশাধিকার নিশ্চিত; বেঞ্চমার্ক প্রটোকল সম্মত", "D1.3 সম্ভাব্যতা সমীক্ষা; D1.4 ডেটা প্রবেশাধিকার পরিকল্পনা", "G1"],
                 ["MS3", "৯", "P1 নীতি অনুসন্ধানের আলফা সংস্করণ অভ্যন্তরীণ ব্যবহারে; BanglaPolicyQA v0 (৫০০ প্রশ্ন)", "D2.1 P1 আলফা; D2.2 বেঞ্চমার্ক v0", "G2"],
                 ["MS4", "১২", "দুই থেকে তিনটি সংস্থায় ৩০ বা ততোধিক ব্যবহারকারী নিয়ে P1 পাইলট; P2 ড্যাশবোর্ড v1 প্রকাশ্য; প্রথম বছরের প্রতিবেদন", "D2.3 পাইলট প্রতিবেদন; D2.4 উন্মুক্ত বাজেট ডেটাসেট", "G3"],
@@ -183,8 +183,8 @@ TABLES_B = [
             ],
         },
         "note": {
-            "en": "Month 1 is the month the Phase 1 MoU takes effect; an indicative calendar start is January 2027.",
-            "bn": "যে মাসে প্রথম ধাপের সমঝোতা স্মারক কার্যকর হয় সেটিই মাস ১; নির্দেশক সূচনা জানুয়ারি ২০২৭।",
+            "en": "Month 1 is the first month in which the MoU, the host agreement and Year 1 funding are all in place (Annex T); January 2027 is the earliest plausible calendar start.",
+            "bn": "মাস ১ হলো প্রথম সেই মাস, যখন সমঝোতা স্মারক, আয়োজক-চুক্তি ও প্রথম বছরের অর্থায়ন তিনটিই নিশ্চিত (সংযুক্তি ন); জানুয়ারি ২০২৭ সবচেয়ে আগের সম্ভাব্য সূচনা।",
         },
     },
     # ------------------------------------------------------------------ 17
@@ -228,8 +228,8 @@ TABLES_B = [
             ],
         },
         "note": {
-            "en": "Excludes part-time ERRC members, advisers, visiting fellows and graduate students. Costs are to be set in the feasibility study (D1.3).",
-            "bn": "খণ্ডকালীন ERRC সদস্য, উপদেষ্টা, অতিথি ফেলো ও স্নাতকোত্তর শিক্ষার্থী অন্তর্ভুক্ত নয়। ব্যয় সম্ভাব্যতা সমীক্ষায় (D1.3) নির্ধারিত হবে।",
+            "en": "Excludes part-time ERRC members, advisers, visiting fellows and graduate students. Indicative costs are in Table 49; final costs are set by the feasibility study (D1.3).",
+            "bn": "খণ্ডকালীন ERRC সদস্য, উপদেষ্টা, অতিথি ফেলো ও স্নাতকোত্তর শিক্ষার্থী অন্তর্ভুক্ত নয়। নির্দেশক ব্যয় সারণি ৪৯-এ; চূড়ান্ত ব্যয় সম্ভাব্যতা সমীক্ষায় (D1.3) নির্ধারিত হবে।",
         },
     },
     # ------------------------------------------------------------------ 18
@@ -253,7 +253,7 @@ TABLES_B = [
                 ["Output", "Open releases archived with a DOI (including this Blueprint)", "3", "5", "10"],
                 ["Output", "Officials trained in responsible AI and the tools", "0", "100", "500"],
                 ["Outcome", "Monthly active pilot users", "0", "30", "300"],
-                ["Outcome", "Median time saved on evidence search, user-reported", "Baseline study", "30%", "50%"],
+                ["Outcome", "Median time saved on evidence search, measured in time-to-evidence studies (Annex R)", "Baseline study", "30%", "50%"],
                 ["Outcome", "Agencies with signed data or collaboration agreements", "0", "3", "10"],
                 ["Quality", "Recall@10 on Bangla and English questions", "Not yet measured", "0.85", "0.90"],
                 ["Governance", "Pilots listed in the transparency register with model cards", "Not applicable", "100%", "100%"],
@@ -268,7 +268,7 @@ TABLES_B = [
                 ["উৎপাদ", "DOI-সহ সংরক্ষিত উন্মুক্ত রিলিজ (এই ব্লুপ্রিন্টসহ)", "৩", "৫", "১০"],
                 ["উৎপাদ", "দায়িত্বশীল এআই ও সরঞ্জাম বিষয়ে প্রশিক্ষিত কর্মকর্তা", "০", "১০০", "৫০০"],
                 ["ফলাফল", "মাসিক সক্রিয় পাইলট ব্যবহারকারী", "০", "৩০", "৩০০"],
-                ["ফলাফল", "প্রমাণ অনুসন্ধানে সাশ্রয়কৃত সময়ের মধ্যমা, ব্যবহারকারী-প্রতিবেদিত", "ভিত্তি সমীক্ষা", "৩০%", "৫০%"],
+                ["ফলাফল", "প্রমাণ অনুসন্ধানে সাশ্রয়কৃত সময়ের মধ্যমা, প্রমাণ-প্রাপ্তির সময় সমীক্ষায় পরিমাপকৃত (সংযুক্তি দ)", "ভিত্তি সমীক্ষা", "৩০%", "৫০%"],
                 ["ফলাফল", "ডেটা বা সহযোগিতা চুক্তি স্বাক্ষরকারী সংস্থা", "০", "৩", "১০"],
                 ["মান", "বাংলা ও ইংরেজি প্রশ্নে Recall@10", "এখনো পরিমাপ হয়নি", "০.৮৫", "০.৯০"],
                 ["শাসন", "মডেল কার্ডসহ স্বচ্ছতা নিবন্ধনে তালিকাভুক্ত পাইলট", "প্রযোজ্য নয়", "১০০%", "১০০%"],

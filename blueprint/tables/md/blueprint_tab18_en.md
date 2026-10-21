@@ -9,4 +9,4 @@
 | **T5** Bangla NLP and MLOps | Engineers in agencies and universities | Bangla text processing; retrieval; evaluation; model cards; secure deployment | 10 days | Blended | 30 |
 | **T6** BAPIL fellowships | Graduate fellows | Research placement on a pilot or benchmark with mentoring | 6 to 12 months | Placement | 10 |
 
-*Note.* All course materials are published in Bangla and English under CC BY 4.0. Year 1 targets add up to the KPI of 100 trained officials plus specialist and fellowship cohorts.
+*Note.* All course materials are published in Bangla and English under CC BY 4.0. The KPI of 100 trained officials in Year 1 counts T2 participants; T1 briefings and the specialist cohorts T3 to T5 are counted separately and funded from the specialist-course line of the budget (Table 49).

@@ -128,6 +128,8 @@ TABLES_D = [
                 ["ভাষাগত সমতা", "যেখানে উভয় ভাষা আছে সেখানে বাংলা ও ইংরেজি শিরোনামযুক্ত নথির অনুপাত", "অন্তত ৯৫%"],
             ],
         },
+        "note": {"en": "Pilot targets. The OCR character error rate is measured on a stratified sample of at least 50 pages per corpus release, checked by two people.",
+                 "bn": "পাইলট-লক্ষ্য। প্রতিটি কর্পাস রিলিজে কমপক্ষে ৫০ পৃষ্ঠার স্তরভিত্তিক নমুনায় দুজন যাচাইকারীর মাধ্যমে OCR-এর অক্ষর-ত্রুটির হার পরিমাপ করা হয়।"},
     },
     # ------------------------------------------------------------------ 26
     {
@@ -253,24 +255,24 @@ TABLES_D = [
                  "bn": ["সম্পদ", "পাইলট (২০২৭ থেকে ২০২৮)", "সম্প্রসারণ (২০২৯ থেকে ২০৩০)", "জাতীয় নেটওয়ার্ক (২০৩১ থেকে)"]},
         "rows": {
             "en": [
-                ["Environments", "Development, test, production", "Plus staging and a disaster-recovery site", "Federated deployments in partner agencies"],
+                ["Environments", "Development, test and production; staging and a recovery site added in Year 2", "Production capacity expanded across sites", "Federated deployments in partner agencies"],
                 ["Application servers", "2 to 3 general-purpose servers", "6 to 8 servers or equivalent virtual capacity", "Shared government cloud capacity"],
-                ["Inference GPUs", "1 to 2 data-centre GPUs", "4 to 8 GPUs", "Allocation from national AI compute"],
-                ["Adaptation compute", "None (Stage 0)", "Time-limited national allocation (Stage 1)", "Scheduled national allocation (Stage 2 if justified)"],
+                ["Inference GPUs", "2 GPU inference servers (1 to 2 GPUs each); 2 more in Year 2 for staging and recovery", "4 to 8 GPUs in production", "Allocation from national AI compute"],
+                ["Adaptation compute", "None in Stage 0; time-limited national allocation from month 13 if Stage 1 is approved", "Time-limited national allocation (Stage 1)", "Scheduled national allocation (Stage 2 if justified)"],
                 ["Storage", "10 to 20 TB including backups", "About 100 TB", "Several hundred TB across collections"],
                 ["Users", "Up to about 50 pilot users", "Several hundred users", "Thousands of users across ministries"],
             ],
             "bn": [
-                ["পরিবেশ", "উন্নয়ন, পরীক্ষা, উৎপাদন", "সঙ্গে স্টেজিং ও দুর্যোগ-পুনরুদ্ধার সাইট", "অংশীদার সংস্থায় সমন্বিত প্রয়োগ"],
+                ["পরিবেশ", "উন্নয়ন, পরীক্ষা ও উৎপাদন; দ্বিতীয় বছরে স্টেজিং ও পুনরুদ্ধার-সাইট যুক্ত", "একাধিক সাইটে উৎপাদন-সক্ষমতা সম্প্রসারিত", "অংশীদার সংস্থায় সমন্বিত প্রয়োগ"],
                 ["অ্যাপ্লিকেশন সার্ভার", "২ থেকে ৩টি সাধারণ-উদ্দেশ্য সার্ভার", "৬ থেকে ৮টি সার্ভার বা সমতুল্য ভার্চুয়াল সক্ষমতা", "যৌথ সরকারি ক্লাউড সক্ষমতা"],
-                ["ইনফারেন্স GPU", "১ থেকে ২টি ডেটা-সেন্টার GPU", "৪ থেকে ৮টি GPU", "জাতীয় এআই কম্পিউটিং থেকে বরাদ্দ"],
-                ["অভিযোজন-কম্পিউটিং", "নেই (পর্যায় ০)", "সময়সীমিত জাতীয় বরাদ্দ (পর্যায় ১)", "নির্ধারিত জাতীয় বরাদ্দ (যৌক্তিক হলে পর্যায় ২)"],
+                ["ইনফারেন্স GPU", "২টি GPU ইনফারেন্স সার্ভার (প্রতিটিতে ১ থেকে ২টি GPU); দ্বিতীয় বছরে স্টেজিং ও পুনরুদ্ধারের জন্য আরও ২টি", "উৎপাদনে ৪ থেকে ৮টি GPU", "জাতীয় এআই কম্পিউটিং থেকে বরাদ্দ"],
+                ["অভিযোজন-কম্পিউটিং", "পর্যায় ০-এ নেই; পর্যায় ১ অনুমোদিত হলে মাস ১৩ থেকে সময়সীমিত জাতীয় বরাদ্দ", "সময়সীমিত জাতীয় বরাদ্দ (পর্যায় ১)", "নির্ধারিত জাতীয় বরাদ্দ (যৌক্তিক হলে পর্যায় ২)"],
                 ["সংরক্ষণক্ষমতা", "ব্যাকআপসহ ১০ থেকে ২০ টেরাবাইট", "প্রায় ১০০ টেরাবাইট", "সংগ্রহজুড়ে কয়েকশ টেরাবাইট"],
                 ["ব্যবহারকারী", "প্রায় ৫০ জন পর্যন্ত পাইলট ব্যবহারকারী", "কয়েকশ ব্যবহারকারী", "মন্ত্রণালয়জুড়ে হাজারো ব্যবহারকারী"],
             ],
         },
-        "note": {"en": "Planning assumptions for the feasibility study (Deliverable D1.3), not procurement specifications.",
-                 "bn": "সম্ভাব্যতা সমীক্ষার (ডেলিভারেবল D1.3) পরিকল্পনা-অনুমান, ক্রয়-বিনির্দেশ নয়।"},
+        "note": {"en": "Planning assumptions for the feasibility study (Deliverable D1.3), not procurement specifications. The pilot column matches the equipment in the budget (Table 49).",
+                 "bn": "সম্ভাব্যতা সমীক্ষার (ডেলিভারেবল D1.3) পরিকল্পনা-অনুমান, ক্রয়-বিনির্দেশ নয়। পাইলট-কলাম বাজেটের যন্ত্রপাতির সঙ্গে সংগতিপূর্ণ (সারণি ৪৯)।"},
     },
     # ------------------------------------------------------------------ 32
     {
