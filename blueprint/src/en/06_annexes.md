@@ -14,7 +14,7 @@ Answer *yes* or *no*. Any *yes* places the system in tier T0, and work stops.
 
 1. Does the system score or rank individuals for general social trustworthiness or behaviour (social scoring)?
 2. Does it perform mass or indiscriminate biometric identification or surveillance?
-3. Does it infer or profile individuals' political opinions, religious beliefs or similar protected characteristics?
+3. Does it infer or profile individuals’ political opinions, religious beliefs or similar protected characteristics?
 4. Does it generate deceptive synthetic media depicting real people?
 5. Does it use manipulative techniques that exploit vulnerabilities such as age, disability or economic hardship?
 
@@ -79,9 +79,9 @@ System and version; benchmark version and split; metrics by language and documen
 
 # Annex D: Publication, Versioning and DOI Policy
 
-1. **Separate records per publication.** The White Paper, Executive Summary and this Blueprint each have their own Zenodo record and DOI. The Blueprint record contains the English and Bangla Blueprint, Summary and Decision Memo, in PDF and Markdown, plus figures and tables in LaTeX, PDF and PNG.
+1. **Separate records per publication.** The White Paper, Executive Summary and this Blueprint each have their own Zenodo record and DOI. The Blueprint record contains the English and Bangla Blueprint and Summary, in PDF and Markdown, plus figures and tables in LaTeX, PDF and PNG.
 2. **Related identifiers.** The Blueprint record declares that it *is supplement to* the White Paper (10.5281/zenodo.21363967), *references* the Executive Summary (10.5281/zenodo.21441172) and *is supplemented by* the GitHub repository release that contains the reference implementation.
-3. **DOI reservation.** The DOI is reserved on Zenodo before publication so that it can be printed in the documents; the PDFs are then rebuilt and uploaded.
+3. **DOI reservation.** When the Zenodo record is created, its DOI is reserved before the record is published so that it can be printed in the documents; the PDFs are then rebuilt and uploaded. Until then the documents state that the DOI is to be assigned on publication.
 4. **Repository releases.** Repository releases use semantic versioning. Release v1.1.0 adds the Blueprint and the reference implementation. The Zenodo record for this Blueprint is published only after that release is publicly listed at <https://github.com/md-naim-hassan-saykat/bapil/releases>, so that every artefact the documents refer to can be checked by readers.
 5. **New versions.** Corrections produce a new version of the same Zenodo record (for example 1.0.1); substantive revisions produce Blueprint 2.0 (Milestone MS9).
 6. **Licences.** Documents are CC BY 4.0; code is MIT.
@@ -105,7 +105,7 @@ This draft is offered for adoption by the Steering Board at Milestone MS1, after
 
 **Article 6. The ERRC veto.** No system of tier T2 or above may pass Gates G2 or G4 without the approval of the ERRC. ERRC decisions to refuse or suspend are binding and can be reversed only by the ERRC itself.
 
-**Article 7. Registration and transparency.** Every AI system is registered before work begins. A public transparency register lists each system's purpose, owner, tier, maturity class, data classes, evaluation summary, limitations and complaint contact.
+**Article 7. Registration and transparency.** Every AI system is registered before work begins. A public transparency register lists each system’s purpose, owner, tier, maturity class, data classes, evaluation summary, limitations and complaint contact.
 
 **Article 8. Openness.** Code, benchmarks, evaluation reports and non-sensitive data are published openly with persistent identifiers. Exceptions for security or privacy are recorded in writing and reviewed annually.
 
@@ -117,19 +117,19 @@ This draft is offered for adoption by the Steering Board at Milestone MS1, after
 
 **Article 12. Review and amendment.** The charter is reviewed at each strategic review (Table 48). Amendments require a two-thirds majority of the Steering Board after consultation with the ERRC; Articles 3, 4 and 6 can be weakened only after public consultation.
 
-**Article 13. Precedence of law.** This charter operates within the law of Bangladesh and the rules of the host institution. Nothing in it overrides a statute, a regulator's powers or the host's legal obligations; where they conflict, the legal requirement prevails and the Steering Board amends the charter.
+**Article 13. Precedence of law.** This charter operates within the law of Bangladesh and the rules of the host institution. Nothing in it overrides a statute, a regulator’s powers or the host’s legal obligations; where they conflict, the legal requirement prevails and the Steering Board amends the charter.
 
 \newpage
 
 # Annex F: Terms of Reference of the Ethics and Risk Review Committee
 
-**Purpose.** To provide independent review of the ethical, legal and societal risks of BAPIL's AI systems and research, and to hold a binding veto over tier T2 and T3 work.
+**Purpose.** To provide independent review of the ethical, legal and societal risks of BAPIL’s AI systems and research, and to hold a binding veto over tier T2 and T3 work.
 
 **Composition.** Five to seven members, a majority external to BAPIL and the host institution, covering law and human rights, data protection, ethics, the relevant policy domains, Bangla language and civil society, with gender balance. The chair is an external member elected by the members. Members serve three-year terms, renewable once.
 
 **Appointment and removal.** Members are selected through a published open call by an independent nominations panel (Annex S) and confirmed by the Steering Board, which may decline a nominee only with written reasons. Government bodies may propose candidates but may not hold a majority of seats. A member can be removed only for cause, by a two-thirds vote of the Steering Board after a hearing.
 
-**Status.** The ERRC is created by the charter and the host agreement. Its decisions bind BAPIL and its host by agreement; it has no statutory powers and does not replace any regulator or the oversight committee proposed in the draft national AI policy.
+**Status.** The ERRC is created by the charter and the host agreement. Its decisions bind BAPIL by the charter and bind the host to the extent the host’s statutes allow and the host agreement provides (Section 5.3); it has no statutory powers and does not replace any regulator or the oversight committee proposed in the draft national AI policy.
 
 **Responsibilities.**
 
@@ -151,7 +151,7 @@ This draft is offered for adoption by the Steering Board at Milestone MS1, after
 
 ## G.1 Steering Board
 
-**Purpose.** To set BAPIL's strategy, approve its plans and budgets, and hold its leadership to account.
+**Purpose.** To set BAPIL’s strategy, approve its plans and budgets, and hold its leadership to account.
 
 **Composition.** Seven to nine members: the ICT Division (co-chair), the host institution (co-chair), the Planning Commission, a data custodian agency, an academic member from another university, a civil-society member and an industry member, with at least one member from outside Dhaka and with gender balance. The Director attends without a vote.
 
@@ -161,9 +161,9 @@ This draft is offered for adoption by the Steering Board at Milestone MS1, after
 
 ## G.2 Technical Architecture Board
 
-**Purpose.** To ensure that BAPIL's systems are well designed, secure, interoperable and maintainable.
+**Purpose.** To ensure that BAPIL’s systems are well designed, secure, interoperable and maintainable.
 
-**Composition.** BAPIL's lead engineers, the security lead and two external technical reviewers.
+**Composition.** BAPIL’s lead engineers, the security lead and two external technical reviewers.
 
 **Responsibilities.** Set architecture and security standards; approve designs at G1; approve models and major dependencies; maintain architecture decision records; review security test results.
 
@@ -195,7 +195,7 @@ A DPIA is required before any processing of P2 data and is recommended for any n
 5. **Security.** Controls required (Table 32), hosting in Bangladesh, access list.
 6. **Outputs.** Permitted outputs (for example, aggregate results only), review of outputs before publication, attribution.
 7. **Retention and deletion.** Retention period (Table 26), deletion method and certificate.
-8. **Audit and reporting.** Custodian's right to audit; incident notification within 24 hours.
+8. **Audit and reporting.** Custodian’s right to audit; incident notification within 24 hours.
 9. **Intellectual property and licensing.** Ownership of source data and of derived outputs; open licensing of BAPIL outputs where permitted.
 10. **Term, review and termination.**
 11. **Transparency.** Listing of the agreement, without confidential details, in the transparency register.
@@ -226,6 +226,7 @@ A DPIA is required before any processing of P2 data and is recommended for any n
 * Model card and datasheets published.
 * User training materials ready; incident procedure in place.
 * ERRC approval for tier T2.
+* Single sign-on with MFA and roles, and the production audit store, in operation.
 
 ## G3 Pilot
 
@@ -266,10 +267,10 @@ A DPIA is required before any processing of P2 data and is recommended for any n
 
 | Term | Meaning in this Blueprint |
 |---|---|
-| Abstention | The system's refusal to answer when the evidence is insufficient, with the closest sources and the reason shown |
+| Abstention | The system’s refusal to answer when the evidence is insufficient, with the closest sources and the reason shown |
 | Adoption decision (G4) | The decision to transfer a tool to agency ownership as a class O system, or to stop |
 | AI system register | The internal record of every AI system, from which the public transparency register is generated |
-| BanglaPolicyQA | BAPIL's open benchmark of policy questions in Bangla and English with gold passages |
+| BanglaPolicyQA | BAPIL’s open benchmark of policy questions in Bangla and English with gold passages |
 | Citation precision | The share of answer sentences whose cited passage fully supports the sentence, as judged by trained annotators |
 | Corpus version | An identifier of the exact set of documents and passages used for a result, enabling reproduction |
 | Data class | The sensitivity class of data, from P0 (public) to P3 (sensitive personal data) |
@@ -280,7 +281,7 @@ A DPIA is required before any processing of P2 data and is recommended for any n
 | Passage | A short section of a document, the unit of search and citation |
 | Product owner | A named official in a host agency who defines needs and accepts or rejects a pilot |
 | Risk tier | The level of risk of a system, from T0 (prohibited) to T3 (high), which sets the required controls |
-| Transparency register | The public list of BAPIL's AI systems with their purpose, tier, evaluation and limitations |
+| Transparency register | The public list of BAPIL’s AI systems with their purpose, tier, evaluation and limitations |
 
 \newpage
 
@@ -406,7 +407,7 @@ The result reproduces the worked example in Annex B.4: the tier, the reason, the
 
 # Annex N: Contribution to the National AI Policy Elements
 
-The draft National AI Policy 2026-2030 proposed several elements [88]. The table shows how BAPIL's design could support each of them if they are retained in the final policy.
+The draft National AI Policy 2026-2030 proposed several elements [88]. The table shows how BAPIL’s design could support each of them if they are retained in the final policy.
 
 | Draft policy element | How BAPIL can contribute | Where in this Blueprint |
 |---|---|---|
@@ -438,27 +439,27 @@ The draft National AI Policy 2026-2030 proposed several elements [88]. The table
 
 # Annex P: Evidence Status and Claim Verification
 
-This annex records the evidence behind the Blueprint's key factual claims, as checked on 21 and 22 October 2026, and what was changed as a result. It uses nine status labels:
+This annex records the evidence behind the Blueprint’s key factual claims, as checked on 21 and 22 October 2026, and how each claim is presented in the text. It uses nine status labels:
 
 * **Verified fact:** confirmed against a primary or official source.
 * **Source-reported fact:** reported by a credible secondary source but not independently confirmed against the primary text.
-* **Research finding:** a result produced by the author's own analysis or code, with its limits stated.
-* **Author's analysis:** a calculation or judgement by the author from stated inputs.
+* **Research finding:** a result produced by the author’s own analysis or code, with its limits stated.
+* **Author’s analysis:** a calculation or judgement by the author from stated inputs.
 * **Design recommendation:** what the Blueprint proposes should be done.
 * **Planning assumption:** an input to planning, such as a unit cost, to be replaced by better data.
 * **Proposed target:** a value that a future measurement must reach.
-* **Unverified claim:** a statement that could not be checked; marked "to be confirmed" in the text.
+* **Unverified claim:** a statement that could not be checked; marked “to be confirmed” in the text.
 * **Future milestone:** something planned that has not yet happened.
 
 <!-- TABLE:60 -->
 
-**What was and was not reviewed.** The full English text, all tables and figures, the budget model and the reference implementation were reviewed, and the Bangla edition was compared with the English edition for numbers, dates, tables and cross-references. External claims were checked against the sources listed in the references, using official sources where they could be retrieved. The official Laws of Bangladesh database does not permit automated retrieval, so statutory texts, gazette notifications and commencement provisions were not read directly; the legal descriptions in Chapter 14 remain summaries of secondary sources and require confirmation by qualified Bangladesh counsel. The bibliography inherited from the White Paper (references 1 to 83) was not re-verified item by item. A separate Audit and Revision Report in the repository lists every issue found, its severity and how it was resolved.
+**What was and was not checked.** The full English text, all tables and figures, the budget model and the reference implementation were reviewed, and the Bangla edition was compared with the English edition for numbers, dates, tables and cross-references. External claims were checked against the sources listed in the references, using official sources where they could be retrieved. The official Laws of Bangladesh database does not permit automated retrieval, so statutory texts, gazette notifications and commencement provisions were not read directly; the legal descriptions in Chapter 14 remain summaries of secondary sources and require confirmation by qualified Bangladesh counsel. The bibliography inherited from the White Paper (references 1 to 83) was not re-verified item by item. Records of this evidence check are kept in the project repository.
 
 \newpage
 
 # Annex Q: Budget Reconciliation, Cost Types and Scenarios
 
-The indicative budget in Chapter 17 (Table 50) is computed by `blueprint/src/budget_model.py` from the assumptions in Table 49. This annex reconciles it with the draft estimate that preceded the October 2026 review, separates one-time from recurring costs, and shows low and high scenarios.
+The indicative budget in Chapter 17 (Table 50) is computed by `blueprint/src/budget_model.py` from the assumptions in Table 49. This annex reconciles it with the initial planning estimate made while the Blueprint was being drafted, separates one-time from recurring costs, and shows low, high and adjusted scenarios.
 
 <!-- TABLE:61 -->
 
@@ -466,7 +467,7 @@ The indicative budget in Chapter 17 (Table 50) is computed by `blueprint/src/bud
 
 **Sensitivity.** Changing one assumption at a time from the base case: staff costs 20% higher or lower change the total by about Tk 2.0 crore; filling all Year 1 posts from month 1 adds about Tk 0.5 crore; equipment 25% dearer adds about Tk 0.7 crore; escalation of 10% instead of 8% adds about Tk 0.4 crore; and a taka 10% weaker against the US dollar adds about Tk 0.3 crore.
 
-**Inputs still required.** The feasibility and costing study (Deliverable D1.3) should replace these assumptions with: the host's salary scale, increment rules and overhead rate; quotations for servers, GPUs and storage; the host's status for import duty and VAT; data-centre charges; confirmation of in-kind national compute; and agreed rates for annotators and trainers. Until then every figure here is an estimate, not approved funding.
+**Inputs still required.** The feasibility and costing study (Deliverable D1.3) should replace these assumptions with: the host’s salary scale, increment rules and overhead rate; quotations for servers, GPUs and storage; the host’s status for import duty and VAT; data-centre charges; confirmation of in-kind national compute; and agreed rates for annotators and trainers. Until then every figure here is an estimate, not approved funding.
 
 \newpage
 
@@ -492,9 +493,9 @@ This annex sets out, for each proposed body, its status, how its members are app
 
 <!-- TABLE:64 -->
 
-**Relationship with existing institutions.** BAPIL is a research initiative inside a host institution and has no regulatory role. The authorities created under the data-protection and data-management laws, the cyber-security authorities and the courts keep their full powers over BAPIL's activities, as over any other organisation. The host institution's own governing bodies, finance rules, audit arrangements and research ethics committee continue to apply. The independent oversight committee proposed in the draft national AI policy would be created by an Act of Parliament [88]; if it is established, BAPIL would register its systems with it and follow its decisions, and the ERRC would continue only as BAPIL's internal review.
+**Relationship with existing institutions.** BAPIL is a research initiative inside a host institution and has no regulatory role. The authorities created under the data-protection and data-management laws, the cyber-security authorities and the courts keep their full powers over BAPIL’s activities, as over any other organisation. The host institution’s own governing bodies, finance rules, audit arrangements and research ethics committee continue to apply. The independent oversight committee proposed in the draft national AI policy would be created by an Act of Parliament [88]; if it is established, BAPIL would register its systems with it and follow its decisions, and the ERRC would continue only as BAPIL’s internal review.
 
-**Overlaps and how they are resolved.** The Steering Board and the host's governing body both approve budgets: the host approves the financial framework and the Board approves the BAPIL plan within it. The ERRC and the host's research ethics committee both review research with people: the ethics committee decides on research ethics, and the ERRC decides on system risk; neither may approve what the other has refused. Joint G4 decisions are shared between the Steering Board and the host agency because the agency carries the operational and legal responsibility for a tool it adopts.
+**Overlaps and how they are resolved.** The Steering Board and the host’s governing body both approve budgets: the host approves the financial framework and the Board approves the BAPIL plan within it. The ERRC and the host’s research ethics committee both review research with people: the ethics committee decides on research ethics, and the ERRC decides on system risk; neither may approve what the other has refused. Joint G4 decisions are shared between the Steering Board and the host agency because the agency carries the operational and legal responsibility for a tool it adopts.
 
 \newpage
 
@@ -504,7 +505,7 @@ The 36-month clock cannot start until certain approvals, agreements and funds ar
 
 <!-- TABLE:65 -->
 
-**What does not need new legislation.** Phase 1 can proceed under an MoU, a host agreement, data-sharing agreements, the host's procurement and ethics procedures and a funding agreement. **What would.** A statutory centre (an option for horizon H3), any power to require agencies to share data or adopt BAPIL's methods, and the national oversight committee proposed in the draft policy would each need legislation or a formal government decision; none of them is assumed in the 36-month plan.
+**What does not need new legislation.** Phase 1 can proceed under an MoU, a host agreement, data-sharing agreements, the host’s procurement and ethics procedures and a funding agreement. **What would.** A statutory centre (an option for horizon H3), any power to require agencies to share data or adopt BAPIL’s methods, and the national oversight committee proposed in the draft policy would each need legislation or a formal government decision; none of them is assumed in the 36-month plan.
 
 <!-- TABLE:66 -->
 
@@ -514,17 +515,19 @@ The 36-month clock cannot start until certain approvals, agreements and funds ar
 
 Table 55 lists the eighteen registered risks with their mitigations and owners. This annex adds what is needed to manage them in practice: an early-warning indicator that can be checked, a contingency if the risk occurs, the residual rating after mitigation and how often each risk is reviewed.
 
+\begingroup\renewcommand{\bapiltablestretch}{1.10}
+
 <!-- TABLE:67 -->
+
+\endgroup
 
 \newpage
 
-# Annex V: Revision History and Unresolved Items
+# Annex V: Unresolved Items
 
-This annex records how the Blueprint changed after the October 2026 audit and lists every item that could not be resolved with the evidence available. Nothing of substance was deleted: statements that the evidence did not support were replaced with qualified wording, and the original claims are recorded in Annex P and in the Audit and Revision Report.
+This annex lists every item that could not be resolved with the evidence available at the time of writing, with its owner and how and when it will be resolved. Each item is also marked in the text where it applies.
 
 <!-- TABLE:68 -->
-
-<!-- TABLE:69 -->
 
 \newpage
 
@@ -541,4 +544,4 @@ ORCID: <https://orcid.org/{{ORCID}}>
 **GitHub:** <https://github.com/md-naim-hassan-saykat>  
 **Repository:** <https://github.com/md-naim-hassan-saykat/bapil>
 
-Comments, corrections and proposals for collaboration are welcome through the repository's issue tracker.
+Comments, corrections and proposals for collaboration are welcome through the repository’s issue tracker.

@@ -6,7 +6,7 @@
 
 ## 7.1 From Six Layers to Twelve Components
 
-The White Paper's six layers (data sources, data management, policy intelligence, knowledge management, decision support, governance and security) are refined here into twelve components grouped into four horizontal layers and one cross-cutting governance and security column.
+The White Paper’s six layers (data sources, data management, policy intelligence, knowledge management, decision support, governance and security) are refined here into twelve components grouped into four horizontal layers and one cross-cutting governance and security column.
 
 <!-- FIGURE:04 -->
 
@@ -40,7 +40,7 @@ Lexical BM25 retrieval [101] is combined with dense multilingual embeddings [102
 
 Many potential users work outside Dhaka, use mobile devices and face slow or unreliable connections; some have visual or other impairments. The portal is therefore designed to WCAG 2.2 level AA [104] from the first release, with these specific commitments:
 
-* **Bangla first in the interface.** Menus, help texts and error messages are written in Bangla and English, and the user's language choice is remembered.
+* **Bangla first in the interface.** Menus, help texts and error messages are written in Bangla and English, and the user’s language choice is remembered.
 * **Light pages.** The search page stays under 500 KB and works on 3G connections (US-10); heavy features such as dashboards load only on request.
 * **Screen-reader support.** Proper headings, labels and alternative text, and correct language tags so that screen readers pronounce Bangla and English text correctly.
 * **Bangla input.** Search accepts Unicode Bangla typed with any common keyboard layout, as well as romanised Bangla, which is matched through transliteration candidates in later versions.
@@ -50,7 +50,7 @@ Accessibility is tested with automated tools at every release and with users, in
 
 ## 7.6 Technology Choices
 
-The candidate technologies in Table 19 are open-source and widely used, which keeps costs low, supports local skills and avoids dependence on a single vendor. They are candidates, not commitments: the feasibility study (Deliverable D1.3) confirms choices against the host's infrastructure, skills and support arrangements. Where a commercial product is considered, it is assessed with the procurement clauses in Chapter 17, including the right to evaluate on BAPIL's benchmark and the right to exit with all data.
+The candidate technologies in Table 19 are open-source and widely used, which keeps costs low, supports local skills and avoids dependence on a single vendor. They are candidates, not commitments: the feasibility study (Deliverable D1.3) confirms choices against the host’s infrastructure, skills and support arrangements. Where a commercial product is considered, it is assessed with the procurement clauses in Chapter 17, including the right to evaluate on BAPIL’s benchmark and the right to exit with all data.
 
 \newpage
 
@@ -58,7 +58,7 @@ The candidate technologies in Table 19 are open-source and widely used, which ke
 
 ## 8.1 Public Data First
 
-The safest and fastest route to value is to begin with information the state has already chosen to publish: laws, gazette notifications, budget documents, development plans, statistical releases and parliamentary papers. This material is large, important for policy work, under-used because it is scattered across sites and formats, and free of the privacy risks of personal data. The Right to Information Act, 2009 already establishes the principle of proactive disclosure [105].
+The safest and fastest route to value is to begin with information the state has already chosen to publish: laws, gazette notifications, budget documents, development plans, statistical releases and parliamentary papers. This material is large, important for policy work, under-used because it is scattered across sites and formats, and of low privacy risk. It is not free of personal data: gazettes and notifications name individuals, for example in appointment, transfer, land-acquisition and disciplinary notices. Such passages are indexed only as published, are never combined into profiles of individuals, and are excluded from analytics and model training. The Right to Information Act, 2009 already establishes the principle of proactive disclosure [105].
 
 ## 8.2 The Data Lifecycle
 
@@ -118,7 +118,7 @@ Where data is not already public, access is governed by a written data-sharing a
 
 ## 8.12 Personal Data
 
-As reported, the personal data protection framework recognises citizens' rights over their personal data, requires consent and gives enhanced protection to sensitive and children's data, and data subjects may restrict automated decisions based on their data [84, 85]; a 2026 amendment to the ordinance added residency requirements for specified data [115]. Which of these provisions of the 2026 Act are in force, and from when, is to be confirmed by the legal review (Section 14.3); until then BAPIL applies the stricter reading. BAPIL's design responds conservatively: P2 data is used only in pilot P3, only with consent, only after a DPIA (template in Annex H), only in de-identified form and only for aggregate results; P3 data is never used. Commentators have argued that the new framework leaves broad room for state access to data [106]; BAPIL's own safeguards therefore do not rely on legal minimums alone.
+As reported, the personal data protection framework recognises citizens’ rights over their personal data, requires consent and gives enhanced protection to sensitive and children’s data, and data subjects may restrict automated decisions based on their data [84, 85]; a Personal Data Protection (Amendment) Ordinance, 2026 changed the ordinance’s data-residency provisions [115], and commentary describes localisation as limited to critical sectors such as banking and healthcare [122]. Which of these provisions of the 2026 Act are in force, and from when, is to be confirmed by the legal review (Section 14.3); until then BAPIL applies the stricter reading. BAPIL’s design responds conservatively: P2 data is used only in pilot P3, only with consent, only after a DPIA (template in Annex H), only in de-identified form and only for aggregate results; P3 data is never used. Commentators have argued that the new framework leaves broad room for state access to data [106]; BAPIL’s own safeguards therefore do not rely on legal minimums alone.
 
 \newpage
 
@@ -137,7 +137,7 @@ The pipeline has six stages:
 1. **Normalise.** Apply Unicode NFC; unify alternative encodings of Bangla letters; fold Bangla digits to ASCII for matching while keeping the original for display; remove zero-width characters that break matching; apply light stripping of common Bangla inflectional suffixes (for example -এর, -কে, -তে, -গুলো, -সমূহ) and simple English plural forms.
 2. **Expand.** Add cross-lingual equivalents from a curated bilingual glossary of policy terms (for example *budget* and বাজেট, *data protection* and উপাত্ত সুরক্ষা), and spelling variants. The glossary is versioned, reviewed by language editors and published.
 3. **Retrieve.** Score passages with BM25 [101] and, in the full system, with dense multilingual embeddings [102]; combine the two ranked lists.
-4. **Check evidence.** Apply a calibrated score threshold and require that the top passages actually cover the query terms.
+4. **Check evidence.** Apply a score threshold, calibrated on the development split of the benchmark, and require that the top passages actually cover the query terms. The reference implementation uses a fixed threshold.
 5. **Answer or abstain.** If the evidence is sufficient, select the most informative sentences from the top passages and attach a citation to each; optionally pass them to a language model that may only rephrase, with every output sentence verified against its cited passage. If the evidence is not sufficient, abstain and show the closest sources with the reason.
 6. **Log.** Record the query, corpus version, passages, scores and output in the hash-chained audit log.
 
@@ -170,29 +170,29 @@ Results are only useful if they are comparable and honest. Every evaluation ther
 
 ## 9.6 Model Selection
 
-The Blueprint does not commit to a particular model vendor. Candidate models are open-weight, can run on infrastructure in Bangladesh, have documented Bangla capability and acceptable licences. Bangla-specific encoders such as BanglaBERT and generators such as BanglaT5 [46, 48] and Bangla-adapted open LLMs [49] are evaluated alongside multilingual models. Selection is made on BAPIL's own benchmark, not on public leaderboards, using the weighted criteria below. Every selected model receives a model card [99] and appears in the AI system register.
+The Blueprint does not commit to a particular model vendor. Candidate models are open-weight, can run on infrastructure in Bangladesh, have documented Bangla capability and acceptable licences. For public (P0) data only, at least one hosted commercial model is also evaluated as a reference point, so that the gap between open models and the best available system, and therefore the value of any adaptation, can be judged. Hosted models are never used for data above class P0. Bangla-specific encoders such as BanglaBERT and generators such as BanglaT5 [46, 48] and Bangla-adapted open LLMs [49] are evaluated alongside multilingual models. Selection is made on BAPIL’s own benchmark, not on public leaderboards, using the weighted criteria below. Every selected model receives a model card [99] and appears in the AI system register.
 
 <!-- TABLE:29 -->
 
 ## 9.7 The Bangla Policy Foundation Model: an Evidence-Gated Path
 
-The White Paper proposed a Bangla Policy Foundation Model (BPFM) as a long-term research direction. This Blueprint does not assume that a dedicated model is necessary. For policy search, most of the value comes from a well-governed corpus, good retrieval and careful citation, and a larger model is not automatically better on narrow, citation-bound tasks. The Blueprint therefore sets out a ladder in which each step must be justified by measured residual errors that the previous step cannot fix.
+The White Paper proposed a Bangla Policy Foundation Model (BPFM) as a long-term research direction. The White Paper’s name is kept for continuity; within the 36-month plan the most that would be built is a domain adaptation of an existing open model, not a new foundation model. This Blueprint does not assume that a dedicated model is necessary. For policy search, most of the value comes from a well-governed corpus, good retrieval and careful citation, and a larger model is not automatically better on narrow, citation-bound tasks. The Blueprint therefore sets out a ladder in which each step must be justified by measured residual errors that the previous step cannot fix.
 
 <!-- FIGURE:08 -->
 
 * **Stage 0 (months 1 to 12)** has three steps: (0a) lexical and metadata search, which also remains the transparent fallback; (0b) multilingual dense retrieval and reranking, adopted only if it measurably improves retrieval; and (0c) answers built with existing open models, extractive first, with generated rephrasing enabled only if citation checks pass. Baselines are established on BanglaPolicyQA v0.
-* **Stage 1 (months 13 to 30), targeted adaptation.** If residual errors are documented by category and can be attributed to the model rather than to retrieval or data, and governed data and compute are ready, apply parameter-efficient domain adaptation such as LoRA [103] on the governed public corpus, followed by instruction tuning on curated question-answer pairs. Publish a model card.
+* **Stage 1 (months 13 to 30), targeted adaptation.** If residual errors are documented by category and can be attributed to the model rather than to retrieval or data, and governed data and compute are ready, apply parameter-efficient domain adaptation such as LoRA [103] on the governed public corpus, followed by instruction tuning on curated question-answer pairs. Publish a model card. Stage 1 is costed before it is approved: indicatively one to two machine-learning staff for about twelve months (Tk 0.3 to 0.5 crore within the core staff line) and up to USD 20,000 of compute if national compute is not available (high scenario). The Stage 1 decision compares this cost with the cost of improving retrieval, data and evaluation by the same amount.
 * **Stage 2 (after month 30, only if justified), a dedicated domain model.** Continued pre-training of an existing open model on governed Bangla text, coordinated with any national Bangla LLM effort, with an independent audit before release.
 
 <!-- TABLE:30 -->
 
-Training a new foundation model from scratch is out of scope, and a rough calculation shows why. Training compute is approximately six times the number of parameters times the number of training tokens [121]. A 7-billion-parameter model trained on one trillion tokens therefore needs about 4 × 10^22^ operations, or tens of thousands of GPU-hours on current data-centre GPUs. More importantly, it needs a trillion tokens of suitable text: the governed policy corpus planned here (about 25,000 documents by month 36, Table 54) is of the order of a few hundred million tokens if documents average about 10,000 tokens, more than three orders of magnitude short. By contrast, continued pre-training of an existing 7 to 8-billion-parameter model on 5 to 10 billion tokens of governed Bangla text needs about 2 to 5 × 10^20^ operations, a few hundred to a few thousand GPU-hours, which shared national compute could provide. The binding constraints for Stage 2 would then be whether that much governed Bangla text can be assembled at all, and the staff needed to curate and evaluate it, rather than compute. These are order-of-magnitude planning estimates (author's analysis), to be replaced by measured figures before any Stage 2 decision.
+Training a new foundation model from scratch is out of scope, and a rough calculation shows why. Training compute is approximately six times the number of parameters times the number of training tokens [121]. A 7-billion-parameter model trained on one trillion tokens therefore needs about 4 × 10^22^ operations, or tens of thousands of GPU-hours on current data-centre GPUs. More importantly, it needs a trillion tokens of suitable text: the governed policy corpus planned here (about 25,000 documents by month 36, Table 54) is of the order of a few hundred million tokens if documents average about 10,000 tokens, more than three orders of magnitude short. By contrast, continued pre-training of an existing 7 to 8-billion-parameter model on 5 to 10 billion tokens of governed Bangla text needs about 2 to 5 × 10^20^ operations, a few hundred to a few thousand GPU-hours, which shared national compute could provide. The binding constraints for Stage 2 would then be whether that much governed Bangla text can be assembled at all, and the staff needed to curate and evaluate it, rather than compute. These are order-of-magnitude planning estimates (author’s analysis), to be replaced by measured figures before any Stage 2 decision.
 
 If Stage 2 is ever justified, its minimum viable scope is one model of about 7 to 8 billion parameters, adapted for Bangla policy search and question answering only, released with a model card, a datasheet for its training data, an independent audit and a comparison with Stage 1 on the same frozen benchmark. At each gate the default is to remain at the current step. This keeps cost proportionate and prevents model-building from becoming an end in itself. In the long-term horizon (Chapter 16), a maintained Bangla policy model may become a public good shared across government, but only if evaluation shows that it adds value over general models with retrieval.
 
 ## 9.8 Human Factors
 
-Officials need to know when to trust an answer. The interface therefore always shows the source passages next to the answer, displays a confidence band rather than a single score, states known limitations of the corpus (for example, documents not yet ingested), and offers a one-click "report a problem" link that feeds the incident process. Training for pilot users covers how the system works, its failure modes and the duty to verify before relying on an output.
+Officials need to know when to trust an answer. The interface therefore always shows the source passages next to the answer, displays a confidence band rather than a single score, states known limitations of the corpus (for example, documents not yet ingested), and offers a one-click “report a problem” link that feeds the incident process. Training for pilot users covers how the system works, its failure modes and the duty to verify before relying on an output.
 
 ## 9.9 Environmental and Cost Footprint
 
@@ -204,7 +204,7 @@ AI computation consumes energy and money. BAPIL reduces both by preferring retri
 
 ## 10.1 Hosting
 
-All services that handle data above class P0 are hosted in Bangladesh, at the National Data Center or another accredited facility, in line with requirement NFR-02 and with the draft national AI policy's intention to centralise national compute [88]. Development work on P0 data may use other environments, provided no P1 to P3 data is present.
+All services that handle data above class P0 are hosted in Bangladesh, at the National Data Center or another accredited facility, in line with requirement NFR-02 and with the draft national AI policy’s intention to centralise national compute [88]. Development work on P0 data may use other environments, provided no P1 to P3 data is present.
 
 ## 10.2 Zones and Topology
 
@@ -238,7 +238,7 @@ Incidents are classified by severity, which sets the response time and who must 
 
 ## 10.7 Business Continuity and Disaster Recovery
 
-The July 2024 nationwide disruption showed how single points of failure can magnify the impact of an incident [108]. Bangladesh also faces floods and cyclones that can affect power and connectivity. BAPIL's services are not life-critical, but continuity matters for user trust and for the integrity of audit records. The targets below apply in the pilot phase and are tested in quarterly restore drills.
+The July 2024 nationwide disruption showed how single points of failure can magnify the impact of an incident [108]. Bangladesh also faces floods and cyclones that can affect power and connectivity. BAPIL’s services are not life-critical, but continuity matters for user trust and for the integrity of audit records. The targets below apply in the pilot phase and are tested in quarterly restore drills.
 
 <!-- TABLE:35 -->
 
@@ -252,16 +252,16 @@ Every release has a software bill of materials, pinned dependencies and recorded
 
 ## 11.1 Purpose
 
-A blueprint is more credible when its core ideas run. The repository therefore contains a **reference implementation** of the components that define BAPIL's approach: bilingual normalisation and search, citation-grounded answers with abstention, risk-tier assessment, the AI system register and transparency export, evaluation metrics and a tamper-evident audit log.
+A blueprint is more credible when its core ideas run. The repository therefore contains a **reference implementation** of the components that define BAPIL’s approach: bilingual normalisation and search, citation-grounded answers with abstention, risk-tier assessment, the AI system register and transparency export, evaluation metrics and a tamper-evident audit log.
 
-The Blueprint uses maturity terms precisely. A *conceptual design* exists only on paper; a *prototype* or *proof of concept* shows that an idea can work; a *reference implementation* is a small, documented and tested program that shows the intended behaviour of a design so that others can study and reproduce it; a *tested software release* is a versioned release that has passed a defined test suite; and a *production deployment* serves real users under service levels. The code described here is a reference implementation at research-prototype level, issued as a tested software release (package version 0.1.0 in repository release v1.1.0) with 49 unit tests. It has not been deployed, load-tested, security-audited or used by officials. Everything else in Part III (dense retrieval, the portal, authentication, OCR and the production security controls) is design, not yet implementation (Table 37).
+The Blueprint uses maturity terms precisely. A *conceptual design* exists only on paper; a *prototype* or *proof of concept* shows that an idea can work; a *reference implementation* is a small, documented and tested program that shows the intended behaviour of a design so that others can study and reproduce it; a *tested software release* is a versioned release that has passed a defined test suite; and a *production deployment* serves real users under service levels. The code described here is a reference implementation at research-prototype level, prepared as a tested software release (package version 0.1.0, to be issued in repository release v1.1.0) with 49 unit tests. It has not been deployed, load-tested, security-audited or used by officials. Everything else in Part III (dense retrieval, the portal, authentication, OCR and the production security controls) is design, not yet implementation (Table 37).
 
 ## 11.2 Design Choices
 
-* **Python standard library only.** The package has no third-party dependencies, so it installs and runs offline on any machine with Python 3.10 or newer, including air-gapped government environments. Production components (Table 19) replace these modules behind the same interfaces.
+* **Python standard library only.** The package has no third-party dependencies, so it is designed to install and run offline with Python 3.10 or newer, including in air-gapped government environments. On 22 October 2026 the 49 unit tests passed locally on Linux with Python 3.13, and with Python 3.10, 3.11 and 3.12 apart from one optional schema test that was skipped because the optional jsonschema package was not installed; the CI workflow will run the same matrix once the repository is updated. Other operating systems have not been tested. Production components (Table 19) replace these modules behind the same interfaces.
 * **Deterministic and inspectable.** BM25 scoring and extractive answering make every result explainable from the inputs.
 * **Bilingual from the start.** Tests include Bangla and English queries, Bangla digits and alternative Unicode encodings.
-* **Self-documenting corpus.** The demonstration corpus is BAPIL's own published documents, so it contains no third-party or personal data.
+* **Self-documenting corpus.** The demonstration corpus is BAPIL’s own published documents, so it contains no third-party or personal data.
 
 ## 11.3 Repository Layout
 
@@ -308,7 +308,7 @@ python -m unittest discover -s tests
 
 {{EVAL_RESULTS}}
 
-These figures come from a small demonstration question set over BAPIL's own documents. They show that the evaluation harness works end to end; they are not evidence of performance on the national corpus, which will be measured on BanglaPolicyQA.
+These figures are development results, not test results. The questions were written by the author over BAPIL’s own documents, which the author also wrote; gold headings were updated when the Blueprint was renumbered; and one corpus passage was rewritten during development after it caused a false answer to an out-of-scope question. The figures show that the evaluation harness works end to end. They say nothing about performance on the national corpus, which will be measured on the private test split of BanglaPolicyQA under Annex R.
 
 ## 11.6 Testing Strategy
 
@@ -326,6 +326,6 @@ The reference implementation is deliberately small. The table below shows how ea
 
 ## 11.9 Versioning and Persistent Identifiers
 
-Repository releases follow semantic versioning. Each publication in the BAPIL series receives its own Zenodo DOI, and related records are linked through Zenodo's related-identifier fields (for example, this Blueprint *is supplement to* the White Paper and *references* the Executive Summary). The policy is set out in Annex D.
+Repository releases follow semantic versioning. Each publication in the BAPIL series receives its own Zenodo DOI, and related records are linked through Zenodo’s related-identifier fields (for example, this Blueprint *is supplement to* the White Paper and *references* the Executive Summary). The policy is set out in Annex D.
 
 \newpage

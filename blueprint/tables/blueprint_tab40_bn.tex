@@ -1,9 +1,26 @@
 \documentclass[border=10pt]{standalone}
 \usepackage{fontspec}
-\setmainfont{Noto Serif}
-\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali]
+\setmainfont{Noto Serif}[Ligatures=TeXOff]
+\XeTeXgenerateactualtext=1
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali, NFSSFamily=bnfam]
 \usepackage[Latin,Bengali]{ucharclasses}
-\setTransitionsFor{Bengali}{\begingroup\bengalifont}{\endgroup}
+% group-free font switching (as in header-common.tex): robust inside braces, cells and quotes
+\makeatletter
+\def\BN@saved{\rmdefault}
+\def\BN@bn{bnfam}
+\newcommand\BNin{\edef\BN@tmp{\f@family}\ifx\BN@tmp\BN@bn\else\let\BN@saved\BN@tmp\fi\fontfamily{bnfam}\selectfont}
+\newcommand\BNout{\fontfamily{\BN@saved}\selectfont}
+\makeatother
+\setTransitionsFor{Bengali}{\BNin}{\BNout}
+% Typographic quotes and dashes are not in a ucharclasses class (class 0), so a Bangla word right
+% after “ or ‘ would not trigger the Bangla font. Treat them as Latin so that every switch fires.
+\XeTeXcharclass"2018=\XeTeXcharclass`A
+\XeTeXcharclass"2019=\XeTeXcharclass`A
+\XeTeXcharclass"201C=\XeTeXcharclass`A
+\XeTeXcharclass"201D=\XeTeXcharclass`A
+\XeTeXcharclass"2013=\XeTeXcharclass`A
+\XeTeXcharclass"2014=\XeTeXcharclass`A
+\XeTeXcharclass"2026=\XeTeXcharclass`A
 \usepackage{newunicodechar}
 \newunicodechar{।}{{\bengalifont\char"0964}}
 \newunicodechar{॥}{{\bengalifont\char"0965}}
@@ -27,10 +44,10 @@
 মানুষ প্রক্রিয়ার ভেতরে & ব্যবহারের আগে একজন মানুষ প্রতিটি ফলাফল পর্যালোচনা করেন & A শ্রেণির সব ব্যবহার (P1 পাইলট; P3 সারাংশ) \\
 মানুষ প্রক্রিয়ার ওপরে & মানুষ নমুনা ও পর্যবেক্ষণ-সংকেত পর্যালোচনা করেন; হস্তক্ষেপ করতে পারেন & R শ্রেণির গবেষণা-সরঞ্জাম; প্রকাশিত ডেটার ড্যাশবোর্ড \\
 মানুষের কর্তৃত্ব & কর্তৃত্ব ও জবাবদিহি সিদ্ধান্তগ্রহণকারী কর্মকর্তার কাছে থাকে & প্রতিটি ব্যবহার; সনদে লিপিবদ্ধ \\
-চ্যালেঞ্জের সুযোগ & ব্যবহারকারী ও জনসাধারণ ত্রুটি চিহ্নিত করে সাড়া পেতে পারেন & পোর্টালের "সমস্যা জানান" লিংক; ঘটনা-প্রক্রিয়া \\
+চ্যালেঞ্জের সুযোগ & ব্যবহারকারী ও জনসাধারণ ত্রুটি চিহ্নিত করে সাড়া পেতে পারেন & পোর্টালের “সমস্যা জানান” লিংক; ঘটনা-প্রক্রিয়া \\
 প্রকাশের আগে দ্বৈত যাচাই & প্রকাশের আগে দুইজন মানুষ যেকোনো এআই-সহায়িত টেক্সট যাচাই করেন & প্রতিবেদন, সংক্ষিপ্তসার ও জনসমক্ষে সারাংশ \\
 \bottomrule
 \end{tabularx}
-\par\vspace{3pt}{\scriptsize\color{gray} উৎস: BAPIL কারিগরি ব্লুপ্রিন্ট, সংস্করণ ১.০ (২০২৬)। CC BY 4.0।}
+\par\vspace{3pt}{\scriptsize\color{gray} উৎস: BAPIL টেকনিক্যাল ব্লুপ্রিন্ট, সংস্করণ ১.০ (২০২৬)। CC BY 4.0।}
 \end{minipage}
 \end{document}

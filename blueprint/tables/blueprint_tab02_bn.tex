@@ -1,9 +1,26 @@
 \documentclass[border=10pt]{standalone}
 \usepackage{fontspec}
-\setmainfont{Noto Serif}
-\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali]
+\setmainfont{Noto Serif}[Ligatures=TeXOff]
+\XeTeXgenerateactualtext=1
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali, NFSSFamily=bnfam]
 \usepackage[Latin,Bengali]{ucharclasses}
-\setTransitionsFor{Bengali}{\begingroup\bengalifont}{\endgroup}
+% group-free font switching (as in header-common.tex): robust inside braces, cells and quotes
+\makeatletter
+\def\BN@saved{\rmdefault}
+\def\BN@bn{bnfam}
+\newcommand\BNin{\edef\BN@tmp{\f@family}\ifx\BN@tmp\BN@bn\else\let\BN@saved\BN@tmp\fi\fontfamily{bnfam}\selectfont}
+\newcommand\BNout{\fontfamily{\BN@saved}\selectfont}
+\makeatother
+\setTransitionsFor{Bengali}{\BNin}{\BNout}
+% Typographic quotes and dashes are not in a ucharclasses class (class 0), so a Bangla word right
+% after “ or ‘ would not trigger the Bangla font. Treat them as Latin so that every switch fires.
+\XeTeXcharclass"2018=\XeTeXcharclass`A
+\XeTeXcharclass"2019=\XeTeXcharclass`A
+\XeTeXcharclass"201C=\XeTeXcharclass`A
+\XeTeXcharclass"201D=\XeTeXcharclass`A
+\XeTeXcharclass"2013=\XeTeXcharclass`A
+\XeTeXcharclass"2014=\XeTeXcharclass`A
+\XeTeXcharclass"2026=\XeTeXcharclass`A
 \usepackage{newunicodechar}
 \newunicodechar{।}{{\bengalifont\char"0964}}
 \newunicodechar{॥}{{\bengalifont\char"0965}}
@@ -26,9 +43,9 @@
 \midrule
 \textbf{R} গবেষণা প্রোটোটাইপ & পদ্ধতি পরীক্ষার জন্য পরীক্ষামূলক ব্যবস্থা; এর ফলাফল কখনো সরকারি সিদ্ধান্তে ব্যবহৃত হয় না & BAPIL গবেষক ও গবেষণা অংশীদার & P0; ডেটা-বিনিময় চুক্তির অধীনে P1 & উন্মুক্ত মডেল দিয়ে বেঞ্চমার্ক পরীক্ষা & গেট G0 ও G1 \\
 \textbf{A} পরামর্শমূলক সরঞ্জাম & কর্মকর্তারা একাধিক উৎসের একটি হিসেবে ব্যবহার করেন; প্রতিটি ফলাফল ব্যবহারের আগে একজন মানুষ পর্যালোচনা করেন & পাইলট সংস্থার কর্মকর্তা & P0 ও P1; শুধু পরিচয়-অপসারিত P2 & দুই থেকে তিনটি সংস্থায় নীতি অনুসন্ধান পাইলট & গেট G2 ও G3; T2 স্তরের জন্য ERRC অনুমোদন \\
-\textbf{O} পরিচালনাগত ব্যবস্থা & সংস্থার কর্মপ্রবাহে সংযুক্ত; মালিকানা ও পরিচালনা সংস্থার, BAPIL-এর নয় & আয়োজক সংস্থার কর্মী এবং প্রযোজ্য ক্ষেত্রে জনসাধারণ & আইন ও সংস্থার অনুমোদন অনুযায়ী & সংস্থা-পরিচালিত অনুসন্ধান সেবা & আয়োজক সংস্থার আইনি পর্যালোচনাসহ গেট G4 \\
+\textbf{O} পরিচালনাগত ব্যবস্থা & সংস্থার কর্মপ্রবাহে সংযুক্ত; মালিকানা ও পরিচালনা সংস্থার, BAPIL-এর নয় & স্বাগতিক সংস্থার কর্মী এবং প্রযোজ্য ক্ষেত্রে জনসাধারণ & আইন ও সংস্থার অনুমোদন অনুযায়ী & সংস্থা-পরিচালিত অনুসন্ধান সেবা & স্বাগতিক সংস্থার আইনি পর্যালোচনাসহ গেট G4 \\
 \bottomrule
 \end{tabularx}
-\par\vspace{3pt}{\scriptsize\color{gray} উৎস: BAPIL কারিগরি ব্লুপ্রিন্ট, সংস্করণ ১.০ (২০২৬)। CC BY 4.0।}
+\par\vspace{3pt}{\scriptsize\color{gray} উৎস: BAPIL টেকনিক্যাল ব্লুপ্রিন্ট, সংস্করণ ১.০ (২০২৬)। CC BY 4.0।}
 \end{minipage}
 \end{document}

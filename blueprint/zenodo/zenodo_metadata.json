@@ -32,11 +32,31 @@
       "Public Sector Innovation"
     ],
     "related_identifiers": [
-      {"identifier": "10.5281/zenodo.21363967", "relation": "isSupplementTo", "scheme": "doi", "resource_type": "publication-report"},
-      {"identifier": "10.5281/zenodo.21441172", "relation": "references", "scheme": "doi", "resource_type": "publication-report"},
-      {"identifier": "https://github.com/md-naim-hassan-saykat/bapil/tree/v1.1.0", "relation": "isSupplementedBy", "scheme": "url", "resource_type": "software"},
-      {"identifier": "https://github.com/md-naim-hassan-saykat/bapil", "relation": "isDocumentedBy", "scheme": "url", "resource_type": "software"}
+      {
+        "identifier": "10.5281/zenodo.21363967",
+        "relation": "isSupplementTo",
+        "scheme": "doi",
+        "resource_type": "publication-report"
+      },
+      {
+        "identifier": "10.5281/zenodo.21441172",
+        "relation": "references",
+        "scheme": "doi",
+        "resource_type": "publication-report"
+      },
+      {
+        "identifier": "https://github.com/md-naim-hassan-saykat/bapil/tree/v1.1.0",
+        "relation": "isSupplementedBy",
+        "scheme": "url",
+        "resource_type": "software"
+      },
+      {
+        "identifier": "https://github.com/md-naim-hassan-saykat/bapil",
+        "relation": "isDocumentedBy",
+        "scheme": "url",
+        "resource_type": "software"
+      }
     ],
-    "notes": "Languages: English (authoritative) and Bengali. Contents: Technical Blueprint, Blueprint Summary and one-page Decision Memo in English and Bangla (PDF and Markdown); fifteen figures and sixty-nine tables in LaTeX, PDF and PNG; source code of the reference implementation (MIT). Independent research document; it does not represent any official government position."
+    "notes": "Languages: English (authoritative) and Bengali. Contents: Technical Blueprint and Blueprint Summary in English and Bangla (PDF and Markdown); fifteen figures and sixty-eight tables in LaTeX, PDF and PNG; the editable source package (Markdown masters, table data, figure sources, budget model with CSV outputs, templates and build script); source code of the reference implementation (MIT). Independent research document; it does not represent any official government position."
   }
 }

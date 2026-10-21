@@ -1,9 +1,26 @@
 \documentclass[border=10pt]{standalone}
 \usepackage{fontspec}
-\setmainfont{Noto Serif}
-\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali]
+\setmainfont{Noto Serif}[Ligatures=TeXOff]
+\XeTeXgenerateactualtext=1
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali, NFSSFamily=bnfam]
 \usepackage[Latin,Bengali]{ucharclasses}
-\setTransitionsFor{Bengali}{\begingroup\bengalifont}{\endgroup}
+% group-free font switching (as in header-common.tex): robust inside braces, cells and quotes
+\makeatletter
+\def\BN@saved{\rmdefault}
+\def\BN@bn{bnfam}
+\newcommand\BNin{\edef\BN@tmp{\f@family}\ifx\BN@tmp\BN@bn\else\let\BN@saved\BN@tmp\fi\fontfamily{bnfam}\selectfont}
+\newcommand\BNout{\fontfamily{\BN@saved}\selectfont}
+\makeatother
+\setTransitionsFor{Bengali}{\BNin}{\BNout}
+% Typographic quotes and dashes are not in a ucharclasses class (class 0), so a Bangla word right
+% after “ or ‘ would not trigger the Bangla font. Treat them as Latin so that every switch fires.
+\XeTeXcharclass"2018=\XeTeXcharclass`A
+\XeTeXcharclass"2019=\XeTeXcharclass`A
+\XeTeXcharclass"201C=\XeTeXcharclass`A
+\XeTeXcharclass"201D=\XeTeXcharclass`A
+\XeTeXcharclass"2013=\XeTeXcharclass`A
+\XeTeXcharclass"2014=\XeTeXcharclass`A
+\XeTeXcharclass"2026=\XeTeXcharclass`A
 \usepackage{newunicodechar}
 \newunicodechar{।}{{\bengalifont\char"0964}}
 \newunicodechar{॥}{{\bengalifont\char"0965}}
@@ -24,14 +41,14 @@
 \arrayrulecolor{bapilrule}\toprule
 \rowcolor{white}\textbf{সংস্থা} & \textbf{গঠন} & \textbf{প্রধান দায়িত্ব} & \textbf{সিদ্ধান্তের অধিকার} \\
 \midrule
-\textbf{স্টিয়ারিং বোর্ড} & ৭ থেকে ৯ জন সদস্য: আইসিটি বিভাগ (সহ-সভাপতি), আয়োজক প্রতিষ্ঠান (সহ-সভাপতি), পরিকল্পনা কমিশন, একটি ডেটা-রক্ষক সংস্থা, একাডেমিয়া, নাগরিক সমাজ, শিল্পখাত; BAPIL পরিচালক সদস্য-সচিব & কৌশল, বার্ষিক পরিকল্পনা ও বাজেট; অংশীদারিত্ব অনুমোদন; আয়োজক সংস্থার সঙ্গে যৌথভাবে G4 গ্রহণ-সিদ্ধান্ত & পরিকল্পনা ও বাজেট অনুমোদন \\
-\textbf{নৈতিকতা ও ঝুঁকি পর্যালোচনা কমিটি (ERRC)} & ৫ থেকে ৭ জন, সংখ্যাগরিষ্ঠ বহিরাগত: আইন ও মানবাধিকার, ডেটা সুরক্ষা, নৈতিকতা, বিষয়-বিশেষজ্ঞ, নাগরিক সমাজ, কারিগরি পর্যালোচক & G1, G2 ও G4-এ T2 ও T3 স্তরের ব্যবস্থা পর্যালোচনা; ঘটনা পর্যালোচনা; সিদ্ধান্তের সারাংশ প্রকাশ & পাইলট ও প্রয়োগে বাধ্যতামূলক ভেটো \\
-\textbf{কারিগরি স্থাপত্য বোর্ড (TAB)} & প্রধান প্রকৌশলী, নিরাপত্তা প্রধান, দুইজন বহিরাগত কারিগরি পর্যালোচক & স্থাপত্য ও নিরাপত্তা মানদণ্ড; নকশা পর্যালোচনা; মডেল ও নির্ভরতা অনুমোদন & G1-এ নকশা অনুমোদন \\
+\textbf{স্টিয়ারিং বোর্ড} & ৭ থেকে ৯ জন সদস্য: আইসিটি বিভাগ (সহ-সভাপতি), স্বাগতিক প্রতিষ্ঠান (সহ-সভাপতি), পরিকল্পনা কমিশন, একটি ডেটা-রক্ষক সংস্থা, একাডেমিয়া, নাগরিক সমাজ, শিল্পখাত; BAPIL পরিচালক সদস্য-সচিব & কৌশল, বার্ষিক পরিকল্পনা ও বাজেট; অংশীদারিত্ব অনুমোদন; স্বাগতিক সংস্থার সঙ্গে যৌথভাবে G4 গ্রহণ-সিদ্ধান্ত & পরিকল্পনা ও বাজেট অনুমোদন \\
+\textbf{নৈতিকতা ও ঝুঁকি পর্যালোচনা কমিটি (ERRC)} & ৫ থেকে ৭ জন, সংখ্যাগরিষ্ঠ বহিঃস্থ: আইন ও মানবাধিকার, ডেটা সুরক্ষা, নৈতিকতা, বিষয়-বিশেষজ্ঞ, নাগরিক সমাজ, কারিগরি পর্যালোচক & G1, G2 ও G4-এ T2 ও T3 স্তরের ব্যবস্থা পর্যালোচনা; ঘটনা পর্যালোচনা; সিদ্ধান্তের সারাংশ প্রকাশ & পাইলট ও প্রয়োগে বাধ্যতামূলক ভেটো \\
+\textbf{কারিগরি স্থাপত্য বোর্ড (TAB)} & প্রধান প্রকৌশলী, নিরাপত্তা প্রধান, দুইজন বহিঃস্থ কারিগরি পর্যালোচক & স্থাপত্য ও নিরাপত্তা মানদণ্ড; নকশা পর্যালোচনা; মডেল ও নির্ভরতা অনুমোদন & G1-এ নকশা অনুমোদন \\
 \textbf{আন্তর্জাতিক উপদেষ্টা প্যানেল} & ব্যক্তিগত সক্ষমতায় আমন্ত্রিত বিশেষজ্ঞ & পদ্ধতি, বেঞ্চমার্ক ও শাসনব্যবস্থার সমকক্ষ পর্যালোচনা; আন্তর্জাতিক সংযোগ & শুধু পরামর্শমূলক \\
 \textbf{পরিচালক ও ইউনিটসমূহ} & পরিচালক, হোয়াইট পেপারের ছয়টি বিষয়ভিত্তিক ইউনিট এবং একটি আন্তঃবিভাগীয় প্ল্যাটফর্ম প্রকৌশল দল & গবেষণা, পাইলট, প্রশিক্ষণ ও প্রকাশনা বাস্তবায়ন & অনুমোদিত পরিকল্পনার মধ্যে পরিচালনাগত সিদ্ধান্ত \\
-\textbf{আয়োজক সংস্থার প্রোডাক্ট ওনার} & পাইলট পরিচালনাকারী প্রতিটি সংস্থার মনোনীত কর্মকর্তা & চাহিদা নির্ধারণ, পাইলট ব্যবহারকারী সংগ্রহ, G3 ও G4-এ গ্রহণ বা প্রত্যাখ্যান & নিজ সংস্থায় পাইলট গ্রহণ \\
+\textbf{স্বাগতিক সংস্থার প্রোডাক্ট ওনার} & পাইলট পরিচালনাকারী প্রতিটি সংস্থার মনোনীত কর্মকর্তা & চাহিদা নির্ধারণ, পাইলট ব্যবহারকারী সংগ্রহ, G3 ও G4-এ গ্রহণ বা প্রত্যাখ্যান & নিজ সংস্থায় পাইলট গ্রহণ \\
 \bottomrule
 \end{tabularx}
-\par\vspace{3pt}{\scriptsize\color{gray} উৎস: BAPIL কারিগরি ব্লুপ্রিন্ট, সংস্করণ ১.০ (২০২৬)। CC BY 4.0।}
+\par\vspace{3pt}{\scriptsize\color{gray} উৎস: BAPIL টেকনিক্যাল ব্লুপ্রিন্ট, সংস্করণ ১.০ (২০২৬)। CC BY 4.0।}
 \end{minipage}
 \end{document}

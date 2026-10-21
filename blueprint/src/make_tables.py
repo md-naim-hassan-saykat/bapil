@@ -76,7 +76,7 @@ def doi_text(meta, lang):
     doi = meta.get("doi", "")
     if doi and "PENDING" not in doi:
         return doi
-    return "DOI reserved on Zenodo at publication" if lang == "en" else "প্রকাশের সময় Zenodo-তে সংরক্ষিত DOI"
+    return "DOI assigned at publication" if lang == "en" else "প্রকাশের সময় নির্ধারিত DOI"
 
 
 # ------------------------------------------------------------------ LaTeX
@@ -96,18 +96,52 @@ def tex_escape(s):
 
 PREAMBLE_EN = r"""\documentclass[border=10pt]{standalone}
 \usepackage{fontspec}
-\setmainfont{Latin Modern Roman}
-\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali]
+\setmainfont{Latin Modern Roman}[Ligatures=TeXOff]
+\XeTeXgenerateactualtext=1
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali, NFSSFamily=bnfam]
 \usepackage[Latin,Bengali]{ucharclasses}
-\setTransitionsFor{Bengali}{\begingroup\bengalifont}{\endgroup}
+% group-free font switching (as in header-common.tex): robust inside braces, cells and quotes
+\makeatletter
+\def\BN@saved{\rmdefault}
+\def\BN@bn{bnfam}
+\newcommand\BNin{\edef\BN@tmp{\f@family}\ifx\BN@tmp\BN@bn\else\let\BN@saved\BN@tmp\fi\fontfamily{bnfam}\selectfont}
+\newcommand\BNout{\fontfamily{\BN@saved}\selectfont}
+\makeatother
+\setTransitionsFor{Bengali}{\BNin}{\BNout}
+% Typographic quotes and dashes are not in a ucharclasses class (class 0), so a Bangla word right
+% after “ or ‘ would not trigger the Bangla font. Treat them as Latin so that every switch fires.
+\XeTeXcharclass"2018=\XeTeXcharclass`A
+\XeTeXcharclass"2019=\XeTeXcharclass`A
+\XeTeXcharclass"201C=\XeTeXcharclass`A
+\XeTeXcharclass"201D=\XeTeXcharclass`A
+\XeTeXcharclass"2013=\XeTeXcharclass`A
+\XeTeXcharclass"2014=\XeTeXcharclass`A
+\XeTeXcharclass"2026=\XeTeXcharclass`A
 """
 
 PREAMBLE_BN = r"""\documentclass[border=10pt]{standalone}
 \usepackage{fontspec}
-\setmainfont{Noto Serif}
-\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali]
+\setmainfont{Noto Serif}[Ligatures=TeXOff]
+\XeTeXgenerateactualtext=1
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali, NFSSFamily=bnfam]
 \usepackage[Latin,Bengali]{ucharclasses}
-\setTransitionsFor{Bengali}{\begingroup\bengalifont}{\endgroup}
+% group-free font switching (as in header-common.tex): robust inside braces, cells and quotes
+\makeatletter
+\def\BN@saved{\rmdefault}
+\def\BN@bn{bnfam}
+\newcommand\BNin{\edef\BN@tmp{\f@family}\ifx\BN@tmp\BN@bn\else\let\BN@saved\BN@tmp\fi\fontfamily{bnfam}\selectfont}
+\newcommand\BNout{\fontfamily{\BN@saved}\selectfont}
+\makeatother
+\setTransitionsFor{Bengali}{\BNin}{\BNout}
+% Typographic quotes and dashes are not in a ucharclasses class (class 0), so a Bangla word right
+% after “ or ‘ would not trigger the Bangla font. Treat them as Latin so that every switch fires.
+\XeTeXcharclass"2018=\XeTeXcharclass`A
+\XeTeXcharclass"2019=\XeTeXcharclass`A
+\XeTeXcharclass"201C=\XeTeXcharclass`A
+\XeTeXcharclass"201D=\XeTeXcharclass`A
+\XeTeXcharclass"2013=\XeTeXcharclass`A
+\XeTeXcharclass"2014=\XeTeXcharclass`A
+\XeTeXcharclass"2026=\XeTeXcharclass`A
 \usepackage{newunicodechar}
 \newunicodechar{।}{{\bengalifont\char"0964}}
 \newunicodechar{॥}{{\bengalifont\char"0965}}
@@ -144,7 +178,7 @@ def tex_table(t, lang, meta):
         body.append(" & ".join(cells) + r" \\")
     note = t.get("note", {}).get(lang)
     src = ("Source: BAPIL Technical Blueprint, Version 1.0 (2026). CC BY 4.0." if lang == "en"
-           else "উৎস: BAPIL কারিগরি ব্লুপ্রিন্ট, সংস্করণ ১.০ (২০২৬)। CC BY 4.0।")
+           else "উৎস: BAPIL টেকনিক্যাল ব্লুপ্রিন্ট, সংস্করণ ১.০ (২০২৬)। CC BY 4.0।")
     parts = [PREAMBLE_EN if lang == "en" else PREAMBLE_BN, COMMON, r"\begin{document}",
              r"\begin{minipage}{%dcm}" % width_cm,
              r"{\large\bfseries %s}\ {\large %s}\par\vspace{7pt}" % (tex_escape(label), title),

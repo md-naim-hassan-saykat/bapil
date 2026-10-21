@@ -1,9 +1,26 @@
 \documentclass[border=10pt]{standalone}
 \usepackage{fontspec}
-\setmainfont{Noto Serif}
-\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali]
+\setmainfont{Noto Serif}[Ligatures=TeXOff]
+\XeTeXgenerateactualtext=1
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali, NFSSFamily=bnfam]
 \usepackage[Latin,Bengali]{ucharclasses}
-\setTransitionsFor{Bengali}{\begingroup\bengalifont}{\endgroup}
+% group-free font switching (as in header-common.tex): robust inside braces, cells and quotes
+\makeatletter
+\def\BN@saved{\rmdefault}
+\def\BN@bn{bnfam}
+\newcommand\BNin{\edef\BN@tmp{\f@family}\ifx\BN@tmp\BN@bn\else\let\BN@saved\BN@tmp\fi\fontfamily{bnfam}\selectfont}
+\newcommand\BNout{\fontfamily{\BN@saved}\selectfont}
+\makeatother
+\setTransitionsFor{Bengali}{\BNin}{\BNout}
+% Typographic quotes and dashes are not in a ucharclasses class (class 0), so a Bangla word right
+% after “ or ‘ would not trigger the Bangla font. Treat them as Latin so that every switch fires.
+\XeTeXcharclass"2018=\XeTeXcharclass`A
+\XeTeXcharclass"2019=\XeTeXcharclass`A
+\XeTeXcharclass"201C=\XeTeXcharclass`A
+\XeTeXcharclass"201D=\XeTeXcharclass`A
+\XeTeXcharclass"2013=\XeTeXcharclass`A
+\XeTeXcharclass"2014=\XeTeXcharclass`A
+\XeTeXcharclass"2026=\XeTeXcharclass`A
 \usepackage{newunicodechar}
 \newunicodechar{।}{{\bengalifont\char"0964}}
 \newunicodechar{॥}{{\bengalifont\char"0965}}
@@ -24,14 +41,14 @@
 \arrayrulecolor{bapilrule}\toprule
 \rowcolor{white}\textbf{কার্যাবলি} & \textbf{BAPIL নিয়ন্ত্রণ} \\
 \midrule
-\textbf{শাসন} & সনদ ও নিরাপত্তা নীতি; মনোনীত নিরাপত্তা প্রধান; ঝুঁকি নিবন্ধন; সরবরাহকারী ও নির্ভরতা নীতি; এআই-নির্দিষ্ট ঝুঁকিতে ERRC-এর তত্ত্বাবধান \\
-\textbf{শনাক্তকরণ} & সম্পদ ও ডেটার তালিকা; ডেটা শ্রেণিবিন্যাস (P0 থেকে P3); OWASP LLM ঝুঁকিসহ প্রতিটি ব্যবস্থার হুমকি-মডেল; নির্ভরতার SBOM \\
-\textbf{সুরক্ষা} & MFA-সহ একক সাইন-অন; ন্যূনতম-সুবিধার ভূমিকা; পরিবহন ও সংরক্ষণকালে এনক্রিপশন; সুরক্ষিত কন্টেইনার; গোপন তথ্য ব্যবস্থাপনা; কর্মী প্রশিক্ষণ \\
-\textbf{সনাক্তকরণ} & কেন্দ্রীভূত লগ ও সতর্কতা; প্রশ্নের পরিমাণে অস্বাভাবিকতা শনাক্তকরণ; দৈনিক নিরীক্ষা-শৃঙ্খল যাচাই; CI-তে দুর্বলতা স্ক্যান \\
-\textbf{সাড়া} & স্তরভিত্তিক ঘটনা-প্রতিক্রিয়া পরিকল্পনা; যোগাযোগ প্রটোকল; এআই ঘটনায় ERRC পর্যালোচনা; প্রয়োজনে আইনগত বিজ্ঞপ্তি \\
-\textbf{পুনরুদ্ধার} & অফলাইন এনক্রিপ্টেড ব্যাকআপ; ত্রৈমাসিক পুনরুদ্ধার মহড়া; নথিভুক্ত পুনরুদ্ধার-লক্ষ্য; ঘটনা-পরবর্তী পর্যালোচনার সারাংশ প্রকাশ \\
+\textbf{শাসন (Govern)} & সনদ ও নিরাপত্তা নীতি; মনোনীত নিরাপত্তা প্রধান; ঝুঁকি নিবন্ধন; সরবরাহকারী ও নির্ভরতা নীতি; এআই-নির্দিষ্ট ঝুঁকিতে ERRC-এর তত্ত্বাবধান \\
+\textbf{চিহ্নিতকরণ (Identify)} & সম্পদ ও ডেটার তালিকা; ডেটা শ্রেণিবিন্যাস (P0 থেকে P3); OWASP LLM ঝুঁকিসহ প্রতিটি ব্যবস্থার হুমকি-মডেল; নির্ভরতার SBOM \\
+\textbf{সুরক্ষা (Protect)} & MFA-সহ একক সাইন-অন; ন্যূনতম-সুবিধার ভূমিকা; পরিবহন ও সংরক্ষণকালে এনক্রিপশন; সুরক্ষিত কন্টেইনার; গোপন তথ্য ব্যবস্থাপনা; কর্মী প্রশিক্ষণ \\
+\textbf{শনাক্তকরণ (Detect)} & কেন্দ্রীভূত লগ ও সতর্কতা; প্রশ্নের পরিমাণে অস্বাভাবিকতা শনাক্তকরণ; দৈনিক নিরীক্ষা-শৃঙ্খল যাচাই; CI-তে দুর্বলতা স্ক্যান \\
+\textbf{সাড়াদান (Respond)} & স্তরভিত্তিক ঘটনা-প্রতিক্রিয়া পরিকল্পনা; যোগাযোগ প্রটোকল; এআই ঘটনায় ERRC পর্যালোচনা; প্রয়োজনে আইনগত বিজ্ঞপ্তি \\
+\textbf{পুনরুদ্ধার (Recover)} & অফলাইন এনক্রিপ্টেড ব্যাকআপ; ত্রৈমাসিক পুনরুদ্ধার মহড়া; নথিভুক্ত পুনরুদ্ধার-লক্ষ্য; ঘটনা-পরবর্তী পর্যালোচনার সারাংশ প্রকাশ \\
 \bottomrule
 \end{tabularx}
-\par\vspace{3pt}{\scriptsize\color{gray} উৎস: BAPIL কারিগরি ব্লুপ্রিন্ট, সংস্করণ ১.০ (২০২৬)। CC BY 4.0।}
+\par\vspace{3pt}{\scriptsize\color{gray} উৎস: BAPIL টেকনিক্যাল ব্লুপ্রিন্ট, সংস্করণ ১.০ (২০২৬)। CC BY 4.0।}
 \end{minipage}
 \end{document}

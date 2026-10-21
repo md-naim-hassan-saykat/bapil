@@ -19,16 +19,34 @@ OUT = os.path.join(ROOT, "figures")
 
 PRE_EN = r"""\documentclass[border=8pt]{standalone}
 \usepackage{fontspec}
-\setmainfont{TeX Gyre Heros}
+\setmainfont{TeX Gyre Heros}[Ligatures=TeXOff]
+\XeTeXgenerateactualtext=1
 \setsansfont{TeX Gyre Heros}
 """
 PRE_BN = r"""\documentclass[border=8pt]{standalone}
 \usepackage{fontspec}
-\setmainfont{Noto Sans}
+\setmainfont{Noto Sans}[Ligatures=TeXOff]
+\XeTeXgenerateactualtext=1
 \setsansfont{Noto Sans}
-\newfontfamily\bengalifont{Noto Sans Bengali}[Script=Bengali]
+\newfontfamily\bengalifont{Noto Sans Bengali}[Script=Bengali, NFSSFamily=bnfam]
 \usepackage[Latin,Bengali]{ucharclasses}
-\setTransitionsFor{Bengali}{\begingroup\bengalifont}{\endgroup}
+% group-free font switching (as in header-common.tex): robust inside braces, cells and quotes
+\makeatletter
+\def\BN@saved{\rmdefault}
+\def\BN@bn{bnfam}
+\newcommand\BNin{\edef\BN@tmp{\f@family}\ifx\BN@tmp\BN@bn\else\let\BN@saved\BN@tmp\fi\fontfamily{bnfam}\selectfont}
+\newcommand\BNout{\fontfamily{\BN@saved}\selectfont}
+\makeatother
+\setTransitionsFor{Bengali}{\BNin}{\BNout}
+% Typographic quotes and dashes are not in a ucharclasses class (class 0), so a Bangla word right
+% after “ or ‘ would not trigger the Bangla font. Treat them as Latin so that every switch fires.
+\XeTeXcharclass"2018=\XeTeXcharclass`A
+\XeTeXcharclass"2019=\XeTeXcharclass`A
+\XeTeXcharclass"201C=\XeTeXcharclass`A
+\XeTeXcharclass"201D=\XeTeXcharclass`A
+\XeTeXcharclass"2013=\XeTeXcharclass`A
+\XeTeXcharclass"2014=\XeTeXcharclass`A
+\XeTeXcharclass"2026=\XeTeXcharclass`A
 \usepackage{newunicodechar}
 \newunicodechar{।}{{\bengalifont\char"0964}}
 """
@@ -71,12 +89,11 @@ FIGS["01"] = {
 \node[key, rounded corners=13pt, minimum width=46mm, minimum height=15mm, right=12mm of es] (bp) {\textbf{«bp»}\\«v10»\\{\footnotesize «newdoi»}};
 \draw[arr] (wp) -- (es);
 \draw[arr] (es) -- (bp);
-\node[box, minimum width=36mm, minimum height=11mm, below=14mm of bp.south, xshift=-50mm] (sum) {«sum»};
-\node[box, minimum width=36mm, minimum height=11mm, below=14mm of bp.south] (memo) {«memo»};
-\node[key, minimum width=36mm, minimum height=11mm, below=14mm of bp.south, xshift=50mm] (code) {«code»};
-\foreach \n in {sum,memo,code} \draw[arr] (bp.south) -- (\n.north);
-\node[soft, minimum width=150mm, minimum height=11mm, below=12mm of memo] (pilots) {«pilots»};
-\foreach \n in {sum,memo,code} \draw[arr] (\n.south) -- (\n.south |- pilots.north);
+\node[box, minimum width=40mm, minimum height=11mm, below=14mm of bp.south, xshift=-32mm] (sum) {«sum»};
+\node[key, minimum width=40mm, minimum height=11mm, below=14mm of bp.south, xshift=32mm] (code) {«code»};
+\foreach \n in {sum,code} \draw[arr] (bp.south) -- (\n.north);
+\node[soft, minimum width=150mm, minimum height=11mm, below=12mm of sum, xshift=32mm] (pilots) {«pilots»};
+\foreach \n in {sum,code} \draw[arr] (\n.south) -- (\n.south |- pilots.north);
 \node[box, minimum width=88mm, minimum height=11mm, below=9mm of pilots] (eval) {«eval»};
 \draw[arr] (pilots) -- (eval);
 \node[box, dashed, minimum width=40mm, minimum height=10mm, left=10mm of eval] (zen) {«zenodo»};
@@ -85,14 +102,14 @@ FIGS["01"] = {
 \draw[darr] (eval) -- (gh);
 \end{tikzpicture}""",
     "en": {"wp": "White Paper", "es": "Executive Summary", "bp": "Technical Blueprint", "v10": "Version 1.0",
-           "newdoi": "DOI: new Zenodo record", "sum": "Blueprint Summary", "memo": "One-page Decision Memo",
-           "code": "Reference implementation\\\\(GitHub, release v1.1.0)",
+           "newdoi": "DOI: new Zenodo record", "sum": "Blueprint Summary",
+           "code": "Reference implementation\\\\(GitHub repository)",
            "pilots": "Controlled pilots P1 to P6 under the gates G0 to G4",
            "eval": "Independent evaluation and adoption decisions",
            "zenodo": "Archived on Zenodo", "github": "Versioned on GitHub"},
-    "bn": {"wp": "হোয়াইট পেপার", "es": "নির্বাহী সারসংক্ষেপ", "bp": "কারিগরি ব্লুপ্রিন্ট", "v10": "সংস্করণ ১.০",
-           "newdoi": "DOI: নতুন Zenodo রেকর্ড", "sum": "ব্লুপ্রিন্ট সারসংক্ষেপ", "memo": "এক পৃষ্ঠার সিদ্ধান্ত স্মারক",
-           "code": "রেফারেন্স বাস্তবায়ন\\\\(গিটহাব, রিলিজ v1.1.0)",
+    "bn": {"wp": "হোয়াইট পেপার", "es": "নির্বাহী সারসংক্ষেপ", "bp": "টেকনিক্যাল ব্লুপ্রিন্ট", "v10": "সংস্করণ ১.০",
+           "newdoi": "DOI: নতুন Zenodo রেকর্ড", "sum": "ব্লুপ্রিন্ট সারসংক্ষেপ",
+           "code": "রেফারেন্স বাস্তবায়ন\\\\(গিটহাব রিপোজিটরি)",
            "pilots": "গেট G0 থেকে G4-এর অধীনে নিয়ন্ত্রিত পাইলট P1 থেকে P6",
            "eval": "স্বাধীন মূল্যায়ন ও গ্রহণের সিদ্ধান্ত",
            "zenodo": "Zenodo-তে সংরক্ষিত", "github": "গিটহাবে সংস্করণকৃত"},
@@ -136,7 +153,7 @@ FIGS["02"] = {
            "plat": "Platform engineering team (shared data, search, security and evaluation services)",
            "agency": "Host-agency product owners and pilot users in ministries and agencies",
            "codesign": "co-design"},
-    "bn": {"gov": "সরকার (আইসিটি বিভাগ)", "host": "আয়োজক প্রতিষ্ঠান", "mou": "সমঝোতা স্মারক",
+    "bn": {"gov": "সরকার (আইসিটি বিভাগ)", "host": "স্বাগতিক প্রতিষ্ঠান", "mou": "সমঝোতা স্মারক",
            "sb": "স্টিয়ারিং বোর্ড", "sbsub": "কৌশল, পরিকল্পনা, বাজেট, যৌথ G4 সিদ্ধান্ত",
            "errc": "নৈতিকতা ও ঝুঁকি\\\\পর্যালোচনা কমিটি", "errcsub": "স্বাধীন; বাধ্যতামূলক ভেটো",
            "iap": "আন্তর্জাতিক\\\\উপদেষ্টা প্যানেল", "iapsub": "সমকক্ষ পর্যালোচনা; শুধু পরামর্শ",
@@ -442,7 +459,7 @@ FIGS["08"] = {
            "e1": "ডেটা পরিকল্পনা; P2 হলে DPIA; TAB-এর নকশা অনুমোদন",
            "e2": "বেঞ্চমার্ক-সীমা অর্জিত; রেড-টিম ও নিরাপত্তা পরীক্ষা; T2-এর জন্য ERRC অনুমোদন",
            "e3": "সীমিত ব্যবহারকারী; পর্যবেক্ষণ; ঘটনা-প্রক্রিয়া; ব্যবহারকারীর মতামত",
-           "e4": "স্বাধীন মূল্যায়ন; আয়োজক সংস্থার গ্রহণ; আইনি পর্যালোচনা",
+           "e4": "স্বাধীন মূল্যায়ন; স্বাগতিক সংস্থার গ্রহণ; আইনি পর্যালোচনা",
            "e5": "পরিবর্তনের পর পুনর্মূল্যায়ন; দায়িত্বশীল অবসান; সংরক্ষণ",
            "rework": "প্রমাণ অপর্যাপ্ত হলে পুনরায় কাজ",
            "shade": "রঙিন গেটগুলোতে T2 ও তদূর্ধ্ব স্তরের জন্য ERRC সিদ্ধান্ত আবশ্যিক"},

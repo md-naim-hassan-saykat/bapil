@@ -1,23 +1,22 @@
-**Table 68.** Revision history: changes made after the October 2026 audit
+**Table 68.** Unresolved items register
 
-| Where | Change | Reason | Evidence or calculation |
-|----------------|------------------------------------|--------------------------|------------------|
-| Front matter | Status table; disclaimer and Overview revised; budget added to the Overview; counts updated | Separate what exists from what is proposed | Repository check, 22 October 2026; Annex P |
-| Ch. 1 | Legal timing qualified; method step 6 (audit); implementation described as a research prototype | Avoid overstating legal and software status | [84, 85, 86, 113] |
-| Ch. 2; Table 4 | Primary sources for EGDI and GCI; corrected citation for the 2023 AI readiness rank; legal summary rewritten | Accuracy and source quality | [80, 119, 120] |
-| Ch. 3 | AI Hub described as a proposal with a signed grant agreement, not a project under implementation | Source shows a proposal awaiting approval | [35, 117] |
-| Ch. 5; Annexes E to G | Legal status of bodies; independent selection of ERRC members; removal for cause; precedence of law (Article 13); charter confirmed after legal review | Independence and legal accuracy | Annex S |
-| Ch. 8, 10 | Chief data officers, NRDEX and the source-code repository attributed to the instruments that describe them; residency amendment; stricter-reading rule; GPU capacity matched to the budget | Correct attribution; internal consistency | [84, 113, 115]; Table 49 |
-| Ch. 9; Tables 28, 30 | Benchmark composition, splits and statistical rationale; decision rule; refined metric definitions; five-step model ladder with feasibility estimates | Make targets measurable; avoid assuming a new model is needed | Wilson intervals; [121] |
-| Ch. 11; SECURITY.md | Maturity terms defined; CI described as configured; security and dependency practice | Distinguish prototype from production | Repository |
-| Ch. 12, 13 | P1 exit tied to the protocol; complaints and appeals; labelling presented as BAPIL's rule | Measurability; accountability; correct attribution | [89]; Annex R |
-| Ch. 14; Tables 41 to 43 | Chronology of ordinances and Acts; enactment separated from commencement; legal review scope; new Section 14.7 | Legal statements rest on secondary sources | [84 to 89, 106, 113 to 116] |
-| Ch. 15; Tables 44, 48 | Month 1 defined by MoU, host agreement and funding; MS1 and first 90 days aligned; calendar caveat | Implementation realism | Annex T |
-| Ch. 17; Tables 49, 50 | Budget revised from Tk 18.49 to 20.43 crore: escalation, recruitment ramp, separate contingency, evaluation items; scenarios and sensitivity; rounding explained | Financial transparency | budget_model.py; [118]; Table 61 |
-| Ch. 18, 19; Tables 16, 18, 25, 54 | KPIs labelled as targets; time saved measured, not self-reported; training counts reconciled with the budget; OCR sampling; link to risk monitoring | Consistency between plan, budget and measurement | Annex R; Table 49 |
-| Ch. 21; Table 57 | Conclusion reworded; Decision D4 revised; note that no decision creates a statutory body | Overclaim; independence | Annex S |
-| Annexes P to V | Evidence status; budget reconciliation and scenarios; evaluation protocol; governance status; preconditions and work packages; risk monitoring; this revision history and unresolved items | Review mandate | As listed in each annex |
-| References | References 113 to 121 added | New evidence | As listed |
-| Bangla edition | All revisions translated; Bangla numerals for lists, citations, page numbers and chart labels | Bilingual consistency; editorial quality | Automated comparison of numbers by section |
+| ID | Unresolved item | Why it is unresolved | Owner | How and when it is resolved | Affects |
+|------|--------------------------|----------------------|----------------|--------------------|----------------|
+| U1 | Commencement dates and provisions in force of the PDPA 2026, NDMA 2026 and Cyber Security Act 2026, and any rules issued | Gazetted texts not reviewed; official database blocks automated retrieval | Host institution with legal counsel | Independent legal review before MS2 (Section 14.3) | Ch. 2, 8, 14; Tables 42, 43 |
+| U2 | Whether NRDEX, the national source-code repository and chief data officers are retained in the Acts | Described only for the 2025 ordinances | Legal counsel | Same legal review | Sect. 8.8, 8.11, 10.8 |
+| U3 | Status of the 2026 data-residency amendment after the Act | Not confirmed in available sources | Legal counsel | Same legal review | Sect. 8.12; Table 43 |
+| U4 | Public GitHub release v1.1.0 and the Blueprint DOI | Not yet published at the time of writing | Author | Publish the release, then the DOI record (Annex D), before circulation | Table 1; Ch. 11; Annex D |
+| U5 | Government approval of the AI hub technical assistance project | Pending in June 2026; later status not found | Author, with the ICT Division | Check before Blueprint 1.1 | Sect. 3.6, 17.2; Table 42 |
+| U6 | Budget inputs: host salary scale, overhead rate, equipment quotations, duty and VAT status | No host selected; no quotations | Feasibility and costing study | Deliverable D1.3 by month 6 | Ch. 17; Tables 49, 50, 61, 62 |
+| U7 | In-kind access to national compute for Stage 1 | Draft policy only | ICT Division; National Data Center | Confirm by MS2; otherwise use the high-scenario allocation | Sect. 9.7, 10.3; Table 31 |
+| U8 | BanglaPolicyQA does not exist; all quality targets are unmeasured | Work not yet funded | Work package 6 | Benchmark v0 at MS3; first results at G2 | Ch. 9, 12; Tables 28, 54, 63 |
+| U9 | No host institution, governance body or government focal point | Decisions not yet taken | ICT Division; host | Decisions D2 and D4; MS1 | Ch. 5; Annexes S, T |
+| U10 | No funding requested or approved | Proposal stage | ICT Division or partners | Decisions D2 and D5; before month 1 | Ch. 15, 17; Table 65 |
+| U11 | References 1 to 83 not re-verified item by item | Inherited from the White Paper | Author | Check before Blueprint 1.1 | References |
+| U12 | Gazette status of the Ninth National Pay Scale | Only Cabinet approval reported | Feasibility study | D1.3 | Sect. 17.5; Table 49 |
+| U13 | 2023 AI readiness rank taken from a secondary source | Index report not checked | Author | Check before Blueprint 1.1 | Sect. 2.2; Table 4 |
+| U14 | Independent copy-edit of the Bangla edition by a professional Bangla editor | Editorial review done by the author; no independent editor yet | Author | Before Blueprint 1.1 | Bangla edition |
+| U15 | Whether the host’s statutes allow its governing body to accept a binding external veto (ERRC) | Depends on the host selected; requires counsel | Host institution with legal counsel | Legal review before the host agreement is signed (Section 14.3) | Sect. 5.3; Annex F; Table 64 |
+| U16 | Costs not yet in the base case: consultation and engagement events, P5 survey data collection, staff travel other than for training, open-access fees and staff computers | Not costed in the planning estimate | Feasibility and costing study | Deliverable D1.3 by month 6; indicative allowance in Section 17.2 | Ch. 17; Tables 49, 50 |
 
-*Note.* The full issue register, claim verification matrix and scores are in the separate Audit and Revision Report in the repository (blueprint/review/).
+*Note.* Each item is marked in the text where it applies (“to be confirmed”, “proposed” or “planning estimate”). The register is updated at every Blueprint version.

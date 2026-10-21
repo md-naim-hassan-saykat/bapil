@@ -1,9 +1,26 @@
 \documentclass[border=10pt]{standalone}
 \usepackage{fontspec}
-\setmainfont{Latin Modern Roman}
-\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali]
+\setmainfont{Latin Modern Roman}[Ligatures=TeXOff]
+\XeTeXgenerateactualtext=1
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali, NFSSFamily=bnfam]
 \usepackage[Latin,Bengali]{ucharclasses}
-\setTransitionsFor{Bengali}{\begingroup\bengalifont}{\endgroup}
+% group-free font switching (as in header-common.tex): robust inside braces, cells and quotes
+\makeatletter
+\def\BN@saved{\rmdefault}
+\def\BN@bn{bnfam}
+\newcommand\BNin{\edef\BN@tmp{\f@family}\ifx\BN@tmp\BN@bn\else\let\BN@saved\BN@tmp\fi\fontfamily{bnfam}\selectfont}
+\newcommand\BNout{\fontfamily{\BN@saved}\selectfont}
+\makeatother
+\setTransitionsFor{Bengali}{\BNin}{\BNout}
+% Typographic quotes and dashes are not in a ucharclasses class (class 0), so a Bangla word right
+% after “ or ‘ would not trigger the Bangla font. Treat them as Latin so that every switch fires.
+\XeTeXcharclass"2018=\XeTeXcharclass`A
+\XeTeXcharclass"2019=\XeTeXcharclass`A
+\XeTeXcharclass"201C=\XeTeXcharclass`A
+\XeTeXcharclass"201D=\XeTeXcharclass`A
+\XeTeXcharclass"2013=\XeTeXcharclass`A
+\XeTeXcharclass"2014=\XeTeXcharclass`A
+\XeTeXcharclass"2026=\XeTeXcharclass`A
 
 \usepackage[table]{xcolor}
 \usepackage{booktabs,tabularx,array}
@@ -22,7 +39,7 @@
 \rowcolor{white}\textbf{No.} & \textbf{Decision} & \textbf{Responsible authority} & \textbf{Timing} \\
 \midrule
 D1 & Accept this Blueprint as a technical input to the national AI policy drafting process & Ministry of Posts, Telecommunications and Information Technology (ICT Division) & Q4 2026 \\
-D2 & Approve a 12-month Phase 1 pilot with a named government focal point and an MoU with a host institution & ICT Division and host institution & Within 90 days \\
+D2 & Approve a 12-month Phase 1 pilot, name a government focal point, agree an MoU with a host institution, and commit or identify Year 1 funding (about Tk 4.7 crore, Table 50) & ICT Division and host institution & Within 90 days \\
 D3 & Authorise structured bulk access to already-public document collections and nominate data custodians & Legislative and Parliamentary Affairs Division, Finance Division, Planning Commission, BBS, a2i & Within 120 days \\
 D4 & Nominate Steering Board members, and agree that ERRC members are selected through an open call by an independent nominations panel & ICT Division and host institution (Steering Board); independent panel (ERRC) & Within 90 days \\
 D5 & Commission the feasibility and costing study that sets the Phase 2 budget & ICT Division or a development partner & By month 6 \\

@@ -1,9 +1,26 @@
 \documentclass[border=10pt]{standalone}
 \usepackage{fontspec}
-\setmainfont{Noto Serif}
-\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali]
+\setmainfont{Noto Serif}[Ligatures=TeXOff]
+\XeTeXgenerateactualtext=1
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali, NFSSFamily=bnfam]
 \usepackage[Latin,Bengali]{ucharclasses}
-\setTransitionsFor{Bengali}{\begingroup\bengalifont}{\endgroup}
+% group-free font switching (as in header-common.tex): robust inside braces, cells and quotes
+\makeatletter
+\def\BN@saved{\rmdefault}
+\def\BN@bn{bnfam}
+\newcommand\BNin{\edef\BN@tmp{\f@family}\ifx\BN@tmp\BN@bn\else\let\BN@saved\BN@tmp\fi\fontfamily{bnfam}\selectfont}
+\newcommand\BNout{\fontfamily{\BN@saved}\selectfont}
+\makeatother
+\setTransitionsFor{Bengali}{\BNin}{\BNout}
+% Typographic quotes and dashes are not in a ucharclasses class (class 0), so a Bangla word right
+% after “ or ‘ would not trigger the Bangla font. Treat them as Latin so that every switch fires.
+\XeTeXcharclass"2018=\XeTeXcharclass`A
+\XeTeXcharclass"2019=\XeTeXcharclass`A
+\XeTeXcharclass"201C=\XeTeXcharclass`A
+\XeTeXcharclass"201D=\XeTeXcharclass`A
+\XeTeXcharclass"2013=\XeTeXcharclass`A
+\XeTeXcharclass"2014=\XeTeXcharclass`A
+\XeTeXcharclass"2026=\XeTeXcharclass`A
 \usepackage{newunicodechar}
 \newunicodechar{।}{{\bengalifont\char"0964}}
 \newunicodechar{॥}{{\bengalifont\char"0965}}
@@ -24,7 +41,7 @@
 \arrayrulecolor{bapilrule}\toprule
 \rowcolor{white}\textbf{দিগন্ত} & \textbf{সময়কাল} & \textbf{কৌশলগত লক্ষ্য} & \textbf{অগ্রাধিকারমূলক পদক্ষেপ} & \textbf{প্রাতিষ্ঠানিক রূপ} & \textbf{পরবর্তী ধাপে যাওয়ার সংকেত} \\
 \midrule
-\textbf{H0} ভিত্তি & চতুর্থ ত্রৈমাসিক ২০২৬ & নিরাপদ ও উন্মুক্ত সূচনার প্রস্তুতি & এই ব্লুপ্রিন্ট ও কোড প্রকাশ; আইসিটি বিভাগ ও ডেটা-রক্ষকদের অবহিতকরণ; জাতীয় এআই নীতি প্রণয়নে উপকরণ প্রদান; আয়োজক প্রতিষ্ঠান নির্বাচন & স্বাধীন গবেষণা উদ্যোগ & সিদ্ধান্ত D1, D2 ও D4 গৃহীত \\
+\textbf{H0} ভিত্তি & চতুর্থ ত্রৈমাসিক ২০২৬ & নিরাপদ ও উন্মুক্ত সূচনার প্রস্তুতি & এই ব্লুপ্রিন্ট ও কোড প্রকাশ; আইসিটি বিভাগ ও ডেটা-রক্ষকদের অবহিতকরণ; জাতীয় এআই নীতি প্রণয়নে উপকরণ প্রদান; স্বাগতিক প্রতিষ্ঠান নির্বাচন & স্বাধীন গবেষণা উদ্যোগ & সিদ্ধান্ত D1, D2 ও D4 গৃহীত \\
 \textbf{H1} স্বল্পমেয়াদি & ২০২৭ থেকে ২০২৮ & উন্মুক্ত ডেটা দিয়ে মূল্য প্রমাণ & সনদ, ERRC ও নিবন্ধন; P1 ও P2 পাইলট; BanglaPolicyQA v0; ৩০০ কর্মকর্তা প্রশিক্ষিত; মধ্যমেয়াদি মূল্যায়ন & সমঝোতা স্মারকের অধীনে বিশ্ববিদ্যালয়-ভিত্তিক ল্যাব (বিকল্প গ) & P1 ও P2 G3 উত্তীর্ণ; ইতিবাচক মধ্যমেয়াদি মূল্যায়ন \\
 \textbf{H2} মধ্যমেয়াদি & ২০২৯ থেকে ২০৩০ & গ্রহণ, সম্প্রসারণ ও জাতীয় নীতির সঙ্গে সামঞ্জস্য & সংস্থাগুলোর দ্বারা P1 ও P2-এর G4 গ্রহণ; যৌক্তিক হলে BPFM পর্যায় ১; বেঞ্চমার্ক v1; ব্লুপ্রিন্ট ২.০; ২০৩০-এ সমাপ্য জাতীয় এআই নীতিচক্রের সঙ্গে সামঞ্জস্য & বহুবর্ষী মূল অর্থায়নসহ ল্যাব; সংস্থার সঙ্গে সেবা-চুক্তি & সরঞ্জাম পরিচালনাগত ব্যবহারে; টেকসই অর্থায়ন সম্মত \\
 \textbf{H3} দীর্ঘমেয়াদি & ২০৩১ থেকে ২০৩৫ & জাতীয় নীতি-বুদ্ধিমত্তা নেটওয়ার্ক গঠন & মন্ত্রণালয় ও বিভাগজুড়ে সমন্বিত অনুসন্ধান; জনসম্পদ হিসেবে রক্ষিত বাংলা নীতি মডেল; সরকারজুড়ে প্রমিত আশ্বাস-পদ্ধতি; আঞ্চলিক প্রশিক্ষণ কেন্দ্র & স্বাধীন জনস্বার্থ ফাউন্ডেশন (বিকল্প ঘ) বা সংবিধিবদ্ধ কেন্দ্র বিবেচনা & BAPIL-এর বাইরেও আশ্বাস-পদ্ধতির ব্যবহার; অধিকাংশ মন্ত্রণালয়ে নেটওয়ার্ক \\
@@ -33,6 +50,6 @@
 \bottomrule
 \end{tabularx}
 \par\vspace{5pt}{\footnotesize\itshape দিগন্ত H1 ও H2 অধ্যায় ১৫-এর ৩৬ মাসের রোডম্যাপের সঙ্গে সংগতিপূর্ণ (নির্দেশক সূচনা জানুয়ারি ২০২৭)। পরবর্তী দিগন্তগুলো কৌশলগত অভিপ্রায়, যা সারণি ৪৮-এর পর্যালোচনা-বিন্দুতে পুনর্বিবেচিত হবে।}
-\par\vspace{3pt}{\scriptsize\color{gray} উৎস: BAPIL কারিগরি ব্লুপ্রিন্ট, সংস্করণ ১.০ (২০২৬)। CC BY 4.0।}
+\par\vspace{3pt}{\scriptsize\color{gray} উৎস: BAPIL টেকনিক্যাল ব্লুপ্রিন্ট, সংস্করণ ১.০ (২০২৬)। CC BY 4.0।}
 \end{minipage}
 \end{document}

@@ -1,9 +1,26 @@
 \documentclass[border=10pt]{standalone}
 \usepackage{fontspec}
-\setmainfont{Latin Modern Roman}
-\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali]
+\setmainfont{Latin Modern Roman}[Ligatures=TeXOff]
+\XeTeXgenerateactualtext=1
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali, NFSSFamily=bnfam]
 \usepackage[Latin,Bengali]{ucharclasses}
-\setTransitionsFor{Bengali}{\begingroup\bengalifont}{\endgroup}
+% group-free font switching (as in header-common.tex): robust inside braces, cells and quotes
+\makeatletter
+\def\BN@saved{\rmdefault}
+\def\BN@bn{bnfam}
+\newcommand\BNin{\edef\BN@tmp{\f@family}\ifx\BN@tmp\BN@bn\else\let\BN@saved\BN@tmp\fi\fontfamily{bnfam}\selectfont}
+\newcommand\BNout{\fontfamily{\BN@saved}\selectfont}
+\makeatother
+\setTransitionsFor{Bengali}{\BNin}{\BNout}
+% Typographic quotes and dashes are not in a ucharclasses class (class 0), so a Bangla word right
+% after “ or ‘ would not trigger the Bangla font. Treat them as Latin so that every switch fires.
+\XeTeXcharclass"2018=\XeTeXcharclass`A
+\XeTeXcharclass"2019=\XeTeXcharclass`A
+\XeTeXcharclass"201C=\XeTeXcharclass`A
+\XeTeXcharclass"201D=\XeTeXcharclass`A
+\XeTeXcharclass"2013=\XeTeXcharclass`A
+\XeTeXcharclass"2014=\XeTeXcharclass`A
+\XeTeXcharclass"2026=\XeTeXcharclass`A
 
 \usepackage[table]{xcolor}
 \usepackage{booktabs,tabularx,array}
@@ -34,7 +51,7 @@ FR-10 & Documented, versioned API for programmatic access & Should \\
 NFR-01 & Language parity: Bangla quality within 5 points of English on core metrics & Must \\
 NFR-02 & Data residency: P1 to P3 data hosted in Bangladesh in accredited facilities & Must \\
 NFR-03 & Security by design aligned with NIST CSF 2.0 and zero-trust access & Must \\
-NFR-04 & Availability of 99\% for pilots (working hours) and 99.5\% at scale & Should \\
+NFR-04 & Availability of 99\% for pilots (working hours) once the recovery site is in place in Year 2; best effort with offline backups in Year 1; 99.5\% at scale & Should \\
 NFR-05 & Accessibility to WCAG 2.2 level AA; usable on mobile and low-bandwidth connections & Must \\
 NFR-06 & Open standards and open source by default; no single-vendor lock-in & Must \\
 NFR-07 & Reproducibility: versioned code, data snapshots and evaluation reports archived with DOIs & Must \\

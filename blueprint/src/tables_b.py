@@ -16,7 +16,7 @@ TABLES_B = [
         },
         "rows": {
             "en": [
-                ["**T0** Prohibited", "Social scoring; mass or indiscriminate biometric surveillance; profiling people's political or religious opinions; deceptive synthetic media of real people; manipulation exploiting vulnerabilities", "Not built, not piloted, not supported by BAPIL under any arrangement", "Excluded by charter"],
+                ["**T0** Prohibited", "Social scoring; mass or indiscriminate biometric surveillance; profiling people’s political or religious opinions; deceptive synthetic media of real people; manipulation exploiting vulnerabilities", "Not built, not piloted, not supported by BAPIL under any arrangement", "Excluded by charter"],
                 ["**T1** Low", "Research tools and search over public documents; dashboards of published data", "AI system record; model or data card; evaluation report; audit logging; public listing in the transparency register", "Unit lead and TAB"],
                 ["**T2** Limited", "Advisory tools used by officials; public-facing information tools; aggregate analysis of de-identified feedback", "All T1 controls plus: ERRC review; red-team test; human review of every output in use; user training; incident procedure; quarterly monitoring report", "ERRC and Steering Board"],
                 ["**T3** High", "Any system that informs decisions about specific people or entities, processes personal data at scale, or is used in enforcement", "BAPIL does not build T3 operational systems. Research only, with: DPIA, legal review, independent audit, ERRC approval, and a published impact assessment", "ERRC (binding) and host-agency legal review"],
@@ -25,7 +25,7 @@ TABLES_B = [
                 ["**T0** নিষিদ্ধ", "সামাজিক স্কোরিং; গণ বা নির্বিচার বায়োমেট্রিক নজরদারি; মানুষের রাজনৈতিক বা ধর্মীয় মতের প্রোফাইলিং; বাস্তব ব্যক্তির প্রতারণামূলক কৃত্রিম মিডিয়া; দুর্বলতাকে কাজে লাগিয়ে প্রভাবিত করা", "কোনো ব্যবস্থাতেই BAPIL এগুলো নির্মাণ, পাইলট বা সমর্থন করে না", "সনদ দ্বারা বর্জিত"],
                 ["**T1** নিম্ন", "উন্মুক্ত নথিতে গবেষণা ও অনুসন্ধান সরঞ্জাম; প্রকাশিত ডেটার ড্যাশবোর্ড", "এআই ব্যবস্থার রেকর্ড; মডেল বা ডেটা কার্ড; মূল্যায়ন প্রতিবেদন; নিরীক্ষা লগ; স্বচ্ছতা নিবন্ধনে প্রকাশ্য তালিকাভুক্তি", "ইউনিট প্রধান ও TAB"],
                 ["**T2** সীমিত", "কর্মকর্তাদের ব্যবহৃত পরামর্শমূলক সরঞ্জাম; জনমুখী তথ্য সরঞ্জাম; পরিচয়-অপসারিত মতামতের সামষ্টিক বিশ্লেষণ", "T1-এর সব নিয়ন্ত্রণ এবং: ERRC পর্যালোচনা; রেড-টিম পরীক্ষা; ব্যবহারে প্রতিটি ফলাফলের মানব-পর্যালোচনা; ব্যবহারকারী প্রশিক্ষণ; ঘটনা-প্রক্রিয়া; ত্রৈমাসিক পর্যবেক্ষণ প্রতিবেদন", "ERRC ও স্টিয়ারিং বোর্ড"],
-                ["**T3** উচ্চ", "নির্দিষ্ট ব্যক্তি বা প্রতিষ্ঠান-সংক্রান্ত সিদ্ধান্তে ভূমিকা রাখে, বৃহৎ পরিসরে ব্যক্তিগত ডেটা প্রক্রিয়া করে বা প্রয়োগকারী কাজে ব্যবহৃত যেকোনো ব্যবস্থা", "BAPIL T3 পরিচালনাগত ব্যবস্থা নির্মাণ করে না। শুধু গবেষণা, এই শর্তে: DPIA, আইনি পর্যালোচনা, স্বাধীন নিরীক্ষা, ERRC অনুমোদন এবং প্রকাশিত প্রভাব মূল্যায়ন", "ERRC (বাধ্যতামূলক) ও আয়োজক সংস্থার আইনি পর্যালোচনা"],
+                ["**T3** উচ্চ", "নির্দিষ্ট ব্যক্তি বা প্রতিষ্ঠান-সংক্রান্ত সিদ্ধান্তে ভূমিকা রাখে, বৃহৎ পরিসরে ব্যক্তিগত ডেটা প্রক্রিয়া করে বা প্রয়োগকারী কাজে ব্যবহৃত যেকোনো ব্যবস্থা", "BAPIL T3 পরিচালনাগত ব্যবস্থা নির্মাণ করে না। শুধু গবেষণা, এই শর্তে: DPIA, আইনি পর্যালোচনা, স্বাধীন নিরীক্ষা, ERRC অনুমোদন এবং প্রকাশিত প্রভাব মূল্যায়ন", "ERRC (বাধ্যতামূলক) ও স্বাগতিক সংস্থার আইনি পর্যালোচনা"],
             ],
         },
     },
@@ -66,7 +66,7 @@ TABLES_B = [
             ],
         },
         "note": {
-            "en": "Indicative mapping for orientation only; it is not a legal compliance assessment. Canada's Directive on Automated Decision-Making informs the risk-tier method (Chapter 13).",
+            "en": "Indicative mapping for orientation only; it is not a legal compliance assessment. Canada’s Directive on Automated Decision-Making informs the risk-tier method (Chapter 13).",
             "bn": "শুধু দিকনির্দেশনার জন্য নির্দেশক সংযোগ; এটি আইনি সম্মতি-মূল্যায়ন নয়। কানাডার স্বয়ংক্রিয় সিদ্ধান্তগ্রহণ নির্দেশনা ঝুঁকি-স্তর পদ্ধতিকে প্রভাবিত করেছে (অধ্যায় ১৩)।",
         },
     },
@@ -84,7 +84,7 @@ TABLES_B = [
         },
         "rows": {
             "en": [
-                ["Personal Data Protection Act, 2026", "Reported as enacted in April 2026 (Act 63 of 2026), replacing the Personal Data Protection Ordinance, 2025 [85, 116]. Under the Ordinance, the sections on chief data officers, complaints and offences did not commence immediately, and an 18-month compliance window was reported [113, 114]. Commencement of each provision of the Act, and any rules: to be confirmed", "Consent; data-subject rights including restricting automated decisions; enhanced protection of sensitive and children's data; chief data officers; residency of specified data (2026 amendment ordinance) [115]", "P0-first; DPIA before any P2 work; P3 excluded; no automated decisions about individuals; hosting in Bangladesh"],
+                ["Personal Data Protection Act, 2026", "Reported as enacted in April 2026 (Act 63 of 2026), replacing the Personal Data Protection Ordinance, 2025 [85, 116]. Under the Ordinance, the sections on chief data officers, complaints and offences did not commence immediately, and an 18-month compliance window was reported [113, 114]. Commencement of each provision of the Act, and any rules: to be confirmed", "Consent; data-subject rights including restricting automated decisions; enhanced protection of sensitive and children’s data; chief data officers; data-residency provisions changed by the 2026 amendment ordinance [115], reportedly limited to critical sectors [122]", "P0-first; DPIA before any P2 work; P3 excluded; no automated decisions about individuals; hosting in Bangladesh"],
                 ["National Data Management Act, 2026", "Bill reported passed on 10 April 2026 [86], succeeding the National Data Management Ordinance, 2025 (called the National Data Governance Ordinance in some English reports) [84, 106]. Commencement and rules: to be confirmed", "National Data Management Authority; responsible data exchange (NRDEX); national source code repository (as described for the 2025 Ordinance [84]; to be confirmed in the Act)", "Use NRDEX agreements where available; publish code openly; coordinate with the Authority and agency data officers"],
                 ["Cyber Security Act, 2026 and amendment", "Bill reported passed on 10 April 2026 [86]; Cyber Security (Amendment) Bill, 2026 on harmful and defamatory AI-generated content reported passed by 30 June 2026 [87]. Commencement: to be confirmed", "Security duties; critical information infrastructure; removal and blocking of harmful AI-generated content", "NIST CSF 2.0 controls; incident reporting; information-integrity research kept within law and rights"],
                 ["Right to Information Act, 2009", "In force [105]", "Proactive disclosure of public information", "Supports the P0 corpus and the public transparency register"],
@@ -93,7 +93,7 @@ TABLES_B = [
                 ["AI Hub and AI skills project (KOICA, ICT Division, Bangladesh Hi-Tech Park Authority)", "Technical assistance project proposal of Tk 192.66 crore awaiting government approval in June 2026 [35]; USD 13 million grant agreement (Record of Discussion) reported signed in August 2026 for 2026 to 2029 [117]. Not reported as operational", "Skills, startups, AI adoption", "Complementary division of labour; shared benchmarks and open data"],
             ],
             "bn": [
-                ["ব্যক্তিগত উপাত্ত সুরক্ষা আইন, ২০২৬ (Personal Data Protection Act, 2026)", "ব্যক্তিগত উপাত্ত সুরক্ষা অধ্যাদেশ, ২০২৫-এর স্থলে এপ্রিল ২০২৬-এ প্রণীত বলে প্রতিবেদিত (২০২৬ সালের ৬৩ নং আইন) [85, 116]। অধ্যাদেশে প্রধান ডেটা কর্মকর্তা, অভিযোগ ও অপরাধ-সংক্রান্ত ধারাগুলো তাৎক্ষণিকভাবে কার্যকর হয়নি, এবং ১৮ মাসের সম্মতি-সময়সীমা প্রতিবেদিত হয়েছে [113, 114]। আইনের প্রতিটি বিধান ও বিধিমালার কার্যকারিতা: নিশ্চিত করতে হবে", "সম্মতি; স্বয়ংক্রিয় সিদ্ধান্ত সীমিত করার অধিকারসহ ডেটা-বিষয়ীর অধিকার; সংবেদনশীল ও শিশুদের ডেটার বাড়তি সুরক্ষা; প্রধান ডেটা কর্মকর্তা; নির্দিষ্ট ডেটা দেশে রাখার বাধ্যবাধকতা (২০২৬ সালের সংশোধনী অধ্যাদেশ) [115]", "প্রথমে P0; যেকোনো P2 কাজের আগে DPIA; P3 বর্জিত; ব্যক্তিসংক্রান্ত কোনো স্বয়ংক্রিয় সিদ্ধান্ত নয়; বাংলাদেশে হোস্টিং"],
+                ["ব্যক্তিগত উপাত্ত সুরক্ষা আইন, ২০২৬ (Personal Data Protection Act, 2026)", "ব্যক্তিগত উপাত্ত সুরক্ষা অধ্যাদেশ, ২০২৫-এর স্থলে এপ্রিল ২০২৬-এ প্রণীত বলে প্রতিবেদিত (২০২৬ সালের ৬৩ নং আইন) [85, 116]। অধ্যাদেশে প্রধান ডেটা কর্মকর্তা, অভিযোগ ও অপরাধ-সংক্রান্ত ধারাগুলো তাৎক্ষণিকভাবে কার্যকর হয়নি, এবং ১৮ মাসের সম্মতি-সময়সীমা প্রতিবেদিত হয়েছে [113, 114]। আইনের প্রতিটি বিধান ও বিধিমালার কার্যকারিতা: নিশ্চিত করতে হবে", "সম্মতি; স্বয়ংক্রিয় সিদ্ধান্ত সীমিত করার অধিকারসহ ডেটা-বিষয়ীর অধিকার; সংবেদনশীল ও শিশুদের ডেটার বাড়তি সুরক্ষা; প্রধান ডেটা কর্মকর্তা; ২০২৬ সালের সংশোধনী অধ্যাদেশে পরিবর্তিত ডেটা দেশে রাখা-সংক্রান্ত বিধান [115], প্রতিবেদন অনুযায়ী গুরুত্বপূর্ণ খাতে সীমিত [122]", "প্রথমে P0; যেকোনো P2 কাজের আগে DPIA; P3 বর্জিত; ব্যক্তিসংক্রান্ত কোনো স্বয়ংক্রিয় সিদ্ধান্ত নয়; বাংলাদেশে হোস্টিং"],
                 ["জাতীয় উপাত্ত ব্যবস্থাপনা আইন, ২০২৬ (National Data Management Act, 2026)", "জাতীয় উপাত্ত ব্যবস্থাপনা অধ্যাদেশ, ২০২৫-এর (কিছু ইংরেজি প্রতিবেদনে National Data Governance Ordinance নামে উল্লিখিত) ধারাবাহিকতায় ১০ এপ্রিল ২০২৬-এ বিল পাস বলে প্রতিবেদিত [84, 86, 106]। কার্যকারিতা ও বিধিমালা: নিশ্চিত করতে হবে", "জাতীয় উপাত্ত ব্যবস্থাপনা কর্তৃপক্ষ; দায়িত্বশীল ডেটা বিনিময় (NRDEX); জাতীয় সোর্স কোড ভান্ডার (২০২৫ সালের অধ্যাদেশের বর্ণনা অনুযায়ী [84]; আইনে বহাল আছে কি না নিশ্চিত করতে হবে)", "সম্ভব হলে ডেটা প্রবেশাধিকারে NRDEX চুক্তি ব্যবহার; উন্মুক্তভাবে কোড প্রকাশ; কর্তৃপক্ষ ও সংস্থার ডেটা কর্মকর্তাদের সঙ্গে সমন্বয়"],
                 ["সাইবার নিরাপত্তা আইন, ২০২৬ ও সংশোধনী", "১০ এপ্রিল ২০২৬-এ বিল পাস বলে প্রতিবেদিত [86]; ক্ষতিকর ও মানহানিকর এআই-সৃষ্ট কনটেন্ট-সংক্রান্ত সাইবার নিরাপত্তা (সংশোধন) বিল, ২০২৬ ৩০ জুন ২০২৬-এর মধ্যে পাস বলে প্রতিবেদিত [87]। কার্যকারিতা: নিশ্চিত করতে হবে", "নিরাপত্তা দায়িত্ব; গুরুত্বপূর্ণ তথ্য অবকাঠামো; ক্ষতিকর এআই-সৃষ্ট কনটেন্ট অপসারণ ও বন্ধ করা", "NIST CSF 2.0 নিয়ন্ত্রণ; ঘটনা প্রতিবেদন; তথ্য-অখণ্ডতা গবেষণা আইন ও অধিকারের সীমার মধ্যে"],
                 ["তথ্য অধিকার আইন, ২০০৯", "বলবৎ [105]", "জনগুরুত্বপূর্ণ তথ্যের স্বতঃপ্রণোদিত প্রকাশ", "P0 কর্পাস ও জনসমক্ষে স্বচ্ছতা নিবন্ধনকে সহায়তা করে"],
@@ -164,27 +164,27 @@ TABLES_B = [
                 ["MS2", "6", "Feasibility and costing study complete; P0 data access confirmed; benchmark protocol agreed", "D1.3 Feasibility study; D1.4 Data access plan", "G1"],
                 ["MS3", "9", "P1 Policy Search alpha in internal use; BanglaPolicyQA v0 (500 questions)", "D2.1 P1 alpha; D2.2 Benchmark v0", "G2"],
                 ["MS4", "12", "P1 pilot with 30 or more users in two to three agencies; P2 dashboard v1 public; Year 1 report", "D2.3 Pilot report; D2.4 Open budget dataset", "G3"],
-                ["MS5", "15", "P3 consultation-analysis pilot after DPIA; P5 observatory framework", "D3.1 DPIA; D3.2 Observatory framework", "G2, G3"],
-                ["MS6", "18", "Independent mid-term evaluation; decision on BPFM Stage 1", "D3.3 Mid-term evaluation; D3.4 Stage 1 decision", "Review"],
-                ["MS7", "24", "Adoption decisions on P1 and P2 with host agencies; first observatory report; 300 officials trained", "D3.5 Adoption memos; D3.6 Observatory report 1", "G4"],
+                ["MS5", "15", "P3 consultation-analysis pilot after DPIA; P5 observatory framework; P6 research protocol approved by the ERRC", "D3.1 DPIA; D3.2 Observatory framework", "G2 (P3)"],
+                ["MS6", "18", "Independent mid-term evaluation; decision on BPFM Stage 1; P3 pilot results", "D3.3 Mid-term evaluation; D3.4 Stage 1 decision", "G3 (P3); review"],
+                ["MS7", "24", "Adoption decisions on P1 and P2 with host agencies; first observatory report; P6 methods paper; 300 officials trained", "D3.5 Adoption memos; D3.6 Observatory report 1", "G4"],
                 ["MS8", "30", "BPFM Stage 1 model with model card if approved; benchmark v1 (2,000 questions)", "D4.1 Model and model card; D4.2 Benchmark v1", "G2"],
                 ["MS9", "36", "Final evaluation; sustainability plan; Blueprint version 2.0", "D4.3 Final evaluation; D4.4 Blueprint 2.0", "Review"],
             ],
             "bn": [
-                ["MS1", "৩", "পরিচালক নিয়োগ; স্টিয়ারিং বোর্ড, ERRC ও TAB গঠন; সনদ গ্রহণ (সমঝোতা স্মারক ও আয়োজক-চুক্তি মাস ১ থেকে বলবৎ)", "D1.1 সনদ; D1.2 ঝুঁকি ও নৈতিকতা কার্যপ্রণালী", "G0"],
+                ["MS1", "৩", "পরিচালক নিয়োগ; স্টিয়ারিং বোর্ড, ERRC ও TAB গঠন; সনদ গ্রহণ (সমঝোতা স্মারক ও স্বাগতিক-চুক্তি মাস ১ থেকে বলবৎ)", "D1.1 সনদ; D1.2 ঝুঁকি ও নৈতিকতা কার্যপ্রণালী", "G0"],
                 ["MS2", "৬", "সম্ভাব্যতা ও ব্যয়-নিরূপণ সমীক্ষা সম্পন্ন; P0 ডেটা প্রবেশাধিকার নিশ্চিত; বেঞ্চমার্ক প্রটোকল সম্মত", "D1.3 সম্ভাব্যতা সমীক্ষা; D1.4 ডেটা প্রবেশাধিকার পরিকল্পনা", "G1"],
                 ["MS3", "৯", "P1 নীতি অনুসন্ধানের আলফা সংস্করণ অভ্যন্তরীণ ব্যবহারে; BanglaPolicyQA v0 (৫০০ প্রশ্ন)", "D2.1 P1 আলফা; D2.2 বেঞ্চমার্ক v0", "G2"],
                 ["MS4", "১২", "দুই থেকে তিনটি সংস্থায় ৩০ বা ততোধিক ব্যবহারকারী নিয়ে P1 পাইলট; P2 ড্যাশবোর্ড v1 প্রকাশ্য; প্রথম বছরের প্রতিবেদন", "D2.3 পাইলট প্রতিবেদন; D2.4 উন্মুক্ত বাজেট ডেটাসেট", "G3"],
-                ["MS5", "১৫", "DPIA-র পর P3 পরামর্শ-বিশ্লেষণ পাইলট; P5 পর্যবেক্ষণকেন্দ্রের কাঠামো", "D3.1 DPIA; D3.2 পর্যবেক্ষণকেন্দ্রের কাঠামো", "G2, G3"],
-                ["MS6", "১৮", "স্বাধীন মধ্যবর্তী মূল্যায়ন; BPFM পর্যায় ১-এর সিদ্ধান্ত", "D3.3 মধ্যবর্তী মূল্যায়ন; D3.4 পর্যায় ১-এর সিদ্ধান্ত", "পর্যালোচনা"],
-                ["MS7", "২৪", "আয়োজক সংস্থার সঙ্গে P1 ও P2 গ্রহণের সিদ্ধান্ত; পর্যবেক্ষণকেন্দ্রের প্রথম প্রতিবেদন; ৩০০ কর্মকর্তা প্রশিক্ষিত", "D3.5 গ্রহণ-স্মারক; D3.6 পর্যবেক্ষণকেন্দ্রের প্রতিবেদন ১", "G4"],
+                ["MS5", "১৫", "DPIA-র পর P3 পরামর্শ-বিশ্লেষণ পাইলট; P5 পর্যবেক্ষণকেন্দ্রের কাঠামো; ERRC কর্তৃক P6 গবেষণা-প্রটোকল অনুমোদন", "D3.1 DPIA; D3.2 পর্যবেক্ষণকেন্দ্রের কাঠামো", "G2 (P3)"],
+                ["MS6", "১৮", "স্বাধীন মধ্যবর্তী মূল্যায়ন; BPFM পর্যায় ১-এর সিদ্ধান্ত; P3 পাইলটের ফলাফল", "D3.3 মধ্যবর্তী মূল্যায়ন; D3.4 পর্যায় ১-এর সিদ্ধান্ত", "G3 (P3); পর্যালোচনা"],
+                ["MS7", "২৪", "স্বাগতিক সংস্থার সঙ্গে P1 ও P2 গ্রহণের সিদ্ধান্ত; পর্যবেক্ষণকেন্দ্রের প্রথম প্রতিবেদন; P6-এর পদ্ধতি-প্রবন্ধ; ৩০০ কর্মকর্তা প্রশিক্ষিত", "D3.5 গ্রহণ-স্মারক; D3.6 পর্যবেক্ষণকেন্দ্রের প্রতিবেদন ১", "G4"],
                 ["MS8", "৩০", "অনুমোদিত হলে মডেল কার্ডসহ BPFM পর্যায় ১ মডেল; বেঞ্চমার্ক v1 (২,০০০ প্রশ্ন)", "D4.1 মডেল ও মডেল কার্ড; D4.2 বেঞ্চমার্ক v1", "G2"],
                 ["MS9", "৩৬", "চূড়ান্ত মূল্যায়ন; টেকসইতা পরিকল্পনা; ব্লুপ্রিন্ট সংস্করণ ২.০", "D4.3 চূড়ান্ত মূল্যায়ন; D4.4 ব্লুপ্রিন্ট ২.০", "পর্যালোচনা"],
             ],
         },
         "note": {
             "en": "Month 1 is the first month in which the MoU, the host agreement and Year 1 funding are all in place (Annex T); January 2027 is the earliest plausible calendar start.",
-            "bn": "মাস ১ হলো প্রথম সেই মাস, যখন সমঝোতা স্মারক, আয়োজক-চুক্তি ও প্রথম বছরের অর্থায়ন তিনটিই নিশ্চিত (সংযুক্তি ন); জানুয়ারি ২০২৭ সবচেয়ে আগের সম্ভাব্য সূচনা।",
+            "bn": "মাস ১ হলো প্রথম সেই মাস, যখন সমঝোতা স্মারক, স্বাগতিক-চুক্তি ও প্রথম বছরের অর্থায়ন তিনটিই নিশ্চিত (সংযুক্তি ন); জানুয়ারি ২০২৭ সবচেয়ে আগের সম্ভাব্য সূচনা।",
         },
     },
     # ------------------------------------------------------------------ 17
@@ -306,7 +306,7 @@ TABLES_B = [
                 ["R13", "Legal uncertainty while implementing rules are issued", "M", "M", "Legal review; conservative data scope; update procedures as rules are published", "Governance analyst"],
             ],
             "bn": [
-                ["R1", "রাজনৈতিক বা প্রাতিষ্ঠানিক পরিবর্তনে অগ্রাধিকার বদল", "মা", "উ", "প্রতিষ্ঠান-নিরপেক্ষ নকশা; বিশ্ববিদ্যালয় আয়োজক; জাতীয় এআই নীতি প্রক্রিয়ার সঙ্গে সামঞ্জস্য; সর্বদলীয় অবহিতকরণ", "পরিচালক, স্টিয়ারিং বোর্ড"],
+                ["R1", "রাজনৈতিক বা প্রাতিষ্ঠানিক পরিবর্তনে অগ্রাধিকার বদল", "মা", "উ", "প্রতিষ্ঠান-নিরপেক্ষ নকশা; বিশ্ববিদ্যালয় স্বাগতিক; জাতীয় এআই নীতি প্রক্রিয়ার সঙ্গে সামঞ্জস্য; সর্বদলীয় অবহিতকরণ", "পরিচালক, স্টিয়ারিং বোর্ড"],
                 ["R2", "একসঙ্গে নথি রপ্তানিসহ ডেটা প্রবেশাধিকারে বিলম্ব", "উ", "উ", "ইতিমধ্যে প্রকাশিত নথি দিয়ে শুরু; NRDEX চুক্তি; বিকল্প হিসেবে তথ্য অধিকার আবেদন", "ডেটা প্রধান"],
                 ["R3", "স্ক্যানকৃত বাংলা PDF থেকে নিম্নমানের টেক্সট", "উ", "মা", "OCR মূল্যায়ন; মানব-সংশোধন চক্র; জন্মগতভাবে ডিজিটাল উৎসকে অগ্রাধিকার", "ML প্রধান"],
                 ["R4", "ভুল উত্তরে কর্মকর্তারা বিভ্রান্ত", "মা", "উ", "নিষ্কাশনমূলক উত্তর আগে; বাধ্যতামূলক উদ্ধৃতি; বিরত থাকা; প্রশিক্ষণ; শুধু R ও A শ্রেণি", "ML প্রধান, ERRC"],
@@ -341,7 +341,7 @@ TABLES_B = [
         "rows": {
             "en": [
                 ["D1", "Accept this Blueprint as a technical input to the national AI policy drafting process", "Ministry of Posts, Telecommunications and Information Technology (ICT Division)", "Q4 2026"],
-                ["D2", "Approve a 12-month Phase 1 pilot with a named government focal point and an MoU with a host institution", "ICT Division and host institution", "Within 90 days"],
+                ["D2", "Approve a 12-month Phase 1 pilot, name a government focal point, agree an MoU with a host institution, and commit or identify Year 1 funding (about Tk 4.7 crore, Table 50)", "ICT Division and host institution", "Within 90 days"],
                 ["D3", "Authorise structured bulk access to already-public document collections and nominate data custodians", "Legislative and Parliamentary Affairs Division, Finance Division, Planning Commission, BBS, a2i", "Within 120 days"],
                 ["D4", "Nominate Steering Board members, and agree that ERRC members are selected through an open call by an independent nominations panel", "ICT Division and host institution (Steering Board); independent panel (ERRC)", "Within 90 days"],
                 ["D5", "Commission the feasibility and costing study that sets the Phase 2 budget", "ICT Division or a development partner", "By month 6"],
@@ -349,9 +349,9 @@ TABLES_B = [
             ],
             "bn": [
                 ["D1", "জাতীয় এআই নীতি প্রণয়ন-প্রক্রিয়ায় এই ব্লুপ্রিন্টকে কারিগরি উপকরণ হিসেবে গ্রহণ", "ডাক, টেলিযোগাযোগ ও তথ্যপ্রযুক্তি মন্ত্রণালয় (আইসিটি বিভাগ)", "২০২৬-এর চতুর্থ ত্রৈমাসিক"],
-                ["D2", "একজন মনোনীত সরকারি ফোকাল পয়েন্ট ও আয়োজক প্রতিষ্ঠানের সঙ্গে সমঝোতা স্মারকসহ ১২ মাসের প্রথম ধাপের পাইলট অনুমোদন", "আইসিটি বিভাগ ও আয়োজক প্রতিষ্ঠান", "৯০ দিনের মধ্যে"],
+                ["D2", "১২ মাসের প্রথম ধাপের পাইলট অনুমোদন, একজন সরকারি ফোকাল পয়েন্ট মনোনয়ন, স্বাগতিক প্রতিষ্ঠানের সঙ্গে সমঝোতা স্মারক সম্পাদন এবং প্রথম বছরের অর্থায়নের (প্রায় ৪.৭ কোটি টাকা, সারণি ৫০) প্রতিশ্রুতি বা উৎস নির্ধারণ", "আইসিটি বিভাগ ও স্বাগতিক প্রতিষ্ঠান", "৯০ দিনের মধ্যে"],
                 ["D3", "ইতিমধ্যে প্রকাশিত নথিসংগ্রহে কাঠামোবদ্ধভাবে একসঙ্গে প্রবেশাধিকার অনুমোদন ও ডেটা-রক্ষক মনোনয়ন", "লেজিসলেটিভ ও সংসদ বিষয়ক বিভাগ, অর্থ বিভাগ, পরিকল্পনা কমিশন, বিবিএস, এটুআই", "১২০ দিনের মধ্যে"],
-                ["D4", "স্টিয়ারিং বোর্ডে সদস্য মনোনয়ন, এবং একটি স্বাধীন মনোনয়ন প্যানেলের উন্মুক্ত আহ্বানের মাধ্যমে ERRC সদস্য বাছাইয়ে সম্মতি", "আইসিটি বিভাগ ও আয়োজক প্রতিষ্ঠান (স্টিয়ারিং বোর্ড); স্বাধীন প্যানেল (ERRC)", "৯০ দিনের মধ্যে"],
+                ["D4", "স্টিয়ারিং বোর্ডে সদস্য মনোনয়ন, এবং একটি স্বাধীন মনোনয়ন প্যানেলের উন্মুক্ত আহ্বানের মাধ্যমে ERRC সদস্য বাছাইয়ে সম্মতি", "আইসিটি বিভাগ ও স্বাগতিক প্রতিষ্ঠান (স্টিয়ারিং বোর্ড); স্বাধীন প্যানেল (ERRC)", "৯০ দিনের মধ্যে"],
                 ["D5", "দ্বিতীয় ধাপের বাজেট নির্ধারণকারী সম্ভাব্যতা ও ব্যয়-নিরূপণ সমীক্ষা পরিচালনার নির্দেশ", "আইসিটি বিভাগ বা কোনো উন্নয়ন সহযোগী", "মাস ৬-এর মধ্যে"],
                 ["D6", "সুরক্ষাসীমা নিশ্চিত করা: G4 সিদ্ধান্ত ছাড়া A শ্রেণির বাইরে কোনো প্রয়োগ নয় এবং নিষিদ্ধ শ্রেণিতে কোনো ব্যবহার নয়", "স্টিয়ারিং বোর্ড", "সনদ গ্রহণের সময়"],
             ],

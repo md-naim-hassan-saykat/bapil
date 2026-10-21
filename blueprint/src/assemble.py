@@ -15,18 +15,18 @@ import os
 import re
 import sys
 
+from typography import normalise
+
 HERE = os.path.dirname(os.path.abspath(__file__))
 BP = os.path.dirname(HERE)            # blueprint/
 REPO = os.path.dirname(BP)            # repository root
 BN_DIGITS = str.maketrans("0123456789", "০১২৩৪৫৬৭৮৯")
 
 DOCS = [
-    ("BAPIL_Technical_Blueprint_v1", "en"),
-    ("BAPIL_Technical_Blueprint_v1_bn", "bn"),
-    ("BAPIL_Blueprint_Summary_v1", "en"),
-    ("BAPIL_Blueprint_Summary_v1_bn", "bn"),
-    ("BAPIL_Decision_Memo_v1", "en"),
-    ("BAPIL_Decision_Memo_v1_bn", "bn"),
+    ("BAPIL_Technical_Blueprint_en", "en"),
+    ("BAPIL_Technical_Blueprint_bn", "bn"),
+    ("BAPIL_Blueprint_Summary_en", "en"),
+    ("BAPIL_Blueprint_Summary_bn", "bn"),
 ]
 
 CAPTIONS = {
@@ -38,7 +38,7 @@ CAPTIONS = {
            "bn": "প্রস্তাবিত প্রাতিষ্ঠানিক ও শাসন-মডেল (বিকল্প গ: সরকারি সমঝোতা স্মারকসহ বিশ্ববিদ্যালয়-ভিত্তিক ল্যাব)।"},
     "04": {"en": "BAPIL reference architecture: twelve components in four layers, with cross-cutting governance and security.",
            "bn": "BAPIL রেফারেন্স স্থাপত্য: চার স্তরে বারোটি উপাদান, সঙ্গে সর্বস্তরীয় শাসন ও নিরাপত্তা।"},
-    "05": {"en": "Request sequence for a cited answer, from the user's query to the audit record.",
+    "05": {"en": "Request sequence for a cited answer, from the user’s query to the audit record.",
            "bn": "উদ্ধৃতিযুক্ত উত্তরের অনুরোধ-ক্রম: ব্যবহারকারীর প্রশ্ন থেকে নিরীক্ষা-রেকর্ড পর্যন্ত।"},
     "06": {"en": "Data lifecycle under data governance, from acquisition to retention or disposal.",
            "bn": "ডেটা শাসনের অধীনে ডেটার জীবনচক্র: সংগ্রহ থেকে সংরক্ষণ বা নিষ্পত্তি পর্যন্ত।"},
@@ -75,8 +75,8 @@ def bn(n):
 def doi_values(meta, lang):
     doi = meta["doi"]
     if "PENDING" in doi:
-        link = ("DOI to be assigned on publication (reserved on Zenodo)" if lang == "en"
-                else "প্রকাশের সময় নির্ধারিত হবে (Zenodo-তে সংরক্ষিত)")
+        link = ("DOI to be assigned on publication" if lang == "en"
+                else "প্রকাশের সময় নির্ধারিত হবে")
         return link, ("DOI pending" if lang == "en" else "DOI প্রক্রিয়াধীন")
     return "<https://doi.org/%s>" % doi, doi
 
@@ -140,7 +140,8 @@ def wp_references():
     # correction: co-author of the RAG paper [38] is A. Piktus
     if 38 in refs:
         refs[38] = refs[38].replace("POYIADZI E", "PIKTUS A")
-    return refs
+    # quotation-mark convention of the Blueprint (the White Paper source is not edited)
+    return {n: normalise(body) for n, body in refs.items()}
 
 
 def new_references():

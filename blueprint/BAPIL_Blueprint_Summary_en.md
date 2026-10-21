@@ -17,14 +17,14 @@ ORCID: <https://orcid.org/0009-0007-5270-3970>
 
 October 2026
 
-**Blueprint DOI:** DOI to be assigned on publication (reserved on Zenodo)  
+**Blueprint DOI:** DOI to be assigned on publication  
 **White Paper DOI:** <https://doi.org/10.5281/zenodo.21363967>  
 **Executive Summary DOI:** <https://doi.org/10.5281/zenodo.21441172>  
 **Repository:** <https://github.com/md-naim-hassan-saykat/bapil>
 
 ---
 
-*This summary presents the main design choices, safeguards, delivery plan, strategic roadmap to 2041 and decisions set out in the BAPIL Technical Blueprint (five parts, 21 chapters, 22 annexes). Figure and table numbers follow the full Blueprint. The Blueprint, this summary and the one-page Decision Memo are independent research documents and do not represent any official position. BAPIL is a proposal: no institution has been created and no funding has been approved.*
+*This summary presents the main design choices, safeguards, delivery plan, strategic roadmap to 2041 and decisions set out in the BAPIL Technical Blueprint (five parts, 21 chapters, 22 annexes). Figure and table numbers follow the full Blueprint. The Blueprint and this summary are independent research documents and do not represent any official position. BAPIL is a proposal: no institution has been created and no funding has been approved.*
 
 \newpage
 
@@ -49,7 +49,7 @@ The timing is favourable. As reported, Bangladesh converted its 2025 data ordina
 7. **Six pilots** with users, data, risk tier, scope and exit criteria.
 8. **Security and hosting** in Bangladesh, with controls for AI-specific threats.
 9. **An assurance system:** risk tiers T0 to T3, lifecycle gates G0 to G5, model cards and a public transparency register.
-10. **A small, tested reference implementation** (a research prototype, not a production system) released on GitHub with the Blueprint, a 36-month delivery plan, staffing and training, financing and procurement clauses, a logical framework, KPIs, a risk register and a research agenda.
+10. **A small, tested reference implementation** (a research prototype, not a production system) issued on GitHub with the Blueprint, a 36-month delivery plan, staffing and training, financing and procurement clauses, a logical framework, KPIs, a risk register and a research agenda.
 11. **A strategic roadmap for 2026 to 2041 and beyond,** with five horizons, indicative targets, scenarios and fixed review points.
 12. **Six decisions** for the authorities.
 13. **Evidence and readiness annexes:** the evidence status of every key claim, budget reconciliation and scenarios, an evaluation protocol with sample sizes, the status and limits of each governance body, the preconditions for starting, risk monitoring, and a register of unresolved items.
@@ -97,7 +97,7 @@ The core service is a **bilingual, citation-grounded policy search and answer sy
 
 | Tier | Typical systems | Minimum required controls | Who approves |
 |---------------|------------------------|------------------------------------|---------------|
-| **T0** Prohibited | Social scoring; mass or indiscriminate biometric surveillance; profiling people's political or religious opinions; deceptive synthetic media of real people; manipulation exploiting vulnerabilities | Not built, not piloted, not supported by BAPIL under any arrangement | Excluded by charter |
+| **T0** Prohibited | Social scoring; mass or indiscriminate biometric surveillance; profiling people’s political or religious opinions; deceptive synthetic media of real people; manipulation exploiting vulnerabilities | Not built, not piloted, not supported by BAPIL under any arrangement | Excluded by charter |
 | **T1** Low | Research tools and search over public documents; dashboards of published data | AI system record; model or data card; evaluation report; audit logging; public listing in the transparency register | Unit lead and TAB |
 | **T2** Limited | Advisory tools used by officials; public-facing information tools; aggregate analysis of de-identified feedback | All T1 controls plus: ERRC review; red-team test; human review of every output in use; user training; incident procedure; quarterly monitoring report | ERRC and Steering Board |
 | **T3** High | Any system that informs decisions about specific people or entities, processes personal data at scale, or is used in enforcement | BAPIL does not build T3 operational systems. Research only, with: DPIA, legal review, independent audit, ERRC approval, and a published impact assessment | ERRC (binding) and host-agency legal review |
@@ -125,7 +125,7 @@ The core service is a **bilingual, citation-grounded policy search and answer sy
 
 *Figure 13. Strategic roadmap, 2026 to 2041 and beyond: horizons, workstreams and review points.*
 
-The 36-month plan is the first step of a longer strategy that connects BAPIL's pilots to the national AI policy cycle and to the Perspective Plan 2041 and ICT Masterplan 2041 [29, 30, 88].
+The 36-month plan is the first step of a longer strategy that connects BAPIL’s pilots to the national AI policy cycle and to the Perspective Plan 2041 and ICT Masterplan 2041 [29, 30, 88].
 
 * **H0 Foundation (Q4 2026):** publish the Blueprint and code; brief the authorities; offer input to national AI policy drafting; select a host institution.
 * **H1 Short term (2027 to 2028):** prove value with public data; P1 and P2 pass their pilot gates; about 300 officials trained; mid-term evaluation.
@@ -153,7 +153,7 @@ Targets are indicative and revised at fixed reviews (2027, 2028, 2029, 2030, 203
 
 # 9. People, Resources and Financing
 
-The core team grows from about 9 to 19 full-time equivalents over three years. Pilot computing needs are modest (two to three servers and two GPU inference servers, doubled in Year 2 for staging and recovery), with any model adaptation using shared national compute. An indicative budget built from stated assumptions comes to about Tk 20.4 crore over 36 months (Tk 4.7, 7.5 and 8.2 crore in Years 1 to 3, about USD 1.65 million), including 8% annual escalation, host overheads and a 5% contingency, with people at about half of the total. Low and high scenarios give about Tk 17.9 and 25.3 crore. It is a planning estimate, not approved funding; the feasibility and costing study in month 6 confirms or replaces each assumption. Funding is diversified, with a growing share of core public funding and agency service agreements over time; no single non-government funder provides more than 30% of the budget. Model procurement clauses protect data, guarantee the right to evaluate and prevent lock-in.
+The core team grows from about 9 to 19 full-time equivalents over three years. Pilot computing needs are modest (two to three servers and two GPU inference servers, doubled in Year 2 for staging and recovery), with any model adaptation using shared national compute. An indicative budget built from stated assumptions comes to about Tk 20.4 crore over 36 months (Tk 4.7, 7.5 and 8.2 crore in Years 1 to 3, about USD 1.65 million), including 8% annual escalation, host overheads and a 5% contingency, with people at about half of the total. Low and high scenarios give about Tk 17.9 and 25.3 crore. Some costs are not yet included (engagement events, survey data collection, travel, open-access fees and staff computers); with an allowance for them and a 10% contingency, the estimate is about Tk 22.2 crore. It is a planning estimate, not approved funding; the feasibility and costing study in month 6 confirms or replaces each assumption. Funding is diversified, with a growing share of core public funding and agency service agreements over time; no single non-government funder provides more than 30% of the budget. Model procurement clauses protect data, guarantee the right to evaluate and prevent lock-in.
 
 # 10. Reference Implementation and Research
 
@@ -168,7 +168,7 @@ The repository contains a tested, dependency-free Python implementation of the c
 | No. | Decision | Responsible authority | Timing |
 |------|--------------------------------------------|------------------------|-------------|
 | D1 | Accept this Blueprint as a technical input to the national AI policy drafting process | Ministry of Posts, Telecommunications and Information Technology (ICT Division) | Q4 2026 |
-| D2 | Approve a 12-month Phase 1 pilot with a named government focal point and an MoU with a host institution | ICT Division and host institution | Within 90 days |
+| D2 | Approve a 12-month Phase 1 pilot, name a government focal point, agree an MoU with a host institution, and commit or identify Year 1 funding (about Tk 4.7 crore, Table 50) | ICT Division and host institution | Within 90 days |
 | D3 | Authorise structured bulk access to already-public document collections and nominate data custodians | Legislative and Parliamentary Affairs Division, Finance Division, Planning Commission, BBS, a2i | Within 120 days |
 | D4 | Nominate Steering Board members, and agree that ERRC members are selected through an open call by an independent nominations panel | ICT Division and host institution (Steering Board); independent panel (ERRC) | Within 90 days |
 | D5 | Commission the feasibility and costing study that sets the Phase 2 budget | ICT Division or a development partner | By month 6 |
@@ -178,7 +178,7 @@ The repository contains a tested, dependency-free Python implementation of the c
 
 # Resources
 
-**Technical Blueprint DOI:** DOI to be assigned on publication (reserved on Zenodo)  
+**Technical Blueprint DOI:** DOI to be assigned on publication  
 **White Paper DOI:** <https://doi.org/10.5281/zenodo.21363967>  
 **Executive Summary DOI:** <https://doi.org/10.5281/zenodo.21441172>  
 **GitHub Repository:** <https://github.com/md-naim-hassan-saykat/bapil>
@@ -200,7 +200,7 @@ Available:
 <https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-moa/2024/12/a01255f61d29443eabbf948ef97c290e.pdf>
 
 [85] SECURITI.
-An Overview of Bangladesh's Personal Data Protection Act, 2026[EB/OL].
+An Overview of Bangladesh’s Personal Data Protection Act, 2026[EB/OL].
 San Jose, CA: Securiti, 2026[2026-10-20].
 Available:
 <https://securiti.ai/bangladesh-personal-data-protection-act-overview/>
@@ -224,7 +224,7 @@ Available:
 <https://www.thedailystar.net/business/economy/news/draft-ai-policy-targets-innovation-better-public-services-4090431>
 
 [91] THE DAILY OBSERVER.
-Rehan Asif Asad outlines govt's five priorities for ICT, telecom[EB/OL].
+Rehan Asif Asad outlines govt’s five priorities for ICT, telecom[EB/OL].
 Dhaka: The Daily Observer, 2026-08-10[2026-10-20].
 Available:
 <https://observerbd.com/news/587314>

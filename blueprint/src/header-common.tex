@@ -25,10 +25,21 @@
 \newcommand\BNout{\fontfamily{\BN@saved}\selectfont}
 \makeatother
 \setTransitionsFor{Bengali}{\BNin}{\BNout}
+% Typographic quotes and dashes are not in a ucharclasses class (class 0), so a Bangla word right
+% after “ or ‘ would not trigger the Bangla font. Treat them as Latin so that every switch fires.
+\XeTeXcharclass"2018=\XeTeXcharclass`A
+\XeTeXcharclass"2019=\XeTeXcharclass`A
+\XeTeXcharclass"201C=\XeTeXcharclass`A
+\XeTeXcharclass"201D=\XeTeXcharclass`A
+\XeTeXcharclass"2013=\XeTeXcharclass`A
+\XeTeXcharclass"2014=\XeTeXcharclass`A
+\XeTeXcharclass"2026=\XeTeXcharclass`A
 \newunicodechar{।}{{\bengalifont\char"0964}}
 \newunicodechar{॥}{{\bengalifont\char"0965}}
 % tables: smaller type, light rules
-\AtBeginEnvironment{longtable}{\small\setlength{\tabcolsep}{4pt}\renewcommand{\arraystretch}{1.18}}
+% row spacing of long tables; a page can set \bapiltablestretch in a group to fit a table
+\providecommand{\bapiltablestretch}{1.18}
+\AtBeginEnvironment{longtable}{\small\setlength{\tabcolsep}{4pt}\renewcommand{\arraystretch}{\bapiltablestretch}}
 % headings
 \titleformat{\section}{\normalfont\Large\bfseries}{}{0pt}{}
 \titlespacing*{\section}{0pt}{2.0em}{1.0em}
@@ -69,3 +80,6 @@
 \setlength{\cfttabindent}{0pt}
 \setlength{\cftbeforefigskip}{0.25em}
 \setlength{\cftbeforetabskip}{0.25em}
+% Text extraction: record the source characters of every shaped glyph cluster (ActualText),
+% so that copied or searched text keeps Unicode order (Bangla pre-base vowel signs such as ে, ি)
+\XeTeXgenerateactualtext=1

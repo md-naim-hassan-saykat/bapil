@@ -1,10 +1,27 @@
 \documentclass[border=8pt]{standalone}
 \usepackage{fontspec}
-\setmainfont{Noto Sans}
+\setmainfont{Noto Sans}[Ligatures=TeXOff]
+\XeTeXgenerateactualtext=1
 \setsansfont{Noto Sans}
-\newfontfamily\bengalifont{Noto Sans Bengali}[Script=Bengali]
+\newfontfamily\bengalifont{Noto Sans Bengali}[Script=Bengali, NFSSFamily=bnfam]
 \usepackage[Latin,Bengali]{ucharclasses}
-\setTransitionsFor{Bengali}{\begingroup\bengalifont}{\endgroup}
+% group-free font switching (as in header-common.tex): robust inside braces, cells and quotes
+\makeatletter
+\def\BN@saved{\rmdefault}
+\def\BN@bn{bnfam}
+\newcommand\BNin{\edef\BN@tmp{\f@family}\ifx\BN@tmp\BN@bn\else\let\BN@saved\BN@tmp\fi\fontfamily{bnfam}\selectfont}
+\newcommand\BNout{\fontfamily{\BN@saved}\selectfont}
+\makeatother
+\setTransitionsFor{Bengali}{\BNin}{\BNout}
+% Typographic quotes and dashes are not in a ucharclasses class (class 0), so a Bangla word right
+% after “ or ‘ would not trigger the Bangla font. Treat them as Latin so that every switch fires.
+\XeTeXcharclass"2018=\XeTeXcharclass`A
+\XeTeXcharclass"2019=\XeTeXcharclass`A
+\XeTeXcharclass"201C=\XeTeXcharclass`A
+\XeTeXcharclass"201D=\XeTeXcharclass`A
+\XeTeXcharclass"2013=\XeTeXcharclass`A
+\XeTeXcharclass"2014=\XeTeXcharclass`A
+\XeTeXcharclass"2026=\XeTeXcharclass`A
 \usepackage{newunicodechar}
 \newunicodechar{।}{{\bengalifont\char"0964}}
 \usepackage{tikz}
@@ -57,7 +74,7 @@
   \node[cell] at (\L+3.5*\C,-12mm-#1*\R-0.5*\R) {#6};
   \node[cell] at (\L+4.5*\C,-12mm-#1*\R-0.5*\R) {#7};
   \node[cell] at (\L+5.5*\C,-12mm-#1*\R-0.5*\R) {#8};}
-\lane{0}{প্রতিষ্ঠান}{ব্লুপ্রিন্ট প্রকাশ; আয়োজক নির্বাচন}{সমঝোতা স্মারকের অধীনে ল্যাব; সনদ; ERRC ও TAB}{বহুবর্ষী অর্থায়ন; সংস্থার সঙ্গে সেবা-চুক্তি}{ফাউন্ডেশন বা সংবিধিবদ্ধ কেন্দ্র বিবেচনা}{পরিণত জাতীয় প্রতিষ্ঠান}{সনদ নবায়ন বা কাজটি সরকারে আত্তীকৃত}
+\lane{0}{প্রতিষ্ঠান}{ব্লুপ্রিন্ট প্রকাশ; স্বাগতিক নির্বাচন}{সমঝোতা স্মারকের অধীনে ল্যাব; সনদ; ERRC ও TAB}{বহুবর্ষী অর্থায়ন; সংস্থার সঙ্গে সেবা-চুক্তি}{ফাউন্ডেশন বা সংবিধিবদ্ধ কেন্দ্র বিবেচনা}{পরিণত জাতীয় প্রতিষ্ঠান}{সনদ নবায়ন বা কাজটি সরকারে আত্তীকৃত}
 \lane{1}{প্ল্যাটফর্ম ও ডেটা}{রেফারেন্স বাস্তবায়ন (v1.1.0)}{P0 কর্পাস; P1 অনুসন্ধান; P2 বাজেট-ডেটা}{সংস্থার G4 গ্রহণ; মিশ্র অনুসন্ধান}{মন্ত্রণালয়জুড়ে সমন্বিত অনুসন্ধান}{প্রতিটি নীতিচক্রে প্রমাণ-সেবা}{অভিযোজনক্ষম, উন্মুক্ত সেবা}
 \lane{2}{বাংলা এআই}{দ্বিভাষিক প্রমিতকরণ ও শব্দকোষ}{BanglaPolicyQA v0; পর্যায় ০ ভিত্তিমান}{বেঞ্চমার্ক v1; যৌক্তিক হলে পর্যায় ১}{জনসম্পদ হিসেবে বাংলা নীতি মডেল}{বিভিন্ন ক্ষেত্রে উন্মুক্ত বাংলা সম্পদ}{নিরবচ্ছিন্ন নবায়ন}
 \lane{3}{শাসন}{স্তর, গেট ও সনদের নকশা}{নিবন্ধন ও গেট চালু}{ব্লুপ্রিন্ট ২.০; জাতীয় নীতির সঙ্গে সামঞ্জস্য}{সরকারজুড়ে অভিন্ন আশ্বাস-পদ্ধতি}{আঞ্চলিক ও দক্ষিণ-দক্ষিণ সহযোগিতা}{পর্যায়ক্রমিক স্বাধীন পর্যালোচনা}

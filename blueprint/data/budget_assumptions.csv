@@ -1,0 +1,12 @@
+assumption,value
+usd_to_bdt,124
+escalation,0.08
+ramp_y1,0.75
+staff_factor,1.0
+equipment_factor,1.0
+overhead_rate,0.1
+contingency_rate,0.05
+adaptation_compute_usd,0
+legacy_amounts,False
+new_eval_items,True
+omitted_items,False

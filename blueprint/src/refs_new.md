@@ -5,7 +5,7 @@ Available:
 <https://www.tbsnews.net/node/1281356>
 
 [85] SECURITI.
-An Overview of Bangladesh's Personal Data Protection Act, 2026[EB/OL].
+An Overview of Bangladesh’s Personal Data Protection Act, 2026[EB/OL].
 San Jose, CA: Securiti, 2026[2026-10-20].
 Available:
 <https://securiti.ai/bangladesh-personal-data-protection-act-overview/>
@@ -35,13 +35,13 @@ Available:
 <https://thefinancialexpress.com.bd/national/draft-ai-policy-tightens-state-oversight>
 
 [90] THE DAILY OBSERVER.
-Works on human-centric nat'l AI Policy ongoing: ICT minister[EB/OL].
+Works on human-centric nat’l AI Policy ongoing: ICT minister[EB/OL].
 Dhaka: The Daily Observer, 2026-07-19[2026-10-20].
 Available:
 <https://observerbd.com/news/583983>
 
 [91] THE DAILY OBSERVER.
-Rehan Asif Asad outlines govt's five priorities for ICT, telecom[EB/OL].
+Rehan Asif Asad outlines govt’s five priorities for ICT, telecom[EB/OL].
 Dhaka: The Daily Observer, 2026-08-10[2026-10-20].
 Available:
 <https://observerbd.com/news/587314>
@@ -92,7 +92,7 @@ Available:
 <https://doi.org/10.1038/sdata.2016.18>
 
 [99] MITCHELL M, WU S, ZALDIVAR A, et al.
-Model Cards for Model Reporting[C]//Proceedings of the Conference on Fairness, Accountability, and Transparency (FAT* '19).
+Model Cards for Model Reporting[C]//Proceedings of the Conference on Fairness, Accountability, and Transparency (FAT* ’19).
 New York: ACM, 2019: 220–229.
 DOI: 10.1145/3287560.3287596.
 Available:
@@ -132,7 +132,7 @@ W3C, 2023[2026-10-20].
 Available:
 <https://www.w3.org/TR/WCAG22/>
 
-[105] GOVERNMENT OF THE PEOPLE'S REPUBLIC OF BANGLADESH.
+[105] GOVERNMENT OF THE PEOPLE’S REPUBLIC OF BANGLADESH.
 The Right to Information Act, 2009 (Act No. XX of 2009)[S/OL].
 Dhaka: Legislative and Parliamentary Affairs Division, 2009[2026-10-20].
 Available:
@@ -145,13 +145,13 @@ Available:
 <https://www.thedailystar.net/law-our-rights/news/new-data-laws-bangladesh-critique-4038266>
 
 [107] THE BUSINESS STANDARD (TBS).
-Bangladesh climbs 11 notches on UN's digital govt services index[EB/OL].
+Bangladesh climbs 11 notches on UN’s digital govt services index[EB/OL].
 Dhaka: The Business Standard, 2024-09-18[2026-10-21].
 Available:
 <https://www.tbsnews.net/node/944651>
 
 [108] KADERI O R B S, RAHMAN M A.
-Safeguarding cyberspace: Bangladesh's preparedness today[EB/OL].
+Safeguarding cyberspace: Bangladesh’s preparedness today[EB/OL].
 Dhaka: The Daily Star, 2026-03-03[2026-10-21].
 Available:
 <https://www.thedailystar.net/supplements-0/news/safeguarding-cyberspace-bangladeshs-preparedness-today-4120311>
@@ -181,7 +181,7 @@ Available:
 <https://www.oecd.org/en/publications/better-criteria-for-better-evaluation_15a9c26b-en.html>
 
 [113] GREENLEAF G, AL RAZI Y.
-Bangladesh's unconventional data privacy Ordinance[J/OL].
+Bangladesh’s unconventional data privacy Ordinance[J/OL].
 Privacy Laws & Business International Report, 2026-06-01[2026-10-22].
 Available:
 <https://www.privacylaws.com/reports-gateway/articles/int201/int201bangladesh/>
@@ -234,3 +234,9 @@ Ithaca, NY: arXiv, 2020[2026-10-22].
 DOI: 10.48550/arXiv.2001.08361.
 Available:
 <https://arxiv.org/abs/2001.08361>
+
+[122] THE BUSINESS STANDARD.
+Personal Data Protection Ordinance: A law that protects you from everyone except the state[EB/OL].
+Dhaka: The Business Standard, 2026-04-20[2026-10-22].
+Available:
+<https://www.tbsnews.net/thoughts/personal-data-protection-ordinance-law-protects-you-everyone-except-state-1416106>

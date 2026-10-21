@@ -1,9 +1,26 @@
 \documentclass[border=10pt]{standalone}
 \usepackage{fontspec}
-\setmainfont{Latin Modern Roman}
-\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali]
+\setmainfont{Latin Modern Roman}[Ligatures=TeXOff]
+\XeTeXgenerateactualtext=1
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali, NFSSFamily=bnfam]
 \usepackage[Latin,Bengali]{ucharclasses}
-\setTransitionsFor{Bengali}{\begingroup\bengalifont}{\endgroup}
+% group-free font switching (as in header-common.tex): robust inside braces, cells and quotes
+\makeatletter
+\def\BN@saved{\rmdefault}
+\def\BN@bn{bnfam}
+\newcommand\BNin{\edef\BN@tmp{\f@family}\ifx\BN@tmp\BN@bn\else\let\BN@saved\BN@tmp\fi\fontfamily{bnfam}\selectfont}
+\newcommand\BNout{\fontfamily{\BN@saved}\selectfont}
+\makeatother
+\setTransitionsFor{Bengali}{\BNin}{\BNout}
+% Typographic quotes and dashes are not in a ucharclasses class (class 0), so a Bangla word right
+% after “ or ‘ would not trigger the Bangla font. Treat them as Latin so that every switch fires.
+\XeTeXcharclass"2018=\XeTeXcharclass`A
+\XeTeXcharclass"2019=\XeTeXcharclass`A
+\XeTeXcharclass"201C=\XeTeXcharclass`A
+\XeTeXcharclass"201D=\XeTeXcharclass`A
+\XeTeXcharclass"2013=\XeTeXcharclass`A
+\XeTeXcharclass"2014=\XeTeXcharclass`A
+\XeTeXcharclass"2026=\XeTeXcharclass`A
 
 \usepackage[table]{xcolor}
 \usepackage{booktabs,tabularx,array}
@@ -14,35 +31,35 @@
 
 \begin{document}
 \begin{minipage}{17cm}
-{\large\bfseries Table 60.}\ {\large Evidence status of key claims (verified on 21 to 22 October 2026)}\par\vspace{7pt}
+{\large\bfseries Table 60.}\ {\large Evidence status of key claims (checked on 21 and 22 October 2026)}\par\vspace{7pt}
 \small
 \rowcolors{2}{bapilstripe}{white}
 \begin{tabularx}{\linewidth}{@{}>{\hsize=1.275\hsize\raggedright\arraybackslash}X>{\hsize=0.637\hsize\raggedright\arraybackslash}X>{\hsize=0.735\hsize\raggedright\arraybackslash}X>{\hsize=1.275\hsize\raggedright\arraybackslash}X>{\hsize=1.078\hsize\raggedright\arraybackslash}X@{}}
 \arrayrulecolor{bapilrule}\toprule
-\rowcolor{white}\textbf{Claim} & \textbf{Where} & \textbf{Status} & \textbf{Best available evidence} & \textbf{Action in this edition} \\
+\rowcolor{white}\textbf{Claim as stated in the text} & \textbf{Where} & \textbf{Status} & \textbf{Best available evidence} & \textbf{How the text presents it} \\
 \midrule
-Bangladesh ranked 100 of 193 in the UN EGDI 2024, value 0.657 (111 in 2022) & Ch. 2; Table 4 & Verified fact & UN DESA E-Government Knowledgebase country data [120]; [21, 107] & Kept; primary source added \\
-Bangladesh in the top tier of the ITU Global Cybersecurity Index 2024 & Ch. 2; Table 4 & Verified fact (official national source) & BGD e-GOV CIRT: designated a Tier 1 role-model country [119] & Wording made specific \\
-Ranked 82nd in the 2023 Government AI Readiness Index & Ch. 2; Table 4 & Source-reported fact & Sultana et al., 2026 [80]; the index report itself was not re-checked & Citation corrected to [80] \\
-Personal Data Protection Act, 2026 enacted in April 2026 & Ch. 1, 2, 14; Tables 4, 42 & Source-reported fact, independently unverified & Securiti, June 2026 [85]; Azam, September 2026 [116]; title listed on the official laws database (text not reviewed) & Enactment and commencement separated; commencement marked to be confirmed \\
-National Data Management Bill, 2026 passed on 10 April 2026 & Ch. 2, 14; Table 42 & Source-reported fact & Daily Sun, 10 April 2026 [86] & Ordinance name corrected; features attributed to the 2025 Ordinance \\
-Under the 2025 Ordinance, the sections on chief data officers, complaints and offences did not commence immediately & Ch. 8, 14; Table 42 & Source-reported fact (secondary legal commentary) & Greenleaf and Al Razi, June 2026 [113]; 18-month compliance window reported [114] & Added; position under the Act referred to legal counsel \\
-Cyber Security Bill, 2026 passed on 10 April 2026; amendment on AI-generated content passed by 30 June 2026 & Ch. 14; Table 42 & Source-reported fact & [86], [87] & Wording qualified; commencement to be confirmed \\
-Draft National AI Policy 2026-2030 released for consultation in January 2026 & Ch. 1, 2, 14 & Source-reported fact & The Daily Star, 26 January 2026 [88]; The Financial Express, 29 January 2026 [89] & Kept \\
-The draft policy proposes labelling of AI-generated content & Sect. 13.8; Table 41; Annex N & Not supported by the cited sources & [88] and [89] describe measures against false or misleading AI-generated content & Corrected; labelling is now presented as BAPIL's own rule \\
-National AI policy drafting to begin in Q4 2026 with a joint team & Ch. 1, 14, 21 & Source-reported fact & The Daily Observer, 10 August 2026 [91] & Kept \\
-AI Hub project cost Tk 192.66 crore; project under implementation & Ch. 3, 17; Table 42 & Partly incorrect & Proposal awaiting approval in June 2026 [35]; USD 13 million grant agreement signed in August 2026 [117] & Status corrected; comparison kept for scale only \\
-Reference implementation published on GitHub and archived on Zenodo (release v1.1.0) & Front matter; Ch. 1, 11, 16, 21; Table 1 & Future milestone at the time of writing & Code with 49 passing unit tests exists in the repository's working branch; release v1.1.0 and the Blueprint DOI were not yet public on 22 October 2026 & Reworded as issued with this Blueprint; the DOI record is published only after the release exists (Annex D) \\
-Demonstration Recall@10 of 0.92 and 6 of 6 correct abstentions & Sect. 11.5 & Research finding (small demonstration) & Evaluation report generated by the build: 10 documents, about 1,700 passages, 24 questions & Kept with its limitation \\
-Recall@10 at least 0.85 and citation precision at least 0.95 & Ch. 9, 12; Tables 28, 38 & Proposed target & Not yet measured & Labelled as targets; measurement protocol added (Annex R) \\
-Budget of Tk 18.49 crore; annual totals 4.96, 6.71 and 6.83 & Ch. 17; Tables 49, 50; Summary; Memo & Planning assumption; rounding difference & Unrounded total Tk 18.4868 crore; annual figures rounded independently & Budget revised with escalation, recruitment ramp and contingency; reconciled in Table 61 \\
-Grade 9 basic pay of Tk 44,000 in the Ninth National Pay Scale & Sect. 17.5; Table 49 & Source-reported fact (Cabinet approval) & The Financial Express, 31 August 2026 [109]; gazette not seen & Kept; status noted \\
-Exchange rate of Tk 123.65 per US dollar on 19 October 2026 & Table 49 & Verified fact & Bangladesh Bank [110] & Kept \\
-Inflation of 8.34\% in September 2026 & Table 49 & Source-reported fact & Dhaka Tribune, 7 October 2026, reporting BBS data [118] & Added as the basis for escalation \\
-L40S GPU card about USD 7,500 & Table 49 & Source-reported fact (vendor publication) & Modal, August 2025 [111] & Kept as a price basis; quotations required \\
-Analyst time saved worth about Tk 0.7 crore a year & Sect. 17.5 & Author's analysis & Calculation from [109] and assumed usage & Kept and labelled as illustrative \\
-Steering Board, ERRC and TAB with stated powers & Ch. 5; Annexes E to G & Design recommendation & No body has been constituted or approved & Status, appointment and limits set out in Annex S \\
-Long-term targets for 2028 to 2041 & Ch. 16; Table 46 & Proposed target & Not applicable & Kept; revised at strategic reviews \\
+Bangladesh ranked 100 of 193 in the UN EGDI 2024, value 0.657 (111 in 2022) & Ch. 2; Table 4 & Verified fact & UN DESA E-Government Knowledgebase country data [120]; [21, 107] & Stated with the primary source \\
+Bangladesh designated a Tier 1 (role-model) country in the ITU Global Cybersecurity Index 2024 & Ch. 2; Table 4 & Verified fact (official national source) & BGD e-GOV CIRT [119] & Stated as reported by the national CIRT \\
+Ranked 82nd in the 2023 Government AI Readiness Index & Ch. 2; Table 4 & Source-reported fact & Sultana et al., 2026 [80]; the index report itself was not re-checked & Attributed to [80] \\
+Personal Data Protection Act, 2026 reported enacted in April 2026 & Ch. 1, 2, 14; Tables 4, 42 & Source-reported fact, independently unverified & Securiti, June 2026 [85]; Azam, September 2026 [116]; title listed on the official laws database (text not reviewed) & Enactment reported; commencement marked to be confirmed \\
+National Data Management Bill, 2026 reported passed on 10 April 2026 & Ch. 2, 14; Table 42 & Source-reported fact & Daily Sun, 10 April 2026 [86] & Reported; the features described are those of the 2025 Ordinance \\
+Under the 2025 Ordinance, the sections on chief data officers, complaints and offences did not commence immediately & Ch. 8, 14; Table 42 & Source-reported fact (secondary legal commentary) & Greenleaf and Al Razi, June 2026 [113]; 18-month compliance window reported [114] & Stated for the Ordinance; the position under the Act is referred to legal counsel \\
+Cyber Security Bill, 2026 reported passed on 10 April 2026; amendment on AI-generated content reported passed by 30 June 2026 & Ch. 14; Table 42 & Source-reported fact & [86], [87] & Reported; commencement to be confirmed \\
+Draft National AI Policy 2026-2030 released for consultation in January 2026 & Ch. 1, 2, 14 & Source-reported fact & The Daily Star, 26 January 2026 [88]; The Financial Express, 29 January 2026 [89] & Reported \\
+The draft policy addresses false or misleading AI-generated content; labelling of AI-generated text is BAPIL’s own rule & Sect. 13.8; Table 41; Annex N & Source-reported fact (policy content); design recommendation (labelling) & [88] and [89] describe measures against false or misleading AI-generated content; neither describes a labelling requirement & Labelling is not attributed to the draft policy \\
+National AI policy drafting to begin in Q4 2026 with a joint team & Ch. 1, 14, 21 & Source-reported fact & The Daily Observer, 10 August 2026 [91] & Reported \\
+AI hub technical-assistance project of Tk 192.66 crore awaiting approval in June 2026; USD 13 million grant agreement signed in August 2026 & Ch. 3, 17; Table 42 & Source-reported fact & [35]; [117] & Used for scale only; not described as an approved allocation \\
+Reference implementation issued in GitHub release v1.1.0 and archived with the Blueprint’s Zenodo record & Front matter; Ch. 1, 11, 16, 21; Table 1 & Future milestone at the time of writing & Code with 49 passing unit tests exists in the repository; the release and the Blueprint DOI were not yet public on 22 October 2026 & Readers are told how to check the release; the DOI record is published only after the release exists (Annex D) \\
+Demonstration Recall@10 of 0.92 and 6 of 6 correct abstentions & Sect. 11.5 & Research finding (development results on a small question set) & Evaluation report generated by the build: 8 documents, about 1,700 passages, 24 questions & Reported as development results with their limits \\
+Recall@10 at least 0.85 and citation precision at least 0.95 & Ch. 9, 12; Tables 28, 38 & Proposed target & Not yet measured & Labelled as targets; measurement protocol in Annex R \\
+Indicative budget of about Tk 20.4 crore over 36 months (base case) & Ch. 17; Tables 49, 50, 61, 62; Summary & Planning assumption (author’s analysis) & Computed by blueprint/\allowbreak{}src/\allowbreak{}budget\_model.py from the assumptions in Table 49; unrounded total Tk 20.43 crore & Indicative; scenarios, sensitivity and known omissions stated (Section 17.2; Annex Q) \\
+Grade 9 basic pay of Tk 44,000 in the Ninth National Pay Scale & Sect. 17.5; Table 49 & Source-reported fact (Cabinet approval) & The Financial Express, 31 August 2026 [109]; gazette not seen & Stated with its status \\
+Exchange rate of Tk 123.65 per US dollar on 19 October 2026 & Table 49 & Verified fact & Bangladesh Bank [110] & Basis of the planning rate of Tk 124 \\
+Inflation of 8.34\% in September 2026 & Table 49 & Source-reported fact & Dhaka Tribune, 7 October 2026, reporting BBS data [118] & Basis of the 8\% escalation assumption \\
+L40S GPU card about USD 7,500 & Table 49 & Source-reported fact (vendor publication) & Modal, August 2025 [111] & Price basis only; quotations required \\
+Analyst time saved worth about Tk 0.7 crore a year & Sect. 17.5 & Author’s analysis & Calculation from [109] and assumed usage & Labelled as illustrative \\
+Steering Board, ERRC and TAB with stated powers & Ch. 5; Annexes E to G & Design recommendation & No body has been constituted or approved & Presented as proposals; status, appointment and limits in Annex S \\
+Long-term targets for 2028 to 2041 & Ch. 16; Table 46 & Proposed target & Not applicable & Indicative; revised at strategic reviews \\
 \bottomrule
 \end{tabularx}
 \par\vspace{5pt}{\footnotesize\itshape Status labels are defined in Annex P. Web sources were consulted on 21 and 22 October 2026. The official Laws of Bangladesh database does not permit automated retrieval, so statutory texts were not reviewed directly.}

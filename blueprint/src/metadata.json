@@ -1,10 +1,12 @@
 {
   "title_en": "Bangladesh AI Policy & Innovation Lab (BAPIL): Technical Blueprint",
-  "title_bn": "বাংলাদেশ এআই নীতি ও উদ্ভাবন ল্যাব (BAPIL): কারিগরি ব্লুপ্রিন্ট",
+  "title_bn": "বাংলাদেশ এআই পলিসি অ্যান্ড ইনোভেশন ল্যাব (BAPIL): টেকনিক্যাল ব্লুপ্রিন্ট",
   "version": "1.0",
   "repo_release": "v1.1.0",
   "date_en": "October 2026",
   "date_bn": "অক্টোবর ২০২৬",
+  "pdf_date": "D:202610",
+  "source_date_epoch": 1790812800,
   "author": "Md Naim Hassan Saykat",
   "orcid": "0009-0007-5270-3970",
   "affiliation_en": "Independent Researcher, Bangladesh",
@@ -14,5 +16,20 @@
   "executive_summary_doi": "10.5281/zenodo.21441172",
   "concept_doi": "10.5281/zenodo.21360565",
   "repository": "https://github.com/md-naim-hassan-saykat/bapil",
-  "license": "CC BY 4.0"
+  "license": "CC BY 4.0",
+  "summary_title_en": "Bangladesh AI Policy & Innovation Lab (BAPIL): Blueprint Summary",
+  "summary_title_bn": "বাংলাদেশ এআই পলিসি অ্যান্ড ইনোভেশন ল্যাব (BAPIL): ব্লুপ্রিন্ট সারসংক্ষেপ",
+  "subject_en": "Institutional design, reference architecture, governance, delivery plan and strategic roadmap for an AI policy-intelligence capability in Bangladesh",
+  "subject_bn": "বাংলাদেশে এআই নীতি-বুদ্ধিমত্তা সক্ষমতার জন্য প্রাতিষ্ঠানিক নকশা, রেফারেন্স স্থাপত্য, শাসনব্যবস্থা, বাস্তবায়ন পরিকল্পনা ও কৌশলগত রোডম্যাপ",
+  "keywords": [
+    "Bangladesh",
+    "artificial intelligence",
+    "AI governance",
+    "AI policy",
+    "policy intelligence",
+    "Bangla language technology",
+    "retrieval-augmented generation",
+    "digital public infrastructure",
+    "BAPIL"
+  ]
 }

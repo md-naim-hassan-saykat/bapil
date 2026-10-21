@@ -1,9 +1,26 @@
 \documentclass[border=10pt]{standalone}
 \usepackage{fontspec}
-\setmainfont{Latin Modern Roman}
-\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali]
+\setmainfont{Latin Modern Roman}[Ligatures=TeXOff]
+\XeTeXgenerateactualtext=1
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali, NFSSFamily=bnfam]
 \usepackage[Latin,Bengali]{ucharclasses}
-\setTransitionsFor{Bengali}{\begingroup\bengalifont}{\endgroup}
+% group-free font switching (as in header-common.tex): robust inside braces, cells and quotes
+\makeatletter
+\def\BN@saved{\rmdefault}
+\def\BN@bn{bnfam}
+\newcommand\BNin{\edef\BN@tmp{\f@family}\ifx\BN@tmp\BN@bn\else\let\BN@saved\BN@tmp\fi\fontfamily{bnfam}\selectfont}
+\newcommand\BNout{\fontfamily{\BN@saved}\selectfont}
+\makeatother
+\setTransitionsFor{Bengali}{\BNin}{\BNout}
+% Typographic quotes and dashes are not in a ucharclasses class (class 0), so a Bangla word right
+% after “ or ‘ would not trigger the Bangla font. Treat them as Latin so that every switch fires.
+\XeTeXcharclass"2018=\XeTeXcharclass`A
+\XeTeXcharclass"2019=\XeTeXcharclass`A
+\XeTeXcharclass"201C=\XeTeXcharclass`A
+\XeTeXcharclass"201D=\XeTeXcharclass`A
+\XeTeXcharclass"2013=\XeTeXcharclass`A
+\XeTeXcharclass"2014=\XeTeXcharclass`A
+\XeTeXcharclass"2026=\XeTeXcharclass`A
 
 \usepackage[table]{xcolor}
 \usepackage{booktabs,tabularx,array}
@@ -21,7 +38,7 @@
 \arrayrulecolor{bapilrule}\toprule
 \rowcolor{white}\textbf{Pilot} & \textbf{Primary users} & \textbf{Data} & \textbf{Tier} & \textbf{Minimum viable scope (first 12 months)} & \textbf{Exit criterion} \\
 \midrule
-\textbf{P1} Bangladesh Policy Search Engine & Policy analysts, researchers, officials & Laws, gazettes, plans, budget documents (P0) & T1; T2 when used by officials & Bilingual search with citations over a core corpus of national laws, plans and budget documents & Recall@10 at least 0.85; citation precision at least 0.95; 30 or more active users rating it at least 4 of 5 \\
+\textbf{P1} Bangladesh Policy Search Engine & Policy analysts, researchers, officials & Laws, gazettes, plans, budget documents (P0) & T1; T2 when used by officials & Bilingual search with citations over a core corpus of national laws, plans and budget documents & Recall@10 at least 0.85; citation precision at least 0.95; mean usefulness rating of at least 4.0 of 5 from 30 or more active users \\
 \textbf{P2} Budget Intelligence Dashboard & Finance and planning analysts, journalists, researchers & Published budget documents and ADP (P0) & T1 & Five fiscal years of ministry-level allocations extracted reproducibly, published as open data & Extraction accuracy at least 99\% on a hand-checked sample \\
 \textbf{P3} Citizen Feedback Analyser & Owners of public consultations & Consented, de-identified submissions (P1, P2) & T2 & Topic and sentiment summaries for one public consultation, reported only in aggregate & DPIA approved; topics validated by people; zero re-identification incidents \\
 \textbf{P4} Bangla Policy Foundation Model, Stages 0 and 1 & Researchers & Governed public corpus (P0) & T1 & Evaluate existing open models with retrieval; release benchmark BanglaPolicyQA v0 & Benchmark published; Stage 1 go or no-go decision documented \\

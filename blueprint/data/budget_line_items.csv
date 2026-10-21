@@ -1,0 +1,20 @@
+category,item,one_time,year1_tk,year2_tk,year3_tk,total_tk
+Core staff,Core staff salaries and on-costs,no,13657500.0,31104000.0,41360544.0,86122044.0
+Language editors and fellowships,Part-time Bangla language editors,no,1200000.0,1512000.0,1632960.0,4344960.0
+Language editors and fellowships,Graduate fellowships,no,2880000.0,5184000.0,6718464.0,14782464.0
+Compute and hosting,"Servers, GPUs and storage",yes,11408000.0,10168000.0,2976000.0,24552000.0
+Compute and hosting,"Hosting, power, bandwidth and licences",no,2500000.0,3456000.0,4432320.0,10388320.0
+Data and annotation,Benchmark questions and gold passages,yes,1250000.0,2160000.0,2041200.0,5451200.0
+Data and annotation,Out-of-scope questions for abstention tests,yes,120000.0,64800.0,0.0,184800.0
+Data and annotation,Citation-support judgements,no,200000.0,432000.0,466560.0,1098560.0
+Data and annotation,OCR correction,no,2000000.0,2160000.0,1749600.0,5909600.0
+Data and annotation,Data agreements and custodian liaison,no,500000.0,432000.0,349920.0,1281920.0
+Training and outreach,Training of officials,no,1500000.0,3240000.0,3499200.0,8239200.0
+Training and outreach,Specialist courses and bilingual materials,no,800000.0,1188000.0,1283040.0,3271040.0
+"Governance, audit and evaluation",Annual independent audit of systems,no,300000.0,324000.0,349920.0,973920.0
+"Governance, audit and evaluation",Baseline study,yes,600000.0,0.0,0.0,600000.0
+"Governance, audit and evaluation",ERRC and board honoraria,no,800000.0,864000.0,933120.0,2597120.0
+"Governance, audit and evaluation",Independent final evaluation,yes,0.0,0.0,2916000.0,2916000.0
+"Governance, audit and evaluation",Independent mid-term evaluation,yes,0.0,2160000.0,0.0,2160000.0
+"Governance, audit and evaluation",Legal review,yes,800000.0,0.0,0.0,800000.0
+"Governance, audit and evaluation",Penetration test and red team,no,600000.0,648000.0,699840.0,1947840.0

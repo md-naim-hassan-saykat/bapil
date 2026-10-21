@@ -8,8 +8,12 @@ assumption and regenerate the budget. Amounts are in Bangladeshi taka (Tk);
 1 crore = 10,000,000 and 1 lakh = 100,000. All figures are planning estimates, not
 quotations and not approved funding.
 
-Run: python3 budget_model.py
+Run: python3 budget_model.py              # print the budget, scenarios, bridge and sensitivity
+     python3 budget_model.py --csv DIR    # also write the same figures as CSV files to DIR
 """
+import csv
+import os
+import sys
 
 CRORE = 10_000_000
 
@@ -31,12 +35,14 @@ BASE = {
     "contingency_rate": 0.05,
     # Compute for Stage 1 model adaptation if shared national compute is not available (USD, Year 2)
     "adaptation_compute_usd": 0,
-    # Switches used only to reconcile with the pre-audit draft (Annex Q, Table 61)
-    "legacy_amounts": False,     # Year 2 and 3 amounts as in the draft (implicit price growth)
+    # Switches used only to reconcile with the initial planning estimate (Annex Q, Table 61)
+    "legacy_amounts": False,     # Year 2 and 3 amounts as in the initial estimate (implicit price growth)
     "new_eval_items": True,      # out-of-scope set, citation judgements and annual system audit
+    # Known omissions (Section 17.2): off in the base case, on in the adjusted case
+    "omitted_items": False,
 }
 
-# Year 2 and 3 amounts used in the pre-audit draft, which included implicit price growth
+# Year 2 and 3 amounts used in the initial planning estimate, which included implicit price growth
 LEGACY = {
     "LANGUAGE_EDITORS": (1_200_000, 1_500_000, 1_500_000),
     "HOSTING_OPS": (2_500_000, 3_500_000, 4_500_000),
@@ -114,6 +120,14 @@ GOVERNANCE = (
 )
 ONE_TIME_GOVERNANCE = {"Legal review", "Baseline study", "Independent mid-term evaluation", "Independent final evaluation"}
 
+# Known omissions from the base case (Section 17.2; Table 68, U16), planning assumptions:
+# consultation and engagement events, P5 survey data collection, staff travel other than for
+# training and open-access fees (Tk 15 lakh a year at Year 1 prices), and a computer for each
+# new staff member (USD 1,200; 10, 5 and 4 new staff in Years 1 to 3, 19 in all).
+OMITTED_ALLOWANCE = 1_500_000
+NEW_STAFF = (10, 5, 4)
+COMPUTER_USD = 1_200
+
 CATEGORIES = [
     "Core staff",
     "Language editors and fellowships",
@@ -126,6 +140,8 @@ CATEGORIES = [
 SCENARIOS = {
     "low": dict(BASE, staff_factor=0.85, escalation=0.06, equipment_factor=0.80, usd_to_bdt=120),
     "base": dict(BASE),
+    # Base case plus the known omissions and a 10% contingency (Section 17.2)
+    "adjusted": dict(BASE, omitted_items=True, contingency_rate=0.10),
     "high": dict(BASE, staff_factor=1.20, escalation=0.10, equipment_factor=1.25, usd_to_bdt=135,
                  contingency_rate=0.10, adaptation_compute_usd=20_000),
 }
@@ -175,6 +191,12 @@ def lines(p=None):
         ("Training of officials", False, tuple(OFFICIALS_TRAINED[y] * COST_PER_PARTICIPANT * _esc(p, y) for y in years)),
         ("Specialist courses and bilingual materials", False, tuple(spec[y] * _esc(p, y) for y in years)),
     ]
+    if p["omitted_items"]:
+        out["Training and outreach"].append(
+            ("Engagement events, P5 survey data, travel and open-access fees", False,
+             tuple(OMITTED_ALLOWANCE * _esc(p, y) for y in years)))
+        out["Compute and hosting"].append(
+            ("Staff computers", True, tuple(NEW_STAFF[y] * COMPUTER_USD * p["usd_to_bdt"] for y in years)))
     items = sorted({k for g in GOVERNANCE for k in g})
     for k in items:
         amounts = [GOVERNANCE[y].get(k, 0) for y in years]
@@ -230,9 +252,9 @@ def sensitivity():
 
 
 def bridge():
-    """Step-by-step reconciliation from the pre-audit draft (Tk 18.49 crore) to the base case."""
+    """Step-by-step reconciliation from the initial planning estimate (Tk 18.49 crore) to the base case."""
     steps = [
-        ("Pre-audit draft budget (October 2026)",
+        ("Initial planning estimate made while drafting (constant prices, full staffing from month 1, no separate contingency)",
          dict(legacy_amounts=True, new_eval_items=False, escalation=0.0, ramp_y1=1.0, contingency_rate=0.0)),
         ("Year 2 and 3 amounts restated at Year 1 prices",
          dict(new_eval_items=False, escalation=0.0, ramp_y1=1.0, contingency_rate=0.0)),
@@ -274,11 +296,44 @@ def main():
     for name, p in SCENARIOS.items():
         y, t = totals(p)
         print("Scenario %-5s: %s total %.2f" % (name, [round(crore(x), 2) for x in y], crore(t)))
+    _, base_t = totals()
+    om_t = totals(dict(omitted_items=True))[1]
+    print("Known omissions with overheads and contingency: %+.2f crore" % crore(om_t - base_t))
     for label, t, d in bridge():
         print("Bridge: %-80s %6.2f %s" % (label, crore(t), "" if d is None else "%+.2f" % crore(d)))
     for k, d in sensitivity().items():
         print("Sensitivity: %-46s %+.2f crore" % (k, crore(d)))
 
 
+def write_csv(outdir):
+    """Write the budget model outputs as CSV (Tk, unrounded) for use in spreadsheets."""
+    os.makedirs(outdir, exist_ok=True)
+
+    def w(name, header, rows):
+        with open(os.path.join(outdir, name), "w", newline="", encoding="utf-8") as fh:
+            cw = csv.writer(fh)
+            cw.writerow(header)
+            cw.writerows(rows)
+
+    ls, p = lines()
+    w("budget_line_items.csv", ["category", "item", "one_time", "year1_tk", "year2_tk", "year3_tk", "total_tk"],
+      [[c, item, "yes" if one else "no"] + [round(v, 2) for v in vals] + [round(sum(vals), 2)]
+       for c in CATEGORIES for item, one, vals in ls[c]])
+    rows = budget()
+    w("budget_by_category.csv", ["row", "year1_tk", "year2_tk", "year3_tk", "total_tk"],
+      [[k] + [round(x, 2) for x in v] + [round(sum(v), 2)] for k, v in rows.items()]
+      + [["Total"] + [round(x, 2) for x in totals()[0]] + [round(totals()[1], 2)]])
+    w("budget_scenarios.csv", ["scenario", "year1_tk", "year2_tk", "year3_tk", "total_tk"],
+      [[name] + [round(x, 2) for x in totals(sp)[0]] + [round(totals(sp)[1], 2)] for name, sp in SCENARIOS.items()])
+    w("budget_bridge.csv", ["step", "total_tk", "change_tk"],
+      [[label, round(t, 2), "" if d is None else round(d, 2)] for label, t, d in bridge()])
+    w("budget_sensitivity.csv", ["case", "change_in_total_tk"],
+      [[k, round(d, 2)] for k, d in sensitivity().items()])
+    w("budget_assumptions.csv", ["assumption", "value"], [[k, v] for k, v in BASE.items()])
+
+
 if __name__ == "__main__":
     main()
+    if len(sys.argv) == 3 and sys.argv[1] == "--csv":
+        write_csv(sys.argv[2])
+        print("CSV files written to", sys.argv[2])

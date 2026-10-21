@@ -24,7 +24,7 @@ ORCID: <https://orcid.org/{{ORCID}}>
 
 ---
 
-*This summary presents the main design choices, safeguards, delivery plan, strategic roadmap to 2041 and decisions set out in the BAPIL Technical Blueprint (five parts, 21 chapters, 22 annexes). Figure and table numbers follow the full Blueprint. The Blueprint, this summary and the one-page Decision Memo are independent research documents and do not represent any official position. BAPIL is a proposal: no institution has been created and no funding has been approved.*
+*This summary presents the main design choices, safeguards, delivery plan, strategic roadmap to 2041 and decisions set out in the BAPIL Technical Blueprint (five parts, 21 chapters, 22 annexes). Figure and table numbers follow the full Blueprint. The Blueprint and this summary are independent research documents and do not represent any official position. BAPIL is a proposal: no institution has been created and no funding has been approved.*
 
 \newpage
 
@@ -47,7 +47,7 @@ The timing is favourable. As reported, Bangladesh converted its 2025 data ordina
 7. **Six pilots** with users, data, risk tier, scope and exit criteria.
 8. **Security and hosting** in Bangladesh, with controls for AI-specific threats.
 9. **An assurance system:** risk tiers T0 to T3, lifecycle gates G0 to G5, model cards and a public transparency register.
-10. **A small, tested reference implementation** (a research prototype, not a production system) released on GitHub with the Blueprint, a 36-month delivery plan, staffing and training, financing and procurement clauses, a logical framework, KPIs, a risk register and a research agenda.
+10. **A small, tested reference implementation** (a research prototype, not a production system) issued on GitHub with the Blueprint, a 36-month delivery plan, staffing and training, financing and procurement clauses, a logical framework, KPIs, a risk register and a research agenda.
 11. **A strategic roadmap for 2026 to 2041 and beyond,** with five horizons, indicative targets, scenarios and fixed review points.
 12. **Six decisions** for the authorities.
 13. **Evidence and readiness annexes:** the evidence status of every key claim, budget reconciliation and scenarios, an evaluation protocol with sample sizes, the status and limits of each governance body, the preconditions for starting, risk monitoring, and a register of unresolved items.
@@ -108,7 +108,7 @@ The core service is a **bilingual, citation-grounded policy search and answer sy
 
 <!-- FIGURE:13 -->
 
-The 36-month plan is the first step of a longer strategy that connects BAPIL's pilots to the national AI policy cycle and to the Perspective Plan 2041 and ICT Masterplan 2041 [29, 30, 88].
+The 36-month plan is the first step of a longer strategy that connects BAPIL’s pilots to the national AI policy cycle and to the Perspective Plan 2041 and ICT Masterplan 2041 [29, 30, 88].
 
 * **H0 Foundation (Q4 2026):** publish the Blueprint and code; brief the authorities; offer input to national AI policy drafting; select a host institution.
 * **H1 Short term (2027 to 2028):** prove value with public data; P1 and P2 pass their pilot gates; about 300 officials trained; mid-term evaluation.
@@ -125,7 +125,7 @@ Targets are indicative and revised at fixed reviews (2027, 2028, 2029, 2030, 203
 
 # 9. People, Resources and Financing
 
-The core team grows from about 9 to 19 full-time equivalents over three years. Pilot computing needs are modest (two to three servers and two GPU inference servers, doubled in Year 2 for staging and recovery), with any model adaptation using shared national compute. An indicative budget built from stated assumptions comes to about Tk 20.4 crore over 36 months (Tk 4.7, 7.5 and 8.2 crore in Years 1 to 3, about USD 1.65 million), including 8% annual escalation, host overheads and a 5% contingency, with people at about half of the total. Low and high scenarios give about Tk 17.9 and 25.3 crore. It is a planning estimate, not approved funding; the feasibility and costing study in month 6 confirms or replaces each assumption. Funding is diversified, with a growing share of core public funding and agency service agreements over time; no single non-government funder provides more than 30% of the budget. Model procurement clauses protect data, guarantee the right to evaluate and prevent lock-in.
+The core team grows from about 9 to 19 full-time equivalents over three years. Pilot computing needs are modest (two to three servers and two GPU inference servers, doubled in Year 2 for staging and recovery), with any model adaptation using shared national compute. An indicative budget built from stated assumptions comes to about Tk 20.4 crore over 36 months (Tk 4.7, 7.5 and 8.2 crore in Years 1 to 3, about USD 1.65 million), including 8% annual escalation, host overheads and a 5% contingency, with people at about half of the total. Low and high scenarios give about Tk 17.9 and 25.3 crore. Some costs are not yet included (engagement events, survey data collection, travel, open-access fees and staff computers); with an allowance for them and a 10% contingency, the estimate is about Tk 22.2 crore. It is a planning estimate, not approved funding; the feasibility and costing study in month 6 confirms or replaces each assumption. Funding is diversified, with a growing share of core public funding and agency service agreements over time; no single non-government funder provides more than 30% of the budget. Model procurement clauses protect data, guarantee the right to evaluate and prevent lock-in.
 
 # 10. Reference Implementation and Research
 

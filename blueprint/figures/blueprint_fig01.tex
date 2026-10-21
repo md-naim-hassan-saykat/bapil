@@ -1,6 +1,7 @@
 \documentclass[border=8pt]{standalone}
 \usepackage{fontspec}
-\setmainfont{TeX Gyre Heros}
+\setmainfont{TeX Gyre Heros}[Ligatures=TeXOff]
+\XeTeXgenerateactualtext=1
 \setsansfont{TeX Gyre Heros}
 \usepackage{tikz}
 \usetikzlibrary{arrows.meta,positioning,shapes.geometric,shapes.misc,shapes.symbols,fit,backgrounds,calc,chains}
@@ -37,12 +38,11 @@
 \node[key, rounded corners=13pt, minimum width=46mm, minimum height=15mm, right=12mm of es] (bp) {\textbf{Technical Blueprint}\\Version 1.0\\{\footnotesize DOI: new Zenodo record}};
 \draw[arr] (wp) -- (es);
 \draw[arr] (es) -- (bp);
-\node[box, minimum width=36mm, minimum height=11mm, below=14mm of bp.south, xshift=-50mm] (sum) {Blueprint Summary};
-\node[box, minimum width=36mm, minimum height=11mm, below=14mm of bp.south] (memo) {One-page Decision Memo};
-\node[key, minimum width=36mm, minimum height=11mm, below=14mm of bp.south, xshift=50mm] (code) {Reference implementation\\(GitHub, release v1.1.0)};
-\foreach \n in {sum,memo,code} \draw[arr] (bp.south) -- (\n.north);
-\node[soft, minimum width=150mm, minimum height=11mm, below=12mm of memo] (pilots) {Controlled pilots P1 to P6 under the gates G0 to G4};
-\foreach \n in {sum,memo,code} \draw[arr] (\n.south) -- (\n.south |- pilots.north);
+\node[box, minimum width=40mm, minimum height=11mm, below=14mm of bp.south, xshift=-32mm] (sum) {Blueprint Summary};
+\node[key, minimum width=40mm, minimum height=11mm, below=14mm of bp.south, xshift=32mm] (code) {Reference implementation\\(GitHub repository)};
+\foreach \n in {sum,code} \draw[arr] (bp.south) -- (\n.north);
+\node[soft, minimum width=150mm, minimum height=11mm, below=12mm of sum, xshift=32mm] (pilots) {Controlled pilots P1 to P6 under the gates G0 to G4};
+\foreach \n in {sum,code} \draw[arr] (\n.south) -- (\n.south |- pilots.north);
 \node[box, minimum width=88mm, minimum height=11mm, below=9mm of pilots] (eval) {Independent evaluation and adoption decisions};
 \draw[arr] (pilots) -- (eval);
 \node[box, dashed, minimum width=40mm, minimum height=10mm, left=10mm of eval] (zen) {Archived on Zenodo};
