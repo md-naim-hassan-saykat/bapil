@@ -58,7 +58,8 @@ Severity: **Critical**, **Major**, **Moderate**, **Minor** (definitions in the a
 | A-26 | All legal statements | Ch. 2, 8, 14 | Gazetted texts not reviewed | Major | Official database blocks automated retrieval | Labelled "as reported"; counsel review before MS2 (U1 to U3, U15) | Open |
 | A-27 | Blueprint references 1 to 83 | bibliography | Inherited from the White Paper and not re-verified item by item | Moderate | Previous QA | Unresolved item U11 | Open |
 | A-28 | Blueprint BN | whole edition | No independent professional copy-edit yet | Moderate | U14 | Author’s editorial review done; terminology fixes in this audit | Open |
-| A-29 | README | table of contents | Anchors such as `#inspiration-related-initiatives` may not match GitHub’s generated anchors | Minor | Link check | See `MARKDOWN_VALIDATION_REPORT.md` | See report |
+| A-29 | README | table of contents | `#inspiration-related-initiatives` did not match GitHub’s anchor; the description also contained the unfilled tokens PAGES_EN and PAGES_BN | Minor | Link and placeholder check | Anchor corrected; page counts filled in | Fixed |
+| A-30 | Blueprint EN/BN, Summary EN | seven pages (BN 14.7, 21.4, Annex B.4, references; EN 20.4, Annex B.4; Summary Section 2) | Page enlargements used in earlier layout passes pushed body text into the page number; the earlier QA had passed these pages | Moderate | Bounding-box check of every page (text within 8 pt of the page number) | Enlargements removed; other layout means used; the check added to QA | Fixed |
 
 ## 4. Verified claim register
 
@@ -98,7 +99,7 @@ All substantive corrections are listed in [`blueprint/CHANGES.md`](../CHANGES.md
 | Number parity EN vs BN (multi-digit numbers, by chapter) | Blueprint: remaining differences are layout values and numbers written as words in one language; Summary and Memo: none (see reconciliation report) |
 | Sparse-page scan and visual inspection | See `blueprint/QA_REPORT.md` |
 | CITATION.cff against the CFF 1.2.0 JSON schema | Valid (0 errors) |
-| Markdown links | See `MARKDOWN_VALIDATION_REPORT.md` |
+| Markdown structure, links, CITATION.cff | See `MARKDOWN_VALIDATION_REPORT.md` (no broken relative links remain; CFF valid) |
 
 ## 7. Files prepared for future publication
 

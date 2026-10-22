@@ -90,7 +90,7 @@ This log records the corrections made while finalising the BAPIL Technical Bluep
 
 ## 9. Project-wide audit and reconciliation (22 October 2026)
 
-Full record: `review/PROJECT_AUDIT_REPORT.md` (issue register A-01 to A-29), `review/CROSS_DOCUMENT_RECONCILIATION.md` and `../docs/legal-references.md`. Item 5.1 above is superseded: the demonstration result is now Recall@10 0.88.
+Full record: `review/PROJECT_AUDIT_REPORT.md` (issue register A-01 to A-30), `review/CROSS_DOCUMENT_RECONCILIATION.md` and `../docs/legal-references.md`. Item 5.1 above is superseded: the demonstration result is now Recall@10 0.88.
 
 | # | Change | Justification |
 |---|---|---|
@@ -109,4 +109,5 @@ Full record: `review/PROJECT_AUDIT_REPORT.md` (issue register A-01 to A-29), `re
 | 9.13 | Budget workbook with formulas (`data/BAPIL_Budget_Model.xlsx`, written by `src/make_budget_workbook.py`), checked against `budget_model.py` | Editable, independently recomputed financial model |
 | 9.14 | Layout: every `\enlargethispage` of two or more lines removed (Bangla 14.7, 21.4, Annex B.4, the reference list; English 20.4, Annex B.4; Summary Section 2), because the enlarged pages pushed body text into the page number (found on seven pages, including pages accepted by the earlier QA). Short pages now handled by `\looseness=-1` on selected paragraphs, at most a one-line enlargement, footnote-size type for Bangla Table 43, tighter spacing between reference entries and a smaller Figure 1 in the English Summary. A check that no body text comes within 8 pt of the page number now forms part of QA | Text overprinted the page number |
 | 9.15 | Section 11.5 (generated text): passage count with a thousands separator; Bangla "৮ টি" written "৮টি" | Editorial |
+| 9.17 | Zenodo source archive now includes `blueprint/make_manifest.py` and all `reports/*.md`; tested by rebuilding from the archives alone | Without them the archive could not reproduce the PDFs |
 | 9.16 | Page counts after this round: English Blueprint 139, Bangla 134, Summary 11 and 11, Decision Memo 2 and 2 | Supersedes the counts in section 7 |
