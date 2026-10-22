@@ -207,3 +207,16 @@ The audit corrected legal, institutional and technical statements in both editio
 | Citations sequential | Pass | Blueprint 111 (both editions), Summary 10, Memo 5 |
 | Build, tests, evaluation, fonts, page numbers | Pass | Exit 0; 49 tests; Recall@10 0.875; no body text within 8 pt of a page number |
 
+## 12. Seventh pass: sourced unit costs, Bangla editorial pass, engagement pack (22 October 2026)
+
+| Check | Result | Evidence |
+|---|---|---|
+| Unit costs checked against published sources | Done; base case unchanged | Seven sources opened on 22 October 2026 (keys 155 to 161). Staff, fellowship and hosting assumptions are consistent with them. Equipment sits at the lower end of 2026 prices; the list-price effect (+Tk 0.74 crore; +Tk 1.63 crore with duty and VAT) was computed with `budget_model.py` and is stated in Section 17.1 |
+| Bangla spelling consistency | 76 standardisations and 4 rewordings | `review/BANGLA_EDITORIAL_LOG.md`; replacements matched Bangla word boundaries only, and no code, links or markers changed |
+| English and Bangla number parity | Pass | No new differences. The remaining ones are layout values, units ("1 million" and "১০ লক্ষ") and numbers written as words, as before |
+| Citations sequential | Pass | Blueprint 118 (both editions), Summary 10, Memo 5. Published numbers up to 98 are unchanged, so `docs/legal-references.md` needs no change |
+| Short pages | Accepted set only | English 15, 31, 40, 64, 65, 78 and 105; Bangla 16, 31, 36, 40, 56, 64, 75, 76 and 101. These are part openers, or chapter or annex endings. A new two-line Bangla page before Annex A was removed by tightening Table 57 |
+| Page numbers | Pass | No body text within 8 pt of a page number in any of the six PDFs |
+| Build, tests, evaluation, fonts | Pass | Exit 0; 49 tests passed; Recall@10 0.875 (21 of 24), 6 of 6 abstentions; all fonts embedded; no missing glyphs; typography check passed |
+| Engagement PDFs | Pass | `docs/engagement/make_pdfs.sh` builds all six. The briefing notes fit on one A4 page in English and in Bangla. Mixed Bangla and Latin text was checked visually |
+| No en or em dashes in new text | Pass | Checked over the whole diff |

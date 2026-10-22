@@ -441,3 +441,48 @@ Oxford: Oxford Insights, 2023[2026-10-22].
 Copy hosted by the Norwegian Digitalisation Agency.
 Available:
 <https://www.digdir.no/sites/sogn/files/2024-03/GovernmentAIReadinessIndex2023.pdf>
+
+[155] THE FINANCIAL EXPRESS.
+Financing data centres in Bangladesh[EB/OL].
+Dhaka: The Financial Express, 2026-07-22[2026-10-22].
+Available:
+<https://thefinancialexpress.com.bd/views/financing-data-centres-in-bangladesh>
+
+[156] GPU POET.
+NVIDIA L40S price in September 2026[EB/OL].
+GPU Poet, 2026[2026-10-22].
+Average of the three lowest daily marketplace listings.
+Available:
+<https://gpupoet.com/gpu/learn/price/september-2026/nvidia-l40s>
+
+[157] CDW.
+PNY NVIDIA L40S graphic card, 48 GB GDDR6 (NVL40STCGPU-KIT)[EB/OL].
+Vernon Hills, IL: CDW, 2026[2026-10-22].
+Retail listing.
+Available:
+<https://www.cdw.com/product/pny-nvidia-quadro-l40s-graphic-card-48-gb-gddr6/7582191>
+
+[158] PC SERVER AND PARTS.
+How much does a server cost in 2026?[EB/OL].
+PC Server and Parts, 2026-08-21[2026-10-22].
+Available:
+<https://pcserverandparts.com/news/how-much-does-a-server-cost-2026/>
+
+[159] KUNERT P.
+Buy servers now or cry later: DRAM price spike threatens infrastructure budgets[EB/OL].
+London: The Register, 2026-01-14[2026-10-22].
+Available:
+<https://www.theregister.com/2026/01/14/dram_infrastructure_costs/>
+
+[160] NUCAMP.
+AI salaries in Bangladesh in 2026: what to expect by role and experience[EB/OL].
+Nucamp, 2026-04-09[2026-10-22].
+Commercial training provider; salary bands not attributed to a survey.
+Available:
+<https://www.nucamp.co/blog/coding-bootcamp-bangladesh-bgd-top-10-best-paid-tech-job-in-bangladesh-in-2025>
+
+[161] HAJEE MOHAMMAD DANESH SCIENCE AND TECHNOLOGY UNIVERSITY.
+HSTU PhD fellowship policy 2025[S/OL].
+Dinajpur: HSTU, 2026[2026-10-22].
+Available:
+<https://hstu.ac.bd/uploads/notice/2026/jan/HSTU_PhDFellowshipPolicy.pdf>

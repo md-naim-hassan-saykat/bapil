@@ -50,6 +50,7 @@ Classification: **1** authoritative source; **2** generated publication; **3** s
 | `CHANGELOG.md` | Version history | 1 | `[1.1.0] - Unreleased` | Updated |
 | `CONTRIBUTING.md`, `REPRODUCIBILITY.md`, `DATA_AND_METHODOLOGY.md`, `RELEASE_NOTES.md` | Repository documentation | 1 | New | Created |
 | `docs/*.md` | Overview, inventory, architecture, governance, evaluation, legal references, financial model, licensing, publication, source-of-truth register | 1 | New | Created |
+| `docs/engagement/` | Stakeholder engagement drafts: one-page briefing note, host and ICT Division letter templates (English and Bangla), consultation plan, PDF script | 1 | Drafts; not sent or signed | Created 22 October 2026 |
 | `LICENSE` | MIT licence for software | 1 | Current | Unchanged |
 | `SECURITY.md` | Vulnerability reporting | 1 | Current | Unchanged |
 | `blueprint/README.md`, `MANIFEST.md`, `CHANGES.md`, `QA_REPORT.md`, `SOURCES_AND_LICENCES.md` | Blueprint package documentation | 1, 2 (manifest) | Current | Updated |

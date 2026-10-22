@@ -37,9 +37,23 @@ The workbook formulas were written separately from the Python code and recalcula
 | Year 1 staffing | 75% of posts filled on average | Recruitment in months 1 to 6 |
 | Staff | About 9 FTE in Year 1, 19 by Year 3; fully loaded monthly costs above the 2026 pay-scale equivalents | Planning assumption (Section 17.5) |
 | Overheads; contingency | 10%; 5% of direct costs (10% recommended, adjusted case) | Planning assumption |
-| Equipment | Servers, two GPU inference servers and storage, priced in USD, not escalated | Planning assumption; quotations needed |
+| Equipment | Servers USD 12,000; GPU inference servers (two L40S cards) USD 25,000; storage; priced in USD, not escalated | 2026 market prices; quotations needed (see below) |
 
 Taxes and duties are not modelled separately: equipment is priced before any import duty or VAT, and the sensitivity test "equipment 25% dearer" (+Tk 0.71 crore) covers them. Known omissions (engagement events, P5 survey data, travel, open-access fees, staff computers) are excluded from the base case and included in the adjusted case (unresolved item U16). The month-6 feasibility and costing study (Decision D5) is meant to replace these assumptions with the host’s salary scale, quotations and agreed rates.
+
+### 4.1 Evidence for the unit costs (checked 22 October 2026)
+
+| Assumption | Model value | Published evidence | Source key (`refs_new.md`) | Result |
+|---|---|---|---|---|
+| ML and Bangla NLP engineers | Tk 2.0 lakh a month, fully loaded | Dhaka market pay Tk 0.7 to 1.1 lakh (mid level) and Tk 1.2 to 2.0 lakh (senior), before provident fund and bonuses (Nucamp, April 2026; commercial source, bands not attributed to a survey) | [160] | Consistent (senior band after on-costs); salary data for Bangladesh are thin |
+| Public pay comparison | Above pay scale | Ninth National Pay Scale 2026: Tk 20,000 to 156,000 basic; grade 9 (BCS entry) Tk 44,000 (The Financial Express, 31 August 2026) | [109] | Consistent: research posts deliberately above the scale |
+| Fellowship stipend | Tk 40,000 a month | HSTU PhD Fellowship Policy 2025: Tk 40,000 a month for 36 months | [161] | Equal |
+| Hosting | Tk 25 lakh rising to 38 lakh a year | One 2 to 7 kW colocation rack in a domestic facility Tk 1.0 to 1.6 lakh a month (The Financial Express, 22 July 2026) | [155] | Consistent (one rack plus bandwidth, licences, development cloud; second site from Year 2) |
+| GPU inference server | USD 25,000 | L40S card USD 7,126 (lowest marketplace average, September 2026) to USD 8,053 (CDW retail) | [156, 157] | Consistent: two cards plus a host of about USD 10,000 |
+| General server | USD 12,000 | Dell R760xs base list price USD 15,957 (August 2026); refurbished R760 from USD 5,900 | [158] | Within the market range; below list |
+| Memory-driven price rises | Not modelled | Memory component prices up 63% from September to December 2025; server prices rising (The Register, January 2026) | [159] | Risk shown in Section 17.1 |
+
+Effect of 2026 list prices on equipment (+26%): +Tk 0.74 crore on the base case. Effect of list prices plus 25% import duty and VAT: +Tk 1.63 crore, and the high scenario would be Tk 26.30 crore instead of Tk 25.25 crore. The base case was not changed because no assumption differs materially from the evidence; the list-price and duty risk is reported in Section 17.1 and Table 49. The sources were opened on 22 October 2026; the PDF and web pages may change.
 
 ## 5. Conditional national scale-up and jobs (Years 4 to 8)
 

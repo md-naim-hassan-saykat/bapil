@@ -19,9 +19,9 @@
 | Indicative budget of about Tk 20.4 crore over 36 months (base case) | Ch. 17; Tables 49, 50, 61, 62; Summary | Planning assumption (author’s analysis) | Computed by blueprint/src/budget_model.py from the assumptions in Table 49; unrounded total Tk 20.43 crore | Indicative; scenarios, sensitivity and known omissions stated (Section 17.2; Annex Q) |
 | Conditional national scale-up of about Tk 218.9 crore in Years 4 to 8, with about 118 direct posts by Year 8 | Sect. 17.3; Annex W; Tables 69, 70; Summary | Planning assumption (author’s analysis) | Computed by blueprint/src/budget_model.py (functions scaleup and jobs) with the unit costs of Table 49 | Presented as conditional and not requested; to be replaced by a costed plan in Blueprint 2.0 (U17) |
 | Grade 9 basic pay of Tk 44,000 in the Ninth National Pay Scale | Sect. 17.5; Table 49 | Source-reported fact (Cabinet approval) | The Financial Express, 31 August 2026 [100]; gazette not seen | Stated with its status |
-| Exchange rate of Tk 123.65 per US dollar on 19 October 2026 | Table 49 | Verified fact | Bangladesh Bank [99] | Basis of the planning rate of Tk 124 |
-| Inflation of 8.34% in September 2026 | Table 49 | Source-reported fact | Dhaka Tribune, 7 October 2026, reporting BBS data [101] | Basis of the 8% escalation assumption |
-| L40S GPU card about USD 7,500 | Table 49 | Source-reported fact (vendor publication) | Modal, August 2025 [102] | Price basis only; quotations required |
+| Exchange rate of Tk 123.65 per US dollar on 19 October 2026 | Table 49 | Verified fact | Bangladesh Bank [107] | Basis of the planning rate of Tk 124 |
+| Inflation of 8.34% in September 2026 | Table 49 | Source-reported fact | Dhaka Tribune, 7 October 2026, reporting BBS data [108] | Basis of the 8% escalation assumption |
+| L40S GPU card about USD 7,500 | Table 49 | Source-reported fact (vendor publication) | Modal, August 2025 [109] | Price basis only; quotations required |
 | Analyst time saved worth about Tk 0.7 crore a year | Sect. 17.5 | Author’s analysis | Calculation from [100] and assumed usage | Labelled as illustrative |
 | Steering Board, ERRC and TAB with stated powers | Ch. 5; Annexes E to G | Design recommendation | No body has been constituted or approved | Presented as proposals; status, appointment and limits in Annex S |
 | Long-term targets for 2028 to 2041 | Ch. 16; Table 46 | Proposed target | Not applicable | Indicative; revised at strategic reviews |

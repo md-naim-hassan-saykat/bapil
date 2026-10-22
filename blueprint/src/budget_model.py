@@ -54,7 +54,9 @@ LEGACY = {
 # Fully loaded monthly cost per full-time equivalent (salary, allowances, provident fund,
 # festival bonus and recruitment), in Tk, at Year 1 prices. The Ninth National Pay Scale (2026)
 # sets basic pay from Tk 20,000 (grade 20) to Tk 156,000 (grade 1); research contracts for
-# scarce AI skills are assumed to pay above the equivalent grade.
+# scarce AI skills are assumed to pay above the equivalent grade. Reported market pay for AI and
+# ML engineers in Dhaka (April 2026): Tk 70,000 to 110,000 a month at mid level and Tk 120,000
+# to 200,000 at senior level, before provident fund and bonuses (ref 160).
 MONTHLY_COST = {
     "Director and principal investigator": 300_000,
     "Policy research lead and analysts": 150_000,
@@ -84,15 +86,21 @@ FTE = {
 
 LANGUAGE_EDITORS = (1_200_000, 1_400_000, 1_400_000)   # part-time Bangla editors, Year 1 prices
 FELLOWS = (6, 10, 12)                                  # graduate fellows per year
-FELLOW_STIPEND_MONTHLY = 40_000
+FELLOW_STIPEND_MONTHLY = 40_000                        # equals a public university PhD fellowship (ref 161)
 
-# Equipment in US dollars (one-time): servers, GPU inference servers (L40S class), storage
+# Equipment in US dollars (one-time): servers, GPU inference servers (L40S class), storage.
+# Checked on 22 October 2026 (Table 49, refs 155 to 159): an L40S card cost about USD 7,100
+# (lowest marketplace average, September 2026) to USD 8,050 (retail), so two cards and a
+# GPU-capable host of about USD 10,000 make one USD 25,000 inference server; Dell's list price
+# for a base two-socket server was about USD 16,000 in August 2026. At list prices equipment
+# is about 26% higher (+Tk 0.74 crore); with import duty and VAT as well, +Tk 1.63 crore.
 EQUIPMENT_USD = (
     3 * 12_000 + 2 * 25_000 + 6_000,  # Year 1: 3 servers, 2 GPU inference servers, 20 TB storage
     2 * 12_000 + 2 * 25_000 + 8_000,  # Year 2: staging and disaster-recovery capacity
     1 * 12_000 + 12_000,              # Year 3: replacement and storage growth
 )
 HOSTING_OPS = (2_500_000, 3_200_000, 3_800_000)  # data-centre space, power, bandwidth, licences, development cloud
+# One 2 to 7 kW colocation rack in a domestic facility: about Tk 100,000 to 160,000 a month (July 2026, ref 155)
 
 # Data and annotation
 BENCHMARK_ITEMS = (500, 800, 700)       # answerable BanglaPolicyQA questions per year (2,000 by month 30)

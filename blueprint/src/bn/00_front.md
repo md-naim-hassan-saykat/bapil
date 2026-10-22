@@ -169,7 +169,7 @@ Saykat, M. N. H. (2026). *Bangladesh AI Policy & Innovation Lab (BAPIL): Technic
 | nDCG | প্রমিত হ্রাসকৃত ক্রমপুঞ্জিত লাভ (Normalised Discounted Cumulative Gain) |
 | NDMA | জাতীয় উপাত্ত ব্যবস্থাপনা আইন, ২০২৬ |
 | NLP | প্রাকৃতিক ভাষা প্রক্রিয়াকরণ |
-| NRDEX | জাতীয় দায়িত্বশীল ডেটা বিনিময় (National Responsible Data Exchange) |
+| NRDEX | জাতীয় দায়িত্বশীল ডেটা-বিনিময় (National Responsible Data Exchange) |
 | OCR | অপটিক্যাল ক্যারেক্টার রিকগনিশন |
 | PDPA | ব্যক্তিগত উপাত্ত সুরক্ষা আইন, ২০২৬ |
 | RACI | দায়িত্বপ্রাপ্ত, জবাবদিহিকারী, পরামর্শপ্রাপ্ত, অবহিত |
