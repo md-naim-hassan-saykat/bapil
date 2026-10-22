@@ -129,6 +129,41 @@ def _tests_bn(t):
     return ("%sটি পরীক্ষা উত্তীর্ণ" % bn(m.group(1))) if m else "CI দেখুন"
 
 
+# Corrections to White Paper references found when each cited entry was re-checked against its source
+# on 22 October 2026 (see blueprint/review/REFERENCE_VERIFICATION.md).
+WP_CORRECTIONS = {
+    1: [("Paris: OECD, 2019[", "Paris: OECD, 2019 (amended 2023 and 2024)[")],
+    21: [("DOI: 10.18356/237d52b2-en.", "DOI: 10.18356/9789211067286.")],
+    29: [("Perspective Plan of Bangladesh 2021–2041: Making Vision 2041 a Reality[EB/OL].",
+          "Making Vision 2041 a Reality: Perspective Plan of Bangladesh 2021–2041[EB/OL]."),
+         ("Government of Bangladesh, 2021[", "Government of Bangladesh, 2020[")],
+    30: [("Smart Bangladesh: ICT Master Plan 2041[EB/OL].", "Smart Bangladesh: ICT Master Plan 2041 (Draft)[EB/OL]."),
+         ("Government of the People’s Republic of Bangladesh, 2024[", "Government of the People’s Republic of Bangladesh, undated[")],
+    31: [("Statistical Yearbook of Bangladesh 2024[EB/OL].", "Bangladesh Statistical Yearbook 2024 (44th edition)[EB/OL].")],
+    32: [("e-Nothi Impact Study[R/OL].", "Impact and Institutionalization of the e-Nothi System in Bangladesh[R/OL]."),
+         ("Aspire to Innovate (a2i), 2025[", "Aspire to Innovate (a2i), ICT Division and UNDP, 2024[")],
+    36: [("Koica and ICT Division launch $28.5 million AI innovation project in Bangladesh[EB/OL].",
+          "KOICA and ICT Division launch $28.5million AI innovation project[EB/OL]."),
+         ("The Business Standard, 2025[", "The Business Standard, 2025-01-09[")],
+    49: [("ZEHADY A K, MAMUN S A, ISLAM N, et al.", "ZEHADY A K, DIPTA S R, ISLAM N, et al."),
+         ("BongLLaMA: LLaMA for Bangla Language[R/OL].", "BanglaLlama: LLaMA for Bangla Language (first version titled BongLLaMA)[R/OL]."),
+         ("Dhaka: BanglaLLM Research Initiative, 2024[", "Ithaca, NY: arXiv, 2024 (revised 2025)[")],
+    50: [("The Foundation Model Transparency Index v1.1: May 2024[R/OL].",
+          "The 2024 Foundation Model Transparency Index (first version titled The Foundation Model Transparency Index v1.1: May 2024)[R/OL].")],
+    57: [("E-ESTONIA BRIEFING CENTRE.", "ESTONIAN BUSINESS AND INNOVATION AGENCY (e-Estonia)."),
+         ("Tallinn: e-Estonia Briefing Centre, 2024[", "Tallinn: Estonian Business and Innovation Agency, 2024[")],
+    59: [("E-ESTONIA BRIEFING CENTRE.", "ESTONIAN BUSINESS AND INNOVATION AGENCY (e-Estonia)."),
+         ("Tallinn: e-Estonia Briefing Centre, 2024[", "Tallinn: Estonian Business and Innovation Agency, 2024[")],
+    63: [("Leading the Way into the Era of Artificial Intelligence: Final Report of Finland’s Artificial Intelligence Programme[R/OL].",
+          "Leading the Way into the Age of Artificial Intelligence: Final Report of Finland’s Artificial Intelligence Programme 2019[R/OL].")],
+    64: [("UNIVERSITY OF HELSINKI, REAKTOR.", "UNIVERSITY OF HELSINKI, MINNALEARN."),
+         ("Helsinki: University of Helsinki and Reaktor, 2024[", "Helsinki: University of Helsinki and MinnaLearn, 2024[")],
+}
+# Entries whose source page was opened and checked on 22 October 2026 (access date updated)
+WP_VERIFIED_20261022 = {4, 6, 7, 14, 17, 21, 23, 26, 29, 30, 31, 32, 33, 35, 36, 38, 46, 48, 49, 50, 51, 53, 54,
+                        57, 59, 60, 61, 64, 65, 69, 71, 78, 79, 80, 83}
+
+
 def wp_references():
     """Parse the White Paper reference list into {number: text}."""
     text = load(os.path.join(REPO, "reports", "BAPIL_White_Paper_v1.md"))
@@ -146,7 +181,18 @@ def wp_references():
     if 38 in refs:
         refs[38] = refs[38].replace("POYIADZI E", "PIKTUS A")
     # quotation-mark convention of the Blueprint (the White Paper source is not edited)
-    return {n: normalise(body) for n, body in refs.items()}
+    refs = {n: normalise(body) for n, body in refs.items()}
+    # corrections from the re-verification of 22 October 2026 (the White Paper source is not edited)
+    for key, pairs in WP_CORRECTIONS.items():
+        if key in refs:
+            for a, b in pairs:
+                if a not in refs[key]:
+                    raise SystemExit("White Paper reference [%d]: text to correct not found: %r" % (key, a))
+                refs[key] = refs[key].replace(a, b)
+    for key in WP_VERIFIED_20261022:
+        if key in refs:
+            refs[key] = re.sub(r"\[2026-0[67]-\d\d\]", "[2026-10-22]", refs[key])
+    return refs
 
 
 def new_references():

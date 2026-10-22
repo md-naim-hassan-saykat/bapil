@@ -197,3 +197,13 @@ The audit corrected legal, institutional and technical statements in both editio
 | Build, tests, evaluation, fonts, page numbers | Pass | Exit 0; 49 tests; Recall@10 0.875; all fonts embedded; no body text within 8 pt of a page number |
 | Visual inspection | Pass after fixes | Figure 16 (EN/BN): legend moved clear of the gate labels; Table 71: first column widened (a bold label touched the next column); Table 72 kept on one page |
 
+## 11. Sixth pass: re-verification of the White Paper references (22 October 2026)
+
+| Check | Result | Evidence |
+|---|---|---|
+| All 40 † references checked at source | Pass | 34 opened directly or through the official PDF, 6 confirmed through search results where the site blocks automated access (`review/REFERENCE_VERIFICATION.md`) |
+| Errors found and corrected | 13 entries | DOI, year, title, authors or publisher; applied through `WP_CORRECTIONS` in `assemble.py`, which stops the build if a corrected text is no longer found |
+| Wrong edition cited | 1 citation fixed | Table 4 cited the 2025 index for a 2023 ranking; the 2023 report (rank 82, score 46.04) is now cited |
+| Citations sequential | Pass | Blueprint 111 (both editions), Summary 10, Memo 5 |
+| Build, tests, evaluation, fonts, page numbers | Pass | Exit 0; 49 tests; Recall@10 0.875; no body text within 8 pt of a page number |
+

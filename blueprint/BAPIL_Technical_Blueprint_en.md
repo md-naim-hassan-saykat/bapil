@@ -1307,7 +1307,7 @@ python -m unittest discover -s tests
 
 ## 11.5 Demonstration Results
 
-Running `python -m bapil.cli evaluate benchmarks/demo_questions.json` over a corpus of 1,771 passages from 8 BAPIL documents gives the following results (corpus version `6a4967c46518`):
+Running `python -m bapil.cli evaluate benchmarks/demo_questions.json` over a corpus of 1,772 passages from 8 BAPIL documents gives the following results (corpus version `8ae399032269`):
 
 | Question set | Questions | Recall@5 | Recall@10 | MRR@10 | nDCG@10 |
 |---|---|---|---|---|---|
@@ -1434,7 +1434,7 @@ P1 and P2 start first because they use only P0 data, share the ingestion and sea
 
 **Objective.** Define an indicator framework and publish a first annual report with open data.
 
-* **Data.** Public indicators and surveys (P0), including international indices interpreted with care because they measure different things [5, 22, 24].
+* **Data.** Public indicators and surveys (P0), including international indices interpreted with care because they measure different things [5, 22, 94].
 * **Activities.** Indicator framework; data collection; annual report in Bangla and English; open dataset.
 * **Risk tier.** T1.
 * **Exit criterion.** First report published with open data.
@@ -1523,7 +1523,7 @@ Fairness in BAPIL’s systems has a specific, measurable meaning: the systems mu
 
 ## 13.8 Assurance for Generative Features
 
-If and when generative features are enabled (for example, rephrasing extracted sentences into a fluent summary), additional controls apply. Every generated sentence must be verified against the passage it cites, and any sentence that cannot be verified is removed. The system prompt and model version are recorded in the audit log. Red-team tests cover prompt injection through documents [91, 94], attempts to make the system produce content outside the corpus, and requests for prohibited outputs. Generated text is always labelled as such. This is BAPIL’s own rule; it is consistent with the draft national AI policy’s measures against false or misleading AI-generated content [11], but the draft, as reported, does not itself prescribe labelling. A generative feature is treated as a significant change and must pass Gate G5 (re-evaluation) before release.
+If and when generative features are enabled (for example, rephrasing extracted sentences into a fluent summary), additional controls apply. Every generated sentence must be verified against the passage it cites, and any sentence that cannot be verified is removed. The system prompt and model version are recorded in the audit log. Red-team tests cover prompt injection through documents [91, 95], attempts to make the system produce content outside the corpus, and requests for prohibited outputs. Generated text is always labelled as such. This is BAPIL’s own rule; it is consistent with the draft national AI policy’s measures against false or misleading AI-generated content [11], but the draft, as reported, does not itself prescribe labelling. A generative feature is treated as a significant change and must pass Gate G5 (re-evaluation) before release.
 
 ## 13.9 Assurance for Procured and Third-Party AI
 
@@ -1531,7 +1531,7 @@ Not every AI system used in BAPIL’s pilots will be built by BAPIL. Where a com
 
 ## 13.10 Independent Assurance and Audit
 
-Self-assessment is necessary but not sufficient. Each year, an independent reviewer audits a sample of systems against their records, gate decisions and evaluation evidence, and checks that the audit logs verify. Before any G4 adoption decision, an independent evaluation is commissioned. Over time, the controls can support certification of the management system against ISO/IEC 42001 [20] and risk management guided by ISO/IEC 23894 [95].
+Self-assessment is necessary but not sufficient. Each year, an independent reviewer audits a sample of systems against their records, gate decisions and evaluation evidence, and checks that the audit logs verify. Before any G4 adoption decision, an independent evaluation is commissioned. Over time, the controls can support certification of the management system against ISO/IEC 42001 [20] and risk management guided by ISO/IEC 23894 [96].
 
 ## 13.11 Alignment with International Frameworks
 
@@ -1559,7 +1559,7 @@ The control areas map onto the main international frameworks, which helps partne
 
 ## 14.1 A Changing Framework
 
-Bangladesh’s legal framework for data and digital technology changed substantially between late 2025 and mid-2026. The Personal Data Protection Ordinance, 2025 and the National Data Management Ordinance, 2025 (called the National Data Governance Ordinance in some English reports) were gazetted in November 2025 [6, 77]. According to secondary legal commentary, the personal data protection ordinance came into force immediately except for its sections on chief data officers, complaints and offences [39], and an 18-month compliance window was described [96]. A Personal Data Protection (Amendment) Ordinance, 2026, which changed the ordinance’s data-residency provisions, was promulgated in February 2026 [75]; commentary describes localisation as limited to critical sectors such as banking and healthcare [76]. Parliament then passed bills to convert the ordinances into Acts: the National Data Management Bill, 2026 and the Cyber Security Bill, 2026 were reported passed on 10 April 2026 [8], and the Personal Data Protection Act, 2026 was reported enacted in April 2026 [7, 38]. Parliament passed a Cyber Security (Amendment) Bill, 2026 on 30 June 2026, but reports differ on its content: one report describes provisions for the rapid removal of harmful and defamatory AI-generated content from platforms [9], while others report that the bill removed a section on online gambling [40]. In July 2026 a cabinet committee was formed to review and finalise a draft Cyber Security (Amendment) Act, 2026 [41], so a further amendment may follow.
+Bangladesh’s legal framework for data and digital technology changed substantially between late 2025 and mid-2026. The Personal Data Protection Ordinance, 2025 and the National Data Management Ordinance, 2025 (called the National Data Governance Ordinance in some English reports) were gazetted in November 2025 [6, 77]. According to secondary legal commentary, the personal data protection ordinance came into force immediately except for its sections on chief data officers, complaints and offences [39], and an 18-month compliance window was described [97]. A Personal Data Protection (Amendment) Ordinance, 2026, which changed the ordinance’s data-residency provisions, was promulgated in February 2026 [75]; commentary describes localisation as limited to critical sectors such as banking and healthcare [76]. Parliament then passed bills to convert the ordinances into Acts: the National Data Management Bill, 2026 and the Cyber Security Bill, 2026 were reported passed on 10 April 2026 [8], and the Personal Data Protection Act, 2026 was reported enacted in April 2026 [7, 38]. Parliament passed a Cyber Security (Amendment) Bill, 2026 on 30 June 2026, but reports differ on its content: one report describes provisions for the rapid removal of harmful and defamatory AI-generated content from platforms [9], while others report that the bill removed a section on online gambling [40]. In July 2026 a cabinet committee was formed to review and finalise a draft Cyber Security (Amendment) Act, 2026 [41], so a further amendment may follow.
 
 Three points of caution follow. First, these statements come from press reports and secondary commentary, which sometimes disagree; the gazetted texts were not reviewed for this edition because the official laws database does not permit automated retrieval. Second, enactment is not the same as commencement: whether each provision of the 2026 Acts is in force, and whether the deferred provisions of the ordinances were carried over, must be confirmed. Third, implementing rules may still be issued. Until the legal review confirms the position, BAPIL applies the stricter reading of each obligation.
 
@@ -1567,12 +1567,12 @@ Three points of caution follow. First, these statements come from press reports 
 
 | Instrument | Status | Relevance | Blueprint design response |
 |------------------|---------------------------------|-------------------------|----------------------|
-| Personal Data Protection Act, 2026 | Reported as enacted in April 2026 (Act 63 of 2026), replacing the Personal Data Protection Ordinance, 2025 [7, 38]. Under the Ordinance, the sections on chief data officers, complaints and offences did not commence immediately, and an 18-month compliance window was reported [39, 96]. Commencement of each provision of the Act, and any rules: to be confirmed | Consent; data-subject rights including restricting automated decisions; enhanced protection of sensitive and children’s data; chief data officers; data-residency provisions changed by the 2026 amendment ordinance [75], reportedly limited to critical sectors [76] | P0-first; DPIA before any P2 work; P3 excluded; no automated decisions about individuals; hosting in Bangladesh |
+| Personal Data Protection Act, 2026 | Reported as enacted in April 2026 (Act 63 of 2026), replacing the Personal Data Protection Ordinance, 2025 [7, 38]. Under the Ordinance, the sections on chief data officers, complaints and offences did not commence immediately, and an 18-month compliance window was reported [39, 97]. Commencement of each provision of the Act, and any rules: to be confirmed | Consent; data-subject rights including restricting automated decisions; enhanced protection of sensitive and children’s data; chief data officers; data-residency provisions changed by the 2026 amendment ordinance [75], reportedly limited to critical sectors [76] | P0-first; DPIA before any P2 work; P3 excluded; no automated decisions about individuals; hosting in Bangladesh |
 | National Data Management Act, 2026 | Bill reported passed on 10 April 2026 [8], succeeding the National Data Management Ordinance, 2025 (called the National Data Governance Ordinance in some English reports) [6, 77]. Commencement and rules: to be confirmed | National Data Management Authority; responsible data exchange (NRDEX); national source code repository (as described for the 2025 Ordinance [6]; to be confirmed in the Act) | Use NRDEX agreements where available; publish code openly; coordinate with the Authority and agency data officers |
 | Cyber Security Act, 2026 and amendment | Bill reported passed on 10 April 2026 [8]; Cyber Security (Amendment) Bill, 2026 passed on 30 June 2026; reports differ on its content (removal of harmful AI-generated content [9]; removal of an online gambling section [40]); a further draft amendment under cabinet committee review from July 2026 [41]. Content and commencement: to be confirmed | Security duties; critical information infrastructure; removal and blocking of harmful content, possibly including AI-generated content (to be confirmed) | NIST CSF 2.0 controls; incident reporting; information-integrity research kept within law and rights |
 | Right to Information Act, 2009 | In force [71] | Proactive disclosure of public information | Supports the P0 corpus and the public transparency register |
 | National AI policy | Draft 2026-2030 released for public consultation in late January 2026 [10, 11]; revised draft (version 2.0, 9 February 2026) posted on the official portal [12]; formulation by a joint team announced to begin in Q4 2026 [14]. Not adopted | Risk categories; algorithmic impact assessment; an independent oversight committee to be created by an Act of Parliament; Bangla LLM; national compute; AI innovation fund of Tk 200 to 250 crore to 2030 (proposed) [10] | Tiers aligned to draft categories; Blueprint offered as technical input; BPFM coordinated with national LLM plans |
-| Long-term national plans | Perspective Plan 2041 and ICT Master Plan 2041 [15, 16] | Long-term digital transformation goals | Roadmap aligned to the 2041 horizon and adaptable to plan revisions |
+| Long-term national plans | Perspective Plan 2021 to 2041 (2020) and the draft ICT Master Plan 2041 [15, 16] | Long-term digital transformation goals | Roadmap aligned to the 2041 horizon and adaptable to plan revisions |
 | AI Hub and AI skills project (KOICA, ICT Division, Bangladesh Hi-Tech Park Authority) | Technical assistance project proposal of Tk 192.66 crore awaiting government approval in June 2026 [53]; USD 13 million grant agreement (Record of Discussion) reported signed in August 2026 for 2026 to 2029 [55]. Not reported as operational | Skills, startups, AI adoption | Complementary division of labour; shared benchmarks and open data |
 
 *Note.* Status is taken from press reports and secondary legal commentary available in October 2026. The gazetted texts and their commencement provisions were not reviewed for this edition (Annex P) and must be confirmed by qualified Bangladesh counsel. This table is not legal advice.
@@ -1608,7 +1608,7 @@ The checklist below turns the legal requirements, as currently reported, into BA
 | Proactive disclosure (RTI Act 2009) | Publication of public information | Open publications; transparency register | Published register |
 | Draft national AI policy | Risk categories; impact assessment; oversight | Tier system aligned; impact assessments for T2 and T3 | Assessments; register |
 
-*Note.* Requirements summarise press reports and secondary legal commentary [6, 7, 8, 9, 10, 39, 75, 96]. Which provisions are in force, and from when, has not been confirmed. The legal review (Section 14.3) checks each line against the gazetted texts; until then BAPIL applies the stricter reading.
+*Note.* Requirements summarise press reports and secondary legal commentary [6, 7, 8, 9, 10, 39, 75, 97]. Which provisions are in force, and from when, has not been confirmed. The legal review (Section 14.3) checks each line against the gazetted texts; until then BAPIL applies the stricter reading.
 
 ## 14.5 Right to Information and Proactive Disclosure
 
@@ -1808,7 +1808,7 @@ The roadmap is aligned with four reference points:
 * **Perspective Plan 2041 and ICT Masterplan 2041** [15, 16]: long-term goals for a knowledge-based economy, digital government and human capital, to which horizons H3 and H4 contribute directly.
 * **National AI policy, 2026 to 2030** [10, 14]: risk categories, oversight, a Bangla-based national LLM, national compute and an innovation fund. BAPIL’s tiers, benchmark and governed corpus are designed to support these elements, and horizon H2 ends with a contribution to the next policy cycle.
 * **Data protection and data management laws, 2026** [7, 8]: the legal basis for public-data-first design and for data exchange through national infrastructure.
-* **Sustainable Development Goals** [97]: in particular goals on quality education, industry and innovation, and peace, justice and strong institutions, through capacity building, open innovation and transparent, accountable public institutions.
+* **Sustainable Development Goals** [98]: in particular goals on quality education, industry and innovation, and peace, justice and strong institutions, through capacity building, open innovation and transparent, accountable public institutions.
 
 ## 16.12 Technology Outlook
 
@@ -1868,16 +1868,16 @@ The Blueprint gives an indicative budget for the 36-month plan, built from expli
 
 | Item | Assumption | Basis |
 |-------------------|------------------------------------|-----------------------------|
-| Exchange rate | Tk 124 per US dollar | Bangladesh Bank weighted average rate of Tk 123.65 on 19 October 2026 [98] |
+| Exchange rate | Tk 124 per US dollar | Bangladesh Bank weighted average rate of Tk 123.65 on 19 October 2026 [99] |
 | Core staff | 9, 15 and 19 full-time equivalents in Years 1, 2 and 3 | Staffing plan (Table 16) |
 | Year 1 recruitment | 75% of Year 1 positions filled on average | Director appointed in months 1 to 3; other posts filled in months 2 to 6 (Section 15.4) |
-| Staff cost | Fully loaded monthly cost per FTE at Year 1 prices: Director Tk 3.0 lakh; ML and Bangla NLP engineers Tk 2.0 lakh; security engineer Tk 1.8 lakh; policy, data and platform staff Tk 1.5 lakh; governance and UX staff Tk 1.25 lakh; coordinator Tk 0.9 lakh; training officers Tk 0.8 lakh | Above the basic pay of the Ninth National Pay Scale 2026 (Tk 20,000 to Tk 156,000 per month, approved by the Cabinet in August 2026) to compete for scarce AI skills [99] |
-| Escalation | 8% a year on taka costs in Years 2 and 3 | Point-to-point inflation of 8.34% in September 2026, as reported [100]; the host’s increment rules may differ |
+| Staff cost | Fully loaded monthly cost per FTE at Year 1 prices: Director Tk 3.0 lakh; ML and Bangla NLP engineers Tk 2.0 lakh; security engineer Tk 1.8 lakh; policy, data and platform staff Tk 1.5 lakh; governance and UX staff Tk 1.25 lakh; coordinator Tk 0.9 lakh; training officers Tk 0.8 lakh | Above the basic pay of the Ninth National Pay Scale 2026 (Tk 20,000 to Tk 156,000 per month, approved by the Cabinet in August 2026) to compete for scarce AI skills [100] |
+| Escalation | 8% a year on taka costs in Years 2 and 3 | Point-to-point inflation of 8.34% in September 2026, as reported [101]; the host’s increment rules may differ |
 | Language editors and fellows | Part-time editors Tk 12 to 14 lakh a year; 6, 10 and 12 fellows at Tk 40,000 a month (Year 1 prices) | Fellowship programme (Section 6.6) |
-| Equipment | General-purpose servers USD 12,000 each; GPU inference servers (L40S class) USD 25,000 each; storage USD 6,000 to 12,000 a year | Single L40S card about USD 7,500 and a four-GPU server about USD 47,000 to 49,000 in 2025 [101] |
+| Equipment | General-purpose servers USD 12,000 each; GPU inference servers (L40S class) USD 25,000 each; storage USD 6,000 to 12,000 a year | Single L40S card about USD 7,500 and a four-GPU server about USD 47,000 to 49,000 in 2025 [102] |
 | Import duty and VAT on equipment | Not included in the base case; 25% added in the high scenario | Depends on the host’s exemption status; input required from the host’s procurement office |
 | Hosting and operations | Tk 25 lakh rising to Tk 38 lakh a year (Year 1 prices) | Data-centre space, power, bandwidth, licences and a development cloud |
-| Model adaptation compute | In kind from shared national compute; USD 20,000 of cloud GPU time on public (P0) data in the high scenario | Table 31; draft national AI policy [10]; cloud prices in [101] |
+| Model adaptation compute | In kind from shared national compute; USD 20,000 of cloud GPU time on public (P0) data in the high scenario | Table 31; draft national AI policy [10]; cloud prices in [102] |
 | Benchmark and evaluation data | 2,000 answerable questions by month 30 at Tk 2,500; 300 out-of-scope questions at Tk 600; 2,000 citation-support judgements at Tk 500 | BanglaPolicyQA plan (Section 9.4); evaluation protocol (Annex R) |
 | Training | 500 officials by month 36 at Tk 15,000 per participant, plus specialist courses | Training curriculum (Table 18) |
 | Evaluation and assurance | Legal review Tk 8 lakh; baseline study Tk 6 lakh; mid-term evaluation Tk 20 lakh; final evaluation Tk 25 lakh; annual penetration test and red team Tk 6 lakh; annual independent audit of systems Tk 3 lakh | Chapters 13, 14 and 18 |
@@ -1951,7 +1951,7 @@ Funding should be diversified, as set out in Appendix C of the White Paper: a go
 
 ## 17.5 Value for Money
 
-Value for money is assessed at the mid-term and final evaluations against the “three Es” used by regulators of public funds, with equity added as a fourth [102, 103]: economy (cost of inputs compared with benchmarks), efficiency (cost per output, such as cost per indexed document or per trained official), effectiveness (time saved and quality of evidence for users) and equity (reach beyond Dhaka and to under-served groups). Time saved by analysts is the most direct benefit, but it should not be overstated. Valuing an analyst’s time at about Tk 500 an hour (a planning assumption: grade 9 basic pay of Tk 44,000 a month [99] is about Tk 250 an hour, and the assumption allows for allowances, benefits and overheads of about the same amount), 300 users who each save four hours a month save time worth about Tk 0.7 crore a year, which is less than a tenth of the Year 3 budget. This is an illustrative calculation, not a forecast. Time savings alone therefore justify the cost only at the scale of the long-term targets (thousands of regular users, Table 46). In the short term, the case rests as much on the quality of evidence, the open benchmark and the governance methods as on time saved. The time-to-evidence studies in P1 provide the data to test this calculation.
+Value for money is assessed at the mid-term and final evaluations against the “three Es” used by regulators of public funds, with equity added as a fourth [103, 104]: economy (cost of inputs compared with benchmarks), efficiency (cost per output, such as cost per indexed document or per trained official), effectiveness (time saved and quality of evidence for users) and equity (reach beyond Dhaka and to under-served groups). Time saved by analysts is the most direct benefit, but it should not be overstated. Valuing an analyst’s time at about Tk 500 an hour (a planning assumption: grade 9 basic pay of Tk 44,000 a month [100] is about Tk 250 an hour, and the assumption allows for allowances, benefits and overheads of about the same amount), 300 users who each save four hours a month save time worth about Tk 0.7 crore a year, which is less than a tenth of the Year 3 budget. This is an illustrative calculation, not a forecast. Time savings alone therefore justify the cost only at the scale of the long-term targets (thousands of regular users, Table 46). In the short term, the case rests as much on the quality of evidence, the open benchmark and the governance methods as on time saved. The time-to-evidence studies in P1 provide the data to test this calculation.
 
 ## 17.6 Procuring AI Products and Services
 
@@ -1986,7 +1986,7 @@ The host institution manages BAPIL’s funds under its audited financial procedu
 
 ## 18.1 Theory of Change
 
-BAPIL’s theory of change [104] is straightforward: **if** officials and researchers can find authoritative evidence faster and more reliably, in Bangla and English, through tools that are transparent and governed, **then** policy analysis becomes better grounded and more efficient, and trust in public-sector AI grows.
+BAPIL’s theory of change [105] is straightforward: **if** officials and researchers can find authoritative evidence faster and more reliably, in Bangla and English, through tools that are transparent and governed, **then** policy analysis becomes better grounded and more efficient, and trust in public-sector AI grows.
 
 ![](figures/blueprint_fig14.png)
 
@@ -1994,7 +1994,7 @@ BAPIL’s theory of change [104] is straightforward: **if** officials and resear
 
 ## 18.2 Logical Framework
 
-The logical framework, following the standard logical framework approach [105], sets out the results chain with indicators, means of verification and assumptions for each level.
+The logical framework, following the standard logical framework approach [106], sets out the results chain with indicators, means of verification and assumptions for each level.
 
 **Table 53.** Logical framework (36-month programme)
 
@@ -2043,7 +2043,7 @@ The indicators at months 12 and 36 are proposed targets, consistent with the lon
 
 ## 18.5 Evaluation Questions
 
-The independent evaluations at months 18 and 36, and the long-term reviews, use the OECD DAC evaluation criteria of relevance, coherence, effectiveness, efficiency, impact and sustainability [106], adapted to BAPIL:
+The independent evaluations at months 18 and 36, and the long-term reviews, use the OECD DAC evaluation criteria of relevance, coherence, effectiveness, efficiency, impact and sustainability [107], adapted to BAPIL:
 
 * **Relevance:** do the pilots address real policy needs, as judged by host agencies and users?
 * **Coherence:** does BAPIL complement the national AI policy, the AI Hub and other programmes, or duplicate them?
@@ -2674,10 +2674,10 @@ This annex records the evidence behind the Blueprint’s key factual claims, as 
 |--------------------------|-------------|---------------|--------------------------|----------------------|
 | Bangladesh ranked 100 of 193 in the UN EGDI 2024, value 0.657 (111 in 2022) | Ch. 2; Table 4 | Verified fact | UN DESA E-Government Knowledgebase country data [26]; [5, 21] | Stated with the primary source |
 | Bangladesh designated a Tier 1 (role-model) country in the ITU Global Cybersecurity Index 2024 | Ch. 2; Table 4 | Verified fact (official national source) | BGD e-GOV CIRT [29] | Stated as reported by the national CIRT |
-| Ranked 82nd in the 2023 Government AI Readiness Index | Ch. 2; Table 4 | Source-reported fact | Sultana et al., 2026 [25]; the index report itself was not re-checked | Attributed to [25] |
+| Ranked 82nd in the 2023 Government AI Readiness Index | Ch. 2; Table 4 | Verified fact | Index report [24]: rank 82, total score 46.04; also reported by Sultana et al. [25] | Stated as fact with its source |
 | Personal Data Protection Act, 2026 reported enacted in April 2026 | Ch. 1, 2, 14; Tables 4, 42 | Source-reported fact, independently unverified | Securiti, June 2026 [7]; Azam, September 2026 [38]; title listed on the official laws database (text not reviewed) | Enactment reported; commencement marked to be confirmed |
 | National Data Management Bill, 2026 reported passed on 10 April 2026 | Ch. 2, 14; Table 42 | Source-reported fact | Daily Sun, 10 April 2026 [8] | Reported; the features described are those of the 2025 Ordinance |
-| Under the 2025 Ordinance, the sections on chief data officers, complaints and offences did not commence immediately | Ch. 8, 14; Table 42 | Source-reported fact (secondary legal commentary) | Greenleaf and Al Razi, June 2026 [39]; 18-month compliance window reported [96] | Stated for the Ordinance; the position under the Act is referred to legal counsel |
+| Under the 2025 Ordinance, the sections on chief data officers, complaints and offences did not commence immediately | Ch. 8, 14; Table 42 | Source-reported fact (secondary legal commentary) | Greenleaf and Al Razi, June 2026 [39]; 18-month compliance window reported [97] | Stated for the Ordinance; the position under the Act is referred to legal counsel |
 | Cyber Security Bill, 2026 reported passed on 10 April 2026; Cyber Security (Amendment) Bill, 2026 passed on 30 June 2026, its content reported differently; a further draft amendment under review from July 2026 | Ch. 2, 14; Table 42 | Source-reported fact; sources disagree on the amendment’s content | [8], [9], [40], [41] | Reported; content and commencement to be confirmed |
 | Draft National AI Policy 2026-2030 released for consultation in January 2026; revised draft version 2.0 dated 9 February 2026 | Ch. 1, 2, 14 | Source-reported fact (January draft); official portal listing (version 2.0; content not reviewed) | The Daily Star, 26 January 2026 [10]; The Financial Express, 29 January 2026 [11]; aipolicy.gov.bd [12] | Reported |
 | The draft policy addresses false or misleading AI-generated content; labelling of AI-generated text is BAPIL’s own rule | Sect. 13.8; Table 41; Annex N | Source-reported fact (policy content); design recommendation (labelling) | [10] and [11] describe measures against false or misleading AI-generated content; neither describes a labelling requirement | Labelling is not attributed to the draft policy |
@@ -2688,17 +2688,17 @@ This annex records the evidence behind the Blueprint’s key factual claims, as 
 | Recall@10 at least 0.85 and citation precision at least 0.95 | Ch. 9, 12; Tables 28, 38 | Proposed target | Not yet measured | Labelled as targets; measurement protocol in Annex R |
 | Indicative budget of about Tk 20.4 crore over 36 months (base case) | Ch. 17; Tables 49, 50, 61, 62; Summary | Planning assumption (author’s analysis) | Computed by blueprint/src/budget_model.py from the assumptions in Table 49; unrounded total Tk 20.43 crore | Indicative; scenarios, sensitivity and known omissions stated (Section 17.2; Annex Q) |
 | Conditional national scale-up of about Tk 218.9 crore in Years 4 to 8, with about 118 direct posts by Year 8 | Sect. 17.3; Annex W; Tables 69, 70; Summary | Planning assumption (author’s analysis) | Computed by blueprint/src/budget_model.py (functions scaleup and jobs) with the unit costs of Table 49 | Presented as conditional and not requested; to be replaced by a costed plan in Blueprint 2.0 (U17) |
-| Grade 9 basic pay of Tk 44,000 in the Ninth National Pay Scale | Sect. 17.5; Table 49 | Source-reported fact (Cabinet approval) | The Financial Express, 31 August 2026 [99]; gazette not seen | Stated with its status |
-| Exchange rate of Tk 123.65 per US dollar on 19 October 2026 | Table 49 | Verified fact | Bangladesh Bank [98] | Basis of the planning rate of Tk 124 |
-| Inflation of 8.34% in September 2026 | Table 49 | Source-reported fact | Dhaka Tribune, 7 October 2026, reporting BBS data [100] | Basis of the 8% escalation assumption |
-| L40S GPU card about USD 7,500 | Table 49 | Source-reported fact (vendor publication) | Modal, August 2025 [101] | Price basis only; quotations required |
-| Analyst time saved worth about Tk 0.7 crore a year | Sect. 17.5 | Author’s analysis | Calculation from [99] and assumed usage | Labelled as illustrative |
+| Grade 9 basic pay of Tk 44,000 in the Ninth National Pay Scale | Sect. 17.5; Table 49 | Source-reported fact (Cabinet approval) | The Financial Express, 31 August 2026 [100]; gazette not seen | Stated with its status |
+| Exchange rate of Tk 123.65 per US dollar on 19 October 2026 | Table 49 | Verified fact | Bangladesh Bank [99] | Basis of the planning rate of Tk 124 |
+| Inflation of 8.34% in September 2026 | Table 49 | Source-reported fact | Dhaka Tribune, 7 October 2026, reporting BBS data [101] | Basis of the 8% escalation assumption |
+| L40S GPU card about USD 7,500 | Table 49 | Source-reported fact (vendor publication) | Modal, August 2025 [102] | Price basis only; quotations required |
+| Analyst time saved worth about Tk 0.7 crore a year | Sect. 17.5 | Author’s analysis | Calculation from [100] and assumed usage | Labelled as illustrative |
 | Steering Board, ERRC and TAB with stated powers | Ch. 5; Annexes E to G | Design recommendation | No body has been constituted or approved | Presented as proposals; status, appointment and limits in Annex S |
 | Long-term targets for 2028 to 2041 | Ch. 16; Table 46 | Proposed target | Not applicable | Indicative; revised at strategic reviews |
 
 *Note.* Status labels are defined in Annex P. Web sources were consulted on 21 and 22 October 2026. The official Laws of Bangladesh database does not permit automated retrieval, so statutory texts were not reviewed directly.
 
-**What was and was not checked.** The full English text, all tables and figures, the budget model and the reference implementation were reviewed, and the Bangla edition was compared with the English edition for numbers, dates, tables and cross-references. External claims were checked against the sources listed in the references, using official sources where they could be retrieved. The official Laws of Bangladesh database does not permit automated retrieval, so statutory texts, gazette notifications and commencement provisions were not read directly; the legal descriptions in Chapter 14 remain summaries of secondary sources and require confirmation by qualified Bangladesh counsel. The references taken from the White Paper bibliography (marked † in the reference list) were not re-verified item by item. Records of this evidence check are kept in the project repository.
+**What was and was not checked.** The full English text, all tables and figures, the budget model and the reference implementation were reviewed, and the Bangla edition was compared with the English edition for numbers, dates, tables and cross-references. External claims were checked against the sources listed in the references, using official sources where they could be retrieved. The official Laws of Bangladesh database does not permit automated retrieval, so statutory texts, gazette notifications and commencement provisions were not read directly; the legal descriptions in Chapter 14 remain summaries of secondary sources and require confirmation by qualified Bangladesh counsel. The references taken from the White Paper bibliography (marked † in the reference list) were re-checked against their sources on 22 October 2026; errors of title, year, DOI, authors or publisher in 13 of them were corrected in this Blueprint, a citation to the wrong edition of the Government AI Readiness Index was replaced, and the 2023 ranking was confirmed in the index report itself. Records of this evidence check are kept in the project repository.
 
 \newpage
 
@@ -2749,7 +2749,7 @@ This annex turns the thresholds of Table 28 into a measurement procedure. It dis
 | Measure | Definition | Test set and sample | Method and responsibility | Decision rule |
 |---------------|--------------------------|----------------------|--------------------|----------------------|
 | Recall@10, MRR@10, nDCG@10 | For each answerable question, a hit if any gold passage is in the top 10; Recall@10 is the mean of hits. MRR and nDCG as in Table 28 | Private test split: at least 300 answerable questions in v0 (about 150 per language) and 1,200 in v1 | Automatic scoring by the evaluation team; script, outputs, configuration and corpus version archived | Threshold met if the point estimate meets it and the 95% interval is no wider than plus or minus 5 points (about 4 points at n = 300); otherwise annotate more items before deciding |
-| Citation precision | Share of sampled answer sentences whose cited passage fully supports the sentence (supported, partly supported or not supported; only supported counts) | 400 answer sentences drawn at random from test answers, at least 200 per language | Two trained annotators who do not know the system version; a third adjudicates; Cohen’s kappa [107] reported (target 0.70 or more) | Point estimate at least 0.95 (interval about plus or minus 2 points at n = 400) |
+| Citation precision | Share of sampled answer sentences whose cited passage fully supports the sentence (supported, partly supported or not supported; only supported counts) | 400 answer sentences drawn at random from test answers, at least 200 per language | Two trained annotators who do not know the system version; a third adjudicates; Cohen’s kappa [108] reported (target 0.70 or more) | Point estimate at least 0.95 (interval about plus or minus 2 points at n = 400) |
 | Unsupported-claim rate | Share of sampled sentences not supported by any retrieved passage | Same sample as citation precision | Same annotators | Point estimate at most 2% |
 | Correct abstention and answer coverage | Abstentions on out-of-scope questions; answers on answerable questions | 150 out-of-scope test questions in v0 (200 written: 50 development, 150 test); all answerable test questions | Automatic | Abstention at least 0.90 (interval about plus or minus 5 points); coverage at least 0.80 |
 | Language parity | Recall@10 for English minus Recall@10 for Bangla, with a bootstrap interval | Per-language test subsets | Automatic | Reported in v0, where the interval is too wide to decide; release condition from v1 onwards |
@@ -2762,7 +2762,7 @@ This annex turns the thresholds of Table 28 into a measurement procedure. It dis
 | Time to evidence | Median time to find and cite authoritative evidence on matched tasks, with and without the tool | At least 20 analysts, 6 tasks each, crossover design | Evaluation team; independent evaluator at month 18 | Effect and interval reported; informs G4, no pass mark at G3 |
 | Reproducibility | Re-scoring of archived outputs on the private split | Every release used for a gate decision | Independent evaluator before G4 | Re-scored metrics within 1 point of those reported |
 
-*Note.* Intervals are 95% Wilson [108] or bootstrap [109] intervals. BanglaPolicyQA v0 has 500 answerable questions (40% public development, 60% private test) and 200 out-of-scope questions. Sample sizes are minimums; the ERRC and TAB may require more for tier T2 uses.
+*Note.* Intervals are 95% Wilson [109] or bootstrap [110] intervals. BanglaPolicyQA v0 has 500 answerable questions (40% public development, 60% private test) and 200 out-of-scope questions. Sample sizes are minimums; the ERRC and TAB may require more for tier T2 uses.
 
 Five rules apply to every evaluation:
 
@@ -2896,7 +2896,7 @@ This annex lists every item that could not be resolved with the evidence availab
 | U8 | BanglaPolicyQA does not exist; all quality targets are unmeasured | Work not yet funded | Work package 6 | Benchmark v0 at MS3; first results at G2 | Ch. 9, 12; Tables 28, 54, 63 |
 | U9 | No host institution, governance body or government focal point | Decisions not yet taken | ICT Division; host | Decisions D2 and D4; MS1 | Ch. 5; Annexes S, T |
 | U10 | No funding requested or approved | Proposal stage | ICT Division or partners | Decisions D2 and D5; before month 1 | Ch. 15, 17; Table 65 |
-| U11 | References marked † (taken from the White Paper bibliography) not re-verified item by item | Inherited from the White Paper | Author | Check before Blueprint 1.1 | References |
+| U11 | References marked † (taken from the White Paper bibliography) to be re-checked against their sources | Resolved on 22 October 2026: all 40 checked; 13 corrected in this Blueprint (title, year, DOI, authors or publisher) | Author | Closed; carry the corrections into the next White Paper version | References |
 | U12 | Gazette status of the Ninth National Pay Scale | Only Cabinet approval reported | Feasibility study | D1.3 | Sect. 17.5; Table 49 |
 | U13 | 2023 AI readiness rank taken from a secondary source | Index report not checked | Author | Check before Blueprint 1.1 | Sect. 2.2; Table 4 |
 | U14 | Independent copy-edit of the Bangla edition by a professional Bangla editor | Editorial review done by the author; no independent editor yet | Author | Before Blueprint 1.1 | Bangla edition |
@@ -2916,7 +2916,7 @@ The 36-month budget of about Tk 20.4 crore is often compared with much larger na
 
 The 36-month budget is built from a staffing plan (Table 16) and unit costs (Table 49), not from a target amount. Its size reflects three constraints. First, the main cost and the main bottleneck is people: machine learning and Bangla language engineers are scarce, and a new lab can recruit only a few in its first year (Section 17.2). Second, nothing about the lab’s usefulness has yet been measured; staged funding lets the authorities pay for evidence before scale, with each further tranche following a gate decision (Table 48). Third, BAPIL should not duplicate larger programmes with different aims.
 
-Three reference points are often cited. The draft national AI policy proposes an AI Innovation Fund of Tk 200 to 250 crore [10]; it is not an approved allocation, and BAPIL could apply to such a fund for specific pilots but is not a substitute for it. The KOICA-supported AI hub project (Tk 192.66 crore, July 2026 to December 2029) is a skills and startup programme: it aims to train 865 AI and digital technology specialists, with an 80% employment target, and to support 30 startups [53]. The proposed national budget for 2026-27 allocated Tk 500 crore to AI, electronics and youth innovation, mainly for startups and entrepreneurship [110]. BAPIL’s task is different: evidence and assurance for public policy. These programmes and BAPIL can reinforce each other. BAPIL’s posts and fellowships are a natural destination for graduates of national AI skills programmes, and BAPIL’s benchmarks, evaluation methods and transparency register can serve the AI tools those programmes help to build.
+Three reference points are often cited. The draft national AI policy proposes an AI Innovation Fund of Tk 200 to 250 crore [10]; it is not an approved allocation, and BAPIL could apply to such a fund for specific pilots but is not a substitute for it. The KOICA-supported AI hub project (Tk 192.66 crore, July 2026 to December 2029) is a skills and startup programme: it aims to train 865 AI and digital technology specialists, with an 80% employment target, and to support 30 startups [53]. The proposed national budget for 2026-27 allocated Tk 500 crore to AI, electronics and youth innovation, mainly for startups and entrepreneurship [111]. BAPIL’s task is different: evidence and assurance for public policy. These programmes and BAPIL can reinforce each other. BAPIL’s posts and fellowships are a natural destination for graduates of national AI skills programmes, and BAPIL’s benchmarks, evaluation methods and transparency register can serve the AI tools those programmes help to build.
 
 ## W.2 Jobs and Skills
 
@@ -3010,7 +3010,7 @@ References are numbered in the order in which they are first cited, and only ref
 
 [1] † ORGANISATION FOR ECONOMIC CO-OPERATION AND DEVELOPMENT (OECD).
 Recommendation of the Council on Artificial Intelligence (OECD/LEGAL/0449)[EB/OL].
-Paris: OECD, 2019[2026-06-17].
+Paris: OECD, 2019 (amended 2023 and 2024)[2026-06-17].
 Available: 
 <https://legalinstruments.oecd.org/en/instruments/oecd-legal-0449>
 
@@ -3022,21 +3022,21 @@ Available:
 
 [3] † NATIONAL INSTITUTE OF STANDARDS AND TECHNOLOGY (NIST).
 Artificial Intelligence Risk Management Framework (AI RMF 1.0) (NIST AI 100-1)[EB/OL].
-Gaithersburg, MD: National Institute of Standards and Technology, 2023[2026-06-17].
+Gaithersburg, MD: National Institute of Standards and Technology, 2023[2026-10-22].
 DOI: 10.6028/NIST.AI.100-1.
 Available: 
 <https://doi.org/10.6028/NIST.AI.100-1>
 
 [4] † WORLD BANK.
 Global Program on GovTech & Public Sector Innovation[EB/OL].
-Washington, DC: World Bank, 2024[2026-06-17].
+Washington, DC: World Bank, 2024[2026-10-22].
 Available:
 <https://www.worldbank.org/en/programs/govtech>
 
 [5] † UNITED NATIONS.
 United Nations E-Government Survey 2024: Accelerating Digital Transformation for Sustainable Development - With the Addendum on Artificial Intelligence[M/OL].
-New York: United Nations, 2024[2026-06-17].
-DOI: 10.18356/237d52b2-en.
+New York: United Nations, 2024[2026-10-22].
+DOI: 10.18356/9789211067286.
 Available: 
 <https://www.un-ilibrary.org/content/books/9789211067286>
 
@@ -3095,20 +3095,20 @@ Available:
 <https://observerbd.com/news/587314>
 
 [15] † GENERAL ECONOMICS DIVISION (GED), PLANNING COMMISSION, GOVERNMENT OF BANGLADESH.
-Perspective Plan of Bangladesh 2021–2041: Making Vision 2041 a Reality[EB/OL].
-Dhaka: Planning Commission, Government of Bangladesh, 2021[2026-06-18].
+Making Vision 2041 a Reality: Perspective Plan of Bangladesh 2021–2041[EB/OL].
+Dhaka: Planning Commission, Government of Bangladesh, 2020[2026-10-22].
 Available:
 <https://oldweb.lged.gov.bd/uploadeddocument/unitpublication/1/1049/vision%202021-2041.pdf>
 
 [16] † INFORMATION AND COMMUNICATION TECHNOLOGY (ICT) DIVISION, GOVERNMENT OF THE PEOPLE’S REPUBLIC OF BANGLADESH.
-Smart Bangladesh: ICT Master Plan 2041[EB/OL].
-Dhaka: ICT Division, Government of the People’s Republic of Bangladesh, 2024[2026-06-18].
+Smart Bangladesh: ICT Master Plan 2041 (Draft)[EB/OL].
+Dhaka: ICT Division, Government of the People’s Republic of Bangladesh, undated[2026-10-22].
 Available: 
 <https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-moa/2024/12/a01255f61d29443eabbf948ef97c290e.pdf>
 
 [17] † ORGANISATION FOR ECONOMIC CO-OPERATION AND DEVELOPMENT (OECD).
 OECD AI Principles[EB/OL].
-Paris: OECD AI Policy Observatory, 2024[2026-06-17].
+Paris: OECD AI Policy Observatory, 2024[2026-10-22].
 Available:
 <https://oecd.ai/en/ai-principles>
 
@@ -3116,7 +3116,7 @@ Available:
 Regulation (EU) 2024/1689 of the European Parliament and of the Council
 of 13 June 2024 laying down harmonised rules on artificial intelligence
 (Artificial Intelligence Act)[EB/OL].
-Official Journal of the European Union, 2024[2026-06-17].
+Official Journal of the European Union, 2024[2026-10-22].
 Available: 
 <https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng>
 
@@ -3140,7 +3140,7 @@ Available:
 
 [22] † INTERNATIONAL TELECOMMUNICATION UNION (ITU).
 Global Cybersecurity Index 2024[R/OL].
-Geneva: International Telecommunication Union, 2024[2026-06-18].
+Geneva: International Telecommunication Union, 2024[2026-10-22].
 Available: 
 <https://www.itu.int/en/ITU-D/Cybersecurity/Pages/global-cybersecurity-index.aspx>
 
@@ -3150,15 +3150,16 @@ Dhaka: The Daily Star, 2026-03-03[2026-10-21].
 Available:
 <https://www.thedailystar.net/supplements-0/news/safeguarding-cyberspace-bangladeshs-preparedness-today-4120311>
 
-[24] † OXFORD INSIGHTS. 
-Government AI Readiness Index 2025[EB/OL].
-Oxford: Oxford Insights, 2025[2026-06-18].
-Available: 
-<https://oxfordinsights.com/ai-readiness/government-ai-readiness-index-2025>
+[24] OXFORD INSIGHTS.
+Government AI Readiness Index 2023[R/OL].
+Oxford: Oxford Insights, 2023[2026-10-22].
+Copy hosted by the Norwegian Digitalisation Agency.
+Available:
+<https://www.digdir.no/sites/sogn/files/2024-03/GovernmentAIReadinessIndex2023.pdf>
 
 [25] † SULTANA S, SAMAD R, HAQUE M, SULTANA Z, JAHANGIR Z, HOSSAIN B M M, NOMAN R M, AHMED S I.
 Bangladesh AI Readiness: Perspectives from the Academia, Industry, and Government[EB/OL].
-Ithaca, NY: arXiv, 2026[2026-06-19].
+Ithaca, NY: arXiv, 2026[2026-10-22].
 DOI: 10.48550/arXiv.2601.12934.
 Available: 
 <https://arxiv.org/abs/2601.12934>
@@ -3170,14 +3171,14 @@ Available:
 <https://publicadministration.un.org/egovkb/en-us/Data/Country-Information/id/14-Bangladesh>
 
 [27] † ASPIRE TO INNOVATE (a2i).
-e-Nothi Impact Study[R/OL].
-Dhaka: Aspire to Innovate (a2i), 2025[2026-06-18].
+Impact and Institutionalization of the e-Nothi System in Bangladesh[R/OL].
+Dhaka: Aspire to Innovate (a2i), ICT Division and UNDP, 2024[2026-10-22].
 Available: 
 <https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-a2i/2024/12/8e6eee520a6b44e4a3cbf8724d74e7c4.pdf>
 
 [28] † GOVERNMENT OF THE PEOPLE’S REPUBLIC OF BANGLADESH.
 Bangladesh National Portal[EB/OL].
-Dhaka: Government of the People’s Republic of Bangladesh, 2026[2026-06-19].
+Dhaka: Government of the People’s Republic of Bangladesh, 2026[2026-10-22].
 Available:
 <https://bangladesh.gov.bd>
 
@@ -3188,48 +3189,48 @@ Available:
 <https://cirt.gov.bd/who-we-are>
 
 [30] † BANGLADESH BUREAU OF STATISTICS (BBS), STATISTICS AND INFORMATICS DIVISION, MINISTRY OF PLANNING, GOVERNMENT OF THE PEOPLE’S REPUBLIC OF BANGLADESH.
-Statistical Yearbook of Bangladesh 2024[EB/OL].
-Dhaka: Bangladesh Bureau of Statistics, 2025[2026-06-18].
+Bangladesh Statistical Yearbook 2024 (44th edition)[EB/OL].
+Dhaka: Bangladesh Bureau of Statistics, 2025[2026-10-22].
 Available: 
 <https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-bbs/2024/12/eca101901c5f41329d08ce583e842be8.pdf>
 
 [31] † BANGLADESH OPEN DATA.
 Bangladesh Open Data Portal[EB/OL].
-Dhaka: Government of the People’s Republic of Bangladesh, 2024[2026-06-18].
+Dhaka: Government of the People’s Republic of Bangladesh, 2024[2026-10-22].
 Available: 
 <https://data.gov.bd>
 
 [32] † MANAGEMENT AND RESOURCES DEVELOPMENT INITIATIVE (MRDI).
 Open Data Country Report: Bangladesh[R/OL].
-Dhaka: Management and Resources Development Initiative (MRDI), 2021[2026-06-19].
+Dhaka: Management and Resources Development Initiative (MRDI), 2021[2026-10-22].
 Available: 
 <https://mrdibd.org/wp-content/uploads/2021/07/Open_Data_Country_Report_Bangladesh.pdf>
 
 [33] † BRAC INSTITUTE OF GOVERNANCE AND DEVELOPMENT (BIGD).
 Report on the State of Public Data in Bangladesh: Insights from Expert Consultations[R/OL].
-Dhaka: BRAC Institute of Governance and Development (BIGD), BRAC University, 2025[2026-06-19].
+Dhaka: BRAC Institute of Governance and Development (BIGD), BRAC University, 2025[2026-10-22].
 Available: 
 <https://bigd.bracu.ac.bd/wp-content/uploads/2025/01/Report-on-the-State-of-Public-Data-in-Bangladesh_20.1.2025.pdf>
 
 [34] † BHATTACHARJEE A, HASAN T, AHMAD W, MUBASSHIR K S, ISLAM M S, IQBAL A, RAHMAN M S, SHAHRIYAR R.
 BanglaBERT: Language Model Pretraining and Benchmarks for Low-Resource Language Understanding Evaluation in Bangla[C/OL]//
 Findings of the Association for Computational Linguistics: NAACL 2022.
-Seattle, WA, USA: Association for Computational Linguistics, 2022: 1318–1327[2026-06-18].
+Seattle, WA, USA: Association for Computational Linguistics, 2022: 1318–1327[2026-10-22].
 DOI: 10.18653/v1/2022.findings-naacl.98.
 Available:
 <https://aclanthology.org/2022.findings-naacl.98>
 
 [35] † BHATTACHARJEE A, HASAN T, AHMAD W U, et al.
 BanglaNLG and BanglaT5: Benchmarks and Resources for Evaluating Low-Resource Natural Language Generation in Bangla[C/OL]//Findings of the Association for Computational Linguistics: EACL 2023.
-Dubrovnik, Croatia: Association for Computational Linguistics, 2023: 726–735[2026-06-18].
+Dubrovnik, Croatia: Association for Computational Linguistics, 2023: 726–735[2026-10-22].
 DOI: 10.18653/v1/2023.findings-eacl.54.
 Available: 
 <https://aclanthology.org/2023.findings-eacl.54>
 
-[36] † ZEHADY A K, MAMUN S A, ISLAM N, et al.
-BongLLaMA: LLaMA for Bangla Language[R/OL].
+[36] † ZEHADY A K, DIPTA S R, ISLAM N, et al.
+BanglaLlama: LLaMA for Bangla Language (first version titled BongLLaMA)[R/OL].
 arXiv:2410.21200.
-Dhaka: BanglaLLM Research Initiative, 2024[2026-06-18].
+Ithaca, NY: arXiv, 2024 (revised 2025)[2026-10-22].
 DOI: 10.48550/arXiv.2410.21200.
 Available: 
 <https://arxiv.org/abs/2410.21200>
@@ -3268,80 +3269,80 @@ Available:
 
 [42] † INFOCOMM MEDIA DEVELOPMENT AUTHORITY (IMDA), PERSONAL DATA PROTECTION COMMISSION (PDPC).
 Model AI Governance Framework (2nd Edition)[EB/OL].
-Singapore: Infocomm Media Development Authority and Personal Data Protection Commission, 2020[2026-06-18].
+Singapore: Infocomm Media Development Authority and Personal Data Protection Commission, 2020[2026-10-22].
 Available: 
 <https://www.imda.gov.sg/-/media/imda/files/infocomm-media-landscape/sg-digital/tech-pillars/artificial-intelligence/second-edition-of-the-model-ai-governance-framework.pdf>
 
 [43] † GOVERNMENT OF THE REPUBLIC OF KOREA.
 National Strategy for Artificial Intelligence[EB/OL].
-Seoul: Government of the Republic of Korea, 2019[2026-06-18].
+Seoul: Government of the Republic of Korea, 2019[2026-10-22].
 Available: 
 <https://wp.oecd.ai/app/uploads/2021/12/Korea_National_Strategy_for_Artificial_Intelligence_2019.pdf>
 
-[44] † E-ESTONIA BRIEFING CENTRE.
+[44] † ESTONIAN BUSINESS AND INNOVATION AGENCY (e-Estonia).
 e-Governance[EB/OL].
-Tallinn: e-Estonia Briefing Centre, 2024[2026-06-18].
+Tallinn: Estonian Business and Innovation Agency, 2024[2026-10-22].
 Available:
 <https://e-estonia.com/solutions/e-governance>
 
 [45] † DEPARTMENT FOR SCIENCE, INNOVATION AND TECHNOLOGY (DSIT), GOVERNMENT OF THE UNITED KINGDOM.
 AI Opportunities Action Plan[EB/OL].
-London: UK Government, 2025[2026-06-18].
+London: UK Government, 2025[2026-10-22].
 ISBN: 978-1-5286-5362-6.
 Available: 
 <https://www.gov.uk/government/publications/ai-opportunities-action-plan/ai-opportunities-action-plan>
 
 [46] † GOVERNMENT DIGITAL SERVICE (GDS), GOVERNMENT OF THE UNITED KINGDOM.
 Artificial Intelligence Playbook for the UK Government[EB/OL].
-London: Government Digital Service, 2025[2026-06-18].
+London: Government Digital Service, 2025[2026-10-22].
 Available: 
 <https://www.gov.uk/government/publications/ai-playbook-for-the-uk-government/artificial-intelligence-playbook-for-the-uk-government-html>
 
 [47] † MINISTRY OF ECONOMIC AFFAIRS AND EMPLOYMENT OF FINLAND.
-Leading the Way into the Era of Artificial Intelligence: Final Report of Finland’s Artificial Intelligence Programme[R/OL].
+Leading the Way into the Age of Artificial Intelligence: Final Report of Finland’s Artificial Intelligence Programme 2019[R/OL].
 Helsinki: Ministry of Economic Affairs and Employment, 2019[2026-06-18].
 Available: 
 <https://julkaisut.valtioneuvosto.fi/handle/10024/161688>
 
 [48] † GOVERNMENT OF THE UNITED ARAB EMIRATES.
 UAE National Strategy for Artificial Intelligence 2031[EB/OL].
-Abu Dhabi: Government of the United Arab Emirates, 2017[2026-06-18].
+Abu Dhabi: Government of the United Arab Emirates, 2017[2026-10-22].
 Available: 
 <https://staticcdn.mbzuai.ac.ae/mbzuaiwpprd01/2022/07/UAE-National-Strategy-for-Artificial-Intelligence-2031.pdf>
 
 [49] † TREASURY BOARD OF CANADA SECRETARIAT (TBS).
 Algorithmic Impact Assessment (AIA) Tool[EB/OL].
-Ottawa: Government of Canada, 2026[2026-06-18].
+Ottawa: Government of Canada, 2026[2026-10-22].
 Available: 
 <https://www.canada.ca/en/government/system/digital-government/digital-government-innovations/responsible-use-ai/algorithmic-impact-assessment.html>
 
 [50] † INFOCOMM MEDIA DEVELOPMENT AUTHORITY (IMDA), AI VERIFY FOUNDATION (AIVF).
 Model AI Governance Framework for Generative AI: Fostering a Trusted Ecosystem[EB/OL].
-Singapore: Infocomm Media Development Authority and AI Verify Foundation, 2024[2026-06-18].
+Singapore: Infocomm Media Development Authority and AI Verify Foundation, 2024[2026-10-22].
 Available: 
 <https://aiverifyfoundation.sg/wp-content/uploads/2024/05/Model-AI-Governance-Framework-for-Generative-AI-May-2024-1-1.pdf>
 
-[51] † E-ESTONIA BRIEFING CENTRE.
+[51] † ESTONIAN BUSINESS AND INNOVATION AGENCY (e-Estonia).
 X-Road: The Backbone of e-Estonia[EB/OL].
-Tallinn: e-Estonia Briefing Centre, 2024[2026-06-18].
+Tallinn: Estonian Business and Innovation Agency, 2024[2026-10-22].
 Available:
 <https://e-estonia.com/solutions/interoperability-services/x-road>
 
-[52] † UNIVERSITY OF HELSINKI, REAKTOR.
+[52] † UNIVERSITY OF HELSINKI, MINNALEARN.
 Elements of AI: A Free Online Course on Artificial Intelligence[EB/OL].
-Helsinki: University of Helsinki and Reaktor, 2024[2026-06-18].
+Helsinki: University of Helsinki and MinnaLearn, 2024[2026-10-22].
 Available: 
 <https://www.elementsofai.com>
 
 [53] † THE BUSINESS STANDARD (TBS).
 Govt to establish AI hub with Tk192.66cr project backed by Koica[EB/OL].
-Dhaka: The Business Standard, 2026[2026-06-18].
+Dhaka: The Business Standard, 2026[2026-10-22].
 Available:
 <https://www.tbsnews.net/tech/govt-establish-ai-hub-tk19266cr-project-backed-koica-1462206>
 
 [54] † THE BUSINESS STANDARD (TBS).
-Koica and ICT Division launch $28.5 million AI innovation project in Bangladesh[EB/OL].
-Dhaka: The Business Standard, 2025[2026-06-18].
+KOICA and ICT Division launch $28.5million AI innovation project[EB/OL].
+Dhaka: The Business Standard, 2025-01-09[2026-10-22].
 Available:
 <https://www.tbsnews.net/foreign-policy/koica-and-ict-division-launch-285million-ai-innovation-project-1039121>
 
@@ -3502,7 +3503,7 @@ Available:
 
 [80] † LEWIS P, PEREZ E, PIKTUS A, et al.
 Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks[C/OL]//Advances in Neural Information Processing Systems 33 (NeurIPS 2020).
-Red Hook, NY: Curran Associates, Inc., 2020[2026-06-18].
+Red Hook, NY: Curran Associates, Inc., 2020[2026-10-22].
 DOI: 10.48550/arXiv.2005.11401.
 Available: 
 <https://papers.nips.cc/paper/2020/hash/6b493230205f780e1bc26945df7481e5-Abstract.html>
@@ -3542,8 +3543,8 @@ Available:
 <https://doi.org/10.1145/3287560.3287596>
 
 [86] † BOMMASANI R, KLYMAN K, KAPOOR S, et al.
-The Foundation Model Transparency Index v1.1: May 2024[R/OL].
-Stanford, CA: Stanford Center for Research on Foundation Models (CRFM), Stanford University, 2024[2026-06-18].
+The 2024 Foundation Model Transparency Index (first version titled The Foundation Model Transparency Index v1.1: May 2024)[R/OL].
+Stanford, CA: Stanford Center for Research on Foundation Models (CRFM), Stanford University, 2024[2026-10-22].
 DOI: 10.48550/arXiv.2407.12929.
 Available: 
 <https://arxiv.org/abs/2407.12929>
@@ -3571,7 +3572,7 @@ Available:
 
 [90] † NATIONAL INSTITUTE OF STANDARDS AND TECHNOLOGY (NIST).
 Cybersecurity Framework (CSF) 2.0[EB/OL].
-Gaithersburg, MD: National Institute of Standards and Technology, 2024[2026-06-17].
+Gaithersburg, MD: National Institute of Standards and Technology, 2024[2026-10-22].
 DOI: 10.6028/NIST.CSWP.29.
 Available: 
 <https://doi.org/10.6028/NIST.CSWP.29>
@@ -3595,108 +3596,114 @@ Semantic Versioning 2.0.0[EB/OL].
 Available:
 <https://semver.org/spec/v2.0.0.html>
 
-[94] GRESHAKE K, ABDELNABI S, MISHRA S, et al.
+[94] † OXFORD INSIGHTS. 
+Government AI Readiness Index 2025[EB/OL].
+Oxford: Oxford Insights, 2025[2026-10-22].
+Available: 
+<https://oxfordinsights.com/ai-readiness/government-ai-readiness-index-2025>
+
+[95] GRESHAKE K, ABDELNABI S, MISHRA S, et al.
 Not What You’ve Signed Up For: Compromising Real-World LLM-Integrated Applications with Indirect Prompt Injection[C]//Proceedings of the 16th ACM Workshop on Artificial Intelligence and Security (AISec ’23).
 New York: ACM, 2023: 79–90.
 DOI: 10.1145/3605764.3623985.
 Available:
 <https://doi.org/10.1145/3605764.3623985>
 
-[95] INTERNATIONAL ORGANIZATION FOR STANDARDIZATION (ISO), INTERNATIONAL ELECTROTECHNICAL COMMISSION (IEC).
+[96] INTERNATIONAL ORGANIZATION FOR STANDARDIZATION (ISO), INTERNATIONAL ELECTROTECHNICAL COMMISSION (IEC).
 ISO/IEC 23894:2023 Information technology: Artificial intelligence: Guidance on risk management[S].
 Geneva: ISO, 2023[2026-10-20].
 Available:
 <https://www.iso.org/standard/77304.html>
 
-[96] KHAN M T I.
+[97] KHAN M T I.
 The Personal Data Protection Ordinance 2025: What Every Bangladeshi Business Must Do Before the Clock Runs Out[EB/OL].
 Dhaka: Sovereign Chambers of Law, 2026-04-23[2026-10-22].
 Available:
 <https://bd-scl.com/insights/personal-data-protection-ordinance-2025-compliance.html>
 
-[97] † UNITED NATIONS.
+[98] † UNITED NATIONS.
 The Sustainable Development Goals Report 2024[R].
 New York: United Nations, 2024.
 ISBN: 978-92-1-358975-5.
 Available: 
 <https://unstats.un.org/sdgs/report/2024>
 
-[98] BANGLADESH BANK.
+[99] BANGLADESH BANK.
 Exchange Rate of Taka[EB/OL].
 Dhaka: Bangladesh Bank, 2026[2026-10-21].
 Available:
 <https://www.bb.org.bd/en/index.php/econdata/exchangerate>
 
-[99] THE FINANCIAL EXPRESS.
+[100] THE FINANCIAL EXPRESS.
 Cabinet approves 2026 pay scale, sets basic salaries from Tk 20,000 to Tk 156,000[EB/OL].
 Dhaka: The Financial Express, 2026-08-31[2026-10-21].
 Available:
 <https://thefinancialexpress.com.bd/national/cabinet-approves-2026-pay-scale-sets-basic-salaries-from-tk-20000-to-tk-156000>
 
-[100] DHAKA TRIBUNE.
+[101] DHAKA TRIBUNE.
 Inflation rises in September[EB/OL].
 Dhaka: Dhaka Tribune, 2026-10-07[2026-10-22].
 Available:
 <https://www.dhakatribune.com/business/421534/inflation-rises-in-september>
 
-[101] MODAL LABS.
+[102] MODAL LABS.
 How much does it cost to run NVIDIA L40S GPUs in 2025?[EB/OL].
 San Francisco, CA: Modal Labs, 2025-08-12[2026-10-21].
 Available:
 <https://modal.com/blog/nvidia-l40s-price-article>
 
-[102] DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID).
+[103] DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID).
 DFID’s Approach to Value for Money (VfM)[R/OL].
 London: DFID, 2011-07-01[2026-10-22].
 Available:
 <https://www.gov.uk/government/publications/dfids-approach-to-value-for-money-vfm>
 
-[103] INDEPENDENT COMMISSION FOR AID IMPACT (ICAI).
+[104] INDEPENDENT COMMISSION FOR AID IMPACT (ICAI).
 ICAI Study of Value for Money and Effectiveness: Terms of Reference[R/OL].
 London: ICAI, 2011[2026-10-22].
 Available:
 <https://icai.independent.gov.uk/wp-content/uploads/Report-1-VfM-and-effectiveness-ToR1.pdf>
 
-[104] UNITED NATIONS DEVELOPMENT GROUP (UNDG).
+[105] UNITED NATIONS DEVELOPMENT GROUP (UNDG).
 Theory of Change: UNDAF Companion Guidance[R/OL].
 New York: UNDG, 2017[2026-10-22].
 Available:
 <https://unsdg.un.org/sites/default/files/UNDG-UNDAF-Companion-Pieces-7-Theory-of-Change.pdf>
 
-[105] EUROPEAN COMMISSION (EUROPEAID).
+[106] EUROPEAN COMMISSION (EUROPEAID).
 Aid Delivery Methods, Volume 1: Project Cycle Management Guidelines[R/OL].
 Brussels: European Commission, 2004[2026-10-22].
 Available:
 <https://capacity4dev.europa.eu/library/aid-delivery-methods-project-cycle-management-guidelines-europeaid-2004_en>
 
-[106] OECD DAC NETWORK ON DEVELOPMENT EVALUATION.
+[107] OECD DAC NETWORK ON DEVELOPMENT EVALUATION.
 Better Criteria for Better Evaluation: Revised Evaluation Criteria Definitions and Principles for Use[R/OL].
 Paris: Organisation for Economic Co-operation and Development, 2019[2026-10-21].
 Available:
 <https://www.oecd.org/en/publications/better-criteria-for-better-evaluation_15a9c26b-en.html>
 
-[107] COHEN J.
+[108] COHEN J.
 A Coefficient of Agreement for Nominal Scales[J].
 Educational and Psychological Measurement, 1960, 20(1): 37–46.
 DOI: 10.1177/001316446002000104.
 Available:
 <https://doi.org/10.1177/001316446002000104>
 
-[108] WILSON E B.
+[109] WILSON E B.
 Probable Inference, the Law of Succession, and Statistical Inference[J].
 Journal of the American Statistical Association, 1927, 22(158): 209–212.
 DOI: 10.1080/01621459.1927.10502953.
 Available:
 <https://doi.org/10.1080/01621459.1927.10502953>
 
-[109] EFRON B, TIBSHIRANI R J.
+[110] EFRON B, TIBSHIRANI R J.
 An Introduction to the Bootstrap[M].
 New York: Chapman & Hall, 1993.
 DOI: 10.1201/9780429246593.
 Available:
 <https://doi.org/10.1201/9780429246593>
 
-[110] THE BUSINESS STANDARD.
+[111] THE BUSINESS STANDARD.
 Budget FY27: Govt proposes Tk500cr for AI sector[EB/OL].
 Dhaka: The Business Standard, 2026-06-11[2026-10-22].
 Available:

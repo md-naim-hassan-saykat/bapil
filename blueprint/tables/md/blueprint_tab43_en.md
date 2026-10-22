@@ -13,4 +13,4 @@
 | Proactive disclosure (RTI Act 2009) | Publication of public information | Open publications; transparency register | Published register |
 | Draft national AI policy | Risk categories; impact assessment; oversight | Tier system aligned; impact assessments for T2 and T3 | Assessments; register |
 
-*Note.* Requirements summarise press reports and secondary legal commentary [6, 7, 8, 9, 10, 39, 75, 96]. Which provisions are in force, and from when, has not been confirmed. The legal review (Section 14.3) checks each line against the gazetted texts; until then BAPIL applies the stricter reading.
+*Note.* Requirements summarise press reports and secondary legal commentary [6, 7, 8, 9, 10, 39, 75, 97]. Which provisions are in force, and from when, has not been confirmed. The legal review (Section 14.3) checks each line against the gazetted texts; until then BAPIL applies the stricter reading.
