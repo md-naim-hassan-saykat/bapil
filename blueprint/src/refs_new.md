@@ -264,3 +264,9 @@ A Statute Without a Floor: Data Protection and the Case for Constitutional Priva
 Dhaka: Bangladesh Law Digest, 2026-08-18[2026-10-22].
 Available:
 <https://bdlawdigest.org/personal-data-protection-act-2026-bangladesh.html>
+
+[127] THE BUSINESS STANDARD.
+Budget FY27: Govt proposes Tk500cr for AI sector[EB/OL].
+Dhaka: The Business Standard, 2026-06-11[2026-10-22].
+Available:
+<https://www.tbsnews.net/node/1459971>

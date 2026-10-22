@@ -51,6 +51,8 @@ rm -f implementation/build_tests.log
   echo "warning: evaluation step failed; Chapter 11 will show a placeholder"
 
 python3 "$SRC/assemble.py"
+# key -> published reference number, for records that cite the source keys
+python3 "$SRC/refnum.py" --key-table "$ROOT/blueprint/review/REFERENCE_NUMBERS.md"
 
 # PDF metadata (title, author, subject, keywords) from blueprint/src/metadata.json, written to a
 # small YAML file: pandoc always reads files as UTF-8, whereas command-line values depend on the locale.

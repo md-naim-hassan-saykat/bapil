@@ -22,11 +22,11 @@ Prepared for repository release v1.1.0. The tag, the GitHub release and the Blue
 
 ### Added
 
-- **Bangladesh AI Policy & Innovation Lab (BAPIL): Technical Blueprint**, Version 1.0 (October 2026), in English (authoritative) and Bangla (বাংলাদেশ এআই পলিসি অ্যান্ড ইনোভেশন ল্যাব (BAPIL): টেকনিক্যাল ব্লুপ্রিন্ট): five parts, 21 chapters, 22 annexes, 68 tables and 15 figures. PDFs: `releases/v1.1/BAPIL_Technical_Blueprint_en.pdf` and `releases/v1.1/BAPIL_Technical_Blueprint_bn.pdf`.
+- **Bangladesh AI Policy & Innovation Lab (BAPIL): Technical Blueprint**, Version 1.0 (October 2026), in English (authoritative) and Bangla (বাংলাদেশ এআই পলিসি অ্যান্ড ইনোভেশন ল্যাব (BAPIL): টেকনিক্যাল ব্লুপ্রিন্ট): five parts, 21 chapters, 23 annexes, 70 tables and 15 figures. PDFs: `releases/v1.1/BAPIL_Technical_Blueprint_en.pdf` and `releases/v1.1/BAPIL_Technical_Blueprint_bn.pdf`.
 - Blueprint Summary, Version 1.0, in English and Bangla (`releases/v1.1/BAPIL_Blueprint_Summary_en.pdf`, `..._bn.pdf`).
 - Decision Memo to the authorities, in English and Bangla (`releases/v1.1/BAPIL_Decision_Memo_en.pdf`, `..._bn.pdf`), a separate document that is not part of the Blueprint.
 - Editable source package in `blueprint/`: Markdown masters, table data, TikZ figure sources, the budget model with CSV outputs and an editable workbook with formulas (`blueprint/data/BAPIL_Budget_Model.xlsx`), LaTeX headers, Pandoc filter, metadata and one build script.
-- Fifteen figures and sixty-eight tables as LaTeX, PDF and PNG (and Markdown for tables), in English and Bangla.
+- Fifteen figures and seventy tables as LaTeX, PDF and PNG (and Markdown for tables), in English and Bangla.
 - Reference implementation (`implementation/`, version 0.1.0): Bangla normalisation, bilingual BM25 search, cited extractive answers with abstention, risk tiers, AI system register and transparency export, evaluation metrics, hash-chained audit log, CLI and JSON API, with 49 unit tests (run locally; no public CI record yet).
 - JSON Schemas for policy-document metadata, AI system records and risk questionnaires; example records for pilots P1 to P6.
 - Bilingual demonstration question set and evaluation report (development results only).
@@ -34,6 +34,8 @@ Prepared for repository release v1.1.0. The tag, the GitHub release and the Blue
 - Zenodo metadata draft, description and GitHub-to-Zenodo release checklist for the Blueprint record.
 - Security policy (`SECURITY.md`).
 - Internal review records in `blueprint/review/` (earlier audit and adversarial review, change record, October 2026 project audit, cross-document reconciliation, Markdown validation); these are not part of the publication.
+- Annex W of the Blueprint (Tables 69 and 70): jobs and skills created by the 36-month plan, and a costed, conditional national scale-up for Years 4 to 8 (about Tk 218.9 crore; about 118 direct posts by Year 8), shown for information and not requested; summarised in Section 17.3, the front matter, the Summary and the Decision Memo.
+- References numbered in order of first citation in every document (previously the White Paper numbers 1 to 83 were kept, so the list jumped, for example from 1 to 4); entries from the White Paper bibliography are marked with a dagger; `blueprint/review/REFERENCE_NUMBERS.md` maps the new numbers to the source keys.
 
 ### Corrected
 

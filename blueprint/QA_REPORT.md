@@ -6,8 +6,8 @@ First checked on 22 October 2026 on the build of commit `0f74dc7`; checked again
 
 | File | Pages | Notes |
 |---|---:|---|
-| `releases/v1.1/BAPIL_Technical_Blueprint_en.pdf` | 139 | Letter size, PDF 1.5, all fonts embedded as subsets |
-| `releases/v1.1/BAPIL_Technical_Blueprint_bn.pdf` | 134 | Same |
+| `releases/v1.1/BAPIL_Technical_Blueprint_en.pdf` | 141 | Letter size, PDF 1.5, all fonts embedded as subsets |
+| `releases/v1.1/BAPIL_Technical_Blueprint_bn.pdf` | 136 | Same |
 | `releases/v1.1/BAPIL_Blueprint_Summary_en.pdf` | 11 | Same |
 | `releases/v1.1/BAPIL_Blueprint_Summary_bn.pdf` | 11 | Same |
 | `releases/v1.1/BAPIL_Decision_Memo_en.pdf` | 2 | Separate document, not part of the Blueprint |
@@ -162,3 +162,17 @@ The audit corrected legal, institutional and technical statements in both editio
 | Markdown and links | Pass after fixes | `review/MARKDOWN_VALIDATION_REPORT.md` |
 | Clean-clone rebuild | Pass | Commit `085dea3` cloned into an empty directory; all generated tables, figures, CSV files, assembled Markdown, PDFs and the evaluation report deleted; full build run (4 minutes). Tables, figures, CSV files and the six assembled Markdown files byte-identical to the committed ones; the six PDFs identical byte for byte apart from the 16-byte PDF file identifier (`/ID`) |
 | Rebuild from the Zenodo source archive | Pass | `BAPIL_Technical_Blueprint_source.zip` and `bapil-reference-implementation-0.1.0.zip` (from `make_zenodo_package.sh`) unzipped into an empty directory; `blueprint/build_blueprint.sh` completed and produced the six PDFs, identical apart from `/ID`. Before this audit the archive lacked `make_manifest.py` and three of the four `reports/*.md` files used by the demonstration corpus, so it could not have reproduced the PDFs; both were added |
+
+## 8. Third pass: reference numbering and Annex W (22 October 2026)
+
+| Check | Result | Evidence |
+|---|---|---|
+| References sequential | Pass | In all six documents the citations, read in order, are 1, 2, 3 ... with no gaps, and every cited number is listed (Blueprint 84 in both editions, Summary 10, Memo 5); the build stops if a citation exceeds the list or a Bangla edition cites a reference the English does not |
+| Annex W figures | Pass | Tables 69 and 70 and every figure quoted in Section 17.3, the front matter, the Summary and the Memo come from `budget_model.py`; totals 25.50, 36.08, 45.26, 51.11, 60.90 = 218.85; posts 58 to 118 |
+| English and Bangla numbers in Annex W and Section 17.3 | Pass | Multi-digit numbers identical (Bangla digits converted) |
+| Full build, tests, evaluation | Pass | Exit 0; 49 tests; Recall@10 0.875 unchanged and consistent with Table 60 |
+| Fonts, glyphs, links | Pass | All fonts embedded; no missing characters; 333 (EN) and 328 (BN) internal links resolve |
+| Body text clear of page numbers | Pass | No page within 8 pt |
+| Short pages | Pass, minor | As in section 7; the list of tables now ends with four entries in English |
+| Visual inspection | Pass | Annex W and Tables 69 and 70 in both editions; reference list pages with † marks |
+

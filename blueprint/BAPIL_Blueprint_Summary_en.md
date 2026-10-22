@@ -24,7 +24,7 @@ October 2026
 
 ---
 
-*This summary presents the main design choices, safeguards, delivery plan, strategic roadmap to 2041 and decisions set out in the BAPIL Technical Blueprint (five parts, 21 chapters, 22 annexes). Figure and table numbers follow the full Blueprint. The Blueprint and this summary are independent research documents and do not represent any official position. BAPIL is a proposal: no institution has been created and no funding has been approved.*
+*This summary presents the main design choices, safeguards, delivery plan, strategic roadmap to 2041 and decisions set out in the BAPIL Technical Blueprint (five parts, 21 chapters, 23 annexes). Figure and table numbers follow the full Blueprint. The Blueprint and this summary are independent research documents and do not represent any official position. BAPIL is a proposal: no institution has been created and no funding has been approved.*
 
 \newpage
 
@@ -32,7 +32,7 @@ October 2026
 
 The Bangladesh AI Policy & Innovation Lab (BAPIL) is a proposed independent research and policy-intelligence platform that helps Bangladesh use artificial intelligence for evidence-based policymaking, responsible AI governance, Bangla-language technology and public-sector innovation. The White Paper (Version 1.0) set out the vision; the Technical Blueprint turns it into a buildable plan.
 
-\looseness=-1 The timing is favourable. As reported, Bangladesh converted its 2025 data ordinances into the Personal Data Protection Act, 2026 and the National Data Management Act, 2026 in April 2026 (which provisions are in force is still to be confirmed), converted its cyber-security ordinance into an Act and amended it (the content of the amendment is reported differently), released a draft National AI Policy 2026-2030 for consultation in January 2026 and a revised draft in February 2026, and announced that drafting of a national AI policy would begin in the fourth quarter of 2026 [85, 86, 87, 88, 91, 123, 125]. A concrete, open blueprint with working code can be a technical input to that process.
+\looseness=-1 The timing is favourable. As reported, Bangladesh converted its 2025 data ordinances into the Personal Data Protection Act, 2026 and the National Data Management Act, 2026 in April 2026 (which provisions are in force is still to be confirmed), converted its cyber-security ordinance into an Act and amended it (the content of the amendment is reported differently), released a draft National AI Policy 2026-2030 for consultation in January 2026 and a revised draft in February 2026, and announced that drafting of a national AI policy would begin in the fourth quarter of 2026 [1, 2, 3, 4, 5, 6, 7]. A concrete, open blueprint with working code can be a technical input to that process.
 
 ![](figures/blueprint_fig01.png){width=68%}
 
@@ -125,7 +125,7 @@ The core service is a **bilingual, citation-grounded policy search and answer sy
 
 *Figure 13. Strategic roadmap, 2026 to 2041 and beyond: horizons, workstreams and review points.*
 
-The 36-month plan is the first step of a longer strategy that connects BAPIL’s pilots to the national AI policy cycle and to the Perspective Plan 2041 and ICT Masterplan 2041 [29, 30, 88].
+The 36-month plan is the first step of a longer strategy that connects BAPIL’s pilots to the national AI policy cycle and to the Perspective Plan 2041 and ICT Masterplan 2041 [4, 8, 9].
 
 * **H0 Foundation (Q4 2026):** publish the Blueprint and code; brief the authorities; offer input to national AI policy drafting; select a host institution.
 * **H1 Short term (2027 to 2028):** prove value with public data; P1 and P2 pass their pilot gates; about 300 officials trained; mid-term evaluation.
@@ -154,6 +154,8 @@ Targets are indicative and revised at fixed reviews (2027, 2028, 2029, 2030, 203
 # 9. People, Resources and Financing
 
 The core team grows from about 9 to 19 full-time equivalents over three years. Pilot computing needs are modest (two to three servers and two GPU inference servers, doubled in Year 2 for staging and recovery), with any model adaptation using shared national compute. An indicative budget built from stated assumptions comes to about Tk 20.4 crore over 36 months (Tk 4.7, 7.5 and 8.2 crore in Years 1 to 3, about USD 1.65 million), including 8% annual escalation, host overheads and a 5% contingency, with people at about half of the total. Low and high scenarios give about Tk 17.9 and 25.3 crore. Some costs are not yet included (engagement events, survey data collection, travel, open-access fees and staff computers); with an allowance for them and a 10% contingency, the estimate is about Tk 22.2 crore. It is a planning estimate, not approved funding; the feasibility and costing study in month 6 confirms or replaces each assumption. Funding is diversified, with a growing share of core public funding and agency service agreements over time; no single non-government funder provides more than 30% of the budget. Model procurement clauses protect data, guarantee the right to evaluate and prevent lock-in.
+
+The first stage is deliberately small: it is costed from a staffing plan, and a new lab could not recruit or spend a much larger sum well before its usefulness has been measured. It is also distinct from the Tk 192.66 crore KOICA-supported AI hub project, a skills programme that aims to train 865 specialists, whose graduates BAPIL’s posts and fellowships could employ [10]. If the pilots pass Gate G4 and the final evaluation is positive, a costed national scale-up in Years 4 to 8 (four divisional university nodes, analysts in agencies, a Bangla language-data team, more fellowships and training for 5,000 more officials) would cost about Tk 218.9 crore and create about 118 direct posts by Year 8, or about Tk 239 crore over eight years with the 36-month plan (Blueprint Annex W). It is not requested now; each tranche would follow a gate decision.
 
 # 10. Reference Implementation and Research
 
@@ -185,61 +187,67 @@ The repository contains a tested, dependency-free Python implementation of the c
 
 # References
 
-Reference numbers [1] to [83] follow the bibliography of the BAPIL White Paper (Version 1.0); new references begin at [84]. Only references cited in this document are listed.
+References are numbered in the order in which they are first cited, and only references cited in this document are listed. Entries marked † are taken from the bibliography of the BAPIL White Paper (Version 1.0).
 
-[29] GENERAL ECONOMICS DIVISION (GED), PLANNING COMMISSION, GOVERNMENT OF BANGLADESH.
-Perspective Plan of Bangladesh 2021–2041: Making Vision 2041 a Reality[EB/OL].
-Dhaka: Planning Commission, Government of Bangladesh, 2021[2026-06-18].
-Available:
-<https://oldweb.lged.gov.bd/uploadeddocument/unitpublication/1/1049/vision%202021-2041.pdf>
-
-[30] INFORMATION AND COMMUNICATION TECHNOLOGY (ICT) DIVISION, GOVERNMENT OF THE PEOPLE’S REPUBLIC OF BANGLADESH.
-Smart Bangladesh: ICT Master Plan 2041[EB/OL].
-Dhaka: ICT Division, Government of the People’s Republic of Bangladesh, 2024[2026-06-18].
-Available: 
-<https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-moa/2024/12/a01255f61d29443eabbf948ef97c290e.pdf>
-
-[85] SECURITI.
+[1] SECURITI.
 An Overview of Bangladesh’s Personal Data Protection Act, 2026[EB/OL].
 San Jose, CA: Securiti, 2026[2026-10-20].
 Available:
 <https://securiti.ai/bangladesh-personal-data-protection-act-overview/>
 
-[86] DAILY SUN.
+[2] DAILY SUN.
 91 bills passed in parliament to convert ordinances into laws[EB/OL].
 Dhaka: Daily Sun, 2026[2026-10-20].
 Available:
 <https://www.daily-sun.com/bangladesh/868072/91-bills-passed-in-parliament-to-convert-ordinances-into-laws>
 
-[87] DHAKA TRIBUNE.
+[3] DHAKA TRIBUNE.
 Cyber security amendment bill, 2026 passes in parliament[EB/OL].
 Dhaka: Dhaka Tribune, 2026-06-30[2026-10-20].
 Available:
 <https://www.dhakatribune.com/bangladesh/parliament/414016/cyber-security-amendment-bill-2026-passes-in>
 
-[88] THE DAILY STAR.
+[4] THE DAILY STAR.
 Draft AI policy targets innovation, better public services[EB/OL].
 Dhaka: The Daily Star, 2026-01-26[2026-10-20].
 Available:
 <https://www.thedailystar.net/business/economy/news/draft-ai-policy-targets-innovation-better-public-services-4090431>
 
-[91] THE DAILY OBSERVER.
+[5] THE DAILY OBSERVER.
 Rehan Asif Asad outlines govt’s five priorities for ICT, telecom[EB/OL].
 Dhaka: The Daily Observer, 2026-08-10[2026-10-20].
 Available:
 <https://observerbd.com/news/587314>
 
-[123] THE FINANCIAL EXPRESS.
+[6] THE FINANCIAL EXPRESS.
 Bangladesh amends cybersecurity law, drops online gambling clause[EB/OL].
 Dhaka: The Financial Express, 2026-06-30[2026-10-22].
 Available:
 <https://thefinancialexpress.com.bd/sci-tech/bangladesh-amends-cybersecurity-law-drops-online-gambling-clause>
 
-[125] AI POLICY FOR BANGLADESH (aipolicy.gov.bd).
+[7] AI POLICY FOR BANGLADESH (aipolicy.gov.bd).
 Bangladesh National AI Policy 2026-2030, Draft v2, February 9, 2026[EB/OL].
 Dhaka, 2026-02-09[2026-10-22].
 Available:
 <https://aipolicy.gov.bd/docs/national-ai-policy-bangladesh-2026-2030-draft-v2.0.pdf>
+
+[8] † GENERAL ECONOMICS DIVISION (GED), PLANNING COMMISSION, GOVERNMENT OF BANGLADESH.
+Perspective Plan of Bangladesh 2021–2041: Making Vision 2041 a Reality[EB/OL].
+Dhaka: Planning Commission, Government of Bangladesh, 2021[2026-06-18].
+Available:
+<https://oldweb.lged.gov.bd/uploadeddocument/unitpublication/1/1049/vision%202021-2041.pdf>
+
+[9] † INFORMATION AND COMMUNICATION TECHNOLOGY (ICT) DIVISION, GOVERNMENT OF THE PEOPLE’S REPUBLIC OF BANGLADESH.
+Smart Bangladesh: ICT Master Plan 2041[EB/OL].
+Dhaka: ICT Division, Government of the People’s Republic of Bangladesh, 2024[2026-06-18].
+Available: 
+<https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-moa/2024/12/a01255f61d29443eabbf948ef97c290e.pdf>
+
+[10] † THE BUSINESS STANDARD (TBS).
+Govt to establish AI hub with Tk192.66cr project backed by Koica[EB/OL].
+Dhaka: The Business Standard, 2026[2026-06-18].
+Available:
+<https://www.tbsnews.net/tech/govt-establish-ai-hub-tk19266cr-project-backed-koica-1462206>
 
 
 ---

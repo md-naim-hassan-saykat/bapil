@@ -16,6 +16,7 @@ import re
 import sys
 
 from typography import normalise
+import refnum
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 BP = os.path.dirname(HERE)            # blueprint/
@@ -155,37 +156,45 @@ def new_references():
     return refs
 
 
-def cited_numbers(text):
-    nums = set()
-    for grp in re.findall(r"\[(\d[\d,\s\-]*)\]", text):
-        for part in grp.split(","):
-            part = part.strip()
-            if not part:
-                continue
-            if "-" in part:
-                a, b = part.split("-", 1)
-                if a.strip().isdigit() and b.strip().isdigit():
-                    nums.update(range(int(a), int(b) + 1))
-            elif part.isdigit():
-                nums.add(int(part))
-    return nums
+def all_references():
+    refs = wp_references()
+    refs.update(new_references())
+    return refs
 
 
-def reference_section(text, lang):
-    allrefs = wp_references()
-    allrefs.update(new_references())
-    nums = sorted(n for n in cited_numbers(text) if n in allrefs)
-    missing = sorted(n for n in cited_numbers(text) if n not in allrefs and n < 200)
+def reference_mapping(name, lang, text):
+    """{source key: published number}; see refnum.py."""
+    allrefs = all_references()
+    body = text.split("{{REFERENCES}}")[0]
+    order = refnum.first_citation_order(body)
+    missing = sorted(k for k in order if k not in allrefs)
     if missing:
-        sys.stderr.write("WARNING: cited but undefined references: %s\n" % missing)
+        raise SystemExit("%s: cited but undefined reference keys: %s" % (name, missing))
+    if name.startswith("BAPIL_Technical_Blueprint"):
+        mapping = refnum.blueprint_map()
+        extra = sorted(set(order) - set(mapping))
+        if extra:
+            raise SystemExit("%s cites references the English edition does not: %s" % (name, extra))
+        return mapping
+    return refnum.make_map(order)
+
+
+def reference_section(mapping, lang):
+    allrefs = all_references()
+    wp = any(k <= refnum.WP_LAST for k in mapping)
     if lang == "en":
-        head = ("# References\n\nReference numbers [1] to [83] follow the bibliography of the BAPIL White Paper (Version 1.0); "
-                "new references begin at [84]. Only references cited in this document are listed.\n")
+        head = ("# References\n\nReferences are numbered in the order in which they are first cited, and only references "
+                "cited in this document are listed.%s\n" % (" Entries marked † are taken from the bibliography of the BAPIL "
+                "White Paper (Version 1.0)." if wp else ""))
     else:
-        head = ("# তথ্যসূত্র\n\n[1] থেকে [83] পর্যন্ত তথ্যসূত্রের নম্বর BAPIL হোয়াইট পেপারের (সংস্করণ ১.০) তথ্যসূত্র-তালিকা অনুসরণ করে; "
-                "নতুন তথ্যসূত্র [84] থেকে শুরু। শুধু এই নথিতে উদ্ধৃত তথ্যসূত্র তালিকাভুক্ত করা হয়েছে। "
-                "আন্তর্জাতিক ব্যবহারের সুবিধার্থে তথ্যসূত্রগুলো মূল ভাষায় রাখা হয়েছে।\n")
-    entries = [allrefs[n] for n in nums]
+        head = ("# তথ্যসূত্র\n\nতথ্যসূত্রগুলো প্রথম উদ্ধৃতির ক্রমে নম্বরযুক্ত, এবং শুধু এই নথিতে উদ্ধৃত তথ্যসূত্র তালিকাভুক্ত করা হয়েছে। "
+                "%sআন্তর্জাতিক ব্যবহারের সুবিধার্থে তথ্যসূত্রগুলো মূল ভাষায় রাখা হয়েছে।\n"
+                % ("† চিহ্নিত তথ্যসূত্রগুলো BAPIL হোয়াইট পেপারের (সংস্করণ ১.০) তথ্যসূত্র-তালিকা থেকে নেওয়া। " if wp else ""))
+    entries = []
+    for key, num in sorted(mapping.items(), key=lambda kv: kv[1]):
+        body = re.sub(r"^\[\d+\]\s*", "", allrefs[key])
+        mark = "† " if key <= refnum.WP_LAST else ""
+        entries.append("[%d] %s%s" % (num, mark, body))
     if len(entries) > 40:   # the Blueprint only: tighter spacing between entries keeps the long list compact
         head += "\n\\setlength{\\parskip}{3pt plus 1pt minus 1pt}\n"
     return head + "\n" + "\n\n".join(entries) + "\n"
@@ -254,6 +263,10 @@ def assemble(name, lang, meta):
     text = expand_includes(load(src))
     if name.startswith("BAPIL_Technical_Blueprint"):
         check_coverage(text, name)
+    # sequential reference numbers: citations in the text are rewritten here; the Blueprint's tables
+    # were renumbered by make_tables.py with the same mapping, so they are inserted afterwards
+    mapping = reference_mapping(name, lang, text)
+    text = refnum.apply_map(text, mapping)
     text = re.sub(r"<!-- TABLE:(\d\d) -->",
                   lambda m: load(os.path.join(BP, "tables", "md", "blueprint_tab%s_%s.md" % (m.group(1), lang))).strip(),
                   text)
@@ -266,8 +279,12 @@ def assemble(name, lang, meta):
         text = text.replace("{{EVAL_RESULTS}}", eval_block(lang))
         check_eval_claim(lang)
     if "{{REFERENCES}}" in text:
+        n = len(mapping)
         body = text.split("{{REFERENCES}}")[0]
-        text = text.replace("{{REFERENCES}}", reference_section(body, lang))
+        bad = sorted(k for k in refnum.first_citation_order(body) if k > n)
+        if bad:
+            raise SystemExit("%s: citation numbers beyond the reference list: %s" % (name, bad))
+        text = text.replace("{{REFERENCES}}", reference_section(mapping, lang))
     if lang == "bn":
         text = bn_citations(text)
     leftover = re.findall(r"\{\{[A-Z_]+\}\}|<!-- (?:TABLE|FIGURE):", text)

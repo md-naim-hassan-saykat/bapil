@@ -40,3 +40,15 @@ The workbook formulas were written separately from the Python code and recalcula
 | Equipment | Servers, two GPU inference servers and storage, priced in USD, not escalated | Planning assumption; quotations needed |
 
 Taxes and duties are not modelled separately: equipment is priced before any import duty or VAT, and the sensitivity test "equipment 25% dearer" (+Tk 0.71 crore) covers them. Known omissions (engagement events, P5 survey data, travel, open-access fees, staff computers) are excluded from the base case and included in the adjusted case (unresolved item U16). The month-6 feasibility and costing study (Decision D5) is meant to replace these assumptions with the host’s salary scale, quotations and agreed rates.
+
+## 5. Conditional national scale-up and jobs (Years 4 to 8)
+
+Added on 22 October 2026 at the author's request, after a comparison with the Tk 192.66 crore KOICA-supported AI hub project. The 36-month budget is unchanged; the scale-up is a separate, conditional envelope that applies only if the pilots pass Gate G4, the final evaluation is positive and the authorities decide to scale up (Blueprint Section 17.3, Annex W, Tables 69 and 70). It is not part of the funding requested.
+
+| Tk crore | Year 4 | Year 5 | Year 6 | Year 7 | Year 8 | Total |
+|---|---:|---:|---:|---:|---:|---:|
+| Scale-up total | 25.50 | 36.08 | 45.26 | 51.11 | 60.90 | 218.85 |
+
+With the 36-month plan (20.43), the eight-year total is about Tk 239 crore. Direct posts (full-time equivalents) rise from 9, 15 and 19 in Years 1 to 3 to 58, 88, 105, 114 and 118 in Years 4 to 8; graduate fellows from 6, 10 and 12 to 20, 30 and then 40 a year; officials trained reach about 5,500 in total.
+
+Method: the same fully loaded unit costs as the 36-month model (Table 49), escalated by 8% a year from Year 1; 10% host overheads and a 10% contingency. Components and quantities (central lab 25 to 45 posts, four divisional university nodes of five posts plus Tk 25 lakh running costs each, 6 to 20 analysts placed in agencies, up to 30 annotators at Tk 45,000 a month with supervisors, national inference platform hardware priced in USD, Tk 50 lakh per agency joining federated search, governance and two independent evaluations) are set in `blueprint/src/budget_model.py` (`SU_*` constants, functions `scaleup` and `jobs`) and exported to `blueprint/data/scaleup_by_category.csv` and `jobs_and_skills.csv`. They are planning assumptions made before any pilot result (unresolved item U17); the Excel workbook covers the 36-month model only.

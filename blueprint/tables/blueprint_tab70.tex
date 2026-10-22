@@ -1,0 +1,58 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\setmainfont{Latin Modern Roman}[Ligatures=TeXOff]
+\XeTeXgenerateactualtext=1
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali, NFSSFamily=bnfam]
+\usepackage[Latin,Bengali]{ucharclasses}
+% group-free font switching (as in header-common.tex): robust inside braces, cells and quotes
+\makeatletter
+\def\BN@saved{\rmdefault}
+\def\BN@bn{bnfam}
+\newcommand\BNin{\edef\BN@tmp{\f@family}\ifx\BN@tmp\BN@bn\else\let\BN@saved\BN@tmp\fi\fontfamily{bnfam}\selectfont}
+\newcommand\BNout{\fontfamily{\BN@saved}\selectfont}
+\makeatother
+\setTransitionsFor{Bengali}{\BNin}{\BNout}
+% Typographic quotes and dashes are not in a ucharclasses class (class 0), so a Bangla word right
+% after “ or ‘ would not trigger the Bangla font. Treat them as Latin so that every switch fires.
+\XeTeXcharclass"2018=\XeTeXcharclass`A
+\XeTeXcharclass"2019=\XeTeXcharclass`A
+\XeTeXcharclass"201C=\XeTeXcharclass`A
+\XeTeXcharclass"201D=\XeTeXcharclass`A
+\XeTeXcharclass"2013=\XeTeXcharclass`A
+\XeTeXcharclass"2014=\XeTeXcharclass`A
+\XeTeXcharclass"2026=\XeTeXcharclass`A
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{22cm}
+{\large\bfseries Table 70.}\ {\large Indicative budget of the conditional national scale-up, Years 4 to 8 (Tk crore)}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=2.674\hsize\raggedright\arraybackslash}X>{\hsize=0.708\hsize\raggedright\arraybackslash}X>{\hsize=0.708\hsize\raggedright\arraybackslash}X>{\hsize=0.708\hsize\raggedright\arraybackslash}X>{\hsize=0.708\hsize\raggedright\arraybackslash}X>{\hsize=0.708\hsize\raggedright\arraybackslash}X>{\hsize=0.787\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{Item} & \textbf{Year 4} & \textbf{Year 5} & \textbf{Year 6} & \textbf{Year 7} & \textbf{Year 8} & \textbf{Total} \\
+\midrule
+Central lab staff & 5.71 & 7.48 & 10.09 & 12.38 & 14.09 & 49.74 \\
+Divisional university nodes & 2.50 & 5.41 & 5.84 & 6.31 & 6.81 & 26.88 \\
+Analysts placed in agencies & 1.36 & 2.45 & 3.70 & 5.14 & 6.17 & 18.82 \\
+Bangla language-data and annotation staff & 1.40 & 2.45 & 3.04 & 3.28 & 3.55 & 13.72 \\
+Graduate fellowships & 1.21 & 1.96 & 2.82 & 3.05 & 3.29 & 12.33 \\
+Compute, hosting and federated search & 6.26 & 6.51 & 7.08 & 7.20 & 9.56 & 36.61 \\
+Data and benchmarks & 1.10 & 1.36 & 1.47 & 1.43 & 1.54 & 6.90 \\
+Training of officials & 1.22 & 1.93 & 2.53 & 3.21 & 4.23 & 13.12 \\
+Governance, audit and evaluation & 0.48 & 0.52 & 1.15 & 0.60 & 1.51 & 4.25 \\
+Host overheads (10\%) & 2.12 & 3.01 & 3.77 & 4.26 & 5.08 & 18.24 \\
+Contingency (10\%) & 2.12 & 3.01 & 3.77 & 4.26 & 5.08 & 18.24 \\
+\textbf{Total, Years 4 to 8} & \textbf{25.50} & \textbf{36.08} & \textbf{45.26} & \textbf{51.11} & \textbf{60.90} & \textbf{218.85} \\
+\bottomrule
+\end{tabularx}
+\par\vspace{5pt}{\footnotesize\itshape Not part of the funding requested for the 36-month plan. Same unit costs as Table 49 at Year 1 prices, escalated by 8\% a year; 10\% host overheads and a 10\% contingency. Central lab grows from 25 to 45 posts; four divisional university nodes with five posts each; 6 to 20 analysts placed in adopting agencies; 17 to 33 Bangla language-data staff (annotators at Tk 45,000 a month); 20 to 40 graduate fellows a year; 5,000 officials trained; national inference and search platform and support for agencies joining federated search (Tk 50 lakh per agency). Computed by blueprint/\allowbreak{}src/\allowbreak{}budget\_model.py (function scaleup); Blueprint 2.0 is to replace it with a costed plan.}
+\par\vspace{3pt}{\scriptsize\color{gray} Source: BAPIL Technical Blueprint, Version 1.0 (2026). CC BY 4.0.}
+\end{minipage}
+\end{document}
