@@ -112,7 +112,7 @@ Items that remain unresolved, with their owners and how they will be resolved, a
 
 **The proposal.** The Bangladesh AI Policy & Innovation Lab (BAPIL) is a university-anchored lab under a Memorandum of Understanding (MoU) with the ICT Division. It builds open, bilingual tools that help officials find and cite official evidence, develops and publishes the methods needed to govern public-sector AI safely, and trains people to use both.
 
-**What is built first.** In its first year BAPIL delivers a bilingual policy search tool whose answers always cite official sources or abstain (pilot P1), five years of budget allocations as open data (P2), the open BanglaPolicyQA benchmark (P4), a charter with an independent Ethics and Risk Review Committee, a public transparency register of AI systems, and training for 100 officials.
+**What is built first.** In its first year BAPIL delivers a bilingual policy search tool designed so that its answers cite official sources or abstain, with citation precision measured against a target of at least 0.95 (pilot P1), five years of budget allocations as open data (P2), the open BanglaPolicyQA benchmark (P4), a charter with an independent Ethics and Risk Review Committee, a public transparency register of AI systems, and training for 100 officials.
 
 **How risk is controlled.** Public data first; advice, not decisions; no surveillance. Every system is placed in a risk tier (T0 prohibited to T3 high) and must pass lifecycle gates (G0 to G5) before it moves forward. The Ethics and Risk Review Committee has a binding veto over tier T2 and T3 work.
 

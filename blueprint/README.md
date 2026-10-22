@@ -83,7 +83,7 @@ blueprint/build_blueprint.sh --skip-assets   # documents only (tables and figure
 blueprint/build_blueprint.sh --only BAPIL_Technical_Blueprint_bn   # one document
 ```
 
-The full build takes about three minutes. It:
+The full build takes about four minutes. It:
 
 1. generates every table and figure in English and Bangla (`make_tables.py`, `make_figures.py`) and writes the budget CSV files;
 2. runs the 49 unit tests of the reference implementation and the demonstration evaluation, whose results are printed in Section 11.5;

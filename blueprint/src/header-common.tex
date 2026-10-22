@@ -39,7 +39,8 @@
 % tables: smaller type, light rules
 % row spacing of long tables; a page can set \bapiltablestretch in a group to fit a table
 \providecommand{\bapiltablestretch}{1.18}
-\AtBeginEnvironment{longtable}{\small\setlength{\tabcolsep}{4pt}\renewcommand{\arraystretch}{\bapiltablestretch}}
+\providecommand{\bapiltablesize}{\small}
+\AtBeginEnvironment{longtable}{\bapiltablesize\setlength{\tabcolsep}{4pt}\renewcommand{\arraystretch}{\bapiltablestretch}}
 % headings
 \titleformat{\section}{\normalfont\Large\bfseries}{}{0pt}{}
 \titlespacing*{\section}{0pt}{2.0em}{1.0em}

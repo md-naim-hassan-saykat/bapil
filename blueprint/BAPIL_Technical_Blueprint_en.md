@@ -112,7 +112,7 @@ Items that remain unresolved, with their owners and how they will be resolved, a
 
 **The proposal.** The Bangladesh AI Policy & Innovation Lab (BAPIL) is a university-anchored lab under a Memorandum of Understanding (MoU) with the ICT Division. It builds open, bilingual tools that help officials find and cite official evidence, develops and publishes the methods needed to govern public-sector AI safely, and trains people to use both.
 
-**What is built first.** In its first year BAPIL delivers a bilingual policy search tool whose answers always cite official sources or abstain (pilot P1), five years of budget allocations as open data (P2), the open BanglaPolicyQA benchmark (P4), a charter with an independent Ethics and Risk Review Committee, a public transparency register of AI systems, and training for 100 officials.
+**What is built first.** In its first year BAPIL delivers a bilingual policy search tool designed so that its answers cite official sources or abstain, with citation precision measured against a target of at least 0.95 (pilot P1), five years of budget allocations as open data (P2), the open BanglaPolicyQA benchmark (P4), a charter with an independent Ethics and Risk Review Committee, a public transparency register of AI systems, and training for 100 officials.
 
 **How risk is controlled.** Public data first; advice, not decisions; no surveillance. Every system is placed in a risk tier (T0 prohibited to T3 high) and must pass lifecycle gates (G0 to G5) before it moves forward. The Ethics and Risk Review Committee has a binding veto over tier T2 and T3 work.
 
@@ -197,7 +197,7 @@ The BAPIL White Paper (Version 1.0) set out a vision: an independent research an
 
 This Blueprint answers the next question: **what exactly would be built, by whom, under which rules, in what order, with what resources, and with what evidence of success?** It translates each element of the White Paper into requirements, institutional arrangements, technical components, data rules, assurance procedures, a delivery plan, a long-term strategy and decisions for the authorities.
 
-The timing matters. During 2025 and 2026 Bangladesh adopted a new data-protection and data-management framework, first by ordinance and then, as reported, by Acts of Parliament, and revised its cyber-security law [84, 85, 86, 87]. Which provisions are in force, and from when, still has to be confirmed (Chapter 14). A draft National AI Policy 2026-2030 was released for public consultation in January 2026 [88, 89], and in August 2026 the government announced that drafting of a national AI policy would begin in the fourth quarter of 2026 with a joint team from government, the private sector, academia and research [90, 91]. A concrete, openly licensed blueprint with working code can serve as a technical input to that process, and a roadmap that looks to 2041 can help connect short pilots to the long-term goals of the Perspective Plan 2041 and the ICT Masterplan 2041 [29, 30].
+The timing matters. During 2025 and 2026 Bangladesh adopted a new data-protection and data-management framework, first by ordinance and then, as reported, by Acts of Parliament, and revised its cyber-security law [84, 85, 86, 87]. Which provisions are in force, and from when, still has to be confirmed (Chapter 14). A draft National AI Policy 2026-2030 was released for public consultation in January 2026 [88, 89], and a revised draft (version 2.0, dated 9 February 2026) was posted on the official national AI policy portal [125]. In August 2026 the government announced that drafting of a national AI policy would begin in the fourth quarter of 2026 with a joint team from government, the private sector, academia and research [90, 91]; whether that process builds on the 2026 drafts has not been confirmed. A concrete, openly licensed blueprint with working code can serve as a technical input to that process, and a roadmap that looks to 2041 can help connect short pilots to the long-term goals of the Perspective Plan 2041 and the ICT Masterplan 2041 [29, 30].
 
 ## 1.2 The BAPIL Document Family
 
@@ -298,7 +298,7 @@ The Blueprint was prepared in six steps, each of which can be checked against th
 
 ## 1.7 Summary of the Design
 
-In one paragraph: BAPIL is established as a **university-anchored lab with a government MoU and a multi-stakeholder Steering Board**, an **independent Ethics and Risk Review Committee with a binding veto**, and a **Technical Architecture Board**. It builds an **open, modular platform** whose core is a **bilingual, citation-grounded policy search and answer service** over officially published documents. Six pilots are run under **risk tiers and lifecycle gates** aligned with international frameworks and with Bangladesh’s new data laws. A **36-month plan** delivers a policy search pilot and an open budget dataset in Year 1, evaluated adoption decisions in Year 2, and in Year 3 a documented decision on Bangla domain adaptation (with an adapted model only if Stage 1 is justified) and Blueprint 2.0. A **strategic roadmap** then carries the capability through medium-term adoption (2029 to 2030), a national policy-intelligence network (2031 to 2035) and a mature, trusted institution by 2041. A small **reference implementation** of the core components is issued with this Blueprint; it is a tested research prototype, not a deployed system.
+In one paragraph: BAPIL would be established as a **university-anchored lab with a government MoU and a multi-stakeholder Steering Board**, an **independent Ethics and Risk Review Committee with a binding veto**, and a **Technical Architecture Board**. It would build an **open, modular platform** whose core is a **bilingual, citation-grounded policy search and answer service** over officially published documents. Six pilots would be run under **risk tiers and lifecycle gates** aligned with international frameworks and with Bangladesh’s new data laws. A **36-month plan** delivers a policy search pilot and an open budget dataset in Year 1, evaluated adoption decisions in Year 2, and in Year 3 a documented decision on Bangla domain adaptation (with an adapted model only if Stage 1 is justified) and Blueprint 2.0. A **strategic roadmap** then carries the capability through medium-term adoption (2029 to 2030), a national policy-intelligence network (2031 to 2035) and a mature, trusted institution by 2041. A small **reference implementation** of the core components is issued with this Blueprint; it is a tested research prototype, not a deployed system.
 
 \newpage
 
@@ -350,7 +350,7 @@ Bangla is one of the most widely spoken languages in the world, but it remains u
 
 ## 2.6 Legal and Policy Context
 
-The legal framework is described in Chapter 14. In summary, and as reported in secondary sources, the Personal Data Protection Act, 2026 and the National Data Management Act, 2026 replaced the 2025 ordinances; they recognise citizens’ rights over personal data and, as described for the ordinances, provide for a national data management authority and a national data exchange [84, 85, 86, 116]. Under the 2025 ordinance some provisions did not commence immediately [113], so which duties are already operative must be confirmed. The cyber-security law was revised in 2026, including an amendment on the removal of harmful AI-generated content [86, 87]. The draft national AI policy proposes risk categories, impact assessment, an independent oversight committee to be created by an Act of Parliament, a Bangla-based national LLM, centralised compute and an innovation fund [88]. Together these create both a legal basis for a public-data-first design and a policy window in which a tested blueprint can be useful.
+The legal framework is described in Chapter 14. In summary, and as reported in secondary sources, the Personal Data Protection Act, 2026 and the National Data Management Act, 2026 replaced the 2025 ordinances; they recognise citizens’ rights over personal data and, as described for the ordinances, provide for a national data management authority and a national data exchange [84, 85, 86, 116]. Under the 2025 ordinance some provisions did not commence immediately [113], so which duties are already operative must be confirmed. The cyber-security ordinance was converted into an Act in April 2026 and an amendment bill was passed in June 2026; reports differ on what that amendment contains, and a further draft amendment was under review in July 2026 [86, 87, 123, 124]. The draft national AI policy proposes risk categories, impact assessment, an independent oversight committee to be created by an Act of Parliament, a Bangla-based national LLM, centralised compute and an innovation fund [88]. Together these create both a legal basis for a public-data-first design and a policy window in which a tested blueprint can be useful.
 
 ## 2.7 Capability Gap Analysis
 
@@ -996,7 +996,7 @@ Where data is not already public, access is governed by a written data-sharing a
 
 ## 8.12 Personal Data
 
-As reported, the personal data protection framework recognises citizens’ rights over their personal data, requires consent and gives enhanced protection to sensitive and children’s data, and data subjects may restrict automated decisions based on their data [84, 85]; a Personal Data Protection (Amendment) Ordinance, 2026 changed the ordinance’s data-residency provisions [115], and commentary describes localisation as limited to critical sectors such as banking and healthcare [122]. Which of these provisions of the 2026 Act are in force, and from when, is to be confirmed by the legal review (Section 14.3); until then BAPIL applies the stricter reading. BAPIL’s design responds conservatively: P2 data is used only in pilot P3, only with consent, only after a DPIA (template in Annex H), only in de-identified form and only for aggregate results; P3 data is never used. Commentators have argued that the new framework leaves broad room for state access to data [106]; BAPIL’s own safeguards therefore do not rely on legal minimums alone.
+As reported, the personal data protection framework recognises citizens’ rights over their personal data; it makes consent the principal basis for processing but also allows processing on other specified grounds and contains broad exemptions, including for national security, public order and the public interest; it gives enhanced protection to sensitive and children’s data; and data subjects may restrict automated decisions based on their data [84, 85, 126]; a Personal Data Protection (Amendment) Ordinance, 2026 changed the ordinance’s data-residency provisions [115], and commentary describes localisation as limited to critical sectors such as banking and healthcare [122]. Which of these provisions of the 2026 Act are in force, and from when, is to be confirmed by the legal review (Section 14.3); until then BAPIL applies the stricter reading. BAPIL’s design responds conservatively, with safeguards that go beyond what the law requires: P2 data is used only in pilot P3, only with consent (a BAPIL rule, not a statutory requirement), only after a DPIA (template in Annex H), only in de-identified form and only for aggregate results; P3 data is never used. Commentators have argued that the new framework leaves broad room for state access to data [106]; BAPIL’s own safeguards therefore do not rely on legal minimums alone.
 
 \newpage
 
@@ -1290,7 +1290,8 @@ implementation/
 ```bash
 cd implementation
 pip install -e .        # no third-party dependencies
-python -m bapil.cli index --corpus ../reports ../blueprint/BAPIL_*.md
+python -m bapil.cli index --corpus ../reports \
+    ../blueprint/BAPIL_Technical_Blueprint_*.md ../blueprint/BAPIL_Blueprint_Summary_*.md
 python -m bapil.cli search "data protection impact assessment"
 python -m bapil.cli ask "বাংলা নীতি ফাউন্ডেশন মডেল কেন প্রয়োজন?"
 python -m bapil.cli assess examples/risk/risk_p1_policy_search.json
@@ -1301,12 +1302,12 @@ python -m unittest discover -s tests
 
 ## 11.5 Demonstration Results
 
-Running `python -m bapil.cli evaluate benchmarks/demo_questions.json` over a corpus of 1722 passages from 8 BAPIL documents gives the following results (corpus version `08ee5e783c9a`):
+Running `python -m bapil.cli evaluate benchmarks/demo_questions.json` over a corpus of 1,723 passages from 8 BAPIL documents gives the following results (corpus version `3c246e0a7b75`):
 
 | Question set | Questions | Recall@5 | Recall@10 | MRR@10 | nDCG@10 |
 |---|---|---|---|---|---|
-| All questions | 24 | 0.83 | 0.92 | 0.72 | 0.63 |
-| English questions | 12 | 0.83 | 0.92 | 0.80 | 0.59 |
+| All questions | 24 | 0.83 | 0.88 | 0.71 | 0.62 |
+| English questions | 12 | 0.83 | 0.83 | 0.79 | 0.57 |
 | Bangla questions | 12 | 0.83 | 0.92 | 0.63 | 0.67 |
 
 Correct abstention on 6 out-of-scope questions: 1.00. Unit tests: 49 passed.
@@ -1319,7 +1320,7 @@ The unit tests cover every module and are organised by component: Bangla and Eng
 
 ## 11.7 Continuous Integration
 
-Two GitHub Actions workflows are configured to run on every change once the repository is updated: one runs the unit tests on Python 3.10 to 3.13; the other rebuilds the Blueprint tables, figures and PDFs with XeLaTeX and the Noto fonts, so that published documents can always be regenerated from source. The workflows run with read-only repository permissions. Because the package uses only the Python standard library, it has no third-party dependency chain to pin or audit; any future dependency must be pinned, listed in a software bill of materials and approved by the TAB. A security policy in the repository (`SECURITY.md`) explains how to report vulnerabilities privately.
+Two GitHub Actions workflows are configured to run on every change once the repository is updated: one runs the unit tests on Python 3.10 to 3.13; the other rebuilds the Blueprint tables, figures and PDFs with XeLaTeX and the Noto fonts, so that any failure to regenerate the published documents from source is detected. The workflows run with read-only repository permissions. Because the package uses only the Python standard library, it has no third-party dependency chain to pin or audit; any future dependency must be pinned, listed in a software bill of materials and approved by the TAB. A security policy in the repository (`SECURITY.md`) explains how to report vulnerabilities privately.
 
 ## 11.8 From Reference Implementation to Production
 
@@ -1553,9 +1554,9 @@ The control areas map onto the main international frameworks, which helps partne
 
 ## 14.1 A Changing Framework
 
-Bangladesh’s legal framework for data and digital technology changed substantially between late 2025 and mid-2026. The Personal Data Protection Ordinance, 2025 and the National Data Management Ordinance, 2025 (called the National Data Governance Ordinance in some English reports) were gazetted in November 2025 [84, 106]. According to secondary legal commentary, the personal data protection ordinance came into force immediately except for its sections on chief data officers, complaints and offences [113], and an 18-month compliance window was described [114]. A Personal Data Protection (Amendment) Ordinance, 2026, which changed the ordinance’s data-residency provisions, was promulgated in February 2026 [115]; commentary describes localisation as limited to critical sectors such as banking and healthcare [122]. Parliament then passed bills to convert the ordinances into Acts: the National Data Management Bill, 2026 and the Cyber Security Bill, 2026 were reported passed on 10 April 2026 [86], and the Personal Data Protection Act, 2026 was reported enacted in April 2026 [85, 116]. A Cyber Security (Amendment) Bill, 2026, aimed at the removal of harmful AI-generated content, was reported passed by 30 June 2026 [87].
+Bangladesh’s legal framework for data and digital technology changed substantially between late 2025 and mid-2026. The Personal Data Protection Ordinance, 2025 and the National Data Management Ordinance, 2025 (called the National Data Governance Ordinance in some English reports) were gazetted in November 2025 [84, 106]. According to secondary legal commentary, the personal data protection ordinance came into force immediately except for its sections on chief data officers, complaints and offences [113], and an 18-month compliance window was described [114]. A Personal Data Protection (Amendment) Ordinance, 2026, which changed the ordinance’s data-residency provisions, was promulgated in February 2026 [115]; commentary describes localisation as limited to critical sectors such as banking and healthcare [122]. Parliament then passed bills to convert the ordinances into Acts: the National Data Management Bill, 2026 and the Cyber Security Bill, 2026 were reported passed on 10 April 2026 [86], and the Personal Data Protection Act, 2026 was reported enacted in April 2026 [85, 116]. Parliament passed a Cyber Security (Amendment) Bill, 2026 on 30 June 2026, but reports differ on its content: one report describes provisions for the rapid removal of harmful and defamatory AI-generated content from platforms [87], while others report that the bill removed a section on online gambling [123]. In July 2026 a cabinet committee was formed to review and finalise a draft Cyber Security (Amendment) Act, 2026 [124], so a further amendment may follow.
 
-Three points of caution follow. First, these statements come from press reports and secondary commentary; the gazetted texts were not reviewed for this edition because the official laws database does not permit automated retrieval. Second, enactment is not the same as commencement: whether each provision of the 2026 Acts is in force, and whether the deferred provisions of the ordinances were carried over, must be confirmed. Third, implementing rules may still be issued. Until the legal review confirms the position, BAPIL applies the stricter reading of each obligation.
+Three points of caution follow. First, these statements come from press reports and secondary commentary, which sometimes disagree; the gazetted texts were not reviewed for this edition because the official laws database does not permit automated retrieval. Second, enactment is not the same as commencement: whether each provision of the 2026 Acts is in force, and whether the deferred provisions of the ordinances were carried over, must be confirmed. Third, implementing rules may still be issued. Until the legal review confirms the position, BAPIL applies the stricter reading of each obligation.
 
 **Table 42.** Bangladesh legal and policy instruments relevant to BAPIL (status as reported, October 2026)
 
@@ -1563,9 +1564,9 @@ Three points of caution follow. First, these statements come from press reports 
 |------------------|---------------------------------|-------------------------|----------------------|
 | Personal Data Protection Act, 2026 | Reported as enacted in April 2026 (Act 63 of 2026), replacing the Personal Data Protection Ordinance, 2025 [85, 116]. Under the Ordinance, the sections on chief data officers, complaints and offences did not commence immediately, and an 18-month compliance window was reported [113, 114]. Commencement of each provision of the Act, and any rules: to be confirmed | Consent; data-subject rights including restricting automated decisions; enhanced protection of sensitive and children’s data; chief data officers; data-residency provisions changed by the 2026 amendment ordinance [115], reportedly limited to critical sectors [122] | P0-first; DPIA before any P2 work; P3 excluded; no automated decisions about individuals; hosting in Bangladesh |
 | National Data Management Act, 2026 | Bill reported passed on 10 April 2026 [86], succeeding the National Data Management Ordinance, 2025 (called the National Data Governance Ordinance in some English reports) [84, 106]. Commencement and rules: to be confirmed | National Data Management Authority; responsible data exchange (NRDEX); national source code repository (as described for the 2025 Ordinance [84]; to be confirmed in the Act) | Use NRDEX agreements where available; publish code openly; coordinate with the Authority and agency data officers |
-| Cyber Security Act, 2026 and amendment | Bill reported passed on 10 April 2026 [86]; Cyber Security (Amendment) Bill, 2026 on harmful and defamatory AI-generated content reported passed by 30 June 2026 [87]. Commencement: to be confirmed | Security duties; critical information infrastructure; removal and blocking of harmful AI-generated content | NIST CSF 2.0 controls; incident reporting; information-integrity research kept within law and rights |
+| Cyber Security Act, 2026 and amendment | Bill reported passed on 10 April 2026 [86]; Cyber Security (Amendment) Bill, 2026 passed on 30 June 2026; reports differ on its content (removal of harmful AI-generated content [87]; removal of an online gambling section [123]); a further draft amendment under cabinet committee review from July 2026 [124]. Content and commencement: to be confirmed | Security duties; critical information infrastructure; removal and blocking of harmful content, possibly including AI-generated content (to be confirmed) | NIST CSF 2.0 controls; incident reporting; information-integrity research kept within law and rights |
 | Right to Information Act, 2009 | In force [105] | Proactive disclosure of public information | Supports the P0 corpus and the public transparency register |
-| National AI policy | Draft 2026-2030 released for public consultation in late January 2026 [88, 89]; formulation by a joint team announced to begin in Q4 2026 [91]. Not adopted | Risk categories; algorithmic impact assessment; an independent oversight committee to be created by an Act of Parliament; Bangla LLM; national compute; AI innovation fund of Tk 200 to 250 crore to 2030 (proposed) [88] | Tiers aligned to draft categories; Blueprint offered as technical input; BPFM coordinated with national LLM plans |
+| National AI policy | Draft 2026-2030 released for public consultation in late January 2026 [88, 89]; revised draft (version 2.0, 9 February 2026) posted on the official portal [125]; formulation by a joint team announced to begin in Q4 2026 [91]. Not adopted | Risk categories; algorithmic impact assessment; an independent oversight committee to be created by an Act of Parliament; Bangla LLM; national compute; AI innovation fund of Tk 200 to 250 crore to 2030 (proposed) [88] | Tiers aligned to draft categories; Blueprint offered as technical input; BPFM coordinated with national LLM plans |
 | Long-term national plans | Perspective Plan 2041 and ICT Master Plan 2041 [29, 30] | Long-term digital transformation goals | Roadmap aligned to the 2041 horizon and adaptable to plan revisions |
 | AI Hub and AI skills project (KOICA, ICT Division, Bangladesh Hi-Tech Park Authority) | Technical assistance project proposal of Tk 192.66 crore awaiting government approval in June 2026 [35]; USD 13 million grant agreement (Record of Discussion) reported signed in August 2026 for 2026 to 2029 [117]. Not reported as operational | Skills, startups, AI adoption | Complementary division of labour; shared benchmarks and open data |
 
@@ -1576,8 +1577,8 @@ Three points of caution follow. First, these statements come from press reports 
 * **Lawful basis and minimisation.** Because already-published documents carry low personal-data risk and need no new consent, the public-data-first policy is the main legal safeguard. Published personal data (for example names in gazette notices) is not aggregated or profiled. Any P2 processing requires a documented lawful basis and a DPIA.
 * **Automated decisions.** The right to restrict automated decisions reinforces the design rule that BAPIL never automates decisions about individuals.
 * **Data exchange.** If the national data exchange and the coordinating role of chief data officers operate under the Acts as described for the ordinances, they create a lawful route for data access agreements, which BAPIL should use.
-* **Information integrity.** Research on misinformation must respect freedom of expression and privacy; the June 2026 amendment’s focus on removing harmful AI-generated content makes clear, documented research protocols particularly important.
-* **National AI policy.** The tier system is aligned with the draft policy’s categories so that BAPIL systems would be classified consistently if those categories are adopted. The Blueprint is offered as an input to the drafting process announced for the fourth quarter of 2026 [91].
+* **Information integrity.** Research on misinformation must respect freedom of expression and privacy; reported proposals to require the rapid removal of harmful AI-generated content [87, 124] make clear, documented research protocols particularly important.
+* **National AI policy.** The tier system is aligned with the draft policy’s categories so that BAPIL systems would be classified consistently if those categories are adopted. The Blueprint is offered as an input to the drafting process announced for the fourth quarter of 2026 [91], which follows the January and February 2026 drafts [88, 125].
 
 ## 14.3 Legal Review
 
@@ -1598,7 +1599,7 @@ The checklist below turns the legal requirements, as currently reported, into BA
 | Data residency (PDPA amendment, 2026) | Data-residency provisions changed by the 2026 amendment ordinance, reportedly limited to critical sectors such as banking and healthcare [115, 122] (scope and status under the Act to be confirmed) | All data above class P0 hosted in Bangladesh (NFR-02) | Hosting agreement |
 | Source code (NDMA 2026) | National source code repository for government software (as described for the 2025 Ordinance) | Open-source code; mirror to national repository when available | Repository links |
 | Security duties (Cyber Security Act 2026) | Protection of systems and data; incident handling | NIST CSF 2.0 controls; incident plan | Security reviews; drills |
-| Harmful AI-generated content (2026 amendment) | Removal of harmful synthetic content | No generation of synthetic media; research protocols for P6 | ERRC approvals |
+| Harmful AI-generated content (reported 2026 amendment; to be confirmed) | Removal of harmful synthetic content, if enacted | No generation of synthetic media; research protocols for P6 | ERRC approvals |
 | Proactive disclosure (RTI Act 2009) | Publication of public information | Open publications; transparency register | Published register |
 | Draft national AI policy | Risk categories; impact assessment; oversight | Tier system aligned; impact assessments for T2 and T3 | Assessments; register |
 
@@ -1740,7 +1741,7 @@ The foundation horizon is already under way. Its purpose is to prepare a safe, o
 
 **Strategic aim:** prove value with public data and show that governance works.
 
-The short term corresponds to the first two years of the delivery plan. BAPIL is established as a university-anchored lab under an MoU, adopts its charter and constitutes the ERRC and TAB. Policy search (P1) and the open budget dataset (P2) are piloted and evaluated; BanglaPolicyQA v0 is released; the transparency register lists every system; and about 300 officials are trained by the end of 2028. The independent mid-term evaluation in mid-2028 decides whether BPFM Stage 1 is justified and how Phase 2 should be staffed.
+The short term corresponds to the first two years of the delivery plan. BAPIL is to be established as a university-anchored lab under an MoU, adopt its charter and constitute the ERRC and TAB. Policy search (P1) and the open budget dataset (P2) are piloted and evaluated; BanglaPolicyQA v0 is released; the transparency register lists every system; and about 300 officials are trained by the end of 2028. The independent mid-term evaluation in mid-2028 decides whether BPFM Stage 1 is justified and how Phase 2 should be staffed.
 
 **Key results by the end of 2028:** P1 and P2 have passed Gate G3; about 15,000 public documents are indexed with full provenance; at least three agencies have signed data or collaboration agreements; the Year 1 and mid-term evaluation reports are published.
 
@@ -2099,7 +2100,7 @@ Risks whose rating rises to high likelihood and high impact are escalated to the
 
 ## 20.1 Research as a Core Function
 
-BAPIL is a research institution as well as a builder of tools. Its research agenda serves three purposes: to answer questions that matter for the design of its own systems; to contribute open knowledge on Bangla language technology and public-sector AI governance; and to build national research capacity. Research questions are chosen where BAPIL’s position (access to real policy tasks, a governed corpus and a functioning governance system) allows it to produce evidence that others cannot.
+BAPIL is designed as a research institution as well as a builder of tools. Its research agenda would serve three purposes: to answer questions that matter for the design of its own systems; to contribute open knowledge on Bangla language technology and public-sector AI governance; and to build national research capacity. Research questions are chosen where BAPIL’s position (access to real policy tasks, a governed corpus and a functioning governance system) allows it to produce evidence that others cannot.
 
 ## 20.2 Research Questions
 
@@ -2118,11 +2119,12 @@ BAPIL is a research institution as well as a builder of tools. Its research agen
 
 ## 20.3 Publication Plan
 
-Research outputs are published open access with DOIs: datasets and benchmarks on Zenodo with datasheets; code on GitHub; evaluation reports in the BAPIL series; and peer-reviewed articles in journals and conferences chosen for their scope, open-access options and quality of review. A first journal manuscript, based on this Blueprint and its reference implementation, is planned for 2027; it will present the framework, the design rationale and the demonstration results, and will be submitted to a peer-reviewed journal in the field of AI and public policy or digital government. The outcome of peer review is not assumed in any plan.
+\looseness=-1 Research outputs are published open access with DOIs: datasets and benchmarks on Zenodo with datasheets; code on GitHub; evaluation reports in the BAPIL series; and peer-reviewed articles in journals and conferences chosen for their scope, open-access options and quality of review. A first journal manuscript, based on this Blueprint and its reference implementation, is planned for 2027; it will present the framework, the design rationale and the demonstration results, and will be submitted to a peer-reviewed journal in the field of AI and public policy or digital government. The outcome of peer review is not assumed in any plan.
 
 ## 20.4 Research Ethics
 
-All research involving people (surveys, interviews, user studies) is approved by the host institution’s research ethics committee and, where relevant, the ERRC. Participation is voluntary and informed, data is minimised and de-identified, and results are reported in aggregate. Research on information integrity follows the specific protocol required for pilot P6.
+\enlargethispage{\baselineskip}
+\looseness=-1 All research involving people (surveys, interviews, user studies) is approved by the host institution’s research ethics committee and, where relevant, the ERRC. Participation is voluntary and informed, data is minimised and de-identified, and results are reported in aggregate. Research on information integrity follows the specific protocol required for pilot P6.
 
 \newpage
 
@@ -2225,11 +2227,12 @@ Answer *yes* or *no*. Any *yes* places the system in tier T0, and work stops.
 3. Otherwise, the system is **T2 Limited** if the total score is 6 or more, or D1 = 2, or D7 is 2 or more.
 4. Otherwise, the system is **T1 Low**.
 
-The rules are implemented in `bapil.risk` and tested against the examples in `implementation/examples/risk/`, including a prohibited social-scoring example (T0) and a benefit-eligibility example (T3).
+\looseness=-1 The rules are implemented in `bapil.risk` and tested against the examples in `implementation/examples/risk/`, including a prohibited social-scoring example (T0) and a benefit-eligibility example (T3).
 
 ## B.4 Worked Example: Pilot P1 in Class A Use
 
-Scores: D1 = 2 (informs official decisions on policies), D2 = 0 (public documents), D3 = 0 (no individuals affected), D4 = 1, D5 = 1 (person reviews every output), D6 = 0 (no individuals affected), D7 = 1 (officials). Total = 5. No high-risk condition applies; because D1 = 2, the result is **T2 Limited**, requiring ERRC review, red-team testing, human review of every output and user training. The same system used only by BAPIL researchers (D1 = 1, D7 = 0) scores 3 and is **T1 Low**. This calculation is reproduced by `python -m bapil.cli assess examples/risk/risk_p1_policy_search.json`.
+\enlargethispage{\baselineskip}
+\looseness=-1 Scores: D1 = 2 (informs official decisions on policies), D2 = 0 (public documents), D3 = 0 (no individuals affected), D4 = 1, D5 = 1 (person reviews every output), D6 = 0 (no individuals affected), D7 = 1 (officials). Total = 5. No high-risk condition applies; because D1 = 2, the result is **T2 Limited**, requiring ERRC review, red-team testing, human review of every output and user training. The same system used only by BAPIL researchers (D1 = 1, D7 = 0) scores 3 and is **T1 Low**. This calculation is reproduced by `python -m bapil.cli assess examples/risk/risk_p1_policy_search.json`.
 
 \newpage
 
@@ -2498,7 +2501,8 @@ Confidence: high
 1. A data protection impact assessment is required before any processing
    of personal data at scale. [policy_en#p1]
 2. বৃহৎ পরিসরে ব্যক্তিগত উপাত্ত প্রক্রিয়াকরণের আগে প্রভাব মূল্যায়ন আবশ্যিক। [policy_bn#p1]
-3. Personal data must be processed only with consent. [policy_en#p1]
+3. Personal data may be processed only on a documented lawful basis.
+   [policy_en#p1]
 Sources:
   - [policy_en#p1] Sample Policy Note > Data Protection
   - [policy_bn#p1] নমুনা নীতি-নোট > উপাত্ত সুরক্ষা
@@ -2657,13 +2661,13 @@ This annex records the evidence behind the Blueprint’s key factual claims, as 
 | Personal Data Protection Act, 2026 reported enacted in April 2026 | Ch. 1, 2, 14; Tables 4, 42 | Source-reported fact, independently unverified | Securiti, June 2026 [85]; Azam, September 2026 [116]; title listed on the official laws database (text not reviewed) | Enactment reported; commencement marked to be confirmed |
 | National Data Management Bill, 2026 reported passed on 10 April 2026 | Ch. 2, 14; Table 42 | Source-reported fact | Daily Sun, 10 April 2026 [86] | Reported; the features described are those of the 2025 Ordinance |
 | Under the 2025 Ordinance, the sections on chief data officers, complaints and offences did not commence immediately | Ch. 8, 14; Table 42 | Source-reported fact (secondary legal commentary) | Greenleaf and Al Razi, June 2026 [113]; 18-month compliance window reported [114] | Stated for the Ordinance; the position under the Act is referred to legal counsel |
-| Cyber Security Bill, 2026 reported passed on 10 April 2026; amendment on AI-generated content reported passed by 30 June 2026 | Ch. 14; Table 42 | Source-reported fact | [86], [87] | Reported; commencement to be confirmed |
-| Draft National AI Policy 2026-2030 released for consultation in January 2026 | Ch. 1, 2, 14 | Source-reported fact | The Daily Star, 26 January 2026 [88]; The Financial Express, 29 January 2026 [89] | Reported |
+| Cyber Security Bill, 2026 reported passed on 10 April 2026; Cyber Security (Amendment) Bill, 2026 passed on 30 June 2026, its content reported differently; a further draft amendment under review from July 2026 | Ch. 2, 14; Table 42 | Source-reported fact; sources disagree on the amendment’s content | [86], [87], [123], [124] | Reported; content and commencement to be confirmed |
+| Draft National AI Policy 2026-2030 released for consultation in January 2026; revised draft version 2.0 dated 9 February 2026 | Ch. 1, 2, 14 | Source-reported fact (January draft); official portal listing (version 2.0; content not reviewed) | The Daily Star, 26 January 2026 [88]; The Financial Express, 29 January 2026 [89]; aipolicy.gov.bd [125] | Reported |
 | The draft policy addresses false or misleading AI-generated content; labelling of AI-generated text is BAPIL’s own rule | Sect. 13.8; Table 41; Annex N | Source-reported fact (policy content); design recommendation (labelling) | [88] and [89] describe measures against false or misleading AI-generated content; neither describes a labelling requirement | Labelling is not attributed to the draft policy |
 | National AI policy drafting to begin in Q4 2026 with a joint team | Ch. 1, 14, 21 | Source-reported fact | The Daily Observer, 10 August 2026 [91] | Reported |
 | AI hub technical-assistance project of Tk 192.66 crore awaiting approval in June 2026; USD 13 million grant agreement signed in August 2026 | Ch. 3, 17; Table 42 | Source-reported fact | [35]; [117] | Used for scale only; not described as an approved allocation |
 | Reference implementation issued in GitHub release v1.1.0 and archived with the Blueprint’s Zenodo record | Front matter; Ch. 1, 11, 16, 21; Table 1 | Future milestone at the time of writing | Code with 49 passing unit tests exists in the repository; the release and the Blueprint DOI were not yet public on 22 October 2026 | Readers are told how to check the release; the DOI record is published only after the release exists (Annex D) |
-| Demonstration Recall@10 of 0.92 and 6 of 6 correct abstentions | Sect. 11.5 | Research finding (development results on a small question set) | Evaluation report generated by the build: 8 documents, about 1,700 passages, 24 questions | Reported as development results with their limits |
+| Demonstration Recall@10 of 0.88 (21 of 24 answerable questions) and 6 of 6 correct abstentions | Sect. 11.5 | Research finding (development results on a small question set) | Evaluation report generated by the build: 8 documents, about 1,700 passages, 24 questions | Reported as development results with their limits |
 | Recall@10 at least 0.85 and citation precision at least 0.95 | Ch. 9, 12; Tables 28, 38 | Proposed target | Not yet measured | Labelled as targets; measurement protocol in Annex R |
 | Indicative budget of about Tk 20.4 crore over 36 months (base case) | Ch. 17; Tables 49, 50, 61, 62; Summary | Planning assumption (author’s analysis) | Computed by blueprint/src/budget_model.py from the assumptions in Table 49; unrounded total Tk 20.43 crore | Indicative; scenarios, sensitivity and known omissions stated (Section 17.2; Annex Q) |
 | Grade 9 basic pay of Tk 44,000 in the Ninth National Pay Scale | Sect. 17.5; Table 49 | Source-reported fact (Cabinet approval) | The Financial Express, 31 August 2026 [109]; gazette not seen | Stated with its status |
@@ -2769,7 +2773,7 @@ This annex sets out, for each proposed body, its status, how its members are app
 
 *Note.* None of these bodies exists yet. BAPIL’s internal rules apply in addition to the law and never in place of it; where the law, a regulator or the host institution requires otherwise, the legal requirement prevails.
 
-**Relationship with existing institutions.** BAPIL is a research initiative inside a host institution and has no regulatory role. The authorities created under the data-protection and data-management laws, the cyber-security authorities and the courts keep their full powers over BAPIL’s activities, as over any other organisation. The host institution’s own governing bodies, finance rules, audit arrangements and research ethics committee continue to apply. The independent oversight committee proposed in the draft national AI policy would be created by an Act of Parliament [88]; if it is established, BAPIL would register its systems with it and follow its decisions, and the ERRC would continue only as BAPIL’s internal review.
+**Relationship with existing institutions.** Under the proposed model, BAPIL would be a research initiative inside a host institution with no regulatory role. The authorities created under the data-protection and data-management laws, the cyber-security authorities and the courts keep their full powers over BAPIL’s activities, as over any other organisation. The host institution’s own governing bodies, finance rules, audit arrangements and research ethics committee continue to apply. The independent oversight committee proposed in the draft national AI policy would be created by an Act of Parliament [88]; if it is established, BAPIL would register its systems with it and follow its decisions, and the ERRC would continue only as BAPIL’s internal review.
 
 **Overlaps and how they are resolved.** The Steering Board and the host’s governing body both approve budgets: the host approves the financial framework and the Board approves the BAPIL plan within it. The ERRC and the host’s research ethics committee both review research with people: the ethics committee decides on research ethics, and the ERRC decides on system risk; neither may approve what the other has refused. Joint G4 decisions are shared between the Steering Board and the host agency because the agency carries the operational and legal responsibility for a tool it adopts.
 
@@ -2863,7 +2867,7 @@ This annex lists every item that could not be resolved with the evidence availab
 
 | ID | Unresolved item | Why it is unresolved | Owner | How and when it is resolved | Affects |
 |------|--------------------------|----------------------|----------------|--------------------|----------------|
-| U1 | Commencement dates and provisions in force of the PDPA 2026, NDMA 2026 and Cyber Security Act 2026, and any rules issued | Gazetted texts not reviewed; official database blocks automated retrieval | Host institution with legal counsel | Independent legal review before MS2 (Section 14.3) | Ch. 2, 8, 14; Tables 42, 43 |
+| U1 | Commencement dates and provisions in force of the PDPA 2026, NDMA 2026 and Cyber Security Act 2026, the content of the June 2026 cyber-security amendment and of any further amendment, and any rules issued | Gazetted texts not reviewed; official database blocks automated retrieval | Host institution with legal counsel | Independent legal review before MS2 (Section 14.3) | Ch. 2, 8, 14; Tables 42, 43 |
 | U2 | Whether NRDEX, the national source-code repository and chief data officers are retained in the Acts | Described only for the 2025 ordinances | Legal counsel | Same legal review | Sect. 8.8, 8.11, 10.8 |
 | U3 | Status of the 2026 data-residency amendment after the Act | Not confirmed in available sources | Legal counsel | Same legal review | Sect. 8.12; Table 43 |
 | U4 | Public GitHub release v1.1.0 and the Blueprint DOI | Not yet published at the time of writing | Author | Publish the release, then the DOI record (Annex D), before circulation | Table 1; Ch. 11; Annex D |
@@ -2887,6 +2891,8 @@ This annex lists every item that could not be resolved with the evidence availab
 # References
 
 Reference numbers [1] to [83] follow the bibliography of the BAPIL White Paper (Version 1.0); new references begin at [84]. Only references cited in this document are listed.
+
+\setlength{\parskip}{3pt plus 1pt minus 1pt}
 
 [1] ORGANISATION FOR ECONOMIC CO-OPERATION AND DEVELOPMENT (OECD).
 Recommendation of the Council on Artificial Intelligence (OECD/LEGAL/0449)[EB/OL].
@@ -3387,6 +3393,30 @@ Personal Data Protection Ordinance: A law that protects you from everyone except
 Dhaka: The Business Standard, 2026-04-20[2026-10-22].
 Available:
 <https://www.tbsnews.net/thoughts/personal-data-protection-ordinance-law-protects-you-everyone-except-state-1416106>
+
+[123] THE FINANCIAL EXPRESS.
+Bangladesh amends cybersecurity law, drops online gambling clause[EB/OL].
+Dhaka: The Financial Express, 2026-06-30[2026-10-22].
+Available:
+<https://thefinancialexpress.com.bd/sci-tech/bangladesh-amends-cybersecurity-law-drops-online-gambling-clause>
+
+[124] THE DAILY OBSERVER.
+Cabinet committee formed to finalise draft of Cyber Security (Amendment) Act[EB/OL].
+Dhaka: The Daily Observer, 2026-07-02[2026-10-22].
+Available:
+<https://observerbd.com/news/581694>
+
+[125] AI POLICY FOR BANGLADESH (aipolicy.gov.bd).
+Bangladesh National AI Policy 2026-2030, Draft v2, February 9, 2026[EB/OL].
+Dhaka, 2026-02-09[2026-10-22].
+Available:
+<https://aipolicy.gov.bd/docs/national-ai-policy-bangladesh-2026-2030-draft-v2.0.pdf>
+
+[126] MUBASHIRA N.
+A Statute Without a Floor: Data Protection and the Case for Constitutional Privacy in Bangladesh[EB/OL].
+Dhaka: Bangladesh Law Digest, 2026-08-18[2026-10-22].
+Available:
+<https://bdlawdigest.org/personal-data-protection-act-2026-bangladesh.html>
 
 
 \newpage

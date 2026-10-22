@@ -32,9 +32,9 @@ October 2026
 
 The Bangladesh AI Policy & Innovation Lab (BAPIL) is a proposed independent research and policy-intelligence platform that helps Bangladesh use artificial intelligence for evidence-based policymaking, responsible AI governance, Bangla-language technology and public-sector innovation. The White Paper (Version 1.0) set out the vision; the Technical Blueprint turns it into a buildable plan.
 
-The timing is favourable. As reported, Bangladesh converted its 2025 data ordinances into the Personal Data Protection Act, 2026 and the National Data Management Act, 2026 in April 2026 (which provisions are in force is still to be confirmed), revised its cyber-security law, released a draft National AI Policy 2026-2030 for consultation in January 2026, and announced that drafting of a national AI policy would begin in the fourth quarter of 2026 [85, 86, 87, 88, 91]. A concrete, open blueprint with working code can be a technical input to that process.
+\looseness=-1 The timing is favourable. As reported, Bangladesh converted its 2025 data ordinances into the Personal Data Protection Act, 2026 and the National Data Management Act, 2026 in April 2026 (which provisions are in force is still to be confirmed), converted its cyber-security ordinance into an Act and amended it (the content of the amendment is reported differently), released a draft National AI Policy 2026-2030 for consultation in January 2026 and a revised draft in February 2026, and announced that drafting of a national AI policy would begin in the fourth quarter of 2026 [85, 86, 87, 88, 91, 123, 125]. A concrete, open blueprint with working code can be a technical input to that process.
 
-![](figures/blueprint_fig01.png)
+![](figures/blueprint_fig01.png){width=68%}
 
 *Figure 1. The BAPIL document family: from the White Paper to a tested implementation and controlled pilots.*
 
@@ -87,7 +87,7 @@ The core service is a **bilingual, citation-grounded policy search and answer sy
 
 # 6. Safeguards
 
-* **Public data first;** personal data only with consent, a DPIA and ERRC approval; sensitive personal data never.
+* **Public data first;** personal data only with consent, a DPIA and ERRC approval (BAPIL’s own rule, stricter than the law); sensitive personal data never.
 * **Advice, not decisions;** a person reviews every output in advisory use, and no system decides about individuals.
 * **No surveillance;** social scoring, mass biometric surveillance and profiling of political or religious opinions are prohibited by charter.
 * **Risk tiers and gates** decide how much control a system needs and when it may move forward.
@@ -228,6 +228,18 @@ Rehan Asif Asad outlines govt’s five priorities for ICT, telecom[EB/OL].
 Dhaka: The Daily Observer, 2026-08-10[2026-10-20].
 Available:
 <https://observerbd.com/news/587314>
+
+[123] THE FINANCIAL EXPRESS.
+Bangladesh amends cybersecurity law, drops online gambling clause[EB/OL].
+Dhaka: The Financial Express, 2026-06-30[2026-10-22].
+Available:
+<https://thefinancialexpress.com.bd/sci-tech/bangladesh-amends-cybersecurity-law-drops-online-gambling-clause>
+
+[125] AI POLICY FOR BANGLADESH (aipolicy.gov.bd).
+Bangladesh National AI Policy 2026-2030, Draft v2, February 9, 2026[EB/OL].
+Dhaka, 2026-02-09[2026-10-22].
+Available:
+<https://aipolicy.gov.bd/docs/national-ai-policy-bangladesh-2026-2030-draft-v2.0.pdf>
 
 
 ---

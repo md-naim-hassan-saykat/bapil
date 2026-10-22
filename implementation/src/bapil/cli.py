@@ -2,7 +2,7 @@
 
 Examples (run from the ``implementation`` directory after ``pip install -e .``)::
 
-    python -m bapil.cli index --corpus ../reports ../blueprint/BAPIL_*.md
+    python -m bapil.cli index --corpus ../reports ../blueprint/BAPIL_Technical_Blueprint_*.md ../blueprint/BAPIL_Blueprint_Summary_*.md
     python -m bapil.cli search "data protection impact assessment"
     python -m bapil.cli ask "বাংলা নীতি ফাউন্ডেশন মডেল কী?"
     python -m bapil.cli assess examples/risk/risk_p1_policy_search.json

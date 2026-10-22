@@ -383,7 +383,7 @@ TABLES_D = [
     {
         "id": "40",
         "widths": [1.9, 3.5, 2.6],
-        "title": {"en": "Human oversight patterns", "bn": "মানবিক তত্ত্বাবধানের ধরন"},
+        "title": {"en": "Human oversight patterns", "bn": "মানব-তত্ত্বাবধানের ধরন"},
         "cols": {"en": ["Pattern", "Description", "Used for"], "bn": ["ধরন", "বিবরণ", "ব্যবহারক্ষেত্র"]},
         "rows": {
             "en": [
@@ -418,7 +418,7 @@ TABLES_D = [
                 ["Data residency (PDPA amendment, 2026)", "Data-residency provisions changed by the 2026 amendment ordinance, reportedly limited to critical sectors such as banking and healthcare [115, 122] (scope and status under the Act to be confirmed)", "All data above class P0 hosted in Bangladesh (NFR-02)", "Hosting agreement"],
                 ["Source code (NDMA 2026)", "National source code repository for government software (as described for the 2025 Ordinance)", "Open-source code; mirror to national repository when available", "Repository links"],
                 ["Security duties (Cyber Security Act 2026)", "Protection of systems and data; incident handling", "NIST CSF 2.0 controls; incident plan", "Security reviews; drills"],
-                ["Harmful AI-generated content (2026 amendment)", "Removal of harmful synthetic content", "No generation of synthetic media; research protocols for P6", "ERRC approvals"],
+                ["Harmful AI-generated content (reported 2026 amendment; to be confirmed)", "Removal of harmful synthetic content, if enacted", "No generation of synthetic media; research protocols for P6", "ERRC approvals"],
                 ["Proactive disclosure (RTI Act 2009)", "Publication of public information", "Open publications; transparency register", "Published register"],
                 ["Draft national AI policy", "Risk categories; impact assessment; oversight", "Tier system aligned; impact assessments for T2 and T3", "Assessments; register"],
             ],
@@ -430,7 +430,7 @@ TABLES_D = [
                 ["ডেটা দেশে রাখা (PDPA সংশোধনী, ২০২৬)", "২০২৬ সালের সংশোধনী অধ্যাদেশে ডেটা দেশে রাখা-সংক্রান্ত বিধান পরিবর্তিত, প্রতিবেদন অনুযায়ী ব্যাংকিং ও স্বাস্থ্যের মতো গুরুত্বপূর্ণ খাতে সীমিত [115, 122] (আইনের অধীনে পরিধি ও অবস্থা নিশ্চিত করতে হবে)", "P0-এর ঊর্ধ্বের সব ডেটা বাংলাদেশে হোস্টকৃত (NFR-02)", "হোস্টিং চুক্তি"],
                 ["সোর্স কোড (NDMA ২০২৬)", "সরকারি সফটওয়্যারের জাতীয় সোর্স কোড ভান্ডার (২০২৫ সালের অধ্যাদেশের বর্ণনা অনুযায়ী)", "উন্মুক্ত সোর্স কোড; উপলব্ধ হলে জাতীয় ভান্ডারে প্রতিচ্ছবি", "রিপোজিটরির লিংক"],
                 ["নিরাপত্তা-দায়িত্ব (সাইবার নিরাপত্তা আইন ২০২৬)", "ব্যবস্থা ও ডেটার সুরক্ষা; ঘটনা ব্যবস্থাপনা", "NIST CSF 2.0 নিয়ন্ত্রণ; ঘটনা-পরিকল্পনা", "নিরাপত্তা পর্যালোচনা; মহড়া"],
-                ["ক্ষতিকর এআই-সৃষ্ট কনটেন্ট (২০২৬ সংশোধনী)", "ক্ষতিকর কৃত্রিম কনটেন্ট অপসারণ", "কৃত্রিম মিডিয়া তৈরি নয়; P6-এর জন্য গবেষণা-প্রটোকল", "ERRC অনুমোদন"],
+                ["ক্ষতিকর এআই-সৃষ্ট কনটেন্ট (প্রতিবেদিত ২০২৬ সংশোধনী; নিশ্চিত করতে হবে)", "প্রণীত হলে ক্ষতিকর কৃত্রিম কনটেন্ট অপসারণ", "কৃত্রিম মিডিয়া তৈরি নয়; P6-এর জন্য গবেষণা-প্রটোকল", "ERRC অনুমোদন"],
                 ["স্বতঃপ্রণোদিত প্রকাশ (তথ্য অধিকার আইন ২০০৯)", "জনগুরুত্বপূর্ণ তথ্য প্রকাশ", "উন্মুক্ত প্রকাশনা; স্বচ্ছতা নিবন্ধন", "প্রকাশিত নিবন্ধন"],
                 ["খসড়া জাতীয় এআই নীতি", "ঝুঁকির শ্রেণি; প্রভাব মূল্যায়ন; তত্ত্বাবধান", "সামঞ্জস্যপূর্ণ স্তরব্যবস্থা; T2 ও T3-এ প্রভাব মূল্যায়ন", "মূল্যায়ন; নিবন্ধন"],
             ],

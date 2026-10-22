@@ -27,6 +27,8 @@ DOCS = [
     ("BAPIL_Technical_Blueprint_bn", "bn"),
     ("BAPIL_Blueprint_Summary_en", "en"),
     ("BAPIL_Blueprint_Summary_bn", "bn"),
+    ("BAPIL_Decision_Memo_en", "en"),   # separate deliverable; not part of the Blueprint
+    ("BAPIL_Decision_Memo_bn", "bn"),
 ]
 
 CAPTIONS = {
@@ -105,16 +107,16 @@ def eval_block(lang):
         rows.append("| %s | %s |" % (names[key], " | ".join(cells)))
     ab = r.get("abstention", {})
     if lang == "en":
-        intro = ("Running `python -m bapil.cli evaluate benchmarks/demo_questions.json` over a corpus of %d passages "
+        intro = ("Running `python -m bapil.cli evaluate benchmarks/demo_questions.json` over a corpus of %s passages "
                  "from %d BAPIL documents gives the following results (corpus version `%s`):"
-                 % (r["corpus"]["passages"], r["corpus"]["documents"], r["corpus"]["version"]))
+                 % ("{:,}".format(r["corpus"]["passages"]), r["corpus"]["documents"], r["corpus"]["version"]))
         tail = ("Correct abstention on %d out-of-scope questions: %.2f. Unit tests: %s."
                 % (ab.get("n", 0), ab.get("rate", 0.0), r.get("tests", "see CI")))
     else:
-        intro = ("`python -m bapil.cli evaluate benchmarks/demo_questions.json` কমান্ডটি %s টি BAPIL নথির %s টি অনুচ্ছেদের কর্পাসে "
+        intro = ("`python -m bapil.cli evaluate benchmarks/demo_questions.json` কমান্ডটি %sটি BAPIL নথির %sটি অনুচ্ছেদের কর্পাসে "
                  "চালালে নিচের ফলাফল পাওয়া যায় (কর্পাস সংস্করণ `%s`):"
-                 % (bn(r["corpus"]["documents"]), bn(r["corpus"]["passages"]), r["corpus"]["version"]))
-        tail = ("আওতাবহির্ভূত %s টি প্রশ্নে সঠিক বিরতির হার: %s। ইউনিট পরীক্ষা: %s।"
+                 % (bn(r["corpus"]["documents"]), bn("{:,}".format(r["corpus"]["passages"])), r["corpus"]["version"]))
+        tail = ("আওতাবহির্ভূত %sটি প্রশ্নে সঠিক বিরতির হার: %s। ইউনিট পরীক্ষা: %s।"
                 % (bn(ab.get("n", 0)), bn("%.2f" % ab.get("rate", 0.0)), _tests_bn(r.get("tests", ""))))
     return intro + "\n\n" + hdr + "\n" + "\n".join(rows) + "\n\n" + tail
 
@@ -183,7 +185,10 @@ def reference_section(text, lang):
         head = ("# তথ্যসূত্র\n\n[1] থেকে [83] পর্যন্ত তথ্যসূত্রের নম্বর BAPIL হোয়াইট পেপারের (সংস্করণ ১.০) তথ্যসূত্র-তালিকা অনুসরণ করে; "
                 "নতুন তথ্যসূত্র [84] থেকে শুরু। শুধু এই নথিতে উদ্ধৃত তথ্যসূত্র তালিকাভুক্ত করা হয়েছে। "
                 "আন্তর্জাতিক ব্যবহারের সুবিধার্থে তথ্যসূত্রগুলো মূল ভাষায় রাখা হয়েছে।\n")
-    return head + "\n" + "\n\n".join(allrefs[n] for n in nums) + "\n"
+    entries = [allrefs[n] for n in nums]
+    if len(entries) > 40:   # the Blueprint only: tighter spacing between entries keeps the long list compact
+        head += "\n\\setlength{\\parskip}{3pt plus 1pt minus 1pt}\n"
+    return head + "\n" + "\n\n".join(entries) + "\n"
 
 
 CITE_RE = re.compile(r"(?<![!\w\]])\[(\d[\d,\s\-]*)\](?![(\[])")
@@ -198,10 +203,11 @@ def bn_citations(text):
     return "".join(parts)
 
 
-def figure_md(fid, lang):
+def figure_md(fid, lang, width=None):
     suffix = "" if lang == "en" else "_bn"
     label = ("Figure %d." % int(fid)) if lang == "en" else ("চিত্র %s।" % bn(int(fid)))
-    return "![](figures/blueprint_fig%s%s.png)\n\n*%s %s*" % (fid, suffix, label, CAPTIONS[fid][lang])
+    attr = "{width=%s}" % width if width else ""   # optional, e.g. <!-- FIGURE:01 width=85% -->
+    return "![](figures/blueprint_fig%s%s.png)%s\n\n*%s %s*" % (fid, suffix, attr, label, CAPTIONS[fid][lang])
 
 
 def expand_includes(text, depth=0):
@@ -216,7 +222,7 @@ def expand_includes(text, depth=0):
 def check_coverage(text, name):
     """Every generated table and figure should appear exactly once in the Blueprint."""
     tabs = re.findall(r"<!-- TABLE:(\d\d) -->", text)
-    figs = re.findall(r"<!-- FIGURE:(\d\d) -->", text)
+    figs = re.findall(r"<!-- FIGURE:(\d\d)(?: width=\d+%)? -->", text)
     have_t = sorted(f[13:15] for f in os.listdir(os.path.join(BP, "tables", "md")) if f.endswith("_en.md"))
     for label, used, have in (("table", tabs, have_t), ("figure", figs, sorted(CAPTIONS))):
         dup = sorted({x for x in used if used.count(x) > 1})
@@ -224,6 +230,20 @@ def check_coverage(text, name):
         order = [int(x) for x in used] != sorted(int(x) for x in used)
         if dup or miss or order:
             sys.stderr.write("WARNING %s: %s duplicates %s, missing %s, out of order %s\n" % (name, label, dup, miss, order))
+
+
+def check_eval_claim(lang):
+    """Table 60 quotes the demonstration Recall@10; stop if it no longer matches the evaluation report."""
+    path = os.path.join(REPO, "implementation", "build", "eval_report.json")
+    if not os.path.exists(path):
+        return
+    r10 = "%.2f" % json.load(open(path, encoding="utf-8"))["subsets"]["all"]["recall@10"]
+    if lang == "bn":
+        r10 = r10.translate(BN_DIGITS)
+    table = load(os.path.join(BP, "tables", "md", "blueprint_tab60_%s.md" % lang))
+    if ("Recall@10 of %s" % r10 if lang == "en" else "Recall@10 %s" % r10) not in table:
+        raise SystemExit("Table 60 (%s) does not quote the current demonstration Recall@10 (%s); update src/tables_f.py"
+                         % (lang, r10))
 
 
 def assemble(name, lang, meta):
@@ -237,13 +257,14 @@ def assemble(name, lang, meta):
     text = re.sub(r"<!-- TABLE:(\d\d) -->",
                   lambda m: load(os.path.join(BP, "tables", "md", "blueprint_tab%s_%s.md" % (m.group(1), lang))).strip(),
                   text)
-    text = re.sub(r"<!-- FIGURE:(\d\d) -->", lambda m: figure_md(m.group(1), lang), text)
+    text = re.sub(r"<!-- FIGURE:(\d\d)(?: width=(\d+%))? -->", lambda m: figure_md(m.group(1), lang, m.group(2)), text)
     link, short = doi_values(meta, lang)
     text = (text.replace("{{DATE}}", meta["date_" + lang]).replace("{{ORCID}}", meta["orcid"])
                 .replace("{{DOI_LINK}}", link).replace("{{DOI_SHORT}}", short)
                 .replace("{{RELEASE}}", meta["repo_release"]))
     if "{{EVAL_RESULTS}}" in text:
         text = text.replace("{{EVAL_RESULTS}}", eval_block(lang))
+        check_eval_claim(lang)
     if "{{REFERENCES}}" in text:
         body = text.split("{{REFERENCES}}")[0]
         text = text.replace("{{REFERENCES}}", reference_section(body, lang))

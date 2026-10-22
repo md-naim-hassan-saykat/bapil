@@ -6,7 +6,7 @@ lang: en
 
 ## Data Protection
 
-Personal data must be processed only with consent. A data protection impact assessment is required before any processing of personal data at scale.
+This sample note is fictitious and is used only for tests. Personal data may be processed only on a documented lawful basis. A data protection impact assessment is required before any processing of personal data at scale.
 
 * Data minimisation;
 * Secure storage;

@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # Collect the files for the Technical Blueprint's Zenodo record into dist/zenodo/
-# (run after blueprint/build_blueprint.sh). Internal review records (blueprint/review/) are not included.
+# (run after blueprint/build_blueprint.sh). Internal review records (blueprint/review/) and the separate
+# Decision Memo are not included (see UPLOAD_CHECKLIST.md, section 0).
 set -euo pipefail
 cd "$(dirname "$0")/../.."
 OUT=dist/zenodo
@@ -13,7 +14,8 @@ cp blueprint/BAPIL_Technical_Blueprint_{en,bn}.md blueprint/BAPIL_Blueprint_Summ
 zip -qry "$OUT/BAPIL_Technical_Blueprint_source.zip" \
   blueprint/src blueprint/data blueprint/build_blueprint.sh blueprint/README.md blueprint/MANIFEST.md \
   blueprint/CHANGES.md blueprint/QA_REPORT.md blueprint/SOURCES_AND_LICENCES.md \
-  reports/BAPIL_White_Paper_v1.md LICENSE \
+  reports/BAPIL_White_Paper_v1.md LICENSE README.md CITATION.cff CHANGELOG.md RELEASE_NOTES.md \
+  REPRODUCIBILITY.md DATA_AND_METHODOLOGY.md CONTRIBUTING.md docs \
   -x '*/__pycache__/*' '*.pyc'
 zip -qry "$OUT/bapil-reference-implementation-0.1.0.zip" implementation -x 'implementation/build/*' '*/__pycache__/*' '*.egg-info/*'
 ( cd "$OUT" && sha256sum * > SHA256SUMS.txt )
