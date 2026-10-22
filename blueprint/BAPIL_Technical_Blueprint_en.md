@@ -1307,7 +1307,7 @@ python -m unittest discover -s tests
 
 ## 11.5 Demonstration Results
 
-Running `python -m bapil.cli evaluate benchmarks/demo_questions.json` over a corpus of 1,772 passages from 8 BAPIL documents gives the following results (corpus version `8ae399032269`):
+Running `python -m bapil.cli evaluate benchmarks/demo_questions.json` over a corpus of 1,772 passages from 8 BAPIL documents gives the following results (corpus version `3a47187fab89`):
 
 | Question set | Questions | Recall@5 | Recall@10 | MRR@10 | nDCG@10 |
 |---|---|---|---|---|---|
@@ -2698,7 +2698,7 @@ This annex records the evidence behind the Blueprint’s key factual claims, as 
 
 *Note.* Status labels are defined in Annex P. Web sources were consulted on 21 and 22 October 2026. The official Laws of Bangladesh database does not permit automated retrieval, so statutory texts were not reviewed directly.
 
-**What was and was not checked.** The full English text, all tables and figures, the budget model and the reference implementation were reviewed, and the Bangla edition was compared with the English edition for numbers, dates, tables and cross-references. External claims were checked against the sources listed in the references, using official sources where they could be retrieved. The official Laws of Bangladesh database does not permit automated retrieval, so statutory texts, gazette notifications and commencement provisions were not read directly; the legal descriptions in Chapter 14 remain summaries of secondary sources and require confirmation by qualified Bangladesh counsel. The references taken from the White Paper bibliography (marked † in the reference list) were re-checked against their sources on 22 October 2026; errors of title, year, DOI, authors or publisher in 13 of them were corrected in this Blueprint, a citation to the wrong edition of the Government AI Readiness Index was replaced, and the 2023 ranking was confirmed in the index report itself. Records of this evidence check are kept in the project repository.
+**What was and was not checked.** The full English text, all tables and figures, the budget model and the reference implementation were reviewed, and the Bangla edition was compared with the English edition for numbers, dates, tables and cross-references. External claims were checked against the sources listed in the references, using official sources where they could be retrieved. The official Laws of Bangladesh database does not permit automated retrieval, so statutory texts, gazette notifications and commencement provisions were not read directly; the legal descriptions in Chapter 14 remain summaries of secondary sources and require confirmation by qualified Bangladesh counsel. The references taken from the White Paper bibliography (marked with an asterisk in the reference list) were re-checked against their sources on 22 October 2026; errors of title, year, DOI, authors or publisher in 13 of them were corrected in this Blueprint, a citation to the wrong edition of the Government AI Readiness Index was replaced, and the 2023 ranking was confirmed in the index report itself. Records of this evidence check are kept in the project repository.
 
 \newpage
 
@@ -2896,7 +2896,7 @@ This annex lists every item that could not be resolved with the evidence availab
 | U8 | BanglaPolicyQA does not exist; all quality targets are unmeasured | Work not yet funded | Work package 6 | Benchmark v0 at MS3; first results at G2 | Ch. 9, 12; Tables 28, 54, 63 |
 | U9 | No host institution, governance body or government focal point | Decisions not yet taken | ICT Division; host | Decisions D2 and D4; MS1 | Ch. 5; Annexes S, T |
 | U10 | No funding requested or approved | Proposal stage | ICT Division or partners | Decisions D2 and D5; before month 1 | Ch. 15, 17; Table 65 |
-| U11 | References marked † (taken from the White Paper bibliography) to be re-checked against their sources | Resolved on 22 October 2026: all 40 checked; 13 corrected in this Blueprint (title, year, DOI, authors or publisher) | Author | Closed; carry the corrections into the next White Paper version | References |
+| U11 | References taken from the White Paper bibliography (marked with an asterisk in the reference list) to be re-checked against their sources | Resolved on 22 October 2026: all 40 checked; 13 corrected in this Blueprint (title, year, DOI, authors or publisher) | Author | Closed; carry the corrections into the next White Paper version | References |
 | U12 | Gazette status of the Ninth National Pay Scale | Only Cabinet approval reported | Feasibility study | D1.3 | Sect. 17.5; Table 49 |
 | U13 | 2023 AI readiness rank taken from a secondary source | Index report not checked | Author | Check before Blueprint 1.1 | Sect. 2.2; Table 4 |
 | U14 | Independent copy-edit of the Bangla edition by a professional Bangla editor | Editorial review done by the author; no independent editor yet | Author | Before Blueprint 1.1 | Bangla edition |
@@ -3004,36 +3004,36 @@ Three points follow. First, government is involved from the start without BAPIL 
 
 # References
 
-References are numbered in the order in which they are first cited, and only references cited in this document are listed. Entries marked † are taken from the bibliography of the BAPIL White Paper (Version 1.0).
+References are numbered in the order in which they are first cited, and only references cited in this document are listed. Entries marked with an asterisk (\*) are taken from the bibliography of the BAPIL White Paper (Version 1.0).
 
 \setlength{\parskip}{3pt plus 1pt minus 1pt}
 
-[1] † ORGANISATION FOR ECONOMIC CO-OPERATION AND DEVELOPMENT (OECD).
+[1] \* ORGANISATION FOR ECONOMIC CO-OPERATION AND DEVELOPMENT (OECD).
 Recommendation of the Council on Artificial Intelligence (OECD/LEGAL/0449)[EB/OL].
 Paris: OECD, 2019 (amended 2023 and 2024)[2026-06-17].
 Available: 
 <https://legalinstruments.oecd.org/en/instruments/oecd-legal-0449>
 
-[2] † UNITED NATIONS EDUCATIONAL, SCIENTIFIC AND CULTURAL ORGANIZATION (UNESCO).
+[2] \* UNITED NATIONS EDUCATIONAL, SCIENTIFIC AND CULTURAL ORGANIZATION (UNESCO).
 Recommendation on the Ethics of Artificial Intelligence[EB/OL].
 Paris: UNESCO, 2021[2026-06-17].
 Available: 
 <https://unesdoc.unesco.org/ark:/48223/pf0000380455>
 
-[3] † NATIONAL INSTITUTE OF STANDARDS AND TECHNOLOGY (NIST).
+[3] \* NATIONAL INSTITUTE OF STANDARDS AND TECHNOLOGY (NIST).
 Artificial Intelligence Risk Management Framework (AI RMF 1.0) (NIST AI 100-1)[EB/OL].
 Gaithersburg, MD: National Institute of Standards and Technology, 2023[2026-10-22].
 DOI: 10.6028/NIST.AI.100-1.
 Available: 
 <https://doi.org/10.6028/NIST.AI.100-1>
 
-[4] † WORLD BANK.
+[4] \* WORLD BANK.
 Global Program on GovTech & Public Sector Innovation[EB/OL].
 Washington, DC: World Bank, 2024[2026-10-22].
 Available:
 <https://www.worldbank.org/en/programs/govtech>
 
-[5] † UNITED NATIONS.
+[5] \* UNITED NATIONS.
 United Nations E-Government Survey 2024: Accelerating Digital Transformation for Sustainable Development - With the Addendum on Artificial Intelligence[M/OL].
 New York: United Nations, 2024[2026-10-22].
 DOI: 10.18356/9789211067286.
@@ -3094,25 +3094,25 @@ Dhaka: The Daily Observer, 2026-08-10[2026-10-20].
 Available:
 <https://observerbd.com/news/587314>
 
-[15] † GENERAL ECONOMICS DIVISION (GED), PLANNING COMMISSION, GOVERNMENT OF BANGLADESH.
+[15] \* GENERAL ECONOMICS DIVISION (GED), PLANNING COMMISSION, GOVERNMENT OF BANGLADESH.
 Making Vision 2041 a Reality: Perspective Plan of Bangladesh 2021–2041[EB/OL].
 Dhaka: Planning Commission, Government of Bangladesh, 2020[2026-10-22].
 Available:
 <https://oldweb.lged.gov.bd/uploadeddocument/unitpublication/1/1049/vision%202021-2041.pdf>
 
-[16] † INFORMATION AND COMMUNICATION TECHNOLOGY (ICT) DIVISION, GOVERNMENT OF THE PEOPLE’S REPUBLIC OF BANGLADESH.
+[16] \* INFORMATION AND COMMUNICATION TECHNOLOGY (ICT) DIVISION, GOVERNMENT OF THE PEOPLE’S REPUBLIC OF BANGLADESH.
 Smart Bangladesh: ICT Master Plan 2041 (Draft)[EB/OL].
 Dhaka: ICT Division, Government of the People’s Republic of Bangladesh, undated[2026-10-22].
 Available: 
 <https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-moa/2024/12/a01255f61d29443eabbf948ef97c290e.pdf>
 
-[17] † ORGANISATION FOR ECONOMIC CO-OPERATION AND DEVELOPMENT (OECD).
+[17] \* ORGANISATION FOR ECONOMIC CO-OPERATION AND DEVELOPMENT (OECD).
 OECD AI Principles[EB/OL].
 Paris: OECD AI Policy Observatory, 2024[2026-10-22].
 Available:
 <https://oecd.ai/en/ai-principles>
 
-[18] † EUROPEAN PARLIAMENT AND COUNCIL OF THE EUROPEAN UNION.
+[18] \* EUROPEAN PARLIAMENT AND COUNCIL OF THE EUROPEAN UNION.
 Regulation (EU) 2024/1689 of the European Parliament and of the Council
 of 13 June 2024 laying down harmonised rules on artificial intelligence
 (Artificial Intelligence Act)[EB/OL].
@@ -3120,7 +3120,7 @@ Official Journal of the European Union, 2024[2026-10-22].
 Available: 
 <https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng>
 
-[19] † TREASURY BOARD OF CANADA SECRETARIAT (TBS).
+[19] \* TREASURY BOARD OF CANADA SECRETARIAT (TBS).
 Directive on Automated Decision-Making[EB/OL].
 Ottawa: Government of Canada, 2025[2026-06-18].
 Available: 
@@ -3138,7 +3138,7 @@ Dhaka: The Business Standard, 2024-09-18[2026-10-21].
 Available:
 <https://www.tbsnews.net/node/944651>
 
-[22] † INTERNATIONAL TELECOMMUNICATION UNION (ITU).
+[22] \* INTERNATIONAL TELECOMMUNICATION UNION (ITU).
 Global Cybersecurity Index 2024[R/OL].
 Geneva: International Telecommunication Union, 2024[2026-10-22].
 Available: 
@@ -3157,7 +3157,7 @@ Copy hosted by the Norwegian Digitalisation Agency.
 Available:
 <https://www.digdir.no/sites/sogn/files/2024-03/GovernmentAIReadinessIndex2023.pdf>
 
-[25] † SULTANA S, SAMAD R, HAQUE M, SULTANA Z, JAHANGIR Z, HOSSAIN B M M, NOMAN R M, AHMED S I.
+[25] \* SULTANA S, SAMAD R, HAQUE M, SULTANA Z, JAHANGIR Z, HOSSAIN B M M, NOMAN R M, AHMED S I.
 Bangladesh AI Readiness: Perspectives from the Academia, Industry, and Government[EB/OL].
 Ithaca, NY: arXiv, 2026[2026-10-22].
 DOI: 10.48550/arXiv.2601.12934.
@@ -3170,13 +3170,13 @@ New York: United Nations, 2024[2026-10-22].
 Available:
 <https://publicadministration.un.org/egovkb/en-us/Data/Country-Information/id/14-Bangladesh>
 
-[27] † ASPIRE TO INNOVATE (a2i).
+[27] \* ASPIRE TO INNOVATE (a2i).
 Impact and Institutionalization of the e-Nothi System in Bangladesh[R/OL].
 Dhaka: Aspire to Innovate (a2i), ICT Division and UNDP, 2024[2026-10-22].
 Available: 
 <https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-a2i/2024/12/8e6eee520a6b44e4a3cbf8724d74e7c4.pdf>
 
-[28] † GOVERNMENT OF THE PEOPLE’S REPUBLIC OF BANGLADESH.
+[28] \* GOVERNMENT OF THE PEOPLE’S REPUBLIC OF BANGLADESH.
 Bangladesh National Portal[EB/OL].
 Dhaka: Government of the People’s Republic of Bangladesh, 2026[2026-10-22].
 Available:
@@ -3188,31 +3188,31 @@ Dhaka: BGD e-GOV CIRT, 2026[2026-10-22].
 Available:
 <https://cirt.gov.bd/who-we-are>
 
-[30] † BANGLADESH BUREAU OF STATISTICS (BBS), STATISTICS AND INFORMATICS DIVISION, MINISTRY OF PLANNING, GOVERNMENT OF THE PEOPLE’S REPUBLIC OF BANGLADESH.
+[30] \* BANGLADESH BUREAU OF STATISTICS (BBS), STATISTICS AND INFORMATICS DIVISION, MINISTRY OF PLANNING, GOVERNMENT OF THE PEOPLE’S REPUBLIC OF BANGLADESH.
 Bangladesh Statistical Yearbook 2024 (44th edition)[EB/OL].
 Dhaka: Bangladesh Bureau of Statistics, 2025[2026-10-22].
 Available: 
 <https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-bbs/2024/12/eca101901c5f41329d08ce583e842be8.pdf>
 
-[31] † BANGLADESH OPEN DATA.
+[31] \* BANGLADESH OPEN DATA.
 Bangladesh Open Data Portal[EB/OL].
 Dhaka: Government of the People’s Republic of Bangladesh, 2024[2026-10-22].
 Available: 
 <https://data.gov.bd>
 
-[32] † MANAGEMENT AND RESOURCES DEVELOPMENT INITIATIVE (MRDI).
+[32] \* MANAGEMENT AND RESOURCES DEVELOPMENT INITIATIVE (MRDI).
 Open Data Country Report: Bangladesh[R/OL].
 Dhaka: Management and Resources Development Initiative (MRDI), 2021[2026-10-22].
 Available: 
 <https://mrdibd.org/wp-content/uploads/2021/07/Open_Data_Country_Report_Bangladesh.pdf>
 
-[33] † BRAC INSTITUTE OF GOVERNANCE AND DEVELOPMENT (BIGD).
+[33] \* BRAC INSTITUTE OF GOVERNANCE AND DEVELOPMENT (BIGD).
 Report on the State of Public Data in Bangladesh: Insights from Expert Consultations[R/OL].
 Dhaka: BRAC Institute of Governance and Development (BIGD), BRAC University, 2025[2026-10-22].
 Available: 
 <https://bigd.bracu.ac.bd/wp-content/uploads/2025/01/Report-on-the-State-of-Public-Data-in-Bangladesh_20.1.2025.pdf>
 
-[34] † BHATTACHARJEE A, HASAN T, AHMAD W, MUBASSHIR K S, ISLAM M S, IQBAL A, RAHMAN M S, SHAHRIYAR R.
+[34] \* BHATTACHARJEE A, HASAN T, AHMAD W, MUBASSHIR K S, ISLAM M S, IQBAL A, RAHMAN M S, SHAHRIYAR R.
 BanglaBERT: Language Model Pretraining and Benchmarks for Low-Resource Language Understanding Evaluation in Bangla[C/OL]//
 Findings of the Association for Computational Linguistics: NAACL 2022.
 Seattle, WA, USA: Association for Computational Linguistics, 2022: 1318–1327[2026-10-22].
@@ -3220,14 +3220,14 @@ DOI: 10.18653/v1/2022.findings-naacl.98.
 Available:
 <https://aclanthology.org/2022.findings-naacl.98>
 
-[35] † BHATTACHARJEE A, HASAN T, AHMAD W U, et al.
+[35] \* BHATTACHARJEE A, HASAN T, AHMAD W U, et al.
 BanglaNLG and BanglaT5: Benchmarks and Resources for Evaluating Low-Resource Natural Language Generation in Bangla[C/OL]//Findings of the Association for Computational Linguistics: EACL 2023.
 Dubrovnik, Croatia: Association for Computational Linguistics, 2023: 726–735[2026-10-22].
 DOI: 10.18653/v1/2023.findings-eacl.54.
 Available: 
 <https://aclanthology.org/2023.findings-eacl.54>
 
-[36] † ZEHADY A K, DIPTA S R, ISLAM N, et al.
+[36] \* ZEHADY A K, DIPTA S R, ISLAM N, et al.
 BanglaLlama: LLaMA for Bangla Language (first version titled BongLLaMA)[R/OL].
 arXiv:2410.21200.
 Ithaca, NY: arXiv, 2024 (revised 2025)[2026-10-22].
@@ -3235,7 +3235,7 @@ DOI: 10.48550/arXiv.2410.21200.
 Available: 
 <https://arxiv.org/abs/2410.21200>
 
-[37] † ISLAM M E, CHOWDHURY L, KHAN F A, HOSSAIN S, HOSSAIN S, RASHID M M O, MOHAMMED N, AMIN M R.
+[37] \* ISLAM M E, CHOWDHURY L, KHAN F A, HOSSAIN S, HOSSAIN S, RASHID M M O, MOHAMMED N, AMIN M R.
 SentiGOLD: A Large Bangla Gold Standard Multi-Domain Sentiment Analysis Dataset and its Evaluation[C/OL]//
 Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD ’23).
 New York: Association for Computing Machinery (ACM), 2023[2026-06-19].
@@ -3267,80 +3267,80 @@ Dhaka: The Daily Observer, 2026-07-02[2026-10-22].
 Available:
 <https://observerbd.com/news/581694>
 
-[42] † INFOCOMM MEDIA DEVELOPMENT AUTHORITY (IMDA), PERSONAL DATA PROTECTION COMMISSION (PDPC).
+[42] \* INFOCOMM MEDIA DEVELOPMENT AUTHORITY (IMDA), PERSONAL DATA PROTECTION COMMISSION (PDPC).
 Model AI Governance Framework (2nd Edition)[EB/OL].
 Singapore: Infocomm Media Development Authority and Personal Data Protection Commission, 2020[2026-10-22].
 Available: 
 <https://www.imda.gov.sg/-/media/imda/files/infocomm-media-landscape/sg-digital/tech-pillars/artificial-intelligence/second-edition-of-the-model-ai-governance-framework.pdf>
 
-[43] † GOVERNMENT OF THE REPUBLIC OF KOREA.
+[43] \* GOVERNMENT OF THE REPUBLIC OF KOREA.
 National Strategy for Artificial Intelligence[EB/OL].
 Seoul: Government of the Republic of Korea, 2019[2026-10-22].
 Available: 
 <https://wp.oecd.ai/app/uploads/2021/12/Korea_National_Strategy_for_Artificial_Intelligence_2019.pdf>
 
-[44] † ESTONIAN BUSINESS AND INNOVATION AGENCY (e-Estonia).
+[44] \* ESTONIAN BUSINESS AND INNOVATION AGENCY (e-Estonia).
 e-Governance[EB/OL].
 Tallinn: Estonian Business and Innovation Agency, 2024[2026-10-22].
 Available:
 <https://e-estonia.com/solutions/e-governance>
 
-[45] † DEPARTMENT FOR SCIENCE, INNOVATION AND TECHNOLOGY (DSIT), GOVERNMENT OF THE UNITED KINGDOM.
+[45] \* DEPARTMENT FOR SCIENCE, INNOVATION AND TECHNOLOGY (DSIT), GOVERNMENT OF THE UNITED KINGDOM.
 AI Opportunities Action Plan[EB/OL].
 London: UK Government, 2025[2026-10-22].
 ISBN: 978-1-5286-5362-6.
 Available: 
 <https://www.gov.uk/government/publications/ai-opportunities-action-plan/ai-opportunities-action-plan>
 
-[46] † GOVERNMENT DIGITAL SERVICE (GDS), GOVERNMENT OF THE UNITED KINGDOM.
+[46] \* GOVERNMENT DIGITAL SERVICE (GDS), GOVERNMENT OF THE UNITED KINGDOM.
 Artificial Intelligence Playbook for the UK Government[EB/OL].
 London: Government Digital Service, 2025[2026-10-22].
 Available: 
 <https://www.gov.uk/government/publications/ai-playbook-for-the-uk-government/artificial-intelligence-playbook-for-the-uk-government-html>
 
-[47] † MINISTRY OF ECONOMIC AFFAIRS AND EMPLOYMENT OF FINLAND.
+[47] \* MINISTRY OF ECONOMIC AFFAIRS AND EMPLOYMENT OF FINLAND.
 Leading the Way into the Age of Artificial Intelligence: Final Report of Finland’s Artificial Intelligence Programme 2019[R/OL].
 Helsinki: Ministry of Economic Affairs and Employment, 2019[2026-06-18].
 Available: 
 <https://julkaisut.valtioneuvosto.fi/handle/10024/161688>
 
-[48] † GOVERNMENT OF THE UNITED ARAB EMIRATES.
+[48] \* GOVERNMENT OF THE UNITED ARAB EMIRATES.
 UAE National Strategy for Artificial Intelligence 2031[EB/OL].
 Abu Dhabi: Government of the United Arab Emirates, 2017[2026-10-22].
 Available: 
 <https://staticcdn.mbzuai.ac.ae/mbzuaiwpprd01/2022/07/UAE-National-Strategy-for-Artificial-Intelligence-2031.pdf>
 
-[49] † TREASURY BOARD OF CANADA SECRETARIAT (TBS).
+[49] \* TREASURY BOARD OF CANADA SECRETARIAT (TBS).
 Algorithmic Impact Assessment (AIA) Tool[EB/OL].
 Ottawa: Government of Canada, 2026[2026-10-22].
 Available: 
 <https://www.canada.ca/en/government/system/digital-government/digital-government-innovations/responsible-use-ai/algorithmic-impact-assessment.html>
 
-[50] † INFOCOMM MEDIA DEVELOPMENT AUTHORITY (IMDA), AI VERIFY FOUNDATION (AIVF).
+[50] \* INFOCOMM MEDIA DEVELOPMENT AUTHORITY (IMDA), AI VERIFY FOUNDATION (AIVF).
 Model AI Governance Framework for Generative AI: Fostering a Trusted Ecosystem[EB/OL].
 Singapore: Infocomm Media Development Authority and AI Verify Foundation, 2024[2026-10-22].
 Available: 
 <https://aiverifyfoundation.sg/wp-content/uploads/2024/05/Model-AI-Governance-Framework-for-Generative-AI-May-2024-1-1.pdf>
 
-[51] † ESTONIAN BUSINESS AND INNOVATION AGENCY (e-Estonia).
+[51] \* ESTONIAN BUSINESS AND INNOVATION AGENCY (e-Estonia).
 X-Road: The Backbone of e-Estonia[EB/OL].
 Tallinn: Estonian Business and Innovation Agency, 2024[2026-10-22].
 Available:
 <https://e-estonia.com/solutions/interoperability-services/x-road>
 
-[52] † UNIVERSITY OF HELSINKI, MINNALEARN.
+[52] \* UNIVERSITY OF HELSINKI, MINNALEARN.
 Elements of AI: A Free Online Course on Artificial Intelligence[EB/OL].
 Helsinki: University of Helsinki and MinnaLearn, 2024[2026-10-22].
 Available: 
 <https://www.elementsofai.com>
 
-[53] † THE BUSINESS STANDARD (TBS).
+[53] \* THE BUSINESS STANDARD (TBS).
 Govt to establish AI hub with Tk192.66cr project backed by Koica[EB/OL].
 Dhaka: The Business Standard, 2026[2026-10-22].
 Available:
 <https://www.tbsnews.net/tech/govt-establish-ai-hub-tk19266cr-project-backed-koica-1462206>
 
-[54] † THE BUSINESS STANDARD (TBS).
+[54] \* THE BUSINESS STANDARD (TBS).
 KOICA and ICT Division launch $28.5million AI innovation project[EB/OL].
 Dhaka: The Business Standard, 2025-01-09[2026-10-22].
 Available:
@@ -3501,7 +3501,7 @@ DOI: 10.1145/1571941.1572114.
 Available:
 <https://doi.org/10.1145/1571941.1572114>
 
-[80] † LEWIS P, PEREZ E, PIKTUS A, et al.
+[80] \* LEWIS P, PEREZ E, PIKTUS A, et al.
 Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks[C/OL]//Advances in Neural Information Processing Systems 33 (NeurIPS 2020).
 Red Hook, NY: Curran Associates, Inc., 2020[2026-10-22].
 DOI: 10.48550/arXiv.2005.11401.
@@ -3542,7 +3542,7 @@ DOI: 10.1145/3287560.3287596.
 Available:
 <https://doi.org/10.1145/3287560.3287596>
 
-[86] † BOMMASANI R, KLYMAN K, KAPOOR S, et al.
+[86] \* BOMMASANI R, KLYMAN K, KAPOOR S, et al.
 The 2024 Foundation Model Transparency Index (first version titled The Foundation Model Transparency Index v1.1: May 2024)[R/OL].
 Stanford, CA: Stanford Center for Research on Foundation Models (CRFM), Stanford University, 2024[2026-10-22].
 DOI: 10.48550/arXiv.2407.12929.
@@ -3570,7 +3570,7 @@ DOI: 10.6028/NIST.SP.800-207.
 Available:
 <https://doi.org/10.6028/NIST.SP.800-207>
 
-[90] † NATIONAL INSTITUTE OF STANDARDS AND TECHNOLOGY (NIST).
+[90] \* NATIONAL INSTITUTE OF STANDARDS AND TECHNOLOGY (NIST).
 Cybersecurity Framework (CSF) 2.0[EB/OL].
 Gaithersburg, MD: National Institute of Standards and Technology, 2024[2026-10-22].
 DOI: 10.6028/NIST.CSWP.29.
@@ -3596,7 +3596,7 @@ Semantic Versioning 2.0.0[EB/OL].
 Available:
 <https://semver.org/spec/v2.0.0.html>
 
-[94] † OXFORD INSIGHTS. 
+[94] \* OXFORD INSIGHTS. 
 Government AI Readiness Index 2025[EB/OL].
 Oxford: Oxford Insights, 2025[2026-10-22].
 Available: 
@@ -3621,7 +3621,7 @@ Dhaka: Sovereign Chambers of Law, 2026-04-23[2026-10-22].
 Available:
 <https://bd-scl.com/insights/personal-data-protection-ordinance-2025-compliance.html>
 
-[98] † UNITED NATIONS.
+[98] \* UNITED NATIONS.
 The Sustainable Development Goals Report 2024[R].
 New York: United Nations, 2024.
 ISBN: 978-92-1-358975-5.

@@ -232,16 +232,16 @@ def reference_section(mapping, lang):
     wp = any(k <= refnum.WP_LAST for k in mapping)
     if lang == "en":
         head = ("# References\n\nReferences are numbered in the order in which they are first cited, and only references "
-                "cited in this document are listed.%s\n" % (" Entries marked † are taken from the bibliography of the BAPIL "
+                "cited in this document are listed.%s\n" % (" Entries marked with an asterisk (\\*) are taken from the bibliography of the BAPIL "
                 "White Paper (Version 1.0)." if wp else ""))
     else:
         head = ("# তথ্যসূত্র\n\nতথ্যসূত্রগুলো প্রথম উদ্ধৃতির ক্রমে নম্বরযুক্ত, এবং শুধু এই নথিতে উদ্ধৃত তথ্যসূত্র তালিকাভুক্ত করা হয়েছে। "
                 "%sআন্তর্জাতিক ব্যবহারের সুবিধার্থে তথ্যসূত্রগুলো মূল ভাষায় রাখা হয়েছে।\n"
-                % ("† চিহ্নিত তথ্যসূত্রগুলো BAPIL হোয়াইট পেপারের (সংস্করণ ১.০) তথ্যসূত্র-তালিকা থেকে নেওয়া। " if wp else ""))
+                % ("তারকাচিহ্ন (\\*) দেওয়া তথ্যসূত্রগুলো BAPIL হোয়াইট পেপারের (সংস্করণ ১.০) তথ্যসূত্র-তালিকা থেকে নেওয়া। " if wp else ""))
     entries = []
     for key, num in sorted(mapping.items(), key=lambda kv: kv[1]):
         body = re.sub(r"^\[\d+\]\s*", "", allrefs[key])
-        mark = "† " if key <= refnum.WP_LAST else ""
+        mark = "\\* " if key <= refnum.WP_LAST else ""   # asterisk, escaped for Markdown
         entries.append("[%d] %s%s" % (num, mark, body))
     if len(entries) > 40:   # the Blueprint only: tighter spacing between entries keeps the long list compact
         head += "\n\\setlength{\\parskip}{3pt plus 1pt minus 1pt}\n"

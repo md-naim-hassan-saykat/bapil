@@ -8,23 +8,23 @@ Files listed: 761.
 
 | File | Bytes | SHA-256 |
 |---|---:|---|
-| `releases/v1.1/BAPIL_Blueprint_Summary_bn.pdf` | 342833 | `7fb1b3486ace686895af8cfc9af3e1d8b25644346333e77ae060bd08e87259ec` |
-| `releases/v1.1/BAPIL_Blueprint_Summary_en.pdf` | 171532 | `10512e02ac38ae1617b9e3ed0b709ca002f8645ff0d155712e35bd0be50c7226` |
-| `releases/v1.1/BAPIL_Decision_Memo_bn.pdf` | 92056 | `a71296b6b6cbbb0d84b47f5299ca55de60f2407ab0e134a5b20d56bf82267693` |
-| `releases/v1.1/BAPIL_Decision_Memo_en.pdf` | 55957 | `aa0794ccc58413c231c55121a6aa019d981763544f67b9fd8097b24d9732bbac` |
-| `releases/v1.1/BAPIL_Technical_Blueprint_bn.pdf` | 1901739 | `337e2b798191c0454e930874c46b0d2fa3b814725540f759e5e58cad9f7ea7dd` |
-| `releases/v1.1/BAPIL_Technical_Blueprint_en.pdf` | 1317281 | `b0e1bc23eeb9df580f7d7fb85081201812a2a47b2b525845c323bf67bc0de3a9` |
+| `releases/v1.1/BAPIL_Blueprint_Summary_bn.pdf` | 342847 | `05b6054eeb8c5d827563bf23ccbcee83059362c02aba24c76d497a20da2f5128` |
+| `releases/v1.1/BAPIL_Blueprint_Summary_en.pdf` | 171453 | `2d3f368c21814a5061556d3f3913405a8e2301aab01573af29d33e1f3d75d9c5` |
+| `releases/v1.1/BAPIL_Decision_Memo_bn.pdf` | 92056 | `0b4c0a9197b5a410996d0dfa4483237ebcbd374dd88e6c3160a901a54dc7f3ca` |
+| `releases/v1.1/BAPIL_Decision_Memo_en.pdf` | 55957 | `4c4d8cb6cf16f7a71f41246c7f0fbb53a50302660ded285be27973fde2d24647` |
+| `releases/v1.1/BAPIL_Technical_Blueprint_bn.pdf` | 1901630 | `cc4c03bbca2b4e35d0971f367c97d72715a57680b3cff42b9185e0d015694840` |
+| `releases/v1.1/BAPIL_Technical_Blueprint_en.pdf` | 1317298 | `60e431915720805fda2af784c1e119efc6bfb360811ab0531f8cbd014db39aae` |
 
 ## Assembled Markdown editions (6 files)
 
 | File | Bytes | SHA-256 |
 |---|---:|---|
-| `blueprint/BAPIL_Blueprint_Summary_bn.md` | 49308 | `96dd1a6a1a1f199eafb44008f20f8eee8387bd08e5f1b30a0a8f5c585034ea68` |
-| `blueprint/BAPIL_Blueprint_Summary_en.md` | 21602 | `eec5b7642ba9ff63171f7581d860adf64349939bfafb24c494056e62ae359403` |
+| `blueprint/BAPIL_Blueprint_Summary_bn.md` | 49334 | `165e7c6234537d3fbc945fdff92011002894ee3ca3e7c754f3b91b34ce187b3b` |
+| `blueprint/BAPIL_Blueprint_Summary_en.md` | 21617 | `4aa90598989f2bff90270939e7867f56e78612378bb97d0b5ea2a60f05d8f44d` |
 | `blueprint/BAPIL_Decision_Memo_bn.md` | 21224 | `882eefe15a6628e7efb2858bf91bfe42d14da42782a363e0b4736e664b0dfb7d` |
 | `blueprint/BAPIL_Decision_Memo_en.md` | 8883 | `b7735325f97db212015fb6a925459e40ea1702a762a4b49e1c28b7a849ae4361` |
-| `blueprint/BAPIL_Technical_Blueprint_bn.md` | 788047 | `336b8e0232727910152189844b05d1a0d5755b88d6c1b63546f5fe6863b63fe3` |
-| `blueprint/BAPIL_Technical_Blueprint_en.md` | 348051 | `7ddcad08392bd34b1bdea7d92fd29299eb32aecf4d3221f98636472beca8b6bb` |
+| `blueprint/BAPIL_Technical_Blueprint_bn.md` | 788111 | `724d886563bb9e0d0b484ec84f06f521d713b11014b01f297f32034552203e7a` |
+| `blueprint/BAPIL_Technical_Blueprint_en.md` | 348077 | `d86c78f0db9dfe6cd316fea62531a4e092fbcfe7e4310b30d0f756910b542992` |
 
 ## Editable masters and build sources (44 files)
 
@@ -36,7 +36,7 @@ Files listed: 761.
 | `blueprint/src/BAPIL_Decision_Memo_en.src.md` | 7577 | `441f59aac26efbdebd6c3e35d2b81312d8626acb01cd39a2eff4b2f7081bc1b8` |
 | `blueprint/src/BAPIL_Technical_Blueprint_bn.src.md` | 233 | `710d74e576fcecb941151d6d3345f3a060146620a952f038c65bec4ebca7c7dc` |
 | `blueprint/src/BAPIL_Technical_Blueprint_en.src.md` | 233 | `147f361a2ae12aafe51c567e6749544c81184630e3bb94cd77f642a9067bbddf` |
-| `blueprint/src/assemble.py` | 23022 | `3a18e90a2437fc74913bb5611cac523584adb3571c35b7f43491fcadd559bda2` |
+| `blueprint/src/assemble.py` | 23106 | `f94f25695a714dd1ae1822189add4cc81723e4ecf5e8587d4c93fe2a67b5871d` |
 | `blueprint/src/blueprint-filter.lua` | 5552 | `f404251ea29ff230a154ea0a0637a7a734874ed8b125a6c70b97638599594e0c` |
 | `blueprint/src/budget_model.py` | 28914 | `3edfc7bb36ca8663f16f87a584f2f9a9ff2f864bf66028225b679320b7f32288` |
 | `blueprint/src/figures_new.py` | 33643 | `c99c5107cf9ed4b1f04213ba8593e5846800381bb895c402bbe423e1a1d3c203` |
@@ -58,7 +58,7 @@ Files listed: 761.
 | `blueprint/src/tables_c.py` | 64294 | `0867445e72fe20b6fe94eb61e9216c28c715471cd1e94f144a816d3fe308372c` |
 | `blueprint/src/tables_d.py` | 67641 | `d9e1450a341bec2537b5a498e737a04ffdbfc341f6565f4004037a8f59226153` |
 | `blueprint/src/tables_e.py` | 66860 | `8c2fec074a5d4f13c332145f7df4fed38db5619eaff40d8a78c55a13fb1d57f1` |
-| `blueprint/src/tables_f.py` | 135404 | `24f11620cd0b579bc37f8244b6117b5eddad56150d72be126eca9c7c1367c72e` |
+| `blueprint/src/tables_f.py` | 135503 | `79b73687c31e5b6392de53b783feab637e39fec11a17c1e87b0cd0af6168a8ef` |
 | `blueprint/src/typography.py` | 4283 | `535eb21ccb407be5e3c8c0e269a53234a47c39d2d9f85c6f0a03f5adb5e8af54` |
 | `blueprint/src/en/00_front.md` | 12262 | `2ee537c56e3ec40dd91b5ab9cfc2a05c46f327a2740df072aa1728ac0da9322d` |
 | `blueprint/src/en/01_part1.md` | 24971 | `42c531f16d2dbf804fc2ffcb1f821a0a64bbbce6ffba19b52ece07bdf27cf042` |
@@ -66,14 +66,14 @@ Files listed: 761.
 | `blueprint/src/en/03_part3.md` | 33624 | `01935abad0392aaca75d5c81dff1edc873ed78fafb1b082f342c6e513afb60d4` |
 | `blueprint/src/en/04_part4.md` | 20260 | `fac43972f3682645a87c2f18948528646d26fa3f28220ff4c8a34f469dd5aed1` |
 | `blueprint/src/en/05_part5.md` | 36535 | `1fcebf8c86207122eaa1dc385863a99ee459e3d696b487f6736cda84c055307b` |
-| `blueprint/src/en/06_annexes.md` | 42842 | `bc13aa453ee6fd387b6bb194f00fe6481290265cb801ae944ffbfbb7ae600d28` |
+| `blueprint/src/en/06_annexes.md` | 42855 | `7b885234056225aca7b1bddd248f1c95aa2377a149f86c27c99dc796a53dca25` |
 | `blueprint/src/bn/00_front.md` | 31209 | `3ea5deb7e73425e59f54216197220c51d12645a6eb4f60958d90d5d39eb5db0e` |
 | `blueprint/src/bn/01_part1.md` | 61594 | `726662f2e12b0c32b3f70a9fe20b4bed4534e86d0574175dc28705e6508c4b5c` |
 | `blueprint/src/bn/02_part2.md` | 34969 | `22dca2dcf89174c6ff2fab81954bffbaeac1fa9a1c90a0a18f08be4c75c217cb` |
 | `blueprint/src/bn/03_part3.md` | 80700 | `d67c1c19460664cf84fce74da0c862f6ee9a24613ddf534533a6ffbca6185be4` |
 | `blueprint/src/bn/04_part4.md` | 49883 | `e2e9b6d8697c2d09a87794d61b59d84a9eb62f5d7149afc7b6e4130f8e6ec3b3` |
 | `blueprint/src/bn/05_part5.md` | 90437 | `130c2084d6bbe0f6e457743fe9f46441f32077069fb98cb49d67786abfc687db` |
-| `blueprint/src/bn/06_annexes.md` | 97786 | `4fc397ea1606c10ce4e81c013e163394038aa969e35f0394bbf26846168e6937` |
+| `blueprint/src/bn/06_annexes.md` | 97797 | `4e84e56c69663f20f865468975d2373d2ccfcccf7048eb44bba9e0a429284145` |
 
 ## Budget data (CSV) (9 files)
 
@@ -93,8 +93,8 @@ Files listed: 761.
 
 | File | Bytes | SHA-256 |
 |---|---:|---|
-| `blueprint/CHANGES.md` | 22251 | `172859707bf9b8c4a669f0b4136b5396d158d6c392004057c53b78a7cf0e3b01` |
-| `blueprint/QA_REPORT.md` | 18667 | `67484cb10c8fc6de93dc19e94798580d4d383ef954497622ae69e9a1d7fd1f54` |
+| `blueprint/CHANGES.md` | 22523 | `ceccbfdde26033ac2c350a52a34f5b24921bb8a32e3670d4b33a39dc9906db8b` |
+| `blueprint/QA_REPORT.md` | 18705 | `2047d388bbdd696e1f185f1bd1d5150922d571616a490d3a612fc1284c2e497d` |
 | `blueprint/README.md` | 10435 | `61e2a21a7771001fd2a4e6399e2c4cb80fd7fb326e4d380182cc0defeeda8fb9` |
 | `blueprint/SOURCES_AND_LICENCES.md` | 3546 | `9d461cad46615590a1621f25a6f5db29585881fe14496c274a8bb7543fcbd123` |
 | `blueprint/build_blueprint.sh` | 6634 | `7e445f3954e34cc65cb6f9378cb4ebcc07d7c12445c69067849de2b2f27e6cae` |
@@ -616,12 +616,12 @@ Files listed: 761.
 | `blueprint/tables/blueprint_tab67_bn.pdf` | 57922 | `935a45998cdd7fb5cd7911e5be152a55d33ec7e3ce78896c803dfd3b107f0a9f` |
 | `blueprint/tables/blueprint_tab67_bn.png` | 556356 | `ffa6d3c6bf4084cd188866dd43f25761d5b9c743dcb9bae10015fbee0032eac4` |
 | `blueprint/tables/blueprint_tab67_bn.tex` | 9742 | `be437f4c8efd90d90b738c7547b980e4d43f5676689129f602749f63c35e0f4e` |
-| `blueprint/tables/blueprint_tab68.pdf` | 38261 | `686bdadb66f18ed37e7ce7ec9666f8f65993dbd251d6af216f9d35ee34e881de` |
-| `blueprint/tables/blueprint_tab68.png` | 695457 | `c23696b0cc579b7610e8895528243c46690313949c56392258b4c74a1afea348` |
-| `blueprint/tables/blueprint_tab68.tex` | 6261 | `511e2c144319482bd90c62dcbbf3bb9ba0f3c25b5895aadf9277bde733692cb3` |
-| `blueprint/tables/blueprint_tab68_bn.pdf` | 59378 | `98408fb0ae88ea1e20769af5c3fc2705fce532c2582c2546324ebbf1032a1616` |
-| `blueprint/tables/blueprint_tab68_bn.png` | 832885 | `adb0226776f0c0143af440b949681c4fcdfe6f88c0d1fd1f94602298c935c1c5` |
-| `blueprint/tables/blueprint_tab68_bn.tex` | 12877 | `6d274dea6842d23ff8fb69af7ec61ecc71b9d20a028977d84c3f8e42cb33a596` |
+| `blueprint/tables/blueprint_tab68.pdf` | 38177 | `b40ed52edc0d78b0d5490e39a3b568a311652bccc1fdda3dda86018bf949100c` |
+| `blueprint/tables/blueprint_tab68.png` | 698720 | `2f94c6d860e1b32446915ff63e1bb54d218b138dc877f02ab2d28c27ed133cb7` |
+| `blueprint/tables/blueprint_tab68.tex` | 6296 | `108d45775e618152a0f48adcbb0651ea684420a9c82cf99d97dceb9a6b1cabcc` |
+| `blueprint/tables/blueprint_tab68_bn.pdf` | 59272 | `d81ed65adea0a788db4aaceda535d56b19b0167c05da94cda1a0ccb0281be64b` |
+| `blueprint/tables/blueprint_tab68_bn.png` | 837411 | `b06acb4502cffd63bf7d92855c373276ebf81362f0ca6e77ecddbf7fa780e1d8` |
+| `blueprint/tables/blueprint_tab68_bn.tex` | 12941 | `4f353164e766cb163e17677c9d71bc3112e0f4e83040fa6274f70adbbfb28a0a` |
 | `blueprint/tables/blueprint_tab69.pdf` | 32303 | `c90f723ee1165478e77c43ff3fada426e8e5397de8dba7d5b9a1a65374e7918f` |
 | `blueprint/tables/blueprint_tab69.png` | 190856 | `fbb21904219e28c502423f99cc050af5afb15565d05c9be1951d994f5e07715e` |
 | `blueprint/tables/blueprint_tab69.tex` | 3690 | `6f70e8a3e7597fd326fba6300ecab9f45bab811d40d76e14a6f582f224c5b455` |
@@ -785,8 +785,8 @@ Files listed: 761.
 | `blueprint/tables/md/blueprint_tab66_en.md` | 3415 | `01e35ca834fdc2ff83ccec9ac01c3506e26dcc412e9dfd454a98bbd552b9b773` |
 | `blueprint/tables/md/blueprint_tab67_bn.md` | 7407 | `c35718b4fc09afa12e3c554bff7ebcbd226ca120ee45251f0f0ba540a43b7cb0` |
 | `blueprint/tables/md/blueprint_tab67_en.md` | 2989 | `1185d9f3188cc57d6f84bdde01d33432632bff064b60149eeadb8bcb2be94300` |
-| `blueprint/tables/md/blueprint_tab68_bn.md` | 10747 | `3fef5778ce628a8c0304151b90c9a03d483c9abbf163ad14f8031b372b57723d` |
-| `blueprint/tables/md/blueprint_tab68_en.md` | 4313 | `7527980c789bb371c34105ad98ad8a3c2ab11251f300e722a9e43e49081e81ae` |
+| `blueprint/tables/md/blueprint_tab68_bn.md` | 10811 | `db44f92633f264b6f2e30de642c9c88bd15ba440d5c0a8249e3ace8fbb00fee5` |
+| `blueprint/tables/md/blueprint_tab68_en.md` | 4348 | `a91e8219829c7e78516e174329d674b5caff6d1d19d58b51d42b8d92f1c4b9b3` |
 | `blueprint/tables/md/blueprint_tab69_bn.md` | 3354 | `70d34146258507ea8fb3ebfbbbab719bc961e808bf850fc6ee6b5b96a58714a3` |
 | `blueprint/tables/md/blueprint_tab69_en.md` | 1478 | `b66338e25b0ec2177c248aae275833f0b7d71da632fd8f33b4dd4a5e62ceac1d` |
 | `blueprint/tables/md/blueprint_tab70_bn.md` | 4134 | `977e1870cd7a6b9488844776543bee7623ee763be3f04147b06a79ee0966255f` |
@@ -808,9 +808,9 @@ Files listed: 761.
 | `blueprint/review/CROSS_DOCUMENT_RECONCILIATION.md` | 8896 | `5c6105316da274a78239091e657b3239ce716b2521d84ea4de5501cd90f09067` |
 | `blueprint/review/MARKDOWN_VALIDATION_REPORT.md` | 4879 | `4a67e801bbd2a9ec402bc994a9d631084f79087c33202e2dc255f3bf7fe1cc0c` |
 | `blueprint/review/METADATA_TO_CONFIRM.md` | 2874 | `6259f70810c9f4b6fd87961f1037e2a4245b079261c1e8bfd7d5a5d9e0ed2209` |
-| `blueprint/review/PROJECT_AUDIT_REPORT.md` | 19949 | `200ab33be6acf1036c47cc88756f63a44a78ae26cf8c55975b2a1cad56c865c5` |
+| `blueprint/review/PROJECT_AUDIT_REPORT.md` | 19962 | `9e372443e038e49cbde4bb9b11e6b3d43184ddb456cce6e6059f2ced0aff514b` |
 | `blueprint/review/README.md` | 1180 | `1eee7846d4dd06e5ce9f36e67ffba77be8706d656cc349125ea294a390732490` |
 | `blueprint/review/REFERENCE_NUMBERS.md` | 8772 | `9e3bd53d2b7d43f5f9335de773ae71858def1582ac0fa5e4fe99510b380cae34` |
-| `blueprint/review/REFERENCE_VERIFICATION.md` | 6839 | `5537c18d32b2bede2a3780fc8f56c0960503fb2c949f6f133d024ffc6aac06cb` |
+| `blueprint/review/REFERENCE_VERIFICATION.md` | 6856 | `0a18dc1fa111373a211a3086339e18bf9d5fbf3dfd25f7c2fd2ff6dea2f29124` |
 | `blueprint/review/build_report.sh` | 830 | `6c4f8b84f952e2e4215961a6ea3f38933634f6e7e63278b2c7a52b08cfd80a3b` |
 | `blueprint/review/header-review.tex` | 324 | `ac817daf3c2574a8943357d74ebf46788279cdb5edec3d9b3eb5b6bc58baf0f1` |

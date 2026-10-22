@@ -1,6 +1,6 @@
 # Re-verification of the White Paper references cited in the Technical Blueprint
 
-Checked on 22 October 2026. The Blueprint cites 40 entries of the BAPIL White Paper (Version 1.0) bibliography; they are marked † in its reference list. Each was opened at its source (publisher page, DOI, official PDF) or, where the site blocks automated access, confirmed through search results and other copies. Corrections are applied to the Blueprint's copy in `blueprint/src/assemble.py` (`WP_CORRECTIONS`); the published White Paper and its Zenodo record are not changed, and the corrections should be carried into its next version.
+Checked on 22 October 2026. The Blueprint cites 40 entries of the BAPIL White Paper (Version 1.0) bibliography; they are marked with an asterisk (*) in its reference list. Each was opened at its source (publisher page, DOI, official PDF) or, where the site blocks automated access, confirmed through search results and other copies. Corrections are applied to the Blueprint's copy in `blueprint/src/assemble.py` (`WP_CORRECTIONS`); the published White Paper and its Zenodo record are not changed, and the corrections should be carried into its next version.
 
 Result: 27 entries correct, 13 corrected, 0 removed. In addition, Table 4 cited the 2025 Government AI Readiness Index for the 2023 ranking; the ranking (82nd, score 46.04) was confirmed in the 2023 index report, which is now cited instead (new reference, source key 154).
 
