@@ -59,7 +59,9 @@ From the repository root:
 
 ## 5. How reproducible the outputs are
 
-A clean-clone rebuild (October 2026, before the corrections of this audit) produced byte-identical tables, figures, CSV files and assembled Markdown, and PDFs identical in text, fonts and images. The PDFs differed only in the 16-byte file identifier, which XeTeX derives from pandoc’s randomly named temporary directory. PDF creation and modification dates are fixed to the publication month (`D:202610`) and `SOURCE_DATE_EPOCH` is fixed in `blueprint/src/metadata.json`.
+A clean-clone rebuild of commit `085dea3` (22 October 2026, after the corrections of the project-wide audit) produced byte-identical tables, figures, CSV files and assembled Markdown. The six PDFs were identical byte for byte except for the 16-byte file identifier, which XeTeX derives from pandoc’s randomly named temporary directory. PDF creation and modification dates are fixed to the publication month (`D:202610`) and `SOURCE_DATE_EPOCH` is fixed in `blueprint/src/metadata.json`.
+
+The Zenodo source archive was tested the same way: `BAPIL_Technical_Blueprint_source.zip` and `bapil-reference-implementation-0.1.0.zip` unzipped together into an empty directory rebuild the six PDFs, identical apart from the file identifier.
 
 Two things are recomputed on every build and change when the documents change: the demonstration evaluation in Section 11.5 (the build stops if Table 60 no longer quotes the current Recall@10) and the manifest checksums.
 

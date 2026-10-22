@@ -1,15 +1,17 @@
 # Quality-assurance report: BAPIL Technical Blueprint, Version 1.0
 
-Checked on 22 October 2026 on the build of commit `0f74dc7` (branch `blueprint-v1.0`, not pushed). Status key: **Pass**, **Fail**, **Open** (not resolved; recorded in the unresolved-items register, Table 68, or below).
+First checked on 22 October 2026 on the build of commit `0f74dc7`; checked again after the project-wide audit on the build of branch `blueprint-v1.0` (local, not pushed), section 7. Status key: **Pass**, **Fail**, **Open** (not resolved; recorded in the unresolved-items register, Table 68, or below).
 
 ## 1. Outputs checked
 
 | File | Pages | Notes |
 |---|---:|---|
-| `releases/v1.1/BAPIL_Technical_Blueprint_bn.pdf` | 132 | Letter size, PDF 1.5, all fonts embedded as subsets |
-| `releases/v1.1/BAPIL_Technical_Blueprint_en.pdf` | 140 | Same |
+| `releases/v1.1/BAPIL_Technical_Blueprint_en.pdf` | 139 | Letter size, PDF 1.5, all fonts embedded as subsets |
+| `releases/v1.1/BAPIL_Technical_Blueprint_bn.pdf` | 134 | Same |
+| `releases/v1.1/BAPIL_Blueprint_Summary_en.pdf` | 11 | Same |
 | `releases/v1.1/BAPIL_Blueprint_Summary_bn.pdf` | 11 | Same |
-| `releases/v1.1/BAPIL_Blueprint_Summary_en.pdf` | 12 | Same |
+| `releases/v1.1/BAPIL_Decision_Memo_en.pdf` | 2 | Separate document, not part of the Blueprint |
+| `releases/v1.1/BAPIL_Decision_Memo_bn.pdf` | 2 | Same |
 
 Sizes and SHA-256 checksums are in `MANIFEST.md`.
 
@@ -94,7 +96,7 @@ Opening and closing marks are balanced in every file. Searching the Bangla PDF f
 | Tables readable | Pass | |
 | Figures and diagrams clear | Pass | Vector figures; labels legible at 100% zoom |
 | Page numbers and cross-references correct | Pass | All 322 (BN) and 326 (EN) internal links resolve; every table 1 to 68 and figure 1 to 15 is cited; no reference above Table 68 |
-| No unexpected blank pages or layout defects | Pass, minor | Near-empty overflow pages removed. Remaining: the English list of tables ends with two entries on page 14; part title pages are intentionally sparse |
+| No unexpected blank pages or layout defects | Pass, minor (revised in section 7) | First pass: near-empty overflow pages removed by page enlargement. Section 7 found that several of those enlargements made body text overprint the page number; corrected |
 
 ### Source files
 
@@ -134,4 +136,29 @@ Not fully evaluated, and the PDFs are not tagged (no PDF/UA claim). What is in p
 * Legal confirmation of the 2025 and 2026 instruments by Bangladesh counsel (U1 to U3) and of the host's ability to accept the ERRC veto (U15).
 * Costs not yet in the base case (U16).
 * GitHub release v1.1.0 and the Blueprint DOI (U4).
-* `CITATION.cff` gives the author's affiliation as Université Paris-Saclay, while the Blueprint gives "Independent Researcher, Bangladesh"; the author should choose one before release.
+* Affiliation: the author chose "Independent Researcher, Bangladesh" for the Blueprint; whether `CITATION.cff` and the README author section (Université Paris-Saclay) follow at release v1.1.0 is open (`review/METADATA_TO_CONFIRM.md`).
+* Licence of the documents (CC BY 4.0 as printed) to be confirmed by the author.
+
+## 7. Second pass after the project-wide audit (22 October 2026)
+
+The audit corrected legal, institutional and technical statements in both editions and the Summary, restored the Decision Memo as a separate document and changed several layouts (`CHANGES.md`, section 9; `review/PROJECT_AUDIT_REPORT.md`). All six PDFs were rebuilt with `blueprint/build_blueprint.sh` and checked again.
+
+| Check | Result | Evidence |
+|---|---|---|
+| Full build | Pass | Exit status 0; tables, figures, budget CSV, six PDFs, manifest |
+| Unit tests | Pass | 49 of 49 (Python 3.13.16) |
+| Demonstration evaluation agrees with Table 60 | Pass | Recall@10 0.875 (shown as 0.88, 21 of 24), 6 of 6 abstentions; the build stops on a mismatch |
+| Quotation-mark convention in the sources | Pass | `typography.py --check` in the build |
+| Missing Bangla or Latin glyphs | Pass | No "Missing character" in the build log |
+| Fonts embedded | Pass | `pdffonts`: no font without embedding in any of the six PDFs |
+| Titles and PDF metadata | Pass | Titles exactly as specified; creation and modification dates `D:202610`; subject and keywords set |
+| Internal links | Pass | 326 (EN) and 322 (BN) internal links, all resolving to named destinations |
+| Body text clear of page numbers | **Fail, then fixed** | A bounding-box check of every page found body text overprinting or touching the page number on seven pages, all caused by `\enlargethispage` of two or more lines (two of them from the first pass: English page 99 and the Bangla reference list). All such enlargements were removed; after the fix no page has body text within 8 pt of the page number |
+| Short pages | Pass, minor | No page carries a single line or a single entry. Part title pages are intentionally sparse. Remaining short chapter or annex endings, accepted: Bangla page 74 (end of Chapter 14, three lines), Bangla page 100 and English page 104 (end of Annex B, two and three lines); English pages 64 and 92 and Bangla page 36 end chapters at half a page; the list of tables ends on a short page in both editions |
+| Visual inspection | Pass | Title and copyright pages, Figure 3, Tables 37, 42 and 43, Chapters 20 and 21, Annex B and the reference lists of both editions; both Decision Memo pages in both languages; Summary pages 2 to 4 |
+| Bangla Table 43 | Pass | Set in footnote size to keep Chapter 14 compact; legible at 100% zoom |
+| Budget workbook | Pass | `make_budget_workbook.py --check`: low 17.93, base 20.43, adjusted 22.24, high 25.25 crore and every annual total identical to `budget_model.py`; no difference larger than Tk 1 |
+| `CITATION.cff` | Pass | Valid against the CFF 1.2.0 schema |
+| Markdown and links | Pass after fixes | `review/MARKDOWN_VALIDATION_REPORT.md` |
+| Clean-clone rebuild | Pass | Commit `085dea3` cloned into an empty directory; all generated tables, figures, CSV files, assembled Markdown, PDFs and the evaluation report deleted; full build run (4 minutes). Tables, figures, CSV files and the six assembled Markdown files byte-identical to the committed ones; the six PDFs identical byte for byte apart from the 16-byte PDF file identifier (`/ID`) |
+| Rebuild from the Zenodo source archive | Pass | `BAPIL_Technical_Blueprint_source.zip` and `bapil-reference-implementation-0.1.0.zip` (from `make_zenodo_package.sh`) unzipped into an empty directory; `blueprint/build_blueprint.sh` completed and produced the six PDFs, identical apart from `/ID`. Before this audit the archive lacked `make_manifest.py` and three of the four `reports/*.md` files used by the demonstration corpus, so it could not have reproduced the PDFs; both were added |

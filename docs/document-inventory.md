@@ -55,7 +55,7 @@ Classification: **1** authoritative source; **2** generated publication; **3** s
 | `blueprint/README.md`, `MANIFEST.md`, `CHANGES.md`, `QA_REPORT.md`, `SOURCES_AND_LICENCES.md` | Blueprint package documentation | 1, 2 (manifest) | Current | Updated |
 | `blueprint/zenodo/` | Zenodo metadata draft, description, checklist, package script | 1 | Prepared; nothing uploaded | Updated (integration warning, licence and affiliation decisions) |
 | `blueprint/review/` (audit and revision report, adversarial review, change record) | Earlier internal review records | 5 | Kept for traceability; not part of the publication | Unchanged |
-| `blueprint/review/PROJECT_AUDIT_REPORT.md`, `CROSS_DOCUMENT_RECONCILIATION.md`, `MARKDOWN_VALIDATION_REPORT.md` | Records of this audit | 3 | New | Created |
+| `blueprint/review/PROJECT_AUDIT_REPORT.md`, `CROSS_DOCUMENT_RECONCILIATION.md`, `MARKDOWN_VALIDATION_REPORT.md`, `METADATA_TO_CONFIRM.md` | Records of this audit | 3 | New | Created |
 | `research/*.md` (8 studies) | International case studies and literature review | 3 | Current; no licence statement | Licence to be confirmed |
 | `.github/workflows/tests.yml`, `build-blueprint.yml` | CI | 1 | Never run on GitHub | Corpus paths updated |
 | `.github/pull_request_template.md`, `.gitkeep` files, `scripts/.gitkeep` | Repository scaffolding | 7 | Empty placeholders in `ISSUE_TEMPLATE/`, `workflows/` and `scripts/` | Left as found (they predate this work) |
