@@ -13,7 +13,7 @@
 
 ## Scope
 
-The Technical Blueprint turns the BAPIL White Paper (Version 1.0) into a buildable plan: institutional design, reference architecture, data and AI design, governance and assurance, a tested reference implementation, a 36-month delivery plan with an indicative budget, a strategic roadmap to 2041 and six decisions requested from the authorities. Five parts, 21 chapters, 23 annexes, 70 tables and 15 figures.
+The Technical Blueprint turns the BAPIL White Paper (Version 1.0) into a buildable plan: institutional design, reference architecture, data and AI design, governance and assurance, a tested reference implementation, a 36-month delivery plan with an indicative budget, a strategic roadmap to 2041 and six decisions requested from the authorities. Five parts, 21 chapters, 23 annexes, 72 tables and 16 figures.
 
 BAPIL is a proposal. No institution has been established, no governance body constituted and no funding approved; all quality thresholds are proposed targets.
 

@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Figures added in the expanded edition (new numbering): 02, 05, 06, 13, 14, 15."""
+"""Figures added in the expanded edition (new numbering): 02, 05, 06, 13, 14, 15, 16."""
 
 NEW_FIGS = {}
 
@@ -271,4 +271,96 @@ NEW_FIGS["15"] = {
            "legend": "\\textbf{Reading the map}\\\\[1mm]Each label is a risk in the register (Table 55).\\\\[1mm]Red cells need active mitigation and quarterly Steering Board attention.\\\\[1mm]Blue cells need named owners and monitoring.\\\\[1mm]Green cells are accepted and reviewed annually."},
     "bn": {"lo": "নিম্ন", "me": "মাঝারি", "hi": "উচ্চ", "impact": "প্রভাব", "like": "সম্ভাবনা",
            "legend": "\\textbf{মানচিত্র পড়ার নিয়ম}\\\\[1mm]প্রতিটি লেবেল নিবন্ধনের (সারণি ৫৫) একটি ঝুঁকি।\\\\[1mm]লাল ঘরে সক্রিয় প্রশমন ও স্টিয়ারিং বোর্ডের ত্রৈমাসিক মনোযোগ প্রয়োজন।\\\\[1mm]নীল ঘরে মনোনীত দায়িত্বপ্রাপ্ত ও পর্যবেক্ষণ প্রয়োজন।\\\\[1mm]সবুজ ঘর গৃহীত এবং বার্ষিক পর্যালোচিত।"},
+}
+
+# ---------------------------------------------------------------- Figure 16: integrated pathway (Annex W)
+def _fig16_values():
+    import budget_model as bm
+    fb = bm.funding_by_source()
+    posts = bm.stage_posts()
+    keys = [k for k, _, _ in bm.STAGES]
+    tot = {k: sum(fb[k]) for k in keys}
+    colours = ["accent", "accent!45", "ok!55", "warn!45", "ink!30"]
+    bars = []
+    for c, k in enumerate(keys):
+        x0 = 0.0
+        for i, v in enumerate(fb[k]):
+            w = v / tot[k]
+            if w <= 0:
+                continue
+            bars.append(r"\fill[%s] ($(\L+%d*\C+3mm+%.4f*\C-%.4f*6mm, -12mm-4*\R-0.5*\R-2.6mm)$) rectangle ($(\L+%d*\C+3mm+%.4f*\C-%.4f*6mm, -12mm-4*\R-0.5*\R+2.6mm)$);"
+                        % (colours[i], c, x0, x0, c, x0 + w, x0 + w))
+            x0 += w
+        bars.append(r"\draw[ink, line width=0.4pt] (\L+%d*\C+3mm, -12mm-4*\R-0.5*\R-2.6mm) rectangle (\L+%d*\C+\C-3mm, -12mm-4*\R-0.5*\R+2.6mm);" % (c, c))
+    gov = [100 * fb[k][0] / tot[k] for k in keys]
+    num = {k: ("%d" % posts[k]) for k in keys}
+    money = {k: "%.2f" % bm.crore(tot[k]) for k in keys}
+    return "\n".join(bars), gov, num, money
+
+
+_F16_BARS, _F16_GOV, _F16_POSTS, _F16_MONEY = _fig16_values()
+_BN_D = str.maketrans("0123456789", "০১২৩৪৫৬৭৮৯")
+
+NEW_FIGS["16"] = {
+    "tikz": r"""
+\begin{tikzpicture}
+\def\L{26mm}\def\C{40mm}\def\R{15mm}
+\tikzset{hd/.style={box, rounded corners=5pt, minimum width=\C-1.5mm, minimum height=13mm, text width=\C-3mm, font=\footnotesize, inner sep=2pt},
+         cell/.style={box, rounded corners=4pt, minimum width=\C-1.5mm, minimum height=\R-2mm, text width=\C-4mm, font=\scriptsize, inner sep=1.5pt},
+         ln/.style={font=\footnotesize\bfseries, text width=\L-3mm, align=left, anchor=west}}
+\foreach \c/\col in {0/accentlight,1/accent!30,2/accent!45,3/accent!60} {
+  \node[hd, fill=\col] (h\c) at (\L+\c*\C+0.5*\C, 0) {};
+}
+\node[hd, fill=accentlight] at (h0) {\textbf{«h0»}\\«p0»}; \node[hd, fill=accent!30] at (h1) {\textbf{«h1»}\\«p1»};
+\node[hd, fill=accent!45] at (h2) {\textbf{«h2»}\\«p2»}; \node[hd, fill=accent!60] at (h3) {\textbf{«h3»}\\«p3»};
+\draw[arr, line width=1.2pt] (\L,-9.5mm) -- (\L+4*\C+3mm,-9.5mm);
+\newcommand{\lane}[6]{%
+  \fill[band, rounded corners=4pt] (0,-12mm-#1*\R) rectangle (\L+4*\C,-12mm-#1*\R-\R+0.8mm);
+  \node[ln] at (0.5mm,-12mm-#1*\R-0.5*\R) {#2};
+  \node[cell] at (\L+0.5*\C,-12mm-#1*\R-0.5*\R) {#3};
+  \node[cell] at (\L+1.5*\C,-12mm-#1*\R-0.5*\R) {#4};
+  \node[cell] at (\L+2.5*\C,-12mm-#1*\R-0.5*\R) {#5};
+  \node[cell] at (\L+3.5*\C,-12mm-#1*\R-0.5*\R) {#6};}
+\lane{0}{«l1»}{«a0»}{«a1»}{«a2»}{«a3»}
+\lane{1}{«l2»}{«b0»}{«b1»}{«b2»}{«b3»}
+\lane{2}{«l3»}{«c0»}{«c1»}{«c2»}{«c3»}
+\lane{3}{«l4»}{«d0»}{«d1»}{«d2»}{«d3»}
+\fill[band, rounded corners=4pt] (0,-12mm-4*\R) rectangle (\L+4*\C,-12mm-4*\R-\R+0.8mm);
+\node[ln] at (0.5mm,-12mm-4*\R-0.5*\R) {«l5»};
+«bars»
+\node[cell, draw=none, fill=none] at (\L+3.5*\C,-12mm-4*\R-0.5*\R) {«e3»};
+\foreach \c/\t in {1/{«g1»},2/{«g2»},3/{«g3»}} {
+  \node[draw=ink, fill=white, diamond, inner sep=1.8pt] at (\L+\c*\C,-12mm-5*\R-3mm) {};
+  \node[font=\scriptsize, anchor=north, text width=\C-6mm, align=center] at (\L+\c*\C,-12mm-5*\R-5mm) {\t};
+}
+\node[font=\scriptsize\bfseries, anchor=west] at (0.5mm,-12mm-5*\R-3mm) {«gates»};
+\foreach \i/\col/\t in {0/accent/{«s1»},1/accent!45/{«s2»},2/ok!55/{«s3»},3/warn!45/{«s4»},4/ink!30/{«s5»}} {
+  \fill[\col] (\L+\i*0.8*\C,-12mm-5*\R-21mm) rectangle ++(3.2mm,3.2mm);
+  \node[font=\scriptsize, anchor=west, text width=0.8*\C-5mm] at (\L+\i*0.8*\C+3.6mm,-12mm-5*\R-19.4mm) {\t};
+}
+\end{tikzpicture}""",
+    "en": {"h0": "Phase 1 pilot", "p0": "Year 1 (2027)", "h1": "Phase 2", "p1": "Years 2 and 3 (2028 to 2029)",
+           "h2": "Conditional scale-up", "p2": "Years 4 to 8 (2030 to 2034)", "h3": "Institutionalisation", "p3": "From 2035",
+           "l1": "Institutional form", "l2": "Government role", "l3": "Direct posts", "l4": "Budget (Tk crore)", "l5": "Funding mix",
+           "a0": "University-anchored lab under MoU; host employs staff", "a1": "Same; ERRC, TAB and register in use",
+           "a2": "Multi-year core funding; four divisional nodes", "a3": "Foundation, statutory centre or smaller lab",
+           "b0": "ICT Division MoU and Board co-chair; custodians open data", "b1": "Agencies host pilots; G4 adoption decisions",
+           "b2": "Agencies own tools, host analysts, sign service agreements", "b3": "Legislation or government decision if statutory",
+           "c0": _F16_POSTS["phase1"], "c1": _F16_POSTS["phase2"], "c2": _F16_POSTS["scaleup"] + " by Year 8", "c3": "Set at the 2035 review",
+           "d0": _F16_MONEY["phase1"], "d1": _F16_MONEY["phase2"], "d2": _F16_MONEY["scaleup"] + " (not requested now)", "d3": "Set at the 2035 review",
+           "bars": _F16_BARS, "e3": "Government share expected to rise further (Table 51)",
+           "gates": "Gates", "g1": "Month-12 review and costing study", "g2": "Final evaluation; P1 and P2 pass G4", "g3": "2035 strategic review",
+           "s1": "Government", "s2": "Research grants", "s3": "Development partners", "s4": "Agency service agreements", "s5": "Industry and philanthropy"},
+    "bn": {"h0": "পর্যায় ১-এর পাইলট", "p0": "বছর ১ (২০২৭)", "h1": "পর্যায় ২", "p1": "বছর ২ ও ৩ (২০২৮ থেকে ২০২৯)",
+           "h2": "শর্তসাপেক্ষ সম্প্রসারণ", "p2": "বছর ৪ থেকে ৮ (২০৩০ থেকে ২০৩৪)", "h3": "প্রাতিষ্ঠানিকীকরণ", "p3": "২০৩৫ থেকে",
+           "l1": "প্রাতিষ্ঠানিক রূপ", "l2": "সরকারের ভূমিকা", "l3": "প্রত্যক্ষ পদ", "l4": "বাজেট (কোটি টাকা)", "l5": "অর্থায়নের মিশ্রণ",
+           "a0": "সমঝোতা স্মারকের অধীনে বিশ্ববিদ্যালয়-ভিত্তিক ল্যাব; স্বাগতিক কর্মী নিয়োগ দেয়", "a1": "একই; ERRC, TAB ও নিবন্ধন চালু",
+           "a2": "বহুবর্ষী মূল অর্থায়ন; চারটি বিভাগীয় কেন্দ্র", "a3": "ফাউন্ডেশন, সংবিধিবদ্ধ কেন্দ্র বা ছোট ল্যাব",
+           "b0": "আইসিটি বিভাগের সমঝোতা স্মারক ও বোর্ডের সহ-সভাপতি; রক্ষকেরা ডেটা উন্মুক্ত করে", "b1": "সংস্থাগুলো পাইলট ধারণ করে; G4 গ্রহণ-সিদ্ধান্ত",
+           "b2": "সংস্থাগুলো সরঞ্জামের মালিক, বিশ্লেষক ধারণ ও সেবা-চুক্তি করে", "b3": "সংবিধিবদ্ধ হলে আইন বা সরকারি সিদ্ধান্ত",
+           "c0": _F16_POSTS["phase1"].translate(_BN_D), "c1": _F16_POSTS["phase2"].translate(_BN_D), "c2": "বছর ৮-এর মধ্যে " + _F16_POSTS["scaleup"].translate(_BN_D), "c3": "২০৩৫-এর পর্যালোচনায় নির্ধারিত",
+           "d0": _F16_MONEY["phase1"].translate(_BN_D), "d1": _F16_MONEY["phase2"].translate(_BN_D), "d2": _F16_MONEY["scaleup"].translate(_BN_D) + " (এখন অনুরোধকৃত নয়)", "d3": "২০৩৫-এর পর্যালোচনায় নির্ধারিত",
+           "bars": _F16_BARS, "e3": "সরকারের অংশ আরও বাড়ার প্রত্যাশা (সারণি ৫১)",
+           "gates": "গেট", "g1": "মাস ১২-এর পর্যালোচনা ও ব্যয়-নিরূপণ সমীক্ষা", "g2": "চূড়ান্ত মূল্যায়ন; P1 ও P2 গেট G4 উত্তীর্ণ", "g3": "২০৩৫-এর কৌশলগত পর্যালোচনা",
+           "s1": "সরকার", "s2": "গবেষণা অনুদান", "s3": "উন্নয়ন-সহযোগী", "s4": "সংস্থার সেবা-চুক্তি", "s5": "শিল্প ও জনহিতৈষী উৎস"},
 }

@@ -63,6 +63,8 @@ CAPTIONS = {
            "bn": "পরিবর্তনের তত্ত্ব: উপকরণ থেকে প্রভাব পর্যন্ত, মূল অনুমান ও শিক্ষণ-চক্রসহ।"},
     "15": {"en": "Risk heat map of the eighteen registered risks by likelihood and impact.",
            "bn": "সম্ভাবনা ও প্রভাব অনুযায়ী নিবন্ধিত আঠারোটি ঝুঁকির তাপ-মানচিত্র।"},
+    "16": {"en": "Integrated institutional and financial pathway: form, government role, posts, budget and funding mix by stage, with the gates between stages.",
+           "bn": "সমন্বিত প্রাতিষ্ঠানিক ও আর্থিক পথনকশা: পর্যায়ভিত্তিক রূপ, সরকারের ভূমিকা, পদ, বাজেট ও অর্থায়নের মিশ্রণ, পর্যায়গুলোর মধ্যকার গেটসহ।"},
 }
 
 

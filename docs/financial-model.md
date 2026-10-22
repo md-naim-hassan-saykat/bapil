@@ -57,3 +57,7 @@ Method: the same fully loaded unit costs as the 36-month model (Table 49), escal
 
 Funds would be released in three tranches tied to the review points (Blueprint Section 17.2): Year 1, about Tk 4.73 crore, on decision D2 and the signed MoU and host agreement; Year 2, about Tk 7.49 crore, after the month-12 review and the costing study; Year 3, about Tk 8.21 crore, after the month-24 review informed by the mid-term evaluation. By the end of Year 1 about 23% of the 36-month budget has been committed. Capital expenditure (servers, GPUs and storage) is Tk 1.14, 1.02 and 0.30 crore by year, Tk 2.46 crore in all (12% of the total); the rest is revenue spending (`capital_revenue` in `budget_model.py`; Table 62).
 
+## 7. Funding by source and integrated pathway
+
+`funding_by_source` applies one indicative share per horizon, chosen inside the ranges of Blueprint Table 51 and checked automatically (H1 2027 and 2028: government 35%, grants 25%, development partners 30%, service agreements 0%, industry and philanthropy 10%; H2 2029 and 2030: 45, 20, 20, 7, 8; H3 2031 onwards: 50, 15, 7, 20, 8), to the budget of each calendar year with Year 1 in 2027. Result (Tk crore): Phase 1 4.73 (government 1.65), Phase 2 15.70 (government 6.32), scale-up 218.85 (government 108.15, service agreements 40.46); government provides 39% of the 36-month plan. Output: `blueprint/data/funding_by_source_and_stage.csv`; Blueprint Table 72 and Figure 16. Categories are not single funders, and no amount has been requested or committed.
+

@@ -423,6 +423,75 @@ def jobs():
     return pilot + su
 
 
+# ----------------------------------------------------------------- funding by source and stage
+# Table 51 gives the funding mix by horizon as ranges. For the integrated pathway (Annex W, Tables 71
+# and 72) one indicative share is chosen inside each range so that the shares add to 100%, and is
+# applied to the budget of each calendar year (Year 1 = 2027, the indicative start in Table 45).
+FUNDING_SOURCES = [
+    "Government core contribution (MoU, development budget)",
+    "Competitive research grants",
+    "Development partners (pilot-specific)",
+    "Service agreements with agencies (cost recovery)",
+    "Industry and philanthropy (open benchmarks, fellowships)",
+]
+FUNDING_RANGES = {   # Table 51, per cent (low, high)
+    "H1": ((30, 40), (20, 30), (20, 30), (0, 0), (5, 10)),
+    "H2": ((40, 50), (15, 25), (15, 20), (5, 10), (5, 10)),
+    "H3": ((45, 55), (10, 20), (5, 10), (15, 25), (5, 10)),
+}
+FUNDING_SHARES = {   # indicative point within each range; each horizon adds to 100
+    "H1": (35, 25, 30, 0, 10),
+    "H2": (45, 20, 20, 7, 8),
+    "H3": (50, 15, 7, 20, 8),
+}
+START_YEAR = 2027
+
+
+def _horizon(year):
+    return "H1" if year <= 2028 else ("H2" if year <= 2030 else "H3")
+
+
+def check_funding_shares():
+    for h, shares in FUNDING_SHARES.items():
+        assert sum(shares) == 100, (h, shares)
+        for (lo, hi), v in zip(FUNDING_RANGES[h], shares):
+            assert lo <= v <= hi, (h, lo, v, hi)
+
+
+STAGES = [   # (key, first year index, last year index); 0 = Year 1
+    ("phase1", 0, 0),
+    ("phase2", 1, 2),
+    ("scaleup", 3, 7),
+]
+
+
+def annual_totals_8y(p=None):
+    """Years 1 to 8: the 36-month base case followed by the conditional scale-up (Tk)."""
+    return list(totals(p)[0]) + list(scaleup_totals(p)[0])
+
+
+def funding_by_source(p=None):
+    """{stage: [Tk by source in FUNDING_SOURCES order]} and stage totals."""
+    check_funding_shares()
+    years = annual_totals_8y(p)
+    out = {}
+    for key, a, b in STAGES:
+        amounts = [0.0] * len(FUNDING_SOURCES)
+        for y in range(a, b + 1):
+            shares = FUNDING_SHARES[_horizon(START_YEAR + y)]
+            for i, sh in enumerate(shares):
+                amounts[i] += years[y] * sh / 100
+        out[key] = amounts
+    return out
+
+
+def stage_posts():
+    """Direct posts (FTE) at the end of each stage."""
+    jb = jobs()
+    posts = [sum(v for k, v in j.items() if k.endswith("(FTE)")) for j in jb]
+    return {"phase1": posts[0], "phase2": posts[2], "scaleup": posts[7]}
+
+
 def crore(x):
     return x / CRORE
 
@@ -490,6 +559,10 @@ def write_csv(outdir):
     w("scaleup_by_category.csv", ["row"] + ["year%d_tk" % (y + 4) for y in range(5)] + ["total_tk"],
       [[k] + [round(x, 2) for x in v] + [round(sum(v), 2)] for k, v in su.items()]
       + [["Total"] + [round(x, 2) for x in scaleup_totals()[0]] + [round(scaleup_totals()[1], 2)]])
+    fb = funding_by_source()
+    w("funding_by_source_and_stage.csv", ["source", "phase1_tk", "phase2_tk", "scaleup_tk", "total_tk"],
+      [[src] + [round(fb[k][i], 2) for k, _, _ in STAGES] + [round(sum(fb[k][i] for k, _, _ in STAGES), 2)]
+       for i, src in enumerate(FUNDING_SOURCES)])
     jb = jobs()
     keys = list(jb[0].keys())
     w("jobs_and_skills.csv", ["measure"] + ["year%d" % (y + 1) for y in range(8)],

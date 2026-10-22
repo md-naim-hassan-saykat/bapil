@@ -559,6 +559,20 @@ The scale-up extends what the pilots have shown to work. Its main components are
 
 Four conditions apply. P1 and P2 must pass Gate G4; the independent final evaluation must be positive; the Steering Board and the authorities must decide to scale up at the strategic review (Table 48); and adopting agencies must agree to meet the operating costs of the tools they use, and possibly the cost of the analysts placed with them (Section 17.3). Possible sources are the government development budget, development partners and national AI innovation funds. The figures are planning estimates at the level of detail that is possible before the pilots; Blueprint 2.0 is to replace them with a costed plan.
 
+## W.4 Integrated Institutional and Financial Pathway
+
+Figure 16 and Tables 71 and 72 bring the institutional design (Chapter 5), the roadmap (Chapter 16), the budget (Chapter 17), the funding mix (Table 51) and the scale-up (Tables 69 and 70) into one view. For each stage they show who employs the staff, what the government does, how many posts exist, what it costs, who pays and what must happen before the next stage.
+
+<!-- FIGURE:16 -->
+
+<!-- TABLE:71 -->
+
+\needspace{16\baselineskip}
+
+<!-- TABLE:72 -->
+
+Three points follow. First, government is involved from the start without BAPIL becoming a government department: the ICT Division signs the MoU and co-chairs the Steering Board, agencies own the tools they adopt, and government becomes the largest funder over time. Second, the government’s indicative share of the 36-month plan is about Tk 8.0 crore (39%), with the rest from research grants, development partners and industry; in the scale-up, government and agency service agreements together would provide about two-thirds. Third, every stage has a gate: money for the next stage follows evidence from the previous one.
+
 \newpage
 
 {{REFERENCES}}
