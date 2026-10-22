@@ -91,7 +91,7 @@ All budget figures are computed by `blueprint/src/budget_model.py`; the workbook
 
 | Item | Convention |
 |---|---|
-| Citations | Numbered in order of first citation; the Blueprint uses one numbering for both editions (110 references; entry format of the White Paper, numeric with type codes such as [J], [M], [C], [R], [EB/OL], based on GB/T 7714-2015), the Summary and the Decision Memo number their own lists; entries taken from the White Paper bibliography are marked †. Sources cite stable keys (1 to 83 White Paper, 84 onwards `blueprint/src/refs_new.md`), mapped in `blueprint/review/REFERENCE_NUMBERS.md`; Bangla editions print the numbers in Bangla digits |
+| Citations | Numbered in order of first citation; the Blueprint uses one numbering for both editions (111 references; entry format of the White Paper, numeric with type codes such as [J], [M], [C], [R], [EB/OL], based on GB/T 7714-2015), the Summary and the Decision Memo number their own lists; entries taken from the White Paper bibliography are marked †. Sources cite stable keys (1 to 83 White Paper, 84 onwards `blueprint/src/refs_new.md`), mapped in `blueprint/review/REFERENCE_NUMBERS.md`; Bangla editions print the numbers in Bangla digits |
 | Quotation marks | “ ” and ‘ ’ in prose, ’ for the English apostrophe; straight marks only in code, URLs, JSON and commands (`blueprint/src/typography.py`) |
 | Dashes | No en or em dashes in body text; hyphens where needed; en dashes only in bibliographic page ranges |
 | Numbers in Bangla | Bangla digits in the Bangla editions, except in code, identifiers and URLs |

@@ -232,20 +232,20 @@ Available:
 <https://aipolicy.gov.bd/docs/national-ai-policy-bangladesh-2026-2030-draft-v2.0.pdf>
 
 [8] † GENERAL ECONOMICS DIVISION (GED), PLANNING COMMISSION, GOVERNMENT OF BANGLADESH.
-Perspective Plan of Bangladesh 2021–2041: Making Vision 2041 a Reality[EB/OL].
-Dhaka: Planning Commission, Government of Bangladesh, 2021[2026-06-18].
+Making Vision 2041 a Reality: Perspective Plan of Bangladesh 2021–2041[EB/OL].
+Dhaka: Planning Commission, Government of Bangladesh, 2020[2026-10-22].
 Available:
 <https://oldweb.lged.gov.bd/uploadeddocument/unitpublication/1/1049/vision%202021-2041.pdf>
 
 [9] † INFORMATION AND COMMUNICATION TECHNOLOGY (ICT) DIVISION, GOVERNMENT OF THE PEOPLE’S REPUBLIC OF BANGLADESH.
-Smart Bangladesh: ICT Master Plan 2041[EB/OL].
-Dhaka: ICT Division, Government of the People’s Republic of Bangladesh, 2024[2026-06-18].
+Smart Bangladesh: ICT Master Plan 2041 (Draft)[EB/OL].
+Dhaka: ICT Division, Government of the People’s Republic of Bangladesh, undated[2026-10-22].
 Available: 
 <https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-moa/2024/12/a01255f61d29443eabbf948ef97c290e.pdf>
 
 [10] † THE BUSINESS STANDARD (TBS).
 Govt to establish AI hub with Tk192.66cr project backed by Koica[EB/OL].
-Dhaka: The Business Standard, 2026[2026-06-18].
+Dhaka: The Business Standard, 2026[2026-10-22].
 Available:
 <https://www.tbsnews.net/tech/govt-establish-ai-hub-tk19266cr-project-backed-koica-1462206>
 

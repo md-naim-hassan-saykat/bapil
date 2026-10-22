@@ -63,7 +63,7 @@ TABLES_C = [
             "en": [
                 ["UN E-Government Development Index (EGDI), 2024", "Rank 100 of 193, score 0.6570 (rank 111 in 2022); highest EGDI among least developed countries", "Digital service foundations exist to build on", "[21, 107]"],
                 ["ITU Global Cybersecurity Index, 2024", "Reported in the top tier", "Frameworks exist; resilience under stress still needs testing", "[71, 108]"],
-                ["Oxford Insights Government AI Readiness Index, 2023", "Rank 82", "Room to improve on governance, data and capacity pillars", "[26, 80]"],
+                ["Oxford Insights Government AI Readiness Index, 2023", "Rank 82", "Room to improve on governance, data and capacity pillars", "[154, 80]"],
                 ["University AI compute, 2025 estimates", "2 to 55 GPUs per surveyed department; public universities at the low end", "Use shared national compute; keep pilot models small", "[80]"],
                 ["Data protection and data management", "Personal Data Protection Act, 2026 and National Data Management Act, 2026 passed in April 2026", "Clear legal basis for a public-data-first design", "[85, 86]"],
                 ["National AI policy", "Draft 2026-2030 consulted in January 2026; new drafting from Q4 2026", "Timely window for technical input", "[88, 91]"],
@@ -72,7 +72,7 @@ TABLES_C = [
             "bn": [
                 ["জাতিসংঘ ই-সরকার উন্নয়ন সূচক (EGDI), ২০২৪", "১৯৩ দেশের মধ্যে ১০০তম, স্কোর ০.৬৫৭০ (২০২২ সালে ১১১তম); স্বল্পোন্নত দেশগুলোর মধ্যে সর্বোচ্চ EGDI", "ভিত্তি হিসেবে ডিজিটাল সেবার কাঠামো বিদ্যমান", "[21, 107]"],
                 ["আইটিইউ গ্লোবাল সাইবার সিকিউরিটি ইনডেক্স, ২০২৪", "শীর্ষ স্তরে অবস্থান প্রতিবেদিত", "কাঠামো আছে; চাপের মধ্যে স্থিতিস্থাপকতা এখনো যাচাই প্রয়োজন", "[71, 108]"],
-                ["অক্সফোর্ড ইনসাইটস সরকারি এআই প্রস্তুতি সূচক, ২০২৩", "৮২তম", "শাসন, ডেটা ও সক্ষমতা স্তম্ভে উন্নতির সুযোগ", "[26, 80]"],
+                ["অক্সফোর্ড ইনসাইটস সরকারি এআই প্রস্তুতি সূচক, ২০২৩", "৮২তম", "শাসন, ডেটা ও সক্ষমতা স্তম্ভে উন্নতির সুযোগ", "[154, 80]"],
                 ["বিশ্ববিদ্যালয়ে এআই কম্পিউটিং, ২০২৫ সালের অনুমান", "জরিপকৃত বিভাগপ্রতি ২ থেকে ৫৫টি GPU; সরকারি বিশ্ববিদ্যালয়গুলো নিম্নপ্রান্তে", "যৌথ জাতীয় কম্পিউটিং ব্যবহার; পাইলট মডেল ছোট রাখা", "[80]"],
                 ["উপাত্ত সুরক্ষা ও উপাত্ত ব্যবস্থাপনা", "এপ্রিল ২০২৬-এ ব্যক্তিগত উপাত্ত সুরক্ষা আইন, ২০২৬ ও জাতীয় উপাত্ত ব্যবস্থাপনা আইন, ২০২৬ পাস", "প্রথমে উন্মুক্ত ডেটা নকশার স্পষ্ট আইনগত ভিত্তি", "[85, 86]"],
                 ["জাতীয় এআই নীতি", "খসড়া ২০২৬-২০৩০ জানুয়ারি ২০২৬-এ জন-পরামর্শে; ২০২৬-এর চতুর্থ ত্রৈমাসিক থেকে নতুন প্রণয়ন", "কারিগরি উপকরণ দেওয়ার উপযুক্ত সময়", "[88, 91]"],

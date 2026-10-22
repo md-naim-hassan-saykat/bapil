@@ -434,3 +434,10 @@ Banks asked to enrol employees in Pragati pension scheme[EB/OL].
 Dhaka: The Daily Star, 2026-06-04[2026-10-22].
 Available:
 <https://www.thedailystar.net/business/economy/news/banks-asked-enrol-employees-pragati-pension-scheme-4189996>
+
+[154] OXFORD INSIGHTS.
+Government AI Readiness Index 2023[R/OL].
+Oxford: Oxford Insights, 2023[2026-10-22].
+Copy hosted by the Norwegian Digitalisation Agency.
+Available:
+<https://www.digdir.no/sites/sogn/files/2024-03/GovernmentAIReadinessIndex2023.pdf>
