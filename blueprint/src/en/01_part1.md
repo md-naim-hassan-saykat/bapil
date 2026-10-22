@@ -47,7 +47,7 @@ The White Paper described six architectural layers, a Policy Intelligence Dashbo
 15. **Financing, procurement, monitoring and evaluation, risk management and a research agenda** (Chapters 17 to 20).
 16. **Six decisions** for the authorities (Chapter 21).
 17. **Evidence and readiness annexes:** the status of every key claim, budget reconciliation and scenarios, the evaluation protocol, the status and limits of each governance body, the preconditions for starting, risk monitoring, and a register of unresolved items (Annexes P to V).
-18. **Jobs, skills and a conditional national scale-up:** the posts, fellowships and training the plan creates, and a costed scale-up for Years 4 to 8 if the pilots succeed (Annex W).
+18. **Jobs, skills and a conditional national scale-up:** the posts, fellowships and training the plan creates, a costed scale-up for Years 4 to 8 if the pilots succeed, and one integrated institutional and financial pathway with funding by source (Annex W).
 
 <!-- TABLE:03 -->
 

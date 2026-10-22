@@ -7,6 +7,6 @@
 | Safety and robustness | 15% | Red-team results; prompt-injection success rate; refusal behaviour |
 | Deployability on local hardware | 15% | Memory and latency at the target quantisation on pilot GPUs |
 | Licence and openness | 10% | Licence terms; availability of weights; usage restrictions |
-| Transparency and documentation | 10% | Model card quality; training-data disclosure [80] |
+| Transparency and documentation | 10% | Model card quality; training-data disclosure [86] |
 
 *Note.* A model that fails any safety threshold in Table 28 is excluded regardless of its total score.

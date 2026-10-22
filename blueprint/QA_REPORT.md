@@ -6,8 +6,8 @@ First checked on 22 October 2026 on the build of commit `0f74dc7`; checked again
 
 | File | Pages | Notes |
 |---|---:|---|
-| `releases/v1.1/BAPIL_Technical_Blueprint_en.pdf` | 142 | Letter size, PDF 1.5, all fonts embedded as subsets |
-| `releases/v1.1/BAPIL_Technical_Blueprint_bn.pdf` | 139 | Same |
+| `releases/v1.1/BAPIL_Technical_Blueprint_en.pdf` | 145 | Letter size, PDF 1.5, all fonts embedded as subsets |
+| `releases/v1.1/BAPIL_Technical_Blueprint_bn.pdf` | 142 | Same |
 | `releases/v1.1/BAPIL_Blueprint_Summary_en.pdf` | 11 | Same |
 | `releases/v1.1/BAPIL_Blueprint_Summary_bn.pdf` | 11 | Same |
 | `releases/v1.1/BAPIL_Decision_Memo_en.pdf` | 2 | Separate document, not part of the Blueprint |
@@ -185,4 +185,15 @@ The audit corrected legal, institutional and technical statements in both editio
 | Tranche and capital figures | Pass | 4.73, 7.49, 8.21; 23.1% by end of Year 1; capital 1.14, 1.02, 0.30 = 2.46 (12.0%); all from `budget_model.py` |
 | Build, tests, evaluation, fonts, links, page numbers | Pass | Exit 0; 49 tests; Recall@10 0.875; all fonts embedded; no body text within 8 pt of a page number |
 | Visual inspection | Pass | Section 17.2 and Table 62 in both editions |
+
+## 10. Fifth pass: integrated pathway and employment terms (22 October 2026)
+
+| Check | Result | Evidence |
+|---|---|---|
+| Funding shares inside Table 51 ranges and adding to 100% | Pass | `check_funding_shares` runs on every build |
+| Pathway figures | Pass | Table 71, Table 72, Figure 16, Annex W.4 text and Summary all from `budget_model.py`: stages 4.73, 15.70, 218.85; posts 9, 19, 118; government 39% of the 36-month plan |
+| New references verified | Pass | Six sources opened on 22 October 2026 (Civil Service World, Singapore government, BetaKit, IndiaAI notice, Cabinet Division letter as reproduced, The Daily Star) |
+| Citations sequential | Pass | Blueprint 110 (both editions), Summary 10, Memo 5 |
+| Build, tests, evaluation, fonts, page numbers | Pass | Exit 0; 49 tests; Recall@10 0.875; all fonts embedded; no body text within 8 pt of a page number |
+| Visual inspection | Pass after fixes | Figure 16 (EN/BN): legend moved clear of the gate labels; Table 71: first column widened (a bold label touched the next column); Table 72 kept on one page |
 

@@ -18,7 +18,7 @@ This directory holds the editable sources and everything needed to rebuild the p
 | Editable master, Bangla | `src/BAPIL_Technical_Blueprint_bn.src.md` with chapters in `src/bn/` | source |
 | Editable master, English | `src/BAPIL_Technical_Blueprint_en.src.md` with chapters in `src/en/` | source |
 | Assembled Markdown (one file per edition) | `BAPIL_Technical_Blueprint_bn.md`, `BAPIL_Technical_Blueprint_en.md` | generated |
-| Table data (70 tables, EN and BN) | `src/tables_a.py` to `src/tables_f.py` | source |
+| Table data (72 tables, EN and BN) | `src/tables_a.py` to `src/tables_f.py` | source |
 | Tables as LaTeX, PDF, PNG and Markdown | `tables/`, `tables/md/` | generated |
 | Figure sources (15 TikZ figures, EN and BN) | `src/make_figures.py`, `src/figures_new.py` | source |
 | Figures as TikZ, PDF and PNG | `figures/` | generated |

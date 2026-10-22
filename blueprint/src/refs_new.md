@@ -398,3 +398,39 @@ ICAI Study of Value for Money and Effectiveness: Terms of Reference[R/OL].
 London: ICAI, 2011[2026-10-22].
 Available:
 <https://icai.independent.gov.uk/wp-content/uploads/Report-1-VfM-and-effectiveness-ToR1.pdf>
+
+[148] CIVIL SERVICE WORLD.
+AI unit grows to more than 40 staff after move to DSIT[EB/OL].
+London: Civil Service World, 2024-09-30[2026-10-22].
+Available:
+<https://www.civilserviceworld.com/professions/article/incubator-for-ai-grows-dsit-move>
+
+[149] MINISTRY OF DIGITAL DEVELOPMENT AND INFORMATION (FORMERLY MINISTRY OF COMMUNICATIONS AND INFORMATION), SINGAPORE.
+AI.SG: New National Programme to Catalyse, Synergise and Boost Singapore’s Artificial Intelligence Capabilities[EB/OL].
+Singapore, 2017-05-03[2026-10-22].
+Available:
+<https://www.mddi.gov.sg/newsroom/aisg-new-national-programme-to-catalyse-synergise-and-boost-singapore-s-artificial-intelligence-capabilities/>
+
+[150] BETAKIT.
+Vector Institute, Ontario Centre of Innovation secure combined $77-million provincial funding[EB/OL].
+Toronto: BetaKit, 2023-06-28[2026-10-22].
+Available:
+<https://betakit.com/vector-institute-ontario-centre-of-innovation-secure-combined-77-million-provincial-funding/>
+
+[151] DIGITAL INDIA CORPORATION (INDIAAI).
+Recruitment notice: Manager (General Administration), India AI, on contract basis[EB/OL].
+New Delhi: Digital India Corporation, 2025[2026-10-22].
+Available:
+<https://negd.gov.in/wp-content/uploads/2025/02/Manager-Gen.-Admin-India-AI.pdf>
+
+[152] CABINET DIVISION, GOVERNMENT OF BANGLADESH.
+Letter on the absorption of development-project staff into revenue posts, following Appellate Division judgment in Civil Appeal No. 460 of 2017 (memo no. 00.00.0000.111.04.102.20.38), 2020-03-03[EB/OL].
+Reproduced by Bangladesh Service Rules[2026-10-22].
+Available:
+<https://bdservicerules.info/?p=9388>
+
+[153] THE DAILY STAR.
+Banks asked to enrol employees in Pragati pension scheme[EB/OL].
+Dhaka: The Daily Star, 2026-06-04[2026-10-22].
+Available:
+<https://www.thedailystar.net/business/economy/news/banks-asked-enrol-employees-pragati-pension-scheme-4189996>

@@ -57,7 +57,7 @@ The source code of the reference implementation described in Chapter 11 is licen
 | **ORCID** | <https://orcid.org/{{ORCID}}> |
 | **Language** | English (a Bangla edition is published alongside) |
 | **Document Type** | Technical Blueprint |
-| **Structure** | Five parts, 21 chapters, 23 annexes, 70 tables and 15 figures |
+| **Structure** | Five parts, 21 chapters, 23 annexes, 72 tables and 16 figures |
 | **Evidence status** | Key claims checked against their sources in October 2026 (Annex P); unresolved items in Annex V |
 | **License** | Creative Commons Attribution 4.0 International (CC BY 4.0) |
 | **Blueprint DOI** | {{DOI_LINK}} |

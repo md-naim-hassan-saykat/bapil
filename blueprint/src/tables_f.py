@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Blueprint tables for the evidence and readiness annexes and the scale-up annex (Annexes P to W, Tables 60 to 70)."""
+"""Blueprint tables for the evidence and readiness annexes and the scale-up annex (Annexes P to W, Tables 60 to 72)."""
 
 import budget_model as _bm
 
@@ -142,6 +142,39 @@ _JB_EN, _JB_BN = _jobs_rows()
 _SU_EN, _SU_ROWS_BN = _scaleup_rows()
 _SU_T = _bm.crore(_bm.scaleup_totals()[1])
 _BASE_T = _bm.crore(_bm.totals()[1])
+
+
+# ------------------------------------------------------------------ Tables 71 and 72: integrated pathway and funding by source
+_FB = _bm.funding_by_source()
+_POSTS = _bm.stage_posts()
+_STAGE_T = {k: sum(v) for k, v in _FB.items()}
+_SRC_BN = {
+    "Government core contribution (MoU, development budget)": "সরকারের মূল অবদান (সমঝোতা স্মারক, উন্নয়ন বাজেট)",
+    "Competitive research grants": "প্রতিযোগিতামূলক গবেষণা অনুদান",
+    "Development partners (pilot-specific)": "উন্নয়ন-সহযোগী (নির্দিষ্ট পাইলটের জন্য)",
+    "Service agreements with agencies (cost recovery)": "সংস্থার সঙ্গে সেবা-চুক্তি (ব্যয় পুনরুদ্ধার)",
+    "Industry and philanthropy (open benchmarks, fellowships)": "শিল্প ও জনহিতৈষী উৎস (উন্মুক্ত বেঞ্চমার্ক, ফেলোশিপ)",
+}
+
+
+def _funding_rows():
+    en, bn = [], []
+    keys = [k for k, _, _ in _bm.STAGES]
+    for i, src in enumerate(_bm.FUNDING_SOURCES):
+        vals = [_FB[k][i] for k in keys]
+        cells = [_c(v) for v in vals] + [_c(sum(vals))]
+        en.append([src] + cells)
+        bn.append([_SRC_BN[src]] + [_b(c) for c in cells])
+    tot = [_STAGE_T[k] for k in keys]
+    cells = ["**%s**" % _c(v) for v in tot] + ["**%s**" % _c(sum(tot))]
+    en.append(["**Total**"] + cells)
+    bn.append(["**মোট**"] + [_b(c) for c in cells])
+    return en, bn
+
+
+_FS_EN, _FS_BN = _funding_rows()
+_GOV36 = _FB["phase1"][0] + _FB["phase2"][0]
+_GOV36_PCT = 100 * _GOV36 / _bm.totals()[1]
 
 
 TABLES_F = [
@@ -510,5 +543,42 @@ TABLES_F = [
         "rows": {"en": _SU_EN, "bn": _SU_ROWS_BN},
         "note": {"en": "Not part of the funding requested for the 36-month plan. Same unit costs as Table 49 at Year 1 prices, escalated by 8% a year; 10% host overheads and a 10% contingency. Central lab grows from 25 to 45 posts; four divisional university nodes with five posts each; 6 to 20 analysts placed in adopting agencies; 17 to 33 Bangla language-data staff (annotators at Tk 45,000 a month); 20 to 40 graduate fellows a year; 5,000 officials trained; national inference and search platform and support for agencies joining federated search (Tk 50 lakh per agency). Computed by blueprint/src/budget_model.py (function scaleup); Blueprint 2.0 is to replace it with a costed plan.",
                  "bn": "৩৬ মাসের পরিকল্পনার জন্য অনুরোধকৃত অর্থের অংশ নয়। সারণি ৪৯-এর একই একক-ব্যয়, প্রথম বছরের মূল্যে, বছরে ৮% মূল্যবৃদ্ধিসহ; ১০% স্বাগতিকের পরোক্ষ ব্যয় ও ১০% আপৎকালীন সংস্থান। কেন্দ্রীয় ল্যাব ২৫ থেকে ৪৫টি পদে বাড়ে; প্রতিটি পাঁচটি পদসহ চারটি বিভাগীয় বিশ্ববিদ্যালয়-কেন্দ্র; গ্রহণকারী সংস্থায় ৬ থেকে ২০ জন বিশ্লেষক; ১৭ থেকে ৩৩ জন বাংলা ভাষা-ডেটা কর্মী (টীকাকারের মাসিক ব্যয় ৪৫,০০০ টাকা); বছরে ২০ থেকে ৪০ জন স্নাতক ফেলো; ৫,০০০ কর্মকর্তার প্রশিক্ষণ; জাতীয় ইনফারেন্স ও অনুসন্ধান প্ল্যাটফর্ম এবং সমন্বিত অনুসন্ধানে যুক্ত হওয়া সংস্থাগুলোর সহায়তা (প্রতি সংস্থায় ৫০ লাখ টাকা)। blueprint/src/budget_model.py (scaleup ফাংশন) দ্বারা হিসাবকৃত; ব্লুপ্রিন্ট ২.০-এ একটি ব্যয়-নির্ধারিত পরিকল্পনা এর স্থলাভিষিক্ত হবে।"},
+    },
+    # ------------------------------------------------------------------ 71
+    {
+        "id": "71",
+        "widths": [2.4, 2.3, 2.6, 0.9, 1.0, 2.1],
+        "title": {"en": "Integrated institutional and financial pathway, 2027 to 2041",
+                  "bn": "সমন্বিত প্রাতিষ্ঠানিক ও আর্থিক পথনকশা, ২০২৭ থেকে ২০৪১"},
+        "cols": {"en": ["Stage and period", "Institutional form and employer", "Government bodies and their role", "Direct posts (end of stage)", "Budget (Tk crore)", "Gate to the next stage"],
+                 "bn": ["পর্যায় ও সময়কাল", "প্রাতিষ্ঠানিক রূপ ও নিয়োগকর্তা", "সরকারি সংস্থা ও তাদের ভূমিকা", "প্রত্যক্ষ পদ (পর্যায়ের শেষে)", "বাজেট (কোটি টাকা)", "পরবর্তী পর্যায়ের গেট"]},
+        "rows": {
+            "en": [
+                ["**Phase 1 pilot**, Year 1 (2027)", "University-anchored lab under an MoU (Option C); staff employed by the host on fixed-term contracts", "ICT Division signs the MoU, co-chairs the Steering Board and names a focal point; Planning Commission and a data custodian sit on the Board; custodians authorise bulk access to public documents (D2 to D4)", _num(_POSTS["phase1"]), _c(_STAGE_T["phase1"]), "Month-12 review and feasibility and costing study (D1.3) approve Phase 2 and release Tranche 2"],
+                ["**Phase 2**, Years 2 and 3 (2028 to 2029)", "Same form; ERRC, TAB and transparency register in operation", "Pilot agencies provide users and data; adoption decisions on P1 and P2 taken with host agencies (G4, month 24 onwards); independent mid-term evaluation at month 18", _num(_POSTS["phase2"]), _c(_STAGE_T["phase2"]), "Positive final evaluation (end of 2029); P1 and P2 pass G4; decision to scale up at the strategic review (Table 48)"],
+                ["**Conditional national scale-up**, Years 4 to 8 (2030 to 2034)", "Lab with multi-year core funding; four divisional university nodes; staff still employed by the host and partner universities", "Government core contribution rises to about half of the budget; agencies own adopted tools as class O services, host placed analysts and sign service agreements; alignment with the national AI policy cycle after 2030", _num(_POSTS["scaleup"]), _c(_STAGE_T["scaleup"]), "2035 strategic review of the institutional form against independence, sustainability, policy uptake and public trust"],
+                ["**Institutionalisation**, from 2035", "Independent public-interest foundation (Option D), statutory centre attached to government, or a smaller research lab with agencies running the services (Section 5.9)", "A statutory centre needs legislation or a formal government decision (Annex T); posts can then become regular posts of the new body under its service rules, with open recruitment", "Set at the 2035 review", "Set at the 2035 review (Blueprint 2.0 and later)", "Independent review in 2041; charter renewed only if public value is confirmed"],
+            ],
+            "bn": [
+                ["**পর্যায় ১-এর পাইলট**, বছর ১ (২০২৭)", "সমঝোতা স্মারকের অধীনে বিশ্ববিদ্যালয়-ভিত্তিক ল্যাব (বিকল্প গ); স্বাগতিক প্রতিষ্ঠান নির্দিষ্ট মেয়াদের চুক্তিতে কর্মী নিয়োগ দেয়", "আইসিটি বিভাগ সমঝোতা স্মারক স্বাক্ষর করে, স্টিয়ারিং বোর্ডের সহ-সভাপতিত্ব করে ও একজন ফোকাল পয়েন্ট মনোনীত করে; পরিকল্পনা কমিশন ও একটি ডেটা-রক্ষক সংস্থা বোর্ডে থাকে; রক্ষকেরা উন্মুক্ত নথিতে একসঙ্গে প্রবেশাধিকার অনুমোদন করে (D2 থেকে D4)", _b(_num(_POSTS["phase1"])), _b(_c(_STAGE_T["phase1"])), "মাস ১২-এর পর্যালোচনা এবং সম্ভাব্যতা ও ব্যয়-নিরূপণ সমীক্ষা (D1.3) পর্যায় ২ অনুমোদন করে ও কিস্তি ২ ছাড় করে"],
+                ["**পর্যায় ২**, বছর ২ ও ৩ (২০২৮ থেকে ২০২৯)", "একই রূপ; ERRC, TAB ও স্বচ্ছতা নিবন্ধন চালু", "পাইলট সংস্থাগুলো ব্যবহারকারী ও ডেটা দেয়; স্বাগতিক সংস্থার সঙ্গে P1 ও P2-এর গ্রহণ-সিদ্ধান্ত (G4, মাস ২৪ থেকে); মাস ১৮-এ স্বাধীন মধ্যমেয়াদি মূল্যায়ন", _b(_num(_POSTS["phase2"])), _b(_c(_STAGE_T["phase2"])), "ইতিবাচক চূড়ান্ত মূল্যায়ন (২০২৯-এর শেষে); P1 ও P2 গেট G4 উত্তীর্ণ; কৌশলগত পর্যালোচনায় সম্প্রসারণের সিদ্ধান্ত (সারণি ৪৮)"],
+                ["**শর্তসাপেক্ষ জাতীয় সম্প্রসারণ**, বছর ৪ থেকে ৮ (২০৩০ থেকে ২০৩৪)", "বহুবর্ষী মূল অর্থায়নসহ ল্যাব; চারটি বিভাগীয় বিশ্ববিদ্যালয়-কেন্দ্র; কর্মীরা তখনো স্বাগতিক ও অংশীদার বিশ্ববিদ্যালয়ে নিযুক্ত", "সরকারের মূল অবদান বাজেটের প্রায় অর্ধেকে পৌঁছায়; গৃহীত সরঞ্জাম সংস্থাগুলো শ্রেণি O সেবা হিসেবে পরিচালনা করে, নিযুক্ত বিশ্লেষকদের ধারণ করে ও সেবা-চুক্তি করে; ২০৩০-এর পরের জাতীয় এআই নীতিচক্রের সঙ্গে সামঞ্জস্য", _b(_num(_POSTS["scaleup"])), _b(_c(_STAGE_T["scaleup"])), "স্বাধীনতা, টেকসইতা, নীতিতে প্রয়োগ ও জনআস্থার মানদণ্ডে ২০৩৫-এর কৌশলগত পর্যালোচনায় প্রাতিষ্ঠানিক রূপ নির্ধারণ"],
+                ["**প্রাতিষ্ঠানিকীকরণ**, ২০৩৫ থেকে", "স্বাধীন জনস্বার্থমূলক ফাউন্ডেশন (বিকল্প ঘ), সরকারের সঙ্গে যুক্ত সংবিধিবদ্ধ কেন্দ্র, অথবা সংস্থাগুলো সেবা পরিচালনা করলে একটি ছোট গবেষণা-ল্যাব (অনুচ্ছেদ ৫.৯)", "সংবিধিবদ্ধ কেন্দ্রের জন্য আইন বা সরকারের আনুষ্ঠানিক সিদ্ধান্ত প্রয়োজন (সংযুক্তি ন); তখন উন্মুক্ত নিয়োগের মাধ্যমে নতুন প্রতিষ্ঠানের চাকরিবিধির অধীনে পদগুলো নিয়মিত পদে পরিণত হতে পারে", "২০৩৫-এর পর্যালোচনায় নির্ধারিত", "২০৩৫-এর পর্যালোচনায় নির্ধারিত (ব্লুপ্রিন্ট ২.০ ও পরবর্তী)", "২০৪১-এ স্বাধীন পর্যালোচনা; জনমূল্য নিশ্চিত হলেই কেবল সনদ নবায়ন"],
+            ],
+        },
+        "note": {"en": "Posts and budgets are computed by blueprint/src/budget_model.py (functions stage_posts, totals and scaleup); Phase 1 and Phase 2 are the requested 36-month plan, the scale-up is conditional and not requested. Years are indicative, with Year 1 in 2027 (Table 45).",
+                 "bn": "পদ ও বাজেট blueprint/src/budget_model.py (stage_posts, totals ও scaleup ফাংশন) দ্বারা হিসাবকৃত; পর্যায় ১ ও ২ অনুরোধকৃত ৩৬ মাসের পরিকল্পনা, সম্প্রসারণ শর্তসাপেক্ষ ও অনুরোধবহির্ভূত। বছরগুলো নির্দেশক, বছর ১ ধরা হয়েছে ২০২৭ (সারণি ৪৫)।"},
+    },
+    # ------------------------------------------------------------------ 72
+    {
+        "id": "72",
+        "widths": [4.2, 1.1, 1.1, 1.1, 1.2],
+        "title": {"en": "Indicative funding by source and stage (Tk crore)",
+                  "bn": "উৎস ও পর্যায়ভিত্তিক নির্দেশক অর্থায়ন (কোটি টাকা)"},
+        "cols": {"en": ["Source", "Phase 1 (2027)", "Phase 2 (2028 to 2029)", "Scale-up (2030 to 2034)", "Total, 8 years"],
+                 "bn": ["উৎস", "পর্যায় ১ (২০২৭)", "পর্যায় ২ (২০২৮ থেকে ২০২৯)", "সম্প্রসারণ (২০৩০ থেকে ২০৩৪)", "মোট, ৮ বছর"]},
+        "rows": {"en": _FS_EN, "bn": _FS_BN},
+        "note": {"en": "Each year’s budget is split using one indicative share inside each range of Table 51: 2027 and 2028 (H1) government 35%, grants 25%, development partners 30%, service agreements 0%, industry and philanthropy 10%; 2029 and 2030 (H2) 45, 20, 20, 7 and 8%; 2031 onwards (H3) 50, 15, 7, 20 and 8%. Sources are categories, not single funders; no single non-government funder provides more than 30% in any year. The scale-up column applies only if the scale-up is approved. None of these amounts has been requested or committed. Computed by blueprint/src/budget_model.py (function funding_by_source).",
+                 "bn": "প্রতি বছরের বাজেট সারণি ৫১-এর প্রতিটি পরিসরের ভেতরের একটি নির্দেশক অংশ দিয়ে ভাগ করা হয়েছে: ২০২৭ ও ২০২৮ (H1) সরকার ৩৫%, অনুদান ২৫%, উন্নয়ন-সহযোগী ৩০%, সেবা-চুক্তি ০%, শিল্প ও জনহিতৈষী উৎস ১০%; ২০২৯ ও ২০৩০ (H2) ৪৫, ২০, ২০, ৭ ও ৮%; ২০৩১ থেকে (H3) ৫০, ১৫, ৭, ২০ ও ৮%। উৎসগুলো শ্রেণি, একক অর্থদাতা নয়; সরকার-বহির্ভূত কোনো একক অর্থদাতা কোনো বছরে ৩০%-এর বেশি দেন না। সম্প্রসারণের কলাম কেবল সম্প্রসারণ অনুমোদিত হলে প্রযোজ্য। এর কোনো অঙ্ক চাওয়া বা প্রতিশ্রুত হয়নি। blueprint/src/budget_model.py (funding_by_source ফাংশন) দ্বারা হিসাবকৃত।"},
     },
 ]

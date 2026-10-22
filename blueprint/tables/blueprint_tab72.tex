@@ -1,0 +1,52 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\setmainfont{Latin Modern Roman}[Ligatures=TeXOff]
+\XeTeXgenerateactualtext=1
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali, NFSSFamily=bnfam]
+\usepackage[Latin,Bengali]{ucharclasses}
+% group-free font switching (as in header-common.tex): robust inside braces, cells and quotes
+\makeatletter
+\def\BN@saved{\rmdefault}
+\def\BN@bn{bnfam}
+\newcommand\BNin{\edef\BN@tmp{\f@family}\ifx\BN@tmp\BN@bn\else\let\BN@saved\BN@tmp\fi\fontfamily{bnfam}\selectfont}
+\newcommand\BNout{\fontfamily{\BN@saved}\selectfont}
+\makeatother
+\setTransitionsFor{Bengali}{\BNin}{\BNout}
+% Typographic quotes and dashes are not in a ucharclasses class (class 0), so a Bangla word right
+% after “ or ‘ would not trigger the Bangla font. Treat them as Latin so that every switch fires.
+\XeTeXcharclass"2018=\XeTeXcharclass`A
+\XeTeXcharclass"2019=\XeTeXcharclass`A
+\XeTeXcharclass"201C=\XeTeXcharclass`A
+\XeTeXcharclass"201D=\XeTeXcharclass`A
+\XeTeXcharclass"2013=\XeTeXcharclass`A
+\XeTeXcharclass"2014=\XeTeXcharclass`A
+\XeTeXcharclass"2026=\XeTeXcharclass`A
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{17cm}
+{\large\bfseries Table 72.}\ {\large Indicative funding by source and stage (Tk crore)}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=2.414\hsize\raggedright\arraybackslash}X>{\hsize=0.632\hsize\raggedright\arraybackslash}X>{\hsize=0.632\hsize\raggedright\arraybackslash}X>{\hsize=0.632\hsize\raggedright\arraybackslash}X>{\hsize=0.690\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{Source} & \textbf{Phase 1 (2027)} & \textbf{Phase 2 (2028 to 2029)} & \textbf{Scale-up (2030 to 2034)} & \textbf{Total, 8 years} \\
+\midrule
+Government core contribution (MoU, development budget) & 1.65 & 6.32 & 108.15 & 116.12 \\
+Competitive research grants & 1.18 & 3.51 & 34.10 & 38.80 \\
+Development partners (pilot-specific) & 1.42 & 3.89 & 18.63 & 23.94 \\
+Service agreements with agencies (cost recovery) & 0.00 & 0.57 & 40.46 & 41.03 \\
+Industry and philanthropy (open benchmarks, fellowships) & 0.47 & 1.41 & 17.51 & 19.39 \\
+\textbf{Total} & \textbf{4.73} & \textbf{15.70} & \textbf{218.85} & \textbf{239.28} \\
+\bottomrule
+\end{tabularx}
+\par\vspace{5pt}{\footnotesize\itshape Each year’s budget is split using one indicative share inside each range of Table 51: 2027 and 2028 (H1) government 35\%, grants 25\%, development partners 30\%, service agreements 0\%, industry and philanthropy 10\%; 2029 and 2030 (H2) 45, 20, 20, 7 and 8\%; 2031 onwards (H3) 50, 15, 7, 20 and 8\%. Sources are categories, not single funders; no single non-government funder provides more than 30\% in any year. The scale-up column applies only if the scale-up is approved. None of these amounts has been requested or committed. Computed by blueprint/\allowbreak{}src/\allowbreak{}budget\_model.py (function funding\_by\_source).}
+\par\vspace{3pt}{\scriptsize\color{gray} Source: BAPIL Technical Blueprint, Version 1.0 (2026). CC BY 4.0.}
+\end{minipage}
+\end{document}

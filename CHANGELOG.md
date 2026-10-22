@@ -22,11 +22,11 @@ Prepared for repository release v1.1.0. The tag, the GitHub release and the Blue
 
 ### Added
 
-- **Bangladesh AI Policy & Innovation Lab (BAPIL): Technical Blueprint**, Version 1.0 (October 2026), in English (authoritative) and Bangla (বাংলাদেশ এআই পলিসি অ্যান্ড ইনোভেশন ল্যাব (BAPIL): টেকনিক্যাল ব্লুপ্রিন্ট): five parts, 21 chapters, 23 annexes, 70 tables and 15 figures. PDFs: `releases/v1.1/BAPIL_Technical_Blueprint_en.pdf` and `releases/v1.1/BAPIL_Technical_Blueprint_bn.pdf`.
+- **Bangladesh AI Policy & Innovation Lab (BAPIL): Technical Blueprint**, Version 1.0 (October 2026), in English (authoritative) and Bangla (বাংলাদেশ এআই পলিসি অ্যান্ড ইনোভেশন ল্যাব (BAPIL): টেকনিক্যাল ব্লুপ্রিন্ট): five parts, 21 chapters, 23 annexes, 72 tables and 16 figures. PDFs: `releases/v1.1/BAPIL_Technical_Blueprint_en.pdf` and `releases/v1.1/BAPIL_Technical_Blueprint_bn.pdf`.
 - Blueprint Summary, Version 1.0, in English and Bangla (`releases/v1.1/BAPIL_Blueprint_Summary_en.pdf`, `..._bn.pdf`).
 - Decision Memo to the authorities, in English and Bangla (`releases/v1.1/BAPIL_Decision_Memo_en.pdf`, `..._bn.pdf`), a separate document that is not part of the Blueprint.
 - Editable source package in `blueprint/`: Markdown masters, table data, TikZ figure sources, the budget model with CSV outputs and an editable workbook with formulas (`blueprint/data/BAPIL_Budget_Model.xlsx`), LaTeX headers, Pandoc filter, metadata and one build script.
-- Fifteen figures and seventy tables as LaTeX, PDF and PNG (and Markdown for tables), in English and Bangla.
+- Sixteen figures and seventy-two tables as LaTeX, PDF and PNG (and Markdown for tables), in English and Bangla.
 - Reference implementation (`implementation/`, version 0.1.0): Bangla normalisation, bilingual BM25 search, cited extractive answers with abstention, risk tiers, AI system register and transparency export, evaluation metrics, hash-chained audit log, CLI and JSON API, with 49 unit tests (run locally; no public CI record yet).
 - JSON Schemas for policy-document metadata, AI system records and risk questionnaires; example records for pilots P1 to P6.
 - Bilingual demonstration question set and evaluation report (development results only).
