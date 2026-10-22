@@ -174,7 +174,7 @@ The audit corrected legal, institutional and technical statements in both editio
 | Fonts, glyphs, links | Pass | All fonts embedded; no missing characters; 333 (EN) and 328 (BN) internal links resolve |
 | Body text clear of page numbers | Pass | No page within 8 pt |
 | Short pages | Pass, minor | As in section 7; the list of tables now ends with four entries in English |
-| Visual inspection | Pass | Annex W and Tables 69 and 70 in both editions; reference list pages with † marks |
+| Visual inspection | Pass | Annex W and Tables 69 and 70 in both editions; reference list pages with the White Paper marks (now an asterisk) |
 
 ## 9. Fourth pass: references and Chapter 17 (22 October 2026)
 
@@ -201,7 +201,7 @@ The audit corrected legal, institutional and technical statements in both editio
 
 | Check | Result | Evidence |
 |---|---|---|
-| All 40 † references checked at source | Pass | 34 opened directly or through the official PDF, 6 confirmed through search results where the site blocks automated access (`review/REFERENCE_VERIFICATION.md`) |
+| All 40 White Paper references checked at source | Pass | 34 opened directly or through the official PDF, 6 confirmed through search results where the site blocks automated access (`review/REFERENCE_VERIFICATION.md`) |
 | Errors found and corrected | 13 entries | DOI, year, title, authors or publisher; applied through `WP_CORRECTIONS` in `assemble.py`, which stops the build if a corrected text is no longer found |
 | Wrong edition cited | 1 citation fixed | Table 4 cited the 2025 index for a 2023 ranking; the 2023 report (rank 82, score 46.04) is now cited |
 | Citations sequential | Pass | Blueprint 111 (both editions), Summary 10, Memo 5 |

@@ -187,7 +187,7 @@ The repository contains a tested, dependency-free Python implementation of the c
 
 # References
 
-References are numbered in the order in which they are first cited, and only references cited in this document are listed. Entries marked † are taken from the bibliography of the BAPIL White Paper (Version 1.0).
+References are numbered in the order in which they are first cited, and only references cited in this document are listed. Entries marked with an asterisk (\*) are taken from the bibliography of the BAPIL White Paper (Version 1.0).
 
 [1] SECURITI.
 An Overview of Bangladesh’s Personal Data Protection Act, 2026[EB/OL].
@@ -231,19 +231,19 @@ Dhaka, 2026-02-09[2026-10-22].
 Available:
 <https://aipolicy.gov.bd/docs/national-ai-policy-bangladesh-2026-2030-draft-v2.0.pdf>
 
-[8] † GENERAL ECONOMICS DIVISION (GED), PLANNING COMMISSION, GOVERNMENT OF BANGLADESH.
+[8] \* GENERAL ECONOMICS DIVISION (GED), PLANNING COMMISSION, GOVERNMENT OF BANGLADESH.
 Making Vision 2041 a Reality: Perspective Plan of Bangladesh 2021–2041[EB/OL].
 Dhaka: Planning Commission, Government of Bangladesh, 2020[2026-10-22].
 Available:
 <https://oldweb.lged.gov.bd/uploadeddocument/unitpublication/1/1049/vision%202021-2041.pdf>
 
-[9] † INFORMATION AND COMMUNICATION TECHNOLOGY (ICT) DIVISION, GOVERNMENT OF THE PEOPLE’S REPUBLIC OF BANGLADESH.
+[9] \* INFORMATION AND COMMUNICATION TECHNOLOGY (ICT) DIVISION, GOVERNMENT OF THE PEOPLE’S REPUBLIC OF BANGLADESH.
 Smart Bangladesh: ICT Master Plan 2041 (Draft)[EB/OL].
 Dhaka: ICT Division, Government of the People’s Republic of Bangladesh, undated[2026-10-22].
 Available: 
 <https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-moa/2024/12/a01255f61d29443eabbf948ef97c290e.pdf>
 
-[10] † THE BUSINESS STANDARD (TBS).
+[10] \* THE BUSINESS STANDARD (TBS).
 Govt to establish AI hub with Tk192.66cr project backed by Koica[EB/OL].
 Dhaka: The Business Standard, 2026[2026-10-22].
 Available:
