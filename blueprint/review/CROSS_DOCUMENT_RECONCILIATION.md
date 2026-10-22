@@ -29,6 +29,8 @@ Columns: **BP-EN** and **BP-BN** = Technical Blueprint editions; **SUM** = Bluep
 | 19 | National AI policy status | Jan 2026 draft; Q4 2026 drafting | Same | Same | Same | n/a | Draft v2.0 omitted everywhere | Added in BP, SUM, MEMO |
 | 20 | Licences | CC BY 4.0 printed | Same | Same | Same | README: "may be CC"; WP Zenodo record MIT | Inconsistent records | Documented; author decision (`METADATA_TO_CONFIRM.md`) |
 | 21 | Author affiliation | Independent Researcher, Bangladesh | স্বাধীন গবেষক, বাংলাদেশ | Same as BP | None stated | CITATION.cff, README author section and earlier Zenodo records: Université Paris-Saclay | Inconsistent | Author chose "Independent Researcher, Bangladesh" for the Blueprint; CITATION.cff and README at release: author decision |
+| 22 | Conditional national scale-up and jobs (added 22 October 2026) | Section 17.3, Annex W, Tables 69 and 70: Tk 218.85 crore, Years 4 to 8; 118 posts by Year 8 | Same (Bangla digits) | Section 9: same figures | Resources: same figures, "not requested now" | README, RELEASE_NOTES, `docs/financial-model.md`, source-of-truth | New content | Same figures everywhere, all from `budget_model.py`; always labelled conditional and not requested |
+| 23 | Reference numbering (changed 22 October 2026) | Sequential, 84 references | Same numbers | Own sequential list (10) | Own sequential list (5) | `docs/legal-references.md` converted; key map | Non-sequential lists | Sequential in every document |
 
 ## 2. English and Bangla editions
 

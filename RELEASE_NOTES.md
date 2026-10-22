@@ -13,7 +13,7 @@
 
 ## Scope
 
-The Technical Blueprint turns the BAPIL White Paper (Version 1.0) into a buildable plan: institutional design, reference architecture, data and AI design, governance and assurance, a tested reference implementation, a 36-month delivery plan with an indicative budget, a strategic roadmap to 2041 and six decisions requested from the authorities. Five parts, 21 chapters, 22 annexes, 68 tables and 15 figures.
+The Technical Blueprint turns the BAPIL White Paper (Version 1.0) into a buildable plan: institutional design, reference architecture, data and AI design, governance and assurance, a tested reference implementation, a 36-month delivery plan with an indicative budget, a strategic roadmap to 2041 and six decisions requested from the authorities. Five parts, 21 chapters, 23 annexes, 70 tables and 15 figures.
 
 BAPIL is a proposal. No institution has been established, no governance body constituted and no funding approved; all quality thresholds are proposed targets.
 
@@ -29,7 +29,7 @@ Full details: [`CHANGELOG.md`](CHANGELOG.md) and [`blueprint/CHANGES.md`](bluepr
 ## Known limitations
 
 * Legal descriptions rest on press reports and secondary commentary, which sometimes disagree (for example on the June 2026 cyber-security amendment); the gazetted texts were not reviewed and need confirmation by qualified Bangladesh counsel.
-* The budget is a planning estimate: Tk 20.43 crore (base), Tk 22.24 crore (adjusted, with known omissions and 10% contingency), Tk 17.93 to 25.25 crore (low and high scenarios). No funding is approved or committed.
+* The budget is a planning estimate: Tk 20.43 crore (base), Tk 22.24 crore (adjusted, with known omissions and 10% contingency), Tk 17.93 to 25.25 crore (low and high scenarios). A conditional national scale-up for Years 4 to 8 (about Tk 218.9 crore, about 118 direct posts by Year 8) is shown in Annex W but not requested. No funding is approved or committed.
 * The BanglaPolicyQA benchmark does not exist yet; the demonstration evaluation (Recall@10 0.88 on 24 questions) is a development result only.
 * The reference implementation is a research prototype, tested only on Linux. The unit tests pass locally; the CI workflows run for the first time when the release branch is pushed.
 * The Bangla edition has been edited by the author but not by an independent professional copy-editor.

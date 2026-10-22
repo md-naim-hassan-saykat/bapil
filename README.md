@@ -217,12 +217,12 @@ The Blueprint specifies:
 5. a bilingual, citation-grounded retrieval design that answers with citations or abstains, a planned open benchmark (BanglaPolicyQA, not yet built) and a staged, evidence-gated path to Bangla domain adaptation;
 6. six pilots with users, data, risk tier, scope and exit criteria;
 7. responsible-AI assurance: risk tiers T0 to T3, lifecycle gates G0 to G5, model cards and a public transparency register;
-8. a 36-month delivery plan with an indicative budget (about Tk 20.4 crore in the base case, about Tk 22.2 crore with known omissions and a 10% contingency, low and high scenarios of about Tk 17.9 and 25.3 crore; planning estimates, not approved funding), staffing and training plan, financing and procurement clauses, logical framework, KPIs, risk register and research agenda;
+8. a 36-month delivery plan with an indicative budget (about Tk 20.4 crore in the base case, about Tk 22.2 crore with known omissions and a 10% contingency, low and high scenarios of about Tk 17.9 and 25.3 crore; planning estimates, not approved funding), a costed, conditional national scale-up for Years 4 to 8 if the pilots succeed (about Tk 218.9 crore and about 118 direct posts by Year 8; not requested now), staffing and training plan, financing and procurement clauses, logical framework, KPIs, risk register and research agenda;
 9. a strategic roadmap for 2026 to 2041 and beyond (horizons, indicative targets, scenarios and review points);
 10. six decisions for the authorities;
 11. evidence and readiness annexes: the evidence status of key claims, budget reconciliation and scenarios, an evaluation protocol with sample sizes, the status and limits of each governance body, preconditions for starting, risk monitoring and a register of unresolved items.
 
-The Blueprint has five parts, 21 chapters, 22 annexes, 68 tables and 15 figures (139 pages in English and 134 in Bangla). All figures and tables are also available as LaTeX, PDF and PNG in English and Bangla under [`blueprint/figures/`](blueprint/figures/) and [`blueprint/tables/`](blueprint/tables/).
+The Blueprint has five parts, 21 chapters, 23 annexes, 70 tables and 15 figures (141 pages in English and 136 in Bangla). All figures and tables are also available as LaTeX, PDF and PNG in English and Bangla under [`blueprint/figures/`](blueprint/figures/) and [`blueprint/tables/`](blueprint/tables/).
 
 **Known limitations.** Legal descriptions rest on press reports and secondary legal commentary, which sometimes disagree; the gazetted texts were not reviewed and need confirmation by qualified Bangladesh counsel ([`docs/legal-references.md`](docs/legal-references.md)). No pilot, benchmark or governance body exists yet, and all quality thresholds are proposed targets. The reference implementation is a research prototype tested only on Linux. The Bangla edition has had an editorial review by the author but not yet an independent professional copy-edit. The full list, with owners, is the unresolved-items register (Annex V, Table 68).
 
@@ -329,7 +329,7 @@ bapil/
 │   ├── BAPIL_Decision_Memo_en.md / _bn.md         # separate memo (not part of the Blueprint)
 │   ├── src/                      # editable masters: en/, bn/, tables_*.py, figures, budget model, headers
 │   ├── figures/                  # blueprint_fig01 ... 15 (TeX, PDF, PNG; EN and BN)
-│   ├── tables/                   # blueprint_tab01 ... 68 (TeX, PDF, PNG; EN and BN) + md/
+│   ├── tables/                   # blueprint_tab01 ... 70 (TeX, PDF, PNG; EN and BN) + md/
 │   ├── data/                     # budget model outputs (CSV) and editable workbook (XLSX)
 │   ├── review/                   # internal pre-publication review records (not part of the publication)
 │   ├── zenodo/                   # Zenodo metadata draft and upload checklist

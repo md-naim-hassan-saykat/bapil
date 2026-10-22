@@ -57,7 +57,7 @@ The source code of the reference implementation described in Chapter 11 is licen
 | **ORCID** | <https://orcid.org/{{ORCID}}> |
 | **Language** | English (a Bangla edition is published alongside) |
 | **Document Type** | Technical Blueprint |
-| **Structure** | Five parts, 21 chapters, 22 annexes, 68 tables and 15 figures |
+| **Structure** | Five parts, 21 chapters, 23 annexes, 70 tables and 15 figures |
 | **Evidence status** | Key claims checked against their sources in October 2026 (Annex P); unresolved items in Annex V |
 | **License** | Creative Commons Attribution 4.0 International (CC BY 4.0) |
 | **Blueprint DOI** | {{DOI_LINK}} |
@@ -82,7 +82,7 @@ The Blueprint is organised in five parts. Readers with limited time can use the 
 * **Technical teams:** Part III (Chapters 7 to 11) with Annexes A, C, K, M and R.
 * **Legal, governance and ethics specialists:** Chapters 8, 13 and 14 with Annexes B, E, F, H, I, J, S and T.
 * **Researchers and universities:** Chapters 9, 11 and 20 with Annex K.
-* **Development partners and finance reviewers:** Chapters 2, 16, 17 and 18 with Annexes Q and T.
+* **Development partners and finance reviewers:** Chapters 2, 16, 17 and 18 with Annexes Q, T and W.
 * **Reviewers checking the evidence:** Annex P, which states the status of every key claim, and Annex V, which lists the unresolved items.
 
 The words **must**, **should** and **may** carry their usual normative meaning: a requirement marked *must* is a condition of the design, *should* is a strong recommendation, and *may* is optional.
@@ -120,7 +120,7 @@ Items that remain unresolved, with their owners and how they will be resolved, a
 
 **The long view.** A strategic roadmap sets five horizons: foundation (Q4 2026), short term (2027 to 2028), medium term (2029 to 2030), long term (2031 to 2035) and vision (2036 to 2041), followed by a charter renewal decision after 2041. It is aligned with the national AI policy cycle and with the 2041 national plans, and it is reviewed at fixed points and whenever major events occur.
 
-**What it would cost.** An indicative budget, built from stated assumptions, is about Tk 20.4 crore over 36 months (Tk 17.9 to 25.3 crore across low and high scenarios). It is a planning estimate for a feasibility study to confirm, not approved funding (Chapter 17 and Annex Q).
+**What it would cost.** An indicative budget, built from stated assumptions, is about Tk 20.4 crore over 36 months (Tk 17.9 to 25.3 crore across low and high scenarios). It is a planning estimate for a feasibility study to confirm, not approved funding (Chapter 17 and Annex Q). It deliberately funds a first stage only: if the pilots succeed, a costed national scale-up in Years 4 to 8 (about Tk 218.9 crore, rising to about 118 direct posts) is set out in Annex W; it is not requested now.
 
 **What is asked of the authorities.** Six decisions (Chapter 21): accept the Blueprint as a technical input to national AI policy drafting; approve a 12-month Phase 1 pilot; authorise bulk access to already-public documents; nominate Steering Board members and agree an independent selection process for the ethics committee; commission a feasibility and costing study; and confirm the guardrails.
 

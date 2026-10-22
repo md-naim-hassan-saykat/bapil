@@ -18,7 +18,7 @@ No Markdown linter or link checker could be installed (the package registries we
 | Heading levels do not skip (for example H2 to H4) | Pass (all files) |
 | Exactly one H1 per file | Pass, except the two historical review reports (`BAPIL_Blueprint_Adversarial_Review.md`, `BAPIL_Blueprint_Audit_and_Revision_Report.md`), which use H1 for their numbered sections because they are also typeset as PDFs. Left unchanged |
 | Every table row has the same number of columns as its header | Pass |
-| No leftover placeholders (`TODO`, `TBD`, `FIXME`, template tokens) | Pass after one fix: the README said "PAGES_EN pages in English and PAGES_BN in Bangla"; now "139 pages in English and 134 in Bangla" |
+| No leftover placeholders (`TODO`, `TBD`, `FIXME`, template tokens) | Pass after one fix: the README said "PAGES_EN pages in English and PAGES_BN in Bangla"; now filled with the actual page counts (141 and 136 after Annex W was added) |
 | No old titles ("Revised", "Audit" in a publication title) | Pass |
 | Intentional pending markers | `10.5281/zenodo.PENDING` appears only in `blueprint/src/metadata.json` and in documentation that explains it; no fake DOI is printed in any publication |
 

@@ -12,7 +12,7 @@ lang: en
 
 **Purpose.** To request six decisions that would allow a small, safe and open pilot of an AI capability that helps officials find and cite official evidence in Bangla and English.
 
-**Why now.** (1) The government has announced that drafting of a national AI policy will begin in the fourth quarter of 2026 with a joint team [91], following the draft National AI Policy 2026-2030 consulted on in January 2026 and a revised draft dated February 2026 [88, 125]; a tested, openly licensed blueprint can inform that process. (2) As reported, the Personal Data Protection Act, 2026 and the National Data Management Act, 2026 now frame the use of public-sector data [85, 86]; which provisions are in force is still to be confirmed. (3) Laws, gazettes, budgets and plans are scattered across websites and formats, often as scanned Bangla PDFs, and there is no open Bangla benchmark for policy search.
+**Why now.** (1) The government has announced that drafting of a national AI policy will begin in the fourth quarter of 2026 with a joint team [1], following the draft National AI Policy 2026-2030 consulted on in January 2026 and a revised draft dated February 2026 [2, 3]; a tested, openly licensed blueprint can inform that process. (2) As reported, the Personal Data Protection Act, 2026 and the National Data Management Act, 2026 now frame the use of public-sector data [4, 5]; which provisions are in force is still to be confirmed. (3) Laws, gazettes, budgets and plans are scattered across websites and formats, often as scanned Bangla PDFs, and there is no open Bangla benchmark for policy search.
 
 **Proposal.** A university-anchored BAPIL lab under an MoU with the ICT Division, with a multi-stakeholder Steering Board and an independent Ethics and Risk Review Committee (ERRC) whose veto binds the host only as far as the host’s statutes and the host agreement allow. Year 1 would deliver: **P1**, a bilingual policy search tool designed to cite official sources or abstain, piloted with 30 or more analysts in two to three agencies; **P2**, five years of budget allocations as open data; version 0 of the open **BanglaPolicyQA** benchmark (500 questions); training for 100 officials; and a public transparency register. A small reference implementation (version 0.1.0, a tested research prototype, not a deployed system) is to be issued in repository release v1.1.0.
 
@@ -33,7 +33,7 @@ lang: en
 
 **Approvals and agreements required before month 1.** A host institution selected through an open call; the MoU with the ICT Division; a host agreement with a separate cost centre; Year 1 funding committed. Month 1 is the first month in which all of these are in place. January 2027 is possible only if funding is already available; through the development budget, the second half of 2027 is more realistic.
 
-**Resources requested.** About 9 full-time equivalents in Year 1, rising to 19 by Year 3; two to three servers and two GPU inference servers (more in Year 2 for a recovery site). Indicative budget: about Tk 20.4 crore over 36 months (Tk 4.7 crore in Year 1), with low and high scenarios of about Tk 17.9 and Tk 25.3 crore. Including the known omitted costs and a 10% contingency gives an adjusted base case of about Tk 22.2 crore. These are planning estimates, not approved funding, and the month-6 costing study would refine them.
+**Resources requested.** About 9 full-time equivalents in Year 1, rising to 19 by Year 3; two to three servers and two GPU inference servers (more in Year 2 for a recovery site). Indicative budget: about Tk 20.4 crore over 36 months (Tk 4.7 crore in Year 1), with low and high scenarios of about Tk 17.9 and Tk 25.3 crore. Including the known omitted costs and a 10% contingency gives an adjusted base case of about Tk 22.2 crore. These are planning estimates, not approved funding, and the month-6 costing study would refine them. The first stage is deliberately small; a costed, conditional national scale-up for Years 4 to 8 (about Tk 218.9 crore, about 118 direct posts by Year 8, Blueprint Annex W) is shown for information and is not requested now.
 
 **Evidence required before implementation.** (1) Independent legal review of which provisions of the 2026 data-protection, data-management and cyber-security laws are in force (Blueprint unresolved items U1 to U3). (2) Confirmation that the selected host can accept a binding ERRC veto (U15). (3) Costing of the items not yet in the base case (U16). (4) Written reuse terms or bulk access for public documents (D3).
 
@@ -49,35 +49,35 @@ lang: en
 
 # References
 
-Reference numbers [1] to [83] follow the bibliography of the BAPIL White Paper (Version 1.0); new references begin at [84]. Only references cited in this document are listed.
+References are numbered in the order in which they are first cited, and only references cited in this document are listed.
 
-[85] SECURITI.
-An Overview of Bangladesh’s Personal Data Protection Act, 2026[EB/OL].
-San Jose, CA: Securiti, 2026[2026-10-20].
-Available:
-<https://securiti.ai/bangladesh-personal-data-protection-act-overview/>
-
-[86] DAILY SUN.
-91 bills passed in parliament to convert ordinances into laws[EB/OL].
-Dhaka: Daily Sun, 2026[2026-10-20].
-Available:
-<https://www.daily-sun.com/bangladesh/868072/91-bills-passed-in-parliament-to-convert-ordinances-into-laws>
-
-[88] THE DAILY STAR.
-Draft AI policy targets innovation, better public services[EB/OL].
-Dhaka: The Daily Star, 2026-01-26[2026-10-20].
-Available:
-<https://www.thedailystar.net/business/economy/news/draft-ai-policy-targets-innovation-better-public-services-4090431>
-
-[91] THE DAILY OBSERVER.
+[1] THE DAILY OBSERVER.
 Rehan Asif Asad outlines govt’s five priorities for ICT, telecom[EB/OL].
 Dhaka: The Daily Observer, 2026-08-10[2026-10-20].
 Available:
 <https://observerbd.com/news/587314>
 
-[125] AI POLICY FOR BANGLADESH (aipolicy.gov.bd).
+[2] THE DAILY STAR.
+Draft AI policy targets innovation, better public services[EB/OL].
+Dhaka: The Daily Star, 2026-01-26[2026-10-20].
+Available:
+<https://www.thedailystar.net/business/economy/news/draft-ai-policy-targets-innovation-better-public-services-4090431>
+
+[3] AI POLICY FOR BANGLADESH (aipolicy.gov.bd).
 Bangladesh National AI Policy 2026-2030, Draft v2, February 9, 2026[EB/OL].
 Dhaka, 2026-02-09[2026-10-22].
 Available:
 <https://aipolicy.gov.bd/docs/national-ai-policy-bangladesh-2026-2030-draft-v2.0.pdf>
+
+[4] SECURITI.
+An Overview of Bangladesh’s Personal Data Protection Act, 2026[EB/OL].
+San Jose, CA: Securiti, 2026[2026-10-20].
+Available:
+<https://securiti.ai/bangladesh-personal-data-protection-act-overview/>
+
+[5] DAILY SUN.
+91 bills passed in parliament to convert ordinances into laws[EB/OL].
+Dhaka: Daily Sun, 2026[2026-10-20].
+Available:
+<https://www.daily-sun.com/bangladesh/868072/91-bills-passed-in-parliament-to-convert-ordinances-into-laws>
 

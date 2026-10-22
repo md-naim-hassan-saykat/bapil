@@ -455,7 +455,7 @@ This annex records the evidence behind the Blueprint’s key factual claims, as 
 
 <!-- TABLE:60 -->
 
-**What was and was not checked.** The full English text, all tables and figures, the budget model and the reference implementation were reviewed, and the Bangla edition was compared with the English edition for numbers, dates, tables and cross-references. External claims were checked against the sources listed in the references, using official sources where they could be retrieved. The official Laws of Bangladesh database does not permit automated retrieval, so statutory texts, gazette notifications and commencement provisions were not read directly; the legal descriptions in Chapter 14 remain summaries of secondary sources and require confirmation by qualified Bangladesh counsel. The bibliography inherited from the White Paper (references 1 to 83) was not re-verified item by item. Records of this evidence check are kept in the project repository.
+**What was and was not checked.** The full English text, all tables and figures, the budget model and the reference implementation were reviewed, and the Bangla edition was compared with the English edition for numbers, dates, tables and cross-references. External claims were checked against the sources listed in the references, using official sources where they could be retrieved. The official Laws of Bangladesh database does not permit automated retrieval, so statutory texts, gazette notifications and commencement provisions were not read directly; the legal descriptions in Chapter 14 remain summaries of secondary sources and require confirmation by qualified Bangladesh counsel. The references taken from the White Paper bibliography (marked † in the reference list) were not re-verified item by item. Records of this evidence check are kept in the project repository.
 
 \newpage
 
@@ -530,6 +530,34 @@ Table 55 lists the eighteen registered risks with their mitigations and owners. 
 This annex lists every item that could not be resolved with the evidence available at the time of writing, with its owner and how and when it will be resolved. Each item is also marked in the text where it applies.
 
 <!-- TABLE:68 -->
+
+\newpage
+
+# Annex W: Jobs, Skills and Conditional National Scale-Up
+
+The 36-month budget of about Tk 20.4 crore is often compared with much larger national programmes. This annex explains why the first stage is deliberately small, shows the jobs and skills that the plan creates, and sets out a costed national scale-up that would follow only if the pilots succeed.
+
+## W.1 Why the First Stage Is Small
+
+The 36-month budget is built from a staffing plan (Table 16) and unit costs (Table 49), not from a target amount. Its size reflects three constraints. First, the main cost and the main bottleneck is people: machine learning and Bangla language engineers are scarce, and a new lab can recruit only a few in its first year (Section 17.2). Second, nothing about the lab’s usefulness has yet been measured; staged funding lets the authorities pay for evidence before scale, with each further tranche following a gate decision (Table 48). Third, BAPIL should not duplicate larger programmes with different aims.
+
+Two such programmes are relevant. The KOICA-supported AI hub project (Tk 192.66 crore, July 2026 to December 2029) is a skills and startup programme: it aims to train 865 AI and digital technology specialists, with an 80% employment target, and to support 30 startups [35]. The proposed national budget for 2026-27 allocated Tk 500 crore to AI, electronics and youth innovation, mainly for startups and entrepreneurship [127]. BAPIL’s task is different: evidence and assurance for public policy. The programmes can reinforce each other. BAPIL’s posts and fellowships are a natural destination for graduates of national AI skills programmes, and BAPIL’s benchmarks, evaluation methods and transparency register can serve the AI tools those programmes help to build.
+
+## W.2 Jobs and Skills
+
+<!-- TABLE:69 -->
+
+The 36-month plan creates 19 direct posts by Year 3, 28 graduate fellowship places and training for 500 officials. If the scale-up goes ahead, BAPIL would reach about 118 direct posts in Year 8, with 40 graduate fellows a year and about 5,500 officials trained in total. About a third of the scale-up posts are outside the central lab in Dhaka, in divisional university nodes and in adopting agencies, and about 30 are for Bangla language-data specialists. Contracts for annotation, OCR correction, hosting and events create further work that is not counted in Table 69. Employment is a benefit of the plan, not its objective: BAPIL is judged by the indicators in Table 54.
+
+\newpage
+
+## W.3 Conditional National Scale-Up (Years 4 to 8)
+
+<!-- TABLE:70 -->
+
+The scale-up extends what the pilots have shown to work. Its main components are a larger central lab (25 posts in Year 4, 45 in Year 8); four divisional university nodes, each with five posts, for regional training and research; analysts placed in adopting agencies (6 rising to 20); a Bangla language-data team of up to 33 staff for benchmarks, OCR correction and language resources; 20 to 40 graduate fellows a year; training for 5,000 officials; a national inference and search platform; and support for agencies joining federated search. The indicative cost is about Tk 218.9 crore over five years, rising from about Tk 25.5 crore in Year 4 to about Tk 60.9 crore in Year 8. With the 36-month plan, the eight-year total is about Tk 239 crore.
+
+Four conditions apply. P1 and P2 must pass Gate G4; the independent final evaluation must be positive; the Steering Board and the authorities must decide to scale up at the strategic review (Table 48); and adopting agencies must agree to meet the operating costs of the tools they use, and possibly the cost of the analysts placed with them (Section 17.3). Possible sources are the government development budget, development partners and national AI innovation funds. The figures are planning estimates at the level of detail that is possible before the pilots; Blueprint 2.0 is to replace them with a costed plan.
 
 \newpage
 

@@ -51,6 +51,6 @@
         "resource_type": "software"
       }
     ],
-    "notes": "Languages: English (authoritative) and Bengali; one multilingual record. Contents: Technical Blueprint and Blueprint Summary in English and Bangla (PDF and Markdown); fifteen figures and sixty-eight tables in LaTeX, PDF and PNG; the editable source package (Markdown masters, table data, figure sources, budget model with CSV outputs and spreadsheet workbook, templates, build script and documentation); source code of the reference implementation (MIT). Independent research proposal; it does not represent any official government position. publication_date is set when the record is published; licence to be confirmed by the author (see UPLOAD_CHECKLIST.md, section 0)."
+    "notes": "Languages: English (authoritative) and Bengali; one multilingual record. Contents: Technical Blueprint and Blueprint Summary in English and Bangla (PDF and Markdown); fifteen figures and seventy tables in LaTeX, PDF and PNG; the editable source package (Markdown masters, table data, figure sources, budget model with CSV outputs and spreadsheet workbook, templates, build script and documentation); source code of the reference implementation (MIT). Independent research proposal; it does not represent any official government position. publication_date is set when the record is published; licence to be confirmed by the author (see UPLOAD_CHECKLIST.md, section 0)."
   }
 }

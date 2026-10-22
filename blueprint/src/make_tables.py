@@ -27,6 +27,7 @@ from tables_c import TABLES_C  # noqa: E402
 from tables_d import TABLES_D  # noqa: E402
 from tables_e import TABLES_E, RISK_EXTRA  # noqa: E402
 from tables_f import TABLES_F  # noqa: E402
+import refnum  # noqa: E402
 
 # The first edition numbered its tables 01 to 22. The expanded edition keeps those
 # definitions in tables_a.py and tables_b.py and renumbers them here.
@@ -243,9 +244,12 @@ def main():
     args = ap.parse_args()
     meta = load_meta()
     os.makedirs(MD_OUT, exist_ok=True)
+    # references are numbered in order of first citation in the Blueprint (see refnum.py)
+    bp_map = refnum.blueprint_map()
     for t in TABLES:
         if args.only and t["id"] not in args.only.split(","):
             continue
+        t = refnum.map_table(t, bp_map)
         for lang in ("en", "bn"):
             suffix = "" if lang == "en" else "_bn"
             stem = "blueprint_tab%s%s" % (t["id"], suffix)

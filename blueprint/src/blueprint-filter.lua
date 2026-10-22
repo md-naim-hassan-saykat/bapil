@@ -98,7 +98,7 @@ function Pandoc(doc)
     if b.t == "Header" then
       local t = pandoc.utils.stringify(b)
       if t == "Contents" or t == "সূচিপত্র" then
-        table.insert(out, pandoc.RawBlock("latex", "\\tableofcontents"))
+        table.insert(out, pandoc.RawBlock("latex", "\\bapiltableofcontents"))
         i = i + 1
         goto continue
       end

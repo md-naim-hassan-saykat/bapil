@@ -1,0 +1,57 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\setmainfont{Noto Serif}[Ligatures=TeXOff]
+\XeTeXgenerateactualtext=1
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali, NFSSFamily=bnfam]
+\usepackage[Latin,Bengali]{ucharclasses}
+% group-free font switching (as in header-common.tex): robust inside braces, cells and quotes
+\makeatletter
+\def\BN@saved{\rmdefault}
+\def\BN@bn{bnfam}
+\newcommand\BNin{\edef\BN@tmp{\f@family}\ifx\BN@tmp\BN@bn\else\let\BN@saved\BN@tmp\fi\fontfamily{bnfam}\selectfont}
+\newcommand\BNout{\fontfamily{\BN@saved}\selectfont}
+\makeatother
+\setTransitionsFor{Bengali}{\BNin}{\BNout}
+% Typographic quotes and dashes are not in a ucharclasses class (class 0), so a Bangla word right
+% after “ or ‘ would not trigger the Bangla font. Treat them as Latin so that every switch fires.
+\XeTeXcharclass"2018=\XeTeXcharclass`A
+\XeTeXcharclass"2019=\XeTeXcharclass`A
+\XeTeXcharclass"201C=\XeTeXcharclass`A
+\XeTeXcharclass"201D=\XeTeXcharclass`A
+\XeTeXcharclass"2013=\XeTeXcharclass`A
+\XeTeXcharclass"2014=\XeTeXcharclass`A
+\XeTeXcharclass"2026=\XeTeXcharclass`A
+\usepackage{newunicodechar}
+\newunicodechar{।}{{\bengalifont\char"0964}}
+\newunicodechar{॥}{{\bengalifont\char"0965}}
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{22cm}
+{\large\bfseries সারণি ৬৯।}\ {\large কর্মসংস্থান ও দক্ষতা: বছরভিত্তিক প্রত্যক্ষ পদ, ফেলোশিপ ও প্রশিক্ষিত কর্মকর্তা (৩৬ মাসের পরিকল্পনা ও শর্তসাপেক্ষ সম্প্রসারণ)}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=2.872\hsize\raggedright\arraybackslash}X>{\hsize=0.766\hsize\raggedright\arraybackslash}X>{\hsize=0.766\hsize\raggedright\arraybackslash}X>{\hsize=0.766\hsize\raggedright\arraybackslash}X>{\hsize=0.766\hsize\raggedright\arraybackslash}X>{\hsize=0.766\hsize\raggedright\arraybackslash}X>{\hsize=0.766\hsize\raggedright\arraybackslash}X>{\hsize=0.766\hsize\raggedright\arraybackslash}X>{\hsize=0.766\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{পরিমাপ} & \textbf{ব১} & \textbf{ব২} & \textbf{ব৩} & \textbf{ব৪} & \textbf{ব৫} & \textbf{ব৬} & \textbf{ব৭} & \textbf{ব৮} \\
+\midrule
+কেন্দ্রীয় ল্যাবের জনবল (পূর্ণকালীন সমতুল্য) & ৯ & ১৫ & ১৯ & ২৫ & ৩০ & ৩৮ & ৪৩ & ৪৫ \\
+বিভাগীয় বিশ্ববিদ্যালয়-কেন্দ্র (পূর্ণকালীন সমতুল্য) & ০ & ০ & ০ & ১০ & ২০ & ২০ & ২০ & ২০ \\
+সংস্থায় নিযুক্ত বিশ্লেষক (পূর্ণকালীন সমতুল্য) & ০ & ০ & ০ & ৬ & ১০ & ১৪ & ১৮ & ২০ \\
+বাংলা ভাষা-ডেটা ও টীকাকরণ কর্মী (পূর্ণকালীন সমতুল্য) & ০ & ০ & ০ & ১৭ & ২৮ & ৩৩ & ৩৩ & ৩৩ \\
+\textbf{প্রত্যক্ষ পদ, মোট (পূর্ণকালীন সমতুল্য)} & \textbf{৯} & \textbf{১৫} & \textbf{১৯} & \textbf{৫৮} & \textbf{৮৮} & \textbf{১০৫} & \textbf{১১৪} & \textbf{১১৮} \\
+স্নাতক ফেলো & ৬ & ১০ & ১২ & ২০ & ৩০ & ৪০ & ৪০ & ৪০ \\
+প্রশিক্ষিত কর্মকর্তা & ১০০ & ২০০ & ২০০ & ৫০০ & ৮০০ & ১,০০০ & ১,২০০ & ১,৫০০ \\
+প্রশিক্ষিত কর্মকর্তা, ক্রমযোজিত & ১০০ & ৩০০ & ৫০০ & ১,০০০ & ১,৮০০ & ২,৮০০ & ৪,০০০ & ৫,৫০০ \\
+\bottomrule
+\end{tabularx}
+\par\vspace{5pt}{\footnotesize\itshape বছর ১ থেকে ৩ (ব১ থেকে ব৩) প্রস্তাবিত ৩৬ মাসের পরিকল্পনা (সারণি ১৬); বছর ৪ থেকে ৮ শর্তসাপেক্ষ জাতীয় সম্প্রসারণ (সারণি ৭০), যা কেবল পাইলটগুলো গেট G4 পার হলে এবং চূড়ান্ত মূল্যায়ন ইতিবাচক হলে প্রযোজ্য। পদগুলো BAPIL-এর বাজেট থেকে পরিশোধিত পূর্ণকালীন সমতুল্য; বছর ১ থেকে ৩-এর খণ্ডকালীন বাংলা সম্পাদক ও স্বল্পমেয়াদি টীকাকরণ-চুক্তি গণনা করা হয়নি। সংস্থায় নিযুক্ত বিশ্লেষকদের ব্যয় সংস্থাগুলোও বহন করতে পারে। সব অঙ্ক blueprint/\allowbreak{}src/\allowbreak{}budget\_model.py (jobs ফাংশন) দ্বারা হিসাবকৃত পরিকল্পনা-অনুমান, প্রতিশ্রুতি নয়।}
+\par\vspace{3pt}{\scriptsize\color{gray} উৎস: BAPIL টেকনিক্যাল ব্লুপ্রিন্ট, সংস্করণ ১.০ (২০২৬)। CC BY 4.0।}
+\end{minipage}
+\end{document}

@@ -275,6 +275,139 @@ def bridge():
     return out
 
 
+# ----------------------------------------------------------------- conditional national scale-up
+# Indicative envelope for Years 4 to 8 (2030 to 2034 if Year 1 is 2027), Section 17.3 and Annex W.
+# It applies only if the pilots pass Gate G4, the independent final evaluation is positive and the
+# authorities decide to scale up; it is not part of the funding requested for the 36-month plan.
+# Same unit costs as the 36-month model (Year 1 prices), escalated by 8% a year from Year 1.
+SU_YEARS = (3, 4, 5, 6, 7)          # year indices: Years 4 to 8
+SU_LABELS = ("Year 4", "Year 5", "Year 6", "Year 7", "Year 8")
+SU_CORE_FTE = {                     # central lab, Dhaka
+    "Director and principal investigator": (1, 1, 1, 1, 1),
+    "Policy research lead and analysts": (4, 5, 6, 7, 8),
+    "Machine learning and Bangla NLP engineers": (5, 6, 8, 9, 10),
+    "Data engineers": (3, 3, 4, 5, 5),
+    "Software and platform (DevSecOps) engineers": (3, 4, 5, 6, 6),
+    "Security engineer": (1, 2, 2, 2, 2),
+    "Governance, legal and ethics analysts": (2, 3, 3, 4, 4),
+    "User experience and accessibility designer": (1, 1, 2, 2, 2),
+    "Programme and partnership coordinator": (2, 2, 3, 3, 3),
+    "Training and outreach officers": (3, 3, 4, 4, 4),
+}
+SU_NODES = (2, 4, 4, 4, 4)          # divisional university nodes (training hubs and regional research)
+SU_NODE_FTE = {                     # staff per node
+    "Policy research lead and analysts": 2,
+    "Data engineers": 1,
+    "Training and outreach officers": 1,
+    "Programme and partnership coordinator": 1,
+}
+SU_NODE_OPS = 2_500_000             # premises, equipment and running costs per node per year
+SU_EMBEDDED = (6, 10, 14, 18, 20)   # analysts placed in adopting agencies (policy analyst rate)
+SU_ANNOTATORS = (15, 25, 30, 30, 30)  # full-time Bangla language-data and annotation staff
+SU_ANNOTATOR_MONTHLY = 45_000
+SU_ANNOTATION_SUPERVISORS = (2, 3, 3, 3, 3)  # at the governance-analyst rate
+SU_FELLOWS = (20, 30, 40, 40, 40)   # graduate fellows (open to graduates of national AI skills programmes)
+SU_OFFICIALS = (500, 800, 1_000, 1_200, 1_500)
+SU_EQUIPMENT_USD = (                # national inference and search platform, staging and recovery
+    8 * 25_000 + 6 * 12_000 + 30_000,
+    6 * 25_000 + 4 * 12_000 + 20_000,
+    4 * 25_000 + 2 * 12_000 + 20_000,
+    2 * 25_000 + 2 * 12_000 + 20_000,
+    6 * 25_000 + 4 * 12_000 + 20_000,   # refresh of Year 1 and Year 4 hardware
+)
+SU_HOSTING = (10_000_000, 13_000_000, 16_000_000, 18_000_000, 20_000_000)
+SU_BENCHMARK_ITEMS = (1_500, 2_000, 2_000, 2_000, 2_000)
+SU_OCR = (4_000_000, 4_000_000, 4_000_000, 3_000_000, 3_000_000)
+SU_AGENCY_INTEGRATION = (2, 3, 4, 4, 4)   # agencies supported each year to connect to federated search
+SU_INTEGRATION_COST = 5_000_000           # per agency (integration, data cleaning, training)
+SU_GOVERNANCE = (
+    {"ERRC and board honoraria": 1_200_000, "Legal review": 1_000_000, "Penetration test and red team": 1_000_000,
+     "Annual independent audit of systems": 600_000},
+    {"ERRC and board honoraria": 1_200_000, "Legal review": 1_000_000, "Penetration test and red team": 1_000_000,
+     "Annual independent audit of systems": 600_000},
+    {"ERRC and board honoraria": 1_200_000, "Legal review": 1_000_000, "Penetration test and red team": 1_000_000,
+     "Annual independent audit of systems": 600_000, "Independent mid-term evaluation": 4_000_000},
+    {"ERRC and board honoraria": 1_200_000, "Legal review": 1_000_000, "Penetration test and red team": 1_000_000,
+     "Annual independent audit of systems": 600_000},
+    {"ERRC and board honoraria": 1_200_000, "Legal review": 1_000_000, "Penetration test and red team": 1_000_000,
+     "Annual independent audit of systems": 600_000, "Independent final evaluation": 5_000_000},
+)
+SU_CONTINGENCY = 0.10               # longer horizon: 10% contingency on direct costs
+SU_CATEGORIES = [
+    "Central lab staff",
+    "Divisional university nodes",
+    "Analysts placed in agencies",
+    "Bangla language-data and annotation staff",
+    "Graduate fellowships",
+    "Compute, hosting and federated search",
+    "Data and benchmarks",
+    "Training of officials",
+    "Governance, audit and evaluation",
+]
+
+
+def scaleup(p=None):
+    """Conditional national scale-up: {category: [Tk by year, Years 4 to 8]}, overheads and contingency."""
+    p = dict(BASE, **(p or {}))
+    e = [_esc(p, y) for y in SU_YEARS]
+    n = range(len(SU_YEARS))
+    sf = p["staff_factor"]
+    rows = {c: [0.0] * 5 for c in SU_CATEGORIES}
+    for i in n:
+        rows["Central lab staff"][i] = sum(MONTHLY_COST[r] * 12 * SU_CORE_FTE[r][i] for r in SU_CORE_FTE) * sf * e[i]
+        node_staff = sum(MONTHLY_COST[r] * 12 * k for r, k in SU_NODE_FTE.items()) * sf
+        rows["Divisional university nodes"][i] = SU_NODES[i] * (node_staff + SU_NODE_OPS) * e[i]
+        rows["Analysts placed in agencies"][i] = (SU_EMBEDDED[i] * MONTHLY_COST["Policy research lead and analysts"] * 12
+                                                  * sf * e[i])
+        rows["Bangla language-data and annotation staff"][i] = (
+            SU_ANNOTATORS[i] * SU_ANNOTATOR_MONTHLY * 12
+            + SU_ANNOTATION_SUPERVISORS[i] * MONTHLY_COST["Governance, legal and ethics analysts"] * 12) * sf * e[i]
+        rows["Graduate fellowships"][i] = SU_FELLOWS[i] * FELLOW_STIPEND_MONTHLY * 12 * e[i]
+        rows["Compute, hosting and federated search"][i] = (
+            SU_EQUIPMENT_USD[i] * p["equipment_factor"] * p["usd_to_bdt"]
+            + SU_HOSTING[i] * e[i] + SU_AGENCY_INTEGRATION[i] * SU_INTEGRATION_COST * e[i])
+        rows["Data and benchmarks"][i] = (SU_BENCHMARK_ITEMS[i] * COST_PER_ITEM + SU_OCR[i]
+                                          + DATA_AGREEMENTS[0] * 2) * e[i]
+        rows["Training of officials"][i] = (SU_OFFICIALS[i] * COST_PER_PARTICIPANT + SPECIALIST_COURSES[2] * 2) * e[i]
+        rows["Governance, audit and evaluation"][i] = sum(SU_GOVERNANCE[i].values()) * e[i]
+    direct = [sum(rows[c][i] for c in SU_CATEGORIES) for i in n]
+    rows["Host overheads (%d%%)" % round(100 * p["overhead_rate"])] = [d * p["overhead_rate"] for d in direct]
+    rows["Contingency (%d%%)" % round(100 * SU_CONTINGENCY)] = [d * SU_CONTINGENCY for d in direct]
+    return rows
+
+
+def scaleup_totals(p=None):
+    rows = scaleup(p)
+    by_year = [sum(v[i] for v in rows.values()) for i in range(5)]
+    return by_year, sum(by_year)
+
+
+def jobs():
+    """Direct posts (full-time equivalents), fellows and officials trained, by year.
+    Years 1 to 3: the 36-month plan; Years 4 to 8: the conditional scale-up."""
+    pilot = []
+    for y in range(3):
+        pilot.append({
+            "Central lab staff (FTE)": sum(FTE[r][y] for r in FTE),
+            "Divisional university nodes (FTE)": 0,
+            "Analysts placed in agencies (FTE)": 0,
+            "Bangla language-data and annotation staff (FTE)": 0,
+            "Graduate fellows": FELLOWS[y],
+            "Officials trained": OFFICIALS_TRAINED[y],
+        })
+    su = []
+    for i in range(5):
+        su.append({
+            "Central lab staff (FTE)": sum(SU_CORE_FTE[r][i] for r in SU_CORE_FTE),
+            "Divisional university nodes (FTE)": SU_NODES[i] * sum(SU_NODE_FTE.values()),
+            "Analysts placed in agencies (FTE)": SU_EMBEDDED[i],
+            "Bangla language-data and annotation staff (FTE)": SU_ANNOTATORS[i] + SU_ANNOTATION_SUPERVISORS[i],
+            "Graduate fellows": SU_FELLOWS[i],
+            "Officials trained": SU_OFFICIALS[i],
+        })
+    return pilot + su
+
+
 def crore(x):
     return x / CRORE
 
@@ -303,6 +436,14 @@ def main():
         print("Bridge: %-80s %6.2f %s" % (label, crore(t), "" if d is None else "%+.2f" % crore(d)))
     for k, d in sensitivity().items():
         print("Sensitivity: %-46s %+.2f crore" % (k, crore(d)))
+    print("Conditional scale-up, Years 4 to 8 (Tk crore):")
+    for k, v in scaleup().items():
+        print("  %-44s %s %7.2f" % (k, " ".join("%6.2f" % crore(x) for x in v), crore(sum(v))))
+    sy, st = scaleup_totals()
+    print("  %-44s %s %7.2f" % ("Total", " ".join("%6.2f" % crore(x) for x in sy), crore(st)))
+    for y, j in enumerate(jobs(), 1):
+        posts = sum(v for k, v in j.items() if k.endswith("(FTE)"))
+        print("  Year %d: posts %.1f, fellows %d, officials trained %d" % (y, posts, j["Graduate fellows"], j["Officials trained"]))
 
 
 def write_csv(outdir):
@@ -330,6 +471,14 @@ def write_csv(outdir):
     w("budget_sensitivity.csv", ["case", "change_in_total_tk"],
       [[k, round(d, 2)] for k, d in sensitivity().items()])
     w("budget_assumptions.csv", ["assumption", "value"], [[k, v] for k, v in BASE.items()])
+    su = scaleup()
+    w("scaleup_by_category.csv", ["row"] + ["year%d_tk" % (y + 4) for y in range(5)] + ["total_tk"],
+      [[k] + [round(x, 2) for x in v] + [round(sum(v), 2)] for k, v in su.items()]
+      + [["Total"] + [round(x, 2) for x in scaleup_totals()[0]] + [round(scaleup_totals()[1], 2)]])
+    jb = jobs()
+    keys = list(jb[0].keys())
+    w("jobs_and_skills.csv", ["measure"] + ["year%d" % (y + 1) for y in range(8)],
+      [[k] + [jb[y][k] for y in range(8)] for k in keys])
 
 
 if __name__ == "__main__":
