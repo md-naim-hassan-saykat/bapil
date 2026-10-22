@@ -3,9 +3,9 @@
 | ID | Component | Function | Candidate open technologies | Reference implementation |
 |------|-------------------|------------------------------|--------------------------|----------------|
 | C1 | Source connectors | Harvest public documents on a schedule, respecting site terms; record provenance | Python workers, Scrapy, cron or Airflow | Planned |
-| C2 | Ingestion and normalisation | Extract text from PDF and HTML, Bangla OCR, Unicode normalisation, chunking | Apache Tika, Tesseract (ben, eng), custom normaliser | bapil.text, bapil.corpus |
-| C3 | Document store and catalogue | Originals, extracted text and DCAT-aligned metadata with versioning | PostgreSQL, MinIO (S3-compatible), CKAN | JSONL corpus with checksums |
-| C4 | Search index | Lexical BM25 plus dense vectors with hybrid ranking | OpenSearch, or PostgreSQL with pgvector | bapil.search (BM25, bilingual) |
+| C2 | Ingestion and normalisation | Extract text from PDF and HTML, Bangla OCR, Unicode normalisation, chunking | Apache Tika [56], Tesseract (ben, eng) [57], custom normaliser | bapil.text, bapil.corpus |
+| C3 | Document store and catalogue | Originals, extracted text and DCAT-aligned metadata with versioning | PostgreSQL [58], MinIO (S3-compatible), CKAN [59] | JSONL corpus with checksums |
+| C4 | Search index | Lexical BM25 plus dense vectors with hybrid ranking | OpenSearch [60], or PostgreSQL with pgvector [61] | bapil.search (BM25, bilingual) |
 | C5 | Answer service | Retrieve, cite, abstain; optional LLM generation with citation verification | Open-weight LLMs served with vLLM or llama.cpp | bapil.answer (extractive, cited) |
 | C6 | Analytics engine | Budget extraction, indicators, topic models | Python, pandas, DuckDB | Planned |
 | C7 | Portal and dashboards | Bilingual, accessible user interface | Web framework; Apache Superset | Planned |

@@ -3,6 +3,7 @@
 | Item | Year 1 | Year 2 | Year 3 | Total |
 |------------------------------------------|----------|----------|----------|-----------|
 | One-time direct costs (equipment, benchmark creation, studies and evaluations) | 1.42 | 1.46 | 0.79 | 3.67 |
+| of which capital expenditure (servers, GPUs and storage) | 1.14 | 1.02 | 0.30 | 2.46 |
 | Recurring direct costs (staff, editors, fellows, hosting, OCR, training, assurance) | 2.69 | 5.05 | 6.35 | 14.10 |
 | Host overheads and contingency | 0.62 | 0.98 | 1.07 | 2.66 |
 | **Base case total** | **4.73** | **7.49** | **8.21** | **20.43** |

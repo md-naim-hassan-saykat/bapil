@@ -237,6 +237,21 @@ def one_time_recurring(p=None):
     return one, rec
 
 
+CAPITAL_ITEMS = {"Servers, GPUs and storage", "Staff computers"}   # assets; everything else is revenue spending
+
+
+def capital_revenue(p=None):
+    """Direct costs split into capital (equipment) and revenue spending, by year (Tk)."""
+    ls, p = lines(p)
+    cap = [0.0, 0.0, 0.0]
+    rev = [0.0, 0.0, 0.0]
+    for c in CATEGORIES:
+        for item, _, vals in ls[c]:
+            for y in range(3):
+                (cap if item in CAPITAL_ITEMS else rev)[y] += vals[y]
+    return cap, rev
+
+
 def sensitivity():
     """Change in the 36-month total (Tk) for single-factor changes from the base case."""
     _, base = totals()

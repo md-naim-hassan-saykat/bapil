@@ -2,9 +2,9 @@
 
 | Dimension | Metric | Definition | Proposed threshold |
 |---------------|-----------------------|--------------------------------|----------------|
-| Retrieval | Recall@10 | Share of answerable test questions with at least one gold passage in the top 10 results | at least 0.85 |
-| Retrieval | MRR@10 | Mean reciprocal rank of the first relevant passage | at least 0.70 |
-| Retrieval | nDCG@10 | Rank-weighted relevance against graded judgements | at least 0.75 |
+| Retrieval | Recall@10 | Share of answerable test questions with at least one gold passage in the top 10 results [76] | at least 0.85 |
+| Retrieval | MRR@10 | Mean reciprocal rank of the first relevant passage [77] | at least 0.70 |
+| Retrieval | nDCG@10 | Rank-weighted relevance against graded judgements [78] | at least 0.75 |
 | Grounding | Citation precision | Share of answer sentences whose cited passage fully supports the sentence, judged by two trained annotators | at least 0.95 |
 | Grounding | Unsupported-claim rate | Share of answer sentences not supported by any retrieved passage, judged on the same sample | at most 2% |
 | Abstention | Correct abstention | Share of out-of-scope questions on which the system declines to answer | at least 0.90 |
