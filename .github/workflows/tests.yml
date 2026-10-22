@@ -28,6 +28,6 @@ jobs:
       - name: Demonstration evaluation
         run: |
           PYTHONPATH=src python -m bapil.cli evaluate benchmarks/demo_questions.json \
-            --corpus ../reports ../blueprint/BAPIL_*.md --json build/eval_report.json
+            --corpus ../reports ../blueprint/BAPIL_Technical_Blueprint_*.md ../blueprint/BAPIL_Blueprint_Summary_*.md --json build/eval_report.json
       - name: Register validation
         run: PYTHONPATH=src python -m bapil.cli register examples/registry

@@ -91,7 +91,7 @@ The foundation horizon is already under way. Its purpose is to prepare a safe, o
 
 **Strategic aim:** prove value with public data and show that governance works.
 
-The short term corresponds to the first two years of the delivery plan. BAPIL is established as a university-anchored lab under an MoU, adopts its charter and constitutes the ERRC and TAB. Policy search (P1) and the open budget dataset (P2) are piloted and evaluated; BanglaPolicyQA v0 is released; the transparency register lists every system; and about 300 officials are trained by the end of 2028. The independent mid-term evaluation in mid-2028 decides whether BPFM Stage 1 is justified and how Phase 2 should be staffed.
+The short term corresponds to the first two years of the delivery plan. BAPIL is to be established as a university-anchored lab under an MoU, adopt its charter and constitute the ERRC and TAB. Policy search (P1) and the open budget dataset (P2) are piloted and evaluated; BanglaPolicyQA v0 is released; the transparency register lists every system; and about 300 officials are trained by the end of 2028. The independent mid-term evaluation in mid-2028 decides whether BPFM Stage 1 is justified and how Phase 2 should be staffed.
 
 **Key results by the end of 2028:** P1 and P2 have passed Gate G3; about 15,000 public documents are indexed with full provenance; at least three agencies have signed data or collaboration agreements; the Year 1 and mid-term evaluation reports are published.
 
@@ -303,7 +303,7 @@ Risks whose rating rises to high likelihood and high impact are escalated to the
 
 ## 20.1 Research as a Core Function
 
-BAPIL is a research institution as well as a builder of tools. Its research agenda serves three purposes: to answer questions that matter for the design of its own systems; to contribute open knowledge on Bangla language technology and public-sector AI governance; and to build national research capacity. Research questions are chosen where BAPIL’s position (access to real policy tasks, a governed corpus and a functioning governance system) allows it to produce evidence that others cannot.
+BAPIL is designed as a research institution as well as a builder of tools. Its research agenda would serve three purposes: to answer questions that matter for the design of its own systems; to contribute open knowledge on Bangla language technology and public-sector AI governance; and to build national research capacity. Research questions are chosen where BAPIL’s position (access to real policy tasks, a governed corpus and a functioning governance system) allows it to produce evidence that others cannot.
 
 ## 20.2 Research Questions
 
@@ -311,11 +311,12 @@ BAPIL is a research institution as well as a builder of tools. Its research agen
 
 ## 20.3 Publication Plan
 
-Research outputs are published open access with DOIs: datasets and benchmarks on Zenodo with datasheets; code on GitHub; evaluation reports in the BAPIL series; and peer-reviewed articles in journals and conferences chosen for their scope, open-access options and quality of review. A first journal manuscript, based on this Blueprint and its reference implementation, is planned for 2027; it will present the framework, the design rationale and the demonstration results, and will be submitted to a peer-reviewed journal in the field of AI and public policy or digital government. The outcome of peer review is not assumed in any plan.
+\looseness=-1 Research outputs are published open access with DOIs: datasets and benchmarks on Zenodo with datasheets; code on GitHub; evaluation reports in the BAPIL series; and peer-reviewed articles in journals and conferences chosen for their scope, open-access options and quality of review. A first journal manuscript, based on this Blueprint and its reference implementation, is planned for 2027; it will present the framework, the design rationale and the demonstration results, and will be submitted to a peer-reviewed journal in the field of AI and public policy or digital government. The outcome of peer review is not assumed in any plan.
 
 ## 20.4 Research Ethics
 
-All research involving people (surveys, interviews, user studies) is approved by the host institution’s research ethics committee and, where relevant, the ERRC. Participation is voluntary and informed, data is minimised and de-identified, and results are reported in aggregate. Research on information integrity follows the specific protocol required for pilot P6.
+\enlargethispage{\baselineskip}
+\looseness=-1 All research involving people (surveys, interviews, user studies) is approved by the host institution’s research ethics committee and, where relevant, the ERRC. Participation is voluntary and informed, data is minimised and de-identified, and results are reported in aggregate. Research on information integrity follows the specific protocol required for pilot P6.
 
 \newpage
 

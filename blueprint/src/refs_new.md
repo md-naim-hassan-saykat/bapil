@@ -240,3 +240,27 @@ Personal Data Protection Ordinance: A law that protects you from everyone except
 Dhaka: The Business Standard, 2026-04-20[2026-10-22].
 Available:
 <https://www.tbsnews.net/thoughts/personal-data-protection-ordinance-law-protects-you-everyone-except-state-1416106>
+
+[123] THE FINANCIAL EXPRESS.
+Bangladesh amends cybersecurity law, drops online gambling clause[EB/OL].
+Dhaka: The Financial Express, 2026-06-30[2026-10-22].
+Available:
+<https://thefinancialexpress.com.bd/sci-tech/bangladesh-amends-cybersecurity-law-drops-online-gambling-clause>
+
+[124] THE DAILY OBSERVER.
+Cabinet committee formed to finalise draft of Cyber Security (Amendment) Act[EB/OL].
+Dhaka: The Daily Observer, 2026-07-02[2026-10-22].
+Available:
+<https://observerbd.com/news/581694>
+
+[125] AI POLICY FOR BANGLADESH (aipolicy.gov.bd).
+Bangladesh National AI Policy 2026-2030, Draft v2, February 9, 2026[EB/OL].
+Dhaka, 2026-02-09[2026-10-22].
+Available:
+<https://aipolicy.gov.bd/docs/national-ai-policy-bangladesh-2026-2030-draft-v2.0.pdf>
+
+[126] MUBASHIRA N.
+A Statute Without a Floor: Data Protection and the Case for Constitutional Privacy in Bangladesh[EB/OL].
+Dhaka: Bangladesh Law Digest, 2026-08-18[2026-10-22].
+Available:
+<https://bdlawdigest.org/personal-data-protection-act-2026-bangladesh.html>

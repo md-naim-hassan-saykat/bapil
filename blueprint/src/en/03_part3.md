@@ -118,7 +118,7 @@ Where data is not already public, access is governed by a written data-sharing a
 
 ## 8.12 Personal Data
 
-As reported, the personal data protection framework recognises citizens’ rights over their personal data, requires consent and gives enhanced protection to sensitive and children’s data, and data subjects may restrict automated decisions based on their data [84, 85]; a Personal Data Protection (Amendment) Ordinance, 2026 changed the ordinance’s data-residency provisions [115], and commentary describes localisation as limited to critical sectors such as banking and healthcare [122]. Which of these provisions of the 2026 Act are in force, and from when, is to be confirmed by the legal review (Section 14.3); until then BAPIL applies the stricter reading. BAPIL’s design responds conservatively: P2 data is used only in pilot P3, only with consent, only after a DPIA (template in Annex H), only in de-identified form and only for aggregate results; P3 data is never used. Commentators have argued that the new framework leaves broad room for state access to data [106]; BAPIL’s own safeguards therefore do not rely on legal minimums alone.
+As reported, the personal data protection framework recognises citizens’ rights over their personal data; it makes consent the principal basis for processing but also allows processing on other specified grounds and contains broad exemptions, including for national security, public order and the public interest; it gives enhanced protection to sensitive and children’s data; and data subjects may restrict automated decisions based on their data [84, 85, 126]; a Personal Data Protection (Amendment) Ordinance, 2026 changed the ordinance’s data-residency provisions [115], and commentary describes localisation as limited to critical sectors such as banking and healthcare [122]. Which of these provisions of the 2026 Act are in force, and from when, is to be confirmed by the legal review (Section 14.3); until then BAPIL applies the stricter reading. BAPIL’s design responds conservatively, with safeguards that go beyond what the law requires: P2 data is used only in pilot P3, only with consent (a BAPIL rule, not a statutory requirement), only after a DPIA (template in Annex H), only in de-identified form and only for aggregate results; P3 data is never used. Commentators have argued that the new framework leaves broad room for state access to data [106]; BAPIL’s own safeguards therefore do not rely on legal minimums alone.
 
 \newpage
 
@@ -295,7 +295,8 @@ implementation/
 ```bash
 cd implementation
 pip install -e .        # no third-party dependencies
-python -m bapil.cli index --corpus ../reports ../blueprint/BAPIL_*.md
+python -m bapil.cli index --corpus ../reports \
+    ../blueprint/BAPIL_Technical_Blueprint_*.md ../blueprint/BAPIL_Blueprint_Summary_*.md
 python -m bapil.cli search "data protection impact assessment"
 python -m bapil.cli ask "বাংলা নীতি ফাউন্ডেশন মডেল কেন প্রয়োজন?"
 python -m bapil.cli assess examples/risk/risk_p1_policy_search.json
@@ -316,7 +317,7 @@ The unit tests cover every module and are organised by component: Bangla and Eng
 
 ## 11.7 Continuous Integration
 
-Two GitHub Actions workflows are configured to run on every change once the repository is updated: one runs the unit tests on Python 3.10 to 3.13; the other rebuilds the Blueprint tables, figures and PDFs with XeLaTeX and the Noto fonts, so that published documents can always be regenerated from source. The workflows run with read-only repository permissions. Because the package uses only the Python standard library, it has no third-party dependency chain to pin or audit; any future dependency must be pinned, listed in a software bill of materials and approved by the TAB. A security policy in the repository (`SECURITY.md`) explains how to report vulnerabilities privately.
+Two GitHub Actions workflows are configured to run on every change once the repository is updated: one runs the unit tests on Python 3.10 to 3.13; the other rebuilds the Blueprint tables, figures and PDFs with XeLaTeX and the Noto fonts, so that any failure to regenerate the published documents from source is detected. The workflows run with read-only repository permissions. Because the package uses only the Python standard library, it has no third-party dependency chain to pin or audit; any future dependency must be pinned, listed in a software bill of materials and approved by the TAB. A security policy in the repository (`SECURITY.md`) explains how to report vulnerabilities privately.
 
 ## 11.8 From Reference Implementation to Production
 
