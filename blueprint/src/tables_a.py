@@ -213,9 +213,9 @@ TABLES_A = [
         "rows": {
             "en": [
                 ["C1", "Source connectors", "Harvest public documents on a schedule, respecting site terms; record provenance", "Python workers, Scrapy, cron or Airflow", "Planned"],
-                ["C2", "Ingestion and normalisation", "Extract text from PDF and HTML, Bangla OCR, Unicode normalisation, chunking", "Apache Tika, Tesseract (ben, eng), custom normaliser", "bapil.text, bapil.corpus"],
-                ["C3", "Document store and catalogue", "Originals, extracted text and DCAT-aligned metadata with versioning", "PostgreSQL, MinIO (S3-compatible), CKAN", "JSONL corpus with checksums"],
-                ["C4", "Search index", "Lexical BM25 plus dense vectors with hybrid ranking", "OpenSearch, or PostgreSQL with pgvector", "bapil.search (BM25, bilingual)"],
+                ["C2", "Ingestion and normalisation", "Extract text from PDF and HTML, Bangla OCR, Unicode normalisation, chunking", "Apache Tika [136], Tesseract (ben, eng) [135], custom normaliser", "bapil.text, bapil.corpus"],
+                ["C3", "Document store and catalogue", "Originals, extracted text and DCAT-aligned metadata with versioning", "PostgreSQL [137], MinIO (S3-compatible), CKAN [138]", "JSONL corpus with checksums"],
+                ["C4", "Search index", "Lexical BM25 plus dense vectors with hybrid ranking", "OpenSearch [139], or PostgreSQL with pgvector [140]", "bapil.search (BM25, bilingual)"],
                 ["C5", "Answer service", "Retrieve, cite, abstain; optional LLM generation with citation verification", "Open-weight LLMs served with vLLM or llama.cpp", "bapil.answer (extractive, cited)"],
                 ["C6", "Analytics engine", "Budget extraction, indicators, topic models", "Python, pandas, DuckDB", "Planned"],
                 ["C7", "Portal and dashboards", "Bilingual, accessible user interface", "Web framework; Apache Superset", "Planned"],
@@ -227,9 +227,9 @@ TABLES_A = [
             ],
             "bn": [
                 ["C1", "উৎস সংযোগকারী", "সাইটের শর্ত মেনে নির্ধারিত সময়ে জনসমক্ষে প্রকাশিত নথি সংগ্রহ; উৎস-তথ্য সংরক্ষণ", "Python worker, Scrapy, cron বা Airflow", "পরিকল্পিত"],
-                ["C2", "গ্রহণ ও প্রমিতকরণ", "PDF ও HTML থেকে টেক্সট নিষ্কাশন, বাংলা OCR, ইউনিকোড প্রমিতকরণ, খণ্ডকরণ", "Apache Tika, Tesseract (ben, eng), নিজস্ব প্রমিতকারী", "bapil.text, bapil.corpus"],
-                ["C3", "নথি সংরক্ষণাগার ও ক্যাটালগ", "মূল নথি, নিষ্কাশিত টেক্সট ও DCAT-সামঞ্জস্যপূর্ণ মেটাডেটা, সংস্করণসহ", "PostgreSQL, MinIO (S3-সামঞ্জস্যপূর্ণ), CKAN", "চেকসামসহ JSONL কর্পাস"],
-                ["C4", "অনুসন্ধান সূচি", "শব্দভিত্তিক BM25 ও ঘন ভেক্টরের মিশ্র র‍্যাংকিং", "OpenSearch, বা pgvector-সহ PostgreSQL", "bapil.search (BM25, দ্বিভাষিক)"],
+                ["C2", "গ্রহণ ও প্রমিতকরণ", "PDF ও HTML থেকে টেক্সট নিষ্কাশন, বাংলা OCR, ইউনিকোড প্রমিতকরণ, খণ্ডকরণ", "Apache Tika [136], Tesseract (ben, eng) [135], নিজস্ব প্রমিতকারী", "bapil.text, bapil.corpus"],
+                ["C3", "নথি সংরক্ষণাগার ও ক্যাটালগ", "মূল নথি, নিষ্কাশিত টেক্সট ও DCAT-সামঞ্জস্যপূর্ণ মেটাডেটা, সংস্করণসহ", "PostgreSQL [137], MinIO (S3-সামঞ্জস্যপূর্ণ), CKAN [138]", "চেকসামসহ JSONL কর্পাস"],
+                ["C4", "অনুসন্ধান সূচি", "শব্দভিত্তিক BM25 ও ঘন ভেক্টরের মিশ্র র‍্যাংকিং", "OpenSearch [139], বা pgvector-সহ [140] PostgreSQL", "bapil.search (BM25, দ্বিভাষিক)"],
                 ["C5", "উত্তর সেবা", "উদ্ধার, উদ্ধৃতি, বিরত থাকা; উদ্ধৃতি যাচাইসহ ঐচ্ছিক LLM উৎপাদন", "vLLM বা llama.cpp-এ চালিত উন্মুক্ত-ওজন LLM", "bapil.answer (উদ্ধৃতিসহ নিষ্কাশনমূলক)"],
                 ["C6", "বিশ্লেষণ ইঞ্জিন", "বাজেট নিষ্কাশন, সূচক, বিষয়-মডেল", "Python, pandas, DuckDB", "পরিকল্পিত"],
                 ["C7", "পোর্টাল ও ড্যাশবোর্ড", "দ্বিভাষিক ও প্রবেশযোগ্য ব্যবহারকারী ইন্টারফেস", "ওয়েব ফ্রেমওয়ার্ক; Apache Superset", "পরিকল্পিত"],
@@ -329,9 +329,9 @@ TABLES_A = [
         },
         "rows": {
             "en": [
-                ["Retrieval", "Recall@10", "Share of answerable test questions with at least one gold passage in the top 10 results", "at least 0.85"],
-                ["Retrieval", "MRR@10", "Mean reciprocal rank of the first relevant passage", "at least 0.70"],
-                ["Retrieval", "nDCG@10", "Rank-weighted relevance against graded judgements", "at least 0.75"],
+                ["Retrieval", "Recall@10", "Share of answerable test questions with at least one gold passage in the top 10 results [128]", "at least 0.85"],
+                ["Retrieval", "MRR@10", "Mean reciprocal rank of the first relevant passage [129]", "at least 0.70"],
+                ["Retrieval", "nDCG@10", "Rank-weighted relevance against graded judgements [130]", "at least 0.75"],
                 ["Grounding", "Citation precision", "Share of answer sentences whose cited passage fully supports the sentence, judged by two trained annotators", "at least 0.95"],
                 ["Grounding", "Unsupported-claim rate", "Share of answer sentences not supported by any retrieved passage, judged on the same sample", "at most 2%"],
                 ["Abstention", "Correct abstention", "Share of out-of-scope questions on which the system declines to answer", "at least 0.90"],
@@ -344,9 +344,9 @@ TABLES_A = [
                 ["Reliability", "Availability", "Share of working hours in which search is available during the pilot", "at least 99%"],
             ],
             "bn": [
-                ["উদ্ধার", "Recall@10", "যেসব উত্তরযোগ্য পরীক্ষা-প্রশ্নের অন্তত একটি সঠিক অনুচ্ছেদ প্রথম ১০টি ফলাফলে আসে তার অনুপাত", "কমপক্ষে ০.৮৫"],
-                ["উদ্ধার", "MRR@10", "প্রথম প্রাসঙ্গিক অনুচ্ছেদের র‍্যাংকের গড় বিপরীত মান", "কমপক্ষে ০.৭০"],
-                ["উদ্ধার", "nDCG@10", "স্তরভিত্তিক বিচারের বিপরীতে র‍্যাংক-ভারিত প্রাসঙ্গিকতা", "কমপক্ষে ০.৭৫"],
+                ["উদ্ধার", "Recall@10", "যেসব উত্তরযোগ্য পরীক্ষা-প্রশ্নের অন্তত একটি সঠিক অনুচ্ছেদ প্রথম ১০টি ফলাফলে আসে তার অনুপাত [128]", "কমপক্ষে ০.৮৫"],
+                ["উদ্ধার", "MRR@10", "প্রথম প্রাসঙ্গিক অনুচ্ছেদের র‍্যাংকের গড় বিপরীত মান [129]", "কমপক্ষে ০.৭০"],
+                ["উদ্ধার", "nDCG@10", "স্তরভিত্তিক বিচারের বিপরীতে র‍্যাংক-ভারিত প্রাসঙ্গিকতা [130]", "কমপক্ষে ০.৭৫"],
                 ["ভিত্তিস্থাপন", "উদ্ধৃতির নির্ভুলতা", "যেসব উত্তর-বাক্যের উদ্ধৃত অনুচ্ছেদ বাক্যটিকে পুরোপুরি সমর্থন করে তার অনুপাত, দুজন প্রশিক্ষিত টীকাকারের বিচারে", "কমপক্ষে ০.৯৫"],
                 ["ভিত্তিস্থাপন", "অসমর্থিত দাবির হার", "যেসব উত্তর-বাক্য কোনো উদ্ধারকৃত অনুচ্ছেদ দ্বারা সমর্থিত নয় তার অনুপাত, একই নমুনায় বিচারকৃত", "সর্বোচ্চ ২%"],
                 ["বিরত থাকা", "সঠিক বিরতি", "আওতাবহির্ভূত প্রশ্নে ব্যবস্থার উত্তর না দেওয়ার অনুপাত", "কমপক্ষে ০.৯০"],

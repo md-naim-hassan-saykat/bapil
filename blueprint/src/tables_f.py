@@ -39,6 +39,7 @@ def _bridge_rows():
 # ------------------------------------------------------------------ Table 62: cost types and scenarios
 def _type_rows():
     one, rec = _bm.one_time_recurring()
+    cap, _ = _bm.capital_revenue()
     rows = _bm.budget()
     oc = [sum(v[y] for k, v in rows.items() if k.startswith("Host") or k.startswith("Contingency")) for y in range(3)]
     base_y, base_t = _bm.totals()
@@ -55,6 +56,7 @@ def _type_rows():
 
     pairs = [
         r("One-time direct costs (equipment, benchmark creation, studies and evaluations)", "এককালীন প্রত্যক্ষ ব্যয় (যন্ত্রপাতি, বেঞ্চমার্ক তৈরি, সমীক্ষা ও মূল্যায়ন)", one),
+        r("of which capital expenditure (servers, GPUs and storage)", "এর মধ্যে মূলধনি ব্যয় (সার্ভার, জিপিইউ ও স্টোরেজ)", cap),
         r("Recurring direct costs (staff, editors, fellows, hosting, OCR, training, assurance)", "পুনরাবৃত্ত প্রত্যক্ষ ব্যয় (জনবল, সম্পাদক, ফেলো, হোস্টিং, OCR, প্রশিক্ষণ, আশ্বাস)", rec),
         r("Host overheads and contingency", "স্বাগতিকের পরোক্ষ ব্যয় ও আপৎকালীন সংস্থান", oc),
         r("Base case total", "মূল হিসাবের মোট", base_y, bold=True),
@@ -239,7 +241,7 @@ TABLES_F = [
         "rows": {
             "en": [
                 ["Recall@10, MRR@10, nDCG@10", "For each answerable question, a hit if any gold passage is in the top 10; Recall@10 is the mean of hits. MRR and nDCG as in Table 28", "Private test split: at least 300 answerable questions in v0 (about 150 per language) and 1,200 in v1", "Automatic scoring by the evaluation team; script, outputs, configuration and corpus version archived", "Threshold met if the point estimate meets it and the 95% interval is no wider than plus or minus 5 points (about 4 points at n = 300); otherwise annotate more items before deciding"],
-                ["Citation precision", "Share of sampled answer sentences whose cited passage fully supports the sentence (supported, partly supported or not supported; only supported counts)", "400 answer sentences drawn at random from test answers, at least 200 per language", "Two trained annotators who do not know the system version; a third adjudicates; Cohen’s kappa reported (target 0.70 or more)", "Point estimate at least 0.95 (interval about plus or minus 2 points at n = 400)"],
+                ["Citation precision", "Share of sampled answer sentences whose cited passage fully supports the sentence (supported, partly supported or not supported; only supported counts)", "400 answer sentences drawn at random from test answers, at least 200 per language", "Two trained annotators who do not know the system version; a third adjudicates; Cohen’s kappa [131] reported (target 0.70 or more)", "Point estimate at least 0.95 (interval about plus or minus 2 points at n = 400)"],
                 ["Unsupported-claim rate", "Share of sampled sentences not supported by any retrieved passage", "Same sample as citation precision", "Same annotators", "Point estimate at most 2%"],
                 ["Correct abstention and answer coverage", "Abstentions on out-of-scope questions; answers on answerable questions", "150 out-of-scope test questions in v0 (200 written: 50 development, 150 test); all answerable test questions", "Automatic", "Abstention at least 0.90 (interval about plus or minus 5 points); coverage at least 0.80"],
                 ["Language parity", "Recall@10 for English minus Recall@10 for Bangla, with a bootstrap interval", "Per-language test subsets", "Automatic", "Reported in v0, where the interval is too wide to decide; release condition from v1 onwards"],
@@ -254,7 +256,7 @@ TABLES_F = [
             ],
             "bn": [
                 ["Recall@10, MRR@10, nDCG@10", "প্রতিটি উত্তরযোগ্য প্রশ্নে কোনো সঠিক অনুচ্ছেদ প্রথম ১০টিতে থাকলে সফল; সফলতার গড়ই Recall@10। MRR ও nDCG সারণি ২৮ অনুযায়ী", "ব্যক্তিগত পরীক্ষা-অংশ: v0-তে কমপক্ষে ৩০০টি উত্তরযোগ্য প্রশ্ন (প্রতি ভাষায় প্রায় ১৫০টি) এবং v1-এ ১,২০০টি", "মূল্যায়ন দলের স্বয়ংক্রিয় স্কোরিং; স্ক্রিপ্ট, ফলাফল, কনফিগারেশন ও কর্পাস সংস্করণ সংরক্ষিত", "বিন্দু-প্রাক্কলন সীমা অর্জন করলে এবং ৯৫% ব্যবধান ধনাত্মক-ঋণাত্মক ৫ পয়েন্টের বেশি চওড়া না হলে সীমা অর্জিত (n = ৩০০-এ প্রায় ৪ পয়েন্ট); অন্যথায় সিদ্ধান্তের আগে আরও প্রশ্ন টীকাকরণ"],
-                ["উদ্ধৃতির নির্ভুলতা", "নমুনাভুক্ত উত্তর-বাক্যের মধ্যে যেগুলোর উদ্ধৃত অনুচ্ছেদ বাক্যটিকে পুরোপুরি সমর্থন করে তার অনুপাত (সমর্থিত, আংশিক সমর্থিত বা অসমর্থিত; শুধু সমর্থিত গণ্য)", "পরীক্ষা-উত্তর থেকে দৈবভাবে নেওয়া ৪০০টি উত্তর-বাক্য, প্রতি ভাষায় কমপক্ষে ২০০টি", "ব্যবস্থার সংস্করণ না জানা দুজন প্রশিক্ষিত টীকাকার; তৃতীয়জন নিষ্পত্তি করেন; কোহেনের কাপ্পা প্রতিবেদিত (লক্ষ্য ০.৭০ বা তার বেশি)", "বিন্দু-প্রাক্কলন কমপক্ষে ০.৯৫ (n = ৪০০-এ ব্যবধান প্রায় ধনাত্মক-ঋণাত্মক ২ পয়েন্ট)"],
+                ["উদ্ধৃতির নির্ভুলতা", "নমুনাভুক্ত উত্তর-বাক্যের মধ্যে যেগুলোর উদ্ধৃত অনুচ্ছেদ বাক্যটিকে পুরোপুরি সমর্থন করে তার অনুপাত (সমর্থিত, আংশিক সমর্থিত বা অসমর্থিত; শুধু সমর্থিত গণ্য)", "পরীক্ষা-উত্তর থেকে দৈবভাবে নেওয়া ৪০০টি উত্তর-বাক্য, প্রতি ভাষায় কমপক্ষে ২০০টি", "ব্যবস্থার সংস্করণ না জানা দুজন প্রশিক্ষিত টীকাকার; তৃতীয়জন নিষ্পত্তি করেন; কোহেনের কাপ্পা [131] প্রতিবেদিত (লক্ষ্য ০.৭০ বা তার বেশি)", "বিন্দু-প্রাক্কলন কমপক্ষে ০.৯৫ (n = ৪০০-এ ব্যবধান প্রায় ধনাত্মক-ঋণাত্মক ২ পয়েন্ট)"],
                 ["অসমর্থিত দাবির হার", "নমুনাভুক্ত বাক্যের মধ্যে যেগুলো কোনো উদ্ধারকৃত অনুচ্ছেদ দ্বারা সমর্থিত নয় তার অনুপাত", "উদ্ধৃতির নির্ভুলতার একই নমুনা", "একই টীকাকার", "বিন্দু-প্রাক্কলন সর্বোচ্চ ২%"],
                 ["সঠিক বিরতি ও উত্তর-আওতা", "আওতাবহির্ভূত প্রশ্নে বিরতি; উত্তরযোগ্য প্রশ্নে উত্তর", "v0-তে ১৫০টি আওতাবহির্ভূত পরীক্ষা-প্রশ্ন (রচিত ২০০টি: উন্নয়নে ৫০, পরীক্ষায় ১৫০); সব উত্তরযোগ্য পরীক্ষা-প্রশ্ন", "স্বয়ংক্রিয়", "বিরতি কমপক্ষে ০.৯০ (ব্যবধান প্রায় ধনাত্মক-ঋণাত্মক ৫ পয়েন্ট); আওতা কমপক্ষে ০.৮০"],
                 ["ভাষাগত সমতা", "ইংরেজির Recall@10 বিয়োগ বাংলার Recall@10, বুটস্ট্র্যাপ ব্যবধানসহ", "ভাষাভিত্তিক পরীক্ষা-উপসেট", "স্বয়ংক্রিয়", "v0-তে প্রতিবেদিত, কারণ ব্যবধান সিদ্ধান্তের জন্য বেশি চওড়া; v1 থেকে রিলিজের শর্ত"],
@@ -268,8 +270,8 @@ TABLES_F = [
                 ["পুনরুৎপাদনযোগ্যতা", "ব্যক্তিগত অংশে সংরক্ষিত ফলাফলের পুনঃস্কোরিং", "গেট-সিদ্ধান্তে ব্যবহৃত প্রতিটি রিলিজ", "G4-এর আগে স্বাধীন মূল্যায়নকারী", "পুনঃস্কোরকৃত মাপকাঠি প্রতিবেদিত মানের ১ পয়েন্টের মধ্যে"],
             ],
         },
-        "note": {"en": "Intervals are 95% Wilson or bootstrap intervals. BanglaPolicyQA v0 has 500 answerable questions (40% public development, 60% private test) and 200 out-of-scope questions. Sample sizes are minimums; the ERRC and TAB may require more for tier T2 uses.",
-                 "bn": "ব্যবধানগুলো ৯৫% উইলসন বা বুটস্ট্র্যাপ ব্যবধান। BanglaPolicyQA v0-তে ৫০০টি উত্তরযোগ্য প্রশ্ন (৪০% উন্মুক্ত উন্নয়ন-অংশ, ৬০% ব্যক্তিগত পরীক্ষা-অংশ) ও ২০০টি আওতাবহির্ভূত প্রশ্ন আছে। নমুনার আকার ন্যূনতম; T2 স্তরের ব্যবহারে ERRC ও TAB আরও বেশি চাইতে পারে।"},
+        "note": {"en": "Intervals are 95% Wilson [132] or bootstrap [133] intervals. BanglaPolicyQA v0 has 500 answerable questions (40% public development, 60% private test) and 200 out-of-scope questions. Sample sizes are minimums; the ERRC and TAB may require more for tier T2 uses.",
+                 "bn": "ব্যবধানগুলো ৯৫% উইলসন [132] বা বুটস্ট্র্যাপ [133] ব্যবধান। BanglaPolicyQA v0-তে ৫০০টি উত্তরযোগ্য প্রশ্ন (৪০% উন্মুক্ত উন্নয়ন-অংশ, ৬০% ব্যক্তিগত পরীক্ষা-অংশ) ও ২০০টি আওতাবহির্ভূত প্রশ্ন আছে। নমুনার আকার ন্যূনতম; T2 স্তরের ব্যবহারে ERRC ও TAB আরও বেশি চাইতে পারে।"},
     },
     # ------------------------------------------------------------------ 64
     {

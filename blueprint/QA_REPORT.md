@@ -6,8 +6,8 @@ First checked on 22 October 2026 on the build of commit `0f74dc7`; checked again
 
 | File | Pages | Notes |
 |---|---:|---|
-| `releases/v1.1/BAPIL_Technical_Blueprint_en.pdf` | 141 | Letter size, PDF 1.5, all fonts embedded as subsets |
-| `releases/v1.1/BAPIL_Technical_Blueprint_bn.pdf` | 136 | Same |
+| `releases/v1.1/BAPIL_Technical_Blueprint_en.pdf` | 142 | Letter size, PDF 1.5, all fonts embedded as subsets |
+| `releases/v1.1/BAPIL_Technical_Blueprint_bn.pdf` | 139 | Same |
 | `releases/v1.1/BAPIL_Blueprint_Summary_en.pdf` | 11 | Same |
 | `releases/v1.1/BAPIL_Blueprint_Summary_bn.pdf` | 11 | Same |
 | `releases/v1.1/BAPIL_Decision_Memo_en.pdf` | 2 | Separate document, not part of the Blueprint |
@@ -167,7 +167,7 @@ The audit corrected legal, institutional and technical statements in both editio
 
 | Check | Result | Evidence |
 |---|---|---|
-| References sequential | Pass | In all six documents the citations, read in order, are 1, 2, 3 ... with no gaps, and every cited number is listed (Blueprint 84 in both editions, Summary 10, Memo 5); the build stops if a citation exceeds the list or a Bangla edition cites a reference the English does not |
+| References sequential | Pass | In all six documents the citations, read in order, are 1, 2, 3 ... with no gaps, and every cited number is listed (after section 9: Blueprint 104 in both editions, Summary 10, Memo 5); the build stops if a citation exceeds the list or a Bangla edition cites a reference the English does not |
 | Annex W figures | Pass | Tables 69 and 70 and every figure quoted in Section 17.3, the front matter, the Summary and the Memo come from `budget_model.py`; totals 25.50, 36.08, 45.26, 51.11, 60.90 = 218.85; posts 58 to 118 |
 | English and Bangla numbers in Annex W and Section 17.3 | Pass | Multi-digit numbers identical (Bangla digits converted) |
 | Full build, tests, evaluation | Pass | Exit 0; 49 tests; Recall@10 0.875 unchanged and consistent with Table 60 |
@@ -175,4 +175,14 @@ The audit corrected legal, institutional and technical statements in both editio
 | Body text clear of page numbers | Pass | No page within 8 pt |
 | Short pages | Pass, minor | As in section 7; the list of tables now ends with four entries in English |
 | Visual inspection | Pass | Annex W and Tables 69 and 70 in both editions; reference list pages with † marks |
+
+## 9. Fourth pass: references and Chapter 17 (22 October 2026)
+
+| Check | Result | Evidence |
+|---|---|---|
+| New references verified | Pass | Each of the 20 new entries checked against the publisher page, DOI or official site (October 2026) |
+| Citations sequential | Pass | Blueprint 104 (both editions), Summary 10, Memo 5; no gaps |
+| Tranche and capital figures | Pass | 4.73, 7.49, 8.21; 23.1% by end of Year 1; capital 1.14, 1.02, 0.30 = 2.46 (12.0%); all from `budget_model.py` |
+| Build, tests, evaluation, fonts, links, page numbers | Pass | Exit 0; 49 tests; Recall@10 0.875; all fonts embedded; no body text within 8 pt of a page number |
+| Visual inspection | Pass | Section 17.2 and Table 62 in both editions |
 

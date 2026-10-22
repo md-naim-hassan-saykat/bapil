@@ -270,3 +270,131 @@ Budget FY27: Govt proposes Tk500cr for AI sector[EB/OL].
 Dhaka: The Business Standard, 2026-06-11[2026-10-22].
 Available:
 <https://www.tbsnews.net/node/1459971>
+
+[128] MANNING C D, RAGHAVAN P, SCHÜTZE H.
+Introduction to Information Retrieval[M].
+Cambridge: Cambridge University Press, 2008.
+DOI: 10.1017/CBO9780511809071.
+Available:
+<https://doi.org/10.1017/CBO9780511809071>
+
+[129] VOORHEES E M.
+The TREC-8 Question Answering Track Report[C]//Proceedings of the Eighth Text REtrieval Conference (TREC-8), NIST Special Publication 500-246.
+Gaithersburg, MD: National Institute of Standards and Technology, 1999: 77–82.
+Available:
+<https://trec.nist.gov/pubs/trec8/papers/qa_report.pdf>
+
+[130] JÄRVELIN K, KEKÄLÄINEN J.
+Cumulated Gain-Based Evaluation of IR Techniques[J].
+ACM Transactions on Information Systems, 2002, 20(4): 422–446.
+DOI: 10.1145/582415.582418.
+Available:
+<https://doi.org/10.1145/582415.582418>
+
+[131] COHEN J.
+A Coefficient of Agreement for Nominal Scales[J].
+Educational and Psychological Measurement, 1960, 20(1): 37–46.
+DOI: 10.1177/001316446002000104.
+Available:
+<https://doi.org/10.1177/001316446002000104>
+
+[132] WILSON E B.
+Probable Inference, the Law of Succession, and Statistical Inference[J].
+Journal of the American Statistical Association, 1927, 22(158): 209–212.
+DOI: 10.1080/01621459.1927.10502953.
+Available:
+<https://doi.org/10.1080/01621459.1927.10502953>
+
+[133] EFRON B, TIBSHIRANI R J.
+An Introduction to the Bootstrap[M].
+New York: Chapman & Hall, 1993.
+DOI: 10.1201/9780429246593.
+Available:
+<https://doi.org/10.1201/9780429246593>
+
+[134] CORMACK G V, CLARKE C L A, BÜTTCHER S.
+Reciprocal Rank Fusion Outperforms Condorcet and Individual Rank Learning Methods[C]//Proceedings of the 32nd International ACM SIGIR Conference on Research and Development in Information Retrieval.
+New York: ACM, 2009: 758–759.
+DOI: 10.1145/1571941.1572114.
+Available:
+<https://doi.org/10.1145/1571941.1572114>
+
+[135] SMITH R.
+An Overview of the Tesseract OCR Engine[C]//Proceedings of the Ninth International Conference on Document Analysis and Recognition (ICDAR 2007).
+Los Alamitos, CA: IEEE Computer Society, 2007: 629–633.
+DOI: 10.1109/ICDAR.2007.4376991.
+Available:
+<https://doi.org/10.1109/ICDAR.2007.4376991>
+
+[136] THE APACHE SOFTWARE FOUNDATION.
+Apache Tika: a content analysis toolkit[EB/OL].
+The Apache Software Foundation[2026-10-22].
+Available:
+<https://tika.apache.org/>
+
+[137] THE POSTGRESQL GLOBAL DEVELOPMENT GROUP.
+PostgreSQL: The World’s Most Advanced Open Source Relational Database[EB/OL].
+[2026-10-22].
+Available:
+<https://www.postgresql.org/>
+
+[138] CKAN PROJECT.
+CKAN: The Open Source Data Management System[EB/OL].
+[2026-10-22].
+Available:
+<https://ckan.org/>
+
+[139] OPENSEARCH SOFTWARE FOUNDATION.
+OpenSearch: open-source search and analytics suite[EB/OL].
+The Linux Foundation[2026-10-22].
+Available:
+<https://opensearch.org/>
+
+[140] KANE A, et al.
+pgvector: Open-source vector similarity search for Postgres[CP/OL].
+GitHub repository[2026-10-22].
+Available:
+<https://github.com/pgvector/pgvector>
+
+[141] PRESTON-WERNER T.
+Semantic Versioning 2.0.0[EB/OL].
+[2026-10-22].
+Available:
+<https://semver.org/spec/v2.0.0.html>
+
+[142] WHISTLER K.
+Unicode Standard Annex #15: Unicode Normalization Forms[S/OL].
+Mountain View, CA: The Unicode Consortium[2026-10-22].
+Available:
+<https://www.unicode.org/reports/tr15/>
+
+[143] GRESHAKE K, ABDELNABI S, MISHRA S, et al.
+Not What You’ve Signed Up For: Compromising Real-World LLM-Integrated Applications with Indirect Prompt Injection[C]//Proceedings of the 16th ACM Workshop on Artificial Intelligence and Security (AISec ’23).
+New York: ACM, 2023: 79–90.
+DOI: 10.1145/3605764.3623985.
+Available:
+<https://doi.org/10.1145/3605764.3623985>
+
+[144] EUROPEAN COMMISSION (EUROPEAID).
+Aid Delivery Methods, Volume 1: Project Cycle Management Guidelines[R/OL].
+Brussels: European Commission, 2004[2026-10-22].
+Available:
+<https://capacity4dev.europa.eu/library/aid-delivery-methods-project-cycle-management-guidelines-europeaid-2004_en>
+
+[145] UNITED NATIONS DEVELOPMENT GROUP (UNDG).
+Theory of Change: UNDAF Companion Guidance[R/OL].
+New York: UNDG, 2017[2026-10-22].
+Available:
+<https://unsdg.un.org/sites/default/files/UNDG-UNDAF-Companion-Pieces-7-Theory-of-Change.pdf>
+
+[146] DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID).
+DFID’s Approach to Value for Money (VfM)[R/OL].
+London: DFID, 2011-07-01[2026-10-22].
+Available:
+<https://www.gov.uk/government/publications/dfids-approach-to-value-for-money-vfm>
+
+[147] INDEPENDENT COMMISSION FOR AID IMPACT (ICAI).
+ICAI Study of Value for Money and Effectiveness: Terms of Reference[R/OL].
+London: ICAI, 2011[2026-10-22].
+Available:
+<https://icai.independent.gov.uk/wp-content/uploads/Report-1-VfM-and-effectiveness-ToR1.pdf>

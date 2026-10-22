@@ -134,9 +134,9 @@ The core technical goal is a **trustworthy bilingual question-answering and sear
 
 The pipeline has six stages:
 
-1. **Normalise.** Apply Unicode NFC; unify alternative encodings of Bangla letters; fold Bangla digits to ASCII for matching while keeping the original for display; remove zero-width characters that break matching; apply light stripping of common Bangla inflectional suffixes (for example -এর, -কে, -তে, -গুলো, -সমূহ) and simple English plural forms.
+1. **Normalise.** Apply Unicode NFC [142]; unify alternative encodings of Bangla letters; fold Bangla digits to ASCII for matching while keeping the original for display; remove zero-width characters that break matching; apply light stripping of common Bangla inflectional suffixes (for example -এর, -কে, -তে, -গুলো, -সমূহ) and simple English plural forms.
 2. **Expand.** Add cross-lingual equivalents from a curated bilingual glossary of policy terms (for example *budget* and বাজেট, *data protection* and উপাত্ত সুরক্ষা), and spelling variants. The glossary is versioned, reviewed by language editors and published.
-3. **Retrieve.** Score passages with BM25 [101] and, in the full system, with dense multilingual embeddings [102]; combine the two ranked lists.
+3. **Retrieve.** Score passages with BM25 [101] and, in the full system, with dense multilingual embeddings [102]; combine the two ranked lists, for example by reciprocal rank fusion [134].
 4. **Check evidence.** Apply a score threshold, calibrated on the development split of the benchmark, and require that the top passages actually cover the query terms. The reference implementation uses a fixed threshold.
 5. **Answer or abstain.** If the evidence is sufficient, select the most informative sentences from the top passages and attach a citation to each; optionally pass them to a language model that may only rephrase, with every output sentence verified against its cited passage. If the evidence is not sufficient, abstain and show the closest sources with the reason.
 6. **Log.** Record the query, corpus version, passages, scores and output in the hash-chained audit log.
@@ -327,6 +327,6 @@ The reference implementation is deliberately small. The table below shows how ea
 
 ## 11.9 Versioning and Persistent Identifiers
 
-Repository releases follow semantic versioning. Each publication in the BAPIL series receives its own Zenodo DOI, and related records are linked through Zenodo’s related-identifier fields (for example, this Blueprint *is supplement to* the White Paper and *references* the Executive Summary). The policy is set out in Annex D.
+Repository releases follow semantic versioning [141]. Each publication in the BAPIL series receives its own Zenodo DOI, and related records are linked through Zenodo’s related-identifier fields (for example, this Blueprint *is supplement to* the White Paper and *references* the Executive Summary). The policy is set out in Annex D.
 
 \newpage

@@ -191,6 +191,16 @@ The budget is most sensitive to staff costs. A 20% change in staff costs changes
 
 Three limits of the base case should be noted. First, it does not yet include consultation and engagement events, survey data collection for P5, staff travel other than for training, open-access publication fees, or computers for staff. An allowance of about Tk 15 lakh a year for the first four items and about USD 1,200 per new staff member for computers (planning assumptions) would add about Tk 0.9 crore with overheads and contingency. Second, a 5% contingency is low for an estimate made before any quotation; with a 10% contingency and these allowances, the base case would be about Tk 22.2 crore (the adjusted base case in Table 62). Third, the high scenario (about Tk 25.3 crore) remains the prudent planning ceiling until the feasibility study replaces these assumptions.
 
+**Release of funds by tranche.** Because each year’s work depends on the previous year’s results, funds would be released in three tranches tied to the review points of Section 15.5, not as a single 36-month allocation:
+
+* **Tranche 1 (Year 1, Phase 1 pilot), about Tk 4.7 crore:** released when decision D2 is taken and the MoU and host agreement are signed.
+* **Tranche 2 (Year 2), about Tk 7.5 crore:** released after the month-12 review, once the feasibility and costing study (Deliverable D1.3) has confirmed or revised the Phase 2 budget.
+* **Tranche 3 (Year 3), about Tk 8.2 crore:** released after the month-24 review, informed by the independent mid-term evaluation at month 18.
+
+A funder can therefore stop, reduce or redirect the programme at two points before most of the money is spent: by the end of Year 1, only about 23% of the 36-month budget has been committed.
+
+**Capital and revenue spending.** About Tk 2.5 crore (12%) is capital expenditure on servers, GPUs and storage; the rest is revenue spending, mainly on people (Table 62). When a funding route is chosen, the costing study would restate the budget in the format that route requires, for example a technical assistance project proposal with the government’s economic codes, or a development partner’s budget template, without changing the underlying assumptions.
+
 These are planning estimates. No funds have been requested, approved or committed, and the feasibility and costing study (Deliverable D1.3) will replace each assumption with quotations, the host’s salary scale and its overhead rate.
 
 ## 17.3 Budget Beyond 36 Months
@@ -207,7 +217,7 @@ Funding should be diversified, as set out in Appendix C of the White Paper: a go
 
 ## 17.5 Value for Money
 
-Value for money is assessed at the mid-term and final evaluations using four measures: economy (cost of inputs compared with benchmarks), efficiency (cost per output, such as cost per indexed document or per trained official), effectiveness (time saved and quality of evidence for users) and equity (reach beyond Dhaka and to under-served groups). Time saved by analysts is the most direct benefit, but it should not be overstated. Valuing an analyst’s time at about Tk 500 an hour (a planning assumption: grade 9 basic pay of Tk 44,000 a month [109] is about Tk 250 an hour, and the assumption allows for allowances, benefits and overheads of about the same amount), 300 users who each save four hours a month save time worth about Tk 0.7 crore a year, which is less than a tenth of the Year 3 budget. This is an illustrative calculation, not a forecast. Time savings alone therefore justify the cost only at the scale of the long-term targets (thousands of regular users, Table 46). In the short term, the case rests as much on the quality of evidence, the open benchmark and the governance methods as on time saved. The time-to-evidence studies in P1 provide the data to test this calculation.
+Value for money is assessed at the mid-term and final evaluations against the “three Es” used by regulators of public funds, with equity added as a fourth [146, 147]: economy (cost of inputs compared with benchmarks), efficiency (cost per output, such as cost per indexed document or per trained official), effectiveness (time saved and quality of evidence for users) and equity (reach beyond Dhaka and to under-served groups). Time saved by analysts is the most direct benefit, but it should not be overstated. Valuing an analyst’s time at about Tk 500 an hour (a planning assumption: grade 9 basic pay of Tk 44,000 a month [109] is about Tk 250 an hour, and the assumption allows for allowances, benefits and overheads of about the same amount), 300 users who each save four hours a month save time worth about Tk 0.7 crore a year, which is less than a tenth of the Year 3 budget. This is an illustrative calculation, not a forecast. Time savings alone therefore justify the cost only at the scale of the long-term targets (thousands of regular users, Table 46). In the short term, the case rests as much on the quality of evidence, the open benchmark and the governance methods as on time saved. The time-to-evidence studies in P1 provide the data to test this calculation.
 
 ## 17.6 Procuring AI Products and Services
 
@@ -229,13 +239,13 @@ The host institution manages BAPIL’s funds under its audited financial procedu
 
 ## 18.1 Theory of Change
 
-BAPIL’s theory of change is straightforward: **if** officials and researchers can find authoritative evidence faster and more reliably, in Bangla and English, through tools that are transparent and governed, **then** policy analysis becomes better grounded and more efficient, and trust in public-sector AI grows.
+BAPIL’s theory of change [145] is straightforward: **if** officials and researchers can find authoritative evidence faster and more reliably, in Bangla and English, through tools that are transparent and governed, **then** policy analysis becomes better grounded and more efficient, and trust in public-sector AI grows.
 
 <!-- FIGURE:14 -->
 
 ## 18.2 Logical Framework
 
-The logical framework sets out the results chain with indicators, means of verification and assumptions for each level.
+The logical framework, following the standard logical framework approach [144], sets out the results chain with indicators, means of verification and assumptions for each level.
 
 <!-- TABLE:53 -->
 
