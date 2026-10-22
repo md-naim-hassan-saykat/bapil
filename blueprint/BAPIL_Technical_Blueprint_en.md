@@ -1307,7 +1307,7 @@ python -m unittest discover -s tests
 
 ## 11.5 Demonstration Results
 
-Running `python -m bapil.cli evaluate benchmarks/demo_questions.json` over a corpus of 1,772 passages from 8 BAPIL documents gives the following results (corpus version `3a47187fab89`):
+Running `python -m bapil.cli evaluate benchmarks/demo_questions.json` over a corpus of 1,775 passages from 8 BAPIL documents gives the following results (corpus version `11b5939b4e43`):
 
 | Question set | Questions | Recall@5 | Recall@10 | MRR@10 | nDCG@10 |
 |---|---|---|---|---|---|
@@ -1864,20 +1864,22 @@ Long-term sustainability rests on four pillars. **Financial:** a growing share o
 
 The Blueprint gives an indicative budget for the 36-month plan, built from explicit assumptions rather than from a lump-sum estimate. The costing model takes the staffing plan (Table 16), the capacity plan (Table 31), the benchmark, evaluation and training targets, and the evaluation schedule; applies the unit costs in Table 49 at Year 1 prices; assumes that 75% of Year 1 posts are filled on average while recruitment is under way; escalates taka costs by 8% a year in Years 2 and 3; and adds 10% for host overheads and a separate 5% contingency. The model is published in the repository (`blueprint/src/budget_model.py`), so that the feasibility and costing study (Deliverable D1.3, month 6) can replace any assumption with a quotation or an agreed salary scale and regenerate the budget. Until then, every figure in this chapter is a planning estimate, not a commitment of funds.
 
+The unit costs were checked against published prices and pay data in October 2026 (Table 49, last column). Staff costs correspond to the mid-level and senior market pay reported for AI and machine learning engineers in Dhaka [99] and are well above the public pay scale [100], which is deliberate for scarce skills; published salary data for Bangladesh are, however, thin and inconsistent. The fellowship stipend equals the PhD fellowship of a public university [101]; colocation of one rack costs about Tk 12 to 19 lakh a year [102]; and the equipment prices are at the lower end of 2026 market prices [103, 104, 105]. Server prices have risen with memory prices [106]: at list prices, equipment would cost about 26% more, adding about Tk 0.7 crore, the same size as the equipment case in the sensitivity analysis (Section 17.2). If import duty and VAT were also payable, the two together would add about Tk 1.6 crore (8%), and the high scenario would rise from about Tk 25.3 to about Tk 26.3 crore. The base case is unchanged, because the staff, fellowship and hosting assumptions are consistent with the evidence and the equipment prices are within the range of 2026 market prices; equipment quotations and the host’s exemption status, both inputs to the costing study, will settle the remaining risk.
+
 **Table 49.** Planning assumptions for the indicative budget
 
 | Item | Assumption | Basis |
 |-------------------|------------------------------------|-----------------------------|
-| Exchange rate | Tk 124 per US dollar | Bangladesh Bank weighted average rate of Tk 123.65 on 19 October 2026 [99] |
+| Exchange rate | Tk 124 per US dollar | Bangladesh Bank weighted average rate of Tk 123.65 on 19 October 2026 [107] |
 | Core staff | 9, 15 and 19 full-time equivalents in Years 1, 2 and 3 | Staffing plan (Table 16) |
 | Year 1 recruitment | 75% of Year 1 positions filled on average | Director appointed in months 1 to 3; other posts filled in months 2 to 6 (Section 15.4) |
-| Staff cost | Fully loaded monthly cost per FTE at Year 1 prices: Director Tk 3.0 lakh; ML and Bangla NLP engineers Tk 2.0 lakh; security engineer Tk 1.8 lakh; policy, data and platform staff Tk 1.5 lakh; governance and UX staff Tk 1.25 lakh; coordinator Tk 0.9 lakh; training officers Tk 0.8 lakh | Above the basic pay of the Ninth National Pay Scale 2026 (Tk 20,000 to Tk 156,000 per month, approved by the Cabinet in August 2026) to compete for scarce AI skills [100] |
-| Escalation | 8% a year on taka costs in Years 2 and 3 | Point-to-point inflation of 8.34% in September 2026, as reported [101]; the host’s increment rules may differ |
-| Language editors and fellows | Part-time editors Tk 12 to 14 lakh a year; 6, 10 and 12 fellows at Tk 40,000 a month (Year 1 prices) | Fellowship programme (Section 6.6) |
-| Equipment | General-purpose servers USD 12,000 each; GPU inference servers (L40S class) USD 25,000 each; storage USD 6,000 to 12,000 a year | Single L40S card about USD 7,500 and a four-GPU server about USD 47,000 to 49,000 in 2025 [102] |
+| Staff cost | Fully loaded monthly cost per FTE at Year 1 prices: Director Tk 3.0 lakh; ML and Bangla NLP engineers Tk 2.0 lakh; security engineer Tk 1.8 lakh; policy, data and platform staff Tk 1.5 lakh; governance and UX staff Tk 1.25 lakh; coordinator Tk 0.9 lakh; training officers Tk 0.8 lakh | Above the basic pay of the Ninth National Pay Scale 2026 (Tk 20,000 to Tk 156,000 a month; Tk 44,000 at grade 9, the entry grade for BCS officers), approved by the Cabinet in August 2026 [100], to compete for scarce AI skills. Reported market pay for AI and ML engineers in Dhaka: Tk 0.7 to 1.1 lakh a month at mid level and Tk 1.2 to 2.0 lakh at senior level, before provident fund and bonuses [99] |
+| Escalation | 8% a year on taka costs in Years 2 and 3 | Point-to-point inflation of 8.34% in September 2026, as reported [108]; the host’s increment rules may differ |
+| Language editors and fellows | Part-time editors Tk 12 to 14 lakh a year; 6, 10 and 12 fellows at Tk 40,000 a month (Year 1 prices) | Fellowship programme (Section 6.6); the stipend equals the PhD fellowship of a public university [101] |
+| Equipment | General-purpose servers USD 12,000 each; GPU inference servers (L40S class) USD 25,000 each; storage USD 6,000 to 12,000 a year | L40S card about USD 7,100 (lowest marketplace average, September 2026) to USD 8,050 (retail listing) [103, 104]: two cards and a GPU-capable host of about USD 10,000 make one inference server. Dell list price of a base two-socket server about USD 16,000 in August 2026 [105]; memory prices rose sharply in 2025 and 2026 [106]. At list prices equipment costs about 26% more, about Tk 0.7 crore (Section 17.1) |
 | Import duty and VAT on equipment | Not included in the base case; 25% added in the high scenario | Depends on the host’s exemption status; input required from the host’s procurement office |
-| Hosting and operations | Tk 25 lakh rising to Tk 38 lakh a year (Year 1 prices) | Data-centre space, power, bandwidth, licences and a development cloud |
-| Model adaptation compute | In kind from shared national compute; USD 20,000 of cloud GPU time on public (P0) data in the high scenario | Table 31; draft national AI policy [10]; cloud prices in [102] |
+| Hosting and operations | Tk 25 lakh rising to Tk 38 lakh a year (Year 1 prices) | Colocation of one standard 2 to 7 kW rack in a domestic facility about Tk 1.0 to 1.6 lakh a month, as reported in July 2026 [102]; the balance covers bandwidth, licences and a development cloud, and a second (disaster-recovery) site from Year 2 |
+| Model adaptation compute | In kind from shared national compute; USD 20,000 of cloud GPU time on public (P0) data in the high scenario | Table 31; draft national AI policy [10]; cloud prices in [109] |
 | Benchmark and evaluation data | 2,000 answerable questions by month 30 at Tk 2,500; 300 out-of-scope questions at Tk 600; 2,000 citation-support judgements at Tk 500 | BanglaPolicyQA plan (Section 9.4); evaluation protocol (Annex R) |
 | Training | 500 officials by month 36 at Tk 15,000 per participant, plus specialist courses | Training curriculum (Table 18) |
 | Evaluation and assurance | Legal review Tk 8 lakh; baseline study Tk 6 lakh; mid-term evaluation Tk 20 lakh; final evaluation Tk 25 lakh; annual penetration test and red team Tk 6 lakh; annual independent audit of systems Tk 3 lakh | Chapters 13, 14 and 18 |
@@ -1951,7 +1953,7 @@ Funding should be diversified, as set out in Appendix C of the White Paper: a go
 
 ## 17.5 Value for Money
 
-Value for money is assessed at the mid-term and final evaluations against the “three Es” used by regulators of public funds, with equity added as a fourth [103, 104]: economy (cost of inputs compared with benchmarks), efficiency (cost per output, such as cost per indexed document or per trained official), effectiveness (time saved and quality of evidence for users) and equity (reach beyond Dhaka and to under-served groups). Time saved by analysts is the most direct benefit, but it should not be overstated. Valuing an analyst’s time at about Tk 500 an hour (a planning assumption: grade 9 basic pay of Tk 44,000 a month [100] is about Tk 250 an hour, and the assumption allows for allowances, benefits and overheads of about the same amount), 300 users who each save four hours a month save time worth about Tk 0.7 crore a year, which is less than a tenth of the Year 3 budget. This is an illustrative calculation, not a forecast. Time savings alone therefore justify the cost only at the scale of the long-term targets (thousands of regular users, Table 46). In the short term, the case rests as much on the quality of evidence, the open benchmark and the governance methods as on time saved. The time-to-evidence studies in P1 provide the data to test this calculation.
+Value for money is assessed at the mid-term and final evaluations against the “three Es” used by regulators of public funds, with equity added as a fourth [110, 111]: economy (cost of inputs compared with benchmarks), efficiency (cost per output, such as cost per indexed document or per trained official), effectiveness (time saved and quality of evidence for users) and equity (reach beyond Dhaka and to under-served groups). Time saved by analysts is the most direct benefit, but it should not be overstated. Valuing an analyst’s time at about Tk 500 an hour (a planning assumption: grade 9 basic pay of Tk 44,000 a month [100] is about Tk 250 an hour, and the assumption allows for allowances, benefits and overheads of about the same amount), 300 users who each save four hours a month save time worth about Tk 0.7 crore a year, which is less than a tenth of the Year 3 budget. This is an illustrative calculation, not a forecast. Time savings alone therefore justify the cost only at the scale of the long-term targets (thousands of regular users, Table 46). In the short term, the case rests as much on the quality of evidence, the open benchmark and the governance methods as on time saved. The time-to-evidence studies in P1 provide the data to test this calculation.
 
 ## 17.6 Procuring AI Products and Services
 
@@ -1986,7 +1988,7 @@ The host institution manages BAPIL’s funds under its audited financial procedu
 
 ## 18.1 Theory of Change
 
-BAPIL’s theory of change [105] is straightforward: **if** officials and researchers can find authoritative evidence faster and more reliably, in Bangla and English, through tools that are transparent and governed, **then** policy analysis becomes better grounded and more efficient, and trust in public-sector AI grows.
+BAPIL’s theory of change [112] is straightforward: **if** officials and researchers can find authoritative evidence faster and more reliably, in Bangla and English, through tools that are transparent and governed, **then** policy analysis becomes better grounded and more efficient, and trust in public-sector AI grows.
 
 ![](figures/blueprint_fig14.png)
 
@@ -1994,7 +1996,7 @@ BAPIL’s theory of change [105] is straightforward: **if** officials and resear
 
 ## 18.2 Logical Framework
 
-The logical framework, following the standard logical framework approach [106], sets out the results chain with indicators, means of verification and assumptions for each level.
+The logical framework, following the standard logical framework approach [113], sets out the results chain with indicators, means of verification and assumptions for each level.
 
 **Table 53.** Logical framework (36-month programme)
 
@@ -2043,7 +2045,7 @@ The indicators at months 12 and 36 are proposed targets, consistent with the lon
 
 ## 18.5 Evaluation Questions
 
-The independent evaluations at months 18 and 36, and the long-term reviews, use the OECD DAC evaluation criteria of relevance, coherence, effectiveness, efficiency, impact and sustainability [107], adapted to BAPIL:
+The independent evaluations at months 18 and 36, and the long-term reviews, use the OECD DAC evaluation criteria of relevance, coherence, effectiveness, efficiency, impact and sustainability [114], adapted to BAPIL:
 
 * **Relevance:** do the pilots address real policy needs, as judged by host agencies and users?
 * **Coherence:** does BAPIL complement the national AI policy, the AI Hub and other programmes, or duplicate them?
@@ -2689,9 +2691,9 @@ This annex records the evidence behind the Blueprint’s key factual claims, as 
 | Indicative budget of about Tk 20.4 crore over 36 months (base case) | Ch. 17; Tables 49, 50, 61, 62; Summary | Planning assumption (author’s analysis) | Computed by blueprint/src/budget_model.py from the assumptions in Table 49; unrounded total Tk 20.43 crore | Indicative; scenarios, sensitivity and known omissions stated (Section 17.2; Annex Q) |
 | Conditional national scale-up of about Tk 218.9 crore in Years 4 to 8, with about 118 direct posts by Year 8 | Sect. 17.3; Annex W; Tables 69, 70; Summary | Planning assumption (author’s analysis) | Computed by blueprint/src/budget_model.py (functions scaleup and jobs) with the unit costs of Table 49 | Presented as conditional and not requested; to be replaced by a costed plan in Blueprint 2.0 (U17) |
 | Grade 9 basic pay of Tk 44,000 in the Ninth National Pay Scale | Sect. 17.5; Table 49 | Source-reported fact (Cabinet approval) | The Financial Express, 31 August 2026 [100]; gazette not seen | Stated with its status |
-| Exchange rate of Tk 123.65 per US dollar on 19 October 2026 | Table 49 | Verified fact | Bangladesh Bank [99] | Basis of the planning rate of Tk 124 |
-| Inflation of 8.34% in September 2026 | Table 49 | Source-reported fact | Dhaka Tribune, 7 October 2026, reporting BBS data [101] | Basis of the 8% escalation assumption |
-| L40S GPU card about USD 7,500 | Table 49 | Source-reported fact (vendor publication) | Modal, August 2025 [102] | Price basis only; quotations required |
+| Exchange rate of Tk 123.65 per US dollar on 19 October 2026 | Table 49 | Verified fact | Bangladesh Bank [107] | Basis of the planning rate of Tk 124 |
+| Inflation of 8.34% in September 2026 | Table 49 | Source-reported fact | Dhaka Tribune, 7 October 2026, reporting BBS data [108] | Basis of the 8% escalation assumption |
+| L40S GPU card about USD 7,500 | Table 49 | Source-reported fact (vendor publication) | Modal, August 2025 [109] | Price basis only; quotations required |
 | Analyst time saved worth about Tk 0.7 crore a year | Sect. 17.5 | Author’s analysis | Calculation from [100] and assumed usage | Labelled as illustrative |
 | Steering Board, ERRC and TAB with stated powers | Ch. 5; Annexes E to G | Design recommendation | No body has been constituted or approved | Presented as proposals; status, appointment and limits in Annex S |
 | Long-term targets for 2028 to 2041 | Ch. 16; Table 46 | Proposed target | Not applicable | Indicative; revised at strategic reviews |
@@ -2749,7 +2751,7 @@ This annex turns the thresholds of Table 28 into a measurement procedure. It dis
 | Measure | Definition | Test set and sample | Method and responsibility | Decision rule |
 |---------------|--------------------------|----------------------|--------------------|----------------------|
 | Recall@10, MRR@10, nDCG@10 | For each answerable question, a hit if any gold passage is in the top 10; Recall@10 is the mean of hits. MRR and nDCG as in Table 28 | Private test split: at least 300 answerable questions in v0 (about 150 per language) and 1,200 in v1 | Automatic scoring by the evaluation team; script, outputs, configuration and corpus version archived | Threshold met if the point estimate meets it and the 95% interval is no wider than plus or minus 5 points (about 4 points at n = 300); otherwise annotate more items before deciding |
-| Citation precision | Share of sampled answer sentences whose cited passage fully supports the sentence (supported, partly supported or not supported; only supported counts) | 400 answer sentences drawn at random from test answers, at least 200 per language | Two trained annotators who do not know the system version; a third adjudicates; Cohen’s kappa [108] reported (target 0.70 or more) | Point estimate at least 0.95 (interval about plus or minus 2 points at n = 400) |
+| Citation precision | Share of sampled answer sentences whose cited passage fully supports the sentence (supported, partly supported or not supported; only supported counts) | 400 answer sentences drawn at random from test answers, at least 200 per language | Two trained annotators who do not know the system version; a third adjudicates; Cohen’s kappa [115] reported (target 0.70 or more) | Point estimate at least 0.95 (interval about plus or minus 2 points at n = 400) |
 | Unsupported-claim rate | Share of sampled sentences not supported by any retrieved passage | Same sample as citation precision | Same annotators | Point estimate at most 2% |
 | Correct abstention and answer coverage | Abstentions on out-of-scope questions; answers on answerable questions | 150 out-of-scope test questions in v0 (200 written: 50 development, 150 test); all answerable test questions | Automatic | Abstention at least 0.90 (interval about plus or minus 5 points); coverage at least 0.80 |
 | Language parity | Recall@10 for English minus Recall@10 for Bangla, with a bootstrap interval | Per-language test subsets | Automatic | Reported in v0, where the interval is too wide to decide; release condition from v1 onwards |
@@ -2762,7 +2764,7 @@ This annex turns the thresholds of Table 28 into a measurement procedure. It dis
 | Time to evidence | Median time to find and cite authoritative evidence on matched tasks, with and without the tool | At least 20 analysts, 6 tasks each, crossover design | Evaluation team; independent evaluator at month 18 | Effect and interval reported; informs G4, no pass mark at G3 |
 | Reproducibility | Re-scoring of archived outputs on the private split | Every release used for a gate decision | Independent evaluator before G4 | Re-scored metrics within 1 point of those reported |
 
-*Note.* Intervals are 95% Wilson [109] or bootstrap [110] intervals. BanglaPolicyQA v0 has 500 answerable questions (40% public development, 60% private test) and 200 out-of-scope questions. Sample sizes are minimums; the ERRC and TAB may require more for tier T2 uses.
+*Note.* Intervals are 95% Wilson [116] or bootstrap [117] intervals. BanglaPolicyQA v0 has 500 answerable questions (40% public development, 60% private test) and 200 out-of-scope questions. Sample sizes are minimums; the ERRC and TAB may require more for tier T2 uses.
 
 Five rules apply to every evaluation:
 
@@ -2891,7 +2893,7 @@ This annex lists every item that could not be resolved with the evidence availab
 | U3 | Status of the 2026 data-residency amendment after the Act | Not confirmed in available sources | Legal counsel | Same legal review | Sect. 8.12; Table 43 |
 | U4 | Public GitHub release v1.1.0 and the Blueprint DOI | Not yet published at the time of writing | Author | Publish the release, then the DOI record (Annex D), before circulation | Table 1; Ch. 11; Annex D |
 | U5 | Government approval of the AI hub technical assistance project | Pending in June 2026; later status not found | Author, with the ICT Division | Check before Blueprint 1.1 | Sect. 3.6, 17.2; Table 42 |
-| U6 | Budget inputs: host salary scale, overhead rate, equipment quotations, duty and VAT status | No host selected; no quotations | Feasibility and costing study | Deliverable D1.3 by month 6 | Ch. 17; Tables 49, 50, 61, 62 |
+| U6 | Budget inputs: host salary scale, overhead rate, equipment quotations, duty and VAT status | No host selected; no quotations. Published prices and pay data checked on 22 October 2026 (Section 17.1) | Feasibility and costing study | Deliverable D1.3 by month 6 | Ch. 17; Tables 49, 50, 61, 62 |
 | U7 | In-kind access to national compute for Stage 1 | Draft policy only | ICT Division; National Data Center | Confirm by MS2; otherwise use the high-scenario allocation | Sect. 9.7, 10.3; Table 31 |
 | U8 | BanglaPolicyQA does not exist; all quality targets are unmeasured | Work not yet funded | Work package 6 | Benchmark v0 at MS3; first results at G2 | Ch. 9, 12; Tables 28, 54, 63 |
 | U9 | No host institution, governance body or government focal point | Decisions not yet taken | ICT Division; host | Decisions D2 and D4; MS1 | Ch. 5; Annexes S, T |
@@ -2916,7 +2918,7 @@ The 36-month budget of about Tk 20.4 crore is often compared with much larger na
 
 The 36-month budget is built from a staffing plan (Table 16) and unit costs (Table 49), not from a target amount. Its size reflects three constraints. First, the main cost and the main bottleneck is people: machine learning and Bangla language engineers are scarce, and a new lab can recruit only a few in its first year (Section 17.2). Second, nothing about the lab’s usefulness has yet been measured; staged funding lets the authorities pay for evidence before scale, with each further tranche following a gate decision (Table 48). Third, BAPIL should not duplicate larger programmes with different aims.
 
-Three reference points are often cited. The draft national AI policy proposes an AI Innovation Fund of Tk 200 to 250 crore [10]; it is not an approved allocation, and BAPIL could apply to such a fund for specific pilots but is not a substitute for it. The KOICA-supported AI hub project (Tk 192.66 crore, July 2026 to December 2029) is a skills and startup programme: it aims to train 865 AI and digital technology specialists, with an 80% employment target, and to support 30 startups [53]. The proposed national budget for 2026-27 allocated Tk 500 crore to AI, electronics and youth innovation, mainly for startups and entrepreneurship [111]. BAPIL’s task is different: evidence and assurance for public policy. These programmes and BAPIL can reinforce each other. BAPIL’s posts and fellowships are a natural destination for graduates of national AI skills programmes, and BAPIL’s benchmarks, evaluation methods and transparency register can serve the AI tools those programmes help to build.
+Three reference points are often cited. The draft national AI policy proposes an AI Innovation Fund of Tk 200 to 250 crore [10]; it is not an approved allocation, and BAPIL could apply to such a fund for specific pilots but is not a substitute for it. The KOICA-supported AI hub project (Tk 192.66 crore, July 2026 to December 2029) is a skills and startup programme: it aims to train 865 AI and digital technology specialists, with an 80% employment target, and to support 30 startups [53]. The proposed national budget for 2026-27 allocated Tk 500 crore to AI, electronics and youth innovation, mainly for startups and entrepreneurship [118]. BAPIL’s task is different: evidence and assurance for public policy. These programmes and BAPIL can reinforce each other. BAPIL’s posts and fellowships are a natural destination for graduates of national AI skills programmes, and BAPIL’s benchmarks, evaluation methods and transparency register can serve the AI tools those programmes help to build.
 
 ## W.2 Jobs and Skills
 
@@ -3628,11 +3630,12 @@ ISBN: 978-92-1-358975-5.
 Available: 
 <https://unstats.un.org/sdgs/report/2024>
 
-[99] BANGLADESH BANK.
-Exchange Rate of Taka[EB/OL].
-Dhaka: Bangladesh Bank, 2026[2026-10-21].
+[99] NUCAMP.
+AI salaries in Bangladesh in 2026: what to expect by role and experience[EB/OL].
+Nucamp, 2026-04-09[2026-10-22].
+Commercial training provider; salary bands not attributed to a survey.
 Available:
-<https://www.bb.org.bd/en/index.php/econdata/exchangerate>
+<https://www.nucamp.co/blog/coding-bootcamp-bangladesh-bgd-top-10-best-paid-tech-job-in-bangladesh-in-2025>
 
 [100] THE FINANCIAL EXPRESS.
 Cabinet approves 2026 pay scale, sets basic salaries from Tk 20,000 to Tk 156,000[EB/OL].
@@ -3640,70 +3643,114 @@ Dhaka: The Financial Express, 2026-08-31[2026-10-21].
 Available:
 <https://thefinancialexpress.com.bd/national/cabinet-approves-2026-pay-scale-sets-basic-salaries-from-tk-20000-to-tk-156000>
 
-[101] DHAKA TRIBUNE.
+[101] HAJEE MOHAMMAD DANESH SCIENCE AND TECHNOLOGY UNIVERSITY.
+HSTU PhD fellowship policy 2025[S/OL].
+Dinajpur: HSTU, 2026[2026-10-22].
+Available:
+<https://hstu.ac.bd/uploads/notice/2026/jan/HSTU_PhDFellowshipPolicy.pdf>
+
+[102] THE FINANCIAL EXPRESS.
+Financing data centres in Bangladesh[EB/OL].
+Dhaka: The Financial Express, 2026-07-22[2026-10-22].
+Available:
+<https://thefinancialexpress.com.bd/views/financing-data-centres-in-bangladesh>
+
+[103] GPU POET.
+NVIDIA L40S price in September 2026[EB/OL].
+GPU Poet, 2026[2026-10-22].
+Average of the three lowest daily marketplace listings.
+Available:
+<https://gpupoet.com/gpu/learn/price/september-2026/nvidia-l40s>
+
+[104] CDW.
+PNY NVIDIA L40S graphic card, 48 GB GDDR6 (NVL40STCGPU-KIT)[EB/OL].
+Vernon Hills, IL: CDW, 2026[2026-10-22].
+Retail listing.
+Available:
+<https://www.cdw.com/product/pny-nvidia-quadro-l40s-graphic-card-48-gb-gddr6/7582191>
+
+[105] PC SERVER AND PARTS.
+How much does a server cost in 2026?[EB/OL].
+PC Server and Parts, 2026-08-21[2026-10-22].
+Available:
+<https://pcserverandparts.com/news/how-much-does-a-server-cost-2026/>
+
+[106] KUNERT P.
+Buy servers now or cry later: DRAM price spike threatens infrastructure budgets[EB/OL].
+London: The Register, 2026-01-14[2026-10-22].
+Available:
+<https://www.theregister.com/2026/01/14/dram_infrastructure_costs/>
+
+[107] BANGLADESH BANK.
+Exchange Rate of Taka[EB/OL].
+Dhaka: Bangladesh Bank, 2026[2026-10-21].
+Available:
+<https://www.bb.org.bd/en/index.php/econdata/exchangerate>
+
+[108] DHAKA TRIBUNE.
 Inflation rises in September[EB/OL].
 Dhaka: Dhaka Tribune, 2026-10-07[2026-10-22].
 Available:
 <https://www.dhakatribune.com/business/421534/inflation-rises-in-september>
 
-[102] MODAL LABS.
+[109] MODAL LABS.
 How much does it cost to run NVIDIA L40S GPUs in 2025?[EB/OL].
 San Francisco, CA: Modal Labs, 2025-08-12[2026-10-21].
 Available:
 <https://modal.com/blog/nvidia-l40s-price-article>
 
-[103] DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID).
+[110] DEPARTMENT FOR INTERNATIONAL DEVELOPMENT (DFID).
 DFID’s Approach to Value for Money (VfM)[R/OL].
 London: DFID, 2011-07-01[2026-10-22].
 Available:
 <https://www.gov.uk/government/publications/dfids-approach-to-value-for-money-vfm>
 
-[104] INDEPENDENT COMMISSION FOR AID IMPACT (ICAI).
+[111] INDEPENDENT COMMISSION FOR AID IMPACT (ICAI).
 ICAI Study of Value for Money and Effectiveness: Terms of Reference[R/OL].
 London: ICAI, 2011[2026-10-22].
 Available:
 <https://icai.independent.gov.uk/wp-content/uploads/Report-1-VfM-and-effectiveness-ToR1.pdf>
 
-[105] UNITED NATIONS DEVELOPMENT GROUP (UNDG).
+[112] UNITED NATIONS DEVELOPMENT GROUP (UNDG).
 Theory of Change: UNDAF Companion Guidance[R/OL].
 New York: UNDG, 2017[2026-10-22].
 Available:
 <https://unsdg.un.org/sites/default/files/UNDG-UNDAF-Companion-Pieces-7-Theory-of-Change.pdf>
 
-[106] EUROPEAN COMMISSION (EUROPEAID).
+[113] EUROPEAN COMMISSION (EUROPEAID).
 Aid Delivery Methods, Volume 1: Project Cycle Management Guidelines[R/OL].
 Brussels: European Commission, 2004[2026-10-22].
 Available:
 <https://capacity4dev.europa.eu/library/aid-delivery-methods-project-cycle-management-guidelines-europeaid-2004_en>
 
-[107] OECD DAC NETWORK ON DEVELOPMENT EVALUATION.
+[114] OECD DAC NETWORK ON DEVELOPMENT EVALUATION.
 Better Criteria for Better Evaluation: Revised Evaluation Criteria Definitions and Principles for Use[R/OL].
 Paris: Organisation for Economic Co-operation and Development, 2019[2026-10-21].
 Available:
 <https://www.oecd.org/en/publications/better-criteria-for-better-evaluation_15a9c26b-en.html>
 
-[108] COHEN J.
+[115] COHEN J.
 A Coefficient of Agreement for Nominal Scales[J].
 Educational and Psychological Measurement, 1960, 20(1): 37–46.
 DOI: 10.1177/001316446002000104.
 Available:
 <https://doi.org/10.1177/001316446002000104>
 
-[109] WILSON E B.
+[116] WILSON E B.
 Probable Inference, the Law of Succession, and Statistical Inference[J].
 Journal of the American Statistical Association, 1927, 22(158): 209–212.
 DOI: 10.1080/01621459.1927.10502953.
 Available:
 <https://doi.org/10.1080/01621459.1927.10502953>
 
-[110] EFRON B, TIBSHIRANI R J.
+[117] EFRON B, TIBSHIRANI R J.
 An Introduction to the Bootstrap[M].
 New York: Chapman & Hall, 1993.
 DOI: 10.1201/9780429246593.
 Available:
 <https://doi.org/10.1201/9780429246593>
 
-[111] THE BUSINESS STANDARD.
+[118] THE BUSINESS STANDARD.
 Budget FY27: Govt proposes Tk500cr for AI sector[EB/OL].
 Dhaka: The Business Standard, 2026-06-11[2026-10-22].
 Available:

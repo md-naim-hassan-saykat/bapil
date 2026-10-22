@@ -36,6 +36,9 @@ Prepared for repository release v1.1.0. The tag, the GitHub release and the Blue
 - Internal review records in `blueprint/review/` (earlier audit and adversarial review, change record, October 2026 project audit, cross-document reconciliation, Markdown validation); these are not part of the publication.
 - Annex W of the Blueprint (Tables 69 and 70): jobs and skills created by the 36-month plan, and a costed, conditional national scale-up for Years 4 to 8 (about Tk 218.9 crore; about 118 direct posts by Year 8), shown for information and not requested; summarised in Section 17.3, the front matter, the Summary and the Decision Memo.
 - References numbered in order of first citation in every document (previously the White Paper numbers 1 to 83 were kept, so the list jumped, for example from 1 to 4); entries from the White Paper bibliography are marked with an asterisk; `blueprint/review/REFERENCE_NUMBERS.md` maps the new numbers to the source keys.
+- Unit costs in the budget checked against published prices and pay data (Section 17.1, Table 49); the base case is unchanged and the risk from 2026 equipment list prices, with or without import duty and VAT, is stated.
+- Stakeholder engagement drafts in `docs/engagement/`: one-page briefing note, letter templates for a candidate host and for the ICT Division (English and Bangla), and a consultation plan. None has been sent or signed.
+- Bangla editorial pass: consistent spelling of compound terms across all Bangla documents (`blueprint/review/BANGLA_EDITORIAL_LOG.md`).
 
 ### Corrected
 

@@ -14,3 +14,4 @@ These values cannot be decided from the evidence in the repository. Nothing has 
 | 8 | Release date of v1.1.0 | "Unreleased" | Set when the release is published | `CHANGELOG.md`, `CITATION.cff` (`date-released`, `version`), `RELEASE_NOTES.md` |
 | 9 | Zenodo communities, funding information | None | No community or grant is known; leave empty unless one applies | `zenodo_metadata.json` |
 | 10 | ORCID | 0009-0007-5270-3970 | Matches both Zenodo records; no change expected | — |
+| 11 | Whether the engagement drafts in `docs/engagement/` go into the Zenodo source archive | Included, because the package script copies `docs/` | They are templates marked as unsent drafts. Some authors prefer to keep correspondence templates on GitHub only | `blueprint/zenodo/make_zenodo_package.sh` (exclude `docs/engagement`) |
