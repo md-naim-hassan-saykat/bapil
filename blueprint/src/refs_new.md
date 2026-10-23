@@ -535,7 +535,11 @@ Available:
 <https://bdlaws.minlaw.gov.bd/act-details-1692.html>,
 <https://bdlaws.minlaw.gov.bd/act-details-1709.html>,
 <https://bdlaws.minlaw.gov.bd/act-details-1710.html>,
-<https://bdlaws.minlaw.gov.bd/act-details-1728.html>
+<https://bdlaws.minlaw.gov.bd/act-details-1728.html>.
+Archived copies of entries 1692, 1709 and 1710 (Internet Archive, October 2026):
+<https://web.archive.org/web/20261006180929/https://bdlaws.minlaw.gov.bd/act-details-1692.html>,
+<https://web.archive.org/web/20261006213011/https://bdlaws.minlaw.gov.bd/act-details-1709.html>,
+<https://web.archive.org/web/20261002012212/https://bdlaws.minlaw.gov.bd/act-details-1710.html>
 
 [168] BANGLADESH LEGAL AID AND SERVICES TRUST.
 Statement on the proposed Cyber Security (Amendment) Act, 2026[EB/OL].

@@ -108,3 +108,12 @@ The author's copy of [42], [53] and [119] showed: an access date split across li
 * **Reference lists are now set ragged-right** and web addresses in them break only at punctuation, preferably after "/" (penalty 100; other punctuation including "-" 300; letters and digits not at all). No line breaks at a hyphen in ordinary text, so dates such as 2026-10-22 stay together. "https://" is never left alone at a line end. Results across the six PDFs: bare "https://" at a line end 27 to 0, split dates 19 to 0, web addresses broken inside a word or number 91 to 0, nothing beyond the margin. Page counts are unchanged; spacing between reference entries is 2.5 pt instead of 3 pt so that the English edition stays at 147 pages.
 * **[119]** The IW:LEARN copy was removed because its certificate is reported as invalid. No other official open copy of the 2004 PDF was found: the former EC address is gone, and the Internet Archive lookup could not be run for addresses containing underscores. The entry cites the EU library page and states that the download requires free registration.
 
+### Fifth follow-up on 23 October 2026: links that do not open for the author
+
+The author confirmed that the remaining problem with [42] and [53] was that the links did not open; [53] returned "Service Unavailable".
+
+* **[53]** (White Paper key 53). The AI Verify Foundation PDF still opens from this workspace, so the failure is on the publisher's server or regional. An Internet Archive copy of the foundation's publication page for the framework (captured 4 October 2026, HTTP 200) was added: <https://web.archive.org/web/20261004141910/https://aiverifyfoundation.sg/resources/mgf-gen-ai/>. The Internet Archive lookup for the PDF address itself could not be run from here.
+* **[42]** (key 167). The official database pages refuse automated access, so whether they open could not be tested from here. Internet Archive copies captured in October 2026 (HTTP 200) were added for entries 1692, 1709 and 1710. No archived copy exists for entry 1728 (the Cyber Security (Amendment) Act, 2026); its Gazette copy is cited separately.
+
+Reference spacing is now 2 pt so that the English edition stays at 147 pages.
+
