@@ -44,4 +44,4 @@ papersize: a4
 | D5 | ধাপ ০-এর অর্থায়ন ও ফোকাল পয়েন্ট মনোনয়ন | আইসিটি বিভাগ বা একটি উন্নয়ন সহযোগী | ৯০ দিনের মধ্যে |
 | D6 | সুরক্ষাসীমা নিশ্চিত করা | স্টিয়ারিং বোর্ড | সনদ গ্রহণের সময় |
 
-**নথিপত্র ও যোগাযোগ।** ব্লুপ্রিন্ট: <https://doi.org/10.5281/zenodo.23587901>। সারসংক্ষেপ: <https://doi.org/10.5281/zenodo.23587919>। কোড: <https://github.com/md-naim-hassan-saykat/bapil>। শ্বেতপত্র: <https://doi.org/10.5281/zenodo.21363967>। ORCID 0009-0007-5270-3970; «ইমেইল ঠিকানা»।
+**নথিপত্র ও যোগাযোগ।** ব্লুপ্রিন্ট [doi.org/10.5281/zenodo.23587901](https://doi.org/10.5281/zenodo.23587901); সারসংক্ষেপ [doi.org/10.5281/zenodo.23587919](https://doi.org/10.5281/zenodo.23587919); হোয়াইট পেপার [doi.org/10.5281/zenodo.21363967](https://doi.org/10.5281/zenodo.21363967); কোড [github.com/md-naim-hassan-saykat/bapil](https://github.com/md-naim-hassan-saykat/bapil)। ORCID 0009-0007-5270-3970; «ইমেইল ঠিকানা»।

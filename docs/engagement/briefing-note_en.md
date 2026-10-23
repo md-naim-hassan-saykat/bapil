@@ -33,7 +33,7 @@ papersize: a4
 
 Funds are released in three annual tranches, each after a review, so only about 23% is committed by the end of Year 1. Year 1 relies on the government budget (about 70%) and one development partner. A conditional national scale-up in Years 4 to 8 (about Tk 218.9 crore, about 118 posts) is not requested now and would follow only if the pilots pass their gates.
 
-**Decisions requested** (Blueprint Table 57). None of these decisions creates a statutory body or gives BAPIL legal powers.
+**Decisions requested** (Blueprint Table 57). None creates a statutory body or gives BAPIL legal powers.
 
 | No. | Decision | Responsible | Timing |
 |---|------------------------------------|------------|----------|
@@ -44,4 +44,4 @@ Funds are released in three annual tranches, each after a review, so only about 
 | D5 | Fund Phase 0 and name a focal point | ICT Division or a development partner | Within 90 days |
 | D6 | Confirm the guardrails | Steering Board | At charter adoption |
 
-**Documents and contact.** Blueprint: <https://doi.org/10.5281/zenodo.23587901>. Summary: <https://doi.org/10.5281/zenodo.23587919>. Code: <https://github.com/md-naim-hassan-saykat/bapil>. White Paper: <https://doi.org/10.5281/zenodo.21363967>. ORCID 0009-0007-5270-3970; «email address».
+**Documents and contact.** Blueprint [doi.org/10.5281/zenodo.23587901](https://doi.org/10.5281/zenodo.23587901); Summary [doi.org/10.5281/zenodo.23587919](https://doi.org/10.5281/zenodo.23587919); White Paper [doi.org/10.5281/zenodo.21363967](https://doi.org/10.5281/zenodo.21363967); code [github.com/md-naim-hassan-saykat/bapil](https://github.com/md-naim-hassan-saykat/bapil). ORCID 0009-0007-5270-3970; «email address».
