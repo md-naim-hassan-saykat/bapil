@@ -17,7 +17,8 @@ ORCID: <https://orcid.org/0009-0007-5270-3970>
 
 October 2026
 
-**Blueprint DOI:** DOI to be assigned on publication  
+**Blueprint DOI:** <https://doi.org/10.5281/zenodo.23587901>  
+**Blueprint Summary DOI:** <https://doi.org/10.5281/zenodo.23587919>  
 **White Paper DOI:** <https://doi.org/10.5281/zenodo.21363967>  
 **Executive Summary DOI:** <https://doi.org/10.5281/zenodo.21441172>  
 **Repository:** <https://github.com/md-naim-hassan-saykat/bapil>
@@ -60,14 +61,15 @@ The source code of the reference implementation described in Chapter 11 is licen
 | **Structure** | Five parts, 21 chapters, 23 annexes, 72 tables and 16 figures |
 | **Evidence status** | Key claims checked against their sources in October 2026 (Annex P); unresolved items in Annex V |
 | **License** | Creative Commons Attribution 4.0 International (CC BY 4.0) |
-| **Blueprint DOI** | DOI to be assigned on publication |
+| **Blueprint DOI** | <https://doi.org/10.5281/zenodo.23587901> |
+| **Blueprint Summary** | Version 1.0: <https://doi.org/10.5281/zenodo.23587919> |
 | **Builds on** | White Paper, Version 1.0: <https://doi.org/10.5281/zenodo.21363967> |
 | **Companion** | Executive Summary, Version 1.0: <https://doi.org/10.5281/zenodo.21441172> |
 | **Repository** | <https://github.com/md-naim-hassan-saykat/bapil> (release v1.1.0) |
 
 ## Citation
 
-Saykat, M. N. H. (2026). *Bangladesh AI Policy & Innovation Lab (BAPIL): Technical Blueprint* (Version 1.0). Zenodo. DOI to be assigned on publication
+Saykat, M. N. H. (2026). *Bangladesh AI Policy & Innovation Lab (BAPIL): Technical Blueprint* (Version 1.0). Zenodo. <https://doi.org/10.5281/zenodo.23587901>
 
 ## Disclaimer
 
@@ -211,8 +213,8 @@ The timing matters. During 2025 and 2026 Bangladesh adopted a new data-protectio
 |---------------|-----------|--------------------------|-------------------|---------------------|
 | **White Paper** | 1.0 (repository release v1.0.1) | Conceptual framework, international lessons, vision to 2041 | All stakeholders | 10.5281/zenodo.21363967 |
 | **Executive Summary** | 1.0 | Concise summary of the White Paper | Senior policymakers | 10.5281/zenodo.21441172 |
-| **Technical Blueprint** (this document) | 1.0 | Buildable design: institution, architecture, data, governance, delivery plan | Ministries, agencies, technical teams, partners | DOI assigned at publication |
-| **Blueprint Summary** | 1.0 | Short summary of the Blueprint | Decision-makers | Same record as the Blueprint |
+| **Technical Blueprint** (this document) | 1.0 | Buildable design: institution, architecture, data, governance, delivery plan | Ministries, agencies, technical teams, partners | 10.5281/zenodo.23587901 |
+| **Blueprint Summary** | 1.0 | Short summary of the Blueprint | Decision-makers | 10.5281/zenodo.23587919 |
 | **Reference implementation** | 0.1.0 (to be issued in repository release v1.1.0 with this Blueprint) | Research prototype of core Blueprint components with unit tests; not a production system | Engineers, researchers, auditors | GitHub repository; archived with the record |
 
 ## 1.3 Maturity Classes
@@ -1309,7 +1311,7 @@ python -m unittest discover -s tests
 
 ## 11.5 Demonstration Results
 
-Running `python -m bapil.cli evaluate benchmarks/demo_questions.json` over a corpus of 1,792 passages from 8 BAPIL documents gives the following results (corpus version `c887cf7b50e6`):
+Running `python -m bapil.cli evaluate benchmarks/demo_questions.json` over a corpus of 1,792 passages from 8 BAPIL documents gives the following results (corpus version `4694ce386570`):
 
 | Question set | Questions | Recall@5 | Recall@10 | MRR@10 | nDCG@10 |
 |---|---|---|---|---|---|
@@ -2304,9 +2306,9 @@ System and version; benchmark version and split; metrics by language and documen
 
 # Annex D: Publication, Versioning and DOI Policy
 
-1. **Separate records per publication.** The White Paper, Executive Summary and this Blueprint each have their own Zenodo record and DOI. The Blueprint record contains the English and Bangla Blueprint and Summary, in PDF and Markdown, plus figures and tables in LaTeX, PDF and PNG.
-2. **Related identifiers.** The Blueprint record declares that it *is supplement to* the White Paper (10.5281/zenodo.21363967), *references* the Executive Summary (10.5281/zenodo.21441172) and *is supplemented by* the GitHub repository release that contains the reference implementation.
-3. **DOI reservation.** When the Zenodo record is created, its DOI is reserved before the record is published so that it can be printed in the documents; the PDFs are then rebuilt and uploaded. Until then the documents state that the DOI is to be assigned on publication.
+1. **Separate records per publication.** The White Paper, the Executive Summary, this Blueprint (10.5281/zenodo.23587901) and the Blueprint Summary (10.5281/zenodo.23587919) each have their own Zenodo record and DOI. The Blueprint record contains the English and Bangla Blueprint, in PDF and Markdown, plus figures and tables in LaTeX, PDF and PNG and the editable sources; the Summary record contains the English and Bangla Summary.
+2. **Related identifiers.** The Blueprint record declares that it *is supplement to* the White Paper (10.5281/zenodo.21363967), *references* the Executive Summary (10.5281/zenodo.21441172), *is supplemented by* the Blueprint Summary (10.5281/zenodo.23587919) and *is supplemented by* the GitHub repository release that contains the reference implementation.
+3. **DOI reservation.** Both DOIs were reserved before the records were published, so that they could be printed in the documents; the PDFs are then rebuilt and uploaded. A reserved DOI resolves only once its record is published.
 4. **Repository releases.** Repository releases use semantic versioning. Release v1.1.0 adds the Blueprint and the reference implementation. The Zenodo record for this Blueprint is published only after that release is publicly listed at <https://github.com/md-naim-hassan-saykat/bapil/releases>, so that every artefact the documents refer to can be checked by readers.
 5. **New versions.** Corrections produce a new version of the same Zenodo record (for example 1.0.1); substantive revisions produce Blueprint 2.0 (Milestone MS9).
 6. **Licences.** Documents are CC BY 4.0; code is MIT.

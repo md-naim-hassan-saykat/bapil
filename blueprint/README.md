@@ -49,7 +49,7 @@ src/assemble.py      ---------------->        BAPIL_Technical_Blueprint_{en,bn}.
 pandoc + XeLaTeX     ---------------->        ../releases/v1.1/BAPIL_Technical_Blueprint_{en,bn}.pdf
 ```
 
-`src/metadata.json` holds the title (both languages), version, publication month, author, ORCID, licence, PDF subject and keywords, and the DOI placeholder. While the DOI is `10.5281/zenodo.PENDING`, the documents print "DOI to be assigned on publication".
+`src/metadata.json` holds the title (both languages), version, publication month, author, ORCID, licence, PDF subject and keywords, and the DOIs (`doi` for the Blueprint, `summary_doi` for the Summary). While a DOI is `10.5281/zenodo.PENDING`, the documents print "DOI to be assigned on publication".
 
 ## 3. Reproducing the PDFs
 
@@ -117,7 +117,7 @@ Changes made in such a copy must be carried back into `src/bn/` by hand.
 * **Tables:** edit the dictionaries in `src/tables_*.py`; table numbers are the `id` fields. Budget tables are computed by `src/budget_model.py`: change an assumption there, not the printed numbers.
 * **Figures:** edit the TikZ in `src/make_figures.py` or `src/figures_new.py`; labels are given separately for each language.
 * **References:** add new entries to `src/refs_new.md` in the existing style; only cited references are printed.
-* **Metadata and DOI:** edit `src/metadata.json`. When the Zenodo DOI exists, replace `10.5281/zenodo.PENDING` and rebuild.
+* **Metadata and DOIs:** edit `src/metadata.json` (`doi`: Technical Blueprint, now 10.5281/zenodo.23587901; `summary_doi`: Blueprint Summary, now 10.5281/zenodo.23587919) and rebuild.
 * **No en or em dashes** in body text; a hyphen is used where a dash is needed (en dashes remain correct in bibliographic page ranges).
 
 ## 5. Known limitations of the build

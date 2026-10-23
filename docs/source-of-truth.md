@@ -17,7 +17,7 @@ Abbreviations for the documents: BP = Technical Blueprint (EN and BN), SUM = Blu
 | Displayed publication date | October 2026 / অক্টোবর ২০২৬ (no day) | `metadata.json` `date_en`, `date_bn`; PDF dates `D:202610` | Verified | BP, SUM, MEMO |
 | Document version | 1.0 | `metadata.json` `version` | Verified | BP, SUM, MEMO, REPO |
 | Repository release | `v1.1.0`: **planned, not created**. Existing tags: `v1.0`, `v1.0.1` (checked on GitHub, 22 October 2026) | `git ls-remote --tags origin`; GitHub releases page | Pending | BP (Sections 1.4, 11.1, Annex D), REPO |
-| Blueprint DOI | **Not assigned.** Documents print "DOI to be assigned on publication"; `metadata.json` holds `10.5281/zenodo.PENDING` | Zenodo search; `metadata.json` | Pending | BP, SUM, MEMO, REPO |
+| Blueprint DOI | Technical Blueprint **10.5281/zenodo.23587901**; Blueprint Summary **10.5281/zenodo.23587919** (separate records). Reserved on Zenodo by the author; they resolve once the records are published. Printed on the title pages, document information, citation and Table 1; `metadata.json` keys `doi` and `summary_doi` | Author (23 October 2026); `metadata.json` | Reserved, not yet published | BP, SUM, MEMO, REPO |
 | White Paper DOI | 10.5281/zenodo.21363967 (record version v1.0.1, published 14 July 2026, licence recorded as MIT) | Zenodo record, checked 22 October 2026 | Verified | BP, REPO, CITATION.cff |
 | Executive Summary DOI | 10.5281/zenodo.21441172 (version 1.0, published 21 July 2026, CC BY 4.0, languages English and Bengali) | Zenodo record, checked 22 October 2026 | Verified | BP, REPO, CITATION.cff |
 | Concept DOI | 10.5281/zenodo.21360565, which currently resolves to the White Paper record | Zenodo, checked 22 October 2026 | Verified | REPO, CITATION.cff |

@@ -363,7 +363,7 @@ bapil/
 | Source revision | the commit that contains these files on the `blueprint-v1.0` branch |
 | Git tag | `v1.1.0` proposed; not yet created (existing tags: `v1.0`, `v1.0.1`) |
 | GitHub release | v1.1.0 proposed; not yet published |
-| DOI | not yet assigned; a new Zenodo record is created only after the GitHub release exists |
+| DOI | Technical Blueprint 10.5281/zenodo.23587901; Blueprint Summary 10.5281/zenodo.23587919 (reserved on Zenodo; each resolves once its record is published, after the GitHub release exists) |
 
 The Zenodo GitHub integration was used for the White Paper record (archived from release v1.0.1). If it is still switched on, publishing release v1.1.0 would automatically add a new version under the concept DOI with metadata from `CITATION.cff`. How to handle this is a decision for the author before release: see [`blueprint/zenodo/UPLOAD_CHECKLIST.md`](blueprint/zenodo/UPLOAD_CHECKLIST.md), section 0.
 
@@ -381,7 +381,13 @@ https://doi.org/10.5281/zenodo.21441172
 
 ### Technical Blueprint (Version 1.0)
 
-Not yet assigned. A separate Zenodo record is planned after GitHub release v1.1.0 exists.
+https://doi.org/10.5281/zenodo.23587901
+
+### Blueprint Summary (Version 1.0)
+
+https://doi.org/10.5281/zenodo.23587919
+
+Both DOIs are reserved on Zenodo; they resolve once their records are published, after GitHub release v1.1.0 exists.
 
 ### Concept DOI (all versions)
 
@@ -403,7 +409,11 @@ If you use BAPIL in research, policy work, publications, or derivative projects,
 
 ### Technical Blueprint
 
-> Saykat, M. N. H. (2026). *Bangladesh AI Policy & Innovation Lab (BAPIL): Technical Blueprint* (Version 1.0). Zenodo. DOI to be added on publication.
+> Saykat, M. N. H. (2026). *Bangladesh AI Policy & Innovation Lab (BAPIL): Technical Blueprint* (Version 1.0). Zenodo. https://doi.org/10.5281/zenodo.23587901
+
+### Blueprint Summary
+
+> Saykat, M. N. H. (2026). *Bangladesh AI Policy & Innovation Lab (BAPIL): Blueprint Summary* (Version 1.0). Zenodo. https://doi.org/10.5281/zenodo.23587919
 
 ---
 

@@ -17,7 +17,8 @@ ORCID: <https://orcid.org/{{ORCID}}>
 
 {{DATE}}
 
-**Blueprint DOI:** {{DOI_LINK}}  
+**Summary DOI:** {{SUMMARY_DOI_LINK}}  
+**Technical Blueprint DOI:** {{DOI_LINK}}  
 **White Paper DOI:** <https://doi.org/10.5281/zenodo.21363967>  
 **Executive Summary DOI:** <https://doi.org/10.5281/zenodo.21441172>  
 **Repository:** <https://github.com/md-naim-hassan-saykat/bapil>
@@ -141,6 +142,7 @@ The repository contains a tested, dependency-free Python implementation of the c
 
 # Resources
 
+**Blueprint Summary DOI:** {{SUMMARY_DOI_LINK}}  
 **Technical Blueprint DOI:** {{DOI_LINK}}  
 **White Paper DOI:** <https://doi.org/10.5281/zenodo.21363967>  
 **Executive Summary DOI:** <https://doi.org/10.5281/zenodo.21441172>  

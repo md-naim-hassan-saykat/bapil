@@ -72,7 +72,7 @@ references:
     identifiers:
       - type: doi
         value: "10.5281/zenodo.21441172"
-  # Prepared for repository release v1.1.0, which has not been published; no DOI yet.
+  # Prepared for repository release v1.1.0, which has not been published; DOIs reserved on Zenodo.
   - type: report
     title: "Bangladesh AI Policy & Innovation Lab (BAPIL): Technical Blueprint"
     authors:
@@ -86,3 +86,22 @@ references:
       - en
       - bn
     repository: "https://github.com/md-naim-hassan-saykat/bapil"
+    identifiers:
+      - type: doi
+        value: "10.5281/zenodo.23587901"
+  - type: report
+    title: "Bangladesh AI Policy & Innovation Lab (BAPIL): Blueprint Summary"
+    authors:
+      - family-names: "Saykat"
+        given-names: "Md Naim Hassan"
+    version: "1.0"
+    year: 2026
+    month: 10
+    status: in-preparation
+    languages:
+      - en
+      - bn
+    repository: "https://github.com/md-naim-hassan-saykat/bapil"
+    identifiers:
+      - type: doi
+        value: "10.5281/zenodo.23587919"

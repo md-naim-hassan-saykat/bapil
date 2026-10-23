@@ -73,8 +73,8 @@ def load_meta():
         return json.load(fh)
 
 
-def doi_text(meta, lang):
-    doi = meta.get("doi", "")
+def doi_text(meta, lang, key="doi"):
+    doi = meta.get(key, "")
     if doi and "PENDING" not in doi:
         return doi
     return "DOI assigned at publication" if lang == "en" else "প্রকাশের সময় নির্ধারিত DOI"
@@ -175,7 +175,7 @@ def tex_table(t, lang, meta):
     head = " & ".join(r"\textbf{%s}" % tex_escape(c) for c in t["cols"][lang]) + r" \\"
     body = []
     for row in t["rows"][lang]:
-        cells = [tex_escape(c.replace("{{DOI}}", doi_text(meta, lang))) for c in row]
+        cells = [tex_escape(c.replace("{{DOI}}", doi_text(meta, lang)).replace("{{SUMMARY_DOI}}", doi_text(meta, lang, "summary_doi"))) for c in row]
         body.append(" & ".join(cells) + r" \\")
     note = t.get("note", {}).get(lang)
     src = ("Source: BAPIL Technical Blueprint, Version 1.0 (2026). CC BY 4.0." if lang == "en"
@@ -209,7 +209,7 @@ def md_table(t, lang, meta):
     lines.append("| " + " | ".join(md_cell(c) for c in t["cols"][lang]) + " |")
     lines.append("|" + "|".join("-" * max(3, int(round(w * 10))) for w in t["widths"]) + "|")
     for row in t["rows"][lang]:
-        lines.append("| " + " | ".join(md_cell(c.replace("{{DOI}}", doi_text(meta, lang))) for c in row) + " |")
+        lines.append("| " + " | ".join(md_cell(c.replace("{{DOI}}", doi_text(meta, lang)).replace("{{SUMMARY_DOI}}", doi_text(meta, lang, "summary_doi"))) for c in row) + " |")
     note = t.get("note", {}).get(lang)
     if note:
         lines += ["", "*%s* %s" % ("Note." if lang == "en" else "টীকা।", note)]

@@ -18,6 +18,7 @@ ORCID: <https://orcid.org/{{ORCID}}>
 {{DATE}}
 
 **ব্লুপ্রিন্টের DOI:** {{DOI_LINK}}  
+**ব্লুপ্রিন্ট সারসংক্ষেপের DOI:** {{SUMMARY_DOI_LINK}}  
 **হোয়াইট পেপারের DOI:** <https://doi.org/10.5281/zenodo.21363967>  
 **নির্বাহী সারসংক্ষেপের DOI:** <https://doi.org/10.5281/zenodo.21441172>  
 **গিটহাব রিপোজিটরি:** <https://github.com/md-naim-hassan-saykat/bapil>
@@ -67,6 +68,7 @@ ORCID: <https://orcid.org/{{ORCID}}>
 | **প্রমাণগত অবস্থা** | অক্টোবর ২০২৬-এ প্রধান দাবিগুলো উৎসের সঙ্গে মিলিয়ে যাচাইকৃত (সংযুক্তি ত); অমীমাংসিত বিষয় সংযুক্তি ফ-তে |
 | **লাইসেন্স** | Creative Commons Attribution 4.0 International (CC BY 4.0) |
 | **ব্লুপ্রিন্টের DOI** | {{DOI_LINK}} |
+| **ব্লুপ্রিন্ট সারসংক্ষেপ** | সংস্করণ ১.০: {{SUMMARY_DOI_LINK}} |
 | **ভিত্তি** | হোয়াইট পেপার, সংস্করণ ১.০: <https://doi.org/10.5281/zenodo.21363967> |
 | **সহযোগী নথি** | নির্বাহী সারসংক্ষেপ, সংস্করণ ১.০: <https://doi.org/10.5281/zenodo.21441172> |
 | **রিপোজিটরি** | <https://github.com/md-naim-hassan-saykat/bapil> (রিলিজ {{RELEASE}}) |

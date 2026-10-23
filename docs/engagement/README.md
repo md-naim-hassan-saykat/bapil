@@ -15,6 +15,6 @@ These documents support the consultation steps in Section 21.3 of the Technical 
 **Before sending anything**
 
 - Check that the figures still match the published Blueprint. Any change to `budget_model.py` changes them.
-- Replace the GitHub link with the Blueprint DOI once it has been issued.
+- The Blueprint DOI (https://doi.org/10.5281/zenodo.23587901) and the Summary DOI (https://doi.org/10.5281/zenodo.23587919) are reserved; use them once the Zenodo records are published, and keep the GitHub link until then.
 - Add your contact email. It is not stored in the repository.
 - Printing: run `bash docs/engagement/make_pdfs.sh OUTDIR` from the repository root. It uses the Blueprint's fonts and its handling of mixed Bangla and Latin text. The briefing notes fit on one A4 page. Delete the status box at the top of each letter before printing it.

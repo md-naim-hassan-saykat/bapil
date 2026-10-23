@@ -18,6 +18,7 @@ ORCID: <https://orcid.org/{{ORCID}}>
 {{DATE}}
 
 **Blueprint DOI:** {{DOI_LINK}}  
+**Blueprint Summary DOI:** {{SUMMARY_DOI_LINK}}  
 **White Paper DOI:** <https://doi.org/10.5281/zenodo.21363967>  
 **Executive Summary DOI:** <https://doi.org/10.5281/zenodo.21441172>  
 **Repository:** <https://github.com/md-naim-hassan-saykat/bapil>
@@ -61,6 +62,7 @@ The source code of the reference implementation described in Chapter 11 is licen
 | **Evidence status** | Key claims checked against their sources in October 2026 (Annex P); unresolved items in Annex V |
 | **License** | Creative Commons Attribution 4.0 International (CC BY 4.0) |
 | **Blueprint DOI** | {{DOI_LINK}} |
+| **Blueprint Summary** | Version 1.0: {{SUMMARY_DOI_LINK}} |
 | **Builds on** | White Paper, Version 1.0: <https://doi.org/10.5281/zenodo.21363967> |
 | **Companion** | Executive Summary, Version 1.0: <https://doi.org/10.5281/zenodo.21441172> |
 | **Repository** | <https://github.com/md-naim-hassan-saykat/bapil> (release {{RELEASE}}) |

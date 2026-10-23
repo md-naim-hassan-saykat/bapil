@@ -9,8 +9,8 @@ These values cannot be decided from the evidence in the repository. Nothing has 
 | 3 | Licence shown on the White Paper’s Zenodo record | MIT on Zenodo; CC BY 4.0 in the document | The published record contradicts the document; editing the record metadata on Zenodo keeps the DOI | On zenodo.org (record 21363967) |
 | 4 | Licence of `research/` | None stated | Prose should not fall under the MIT software licence by default | A statement in each file or a `research/README.md` |
 | 5 | Handling of the Zenodo GitHub integration for release v1.1.0 | Unknown whether still switched on | If on, the release creates an automatic record under the concept DOI with CITATION.cff metadata | <https://zenodo.org/account/settings/github/>; see `blueprint/zenodo/UPLOAD_CHECKLIST.md`, section 0 |
-| 6 | Whether the Decision Memo goes into the Zenodo record | Not included by default | It is a separate document addressed to the authorities | `blueprint/zenodo/make_zenodo_package.sh` |
-| 7 | Blueprint DOI | `10.5281/zenodo.PENDING` | Only Zenodo can issue it | `blueprint/src/metadata.json`, then the insertion points listed in the checklist |
+| 6 | Whether the Decision Memo goes into a Zenodo record | Not included by default | It is a separate document addressed to the authorities | `blueprint/zenodo/make_zenodo_package.sh` |
+| 7 | Blueprint and Summary DOIs | **Settled 23 October 2026:** Technical Blueprint 10.5281/zenodo.23587901, Blueprint Summary 10.5281/zenodo.23587919, reserved by the author on Zenodo (two records) | They resolve only once the records are published | Publish both records after GitHub release v1.1.0 (checklist, section 6) |
 | 8 | Release date of v1.1.0 | "Unreleased" | Set when the release is published | `CHANGELOG.md`, `CITATION.cff` (`date-released`, `version`), `RELEASE_NOTES.md` |
 | 9 | Zenodo communities, funding information | None | No community or grant is known; leave empty unless one applies | `zenodo_metadata.json` |
 | 10 | ORCID | 0009-0007-5270-3970 | Matches both Zenodo records; no change expected | — |

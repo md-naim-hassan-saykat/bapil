@@ -8,7 +8,7 @@ then writes the final Markdown files to blueprint/.
 Markers in *.src.md:
   <!-- TABLE:NN -->    replaced by tables/md/blueprint_tabNN_<lang>.md
   <!-- FIGURE:NN -->   replaced by the figure image and its numbered caption
-  {{DATE}} {{ORCID}} {{DOI_LINK}} {{DOI_SHORT}} {{RELEASE}} {{EVAL_RESULTS}} {{REFERENCES}}
+  {{DATE}} {{ORCID}} {{DOI_LINK}} {{DOI_SHORT}} {{SUMMARY_DOI_LINK}} {{RELEASE}} {{EVAL_RESULTS}} {{REFERENCES}}
 """
 import json
 import os
@@ -77,8 +77,8 @@ def bn(n):
     return str(n).translate(BN_DIGITS)
 
 
-def doi_values(meta, lang):
-    doi = meta["doi"]
+def doi_values(meta, lang, key="doi"):
+    doi = meta.get(key, "10.5281/zenodo.PENDING")
     if "PENDING" in doi:
         link = ("DOI to be assigned on publication" if lang == "en"
                 else "প্রকাশের সময় নির্ধারিত হবে")
@@ -333,6 +333,7 @@ def assemble(name, lang, meta):
     link, short = doi_values(meta, lang)
     text = (text.replace("{{DATE}}", meta["date_" + lang]).replace("{{ORCID}}", meta["orcid"])
                 .replace("{{DOI_LINK}}", link).replace("{{DOI_SHORT}}", short)
+                .replace("{{SUMMARY_DOI_LINK}}", doi_values(meta, lang, "summary_doi")[0])
                 .replace("{{RELEASE}}", meta["repo_release"]))
     if "{{EVAL_RESULTS}}" in text:
         text = text.replace("{{EVAL_RESULTS}}", eval_block(lang))

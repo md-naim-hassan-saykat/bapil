@@ -21,7 +21,7 @@ No Markdown linter or link checker could be installed (the package registries we
 | No leftover placeholders (`TODO`, `TBD`, `FIXME`, template tokens) | Pass after one fix: the README said "PAGES_EN pages in English and PAGES_BN in Bangla"; now filled with the actual page counts (147 and 146 at the latest build) |
 | No old titles ("Revised", "Audit" in a publication title) | Pass |
 | Intentional template fields | The drafts in `docs/engagement/` contain fields in «angle quotes» (names, dates, reference numbers) for the institution using the template; each file says so at the top |
-| Intentional pending markers | `10.5281/zenodo.PENDING` appears only in `blueprint/src/metadata.json` and in documentation that explains it; no fake DOI is printed in any publication |
+| DOIs | The DOIs reserved by the author (Technical Blueprint 10.5281/zenodo.23587901, Blueprint Summary 10.5281/zenodo.23587919) replace the earlier `10.5281/zenodo.PENDING` marker; no other DOI was added |
 
 ## 4. Relative links and anchors
 
@@ -50,8 +50,8 @@ No Markdown linter or link checker could be installed (the package registries we
 | File | Check | Result |
 |---|---|---|
 | `CITATION.cff` | Validated against the Citation File Format 1.2.0 JSON schema | Valid (0 errors). Version 1.0 and release date 2026-07-14 describe the last real release; they are to be updated only when v1.1.0 is published |
-| `blueprint/zenodo/zenodo_metadata.json` | JSON syntax; fields of the Zenodo deposit metadata | Valid JSON; no DOI, publication date or version beyond those that exist; licence marked as to be confirmed |
-| `blueprint/src/metadata.json` | Drives titles, PDF metadata and the DOI text | Titles match the brief exactly; publication date "October 2026"; DOI pending |
+| `blueprint/zenodo/zenodo_metadata.json`, `zenodo_metadata_summary.json` | JSON syntax; fields of the Zenodo deposit metadata for the two records | Valid JSON; reserved DOIs only as notes and related identifiers; no publication date; licence marked as to be confirmed |
+| `blueprint/src/metadata.json` | Drives titles, PDF metadata and the DOI text | Titles match the brief exactly; publication date "October 2026"; DOIs 10.5281/zenodo.23587901 (Blueprint) and 10.5281/zenodo.23587919 (Summary) |
 
 ## 7. Consistency of names, dates and versions
 
