@@ -427,7 +427,9 @@ New Delhi: Digital India Corporation, 2025[2026-10-22].
 Available:
 <https://negd.gov.in/wp-content/uploads/2025/02/Manager-Gen.-Admin-India-AI.pdf>.
 Also listed at:
-<https://dic.gov.in/jobs/manager-general-administration/>
+<https://dic.gov.in/jobs/manager-general-administration/>.
+Archived copy (Internet Archive, 2026-03-17):
+<https://web.archive.org/web/20260317100654/https://dic.gov.in/jobs/manager-general-administration/>
 
 [152] CABINET DIVISION, GOVERNMENT OF BANGLADESH.
 Letter on the absorption of development-project staff into revenue posts, following Appellate Division judgment in Civil Appeal No. 460 of 2017 (memo no. 00.00.0000.111.04.102.20.38), 2020-03-03[EB/OL].
