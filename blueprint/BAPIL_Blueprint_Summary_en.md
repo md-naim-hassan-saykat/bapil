@@ -189,6 +189,8 @@ The repository contains a tested, dependency-free Python implementation of the c
 
 References are numbered in the order in which they are first cited, and only references cited in this document are listed. Entries marked with an asterisk (\*) are taken from the bibliography of the BAPIL White Paper (Version 1.0).
 
+\bapilrealspaces
+
 [1] THE DAILY STAR.
 Draft AI policy targets innovation, better public services[EB/OL].
 Dhaka: The Daily Star, 2026-01-26[2026-10-20].

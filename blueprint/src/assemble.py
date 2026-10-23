@@ -243,6 +243,7 @@ def reference_section(mapping, lang):
         head = ("# তথ্যসূত্র\n\nতথ্যসূত্রগুলো প্রথম উদ্ধৃতির ক্রমে নম্বরযুক্ত, এবং শুধু এই নথিতে উদ্ধৃত তথ্যসূত্র তালিকাভুক্ত করা হয়েছে। "
                 "%sআন্তর্জাতিক ব্যবহারের সুবিধার্থে তথ্যসূত্রগুলো মূল ভাষায় রাখা হয়েছে।\n"
                 % ("তারকাচিহ্ন (\\*) দেওয়া তথ্যসূত্রগুলো BAPIL হোয়াইট পেপারের (সংস্করণ ১.০) তথ্যসূত্র-তালিকা থেকে নেওয়া। " if wp else ""))
+    head += "\n\\bapilrealspaces\n"   # real space characters in the PDF text layer (header-common.tex)
     entries = []
     for key, num in sorted(mapping.items(), key=lambda kv: kv[1]):
         body = re.sub(r"^\[\d+\]\s*", "", allrefs[key])

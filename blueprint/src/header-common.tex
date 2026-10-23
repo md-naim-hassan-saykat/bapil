@@ -36,6 +36,28 @@
 \XeTeXcharclass"2013=\XeTeXcharclass`A
 \XeTeXcharclass"2014=\XeTeXcharclass`A
 \XeTeXcharclass"2026=\XeTeXcharclass`A
+% Real space characters in the reference lists. XeTeX writes no space characters into the PDF text
+% layer, so some viewers (for example macOS Preview) join short words when text is copied
+% ("Fosteringa", "AZAMAHM"). In the reference lists, every word boundary gets an invisible space
+% glyph of zero net width, so copied text keeps its spaces; layout, line breaks and hyphenation are
+% unchanged. The tokens are appended to the existing class transitions (ucharclasses font switching).
+\makeatletter
+% The glyph is added only when the next token is a real space, not at braces such as Pandoc's {[}.
+\newcommand\bapilrealspace{\futurelet\bapil@next\bapil@realspace}
+\newcommand\bapil@realspace{\ifx\bapil@next\@sptoken\ifhmode
+    \count255=\spacefactor\relax
+    \setbox\z@=\hbox{\XeTeXglyph\XeTeXcharglyph"20\relax}%
+    \XeTeXglyph\XeTeXcharglyph"20\relax\kern-\wd\z@\relax\penalty\z@\relax
+    \spacefactor=\count255\relax
+  \fi\fi}
+\newcommand\bapilrealspaces{\XeTeXinterchartokenstate=\@ne
+  \count@=\z@
+  \loop
+    \XeTeXinterchartoks\count@\e@alloc@intercharclass@top=\expandafter{%
+      \the\XeTeXinterchartoks\count@\e@alloc@intercharclass@top\bapilrealspace}%
+    \advance\count@\@ne
+  \ifnum\count@<\e@alloc@intercharclass@top\repeat}
+\makeatother
 \newunicodechar{।}{{\bengalifont\char"0964}}
 \newunicodechar{॥}{{\bengalifont\char"0965}}
 % tables: smaller type, light rules

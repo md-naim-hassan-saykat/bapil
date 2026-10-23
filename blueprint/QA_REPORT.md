@@ -238,3 +238,4 @@ The audit corrected legal, institutional and technical statements in both editio
 | References queried by the author | Pass | Ten entries checked; see the addendum in `review/REFERENCE_VERIFICATION.md` |
 | Decision Memo on one page | Pass | English and Bangla each one A4 page; both inspected visually; same decisions, figures and status statements as Table 57 and Chapter 17; 4 references, the same numbering in both editions |
 | URL text and margins | Pass | No space after hyphens in any URL in the six PDFs (pdftotext); no word beyond the right margin; short pages are the accepted set |
+| Copied text in reference lists | Pass | About 500 space characters per reference page in the text layer (none before); no break inside “https://” in any PDF; no spaces added around brackets; link targets unchanged except the replaced EU download |

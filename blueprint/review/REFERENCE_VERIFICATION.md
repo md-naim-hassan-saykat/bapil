@@ -92,3 +92,12 @@ Copied link text showed a space after each hyphen ("wp- content"). The link targ
 
 Also checked: the database records that the Personal Data Protection (Amendment) Ordinance, 2026 (No. 23 of 2026, entry 1616) was repealed by Act No. 63. Its data-residency rule (a synchronised real-time copy in Bangladesh for restricted personal data and critical information infrastructure) is now recorded in `docs/legal-references.md` (L3). Whether the Act carries the rule over remains U3.
 
+### Third follow-up on 23 October 2026: copied text and line breaks
+
+The author reported again that entries copied from the Bangla PDF read "Fosteringa" and "ht tps://", and that the EU guidelines download asked for an account.
+
+* **Missing spaces when copying.** XeTeX writes no space characters into the PDF text layer; the viewer infers them from the gaps between words. pdftotext, pypdf and pdfminer read the gaps correctly, but the author's viewer (on macOS) joined short words. The reference lists now carry a real, invisible space glyph of zero net width at every word space (`\bapilrealspaces` in `src/header-common.tex`, switched on by `src/assemble.py` at the start of each reference list). A reference page now has about 500 space characters in its text layer instead of none. The glyph is added only before a real space, not at Pandoc's `{[}` braces. One side effect: microtype can no longer let a final full stop or comma hang into the margin on those lines, so a few reference lines break differently; page counts are unchanged. pdfminer reports a double space where justification widened a gap.
+* **"ht" / "tps://" line breaks.** `xurl` allows a break after any character, including inside "https://". The Pandoc filter (`src/blueprint-filter.lua`) now keeps "https://" or "http://" together and allows a break only after it. No PDF now breaks inside the scheme. Three such breaks in the Bangla edition are gone, including one on the status page (page 4).
+* **[119] EuropeAid PCM Guidelines.** The capacity4dev download now requires an account. The library page is kept as the official record, marked "download requires a free account". An open copy on GEF IW:LEARN (<https://www.iwlearn.net/documents/28641>), which offers the 2004 PDF without login, was added.
+* **[42] and [52]** were already corrected in the previous round. The text copied by the author showed only the two issues above.
+
