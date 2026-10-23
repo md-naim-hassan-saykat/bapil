@@ -159,10 +159,11 @@ WP_CORRECTIONS = {
     64: [("UNIVERSITY OF HELSINKI, REAKTOR.", "UNIVERSITY OF HELSINKI, MINNALEARN."),
          ("Helsinki: University of Helsinki and Reaktor, 2024[", "Helsinki: University of Helsinki and MinnaLearn, 2024[")],
     # 23 October 2026: "(TBS)" dropped, because the reference lists also use TBS for The Business Standard
-    # 23 October 2026: the publisher's server returned "Service Unavailable" to the author; archived copy added
-    53: [("Model-AI-Governance-Framework-for-Generative-AI-May-2024-1-1.pdf>",
-          "Model-AI-Governance-Framework-for-Generative-AI-May-2024-1-1.pdf>.\nArchived copy of the publication page (Internet Archive, 2026-10-04):\n"
-          "<https://web.archive.org/web/20261004141910/https://aiverifyfoundation.sg/resources/mgf-gen-ai/>")],
+    # 23 October 2026: the May 2024 PDF address now returns 404 (the publisher moved the file); the entry
+    # cites the framework's page on the publisher's site, which links the current PDF
+    53: [("<https://aiverifyfoundation.sg/wp-content/uploads/2024/05/Model-AI-Governance-Framework-for-Generative-AI-May-2024-1-1.pdf>",
+          "<https://aiverifyfoundation.sg/resources/mgf-gen-ai/>"),
+         ("2024[2026-06-18]", "2024[2026-10-23]")],
     68: [("TREASURY BOARD OF CANADA SECRETARIAT (TBS).", "TREASURY BOARD OF CANADA SECRETARIAT.")],
     69: [("TREASURY BOARD OF CANADA SECRETARIAT (TBS).", "TREASURY BOARD OF CANADA SECRETARIAT."),
          ("Algorithmic Impact Assessment (AIA) Tool[EB/OL].", "Algorithmic Impact Assessment[EB/OL]."),

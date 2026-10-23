@@ -117,3 +117,12 @@ The author confirmed that the remaining problem with [42] and [53] was that the 
 
 Reference spacing is now 2 pt so that the English edition stays at 147 pages.
 
+### Sixth follow-up on 23 October 2026: [53] returns 404, and the official laws site returns 503
+
+The author's screenshot showed a 404 page on aiverifyfoundation.sg for [53], and their tabs showed "503 Service Unavailable" for the four laws-database links of [42] and "Not authorised" for the capacity4dev page of [119].
+
+* **[53]** The publisher has moved the May 2024 PDF. Its publication page, <https://aiverifyfoundation.sg/resources/mgf-gen-ai/> ("Model AI Governance Framework for Generative AI", released 30 May 2024), now links a renamed file (`/wp-content/uploads/2026/06/Model-AI-Governance-Framework-for-Generative-AI-19-June-2024.pdf`). The entry now cites the publication page (short enough for one line), access date 23 October 2026. The archived copy added earlier was removed because the live page works.
+* **[42]** The official site was down for the author (503). The archived copies of entries 1692, 1709 and 1710 remain. Entry 1728 has no archived copy, so its page in the unofficial index (<https://laws.sayed.app/laws/act-1728>; checked: Cyber Security (Amendment) Act, 2026, Act No. 99 of 2026, 1 July 2026) was added and labelled as unofficial.
+* **[119]** The capacity4dev library page itself now asks visitors to sign in. The note reads "the site asks visitors to sign in; registration is free".
+* Wrapped links: hyperref gives each line of a wrapped address a link annotation carrying the full address, so clicking either line opens the complete address.
+
