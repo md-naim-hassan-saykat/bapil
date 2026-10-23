@@ -236,4 +236,4 @@ The audit corrected legal, institutional and technical statements in both editio
 | Markdown, links, typography | Pass | No broken relative links; typography check passed; no en or em dashes in the diff |
 | Engagement PDFs | Pass | All build; briefing notes one A4 page in English and Bangla |
 | References queried by the author | Pass | Ten entries checked; see the addendum in `review/REFERENCE_VERIFICATION.md` |
-
+| Decision Memo on one page | Pass | English and Bangla each one A4 page; both inspected visually; same decisions, figures and status statements as Table 57 and Chapter 17; 4 references, the same numbering in both editions |
