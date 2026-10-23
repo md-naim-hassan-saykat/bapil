@@ -5,7 +5,7 @@ lang: en
 # Decision Memo: A 12-Month Pilot of an AI Policy-Intelligence Capability for Bangladesh
 
 **For the consideration of:** the ICT Division; for information the Planning Commission, Finance Division, Legislative and Parliamentary Affairs Division, BBS and a2i · **From:** Md Naim Hassan Saykat, author of the BAPIL Technical Blueprint · **Date:** October 2026  
-**Basis:** BAPIL Technical Blueprint, Version 1.0 (DOI pending; <https://github.com/md-naim-hassan-saykat/bapil>). This memo is a separate document, not part of the Blueprint. CC BY 4.0.
+**Basis:** BAPIL Technical Blueprint, Version 1.0 (10.5281/zenodo.23587901; <https://github.com/md-naim-hassan-saykat/bapil>). This memo is a separate document, not part of the Blueprint. CC BY 4.0.
 
 **Status.** An independent research proposal, not an official document. No decision, body, host or funding exists yet.
 

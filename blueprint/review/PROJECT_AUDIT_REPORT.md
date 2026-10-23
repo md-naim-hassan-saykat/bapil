@@ -77,7 +77,7 @@ Severity: **Critical**, **Major**, **Moderate**, **Minor** (definitions in the a
 | Claim | Evidence (checked 21 or 22 October 2026) | Status | Files |
 |---|---|---|---|
 | Release v1.1.0 exists | GitHub releases page lists only v1.0.1 and v1.0; `git ls-remote --tags` shows `v1.0`, `v1.0.1` | **False today**; every document describes it as planned | README, RELEASE_NOTES, CHANGELOG, Blueprint 1.4, 11.1, Annex D, Memo |
-| The Blueprint has a DOI | No Zenodo record found; documents print "DOI to be assigned on publication" | **False today**; correctly described | all |
+| The Blueprint has a DOI | DOIs reserved by the author on 23 October 2026 (Blueprint 10.5281/zenodo.23587901, Summary 10.5281/zenodo.23587919); doi.org does not resolve them yet, because the records are unpublished | **Reserved, not yet published**; documents print the DOIs | all |
 | White Paper DOI 10.5281/zenodo.21363967 | Zenodo record (v1.0.1, 14 July 2026) | Verified | README, CITATION.cff, Blueprint |
 | Executive Summary DOI 10.5281/zenodo.21441172 | Zenodo record (1.0, 21 July 2026, CC BY 4.0, English and Bengali) | Verified | same |
 | Concept DOI 10.5281/zenodo.21360565 | Resolves to the White Paper record | Verified | README, CITATION.cff |

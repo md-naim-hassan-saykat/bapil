@@ -41,6 +41,7 @@ Prepared for repository release v1.1.0. The tag, the GitHub release and the Blue
 - Bangla editorial pass: consistent spelling of compound terms across all Bangla documents (`blueprint/review/BANGLA_EDITORIAL_LOG.md`).
 - Preparatory Phase 0 (about six months, about Tk 0.44 crore) before the 36-month plan: host selection, legal review, feasibility and costing study, data-access confirmation and the Year 1 funding commitment. Month 1 is July 2027 (FY2027-28).
 - Response to an independent review of the Blueprint (`blueprint/review/INDEPENDENT_REVIEW_2026-10-23.md`); expert-review request, comment form and counsel checklist in `docs/engagement/`.
+- DOIs reserved on Zenodo by the author: Technical Blueprint 10.5281/zenodo.23587901, Blueprint Summary 10.5281/zenodo.23587919 (two records; they resolve once published). Printed in all documents; separate upload folders `dist/zenodo/` and `dist/zenodo-summary/`.
 
 ### Corrected
 

@@ -10,13 +10,13 @@ How the BAPIL publications move from this repository to a GitHub release and a Z
 | Tags | `v1.0`, `v1.0.1` |
 | Remote `main` | Commit `4756cf9`. The Blueprint work is on the local branch `blueprint-v1.0` and **has not been pushed** |
 | Zenodo records | White Paper 10.5281/zenodo.21363967 (record version v1.0.1, archived from the GitHub release; licence shown as MIT); Executive Summary 10.5281/zenodo.21441172 (CC BY 4.0); concept DOI 10.5281/zenodo.21360565 resolves to the White Paper record |
-| Blueprint DOI | **None.** The documents print "DOI to be assigned on publication" |
+| Blueprint DOIs | Reserved by the author on 23 October 2026: Technical Blueprint 10.5281/zenodo.23587901, Blueprint Summary 10.5281/zenodo.23587919. Printed in the documents; they resolve once the records are published |
 | GitHub Actions | Workflows prepared in the branch; never run on GitHub |
 
 ## 2. Recommended arrangement of records
 
-* **One multilingual Zenodo record** for the Technical Blueprint, holding the English and Bangla editions together with the Blueprint Summary, the figures, tables, editable sources and a source archive of the reference implementation. The two editions are the same work in two languages, so separate records would create duplicate citations. The English edition is authoritative.
-* **Linked, not versioned:** the Blueprint record is a new record, related to the White Paper (*is supplement to*) and the Executive Summary (*references*), not a new version of either.
+* **Two multilingual Zenodo records**, as reserved by the author: the Technical Blueprint (10.5281/zenodo.23587901), holding the English and Bangla editions, the figures, tables, editable sources and a source archive of the reference implementation; and the Blueprint Summary (10.5281/zenodo.23587919), holding the English and Bangla Summary. Each record keeps both languages together, because the two editions are the same work in two languages. The English editions are authoritative.
+* **Linked, not versioned:** the Blueprint record is a new record, related to the White Paper (*is supplement to*), the Executive Summary (*references*) and the Blueprint Summary (*is supplemented by*), not a new version of any of them. The Summary record *is supplement to* the Blueprint.
 * **The Decision Memo** is a separate document addressed to the authorities; it is attached to the GitHub release but, by default, not deposited with the Blueprint.
 * **The repository snapshot** (tag `v1.1.0`) is referenced from the record (*is supplemented by*).
 
@@ -27,10 +27,10 @@ How the BAPIL publications move from this repository to a GitHub release and a Z
 3. Validate the Markdown and metadata files (`blueprint/review/MARKDOWN_VALIDATION_REPORT.md`; `cffconvert --validate`).
 4. Confirm the version, licence and affiliation (checklist, section 0).
 5. Decide how to handle the Zenodo GitHub integration (checklist, section 0): if it is still switched on, publishing a GitHub release automatically creates a new version under the concept DOI, with metadata from `CITATION.cff`.
-6. Reserve the Blueprint DOI on Zenodo (draft, not published), put it in `blueprint/src/metadata.json`, rebuild and commit.
+6. Reserve the DOIs on Zenodo (drafts, not published), put them in `blueprint/src/metadata.json`, rebuild and commit. Done on 23 October 2026.
 7. Push the branch, merge into `main`, create and push tag `v1.1.0`.
 8. Publish GitHub release v1.1.0 with `RELEASE_NOTES.md` and the six PDFs.
-9. Upload `dist/zenodo/` to the Zenodo draft and publish it.
+9. Upload `dist/zenodo/` to the Blueprint draft and `dist/zenodo-summary/` to the Summary draft, and publish them.
 10. Check that the DOI resolves, the related identifiers appear and the files match `SHA256SUMS.txt`.
 11. Update `README.md`, `CITATION.cff`, `CHANGELOG.md` and `docs/source-of-truth.md` with the real DOI and release date.
 12. Record the release and archival information in `CHANGELOG.md`.

@@ -240,3 +240,4 @@ The audit corrected legal, institutional and technical statements in both editio
 | URL text and margins | Pass | No space after hyphens in any URL in the six PDFs (pdftotext); no word beyond the right margin; short pages are the accepted set |
 | Copied text in reference lists | Pass | About 500 space characters per reference page in the text layer (none before); no break inside “https://” in any PDF; no spaces added around brackets; link targets unchanged except the replaced EU download |
 | Line breaks in reference lists | Pass | Ragged-right; 0 split dates, 0 web addresses broken inside a word or number, 0 bare “https://” at a line end, 0 words beyond the margin, in all six PDFs |
+| DOIs | Pass | Blueprint DOI on 5 places in each edition of the Blueprint, the Summary DOI on 5; each Summary shows both; the Memo shows the Blueprint DOI; no “pending” text left; DOI links point to doi.org. doi.org does not yet resolve the DOIs because the records are unpublished |

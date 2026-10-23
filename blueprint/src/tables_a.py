@@ -3,7 +3,7 @@
 
 Each table: id, widths (relative), title{en,bn}, cols{en,bn}, rows{en,bn}, note{en,bn} (optional).
 Cell markup: **bold** only. Do not use the pipe character inside cells.
-{{DOI}} is replaced by the Blueprint DOI at build time.
+{{DOI}} and {{SUMMARY_DOI}} are replaced by the Blueprint and Summary DOIs at build time.
 """
 
 TABLES_A = [
@@ -24,14 +24,14 @@ TABLES_A = [
                 ["**White Paper**", "1.0 (repository release v1.0.1)", "Conceptual framework, international lessons, vision to 2041", "All stakeholders", "10.5281/zenodo.21363967"],
                 ["**Executive Summary**", "1.0", "Concise summary of the White Paper", "Senior policymakers", "10.5281/zenodo.21441172"],
                 ["**Technical Blueprint** (this document)", "1.0", "Buildable design: institution, architecture, data, governance, delivery plan", "Ministries, agencies, technical teams, partners", "{{DOI}}"],
-                ["**Blueprint Summary**", "1.0", "Short summary of the Blueprint", "Decision-makers", "Same record as the Blueprint"],
+                ["**Blueprint Summary**", "1.0", "Short summary of the Blueprint", "Decision-makers", "{{SUMMARY_DOI}}"],
                 ["**Reference implementation**", "0.1.0 (to be issued in repository release v1.1.0 with this Blueprint)", "Research prototype of core Blueprint components with unit tests; not a production system", "Engineers, researchers, auditors", "GitHub repository; archived with the record"],
             ],
             "bn": [
                 ["**হোয়াইট পেপার**", "১.০ (রিপোজিটরি রিলিজ v1.0.1)", "ধারণাগত কাঠামো, আন্তর্জাতিক শিক্ষা, ২০৪১ পর্যন্ত রূপকল্প", "সকল অংশীজন", "10.5281/zenodo.21363967"],
                 ["**নির্বাহী সারসংক্ষেপ**", "১.০", "হোয়াইট পেপারের সংক্ষিপ্ত সার", "জ্যেষ্ঠ নীতিনির্ধারক", "10.5281/zenodo.21441172"],
                 ["**টেকনিক্যাল ব্লুপ্রিন্ট** (এই নথি)", "১.০", "বাস্তবায়নযোগ্য নকশা: প্রতিষ্ঠান, স্থাপত্য, ডেটা, শাসন, বাস্তবায়ন পরিকল্পনা", "মন্ত্রণালয়, সংস্থা, কারিগরি দল, অংশীদার", "{{DOI}}"],
-                ["**ব্লুপ্রিন্ট সারসংক্ষেপ**", "১.০", "ব্লুপ্রিন্টের সংক্ষিপ্ত সার", "সিদ্ধান্তগ্রহণকারী", "ব্লুপ্রিন্টের একই রেকর্ড"],
+                ["**ব্লুপ্রিন্ট সারসংক্ষেপ**", "১.০", "ব্লুপ্রিন্টের সংক্ষিপ্ত সার", "সিদ্ধান্তগ্রহণকারী", "{{SUMMARY_DOI}}"],
                 ["**রেফারেন্স বাস্তবায়ন**", "০.১.০ (এই ব্লুপ্রিন্টের সঙ্গে রিপোজিটরি রিলিজ v1.1.0-এ প্রকাশের জন্য নির্ধারিত)", "ইউনিট পরীক্ষাসহ ব্লুপ্রিন্টের মূল উপাদানের গবেষণা-প্রোটোটাইপ; উৎপাদন-ব্যবস্থা নয়", "প্রকৌশলী, গবেষক, নিরীক্ষক", "গিটহাব রিপোজিটরি; রেকর্ডের সঙ্গে সংরক্ষিত"],
             ],
         },

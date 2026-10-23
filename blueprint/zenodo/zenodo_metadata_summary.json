@@ -1,0 +1,50 @@
+{
+  "metadata": {
+    "title": "Bangladesh AI Policy & Innovation Lab (BAPIL): Blueprint Summary",
+    "upload_type": "publication",
+    "publication_type": "report",
+    "version": "1.0",
+    "language": "eng",
+    "creators": [
+      {
+        "name": "Saykat, Md Naim Hassan",
+        "affiliation": "Independent Researcher, Bangladesh",
+        "orcid": "0009-0007-5270-3970"
+      }
+    ],
+    "license": "cc-by-4.0",
+    "access_right": "open",
+    "keywords": [
+      "Bangladesh",
+      "Artificial Intelligence",
+      "AI Governance",
+      "Responsible AI",
+      "Policy Intelligence",
+      "Technical Blueprint",
+      "Summary",
+      "Digital Government",
+      "Public Sector Innovation"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "10.5281/zenodo.23587901",
+        "relation": "isSupplementTo",
+        "scheme": "doi",
+        "resource_type": "publication-report"
+      },
+      {
+        "identifier": "10.5281/zenodo.21363967",
+        "relation": "references",
+        "scheme": "doi",
+        "resource_type": "publication-report"
+      },
+      {
+        "identifier": "10.5281/zenodo.21441172",
+        "relation": "references",
+        "scheme": "doi",
+        "resource_type": "publication-report"
+      }
+    ],
+    "notes": "Languages: English (authoritative) and Bengali; one multilingual record. Contents: Blueprint Summary in English and Bangla (PDF and Markdown). Summary of the Technical Blueprint (10.5281/zenodo.23587901). Reserved DOI: 10.5281/zenodo.23587919. Independent research proposal; it does not represent any official government position. publication_date is set when the record is published."
+  }
+}

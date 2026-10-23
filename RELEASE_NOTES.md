@@ -1,6 +1,6 @@
 # Release notes (draft): BAPIL repository release v1.1.0
 
-**Status: not released.** This is the prepared description for GitHub release v1.1.0. The tag, the release and the Blueprint’s DOI do not exist yet; the release date will be added when the release is published. Do not cite this release until it exists.
+**Status: not released.** This is the prepared description for GitHub release v1.1.0. The tag and the release do not exist yet. The DOIs of the Technical Blueprint (10.5281/zenodo.23587901) and the Blueprint Summary (10.5281/zenodo.23587919) are reserved on Zenodo and resolve once their records are published; the release date will be added when the release is published. Do not cite this release until it exists.
 
 ## Publications in this release
 
@@ -43,12 +43,14 @@ Everything needed to rebuild the PDFs is in `blueprint/` (sources, table data, f
 
 ## Citation
 
-Until the DOI exists:
+Once the Zenodo records are published:
 
-> Saykat, M. N. H. (2026). *Bangladesh AI Policy & Innovation Lab (BAPIL): Technical Blueprint* (Version 1.0). GitHub release v1.1.0, https://github.com/md-naim-hassan-saykat/bapil. DOI to be assigned.
+> Saykat, M. N. H. (2026). *Bangladesh AI Policy & Innovation Lab (BAPIL): Technical Blueprint* (Version 1.0). Zenodo. https://doi.org/10.5281/zenodo.23587901
+>
+> Saykat, M. N. H. (2026). *Bangladesh AI Policy & Innovation Lab (BAPIL): Blueprint Summary* (Version 1.0). Zenodo. https://doi.org/10.5281/zenodo.23587919
 
 ## Open before publication
 
 1. Confirm the licence of the documents (CC BY 4.0 as printed) and whether `CITATION.cff` and the README adopt the Blueprint affiliation ("Independent Researcher, Bangladesh").
 2. Decide how to handle the Zenodo GitHub integration (see `blueprint/zenodo/UPLOAD_CHECKLIST.md`, section 0).
-3. Reserve the DOI, rebuild, and only then tag and release.
+3. The DOIs are reserved and printed in the documents; tag and release, then publish the two Zenodo records.

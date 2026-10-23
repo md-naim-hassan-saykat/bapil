@@ -17,7 +17,7 @@ This directory contains the official release packages for the Bangladesh AI Poli
 | `v1.1/BAPIL_Decision_Memo_bn.pdf` | Bangla | Decision Memo (October 2026), a separate document addressed to the authorities; not part of the Blueprint |
 | `v1.1/BAPIL_Decision_Memo_en.pdf` | English | Decision Memo (October 2026), same |
 
-The PDFs are generated from the editable sources in [`blueprint/src/`](../blueprint/src/) by `blueprint/build_blueprint.sh`; see [`blueprint/README.md`](../blueprint/README.md). The Blueprint's DOI will be assigned when its Zenodo record is published, after the GitHub release exists.
+The PDFs are generated from the editable sources in [`blueprint/src/`](../blueprint/src/) by `blueprint/build_blueprint.sh`; see [`blueprint/README.md`](../blueprint/README.md). DOIs (reserved on Zenodo; they resolve once the records are published, after the GitHub release exists): Technical Blueprint 10.5281/zenodo.23587901; Blueprint Summary 10.5281/zenodo.23587919. The Decision Memo has no DOI.
 
 ## Version 1.0
 
