@@ -13,7 +13,7 @@
 | FR-09 | Public transparency register generated from the AI system register | Should |
 | FR-10 | Documented, versioned API for programmatic access | Should |
 | NFR-01 | Language parity: Bangla quality within 5 points of English on core metrics | Must |
-| NFR-02 | Data residency: P1 to P3 data hosted in Bangladesh in accredited facilities | Must |
+| NFR-02 | Data residency: DC1 to DC3 data hosted in Bangladesh in accredited facilities | Must |
 | NFR-03 | Security by design aligned with NIST CSF 2.0 and zero-trust access | Must |
 | NFR-04 | Availability of 99% for pilots (working hours) once the recovery site is in place in Year 2; best effort with offline backups in Year 1; 99.5% at scale | Should |
 | NFR-05 | Accessibility to WCAG 2.2 level AA; usable on mobile and low-bandwidth connections | Must |
@@ -24,7 +24,7 @@
 | NFR-10 | Cost transparency: cost per 1,000 queries reported each quarter | Could |
 | GR-01 | Human review of consequential outputs; AI is never the final decision-maker | Must |
 | GR-02 | No build without tier screening (G0) and no pilot without gate approval (G2) | Must |
-| GR-03 | Data minimisation: public data first; DPIA before any P2 or P3 processing | Must |
+| GR-03 | Data minimisation: public data first; DPIA before any DC2 or DC3 processing | Must |
 | GR-04 | Tamper-evident audit logs of queries, sources consulted and outputs | Must |
 | GR-05 | Incident reporting and response within defined time limits | Must |
 | GR-06 | Prohibited uses (tier T0) excluded by the BAPIL charter | Must |

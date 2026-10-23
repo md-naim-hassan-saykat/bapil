@@ -40,7 +40,7 @@ CONTROLS = {
            "Independent audit", "ERRC approval (binding)", "Published impact assessment"],
 }
 
-APPROVERS = {"T0": "Excluded by charter", "T1": "Unit lead and TAB", "T2": "ERRC and Steering Board",
+APPROVERS = {"T0": "Excluded by charter", "T1": "Unit lead and TAB", "T2": "ERRC (Steering Board consulted)",
              "T3": "ERRC (binding) and host-agency legal review"}
 
 

@@ -3,7 +3,7 @@
 | Function | BAPIL controls |
 |-------------|--------------------------------------------------------|
 | **Govern** | Charter and security policy; named security lead; risk register; supplier and dependency policy; ERRC oversight of AI-specific risks |
-| **Identify** | Asset and data inventory; data classification (P0 to P3); threat model per system including OWASP LLM risks; dependency SBOMs |
+| **Identify** | Asset and data inventory; data classification (DC0 to DC3); threat model per system including OWASP LLM risks; dependency SBOMs |
 | **Protect** | Single sign-on with MFA; least-privilege roles; encryption in transit and at rest; hardened containers; secrets management; staff training |
 | **Detect** | Centralised logging and alerting; anomaly detection on query volumes; daily audit-chain verification; vulnerability scanning in CI |
 | **Respond** | Incident response plan with severity levels; communication protocol; ERRC review of AI incidents; legal notification where required |

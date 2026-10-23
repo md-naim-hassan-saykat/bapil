@@ -41,10 +41,11 @@ Dear «Sir or Madam»,
    - «convening facilities».
 
 5. **Conditions.** This letter does not commit funds or staff and does not create a legal obligation. A commitment would follow only after:
-   - (i) selection through the open process;
-   - (ii) an MoU between the host and the ICT Division;
-   - (iii) a host agreement approved by our «competent body»;
-   - (iv) confirmed Year 1 funding (about Tk 4.7 crore in the Blueprint's indicative budget).
+   - (i) selection through the open process in Phase 0;
+   - (ii) the Phase 0 legal review, including whether our statutes allow the ERRC veto;
+   - (iii) an MoU between the host and the ICT Division;
+   - (iv) a host agreement approved by our «competent body»;
+   - (v) confirmed Year 1 funding (about Tk 4.7 crore in the Blueprint's indicative budget).
 
    We note that BAPIL is a proposal, and that no funding has been requested or approved.
 

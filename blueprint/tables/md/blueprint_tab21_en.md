@@ -9,4 +9,4 @@
 | 005 | Append-only, hash-chained audit log | Independent verification of what the system did | Ordinary application logs |
 | 006 | Containers and infrastructure as code | Reproducible, auditable environments | Manually configured servers |
 | 007 | Accessibility and low bandwidth first | Reach users outside Dhaka and on mobile | Desktop-first interface |
-| 008 | Public data first (P0) | Value without privacy risk while governance matures | Start with administrative records |
+| 008 | Public data first (DC0) | Value without privacy risk while governance matures | Start with administrative records |

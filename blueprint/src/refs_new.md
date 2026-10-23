@@ -486,3 +486,46 @@ HSTU PhD fellowship policy 2025[S/OL].
 Dinajpur: HSTU, 2026[2026-10-22].
 Available:
 <https://hstu.ac.bd/uploads/notice/2026/jan/HSTU_PhDFellowshipPolicy.pdf>
+
+[162] LEGISLATIVE AND PARLIAMENTARY AFFAIRS DIVISION.
+২০২৬ সনে প্রণীত আইনসমূহ (Acts enacted in 2026)[EB/OL].
+Dhaka: Legislative and Parliamentary Affairs Division, 2026[2026-10-22].
+Available:
+<https://legislativediv.gov.bd/pages/static-pages/69df4f84e252a315b7e6b8db>
+
+[163] GOVERNMENT OF THE PEOPLE’S REPUBLIC OF BANGLADESH.
+Personal Data Protection Act, 2026 (Act No. 63 of 2026)[S/OL].
+Bangladesh Gazette, Extraordinary, 2026-04-10. Copy published by the ICT Division[2026-10-22].
+Available:
+<https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-ictd/2026/3/1c355c6a-cc9c-42a0-b07f-e0876b89dc9d.pdf>
+
+[164] GOVERNMENT OF THE PEOPLE’S REPUBLIC OF BANGLADESH.
+National Data Management Act, 2026 (Act No. 80 of 2026)[S/OL].
+Bangladesh Gazette, Extraordinary, 2026-04-10. Copy published by the ICT Division[2026-10-22].
+Available:
+<https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-ictd/2026/3/ab68f686-1ba9-4c04-85ad-83f0982f7b4e.pdf>
+
+[165] GOVERNMENT OF THE PEOPLE’S REPUBLIC OF BANGLADESH.
+Cyber Security Act, 2026 (Act No. 81 of 2026)[S/OL].
+Bangladesh Gazette, Extraordinary, 2026-04-10. Copy published by the ICT Division[2026-10-22].
+Available:
+<https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-ictd/2026/3/31737fbf-7a0b-4437-b479-a20cd0e06e69.pdf>
+
+[166] GOVERNMENT OF THE PEOPLE’S REPUBLIC OF BANGLADESH.
+Cyber Security (Amendment) Act, 2026 (Act No. 99 of 2026)[S/OL].
+Bangladesh Gazette, Extraordinary, 2026-07-01. Copy published by the ICT Division[2026-10-22].
+Available:
+<https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-ictd/2026/8/541cfcb6-8c7f-40fd-b54b-3185c236ce95.pdf>
+
+[167] LEGISLATIVE AND PARLIAMENTARY AFFAIRS DIVISION.
+Laws of Bangladesh: texts of Acts No. 63, 80, 81 and 99 of 2026[DB/OL].
+Dhaka: Ministry of Law, Justice and Parliamentary Affairs, 2026[2026-10-22].
+Database entries 1692, 1709, 1710 and 1728; read through the public mirror laws.sayed.app, because the official site does not permit automated retrieval.
+Available:
+<http://bdlaws.minlaw.gov.bd/act-details-1692.html>
+
+[168] BANGLADESH LEGAL AID AND SERVICES TRUST.
+Statement on the proposed Cyber Security (Amendment) Act, 2026[EB/OL].
+Dhaka: BLAST, 2026-09-14[2026-10-22].
+Available:
+<https://blast.org.bd/2026/09/14/8937/>

@@ -88,9 +88,9 @@
     "data_class": {
       "type": "string",
       "enum": [
-        "P0",
-        "P1",
-        "P2"
+        "DC0",
+        "DC1",
+        "DC2"
       ]
     },
     "sha256": {

@@ -6,7 +6,7 @@ set -euo pipefail
 ROOT="$(cd "$(dirname "$0")/../.." && pwd)"
 OUT="${1:-$ROOT/docs/engagement/pdf}"
 mkdir -p "$OUT"
-for f in "$ROOT"/docs/engagement/briefing-note_*.md "$ROOT"/docs/engagement/letter-*.md; do
+for f in "$ROOT"/docs/engagement/briefing-note_*.md "$ROOT"/docs/engagement/letter-*.md "$ROOT"/docs/engagement/reviewer-request_*.md; do
   name="$(basename "$f" .md)"
   pandoc "$f" --from=markdown-smart \
     --lua-filter="$ROOT/blueprint/src/blueprint-filter.lua" \

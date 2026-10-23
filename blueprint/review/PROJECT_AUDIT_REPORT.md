@@ -69,6 +69,8 @@ Severity: **Critical**, **Major**, **Moderate**, **Minor** (definitions in the a
 | A-37 | Blueprint EN/BN; `budget_model.py` | Section 17.1; Table 49 | Unit costs were stated as planning assumptions without published price or pay evidence; equipment basis cited 2025 prices only | Moderate | Review for a 10/10 rating | Seven sources added and checked; list-price and duty risk quantified (+Tk 0.7 crore; +Tk 1.6 crore); base case unchanged because no assumption differs materially | Fixed (quotations still needed: U6) |
 | A-38 | Bangla Blueprint, Summary, Memo, table and figure strings | Throughout | Compound terms spelled inconsistently (for example ডেটা-বিনিময় and ডেটা বিনিময়); two general uses of উপাত্ত; two awkward sentences | Minor | Systematic Bangla scan | 76 standardisations and 4 rewordings, logged in `BANGLA_EDITORIAL_LOG.md` | Fixed (professional edit still open: U14) |
 | A-39 | Repository | `docs/` | No material to start the consultations and letters that Annex V items U9 and U15 depend on | Moderate | Review for a 10/10 rating | `docs/engagement/`: briefing note, host and ICT Division letter templates (EN, BN), consultation plan; drafts only | Prepared; not sent |
+| A-40 | Technical Blueprint, Summary, Memo | Throughout | Independent review (6.5 of 10, 30 findings): legal review and costing came after commitment; Year 1 funding unclear; code clashes; framing of 2041 plans and July 2024; several verified contradictions | Major | Independent review by a separate agent | Phase 0, Year 1 funding mix, DC and TR codes and the other responses in `INDEPENDENT_REVIEW_2026-10-23.md` | Fixed, except R-11 and R-13 (partly) and R-16 and R-30 (author's decision) |
+| A-41 | Legal references | Chapters 4, 8, 10, 14; Table 4; `docs/legal-references.md` | The 2026 Acts were cited through secondary sources | Major | Official Gazette copies and laws database texts | Official references added (keys 162 to 168); legal reference guide rewritten | Fixed (counsel review in Phase 0: U1) |
 
 ## 4. Verified claim register
 
@@ -103,7 +105,7 @@ All substantive corrections are listed in [`blueprint/CHANGES.md`](../CHANGES.md
 | Full build | Passed; six PDFs, tables, figures, CSV, manifest |
 | Unit tests | 49 passed (Python 3.13) |
 | Quotation-mark check on all sources | Passed |
-| Table 60 vs evaluation report | Consistent (Recall@10 0.88) |
+| Table 60 vs evaluation report | Consistent (Recall@10 0.92 at the latest build) |
 | Budget workbook vs Python model | 0 differences above Tk 1; 612 formulas, 0 errors |
 | Number parity EN vs BN (multi-digit numbers, by chapter) | Blueprint: remaining differences are layout values and numbers written as words in one language; Summary and Memo: none (see reconciliation report) |
 | Sparse-page scan and visual inspection | See `blueprint/QA_REPORT.md` |

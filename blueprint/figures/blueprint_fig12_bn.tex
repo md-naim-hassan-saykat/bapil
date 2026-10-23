@@ -58,7 +58,7 @@
 \def\h{7mm}    % per row
 \def\L{48mm}   % label width
 % header
-\foreach \yr/\s in {বছর ১ (২০২৭)/0,বছর ২ (২০২৮)/12,বছর ৩ (২০২৯)/24} {
+\foreach \yr/\s in {বছর ১ (২০২৭-২৮)/0,বছর ২ (২০২৮-২৯)/12,বছর ৩ (২০২৯-৩০)/24} {
   \fill[band2] (\L+\s*\x,0) rectangle (\L+\s*\x+12*\x,6mm);
   \node[font=\bfseries\footnotesize] at (\L+\s*\x+6*\x,3mm) {\yr};
 }

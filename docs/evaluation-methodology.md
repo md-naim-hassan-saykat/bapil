@@ -38,9 +38,9 @@ Every metric is reported with a 95% interval, by language and by document type; 
 
 ## 4. What has been measured: the demonstration evaluation
 
-The reference implementation includes a small bilingual question set (`implementation/benchmarks/demo_questions.json`: 24 answerable and 6 out-of-scope questions) that the build runs against a corpus of the White Paper, the Executive Summary, the Blueprint and the Summary (8 documents, about 1,700 passages). The latest build gave Recall@10 of 0.88 (21 of 24) and 6 of 6 correct abstentions; the exact figures are regenerated at every build and printed in Blueprint Section 11.5.
+The reference implementation includes a small bilingual question set (`implementation/benchmarks/demo_questions.json`: 24 answerable and 6 out-of-scope questions) that the build runs against a corpus of the White Paper, the Executive Summary, the Blueprint and the Summary (8 documents, about 1,800 passages). The latest build gave Recall@10 of 0.92 (22 of 24) and 6 of 6 correct abstentions; the exact figures are regenerated at every build and printed in Blueprint Section 11.5.
 
-These are development results, not test results: the author wrote both the questions and the documents, gold headings were updated when the Blueprint was renumbered, and one passage was rewritten during development after it caused a false answer. They show that the evaluation harness works end to end; they say nothing about performance on the national corpus. The result changes when the documents change: in October 2026 it moved from 0.92 to 0.88 after corrections to the legal text, and the gold labels were deliberately not adjusted.
+These are development results, not test results: the author wrote both the questions and the documents, gold headings were updated when the Blueprint was renumbered, and one passage was rewritten during development after it caused a false answer. They show that the evaluation harness works end to end; they say nothing about performance on the national corpus. The result changes when the documents change: in October 2026 it moved from 0.92 to 0.88 after corrections to the legal text and back to 0.92 after the review revisions, and the gold labels were deliberately not adjusted.
 
 ## 5. Is a dedicated Bangla model needed?
 

@@ -7,6 +7,9 @@ These documents support the consultation steps in Section 21.3 of the Technical 
 | One-page briefing note | [briefing-note_en.md](briefing-note_en.md) | [briefing-note_bn.md](briefing-note_bn.md) | Opens a meeting with officials, a university or a funder. All figures come from the Blueprint and `budget_model.py` |
 | Letter of commitment and expression of interest from a candidate host | [letter-host-institution_en.md](letter-host-institution_en.md) | [letter-host-institution_bn.md](letter-host-institution_bn.md) | The "signed letter of commitment" requested as evidence in the open host call (Blueprint Section 5.2, Table 13). Non-binding; it does not select a host |
 | Letter of intent from the ICT Division | [letter-ict-division_en.md](letter-ict-division_en.md) | [letter-ict-division_bn.md](letter-ict-division_bn.md) | Shows what decisions D1 to D6 would mean in practice. Non-binding; it commits no public funds |
+| Request for expert review | [reviewer-request_en.md](reviewer-request_en.md) | [reviewer-request_bn.md](reviewer-request_bn.md) | Asks a named expert to review specific chapters in two to three hours |
+| Reviewer comment form | [review-comment-form.md](review-comment-form.md) | Not needed | One row per comment with severity; consent to be named; declaration of interests; seven overall questions |
+| Checklist for Bangladesh legal counsel | [counsel-checklist.md](counsel-checklist.md) | Not needed | Scope of the legal review in Section 14.3: what is already established from official sources, and 13 questions (Annex V, U1 to U3 and U15) |
 | Consultation plan | [consultation-plan.md](consultation-plan.md) | Not needed (working plan) | Stakeholders, sequence, principles and indicators for Q4 2026 to Q2 2027 |
 
 **Before sending anything**

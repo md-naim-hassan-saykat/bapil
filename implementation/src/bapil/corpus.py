@@ -29,7 +29,7 @@ class Document:
     sha256: str
     lang: str
     publisher: str = "BAPIL"
-    data_class: str = "P0"
+    data_class: str = "DC0"
     retrieved: str = ""
     n_passages: int = 0
 

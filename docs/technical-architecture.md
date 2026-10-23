@@ -4,10 +4,10 @@ A short guide to the proposed BAPIL architecture and to what exists in code toda
 
 ## 1. Design principles
 
-* **Public data first.** The first corpus is documents the state has already published (data class P0). Higher data classes need agreements, a DPIA and ERRC approval; class P3 is never used.
+* **Public data first.** The first corpus is documents the state has already published (data class DC0). Higher data classes need agreements, a DPIA and ERRC approval; class P3 is never used.
 * **Retrieve, cite or abstain.** Answers are built from retrieved passages, every sentence carries a citation to an official source, and the service declines to answer when the evidence is weak. This is a design rule and an acceptance criterion measured by citation precision (target at least 0.95), not a guarantee.
 * **Advice, not decisions.** No system decides about individuals; a person reviews every output.
-* **Open and modular.** Open-source components where possible, hosting in Bangladesh for data above class P0, open publication of code and evaluations.
+* **Open and modular.** Open-source components where possible, hosting in Bangladesh for data above class DC0, open publication of code and evaluations.
 * **Gate before scale.** Nothing moves from research to advisory or operational use without passing a documented lifecycle gate (G0 to G5).
 
 ## 2. Components (Blueprint Table 19)
@@ -35,7 +35,7 @@ Stage 0 starts with lexical and metadata search (also the transparent fallback),
 
 ## 4. Security, hosting and logging
 
-Security follows the six NIST CSF 2.0 functions; requirements cover hosting in Bangladesh for data above P0 (NFR-02), availability of at least 99% once the recovery site exists in Year 2 (NFR-04), tamper-evident audit logs, role-based access with multi-factor authentication, software bills of materials and pinned dependencies (Chapter 10).
+Security follows the six NIST CSF 2.0 functions; requirements cover hosting in Bangladesh for data above DC0 (NFR-02), availability of at least 99% once the recovery site exists in Year 2 (NFR-04), tamper-evident audit logs, role-based access with multi-factor authentication, software bills of materials and pinned dependencies (Chapter 10).
 
 ## 5. The reference implementation
 

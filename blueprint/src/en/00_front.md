@@ -94,7 +94,7 @@ This Blueprint is a proposal. To avoid confusing what exists with what is planne
 | Element | Status at the time of writing (October 2026) |
 |---|---|
 | Institution, Steering Board, ERRC and TAB | Design recommendation. Nothing has been approved, constituted or funded |
-| Legal analysis | Summary based on press reports and secondary legal commentary. The gazetted texts and their commencement provisions have not been reviewed; confirmation by qualified Bangladesh counsel is required |
+| Legal analysis | Numbers, titles and Gazette dates of the 2026 Acts confirmed from official sources; provisions read from the official laws database texts, because the Gazette copies could not be read automatically; policy claims from press reports. Confirmation by qualified Bangladesh counsel is required in Phase 0 |
 | Reference implementation | Research prototype (package version 0.1.0) with 49 unit tests passing locally on Python 3.13. It is to be issued in repository release v1.1.0 with this Blueprint; readers can check whether the release is listed at <https://github.com/md-naim-hassan-saykat/bapil/releases>. If it is not listed, the code is not yet public. Not a production system; not tested with users |
 | BanglaPolicyQA benchmark | Planned. Protocol and annotation guidelines exist; no questions have been written |
 | Evaluation thresholds | Proposed targets. No pilot results exist |
@@ -114,7 +114,7 @@ Items that remain unresolved, with their owners and how they will be resolved, a
 
 **What is built first.** In its first year BAPIL delivers a bilingual policy search tool designed so that its answers cite official sources or abstain, with citation precision measured against a target of at least 0.95 (pilot P1), five years of budget allocations as open data (P2), the open BanglaPolicyQA benchmark (P4), a charter with an independent Ethics and Risk Review Committee, a public transparency register of AI systems, and training for 100 officials.
 
-**How risk is controlled.** Public data first; advice, not decisions; no surveillance. Every system is placed in a risk tier (T0 prohibited to T3 high) and must pass lifecycle gates (G0 to G5) before it moves forward. The Ethics and Risk Review Committee has a binding veto over tier T2 and T3 work.
+**How risk is controlled.** Public data first; advice, not decisions; no surveillance. Every system is placed in a risk tier (T0 prohibited to T3 high) and must pass lifecycle gates (G0 to G5) before it moves forward. The Ethics and Risk Review Committee has a veto over tier T2 and T3 work, binding on BAPIL and on the host as far as its statutes allow.
 
 **What already exists, and what does not.** A small, tested reference implementation of the core components (bilingual normalisation and search, cited answers with abstention, risk-tier assessment, the AI system register, evaluation and a tamper-evident audit log) is issued with this Blueprint in GitHub release v1.1.0 and archived with the Blueprint’s Zenodo record, which is published only after that release exists (Annex D). It is a research prototype, not a production system. The institution, the pilots, the benchmark and the funding do not yet exist; they are what this Blueprint proposes.
 

@@ -3,10 +3,13 @@
 """Indicative 36-month budget model for the BAPIL Technical Blueprint (Chapter 17, Annex Q).
 
 Every figure in Tables 49, 50, 61 and 62 of the Blueprint is computed here from stated
-assumptions, so that the feasibility and costing study (Deliverable D1.3) can change an
+assumptions, so that the Phase 0 feasibility and costing study (Section 15.1) can change an
 assumption and regenerate the budget. Amounts are in Bangladeshi taka (Tk);
 1 crore = 10,000,000 and 1 lakh = 100,000. All figures are planning estimates, not
 quotations and not approved funding.
+
+Reference numbers in comments are source keys of blueprint/src/refs_new.md, not the numbers
+printed in the Blueprint; blueprint/review/REFERENCE_NUMBERS.md maps one to the other.
 
 Run: python3 budget_model.py              # print the budget, scenarios, bridge and sensitivity
      python3 budget_model.py --csv DIR    # also write the same figures as CSV files to DIR
@@ -56,7 +59,7 @@ LEGACY = {
 # sets basic pay from Tk 20,000 (grade 20) to Tk 156,000 (grade 1); research contracts for
 # scarce AI skills are assumed to pay above the equivalent grade. Reported market pay for AI and
 # ML engineers in Dhaka (April 2026): Tk 70,000 to 110,000 a month at mid level and Tk 120,000
-# to 200,000 at senior level, before provident fund and bonuses (ref 160).
+# to 200,000 at senior level, before provident fund and bonuses (source key 160 in refs_new.md).
 MONTHLY_COST = {
     "Director and principal investigator": 300_000,
     "Policy research lead and analysts": 150_000,
@@ -86,10 +89,10 @@ FTE = {
 
 LANGUAGE_EDITORS = (1_200_000, 1_400_000, 1_400_000)   # part-time Bangla editors, Year 1 prices
 FELLOWS = (6, 10, 12)                                  # graduate fellows per year
-FELLOW_STIPEND_MONTHLY = 40_000                        # equals a public university PhD fellowship (ref 161)
+FELLOW_STIPEND_MONTHLY = 40_000                        # equals a public university PhD fellowship (source key 161 in refs_new.md)
 
 # Equipment in US dollars (one-time): servers, GPU inference servers (L40S class), storage.
-# Checked on 22 October 2026 (Table 49, refs 155 to 159): an L40S card cost about USD 7,100
+# Checked on 22 October 2026 (Table 49; source keys 155 to 159 in refs_new.md): an L40S card cost about USD 7,100
 # (lowest marketplace average, September 2026) to USD 8,050 (retail), so two cards and a
 # GPU-capable host of about USD 10,000 make one USD 25,000 inference server; Dell's list price
 # for a base two-socket server was about USD 16,000 in August 2026. At list prices equipment
@@ -100,7 +103,7 @@ EQUIPMENT_USD = (
     1 * 12_000 + 12_000,              # Year 3: replacement and storage growth
 )
 HOSTING_OPS = (2_500_000, 3_200_000, 3_800_000)  # data-centre space, power, bandwidth, licences, development cloud
-# One 2 to 7 kW colocation rack in a domestic facility: about Tk 100,000 to 160,000 a month (July 2026, ref 155)
+# One 2 to 7 kW colocation rack in a domestic facility: about Tk 100,000 to 160,000 a month (July 2026, source key 155)
 
 # Data and annotation
 BENCHMARK_ITEMS = (500, 800, 700)       # answerable BanglaPolicyQA questions per year (2,000 by month 30)
@@ -277,7 +280,7 @@ def sensitivity():
 def bridge():
     """Step-by-step reconciliation from the initial planning estimate (Tk 18.49 crore) to the base case."""
     steps = [
-        ("Initial planning estimate made while drafting (constant prices, full staffing from month 1, no separate contingency)",
+        ("Initial planning estimate made while drafting (Year 2 and 3 amounts with implicit price growth, full staffing from month 1, no separate contingency)",
          dict(legacy_amounts=True, new_eval_items=False, escalation=0.0, ramp_y1=1.0, contingency_rate=0.0)),
         ("Year 2 and 3 amounts restated at Year 1 prices",
          dict(new_eval_items=False, escalation=0.0, ramp_y1=1.0, contingency_rate=0.0)),
@@ -443,16 +446,37 @@ FUNDING_SOURCES = [
     "Industry and philanthropy (open benchmarks, fellowships)",
 ]
 FUNDING_RANGES = {   # Table 51, per cent (low, high)
+    # Year 1 (Phase 1): only sources that can be committed before Month 1 (Section 17.4)
+    "Y1": ((70, 75), (0, 0), (25, 30), (0, 0), (0, 0)),
     "H1": ((30, 40), (20, 30), (20, 30), (0, 0), (5, 10)),
     "H2": ((40, 50), (15, 25), (15, 20), (5, 10), (5, 10)),
     "H3": ((45, 55), (10, 20), (5, 10), (15, 25), (5, 10)),
 }
 FUNDING_SHARES = {   # indicative point within each range; each horizon adds to 100
+    "Y1": (70, 0, 30, 0, 0),
     "H1": (35, 25, 30, 0, 10),
     "H2": (45, 20, 20, 7, 8),
     "H3": (50, 15, 7, 20, 8),
 }
-START_YEAR = 2027
+START_YEAR = 2027   # Year 1 = FY2027-28 (Month 1 = July 2027, after Phase 0); years are labelled by their first calendar year
+
+# Phase 0 (preparatory, about six months before Month 1; Section 15.1, Table 65): not part of the 36-month budget
+PHASE0 = {
+    "Independent legal review (Annex V, U1 to U3 and U15)": 1_000_000,
+    "Independent feasibility and costing study (equipment quotations, host salary scale and overheads)": 2_000_000,
+    "Open host call and independent selection panel": 400_000,
+    "Consultations with data custodians on reuse terms (Decision D3)": 300_000,
+    "Part-time coordinator (0.5 FTE for six months)": 270_000,
+}
+PHASE0_CONTINGENCY = 0.10
+
+
+def phase0():
+    """Phase 0 items and total (Tk), including a 10% contingency."""
+    items = dict(PHASE0)
+    sub = sum(items.values())
+    items["Contingency (10%)"] = sub * PHASE0_CONTINGENCY
+    return items, sum(items.values())
 
 
 def _horizon(year):
@@ -486,7 +510,7 @@ def funding_by_source(p=None):
     for key, a, b in STAGES:
         amounts = [0.0] * len(FUNDING_SOURCES)
         for y in range(a, b + 1):
-            shares = FUNDING_SHARES[_horizon(START_YEAR + y)]
+            shares = FUNDING_SHARES["Y1" if y == 0 else _horizon(START_YEAR + y)]
             for i, sh in enumerate(shares):
                 amounts[i] += years[y] * sh / 100
         out[key] = amounts
@@ -515,6 +539,7 @@ def main():
     print("Unrounded total: Tk %s; sum of rounded annual totals: %.2f crore"
           % (format(round(total), ","), sum(round(crore(x), 2) for x in by_year)))
     print("Total in US dollars: %.2f million" % (total / BASE["usd_to_bdt"] / 1e6))
+    print("Phase 0 (before Month 1, separate): Tk %.2f crore" % crore(phase0()[1]))
     one, rec = one_time_recurring()
     print("One-time direct:  ", [round(crore(x), 2) for x in one], round(crore(sum(one)), 2))
     print("Recurring direct: ", [round(crore(x), 2) for x in rec], round(crore(sum(rec)), 2))
@@ -571,6 +596,8 @@ def write_csv(outdir):
     w("funding_by_source_and_stage.csv", ["source", "phase1_tk", "phase2_tk", "scaleup_tk", "total_tk"],
       [[src] + [round(fb[k][i], 2) for k, _, _ in STAGES] + [round(sum(fb[k][i] for k, _, _ in STAGES), 2)]
        for i, src in enumerate(FUNDING_SOURCES)])
+    p0, p0t = phase0()
+    w("phase0_budget.csv", ["item", "tk"], [[k, round(v, 2)] for k, v in p0.items()] + [["Total", round(p0t, 2)]])
     jb = jobs()
     keys = list(jb[0].keys())
     w("jobs_and_skills.csv", ["measure"] + ["year%d" % (y + 1) for y in range(8)],

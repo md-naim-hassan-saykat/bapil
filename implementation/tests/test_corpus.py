@@ -15,7 +15,7 @@ class CorpusTests(unittest.TestCase):
         self.assertEqual(ids, {"policy_en", "policy_bn"})
         for d in self.docs:
             self.assertEqual(len(d.sha256), 64)
-            self.assertEqual(d.data_class, "P0")
+            self.assertEqual(d.data_class, "DC0")
 
     def test_passages_have_ids_headings_and_language(self):
         p = [x for x in self.passages if x.doc_id == "policy_bn"][0]

@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://github.com/md-naim-hassan-saykat/bapil/implementation/schemas/ai_system_record.schema.json",
   "title": "BAPIL AI system record",
-  "description": "Entry in the BAPIL AI system register (Blueprint Annex C.1). Tier T0 systems cannot be registered; T3 systems may exist only as research prototypes; P3 data is excluded.",
+  "description": "Entry in the BAPIL AI system register (Blueprint Annex C.1). Tier T0 systems cannot be registered; T3 systems may exist only as research prototypes; DC3 data is excluded.",
   "type": "object",
   "required": [
     "system_id",
@@ -109,9 +109,9 @@
       "items": {
         "type": "string",
         "enum": [
-          "P0",
-          "P1",
-          "P2"
+          "DC0",
+          "DC1",
+          "DC2"
         ]
       },
       "minItems": 1

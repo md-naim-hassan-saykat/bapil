@@ -48,3 +48,20 @@ Blueprint numbers are those of the build of 22 October 2026; `REFERENCE_NUMBERS.
 | 90 | 14 | Cybersecurity Framework (CSF) 2.0 | Source opened | OK (NIST CSWP 29, 26 February 2024) |
 | 94 | 26 | Government AI Readiness Index 2025 | Source opened | OK; it is the 2025 index, so the 2023 ranking in Table 4 now cites the 2023 report (new reference) |
 | 98 | 23 | The Sustainable Development Goals Report 2024 | Source opened | OK (28 June 2024) |
+
+## Addendum: entries queried by the author on 23 October 2026
+
+The author pasted ten entries from the Bangla Blueprint of the build of 22 October 2026 (`dist/zenodo/`). Numbers changed after the gazette texts and the review response were integrated. The current numbers are below.
+
+| Number on 22 Oct | Current number | Source key | Entry | Check on 23 October 2026 | Result |
+|---:|---:|---:|---|---|---|
+| ১২ | 14 | 125 | Draft National AI Policy 2026-2030, version 2.0 (aipolicy.gov.bd) | Site refuses automated access | Cited only for the listing and date of version 2.0. Content still described from press reports; unresolved item U18 |
+| ৩৮ | Not cited | 116 | Azam, SSRN 2026 | Not applicable | No longer cited, because the official texts (keys 162 to 167) replaced the secondary source |
+| ৬০ | 63 | 151 | Digital India Corporation, recruitment notice | Source opened | OK. The notice is issued by the India AI Division on a contract basis, and appointees "shall not derive any right or claim for permanent appointment", as stated in Section 5.2 |
+| ৬৮ | 71 | 101 | Robertson and Zaragoza 2009 | DOI entry unchanged | OK |
+| ৭৯ | 82 | 134 | Cormack, Clarke and Büttcher 2009 | PDF text layer checked | OK. Printed as "CORMACK G V, CLARKE C L A". A pasted copy reading "CORMACKG V" comes from the PDF viewer's copy function; the PDF itself has the spaces |
+| ৮১ | 84 | 100 | Gebru et al. 2021 | DOI entry unchanged | OK |
+| ৮৪ | 87 | 130 | Järvelin and Kekäläinen 2002 | DOI entry unchanged | OK. The URL is wrapped across a line in the PDF; the link is intact |
+| ৮৫ | 88 | 99 | Mitchell et al. 2019 | DOI entry unchanged | OK |
+| ৯৫ | 98 | 143 | Greshake et al. 2023 | DOI entry unchanged | OK |
+| ১০৭ | 113 | 110 | Bangladesh Bank, Exchange Rate of Taka | The author reported the page as under maintenance. Retrieved through the web tool on 23 October 2026: USD weighted average rate Tk 123.65 for 19 October 2026. Internet Archive snapshot dated 6 September 2026 | Kept with its access date of 21 October 2026. The budget assumption of Tk 124 per US dollar is consistent. If the page stays unavailable, cite the archived snapshot |

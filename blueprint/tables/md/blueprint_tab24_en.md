@@ -13,7 +13,7 @@
 | source_url | Where the original was obtained | Yes | http://bdlaws.minlaw.gov.bd/... |
 | retrieved | Date retrieved | Yes | 2027-02-01 |
 | reuse_terms | Licence or reuse conditions | No | Government publication; terms confirmed |
-| data_class | P0, P1 or P2 | Yes | P0 |
+| data_class | DC0, DC1 or DC2 | Yes | DC0 |
 | sha256 | Checksum of the original file | Yes | 64 hexadecimal characters |
 | extraction | Method (born digital or OCR), quality score, tool | Yes | ocr, 0.93, tesseract 5 |
 | supersedes | Identifier of an earlier version | No | bd-act-2009-20-v1 |
