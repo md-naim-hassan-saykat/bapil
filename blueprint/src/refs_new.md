@@ -385,7 +385,7 @@ Aid Delivery Methods, Volume 1: Project Cycle Management Guidelines[R/OL].
 Brussels: European Commission, 2004[2026-10-22].
 Available:
 <https://capacity4dev.europa.eu/library/aid-delivery-methods-project-cycle-management-guidelines-europeaid-2004_en>
-(the download requires free registration on the site).
+(the site asks visitors to sign in; registration is free).
 
 [145] UNITED NATIONS DEVELOPMENT GROUP (UNDG).
 Theory of Change: UNDAF Companion Guidance[R/OL].
@@ -539,7 +539,9 @@ Available:
 Archived copies of entries 1692, 1709 and 1710 (Internet Archive, October 2026):
 <https://web.archive.org/web/20261006180929/https://bdlaws.minlaw.gov.bd/act-details-1692.html>,
 <https://web.archive.org/web/20261006213011/https://bdlaws.minlaw.gov.bd/act-details-1709.html>,
-<https://web.archive.org/web/20261002012212/https://bdlaws.minlaw.gov.bd/act-details-1710.html>
+<https://web.archive.org/web/20261002012212/https://bdlaws.minlaw.gov.bd/act-details-1710.html>.
+Copy of entry 1728 in the unofficial index:
+<https://laws.sayed.app/laws/act-1728>
 
 [168] BANGLADESH LEGAL AID AND SERVICES TRUST.
 Statement on the proposed Cyber Security (Amendment) Act, 2026[EB/OL].

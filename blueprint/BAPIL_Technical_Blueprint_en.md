@@ -1309,7 +1309,7 @@ python -m unittest discover -s tests
 
 ## 11.5 Demonstration Results
 
-Running `python -m bapil.cli evaluate benchmarks/demo_questions.json` over a corpus of 1,792 passages from 8 BAPIL documents gives the following results (corpus version `0b7fce00a6ab`):
+Running `python -m bapil.cli evaluate benchmarks/demo_questions.json` over a corpus of 1,792 passages from 8 BAPIL documents gives the following results (corpus version `4ebf35f1d409`):
 
 | Question set | Questions | Recall@5 | Recall@10 | MRR@10 | nDCG@10 |
 |---|---|---|---|---|---|
@@ -3297,7 +3297,9 @@ Available:
 Archived copies of entries 1692, 1709 and 1710 (Internet Archive, October 2026):
 <https://web.archive.org/web/20261006180929/https://bdlaws.minlaw.gov.bd/act-details-1692.html>,
 <https://web.archive.org/web/20261006213011/https://bdlaws.minlaw.gov.bd/act-details-1709.html>,
-<https://web.archive.org/web/20261002012212/https://bdlaws.minlaw.gov.bd/act-details-1710.html>
+<https://web.archive.org/web/20261002012212/https://bdlaws.minlaw.gov.bd/act-details-1710.html>.
+Copy of entry 1728 in the unofficial index:
+<https://laws.sayed.app/laws/act-1728>
 
 [43] THE FINANCIAL EXPRESS.
 Bangladesh amends cybersecurity law, drops online gambling clause[EB/OL].
@@ -3362,11 +3364,9 @@ Available:
 
 [53] \* INFOCOMM MEDIA DEVELOPMENT AUTHORITY (IMDA), AI VERIFY FOUNDATION (AIVF).
 Model AI Governance Framework for Generative AI: Fostering a Trusted Ecosystem[EB/OL].
-Singapore: Infocomm Media Development Authority and AI Verify Foundation, 2024[2026-10-22].
+Singapore: Infocomm Media Development Authority and AI Verify Foundation, 2024[2026-10-23].
 Available: 
-<https://aiverifyfoundation.sg/wp-content/uploads/2024/05/Model-AI-Governance-Framework-for-Generative-AI-May-2024-1-1.pdf>.
-Archived copy of the publication page (Internet Archive, 2026-10-04):
-<https://web.archive.org/web/20261004141910/https://aiverifyfoundation.sg/resources/mgf-gen-ai/>
+<https://aiverifyfoundation.sg/resources/mgf-gen-ai/>
 
 [54] \* ESTONIAN BUSINESS AND INNOVATION AGENCY (e-Estonia).
 X-Road: The Backbone of e-Estonia[EB/OL].
@@ -3791,7 +3791,7 @@ Aid Delivery Methods, Volume 1: Project Cycle Management Guidelines[R/OL].
 Brussels: European Commission, 2004[2026-10-22].
 Available:
 <https://capacity4dev.europa.eu/library/aid-delivery-methods-project-cycle-management-guidelines-europeaid-2004_en>
-(the download requires free registration on the site).
+(the site asks visitors to sign in; registration is free).
 
 [120] OECD DAC NETWORK ON DEVELOPMENT EVALUATION.
 Better Criteria for Better Evaluation: Revised Evaluation Criteria Definitions and Principles for Use[R/OL].
