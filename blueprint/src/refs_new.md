@@ -166,7 +166,9 @@ Available:
 Exchange Rate of Taka[EB/OL].
 Dhaka: Bangladesh Bank, 2026[2026-10-21].
 Available:
-<https://www.bb.org.bd/en/index.php/econdata/exchangerate>
+<https://www.bb.org.bd/en/index.php/econdata/exchangerate>.
+Archived copy (Internet Archive, 2026-09-06):
+<https://web.archive.org/web/20260906143127/https://www.bb.org.bd/en/index.php/econdata/exchangerate>
 
 [111] MODAL LABS.
 How much does it cost to run NVIDIA L40S GPUs in 2025?[EB/OL].
@@ -257,7 +259,9 @@ Available:
 Bangladesh National AI Policy 2026-2030, Draft v2, February 9, 2026[EB/OL].
 Dhaka, 2026-02-09[2026-10-22].
 Available:
-<https://aipolicy.gov.bd/docs/national-ai-policy-bangladesh-2026-2030-draft-v2.0.pdf>
+<https://aipolicy.gov.bd/docs/national-ai-policy-bangladesh-2026-2030-draft-v2.0.pdf>.
+Archived copy (Internet Archive, 2026-05-27):
+<https://web.archive.org/web/20260527140701/https://aipolicy.gov.bd/docs/national-ai-policy-bangladesh-2026-2030-draft-v2.0.pdf>
 
 [126] MUBASHIRA N.
 A Statute Without a Floor: Data Protection and the Case for Constitutional Privacy in Bangladesh[EB/OL].
@@ -421,7 +425,9 @@ Available:
 Recruitment notice: Manager (General Administration), India AI, on contract basis[EB/OL].
 New Delhi: Digital India Corporation, 2025[2026-10-22].
 Available:
-<https://negd.gov.in/wp-content/uploads/2025/02/Manager-Gen.-Admin-India-AI.pdf>
+<https://negd.gov.in/wp-content/uploads/2025/02/Manager-Gen.-Admin-India-AI.pdf>.
+Also listed at:
+<https://dic.gov.in/jobs/manager-general-administration/>
 
 [152] CABINET DIVISION, GOVERNMENT OF BANGLADESH.
 Letter on the absorption of development-project staff into revenue posts, following Appellate Division judgment in Civil Appeal No. 460 of 2017 (memo no. 00.00.0000.111.04.102.20.38), 2020-03-03[EB/OL].

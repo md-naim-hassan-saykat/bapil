@@ -8,23 +8,23 @@ Files listed: 764.
 
 | File | Bytes | SHA-256 |
 |---|---:|---|
-| `releases/v1.1/BAPIL_Blueprint_Summary_bn.pdf` | 348323 | `f3504ec75be043c962a1bceff0904dd8d5b51008366f7e35e44030a1ee04f24c` |
-| `releases/v1.1/BAPIL_Blueprint_Summary_en.pdf` | 182512 | `0b74fd023d306a8c3d2c9f19aad28bb719932cefb806d81da373b98f631cb568` |
-| `releases/v1.1/BAPIL_Decision_Memo_bn.pdf` | 76564 | `d25747b863638604e4da35e9b3724c6f83b6b09076dccad60cd9e8ce7ef8bf64` |
-| `releases/v1.1/BAPIL_Decision_Memo_en.pdf` | 45075 | `b45886de55f70790708dbaebe77a5d4eb5fae75b16761909d90ee0751567f12a` |
-| `releases/v1.1/BAPIL_Technical_Blueprint_bn.pdf` | 1962653 | `3e54f6c0aa81d2915a5b32f989644c31e2254163b73031a1474ec086eebcf453` |
-| `releases/v1.1/BAPIL_Technical_Blueprint_en.pdf` | 1367863 | `a13b6dc926c04755299fae953e323f85a9bc935f3ca16ab54633a00a5f2cd57a` |
+| `releases/v1.1/BAPIL_Blueprint_Summary_bn.pdf` | 348822 | `d7f7d1c6a538db5695e26e5cb84725ed62e59d5f12e5e9b05bb1b94a1e0c7f67` |
+| `releases/v1.1/BAPIL_Blueprint_Summary_en.pdf` | 182925 | `760b31d3fcd4c444051a0c4ada5bc524d918dc3e4f44063bfdd11d8dda43c663` |
+| `releases/v1.1/BAPIL_Decision_Memo_bn.pdf` | 76125 | `63fa3724cb1b545399924d083f049574c889774c4e5c9ae4afbd2c5678bf6140` |
+| `releases/v1.1/BAPIL_Decision_Memo_en.pdf` | 44737 | `9afb7f4c71e8fec597a04cdf336efea9f1d949a766197cfdd2abe97bfb71f5cf` |
+| `releases/v1.1/BAPIL_Technical_Blueprint_bn.pdf` | 1963910 | `97b114c76c4a509c3b81671a56ff888ba1d7a55c57b3731d2325c3bc16c244e3` |
+| `releases/v1.1/BAPIL_Technical_Blueprint_en.pdf` | 1368892 | `963e1b144a48210cadc67efc8fae691b0c621e1cf0247ba06f5d542d794190b2` |
 
 ## Assembled Markdown editions (6 files)
 
 | File | Bytes | SHA-256 |
 |---|---:|---|
-| `blueprint/BAPIL_Blueprint_Summary_bn.md` | 53512 | `fec3bc6e13ec722518d59fc751ac6401e81afbafbbdbc999a8c26b96d1b13341` |
-| `blueprint/BAPIL_Blueprint_Summary_en.md` | 23959 | `e2ff54e2865d2399428bdf3e464cdb09f96a041262d8ef83efe275ea78c75b46` |
-| `blueprint/BAPIL_Decision_Memo_bn.md` | 12526 | `b938c70eb080e1ea836a566d113efde3427400809d349c85255580bb923dd7a3` |
-| `blueprint/BAPIL_Decision_Memo_en.md` | 5663 | `fc489739671688a0c227a8fd487a339bb500832eedbc7bcca61c0f73d77becf4` |
-| `blueprint/BAPIL_Technical_Blueprint_bn.md` | 829762 | `c1312865ff25d0fec7c654544f0425bfe8d9e6021881d0140c0cd67fcc682275` |
-| `blueprint/BAPIL_Technical_Blueprint_en.md` | 367274 | `9d219da37bab9dff7259ab73983ee9e7ea8feed26f37c7cea926bfa7520b1024` |
+| `blueprint/BAPIL_Blueprint_Summary_bn.md` | 53688 | `17fd51e32c58bd06e71fa772816215e982a671ecce0dc9a29afa8cf28cf5b624` |
+| `blueprint/BAPIL_Blueprint_Summary_en.md` | 24135 | `0a32f03dd17c9368cc5e468d8faab25caa6ba993d71313603b4dfa789c22004d` |
+| `blueprint/BAPIL_Decision_Memo_bn.md` | 12674 | `0256dcc71e85f4d7b4ca8a22f67038fc1a7c03b7985b09f02055fd8b9190f4b6` |
+| `blueprint/BAPIL_Decision_Memo_en.md` | 5825 | `28109318d1950ca97ab140e9612e563591f7d7b5d369bb2f2636711f3c9c6651` |
+| `blueprint/BAPIL_Technical_Blueprint_bn.md` | 830162 | `fecf62714f0fd2bd30bfc08fc79424ecdb6e380a24b4227a4d6efa3ff6374786` |
+| `blueprint/BAPIL_Technical_Blueprint_en.md` | 367674 | `ebac396518297a54632cfd6c26312e6810097ba9f9cf3d905c64b98519ecc764` |
 
 ## Editable masters and build sources (44 files)
 
@@ -32,8 +32,8 @@ Files listed: 764.
 |---|---:|---|
 | `blueprint/src/BAPIL_Blueprint_Summary_bn.src.md` | 32626 | `e5d9288de87fdad2bfa4239642dbd618c9414f9b84ca39e25336e6cc735da253` |
 | `blueprint/src/BAPIL_Blueprint_Summary_en.src.md` | 13226 | `fdd364a64860e0a3b39a88420cfd8025c7f76024bdde1c0d7529d5fa20e73445` |
-| `blueprint/src/BAPIL_Decision_Memo_bn.src.md` | 10755 | `1513f4b7059c41649c7f52e2f656e6a53849518e9e20e93ae85c889bb65cd8ff` |
-| `blueprint/src/BAPIL_Decision_Memo_en.src.md` | 4341 | `9721d391a6788502e984c4c6d324c00979a21f849d4a969160271421d531dff8` |
+| `blueprint/src/BAPIL_Decision_Memo_bn.src.md` | 10727 | `4eee848fd32f6a5995f9ecb4c2d0e406f660799df623a5ddc3d05f39bc7cc655` |
+| `blueprint/src/BAPIL_Decision_Memo_en.src.md` | 4327 | `e58796f25cb42dd8e76c0d1c5de2a7b011d6b683cf617017a5038d6b159c020e` |
 | `blueprint/src/BAPIL_Technical_Blueprint_bn.src.md` | 233 | `710d74e576fcecb941151d6d3345f3a060146620a952f038c65bec4ebca7c7dc` |
 | `blueprint/src/BAPIL_Technical_Blueprint_en.src.md` | 233 | `147f361a2ae12aafe51c567e6749544c81184630e3bb94cd77f642a9067bbddf` |
 | `blueprint/src/assemble.py` | 23613 | `ee074c3dda75baba5dd78e0f5f5ac3d09035cb20ed7bd3f6a458fc13be6d7366` |
@@ -52,7 +52,7 @@ Files listed: 764.
 | `blueprint/src/make_tables.py` | 10886 | `9d11778d545161ed7f77ebed2dc77adda2aa6b16d246a14a4b32bd2c664f2a97` |
 | `blueprint/src/metadata.json` | 2443 | `cd8cf234bcc15cdf2423a59ae67c3d067c398e975b9ea9ebc1b14f58a82df76d` |
 | `blueprint/src/refnum.py` | 5618 | `fe4b7f1aca86e08fc241efbdb888d7b5b306bc0954081e1a23c610916c7338be` |
-| `blueprint/src/refs_new.md` | 21494 | `283f6d72fb449030b6aa3a015caf1595440437fded09ddd392a71c4f8c83b46d` |
+| `blueprint/src/refs_new.md` | 21894 | `4f8f0ec7c40d5c2d9a19caa4e1d5cba4f5fbe0f7f9bae310fa7f40e73a02fe22` |
 | `blueprint/src/tables_a.py` | 69281 | `cd26b84b837e0c56599a9e7de866ea4aac02e34b8717b89466f22d41aaa27246` |
 | `blueprint/src/tables_b.py` | 75717 | `e4bd757aa844daeb7f065eead6cf44787d86acb3ade3f4508de0bc55f4564eb5` |
 | `blueprint/src/tables_c.py` | 65547 | `e425b713aaef205c7e1afa3f502a72234a61ec1f4b1fb2c9246ede87f0be870d` |
@@ -94,7 +94,7 @@ Files listed: 764.
 
 | File | Bytes | SHA-256 |
 |---|---:|---|
-| `blueprint/CHANGES.md` | 28403 | `1356415527cb953cd246dc0d36ea46fda61ef34f2d343609f58d37174d1ba460` |
+| `blueprint/CHANGES.md` | 28846 | `5af3b0950da715ae2d5f4ddbd22ad037f3207f66e26037d763767a17e5bf9474` |
 | `blueprint/QA_REPORT.md` | 22375 | `fb4c1f8d2ec7816b29ebae805b635155aafb2f2cd4d1b491a43e2c244d7b9c30` |
 | `blueprint/README.md` | 10435 | `61e2a21a7771001fd2a4e6399e2c4cb80fd7fb326e4d380182cc0defeeda8fb9` |
 | `blueprint/SOURCES_AND_LICENCES.md` | 3546 | `9d461cad46615590a1621f25a6f5db29585881fe14496c274a8bb7543fcbd123` |
@@ -814,6 +814,6 @@ Files listed: 764.
 | `blueprint/review/PROJECT_AUDIT_REPORT.md` | 21966 | `6ff5d6e754179ce52c8593cc7921475f0b19fee3989e65c1cc9a17d8b18b6d28` |
 | `blueprint/review/README.md` | 1180 | `1eee7846d4dd06e5ce9f36e67ffba77be8706d656cc349125ea294a390732490` |
 | `blueprint/review/REFERENCE_NUMBERS.md` | 9709 | `a5ea20ad99062402166df4a9de215a34b200704629203789f0d15d2aec88d9e2` |
-| `blueprint/review/REFERENCE_VERIFICATION.md` | 9046 | `1105ae23a1eb69ad0dfb4ad7a1a31479da3e006fa6468fa5565f4043312aa673` |
+| `blueprint/review/REFERENCE_VERIFICATION.md` | 10416 | `3fbcf32819323d20a7bef8dffe8d50a69ce1dd942475b27def026285501b8f5b` |
 | `blueprint/review/build_report.sh` | 830 | `6c4f8b84f952e2e4215961a6ea3f38933634f6e7e63278b2c7a52b08cfd80a3b` |
 | `blueprint/review/header-review.tex` | 324 | `ac817daf3c2574a8943357d74ebf46788279cdb5edec3d9b3eb5b6bc58baf0f1` |

@@ -5,7 +5,7 @@ lang: en
 # Decision Memo: A 12-Month Pilot of an AI Policy-Intelligence Capability for Bangladesh
 
 **For the consideration of:** the ICT Division; for information the Planning Commission, Finance Division, Legislative and Parliamentary Affairs Division, BBS and a2i · **From:** Md Naim Hassan Saykat, author of the BAPIL Technical Blueprint · **Date:** {{DATE}}  
-**Basis:** BAPIL Technical Blueprint, Version 1.0 ({{DOI_SHORT}}; <https://github.com/md-naim-hassan-saykat/bapil>). This memo is a separate document, not part of the Blueprint.
+**Basis:** BAPIL Technical Blueprint, Version 1.0 ({{DOI_SHORT}}; <https://github.com/md-naim-hassan-saykat/bapil>). This memo is a separate document, not part of the Blueprint. CC BY 4.0.
 
 **Status.** An independent research proposal, not an official document. No authority has decided anything on BAPIL; no body, host or funding exists.
 
@@ -13,7 +13,7 @@ lang: en
 
 **Proposal.** A university-anchored lab under an MoU with the ICT Division, with a Steering Board and an independent Ethics and Risk Review Committee (ERRC) whose veto binds the host as far as its statutes and the host agreement allow. Year 1 delivers **P1**, a bilingual search tool that cites official sources or abstains, piloted with 30 or more analysts; **P2**, five years of budget allocations as open data; a 500-question open Bangla benchmark; training for 100 officials; and a public transparency register. *Safeguards:* published data first; no profiling of individuals; other personal data only with consent, a DPIA and ERRC approval; a person reviews every output; hosting in Bangladesh.
 
-**Decisions proposed** (summarised from Blueprint Table 57; bodies and timings are proposals).
+**Decisions proposed** (from Blueprint Table 57; bodies and timings are proposals).
 
 | No. | Decision | Proposed responsible body | Proposed timing |
 |----|------------------------------------------------|----------------------|------------|
@@ -31,8 +31,6 @@ lang: en
 **Month-12 targets (not results).** P1 passes its gate (30 or more users, Recall@10 at least 0.85, citation precision at least 0.95, usefulness at least 4.0 of 5); 500 benchmark questions; five years of budget data; 100 officials trained.
 
 **Key risks.** Data access (narrower corpus, assisted download); wrong answers (citations, abstention, human review); mission creep (charter prohibitions, independent veto); funding delay (only Phase 0 funded before D2).
-
-*CC BY 4.0.*
 
 \footnotesize\setlength{\parskip}{2pt}
 

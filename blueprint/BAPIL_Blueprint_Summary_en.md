@@ -211,7 +211,9 @@ Available:
 Bangladesh National AI Policy 2026-2030, Draft v2, February 9, 2026[EB/OL].
 Dhaka, 2026-02-09[2026-10-22].
 Available:
-<https://aipolicy.gov.bd/docs/national-ai-policy-bangladesh-2026-2030-draft-v2.0.pdf>
+<https://aipolicy.gov.bd/docs/national-ai-policy-bangladesh-2026-2030-draft-v2.0.pdf>.
+Archived copy (Internet Archive, 2026-05-27):
+<https://web.archive.org/web/20260527140701/https://aipolicy.gov.bd/docs/national-ai-policy-bangladesh-2026-2030-draft-v2.0.pdf>
 
 [5] LEGISLATIVE AND PARLIAMENTARY AFFAIRS DIVISION.
 ২০২৬ সনে প্রণীত আইনসমূহ (Acts enacted in 2026)[EB/OL].
