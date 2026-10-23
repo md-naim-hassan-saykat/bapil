@@ -1322,7 +1322,7 @@ python -m unittest discover -s tests
 
 ## ১১.৫ প্রদর্শনী ফলাফল
 
-`python -m bapil.cli evaluate benchmarks/demo_questions.json` কমান্ডটি ৮টি BAPIL নথির ১,৭৯২টি অনুচ্ছেদের কর্পাসে চালালে নিচের ফলাফল পাওয়া যায় (কর্পাস সংস্করণ `e93f8349e1aa`):
+`python -m bapil.cli evaluate benchmarks/demo_questions.json` কমান্ডটি ৮টি BAPIL নথির ১,৭৯২টি অনুচ্ছেদের কর্পাসে চালালে নিচের ফলাফল পাওয়া যায় (কর্পাস সংস্করণ `49cc17643bd0`):
 
 | প্রশ্নসেট | প্রশ্ন | Recall@5 | Recall@10 | MRR@10 | nDCG@10 |
 |---|---|---|---|---|---|
@@ -3163,7 +3163,7 @@ Official Journal of the European Union, 2024[2026-10-22].
 Available: 
 <https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng>
 
-[২১] \* TREASURY BOARD OF CANADA SECRETARIAT (TBS).
+[২১] \* TREASURY BOARD OF CANADA SECRETARIAT.
 Directive on Automated Decision-Making[EB/OL].
 Ottawa: Government of Canada, 2025[2026-06-18].
 Available: 
@@ -3301,9 +3301,12 @@ Available:
 [৪২] LEGISLATIVE AND PARLIAMENTARY AFFAIRS DIVISION.
 Laws of Bangladesh: texts of Acts No. 63, 80, 81 and 99 of 2026[DB/OL].
 Dhaka: Ministry of Law, Justice and Parliamentary Affairs, 2026[2026-10-22].
-Database entries 1692, 1709, 1710 and 1728; read through the public mirror laws.sayed.app, because the official site does not permit automated retrieval.
+Database entries 1692, 1709, 1710 and 1728. The texts were read through laws.sayed.app, an unofficial index built from this database, because the official site does not permit automated retrieval.
 Available:
-<http://bdlaws.minlaw.gov.bd/act-details-1692.html>
+<https://bdlaws.minlaw.gov.bd/act-details-1692.html>,
+<https://bdlaws.minlaw.gov.bd/act-details-1709.html>,
+<https://bdlaws.minlaw.gov.bd/act-details-1710.html>,
+<https://bdlaws.minlaw.gov.bd/act-details-1728.html>
 
 [৪৩] THE FINANCIAL EXPRESS.
 Bangladesh amends cybersecurity law, drops online gambling clause[EB/OL].
@@ -3360,9 +3363,9 @@ Abu Dhabi: Government of the United Arab Emirates, 2017[2026-10-22].
 Available: 
 <https://staticcdn.mbzuai.ac.ae/mbzuaiwpprd01/2022/07/UAE-National-Strategy-for-Artificial-Intelligence-2031.pdf>
 
-[৫২] \* TREASURY BOARD OF CANADA SECRETARIAT (TBS).
-Algorithmic Impact Assessment (AIA) Tool[EB/OL].
-Ottawa: Government of Canada, 2026[2026-10-22].
+[৫২] \* TREASURY BOARD OF CANADA SECRETARIAT.
+Algorithmic Impact Assessment[EB/OL].
+Ottawa: Government of Canada, 2026-09-15[2026-10-22].
 Available: 
 <https://www.canada.ca/en/government/system/digital-government/digital-government-innovations/responsible-use-ai/algorithmic-impact-assessment.html>
 
@@ -3501,9 +3504,10 @@ Available:
 
 [৭৪] GOVERNMENT OF THE PEOPLE’S REPUBLIC OF BANGLADESH.
 The Right to Information Act, 2009 (Act No. XX of 2009)[S/OL].
-Dhaka: Legislative and Parliamentary Affairs Division, 2009[2026-10-20].
+Dhaka: Legislative and Parliamentary Affairs Division, 2009[2026-10-23].
+Laws of Bangladesh database entry 1011.
 Available:
-<http://bdlaws.minlaw.gov.bd>
+<https://bdlaws.minlaw.gov.bd/act-details-1011.html>
 
 [৭৫] WORLD WIDE WEB CONSORTIUM (W3C).
 Data Catalog Vocabulary (DCAT), Version 3: W3C Recommendation 22 August 2024[S/OL].
@@ -3793,7 +3797,9 @@ Available:
 Aid Delivery Methods, Volume 1: Project Cycle Management Guidelines[R/OL].
 Brussels: European Commission, 2004[2026-10-22].
 Available:
-<https://capacity4dev.europa.eu/library/aid-delivery-methods-project-cycle-management-guidelines-europeaid-2004_en>
+<https://capacity4dev.europa.eu/library/aid-delivery-methods-project-cycle-management-guidelines-europeaid-2004_en>.
+PDF:
+<https://capacity4dev.europa.eu/media/26853/download/7ce01315-89e5-4f0d-bb4d-830132f00db0_en>
 
 [১২০] OECD DAC NETWORK ON DEVELOPMENT EVALUATION.
 Better Criteria for Better Evaluation: Revised Evaluation Criteria Definitions and Principles for Use[R/OL].

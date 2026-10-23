@@ -158,6 +158,11 @@ WP_CORRECTIONS = {
           "Leading the Way into the Age of Artificial Intelligence: Final Report of Finland’s Artificial Intelligence Programme 2019[R/OL].")],
     64: [("UNIVERSITY OF HELSINKI, REAKTOR.", "UNIVERSITY OF HELSINKI, MINNALEARN."),
          ("Helsinki: University of Helsinki and Reaktor, 2024[", "Helsinki: University of Helsinki and MinnaLearn, 2024[")],
+    # 23 October 2026: "(TBS)" dropped, because the reference lists also use TBS for The Business Standard
+    68: [("TREASURY BOARD OF CANADA SECRETARIAT (TBS).", "TREASURY BOARD OF CANADA SECRETARIAT.")],
+    69: [("TREASURY BOARD OF CANADA SECRETARIAT (TBS).", "TREASURY BOARD OF CANADA SECRETARIAT."),
+         ("Algorithmic Impact Assessment (AIA) Tool[EB/OL].", "Algorithmic Impact Assessment[EB/OL]."),
+         ("Ottawa: Government of Canada, 2026[", "Ottawa: Government of Canada, 2026-09-15[")],
 }
 # Entries whose source page was opened and checked on 22 October 2026 (access date updated)
 WP_VERIFIED_20261022 = {4, 6, 7, 14, 17, 21, 23, 26, 29, 30, 31, 32, 33, 35, 36, 38, 46, 48, 49, 50, 51, 53, 54,

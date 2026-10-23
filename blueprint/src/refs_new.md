@@ -134,9 +134,10 @@ Available:
 
 [105] GOVERNMENT OF THE PEOPLE’S REPUBLIC OF BANGLADESH.
 The Right to Information Act, 2009 (Act No. XX of 2009)[S/OL].
-Dhaka: Legislative and Parliamentary Affairs Division, 2009[2026-10-20].
+Dhaka: Legislative and Parliamentary Affairs Division, 2009[2026-10-23].
+Laws of Bangladesh database entry 1011.
 Available:
-<http://bdlaws.minlaw.gov.bd>
+<https://bdlaws.minlaw.gov.bd/act-details-1011.html>
 
 [106] HOSSAIN S.
 New data laws in Bangladesh: A critique[EB/OL].
@@ -383,7 +384,9 @@ Available:
 Aid Delivery Methods, Volume 1: Project Cycle Management Guidelines[R/OL].
 Brussels: European Commission, 2004[2026-10-22].
 Available:
-<https://capacity4dev.europa.eu/library/aid-delivery-methods-project-cycle-management-guidelines-europeaid-2004_en>
+<https://capacity4dev.europa.eu/library/aid-delivery-methods-project-cycle-management-guidelines-europeaid-2004_en>.
+PDF:
+<https://capacity4dev.europa.eu/media/26853/download/7ce01315-89e5-4f0d-bb4d-830132f00db0_en>
 
 [145] UNITED NATIONS DEVELOPMENT GROUP (UNDG).
 Theory of Change: UNDAF Companion Guidance[R/OL].
@@ -528,9 +531,12 @@ Available:
 [167] LEGISLATIVE AND PARLIAMENTARY AFFAIRS DIVISION.
 Laws of Bangladesh: texts of Acts No. 63, 80, 81 and 99 of 2026[DB/OL].
 Dhaka: Ministry of Law, Justice and Parliamentary Affairs, 2026[2026-10-22].
-Database entries 1692, 1709, 1710 and 1728; read through the public mirror laws.sayed.app, because the official site does not permit automated retrieval.
+Database entries 1692, 1709, 1710 and 1728. The texts were read through laws.sayed.app, an unofficial index built from this database, because the official site does not permit automated retrieval.
 Available:
-<http://bdlaws.minlaw.gov.bd/act-details-1692.html>
+<https://bdlaws.minlaw.gov.bd/act-details-1692.html>,
+<https://bdlaws.minlaw.gov.bd/act-details-1709.html>,
+<https://bdlaws.minlaw.gov.bd/act-details-1710.html>,
+<https://bdlaws.minlaw.gov.bd/act-details-1728.html>
 
 [168] BANGLADESH LEGAL AID AND SERVICES TRUST.
 Statement on the proposed Cyber Security (Amendment) Act, 2026[EB/OL].

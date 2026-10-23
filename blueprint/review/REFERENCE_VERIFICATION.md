@@ -80,3 +80,15 @@ The author then reported that both Indian government links for key 151 were stil
 
 Copied link text showed a space after each hyphen ("wp- content"). The link targets in the PDFs were correct. The gaps came from stretchable space that `xurl` places at break points inside URLs. `\Urlmuskip=0mu` in `src/header-common.tex` removes it. After the rebuild no URL text contains such spaces, no line runs into the margin, and page counts are unchanged.
 
+### Second follow-up on 23 October 2026: five entries queried by the author
+
+| Current number | Source key | Entry | Finding | Fix |
+|---:|---:|---|---|---|
+| 42 | 167 | Laws of Bangladesh database texts of Acts No. 63, 80, 81 and 99 of 2026 | Four database entries were named but only the first was linked, over http. The IDs were confirmed against the database's 2026 list: 1692 Personal Data Protection Act, 1709 National Data Management Act, 1710 Cyber Security Act, 1728 Cyber Security (Amendment) Act. laws.sayed.app describes itself as an unofficial index built from the official database, not a government site | All four official entries linked over https; the index is described accurately |
+| 52 | 69 (White Paper) | Treasury Board of Canada Secretariat, Algorithmic Impact Assessment | The page heading is "Algorithmic Impact Assessment" ("tool" is only in the first sentence); date modified 15 September 2026. "(TBS)" duplicated the abbreviation used for The Business Standard | Title and date corrected; "(TBS)" dropped here and in key 68 (`WP_CORRECTIONS`) |
+| 53 | 53 (White Paper) | IMDA and AI Verify Foundation, generative AI framework | The entry and the PDF text layer read "Fostering a Trusted Ecosystem" (word gap 4.5 pt in English, 6.9 pt in Bangla); "Fosteringa" comes from the PDF viewer's copy function. The PDF opened | No change needed |
+| 74 | 105 | Right to Information Act, 2009 | The link pointed to the home page of the laws database. The Act is database entry 1011. The database also lists the Right to Information (Amendment) Ordinance, 2026 (No. 30 of 2026, entry 1623), noted as lapsed under Article 93(2) of the Constitution | Linked to the Act's own entry; the lapsed ordinance recorded in `docs/legal-references.md` (L13) |
+| 119 | 144 | European Commission (EuropeAid), Project Cycle Management Guidelines | The library page loads but needs JavaScript | Direct PDF link from the same site added |
+
+Also checked: the database records that the Personal Data Protection (Amendment) Ordinance, 2026 (No. 23 of 2026, entry 1616) was repealed by Act No. 63. Its data-residency rule (a synchronised real-time copy in Bangladesh for restricted personal data and critical information infrastructure) is now recorded in `docs/legal-references.md` (L3). Whether the Act carries the rule over remains U3.
+
