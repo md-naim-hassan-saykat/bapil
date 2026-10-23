@@ -6,7 +6,7 @@ This is a working plan prepared by the author. It turns Section 21.3 of the Blue
 
 1. Present the Blueprint as a technical input to national AI policy drafting (D1).
 2. Find at least two candidate host institutions willing to answer an open call (Section 5.2, Table 13).
-3. Agree on a government focal point and on a route to an MoU (D2).
+3. Secure funding for Phase 0 and a government focal point (D5), and agree on the route to an MoU after Phase 0 (D2).
 4. Confirm reuse terms for already-public document collections with their custodians (D3).
 5. Test the main assumptions with experts and the public, and publish what changed (Table 8; Blueprint 1.1). The assumptions to test are:
    - the budget;
@@ -25,13 +25,13 @@ This is a working plan prepared by the author. It turns Section 21.3 of the Blue
 
 | Group | Examples | What we ask | Material | Owner of the record |
 |---|---|---|---|---|
-| Government policy owner | ICT Division; a2i | D1, D2, D4, D5; a focal point | Briefing note; letter of intent template; Summary | Author |
+| Government policy owner | ICT Division; a2i | D1 and D5 (Phase 0 funding, focal point), then D4 and D2 | Briefing note; letter of intent template; Summary | Author |
 | Data custodians | Legislative and Parliamentary Affairs Division; Finance Division; Planning Commission; BBS | D3: reuse terms; a named custodian | Briefing note; Chapter 8; Annex I | Author |
 | National AI policy drafting team | As constituted for Q4 2026 | Consider the Blueprint as one input | Summary; Annex N (contribution to policy elements) | Author |
 | Candidate host institutions | Public and private universities with AI, NLP and Bangla language technology strength | An expression of interest and a letter of commitment | Host letter template; Table 13; Annexes E to G | Author |
 | Related programmes | The AI Hub project; the Bangladesh Hi-Tech Park Authority; national AI skills programmes | A division-of-labour note (Table 65) | Annex W.1; Summary | Author |
-| Development partners and research funders | Bilateral and multilateral partners; research councils | Interest in D5 (costing study) and in co-funding (Table 51) | Briefing note; Chapter 17; Annex W | Author |
-| Experts | AI, NLP, law, public finance, evaluation and data protection specialists | Written review of named chapters | The relevant chapters; comment form | Author |
+| Development partners and research funders | Bilateral and multilateral partners; research councils | Interest in funding Phase 0 (D5) and up to 30% of Year 1 (Table 51) | Briefing note; Chapter 17; Annex W | Author |
+| Experts | AI, NLP, law, public finance, evaluation and data protection specialists | Written review of named chapters | The relevant chapters; review request; comment form | Author |
 | Civil society and the public | Rights groups, journalists, researchers, student groups | Comments in the public comment period | Summary (English and Bangla); repository issue tracker | Author |
 | Industry | Bangladeshi software firms and start-ups | Views on open-source components, procurement and the start-up clauses (Sections 17.6 and 17.7) | Summary; Chapter 17 | Author |
 
@@ -66,10 +66,12 @@ This is a working plan prepared by the author. It turns Section 21.3 of the Blue
 | Candidate host institutions expressing interest | At least 2 |
 | Expert written reviews received | At least 8, covering every Part of the Blueprint |
 | Public comments logged with a response | All |
-| Annex V items closed or updated with evidence | At least 6 of 17 |
+| Annex V items closed or updated with evidence | At least 6 of 18 |
 
 ## 6. Templates in this folder
 
 - [`briefing-note_en.md`](briefing-note_en.md) and [`briefing-note_bn.md`](briefing-note_bn.md): one-page briefing note.
 - [`letter-host-institution_en.md`](letter-host-institution_en.md) and [`letter-host-institution_bn.md`](letter-host-institution_bn.md): letter of commitment and expression of interest for a candidate host.
+- [`reviewer-request_en.md`](reviewer-request_en.md) and [`reviewer-request_bn.md`](reviewer-request_bn.md): request for expert review; [`review-comment-form.md`](review-comment-form.md): comment form (step 4 and the expert indicators).
+- [`counsel-checklist.md`](counsel-checklist.md): scope of the legal review by Bangladesh counsel.
 - [`letter-ict-division_en.md`](letter-ict-division_en.md) and [`letter-ict-division_bn.md`](letter-ict-division_bn.md): letter of intent that the ICT Division could issue.

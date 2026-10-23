@@ -23,8 +23,8 @@ class RegistryTests(unittest.TestCase):
         self.assertTrue(validate(r))
         r = dict(self.records[0], risk_tier="T3", maturity_class="A")
         self.assertTrue(any("T3" in e for e in validate(r)))
-        r = dict(self.records[0], data_classes=["P3"])
-        self.assertTrue(any("P3" in e for e in validate(r)))
+        r = dict(self.records[0], data_classes=["DC3"])
+        self.assertTrue(any("DC3" in e for e in validate(r)))
 
     def test_transparency_register_bilingual(self):
         en = transparency_register(self.records, "en")

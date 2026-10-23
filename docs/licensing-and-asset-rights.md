@@ -21,7 +21,7 @@ The repository `LICENSE` (MIT) covers the **software**. It does not automaticall
 
 | Material | How it is used | Rights position |
 |---|---|---|
-| Government documents (laws, gazettes, budgets, plans) | Cited; future P0 corpus | Reuse terms differ and are not always stated; written confirmation from custodians is a precondition (Decision D3; unresolved item U3) |
+| Government documents (laws, gazettes, budgets, plans) | Cited; future DC0 corpus | Reuse terms differ and are not always stated; written confirmation from custodians is a precondition (Decision D3; unresolved item U3) |
 | Press reports and commentary | Cited with URLs and access dates | Facts and titles only; no substantial text reproduced |
 | Fonts (Noto family, Latin Modern, TeX Gyre Heros, DejaVu Sans Mono) | Embedded as subsets in the PDFs | SIL OFL 1.1, GUST and Bitstream Vera-derived licences allow embedding; the fonts are not redistributed |
 | Build tools (pandoc, TeX Live, poppler, Python) | Used, not distributed | Their own licences |

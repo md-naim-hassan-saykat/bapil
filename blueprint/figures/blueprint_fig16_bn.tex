@@ -61,8 +61,8 @@
 \foreach \c/\col in {0/accentlight,1/accent!30,2/accent!45,3/accent!60} {
   \node[hd, fill=\col] (h\c) at (\L+\c*\C+0.5*\C, 0) {};
 }
-\node[hd, fill=accentlight] at (h0) {\textbf{পর্যায় ১-এর পাইলট}\\বছর ১ (২০২৭)}; \node[hd, fill=accent!30] at (h1) {\textbf{পর্যায় ২}\\বছর ২ ও ৩ (২০২৮ থেকে ২০২৯)};
-\node[hd, fill=accent!45] at (h2) {\textbf{শর্তসাপেক্ষ সম্প্রসারণ}\\বছর ৪ থেকে ৮ (২০৩০ থেকে ২০৩৪)}; \node[hd, fill=accent!60] at (h3) {\textbf{প্রাতিষ্ঠানিকীকরণ}\\২০৩৫ থেকে};
+\node[hd, fill=accentlight] at (h0) {\textbf{ধাপ ১-এর পাইলট}\\বছর ১ (২০২৭-২৮)}; \node[hd, fill=accent!30] at (h1) {\textbf{ধাপ ২}\\বছর ২ ও ৩ (২০২৮-৩০)};
+\node[hd, fill=accent!45] at (h2) {\textbf{শর্তসাপেক্ষ সম্প্রসারণ}\\বছর ৪ থেকে ৮ (২০৩০-৩৫)}; \node[hd, fill=accent!60] at (h3) {\textbf{প্রাতিষ্ঠানিকীকরণ}\\২০৩৫ থেকে};
 \draw[arr, line width=1.2pt] (\L,-9.5mm) -- (\L+4*\C+3mm,-9.5mm);
 \newcommand{\lane}[6]{%
   \fill[band, rounded corners=4pt] (0,-12mm-#1*\R) rectangle (\L+4*\C,-12mm-#1*\R-\R+0.8mm);
@@ -77,10 +77,8 @@
 \lane{3}{বাজেট (কোটি টাকা)}{৪.৭৩}{১৫.৭০}{২১৮.৮৫ (এখন অনুরোধকৃত নয়)}{২০৩৫-এর পর্যালোচনায় নির্ধারিত}
 \fill[band, rounded corners=4pt] (0,-12mm-4*\R) rectangle (\L+4*\C,-12mm-4*\R-\R+0.8mm);
 \node[ln] at (0.5mm,-12mm-4*\R-0.5*\R) {অর্থায়নের মিশ্রণ};
-\fill[accent] ($(\L+0*\C+3mm+0.0000*\C-0.0000*6mm, -12mm-4*\R-0.5*\R-2.6mm)$) rectangle ($(\L+0*\C+3mm+0.3500*\C-0.3500*6mm, -12mm-4*\R-0.5*\R+2.6mm)$);
-\fill[accent!45] ($(\L+0*\C+3mm+0.3500*\C-0.3500*6mm, -12mm-4*\R-0.5*\R-2.6mm)$) rectangle ($(\L+0*\C+3mm+0.6000*\C-0.6000*6mm, -12mm-4*\R-0.5*\R+2.6mm)$);
-\fill[ok!55] ($(\L+0*\C+3mm+0.6000*\C-0.6000*6mm, -12mm-4*\R-0.5*\R-2.6mm)$) rectangle ($(\L+0*\C+3mm+0.9000*\C-0.9000*6mm, -12mm-4*\R-0.5*\R+2.6mm)$);
-\fill[ink!30] ($(\L+0*\C+3mm+0.9000*\C-0.9000*6mm, -12mm-4*\R-0.5*\R-2.6mm)$) rectangle ($(\L+0*\C+3mm+1.0000*\C-1.0000*6mm, -12mm-4*\R-0.5*\R+2.6mm)$);
+\fill[accent] ($(\L+0*\C+3mm+0.0000*\C-0.0000*6mm, -12mm-4*\R-0.5*\R-2.6mm)$) rectangle ($(\L+0*\C+3mm+0.7000*\C-0.7000*6mm, -12mm-4*\R-0.5*\R+2.6mm)$);
+\fill[ok!55] ($(\L+0*\C+3mm+0.7000*\C-0.7000*6mm, -12mm-4*\R-0.5*\R-2.6mm)$) rectangle ($(\L+0*\C+3mm+1.0000*\C-1.0000*6mm, -12mm-4*\R-0.5*\R+2.6mm)$);
 \draw[ink, line width=0.4pt] (\L+0*\C+3mm, -12mm-4*\R-0.5*\R-2.6mm) rectangle (\L+0*\C+\C-3mm, -12mm-4*\R-0.5*\R+2.6mm);
 \fill[accent] ($(\L+1*\C+3mm+0.0000*\C-0.0000*6mm, -12mm-4*\R-0.5*\R-2.6mm)$) rectangle ($(\L+1*\C+3mm+0.4023*\C-0.4023*6mm, -12mm-4*\R-0.5*\R+2.6mm)$);
 \fill[accent!45] ($(\L+1*\C+3mm+0.4023*\C-0.4023*6mm, -12mm-4*\R-0.5*\R-2.6mm)$) rectangle ($(\L+1*\C+3mm+0.6262*\C-0.6262*6mm, -12mm-4*\R-0.5*\R+2.6mm)$);
@@ -95,7 +93,7 @@
 \fill[ink!30] ($(\L+2*\C+3mm+0.9200*\C-0.9200*6mm, -12mm-4*\R-0.5*\R-2.6mm)$) rectangle ($(\L+2*\C+3mm+1.0000*\C-1.0000*6mm, -12mm-4*\R-0.5*\R+2.6mm)$);
 \draw[ink, line width=0.4pt] (\L+2*\C+3mm, -12mm-4*\R-0.5*\R-2.6mm) rectangle (\L+2*\C+\C-3mm, -12mm-4*\R-0.5*\R+2.6mm);
 \node[cell, draw=none, fill=none] at (\L+3.5*\C,-12mm-4*\R-0.5*\R) {সরকারের অংশ আরও বাড়ার প্রত্যাশা (সারণি ৫১)};
-\foreach \c/\t in {1/{মাস ১২-এর পর্যালোচনা ও ব্যয়-নিরূপণ সমীক্ষা},2/{চূড়ান্ত মূল্যায়ন; P1 ও P2 গেট G4 উত্তীর্ণ},3/{২০৩৫-এর কৌশলগত পর্যালোচনা}} {
+\foreach \c/\t in {1/{মাস ১২-এর পর্যালোচনা ও হালনাগাদ বাজেট},2/{চূড়ান্ত মূল্যায়ন; P1 ও P2 গেট G4 উত্তীর্ণ},3/{২০৩৫-এর কৌশলগত পর্যালোচনা}} {
   \node[draw=ink, fill=white, diamond, inner sep=1.8pt] at (\L+\c*\C,-12mm-5*\R-3mm) {};
   \node[font=\scriptsize, anchor=north, text width=\C-6mm, align=center] at (\L+\c*\C,-12mm-5*\R-5mm) {\t};
 }

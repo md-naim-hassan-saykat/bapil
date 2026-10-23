@@ -3,13 +3,13 @@
 | ID | Early-warning indicator | Contingency if the risk occurs | Residual (L/I) | Review frequency |
 |------|------------------------------|----------------------------|------------|----------------|
 | R1 | No government focal point named within 90 days of the request; change of senior sponsors | Continue as a university research lab on public data; seek another sponsor | M/M | Quarterly |
-| R2 | No reply from a custodian within 60 days; bulk access refused | Use documents already online; Right to Information requests; narrow the corpus | M/M | Monthly in Year 1 |
+| R2 | No reply from a custodian within 60 days; bulk access refused | Use documents already online, by assisted manual download where automated retrieval is blocked; Right to Information requests; narrow the corpus | M/M | Monthly in Year 1 |
 | R3 | OCR quality score below 0.9 on more than 20% of pages | Increase manual correction; prioritise born-digital sources | M/L | Each corpus release |
 | R4 | Citation precision below 0.95; reports of wrong answers | Fall back to search-only mode; retrain users | L/H | Each release; monthly in pilots |
-| R5 | Any P2 data found in logs; access anomalies | Suspend P3; notify as the law requires; ERRC review | L/H | Monthly |
+| R5 | Any DC2 data found in logs; access anomalies | Suspend P3; notify as the law requires; ERRC review | L/H | Monthly |
 | R6 | Requests to monitor individuals; scope changes touching tier T0 | ERRC refusal; publish the decision | L/H | At each gate |
 | R7 | Posts vacant for more than 3 months; more than 30% of offers refused | Use fellows and contractors; remote staff | M/M | Quarterly |
-| R8 | No Phase 2 funding commitment by month 18 | Scale down to the core: corpus, benchmark and governance | M/H | Quarterly |
+| R8 | No commitment of Tranche 2 (Phase 2) funding by month 9 | Scale down to the core: corpus, benchmark and governance | M/H | Quarterly |
 | R9 | Overlapping activities in AI Hub project plans | Joint work plan; divide work by function | L/M | Every six months |
 | R10 | A single vendor or model in more than one component without an exit plan | Re-tender; switch model on the benchmark | L/M | At each ADR |
 | R11 | Critical penetration-test findings; intrusion alerts | Isolate; restore from offline backup | L/H | Quarterly tests; continuous monitoring |

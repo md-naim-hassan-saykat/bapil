@@ -220,3 +220,20 @@ The audit corrected legal, institutional and technical statements in both editio
 | Build, tests, evaluation, fonts | Pass | Exit 0; 49 tests passed; Recall@10 0.875 (21 of 24), 6 of 6 abstentions; all fonts embedded; no missing glyphs; typography check passed |
 | Engagement PDFs | Pass | `docs/engagement/make_pdfs.sh` builds all six. The briefing notes fit on one A4 page in English and in Bangla. Mixed Bangla and Latin text was checked visually |
 | No en or em dashes in new text | Pass | Checked over the whole diff |
+
+## 13. Eighth pass: Phase 0, independent review response, official legal texts (23 October 2026)
+
+| Check | Result | Evidence |
+|---|---|---|
+| Full build | Pass | `build_blueprint.sh` exit 0; six PDFs, tables, figures, CSV (including `phase0_budget.csv`) |
+| Unit tests and demonstration evaluation | Pass | 49 tests passed; Recall@10 0.917 (22 of 24), 6 of 6 abstentions; Table 60 agrees with the evaluation report |
+| Citations sequential | Pass | Blueprint 124 (both editions), Summary 12, Memo 5 |
+| Short pages | Accepted set only | English 15, 31, 40, 64, 65, 78 and 105; Bangla 16, 31, 40, 56, 64, 76 and 103 (part openers, chapter or annex endings) |
+| Page numbers | Pass | No body text within 8 pt of a page number in any of the six PDFs. A Bangla page enlargement in Section 21.4 that pushed text into the page number was removed; the English Table 67 note was kept on its page by tightening the table |
+| Fonts | Pass | All fonts embedded; no missing glyphs |
+| English and Bangla parity | Pass | Only the known layout values, units and numbers written as words |
+| Code renames (DC, TR) | Pass | No remaining P0 to P3 data-class or T1 to T6 training codes in either edition, the code, schemas, examples or tests |
+| Markdown, links, typography | Pass | No broken relative links; typography check passed; no en or em dashes in the diff |
+| Engagement PDFs | Pass | All build; briefing notes one A4 page in English and Bangla |
+| References queried by the author | Pass | Ten entries checked; see the addendum in `review/REFERENCE_VERIFICATION.md` |
+

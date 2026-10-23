@@ -15,8 +15,8 @@
   "maturity_class": "R",
   "risk_tier": "T2",
   "data_classes": [
-    "P1",
-    "P2"
+    "DC1",
+    "DC2"
   ],
   "gate_status": {
     "gate": "G0",

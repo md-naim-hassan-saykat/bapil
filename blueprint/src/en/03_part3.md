@@ -50,7 +50,7 @@ Accessibility is tested with automated tools at every release and with users, in
 
 ## 7.6 Technology Choices
 
-The candidate technologies in Table 19 are open-source and widely used, which keeps costs low, supports local skills and avoids dependence on a single vendor. They are candidates, not commitments: the feasibility study (Deliverable D1.3) confirms choices against the host’s infrastructure, skills and support arrangements. Where a commercial product is considered, it is assessed with the procurement clauses in Chapter 17, including the right to evaluate on BAPIL’s benchmark and the right to exit with all data.
+The candidate technologies in Table 19 are open-source and widely used, which keeps costs low, supports local skills and avoids dependence on a single vendor. They are candidates, not commitments: the Phase 0 feasibility and costing study (Section 15.1) confirms choices against the host’s infrastructure, skills and support arrangements. Where a commercial product is considered, it is assessed with the procurement clauses in Chapter 17, including the right to evaluate on BAPIL’s benchmark and the right to exit with all data.
 
 \newpage
 
@@ -70,7 +70,7 @@ Each stage of the lifecycle has an owner and a control. Documents are **acquired
 
 <!-- TABLE:22 -->
 
-The class of every dataset and document is recorded in the catalogue (component C3) and enforced at query time by the access-control layer (C9). A dataset takes the class of its most sensitive element. Moving a dataset to a lower class, for example by de-identification, requires a documented method and approval by the governance analyst and, for P2 data, by the ERRC.
+The class of every dataset and document is recorded in the catalogue (component C3) and enforced at query time by the access-control layer (C9). A dataset takes the class of its most sensitive element, with one defined exception: official documents that the state has published and that name individuals in the course of public administration, such as Gazette notices of appointments, transfers, land acquisition and disciplinary action, stay in class DC0 under the restrictions of Section 8.1, because their publication is itself an act of the state. Those restrictions are that names are searchable only as part of the published text, no feature is built to search, list or profile individuals, and such passages are excluded from analytics and model training. Pilot P1 completes a DPIA screening of this exception before Gate G2. Moving a dataset to a lower class, for example by de-identification, requires a documented method and approval by the governance analyst and, for DC2 data, by the ERRC.
 
 ## 8.4 Initial Source Inventory
 
@@ -102,7 +102,7 @@ Clear roles make data governance work in practice:
 * **The BAPIL data lead** is accountable for the corpus, the catalogue, quality metrics and data agreements.
 * **Data stewards** in each pilot team maintain metadata, check quality and handle correction queues.
 * **The governance analyst** checks data classes, approves reclassification with the ERRC where required, and maintains the records of processing.
-* **Chief data officers** in partner agencies, where appointed under the data-protection framework (a role whose provisions did not commence immediately under the 2025 ordinance [113]), coordinate agreements and the use of the national data exchange.
+* **Chief data officers** in partner agencies, which section 33 of the National Data Management Act requires every institution to appoint or designate (the corresponding section of the Personal Data Protection Act awaits notification [167]), coordinate agreements and the use of the national data exchange.
 
 ## 8.9 Retention and Disposal
 
@@ -118,7 +118,7 @@ Where data is not already public, access is governed by a written data-sharing a
 
 ## 8.12 Personal Data
 
-As reported, the personal data protection framework recognises citizens’ rights over their personal data; it makes consent the principal basis for processing but also allows processing on other specified grounds and contains broad exemptions, including for national security, public order and the public interest; it gives enhanced protection to sensitive and children’s data; and data subjects may restrict automated decisions based on their data [84, 85, 126]; a Personal Data Protection (Amendment) Ordinance, 2026 changed the ordinance’s data-residency provisions [115], and commentary describes localisation as limited to critical sectors such as banking and healthcare [122]. Which of these provisions of the 2026 Act are in force, and from when, is to be confirmed by the legal review (Section 14.3); until then BAPIL applies the stricter reading. BAPIL’s design responds conservatively, with safeguards that go beyond what the law requires: P2 data is used only in pilot P3, only with consent (a BAPIL rule, not a statutory requirement), only after a DPIA (template in Annex H), only in de-identified form and only for aggregate results; P3 data is never used. Commentators have argued that the new framework leaves broad room for state access to data [106]; BAPIL’s own safeguards therefore do not rely on legal minimums alone.
+According to the text of the Personal Data Protection Act, 2026 [167] and commentary [84, 85, 126], the framework recognises citizens’ rights over their personal data; it makes consent, defined as a clear affirmative indication, the principal basis for processing (section 5) but also allows processing on other specified grounds and contains exemptions (Chapter 5) that commentators describe as broad, including for national security, public order and the public interest; it gives enhanced protection to sensitive and children’s data (section 7); and data subjects may withdraw from automated decisions based on their data (section 13); a Personal Data Protection (Amendment) Ordinance, 2026 changed the ordinance’s data-residency provisions [115], and commentary describes localisation as limited to critical sectors such as banking and healthcare [122]. The Act is deemed in force from 6 November 2025 except section 23 and sections 31 to 35, which await notification [167]; whether the 2026 data-residency changes carry over into the Act is to be confirmed by the legal review (Section 14.3), and until then BAPIL applies the stricter reading. BAPIL’s design responds conservatively, with safeguards that go beyond what the law requires: DC2 data is used only in pilot P3, only with consent (a BAPIL rule, not a statutory requirement), only after a DPIA (template in Annex H), only in de-identified form and only for aggregate results; DC3 data is never used. Commentators have argued that the new framework leaves broad room for state access to data [106]; BAPIL’s own safeguards therefore do not rely on legal minimums alone.
 
 \newpage
 
@@ -166,11 +166,11 @@ No responsible deployment is possible without measurement. BAPIL will build and 
 
 ## 9.5 Evaluation Protocol
 
-Results are only useful if they are comparable and honest. Every evaluation therefore follows the same protocol. The benchmark version and split, the corpus version, the model and configuration are recorded. Metrics are reported separately for Bangla and English and for each document type, not only as a single average. Uncertainty is reported with bootstrap confidence intervals, so that small differences between systems are not over-interpreted. A change is treated as an improvement only if it is better on the agreed primary metric by more than the confidence interval, without being worse on any safety threshold. A gate threshold is met when the point estimate on the private test split meets it and the 95% interval is no wider than plus or minus 5 points; if the interval is wider, more items are annotated before the decision. Citation precision is judged by two trained annotators who do not know which system version produced an answer, and their agreement is reported. Retrieval recall is never treated as evidence that answers are correct, and the presence of a citation is never treated as evidence that it supports the sentence: each is measured separately. The full protocol, with sample sizes and responsibilities, is in Annex R (Table 63). Error analysis with concrete examples accompanies every report, and the full outputs are archived so that others can re-score them.
+Results are only useful if they are comparable and honest. Every evaluation therefore follows the same protocol. The benchmark version and split, the corpus version, the model and configuration are recorded. Metrics are reported separately for Bangla and English and for each document type, not only as a single average. Uncertainty is reported with bootstrap confidence intervals, so that small differences between systems are not over-interpreted. A change is treated as an improvement only if it is better on the agreed primary metric by more than the confidence interval, without being worse on any safety threshold. At Gates G2 and G3, a quality threshold is met when the point estimate on the private test split meets it and the 95% interval is no wider than plus or minus 5 points; if the interval is wider, more items are annotated before the decision. At Gate G4, where an agency adopts the tool, the lower bound of the interval must meet the threshold. Safety thresholds, such as the share of unsupported claims, are always judged on the upper bound. The private test split is held by an independent custodian, such as a partner university or the host’s evaluation unit, not by the team that builds the system, and thresholds are pre-registered in the evaluation plan before each gate. Citation precision is judged by two trained annotators who do not know which system version produced an answer, and their agreement is reported. Retrieval recall is never treated as evidence that answers are correct, and the presence of a citation is never treated as evidence that it supports the sentence: each is measured separately. The full protocol, with sample sizes and responsibilities, is in Annex R (Table 63). Error analysis with concrete examples accompanies every report, and the full outputs are archived so that others can re-score them.
 
 ## 9.6 Model Selection
 
-The Blueprint does not commit to a particular model vendor. Candidate models are open-weight, can run on infrastructure in Bangladesh, have documented Bangla capability and acceptable licences. For public (P0) data only, at least one hosted commercial model is also evaluated as a reference point, so that the gap between open models and the best available system, and therefore the value of any adaptation, can be judged. Hosted models are never used for data above class P0. Bangla-specific encoders such as BanglaBERT and generators such as BanglaT5 [46, 48] and Bangla-adapted open LLMs [49] are evaluated alongside multilingual models. Selection is made on BAPIL’s own benchmark, not on public leaderboards, using the weighted criteria below. Every selected model receives a model card [99] and appears in the AI system register.
+The Blueprint does not commit to a particular model vendor. Candidate models are open-weight, can run on infrastructure in Bangladesh, have documented Bangla capability and acceptable licences. For public (DC0) data only, at least one hosted commercial model is also evaluated as a reference point, so that the gap between open models and the best available system, and therefore the value of any adaptation, can be judged. Hosted models are never used for data above class DC0. Bangla-specific encoders such as BanglaBERT and generators such as BanglaT5 [46, 48] and Bangla-adapted open LLMs [49] are evaluated alongside multilingual models. Selection is made on BAPIL’s own benchmark, not on public leaderboards, using the weighted criteria below. Every selected model receives a model card [99] and appears in the AI system register.
 
 <!-- TABLE:29 -->
 
@@ -181,7 +181,7 @@ The White Paper proposed a Bangla Policy Foundation Model (BPFM) as a long-term 
 <!-- FIGURE:08 -->
 
 * **Stage 0 (months 1 to 12)** has three steps: (0a) lexical and metadata search, which also remains the transparent fallback; (0b) multilingual dense retrieval and reranking, adopted only if it measurably improves retrieval; and (0c) answers built with existing open models, extractive first, with generated rephrasing enabled only if citation checks pass. Baselines are established on BanglaPolicyQA v0.
-* **Stage 1 (months 13 to 30), targeted adaptation.** If residual errors are documented by category and can be attributed to the model rather than to retrieval or data, and governed data and compute are ready, apply parameter-efficient domain adaptation such as LoRA [103] on the governed public corpus, followed by instruction tuning on curated question-answer pairs. Publish a model card. Stage 1 is costed before it is approved: indicatively one to two machine-learning staff for about twelve months (Tk 0.3 to 0.5 crore within the core staff line) and up to USD 20,000 of compute if national compute is not available (high scenario). The Stage 1 decision compares this cost with the cost of improving retrieval, data and evaluation by the same amount.
+* **Stage 1 (months 19 to 30, if approved at month 18), targeted adaptation.** If residual errors are documented by category and can be attributed to the model rather than to retrieval or data, and governed data and compute are ready, apply parameter-efficient domain adaptation such as LoRA [103] on the governed public corpus, followed by instruction tuning on curated question-answer pairs. Publish a model card. Stage 1 is costed before it is approved: indicatively one to two machine-learning staff for about twelve months (Tk 0.3 to 0.5 crore within the core staff line) and up to USD 20,000 of compute if national compute is not available (high scenario). The Stage 1 decision compares this cost with the cost of improving retrieval, data and evaluation by the same amount. The Steering Board takes it at month 18 (MS6) on the advice of the TAB and the ERRC, informed by the mid-term evaluation.
 * **Stage 2 (after month 30, only if justified), a dedicated domain model.** Continued pre-training of an existing open model on governed Bangla text, coordinated with any national Bangla LLM effort, with an independent audit before release.
 
 <!-- TABLE:30 -->
@@ -204,7 +204,7 @@ AI computation consumes energy and money. BAPIL reduces both by preferring retri
 
 ## 10.1 Hosting
 
-All services that handle data above class P0 are hosted in Bangladesh, at the National Data Center or another accredited facility, in line with requirement NFR-02 and with the draft national AI policy’s intention to centralise national compute [88]. Development work on P0 data may use other environments, provided no P1 to P3 data is present.
+All services that handle data above class DC0 are hosted in Bangladesh, at the National Data Center or another accredited facility, in line with requirement NFR-02 and with the draft national AI policy’s intention to centralise national compute [88]. Development work on DC0 data may use other environments, provided no DC1 to DC3 data is present.
 
 ## 10.2 Zones and Topology
 
@@ -220,7 +220,7 @@ For the pilots, a modest footprint is sufficient: two to three general-purpose s
 
 ## 10.4 Security Framework
 
-Security follows the six functions of NIST CSF 2.0 (Govern, Identify, Protect, Detect, Respond, Recover) [14], in line with the national cyber-security law [86, 87]. The controls are mapped below.
+Security follows the six functions of NIST CSF 2.0 (Govern, Identify, Protect, Detect, Respond, Recover) [14], in line with the national cyber-security law [165, 166]. The controls are mapped below.
 
 <!-- TABLE:32 -->
 
@@ -238,13 +238,13 @@ Incidents are classified by severity, which sets the response time and who must 
 
 ## 10.7 Business Continuity and Disaster Recovery
 
-The July 2024 nationwide disruption showed how single points of failure can magnify the impact of an incident [108]. Bangladesh also faces floods and cyclones that can affect power and connectivity. BAPIL’s services are not life-critical, but continuity matters for user trust and for the integrity of audit records. The targets below apply in the pilot phase and are tested in quarterly restore drills.
+The nationwide internet shutdown of July 2024 showed how much public services depend on connectivity and how single points of failure magnify any disruption [108]. Bangladesh also faces floods and cyclones that can affect power and connectivity. BAPIL’s services are not life-critical, but continuity matters for user trust and for the integrity of audit records. The targets below apply in the pilot phase and are tested in quarterly restore drills.
 
 <!-- TABLE:35 -->
 
 ## 10.8 Supply Chain and Openness
 
-Every release has a software bill of materials, pinned dependencies and recorded checksums for model weights. Code is published openly, which supports external review and aligns with the national source-code repository described for the 2025 data-management ordinance [84]. Secrets never appear in code, prompts or logs.
+Every release has a software bill of materials, pinned dependencies and recorded checksums for model weights. Code is published openly, which supports external review and aligns with the national code repository for government software provided for in section 23 of the National Data Management Act [167]. Secrets never appear in code, prompts or logs.
 
 \newpage
 

@@ -4,7 +4,7 @@ Checked on 22 October 2026 on branch `blueprint-v1.0` (local, not pushed). Inter
 
 ## 1. Scope
 
-44 hand-written Markdown files (re-checked after the last change on 22 October 2026): the root files (`README.md`, `CHANGELOG.md`, `CONTRIBUTING.md`, `REPRODUCIBILITY.md`, `DATA_AND_METHODOLOGY.md`, `RELEASE_NOTES.md`, `SECURITY.md`), `docs/` (including the drafts in `docs/engagement/`), `releases/README.md`, `blueprint/*.md` documentation, `blueprint/review/` and `blueprint/zenodo/`. Not checked here: the generated Markdown (assembled publications and table snippets, which are checked by the build), the published White Paper and Executive Summary sources in `reports/` (DOI-registered, not edited) and `research/`.
+49 hand-written Markdown files (re-checked after the last change on 23 October 2026): the root files (`README.md`, `CHANGELOG.md`, `CONTRIBUTING.md`, `REPRODUCIBILITY.md`, `DATA_AND_METHODOLOGY.md`, `RELEASE_NOTES.md`, `SECURITY.md`), `docs/` (including the drafts in `docs/engagement/`), `releases/README.md`, `blueprint/*.md` documentation, `blueprint/review/` and `blueprint/zenodo/`. Not checked here: the generated Markdown (assembled publications and table snippets, which are checked by the build), the published White Paper and Executive Summary sources in `reports/` (DOI-registered, not edited) and `research/`.
 
 ## 2. Tools
 
@@ -18,7 +18,7 @@ No Markdown linter or link checker could be installed (the package registries we
 | Heading levels do not skip (for example H2 to H4) | Pass (all files) |
 | Exactly one H1 per file | Pass, except the two historical review reports (`BAPIL_Blueprint_Adversarial_Review.md`, `BAPIL_Blueprint_Audit_and_Revision_Report.md`), which use H1 for their numbered sections because they are also typeset as PDFs. Left unchanged |
 | Every table row has the same number of columns as its header | Pass |
-| No leftover placeholders (`TODO`, `TBD`, `FIXME`, template tokens) | Pass after one fix: the README said "PAGES_EN pages in English and PAGES_BN in Bangla"; now filled with the actual page counts (147 and 141 at the latest build) |
+| No leftover placeholders (`TODO`, `TBD`, `FIXME`, template tokens) | Pass after one fix: the README said "PAGES_EN pages in English and PAGES_BN in Bangla"; now filled with the actual page counts (147 and 146 at the latest build) |
 | No old titles ("Revised", "Audit" in a publication title) | Pass |
 | Intentional template fields | The drafts in `docs/engagement/` contain fields in «angle quotes» (names, dates, reference numbers) for the institution using the template; each file says so at the top |
 | Intentional pending markers | `10.5281/zenodo.PENDING` appears only in `blueprint/src/metadata.json` and in documentation that explains it; no fake DOI is printed in any publication |

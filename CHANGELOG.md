@@ -39,6 +39,8 @@ Prepared for repository release v1.1.0. The tag, the GitHub release and the Blue
 - Unit costs in the budget checked against published prices and pay data (Section 17.1, Table 49); the base case is unchanged and the risk from 2026 equipment list prices, with or without import duty and VAT, is stated.
 - Stakeholder engagement drafts in `docs/engagement/`: one-page briefing note, letter templates for a candidate host and for the ICT Division (English and Bangla), and a consultation plan. None has been sent or signed.
 - Bangla editorial pass: consistent spelling of compound terms across all Bangla documents (`blueprint/review/BANGLA_EDITORIAL_LOG.md`).
+- Preparatory Phase 0 (about six months, about Tk 0.44 crore) before the 36-month plan: host selection, legal review, feasibility and costing study, data-access confirmation and the Year 1 funding commitment. Month 1 is July 2027 (FY2027-28).
+- Response to an independent review of the Blueprint (`blueprint/review/INDEPENDENT_REVIEW_2026-10-23.md`); expert-review request, comment form and counsel checklist in `docs/engagement/`.
 
 ### Corrected
 
@@ -47,7 +49,10 @@ Prepared for repository release v1.1.0. The tag, the GitHub release and the Blue
 - National AI policy: the revised draft version 2.0 (9 February 2026) is recorded, so that the drafting announced for the fourth quarter of 2026 is not presented as a first draft.
 - Institutional status: remaining present-tense descriptions of BAPIL as established were made conditional.
 - Bangla terminology: "মানবিক তত্ত্বাবধান" (humane supervision) corrected to "মানব-তত্ত্বাবধান" (human oversight) throughout.
-- Table 60 now quotes the current demonstration result (Recall@10 0.88); the build stops if they diverge.
+- Table 60 now quotes the current demonstration result (Recall@10 0.92 at the latest build); the build stops if they diverge.
+- Legal references: the 2026 Acts are cited from the official list of Acts, the Gazette copies and the laws database texts instead of secondary sources.
+- Year 1 funding: 70% government and 30% one development partner; government share of the 36-month plan about Tk 9.6 crore (47%).
+- Codes renamed to avoid clashes: data classes DC0 to DC3 (were P0 to P3) and training programmes TR1 to TR6 (were T1 to T6).
 - White Paper reference [38] is cited in the Blueprint with the correct co-author (A. Piktus); the White Paper source is unchanged.
 
 ### Documentation

@@ -18,7 +18,7 @@ No primary data was collected: there were no interviews, surveys, focus groups o
 
 ## 3. Legal research
 
-Legal statements rely on press reports and secondary legal commentary, because the gazetted texts could not be retrieved automatically from the official laws database. They are labelled "as reported", enactment is distinguished from commencement, statutory requirements are distinguished from BAPIL’s own safeguards, and an independent review by qualified Bangladesh counsel is required before milestone MS2. See [`docs/legal-references.md`](docs/legal-references.md).
+The numbers, titles and Gazette dates of the 2026 Acts were confirmed from official sources (the Legislative Division's list of Acts and the Gazette copies published by the ICT Division). Their provisions were read through the official laws database texts, because the Gazette copies use a legacy font encoding that could not be read automatically. Enactment is distinguished from commencement, statutory requirements are distinguished from BAPIL’s own safeguards, and an independent review by qualified Bangladesh counsel is required in Phase 0, before the host agreement is signed. See [`docs/legal-references.md`](docs/legal-references.md).
 
 ## 4. Budget
 
@@ -45,7 +45,7 @@ See [`docs/evaluation-methodology.md`](docs/evaluation-methodology.md).
 | Demonstration questions | Written by the author | No | CC BY 4.0 |
 | Example registry and risk records | Illustrative records for the planned pilots P1 to P6 and hypothetical risk cases | No | MIT (with the code) |
 
-The planned pilots would start with documents the state has already published (data class P0). Any use of personal data would require a documented lawful basis, a DPIA and ERRC approval, and is limited to pilot P3 in de-identified, aggregate form.
+The planned pilots would start with documents the state has already published (data class DC0). Any use of personal data would require a documented lawful basis, a DPIA and ERRC approval, and is limited to pilot P3 in de-identified, aggregate form.
 
 ## 7. Reproducibility
 

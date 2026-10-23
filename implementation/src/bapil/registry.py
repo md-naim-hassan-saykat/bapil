@@ -14,7 +14,7 @@ ENUMS = {
     "maturity_class": {"R", "A", "O"},
     "risk_tier": {"T0", "T1", "T2", "T3"},
 }
-DATA_CLASSES = {"P0", "P1", "P2", "P3"}
+DATA_CLASSES = {"DC0", "DC1", "DC2", "DC3"}
 GATES = {"G0", "G1", "G2", "G3", "G4", "G5"}
 
 
@@ -32,7 +32,7 @@ def validate(record):
         errs.append("name must contain at least an 'en' value")
     dc = record.get("data_classes", [])
     if not isinstance(dc, list) or not dc or any(c not in DATA_CLASSES for c in dc):
-        errs.append("data_classes must be a non-empty list of P0..P3")
+        errs.append("data_classes must be a non-empty list of DC0..DC3")
     gs = record.get("gate_status", {})
     if not isinstance(gs, dict) or gs.get("gate") not in GATES or not gs.get("date"):
         errs.append("gate_status needs 'gate' (G0..G5) and 'date'")
@@ -40,8 +40,8 @@ def validate(record):
         errs.append("tier T0 systems are prohibited and cannot be registered")
     if record.get("risk_tier") == "T3" and record.get("maturity_class") != "R":
         errs.append("tier T3 systems may only exist as research prototypes (class R)")
-    if "P3" in dc:
-        errs.append("data class P3 is excluded from BAPIL work")
+    if "DC3" in dc:
+        errs.append("data class DC3 is excluded from BAPIL work")
     return errs
 
 

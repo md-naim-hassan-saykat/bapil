@@ -55,16 +55,16 @@ CAPTIONS = {
            "bn": "ঝুঁকি-স্তর নির্ধারণের প্রবাহ, গেট G0-তে প্রয়োগ এবং প্রতিটি গেটে পুনরাবৃত্তি।"},
     "11": {"en": "Lifecycle gates G0 to G5 and the evidence required at each gate.",
            "bn": "জীবনচক্র-গেট G0 থেকে G5 এবং প্রতিটি গেটে প্রয়োজনীয় প্রমাণ।"},
-    "12": {"en": "Indicative 36-month delivery roadmap (Month 1 is the month the MoU takes effect; indicative start January 2027).",
-           "bn": "নির্দেশক ৩৬ মাসের বাস্তবায়ন রোডম্যাপ (সমঝোতা স্মারক কার্যকর হওয়ার মাসই মাস ১; নির্দেশক সূচনা জানুয়ারি ২০২৭)।"},
+    "12": {"en": "Indicative 36-month delivery roadmap (Month 1 is the first month in which the MoU, the host agreement and Year 1 funding are all in place, after Phase 0; indicative Month 1: July 2027).",
+           "bn": "নির্দেশক ৩৬ মাসের বাস্তবায়ন রোডম্যাপ (ধাপ ০-এর পরে সমঝোতা স্মারক, স্বাগতিক-চুক্তি ও প্রথম বছরের অর্থায়ন তিনটিই নিশ্চিত হওয়ার প্রথম মাসই মাস ১; নির্দেশক মাস ১: জুলাই ২০২৭)।"},
     "13": {"en": "Strategic roadmap, 2026 to 2041 and beyond: horizons, workstreams and review points.",
            "bn": "কৌশলগত রোডম্যাপ, ২০২৬ থেকে ২০৪১ ও তার পরে: দিগন্ত, কর্মধারা ও পর্যালোচনা-বিন্দু।"},
     "14": {"en": "Theory of change: from inputs to impact, with key assumptions and a learning loop.",
            "bn": "পরিবর্তনের তত্ত্ব: উপকরণ থেকে প্রভাব পর্যন্ত, মূল অনুমান ও শিক্ষণ-চক্রসহ।"},
     "15": {"en": "Risk heat map of the eighteen registered risks by likelihood and impact.",
            "bn": "সম্ভাবনা ও প্রভাব অনুযায়ী নিবন্ধিত আঠারোটি ঝুঁকির তাপ-মানচিত্র।"},
-    "16": {"en": "Integrated institutional and financial pathway: form, government role, posts, budget and funding mix by stage, with the gates between stages.",
-           "bn": "সমন্বিত প্রাতিষ্ঠানিক ও আর্থিক পথনকশা: পর্যায়ভিত্তিক রূপ, সরকারের ভূমিকা, পদ, বাজেট ও অর্থায়নের মিশ্রণ, পর্যায়গুলোর মধ্যকার গেটসহ।"},
+    "16": {"en": "Integrated institutional and financial pathway: form, government role, posts, budget and funding mix by stage, with the gates between stages. A preparatory Phase 0 (about Tk 0.44 crore) precedes Year 1 (Table 71).",
+           "bn": "সমন্বিত প্রাতিষ্ঠানিক ও আর্থিক পথনকশা: পর্যায়ভিত্তিক রূপ, সরকারের ভূমিকা, পদ, বাজেট ও অর্থায়নের মিশ্রণ, পর্যায়গুলোর মধ্যকার গেটসহ। বছর ১-এর আগে একটি প্রস্তুতিমূলক ধাপ ০ (প্রায় ০.৪৪ কোটি টাকা) রয়েছে (সারণি ৭১)।"},
 }
 
 

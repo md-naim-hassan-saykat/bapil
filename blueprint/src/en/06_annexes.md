@@ -50,7 +50,7 @@ Answer *yes* or *no*. Any *yes* places the system in tier T0, and work stops.
 | `owner` | Accountable person and unit; host-agency product owner if any |
 | `maturity_class` | R, A or O |
 | `risk_tier` | T0 to T3, with the date and reference of the latest assessment |
-| `data_classes` | Data classes used (P0 to P3) |
+| `data_classes` | Data classes used (DC0 to DC3) |
 | `models` | Models and versions, with links to model cards |
 | `evaluation` | Benchmark version and headline results |
 | `gate_status` | Latest gate passed and date |
@@ -104,7 +104,7 @@ This draft is offered for adoption by the Steering Board at Milestone MS1, after
 
 **Article 5. Governance.** BAPIL is governed by a Steering Board, an independent Ethics and Risk Review Committee (ERRC) and a Technical Architecture Board, with the composition and powers set out in their terms of reference (Annexes F and G).
 
-**Article 6. The ERRC veto.** No system of tier T2 or above may pass Gates G2 or G4 without the approval of the ERRC. ERRC decisions to refuse or suspend are binding and can be reversed only by the ERRC itself.
+**Article 6. The ERRC veto.** No system of tier T2 or above may pass Gates G2 or G4 without the approval of the ERRC. ERRC decisions to refuse or suspend are binding on BAPIL, and on the host as far as its statutes and the host agreement allow (Section 5.3), and can be reversed only by the ERRC itself.
 
 **Article 7. Registration and transparency.** Every AI system is registered before work begins. A public transparency register lists each system’s purpose, owner, tier, maturity class, data classes, evaluation summary, limitations and complaint contact.
 
@@ -116,7 +116,7 @@ This draft is offered for adoption by the Steering Board at Milestone MS1, after
 
 **Article 11. Transfer and withdrawal.** Tools that pass Gate G4 are transferred to agency ownership with documentation and support. BAPIL withdraws from any activity that conflicts with this charter.
 
-**Article 12. Review and amendment.** The charter is reviewed at each strategic review (Table 48). Amendments require a two-thirds majority of the Steering Board after consultation with the ERRC; Articles 3, 4 and 6 can be weakened only after public consultation.
+**Article 12. Review and amendment.** The charter is reviewed at each strategic review (Table 48). Amendments require a two-thirds majority of the Steering Board after consultation with the ERRC; Articles 3 and 4 can be weakened only after public consultation, and Article 6, and the rules for appointing and removing ERRC members, only with the ERRC’s consent and after public consultation.
 
 **Article 13. Precedence of law.** This charter operates within the law of Bangladesh and the rules of the host institution. Nothing in it overrides a statute, a regulator’s powers or the host’s legal obligations; where they conflict, the legal requirement prevails and the Steering Board amends the charter.
 
@@ -124,7 +124,7 @@ This draft is offered for adoption by the Steering Board at Milestone MS1, after
 
 # Annex F: Terms of Reference of the Ethics and Risk Review Committee
 
-**Purpose.** To provide independent review of the ethical, legal and societal risks of BAPIL’s AI systems and research, and to hold a binding veto over tier T2 and T3 work.
+**Purpose.** To provide independent review of the ethical, legal and societal risks of BAPIL’s AI systems and research, and to hold a veto over tier T2 and T3 work that binds BAPIL, and the host as far as its statutes and the host agreement allow.
 
 **Composition.** Five to seven members, a majority external to BAPIL and the host institution, covering law and human rights, data protection, ethics, the relevant policy domains, Bangla language and civil society, with gender balance. The chair is an external member elected by the members. Members serve three-year terms, renewable once.
 
@@ -134,7 +134,7 @@ This draft is offered for adoption by the Steering Board at Milestone MS1, after
 
 **Responsibilities.**
 
-* Review tier T2 and T3 systems at Gates G1, G2 and G4, and any reclassification of P2 data.
+* Review tier T2 and T3 systems at Gates G1, G2 and G4, and any reclassification of DC2 data.
 * Review serious incidents and decide on suspension.
 * Approve research protocols involving people or sensitive topics, including P6.
 * Advise the Steering Board on charter amendments and on the risk register.
@@ -174,7 +174,7 @@ This draft is offered for adoption by the Steering Board at Milestone MS1, after
 
 # Annex H: Data Protection Impact Assessment Template
 
-A DPIA is required before any processing of P2 data and is recommended for any new use of P1 data.
+A DPIA is required before any processing of DC2 data and is recommended for any new use of DC1 data.
 
 1. **Description of processing.** Purpose; data subjects; categories of data; sources; recipients; retention; systems used.
 2. **Lawful basis.** Basis under the Personal Data Protection Act, 2026; consent wording and records where consent is the basis.
@@ -215,7 +215,7 @@ A DPIA is required before any processing of P2 data and is recommended for any n
 ## G1 Design review
 
 * Data plan with data classes and sources; reuse terms recorded.
-* DPIA approved where P2 data is involved.
+* DPIA approved where DC2 data is involved.
 * Architecture reviewed and approved by the TAB; threat model includes AI-specific risks (Table 33).
 * Evaluation plan with benchmark version and thresholds.
 * ERRC review completed for tier T2 and T3.
@@ -274,7 +274,7 @@ A DPIA is required before any processing of P2 data and is recommended for any n
 | BanglaPolicyQA | BAPIL’s open benchmark of policy questions in Bangla and English with gold passages |
 | Citation precision | The share of answer sentences whose cited passage fully supports the sentence, as judged by trained annotators |
 | Corpus version | An identifier of the exact set of documents and passages used for a result, enabling reproduction |
-| Data class | The sensitivity class of data, from P0 (public) to P3 (sensitive personal data) |
+| Data class | The sensitivity class of data, from DC0 (public) to DC3 (sensitive personal data) |
 | Extractive answer | An answer made of sentences selected from source passages, each with its citation |
 | Gate | A documented decision point (G0 to G5) that a system must pass to move forward |
 | Horizon | A period of the strategic roadmap (H0 to H4, and beyond 2041) |
@@ -357,7 +357,7 @@ The same answer can be returned as JSON (option `--json`, or the `/v1/answer` en
   {"pid": "policy_en#p1", "lang": "en", "score": 7.8812,
    "matched_terms": ["assessment", "data", "impact", "protection", "required"],
    "provenance": {"path": "tests/fixtures/policy_en.md",
-                  "sha256": "b85002b0b751...", "data_class": "P0"}},
+                  "sha256": "b85002b0b751...", "data_class": "DC0"}},
   ...
  ],
  "corpus_version": "3c204e06a617"
@@ -400,7 +400,7 @@ BAPIL-P1: T2 Limited (total 5)
   control:  User training
   control:  Incident procedure
   control:  Quarterly monitoring report
-  approver: ERRC and Steering Board
+  approver: ERRC (Steering Board consulted)
 ```
 
 The result reproduces the worked example in Annex B.4: the tier, the reason, the controls that become mandatory and the bodies that must approve.
@@ -415,7 +415,7 @@ The draft National AI Policy 2026-2030 proposed several elements [88]. The table
 |---|---|---|
 | Risk categories (prohibited, high, limited, low) | Operational tiering method with a questionnaire, rules and tested code | Chapter 13; Annex B |
 | Algorithmic impact assessment for high-risk uses | Impact assessment template and worked examples; DPIA template | Annexes B and H |
-| Independent oversight committee | Tested model of an ethics and risk committee with a binding veto and publication duty | Chapter 5; Annex F |
+| Independent oversight committee | Tested model of an ethics and risk committee with a veto and publication duty | Chapter 5; Annex F |
 | Measures against false or misleading AI-generated content | Labelling (a BAPIL rule) and verification of generated text; research protocols for P6 | Section 13.8; Chapter 12 |
 | Bangla-based national LLM | Open benchmark, governed corpus, evaluation protocol and an evidence-gated adaptation path | Chapter 9 |
 | Centralised national compute | Modest pilot footprint and use of shared compute for adaptation | Chapter 10 |
@@ -433,9 +433,11 @@ The draft National AI Policy 2026-2030 proposed several elements [88]. The table
 | 2 to 4 | Harvest laws, plans and budget documents; extraction and OCR; metadata and quality checks | Corpus release 0.1 with quality report | |
 | 3 to 5 | Design review; threat model; evaluation plan; draft user interface in Bangla and English | Approved design; evaluation plan | G1 |
 | 4 to 7 | Build search and answer services; bilingual glossary; portal; audit logging | Internal alpha | |
-| 5 to 8 | Write and annotate BanglaPolicyQA v0 questions; baseline evaluation | Benchmark v0 (500 questions); baseline report | |
+| 6 to 9 | Write and annotate BanglaPolicyQA v0 questions under the protocol agreed at MS2 (month 6); baseline evaluation | Benchmark v0 (500 questions); baseline report | |
 | 8 to 9 | Red-team and security tests; fix findings; train pilot users; ERRC review | Readiness evidence; model card | G2 |
 | 9 to 12 | Pilot with 30 or more analysts in two to three agencies; monthly problem reviews; time-to-evidence study | Pilot report; user survey; Year 1 results | G3 |
+
+Live use in Year 1 is about three months. The pilot continues in Year 2, with a larger user group, until the adoption decision at Gate G4.
 
 \newpage
 
@@ -469,7 +471,7 @@ The indicative budget in Chapter 17 (Table 50) is computed by `blueprint/src/bud
 
 **Sensitivity.** Changing one assumption at a time from the base case: staff costs 20% higher or lower change the total by about Tk 2.0 crore; filling all Year 1 posts from month 1 adds about Tk 0.5 crore; equipment 25% dearer adds about Tk 0.7 crore; escalation of 10% instead of 8% adds about Tk 0.4 crore; and a taka 10% weaker against the US dollar adds about Tk 0.3 crore.
 
-**Inputs still required.** The feasibility and costing study (Deliverable D1.3) should replace these assumptions with: the host’s salary scale, increment rules and overhead rate; quotations for servers, GPUs and storage; the host’s status for import duty and VAT; data-centre charges; confirmation of in-kind national compute; and agreed rates for annotators and trainers. Until then every figure here is an estimate, not approved funding.
+**Inputs still required.** The Phase 0 feasibility and costing study (Section 15.1) should replace these assumptions with: the host’s salary scale, increment rules and overhead rate; quotations for servers, GPUs and storage; the host’s status for import duty and VAT; data-centre charges; confirmation of in-kind national compute; and agreed rates for annotators and trainers. Until then every figure here is an estimate, not approved funding.
 
 \newpage
 
@@ -517,7 +519,7 @@ The 36-month clock cannot start until certain approvals, agreements and funds ar
 
 Table 55 lists the eighteen registered risks with their mitigations and owners. This annex adds what is needed to manage them in practice: an early-warning indicator that can be checked, a contingency if the risk occurs, the residual rating after mitigation and how often each risk is reviewed.
 
-\begingroup\renewcommand{\bapiltablestretch}{1.10}
+\begingroup\renewcommand{\bapiltablestretch}{0.97}
 
 <!-- TABLE:67 -->
 
@@ -527,7 +529,7 @@ Table 55 lists the eighteen registered risks with their mitigations and owners. 
 
 # Annex V: Unresolved Items
 
-This annex lists every item that could not be resolved with the evidence available at the time of writing, with its owner and how and when it will be resolved. Each item is also marked in the text where it applies.
+This annex lists every item that could not be resolved with the evidence available at the time of writing, with its owner and how and when it will be resolved. Each item is also marked in the text where it applies. Items resolved since they were first listed are kept, marked as closed, so that the record of what was checked stays complete.
 
 <!-- TABLE:68 -->
 
@@ -571,7 +573,7 @@ Figure 16 and Tables 71 and 72 bring the institutional design (Chapter 5), the r
 
 <!-- TABLE:72 -->
 
-Three points follow. First, government is involved from the start without BAPIL becoming a government department: the ICT Division signs the MoU and co-chairs the Steering Board, agencies own the tools they adopt, and government becomes the largest funder over time. Second, the government’s indicative share of the 36-month plan is about Tk 8.0 crore (39%), with the rest from research grants, development partners and industry; in the scale-up, government and agency service agreements together would provide about two-thirds. Third, every stage has a gate: money for the next stage follows evidence from the previous one.
+Three points follow. First, government is involved from the start without BAPIL becoming a government department: the ICT Division signs the MoU and co-chairs the Steering Board, agencies own the tools they adopt, and government becomes the largest funder over time. Second, the government’s indicative share of the 36-month plan is about Tk 9.6 crore (47%), including about 70% of Year 1, when only the government budget and a development partner can commit funds before the lab exists; the rest comes from development partners, research grants and industry; in the scale-up, government and agency service agreements together would provide about two-thirds. Third, every stage has a gate: money for the next stage follows evidence from the previous one.
 
 \newpage
 

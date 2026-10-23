@@ -15,4 +15,4 @@
 | Senior staff appointments | A | I | I | R | I | I |
 | Public communication of results | I | C | I | A | R | C |
 
-*Note.* At G4 the Steering Board and the host agency are jointly accountable: the agency owns the operational decision.
+*Note.* At G4 the Steering Board and the host agency are jointly accountable: the agency owns the operational decision. A marks accountability inside BAPIL; because BAPIL has no legal personality, contracts and data-sharing agreements are signed by the host institution.
