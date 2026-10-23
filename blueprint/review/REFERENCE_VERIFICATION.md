@@ -126,3 +126,11 @@ The author's screenshot showed a 404 page on aiverifyfoundation.sg for [53], and
 * **[119]** The capacity4dev library page itself now asks visitors to sign in. The note reads "the site asks visitors to sign in; registration is free".
 * Wrapped links: hyperref gives each line of a wrapped address a link annotation carrying the full address, so clicking either line opens the complete address.
 
+### Seventh follow-up on 23 October 2026: [74] returns 503
+
+The official laws site returned "Service Unavailable" for the Right to Information Act, 2009 (key 105). An Internet Archive copy of the database page (captured 16 May 2026, HTTP 200) was added: <https://web.archive.org/web/20260516060408/http://bdlaws.minlaw.gov.bd/act-details-1011.html>.
+
+The unofficial index (laws.sayed.app/laws/act-1011) shows the status "Repealed" for the Act. It gives no repeal note naming a repealing law. The database's 2026 list contains no new right-to-information Act, only the Right to Information (Amendment) Ordinance, 2026, which lapsed. A search found no report of repeal. The label is therefore treated as unreliable (the index also labels the lapsed 2026 ordinance "Active"), and the index is not linked for this entry. Counsel should confirm the Act's status in Phase 0 (U1).
+
+To keep the English edition at 147 pages, the note in [42] was shortened and the redundant "database entry 1011" line in [74] was dropped; the link shows the entry number.
+

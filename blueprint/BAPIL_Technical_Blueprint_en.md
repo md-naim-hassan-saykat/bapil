@@ -1309,7 +1309,7 @@ python -m unittest discover -s tests
 
 ## 11.5 Demonstration Results
 
-Running `python -m bapil.cli evaluate benchmarks/demo_questions.json` over a corpus of 1,792 passages from 8 BAPIL documents gives the following results (corpus version `4ebf35f1d409`):
+Running `python -m bapil.cli evaluate benchmarks/demo_questions.json` over a corpus of 1,792 passages from 8 BAPIL documents gives the following results (corpus version `c887cf7b50e6`):
 
 | Question set | Questions | Recall@5 | Recall@10 | MRR@10 | nDCG@10 |
 |---|---|---|---|---|---|
@@ -3288,7 +3288,7 @@ Available:
 [42] LEGISLATIVE AND PARLIAMENTARY AFFAIRS DIVISION.
 Laws of Bangladesh: texts of Acts No. 63, 80, 81 and 99 of 2026[DB/OL].
 Dhaka: Ministry of Law, Justice and Parliamentary Affairs, 2026[2026-10-22].
-Database entries 1692, 1709, 1710 and 1728. The texts were read through laws.sayed.app, an unofficial index built from this database, because the official site does not permit automated retrieval.
+Database entries 1692, 1709, 1710 and 1728, read through laws.sayed.app, an unofficial index of the database (the official site blocks automated retrieval).
 Available:
 <https://bdlaws.minlaw.gov.bd/act-details-1692.html>,
 <https://bdlaws.minlaw.gov.bd/act-details-1709.html>,
@@ -3498,9 +3498,10 @@ Available:
 [74] GOVERNMENT OF THE PEOPLE’S REPUBLIC OF BANGLADESH.
 The Right to Information Act, 2009 (Act No. XX of 2009)[S/OL].
 Dhaka: Legislative and Parliamentary Affairs Division, 2009[2026-10-23].
-Laws of Bangladesh database entry 1011.
 Available:
-<https://bdlaws.minlaw.gov.bd/act-details-1011.html>
+<https://bdlaws.minlaw.gov.bd/act-details-1011.html>.
+Archived copy (Internet Archive, 2026-05-16):
+<https://web.archive.org/web/20260516060408/http://bdlaws.minlaw.gov.bd/act-details-1011.html>
 
 [75] WORLD WIDE WEB CONSORTIUM (W3C).
 Data Catalog Vocabulary (DCAT), Version 3: W3C Recommendation 22 August 2024[S/OL].
