@@ -3,6 +3,8 @@
 % No stretchable space inside URLs: stretched gaps after hyphens were copied from the PDF as spaces
 \Urlmuskip=0mu\relax
 \usepackage{etoolbox}
+% never hyphenate "zenodo" inside a DOI (10.5281/zen-odo...); lines may still break at "/" or "."
+\AtBeginDocument{\hyphenation{zenodo}}
 \usepackage{titlesec}
 \usepackage{tocloft}
 \usepackage{fancyhdr}

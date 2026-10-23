@@ -42,7 +42,7 @@ From the repository root:
 | `cd implementation && python3 -m unittest discover -s tests` | 49 unit tests | Yes: 49 pass (Python 3.13) |
 | `python3 blueprint/src/typography.py --check blueprint/src/en/*.md blueprint/src/bn/*.md blueprint/src/*.src.md blueprint/src/refs_new.md` | Quotation-mark convention | Yes |
 | `python3 blueprint/src/make_budget_workbook.py blueprint/data/BAPIL_Budget_Model.xlsx` then recalculate in LibreOffice, then `python3 blueprint/src/make_budget_workbook.py --check blueprint/data/BAPIL_Budget_Model.xlsx` | Writes the budget workbook and compares it with the Python model | Yes (differences larger than Tk 1: none) |
-| `blueprint/zenodo/make_zenodo_package.sh` | Collects the Zenodo files into `dist/zenodo/` with SHA-256 checksums | Yes |
+| `blueprint/zenodo/make_zenodo_package.sh` | Collects the files for the two Zenodo records into `dist/zenodo/` (Technical Blueprint, 10.5281/zenodo.23587901) and `dist/zenodo-summary/` (Blueprint Summary, 10.5281/zenodo.23587919), each with SHA-256 checksums | Yes |
 | `pandoc blueprint/BAPIL_Technical_Blueprint_bn.md --resource-path=blueprint -o out.docx` | Optional word-processor copy for review | Not tested in this audit |
 
 ## 4. Expected outputs

@@ -44,4 +44,4 @@ Funds are released in three annual tranches, each after a review, so only about 
 | D5 | Fund Phase 0 and name a focal point | ICT Division or a development partner | Within 90 days |
 | D6 | Confirm the guardrails | Steering Board | At charter adoption |
 
-**Documents and contact.** Blueprint, Summary and code: <https://github.com/md-naim-hassan-saykat/bapil>. White Paper: <https://doi.org/10.5281/zenodo.21363967>. ORCID 0009-0007-5270-3970; «email address».
+**Documents and contact.** Blueprint: <https://doi.org/10.5281/zenodo.23587901>. Summary: <https://doi.org/10.5281/zenodo.23587919>. Code: <https://github.com/md-naim-hassan-saykat/bapil>. White Paper: <https://doi.org/10.5281/zenodo.21363967>. ORCID 0009-0007-5270-3970; «email address».

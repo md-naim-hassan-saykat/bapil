@@ -30,7 +30,7 @@ Because of your work on «area», I would be grateful for your views on «chapte
 
 **Documents**
 
-- Blueprint, Summary and source code: «DOI or repository link».
+- Blueprint: <https://doi.org/10.5281/zenodo.23587901>; Summary: <https://doi.org/10.5281/zenodo.23587919>; source code: <https://github.com/md-naim-hassan-saykat/bapil>. If the Zenodo records are not yet published, send the PDFs or the repository link.
 - One-page briefing note: attached.
 - Comment form: attached.
 
