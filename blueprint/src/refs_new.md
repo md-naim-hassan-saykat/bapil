@@ -385,9 +385,7 @@ Aid Delivery Methods, Volume 1: Project Cycle Management Guidelines[R/OL].
 Brussels: European Commission, 2004[2026-10-22].
 Available:
 <https://capacity4dev.europa.eu/library/aid-delivery-methods-project-cycle-management-guidelines-europeaid-2004_en>
-(download requires a free account).
-Open copy (GEF IW:LEARN):
-<https://www.iwlearn.net/documents/28641>
+(the download requires free registration on the site).
 
 [145] UNITED NATIONS DEVELOPMENT GROUP (UNDG).
 Theory of Change: UNDAF Companion Guidance[R/OL].

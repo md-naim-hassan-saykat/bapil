@@ -53,8 +53,8 @@ local function split_label(inlines)
 end
 
 -- Web addresses: keep "https://" (or "http://") together, so that a line never breaks inside the
--- scheme ("ht" / "tps://"); a line may end after the scheme, and the rest of the address may still
--- break anywhere (xurl). Only plain
+-- scheme ("ht" / "tps://") and a line never ends with a bare "https://"; the rest of the address
+-- breaks preferably after "/" or "." (header-common.tex). Only plain
 -- autolinks whose address has no characters that need escaping in LaTeX are changed.
 function Link(el)
   if not FORMAT:match("latex") then return nil end
@@ -63,7 +63,7 @@ function Link(el)
   local scheme, rest = url:match("^(https?://)(.+)$")
   if not scheme or rest:find("[%%#&{}~\\^$]") then return nil end
   return pandoc.RawInline("latex",
-    "\\href{" .. url .. "}{\\mbox{\\nolinkurl{" .. scheme .. "}}\\allowbreak\\nolinkurl{" .. rest .. "}}")
+    "\\href{" .. url .. "}{\\mbox{\\nolinkurl{" .. scheme .. "}}\\nolinkurl{" .. rest .. "}}")
 end
 
 function Image(img)

@@ -1309,7 +1309,7 @@ python -m unittest discover -s tests
 
 ## 11.5 Demonstration Results
 
-Running `python -m bapil.cli evaluate benchmarks/demo_questions.json` over a corpus of 1,792 passages from 8 BAPIL documents gives the following results (corpus version `0d8f0cb3a085`):
+Running `python -m bapil.cli evaluate benchmarks/demo_questions.json` over a corpus of 1,792 passages from 8 BAPIL documents gives the following results (corpus version `b2ac7df20c5d`):
 
 | Question set | Questions | Recall@5 | Recall@10 | MRR@10 | nDCG@10 |
 |---|---|---|---|---|---|
@@ -3022,7 +3022,7 @@ References are numbered in the order in which they are first cited, and only ref
 
 \bapilrealspaces
 
-\setlength{\parskip}{3pt plus 1pt minus 1pt}
+\setlength{\parskip}{2.5pt plus 1pt minus 1pt}
 
 [1] \* ORGANISATION FOR ECONOMIC CO-OPERATION AND DEVELOPMENT (OECD).
 Recommendation of the Council on Artificial Intelligence (OECD/LEGAL/0449)[EB/OL].
@@ -3785,9 +3785,7 @@ Aid Delivery Methods, Volume 1: Project Cycle Management Guidelines[R/OL].
 Brussels: European Commission, 2004[2026-10-22].
 Available:
 <https://capacity4dev.europa.eu/library/aid-delivery-methods-project-cycle-management-guidelines-europeaid-2004_en>
-(download requires a free account).
-Open copy (GEF IW:LEARN):
-<https://www.iwlearn.net/documents/28641>
+(the download requires free registration on the site).
 
 [120] OECD DAC NETWORK ON DEVELOPMENT EVALUATION.
 Better Criteria for Better Evaluation: Revised Evaluation Criteria Definitions and Principles for Use[R/OL].

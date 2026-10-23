@@ -250,7 +250,7 @@ def reference_section(mapping, lang):
         mark = "\\* " if key <= refnum.WP_LAST else ""   # asterisk, escaped for Markdown
         entries.append("[%d] %s%s" % (num, mark, body))
     if len(entries) > 40:   # the Blueprint only: tighter spacing between entries keeps the long list compact
-        head += "\n\\setlength{\\parskip}{3pt plus 1pt minus 1pt}\n"
+        head += "\n\\setlength{\\parskip}{2.5pt plus 1pt minus 1pt}\n"
     return head + "\n" + "\n\n".join(entries) + "\n"
 
 
