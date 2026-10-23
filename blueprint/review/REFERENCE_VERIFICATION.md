@@ -65,3 +65,14 @@ The author pasted ten entries from the Bangla Blueprint of the build of 22 Octob
 | ৮৫ | 88 | 99 | Mitchell et al. 2019 | DOI entry unchanged | OK |
 | ৯৫ | 98 | 143 | Greshake et al. 2023 | DOI entry unchanged | OK |
 | ১০৭ | 113 | 110 | Bangladesh Bank, Exchange Rate of Taka | The author reported the page as under maintenance. Retrieved through the web tool on 23 October 2026: USD weighted average rate Tk 123.65 for 19 October 2026. Internet Archive snapshot dated 6 September 2026 | Kept with its access date of 21 October 2026. The budget assumption of Tk 124 per US dollar is consistent. If the page stays unavailable, cite the archived snapshot |
+
+### Follow-up on 23 October 2026: links the author could not open
+
+The author reported that three links did not open. They were checked again on 23 October 2026 and backup links were added to the entries; the access dates are unchanged.
+
+| Current number | Source key | Entry | Finding | Fix |
+|---:|---:|---|---|---|
+| 14 | 125 | Draft National AI Policy 2026-2030, version 2.0 | The portal refuses automated access. The Internet Archive index lists a working copy (HTTP 200) of the same PDF captured on 27 May 2026 | Archived copy added: <https://web.archive.org/web/20260527140701/https://aipolicy.gov.bd/docs/national-ai-policy-bangladesh-2026-2030-draft-v2.0.pdf> |
+| 63 | 151 | Digital India Corporation, recruitment notice | The PDF opened from this workspace, so the failure is probably regional or temporary. No archived copy exists. The same posting (Manager, General Administration, India AI, contract basis, closing 20 February 2025) is on Digital India Corporation's own jobs page | Second official link added: <https://dic.gov.in/jobs/manager-general-administration/> |
+| 113 | 110 | Bangladesh Bank, Exchange Rate of Taka | The page was under maintenance for the author but retrievable through the web tool on 23 October 2026 | Archived copy added: <https://web.archive.org/web/20260906143127/https://www.bb.org.bd/en/index.php/econdata/exchangerate> |
+

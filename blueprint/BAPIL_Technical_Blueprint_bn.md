@@ -1322,7 +1322,7 @@ python -m unittest discover -s tests
 
 ## ১১.৫ প্রদর্শনী ফলাফল
 
-`python -m bapil.cli evaluate benchmarks/demo_questions.json` কমান্ডটি ৮টি BAPIL নথির ১,৭৯২টি অনুচ্ছেদের কর্পাসে চালালে নিচের ফলাফল পাওয়া যায় (কর্পাস সংস্করণ `3db8ac17e5d6`):
+`python -m bapil.cli evaluate benchmarks/demo_questions.json` কমান্ডটি ৮টি BAPIL নথির ১,৭৯২টি অনুচ্ছেদের কর্পাসে চালালে নিচের ফলাফল পাওয়া যায় (কর্পাস সংস্করণ `b3094ee1132d`):
 
 | প্রশ্নসেট | প্রশ্ন | Recall@5 | Recall@10 | MRR@10 | nDCG@10 |
 |---|---|---|---|---|---|
@@ -3121,7 +3121,9 @@ Available:
 Bangladesh National AI Policy 2026-2030, Draft v2, February 9, 2026[EB/OL].
 Dhaka, 2026-02-09[2026-10-22].
 Available:
-<https://aipolicy.gov.bd/docs/national-ai-policy-bangladesh-2026-2030-draft-v2.0.pdf>
+<https://aipolicy.gov.bd/docs/national-ai-policy-bangladesh-2026-2030-draft-v2.0.pdf>.
+Archived copy (Internet Archive, 2026-05-27):
+<https://web.archive.org/web/20260527140701/https://aipolicy.gov.bd/docs/national-ai-policy-bangladesh-2026-2030-draft-v2.0.pdf>
 
 [১৫] THE DAILY OBSERVER.
 Works on human-centric nat’l AI Policy ongoing: ICT minister[EB/OL].
@@ -3428,7 +3430,9 @@ Available:
 Recruitment notice: Manager (General Administration), India AI, on contract basis[EB/OL].
 New Delhi: Digital India Corporation, 2025[2026-10-22].
 Available:
-<https://negd.gov.in/wp-content/uploads/2025/02/Manager-Gen.-Admin-India-AI.pdf>
+<https://negd.gov.in/wp-content/uploads/2025/02/Manager-Gen.-Admin-India-AI.pdf>.
+Also listed at:
+<https://dic.gov.in/jobs/manager-general-administration/>
 
 [৬৪] CIVIL SERVICE WORLD.
 AI unit grows to more than 40 staff after move to DSIT[EB/OL].
@@ -3749,7 +3753,9 @@ Available:
 Exchange Rate of Taka[EB/OL].
 Dhaka: Bangladesh Bank, 2026[2026-10-21].
 Available:
-<https://www.bb.org.bd/en/index.php/econdata/exchangerate>
+<https://www.bb.org.bd/en/index.php/econdata/exchangerate>.
+Archived copy (Internet Archive, 2026-09-06):
+<https://web.archive.org/web/20260906143127/https://www.bb.org.bd/en/index.php/econdata/exchangerate>
 
 [১১৪] DHAKA TRIBUNE.
 Inflation rises in September[EB/OL].

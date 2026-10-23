@@ -1309,7 +1309,7 @@ python -m unittest discover -s tests
 
 ## 11.5 Demonstration Results
 
-Running `python -m bapil.cli evaluate benchmarks/demo_questions.json` over a corpus of 1,792 passages from 8 BAPIL documents gives the following results (corpus version `3db8ac17e5d6`):
+Running `python -m bapil.cli evaluate benchmarks/demo_questions.json` over a corpus of 1,792 passages from 8 BAPIL documents gives the following results (corpus version `b3094ee1132d`):
 
 | Question set | Questions | Recall@5 | Recall@10 | MRR@10 | nDCG@10 |
 |---|---|---|---|---|---|
@@ -3106,7 +3106,9 @@ Available:
 Bangladesh National AI Policy 2026-2030, Draft v2, February 9, 2026[EB/OL].
 Dhaka, 2026-02-09[2026-10-22].
 Available:
-<https://aipolicy.gov.bd/docs/national-ai-policy-bangladesh-2026-2030-draft-v2.0.pdf>
+<https://aipolicy.gov.bd/docs/national-ai-policy-bangladesh-2026-2030-draft-v2.0.pdf>.
+Archived copy (Internet Archive, 2026-05-27):
+<https://web.archive.org/web/20260527140701/https://aipolicy.gov.bd/docs/national-ai-policy-bangladesh-2026-2030-draft-v2.0.pdf>
 
 [15] THE DAILY OBSERVER.
 Works on human-centric nat’l AI Policy ongoing: ICT minister[EB/OL].
@@ -3413,7 +3415,9 @@ Available:
 Recruitment notice: Manager (General Administration), India AI, on contract basis[EB/OL].
 New Delhi: Digital India Corporation, 2025[2026-10-22].
 Available:
-<https://negd.gov.in/wp-content/uploads/2025/02/Manager-Gen.-Admin-India-AI.pdf>
+<https://negd.gov.in/wp-content/uploads/2025/02/Manager-Gen.-Admin-India-AI.pdf>.
+Also listed at:
+<https://dic.gov.in/jobs/manager-general-administration/>
 
 [64] CIVIL SERVICE WORLD.
 AI unit grows to more than 40 staff after move to DSIT[EB/OL].
@@ -3734,7 +3738,9 @@ Available:
 Exchange Rate of Taka[EB/OL].
 Dhaka: Bangladesh Bank, 2026[2026-10-21].
 Available:
-<https://www.bb.org.bd/en/index.php/econdata/exchangerate>
+<https://www.bb.org.bd/en/index.php/econdata/exchangerate>.
+Archived copy (Internet Archive, 2026-09-06):
+<https://web.archive.org/web/20260906143127/https://www.bb.org.bd/en/index.php/econdata/exchangerate>
 
 [114] DHAKA TRIBUNE.
 Inflation rises in September[EB/OL].
