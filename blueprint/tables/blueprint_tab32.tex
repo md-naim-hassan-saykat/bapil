@@ -1,5 +1,6 @@
 \documentclass[border=10pt]{standalone}
 \usepackage{fontspec}
+\AtBeginDocument{\hyphenation{zenodo}}% never hyphenate "zenodo" inside a DOI
 \setmainfont{Latin Modern Roman}[Ligatures=TeXOff]
 \XeTeXgenerateactualtext=1
 \newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali, NFSSFamily=bnfam]

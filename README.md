@@ -333,7 +333,7 @@ bapil/
 │   ├── tables/                   # blueprint_tab01 ... 72 (TeX, PDF, PNG; EN and BN) + md/
 │   ├── data/                     # budget model outputs (CSV) and editable workbook (XLSX)
 │   ├── review/                   # internal pre-publication review records (not part of the publication)
-│   ├── zenodo/                   # Zenodo metadata draft and upload checklist
+│   ├── zenodo/                   # Zenodo metadata (Blueprint and Summary records) and upload checklist
 │   ├── MANIFEST.md, SOURCES_AND_LICENCES.md, QA_REPORT.md, CHANGES.md
 │   └── build_blueprint.sh
 │

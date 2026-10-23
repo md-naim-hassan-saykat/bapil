@@ -35,11 +35,11 @@
 \begin{tikzpicture}[node distance=7mm and 9mm]
 \node[pill, minimum width=46mm, minimum height=15mm] (wp) {\textbf{White Paper}\\Version 1.0\\{\footnotesize DOI 10.5281/zenodo.21363967}};
 \node[pill, minimum width=46mm, minimum height=15mm, right=12mm of wp] (es) {\textbf{Executive Summary}\\Version 1.0\\{\footnotesize DOI 10.5281/zenodo.21441172}};
-\node[key, rounded corners=13pt, minimum width=46mm, minimum height=15mm, right=12mm of es] (bp) {\textbf{Technical Blueprint}\\Version 1.0\\{\footnotesize DOI: new Zenodo record}};
+\node[key, rounded corners=13pt, minimum width=46mm, minimum height=15mm, right=12mm of es] (bp) {\textbf{Technical Blueprint}\\Version 1.0\\{\footnotesize DOI 10.5281/zenodo.23587901}};
 \draw[arr] (wp) -- (es);
 \draw[arr] (es) -- (bp);
-\node[box, minimum width=40mm, minimum height=11mm, below=14mm of bp.south, xshift=-32mm] (sum) {Blueprint Summary};
-\node[key, minimum width=40mm, minimum height=11mm, below=14mm of bp.south, xshift=32mm] (code) {Reference implementation\\(GitHub repository)};
+\node[box, minimum width=46mm, minimum height=15mm, below=14mm of bp.south, xshift=-32mm] (sum) {Blueprint Summary\\Version 1.0\\{\footnotesize DOI 10.5281/zenodo.23587919}};
+\node[key, minimum width=46mm, minimum height=15mm, below=14mm of bp.south, xshift=32mm] (code) {Reference implementation\\(GitHub repository)};
 \foreach \n in {sum,code} \draw[arr] (bp.south) -- (\n.north);
 \node[soft, minimum width=150mm, minimum height=11mm, below=12mm of sum, xshift=32mm] (pilots) {Controlled pilots P1 to P6 under the gates G0 to G4};
 \foreach \n in {sum,code} \draw[arr] (\n.south) -- (\n.south |- pilots.north);

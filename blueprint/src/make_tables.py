@@ -97,6 +97,7 @@ def tex_escape(s):
 
 PREAMBLE_EN = r"""\documentclass[border=10pt]{standalone}
 \usepackage{fontspec}
+\AtBeginDocument{\hyphenation{zenodo}}% never hyphenate "zenodo" inside a DOI
 \setmainfont{Latin Modern Roman}[Ligatures=TeXOff]
 \XeTeXgenerateactualtext=1
 \newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali, NFSSFamily=bnfam]
@@ -122,6 +123,7 @@ PREAMBLE_EN = r"""\documentclass[border=10pt]{standalone}
 
 PREAMBLE_BN = r"""\documentclass[border=10pt]{standalone}
 \usepackage{fontspec}
+\AtBeginDocument{\hyphenation{zenodo}}% never hyphenate "zenodo" inside a DOI
 \setmainfont{Noto Serif}[Ligatures=TeXOff]
 \XeTeXgenerateactualtext=1
 \newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali, NFSSFamily=bnfam]

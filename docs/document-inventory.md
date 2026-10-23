@@ -21,7 +21,7 @@ Classification: **1** authoritative source; **2** generated publication; **3** s
 | `blueprint/src/make_figures.py`, `figures_new.py` | Python, TikZ | EN, BN | Sources of the 16 figures | 1 | Current | Unchanged |
 | `blueprint/figures/` (90 files) | TikZ, PDF, PNG | EN, BN | Figures in usable formats | 2 | Regenerated | Rebuilt |
 | `blueprint/src/refs_new.md` | Markdown | EN | New references (source keys 84 onwards; the published documents renumber all references in order of first citation, see `blueprint/review/REFERENCE_NUMBERS.md`) | 1 | Current | Keys 123 to 126 added |
-| `blueprint/src/metadata.json` | JSON | EN, BN | Titles, version, date, author, DOI placeholder, licence | 1 | Current | Memo titles added |
+| `blueprint/src/metadata.json` | JSON | EN, BN | Titles, version, date, author, DOIs (Blueprint 10.5281/zenodo.23587901, Summary 10.5281/zenodo.23587919), licence | 1 | Current | Memo titles added |
 | `blueprint/src/assemble.py`, `make_tables.py`, `typography.py`, `blueprint-filter.lua`, `header-*.tex`, `blueprint/build_blueprint.sh`, `blueprint/make_manifest.py` | Python, Lua, LaTeX, shell | n/a | Build system | 1 | Current | Memo added to the build; evaluation corpus restricted; consistency check for Table 60 |
 | `reports/BAPIL_White_Paper_v1{,_bn}.md`, `reports/BAPIL_Executive_Summary_v1{,_bn}.md` | Markdown | EN, BN | Sources of the published White Paper and Executive Summary | 1 (for v1.0) | Published with DOIs | Not modified (published records) |
 | `releases/v1.0/*.pdf` | PDF | EN, BN | White Paper and Executive Summary, v1.0 | 5 | Published | Not modified |
@@ -54,13 +54,13 @@ Classification: **1** authoritative source; **2** generated publication; **3** s
 | `LICENSE` | MIT licence for software | 1 | Current | Unchanged |
 | `SECURITY.md` | Vulnerability reporting | 1 | Current | Unchanged |
 | `blueprint/README.md`, `MANIFEST.md`, `CHANGES.md`, `QA_REPORT.md`, `SOURCES_AND_LICENCES.md` | Blueprint package documentation | 1, 2 (manifest) | Current | Updated |
-| `blueprint/zenodo/` | Zenodo metadata draft, description, checklist, package script | 1 | Prepared; nothing uploaded | Updated (integration warning, licence and affiliation decisions) |
+| `blueprint/zenodo/` | Zenodo metadata and descriptions for the Blueprint and Summary records, checklist, package script | 1 | Prepared; nothing uploaded | Updated (integration warning, licence and affiliation decisions) |
 | `blueprint/review/` (audit and revision report, adversarial review, change record) | Earlier internal review records | 5 | Kept for traceability; not part of the publication | Unchanged |
 | `blueprint/review/PROJECT_AUDIT_REPORT.md`, `CROSS_DOCUMENT_RECONCILIATION.md`, `MARKDOWN_VALIDATION_REPORT.md`, `METADATA_TO_CONFIRM.md`, `REFERENCE_VERIFICATION.md`, `REFERENCE_NUMBERS.md` | Records of this audit | 3 | New | Created |
 | `research/*.md` (8 studies) | International case studies and literature review | 3 | Current; no licence statement | Licence to be confirmed |
 | `.github/workflows/tests.yml`, `build-blueprint.yml` | CI | 1 | Never run on GitHub | Corpus paths updated |
 | `.github/pull_request_template.md`, `.gitkeep` files, `scripts/.gitkeep` | Repository scaffolding | 7 | Empty placeholders in `ISSUE_TEMPLATE/`, `workflows/` and `scripts/` | Left as found (they predate this work) |
-| `dist/` (ignored by Git) | Zenodo package and Git bundle | 4 | Local only | Regenerated |
+| `dist/` (ignored by Git) | Zenodo upload sets (`zenodo/` for the Blueprint record, `zenodo-summary/` for the Summary record) and Git bundle | 4 | Local only | Regenerated |
 
 ## 4. Not found
 

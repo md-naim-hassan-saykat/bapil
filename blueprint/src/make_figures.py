@@ -89,8 +89,8 @@ FIGS["01"] = {
 \node[key, rounded corners=13pt, minimum width=46mm, minimum height=15mm, right=12mm of es] (bp) {\textbf{«bp»}\\«v10»\\{\footnotesize «newdoi»}};
 \draw[arr] (wp) -- (es);
 \draw[arr] (es) -- (bp);
-\node[box, minimum width=40mm, minimum height=11mm, below=14mm of bp.south, xshift=-32mm] (sum) {«sum»};
-\node[key, minimum width=40mm, minimum height=11mm, below=14mm of bp.south, xshift=32mm] (code) {«code»};
+\node[box, minimum width=46mm, minimum height=15mm, below=14mm of bp.south, xshift=-32mm] (sum) {«sum»\\«v10»\\{\footnotesize DOI 10.5281/zenodo.23587919}};
+\node[key, minimum width=46mm, minimum height=15mm, below=14mm of bp.south, xshift=32mm] (code) {«code»};
 \foreach \n in {sum,code} \draw[arr] (bp.south) -- (\n.north);
 \node[soft, minimum width=150mm, minimum height=11mm, below=12mm of sum, xshift=32mm] (pilots) {«pilots»};
 \foreach \n in {sum,code} \draw[arr] (\n.south) -- (\n.south |- pilots.north);
@@ -102,13 +102,13 @@ FIGS["01"] = {
 \draw[darr] (eval) -- (gh);
 \end{tikzpicture}""",
     "en": {"wp": "White Paper", "es": "Executive Summary", "bp": "Technical Blueprint", "v10": "Version 1.0",
-           "newdoi": "DOI: new Zenodo record", "sum": "Blueprint Summary",
+           "newdoi": "DOI 10.5281/zenodo.23587901", "sum": "Blueprint Summary",
            "code": "Reference implementation\\\\(GitHub repository)",
            "pilots": "Controlled pilots P1 to P6 under the gates G0 to G4",
            "eval": "Independent evaluation and adoption decisions",
            "zenodo": "Archived on Zenodo", "github": "Versioned on GitHub"},
     "bn": {"wp": "হোয়াইট পেপার", "es": "নির্বাহী সারসংক্ষেপ", "bp": "টেকনিক্যাল ব্লুপ্রিন্ট", "v10": "সংস্করণ ১.০",
-           "newdoi": "DOI: নতুন Zenodo রেকর্ড", "sum": "ব্লুপ্রিন্ট সারসংক্ষেপ",
+           "newdoi": "DOI 10.5281/zenodo.23587901", "sum": "ব্লুপ্রিন্ট সারসংক্ষেপ",
            "code": "রেফারেন্স বাস্তবায়ন\\\\(গিটহাব রিপোজিটরি)",
            "pilots": "গেট G0 থেকে G4-এর অধীনে নিয়ন্ত্রিত পাইলট P1 থেকে P6",
            "eval": "স্বাধীন মূল্যায়ন ও গ্রহণের সিদ্ধান্ত",

@@ -31,13 +31,13 @@ How the BAPIL publications move from this repository to a GitHub release and a Z
 7. Push the branch, merge into `main`, create and push tag `v1.1.0`.
 8. Publish GitHub release v1.1.0 with `RELEASE_NOTES.md` and the six PDFs.
 9. Upload `dist/zenodo/` to the Blueprint draft and `dist/zenodo-summary/` to the Summary draft, and publish them.
-10. Check that the DOI resolves, the related identifiers appear and the files match `SHA256SUMS.txt`.
-11. Update `README.md`, `CITATION.cff`, `CHANGELOG.md` and `docs/source-of-truth.md` with the real DOI and release date.
+10. Check that both DOIs resolve, the related identifiers appear and the files match the `SHA256SUMS.txt` of each upload set.
+11. Update `README.md`, `CITATION.cff`, `CHANGELOG.md` and `docs/source-of-truth.md` with the release date (the DOIs are already in them).
 12. Record the release and archival information in `CHANGELOG.md`.
 
 ## 4. Rules
 
 * Never insert a DOI that Zenodo has not issued. A reserved DOI may go into the documents only together with the commitment to publish that record.
-* Never describe a release, tag or DOI as existing before it does. All current documents describe them as planned.
+* Never describe a release, tag or DOI as existing before it does. All current documents describe the release and tag as planned, and the two DOIs as reserved.
 * Do not archive an intermediate draft as the final publication; the Zenodo record must contain the files built from the tagged commit.
 * A previous version’s DOI (White Paper, Executive Summary) does not identify the Blueprint.

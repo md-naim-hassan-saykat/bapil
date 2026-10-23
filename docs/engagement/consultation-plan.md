@@ -39,7 +39,7 @@ This is a working plan prepared by the author. It turns Section 21.3 of the Blue
 
 | Step | Target | Activity | Output |
 |---|---|---|---|
-| 1 | After the Blueprint DOI is issued | Publish the Blueprint, the Summary and the reference implementation with persistent identifiers | DOI; release notes |
+| 1 | After the Blueprint and Summary records are published (DOIs 10.5281/zenodo.23587901 and 10.5281/zenodo.23587919) | Publish the Blueprint, the Summary and the reference implementation with persistent identifiers | DOI; release notes |
 | 2 | Weeks 1 to 4 | Send the briefing note and request meetings with the ICT Division (and a2i) and the policy drafting team | Meeting requests; meeting notes |
 | 3 | Weeks 2 to 6 | Informal conversations with three to five candidate universities | Who may answer an open call |
 | 4 | Weeks 4 to 8 | Two expert roundtables (technology and evaluation; law, governance and finance), held under the Chatham House rule | Written summary of points raised, published without attribution |

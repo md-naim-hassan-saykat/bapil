@@ -72,9 +72,12 @@ import json, sys
 m = json.load(open(sys.argv[1], encoding="utf-8"))
 key, lang, out = sys.argv[2], sys.argv[3], sys.argv[4]
 q = lambda s: json.dumps(s, ensure_ascii=False)   # JSON strings are valid YAML scalars
+# each Zenodo publication carries its own DOI in the PDF keywords (the Memo has no DOI of its own)
+doi = {"title": m.get("doi", ""), "summary_title": m.get("summary_doi", "")}.get(key, "")
+kw = m["keywords"] + (["doi:" + doi] if doi and "PENDING" not in doi else [])
 with open(out, "w", encoding="utf-8") as fh:
     fh.write("title-meta: %s\nauthor-meta: %s\nsubject: %s\nkeywords: %s\n" % (
-        q(m[key + "_" + lang]), q(m["author"]), q(m["subject_" + lang]), q(", ".join(m["keywords"]))))
+        q(m[key + "_" + lang]), q(m["author"]), q(m["subject_" + lang]), q(", ".join(kw))))
 PY
   echo "$META_DIR/$1_$2.yaml"
 }
