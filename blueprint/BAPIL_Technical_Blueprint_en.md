@@ -1309,7 +1309,7 @@ python -m unittest discover -s tests
 
 ## 11.5 Demonstration Results
 
-Running `python -m bapil.cli evaluate benchmarks/demo_questions.json` over a corpus of 1,792 passages from 8 BAPIL documents gives the following results (corpus version `b3094ee1132d`):
+Running `python -m bapil.cli evaluate benchmarks/demo_questions.json` over a corpus of 1,792 passages from 8 BAPIL documents gives the following results (corpus version `e93f8349e1aa`):
 
 | Question set | Questions | Recall@5 | Recall@10 | MRR@10 | nDCG@10 |
 |---|---|---|---|---|---|
@@ -3417,7 +3417,9 @@ New Delhi: Digital India Corporation, 2025[2026-10-22].
 Available:
 <https://negd.gov.in/wp-content/uploads/2025/02/Manager-Gen.-Admin-India-AI.pdf>.
 Also listed at:
-<https://dic.gov.in/jobs/manager-general-administration/>
+<https://dic.gov.in/jobs/manager-general-administration/>.
+Archived copy (Internet Archive, 2026-03-17):
+<https://web.archive.org/web/20260317100654/https://dic.gov.in/jobs/manager-general-administration/>
 
 [64] CIVIL SERVICE WORLD.
 AI unit grows to more than 40 staff after move to DSIT[EB/OL].
