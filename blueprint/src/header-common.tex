@@ -50,7 +50,14 @@
     \XeTeXglyph\XeTeXcharglyph"20\relax\kern-\wd\z@\relax\penalty\z@\relax
     \spacefactor=\count255\relax
   \fi\fi}
-\newcommand\bapilrealspaces{\XeTeXinterchartokenstate=\@ne
+\newcommand\bapilrealspaces{\exhyphenpenalty=\@M % no line break at a hyphen in a reference (dates such as 2026-10-22)
+  % web addresses in the reference lists break only at punctuation, preferably after "/", never inside a
+  % word or a number; the lists are set ragged-right, so no line is stretched to fill the measure
+  \def\UrlBreaks{\do\.\do\@\do\\\do\!\do\_\do\|\do\;\do\>\do\]\do\)\do\,\do\?\do\&\do\'\do+\do\=\do\#\do\-}%
+  \def\UrlBigBreaks{\do\:\do\/}%
+  \mathchardef\UrlBreakPenalty=300 \mathchardef\UrlBigBreakPenalty=100
+  \raggedright
+  \XeTeXinterchartokenstate=\@ne
   \count@=\z@
   \loop
     \XeTeXinterchartoks\count@\e@alloc@intercharclass@top=\expandafter{%
