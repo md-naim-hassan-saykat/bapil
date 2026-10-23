@@ -1322,7 +1322,7 @@ python -m unittest discover -s tests
 
 ## ১১.৫ প্রদর্শনী ফলাফল
 
-`python -m bapil.cli evaluate benchmarks/demo_questions.json` কমান্ডটি ৮টি BAPIL নথির ১,৭৯২টি অনুচ্ছেদের কর্পাসে চালালে নিচের ফলাফল পাওয়া যায় (কর্পাস সংস্করণ `b2ac7df20c5d`):
+`python -m bapil.cli evaluate benchmarks/demo_questions.json` কমান্ডটি ৮টি BAPIL নথির ১,৭৯২টি অনুচ্ছেদের কর্পাসে চালালে নিচের ফলাফল পাওয়া যায় (কর্পাস সংস্করণ `0b7fce00a6ab`):
 
 | প্রশ্নসেট | প্রশ্ন | Recall@5 | Recall@10 | MRR@10 | nDCG@10 |
 |---|---|---|---|---|---|
@@ -3037,7 +3037,7 @@ BAPIL-P1: T2 Limited (total 5)
 
 \bapilrealspaces
 
-\setlength{\parskip}{2.5pt plus 1pt minus 1pt}
+\setlength{\parskip}{2pt plus 1pt minus 1pt}
 
 [১] \* ORGANISATION FOR ECONOMIC CO-OPERATION AND DEVELOPMENT (OECD).
 Recommendation of the Council on Artificial Intelligence (OECD/LEGAL/0449)[EB/OL].
@@ -3308,7 +3308,11 @@ Available:
 <https://bdlaws.minlaw.gov.bd/act-details-1692.html>,
 <https://bdlaws.minlaw.gov.bd/act-details-1709.html>,
 <https://bdlaws.minlaw.gov.bd/act-details-1710.html>,
-<https://bdlaws.minlaw.gov.bd/act-details-1728.html>
+<https://bdlaws.minlaw.gov.bd/act-details-1728.html>.
+Archived copies of entries 1692, 1709 and 1710 (Internet Archive, October 2026):
+<https://web.archive.org/web/20261006180929/https://bdlaws.minlaw.gov.bd/act-details-1692.html>,
+<https://web.archive.org/web/20261006213011/https://bdlaws.minlaw.gov.bd/act-details-1709.html>,
+<https://web.archive.org/web/20261002012212/https://bdlaws.minlaw.gov.bd/act-details-1710.html>
 
 [৪৩] THE FINANCIAL EXPRESS.
 Bangladesh amends cybersecurity law, drops online gambling clause[EB/OL].
@@ -3375,7 +3379,9 @@ Available:
 Model AI Governance Framework for Generative AI: Fostering a Trusted Ecosystem[EB/OL].
 Singapore: Infocomm Media Development Authority and AI Verify Foundation, 2024[2026-10-22].
 Available: 
-<https://aiverifyfoundation.sg/wp-content/uploads/2024/05/Model-AI-Governance-Framework-for-Generative-AI-May-2024-1-1.pdf>
+<https://aiverifyfoundation.sg/wp-content/uploads/2024/05/Model-AI-Governance-Framework-for-Generative-AI-May-2024-1-1.pdf>.
+Archived copy of the publication page (Internet Archive, 2026-10-04):
+<https://web.archive.org/web/20261004141910/https://aiverifyfoundation.sg/resources/mgf-gen-ai/>
 
 [৫৪] \* ESTONIAN BUSINESS AND INNOVATION AGENCY (e-Estonia).
 X-Road: The Backbone of e-Estonia[EB/OL].

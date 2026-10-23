@@ -159,6 +159,10 @@ WP_CORRECTIONS = {
     64: [("UNIVERSITY OF HELSINKI, REAKTOR.", "UNIVERSITY OF HELSINKI, MINNALEARN."),
          ("Helsinki: University of Helsinki and Reaktor, 2024[", "Helsinki: University of Helsinki and MinnaLearn, 2024[")],
     # 23 October 2026: "(TBS)" dropped, because the reference lists also use TBS for The Business Standard
+    # 23 October 2026: the publisher's server returned "Service Unavailable" to the author; archived copy added
+    53: [("Model-AI-Governance-Framework-for-Generative-AI-May-2024-1-1.pdf>",
+          "Model-AI-Governance-Framework-for-Generative-AI-May-2024-1-1.pdf>.\nArchived copy of the publication page (Internet Archive, 2026-10-04):\n"
+          "<https://web.archive.org/web/20261004141910/https://aiverifyfoundation.sg/resources/mgf-gen-ai/>")],
     68: [("TREASURY BOARD OF CANADA SECRETARIAT (TBS).", "TREASURY BOARD OF CANADA SECRETARIAT.")],
     69: [("TREASURY BOARD OF CANADA SECRETARIAT (TBS).", "TREASURY BOARD OF CANADA SECRETARIAT."),
          ("Algorithmic Impact Assessment (AIA) Tool[EB/OL].", "Algorithmic Impact Assessment[EB/OL]."),
@@ -250,7 +254,7 @@ def reference_section(mapping, lang):
         mark = "\\* " if key <= refnum.WP_LAST else ""   # asterisk, escaped for Markdown
         entries.append("[%d] %s%s" % (num, mark, body))
     if len(entries) > 40:   # the Blueprint only: tighter spacing between entries keeps the long list compact
-        head += "\n\\setlength{\\parskip}{2.5pt plus 1pt minus 1pt}\n"
+        head += "\n\\setlength{\\parskip}{2pt plus 1pt minus 1pt}\n"
     return head + "\n" + "\n\n".join(entries) + "\n"
 
 
