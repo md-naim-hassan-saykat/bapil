@@ -51,6 +51,6 @@ Once the Zenodo records are published:
 
 ## Open before publication
 
-1. Confirm the licence of the documents (CC BY 4.0 as printed) and whether `CITATION.cff` and the README adopt the Blueprint affiliation ("Independent Researcher, Bangladesh").
-2. Decide how to handle the Zenodo GitHub integration (see `blueprint/zenodo/UPLOAD_CHECKLIST.md`, section 0).
+1. Decided on 29 October 2026: CC BY 4.0 for the documents, tables, figures, data and `research/`; MIT for code; affiliation "Independent Researcher, Bangladesh" in all metadata; the Decision Memo is attached to the GitHub release but not deposited on Zenodo.
+2. Before the release, switch off the Zenodo GitHub integration for this repository (see `blueprint/zenodo/UPLOAD_CHECKLIST.md`, section 0), so that the release does not create an extra record under the White Paper's concept DOI.
 3. The DOIs are reserved and printed in the documents; tag and release, then publish the two Zenodo records.

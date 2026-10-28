@@ -94,10 +94,10 @@ Files listed: 766.
 
 | File | Bytes | SHA-256 |
 |---|---:|---|
-| `blueprint/CHANGES.md` | 37369 | `d5c0e02c34c715c28d119cfbfd33c8b4506a6ca7e95148007f3a5d006c3202ef` |
+| `blueprint/CHANGES.md` | 38416 | `5f980fa87b202627abb2c383281adbdf9e0f99597095a535d0d26eaf106dab61` |
 | `blueprint/QA_REPORT.md` | 26896 | `b2038a789ab8a8d715576cdfbc64b7d8d90f4d9f4d3c774af29fa959c3dfb37e` |
-| `blueprint/README.md` | 10539 | `b6532385ebe4365e045614dd9f99e4269bfb221ab591be5aadf58725d4b4fbf5` |
-| `blueprint/SOURCES_AND_LICENCES.md` | 3546 | `9d461cad46615590a1621f25a6f5db29585881fe14496c274a8bb7543fcbd123` |
+| `blueprint/README.md` | 10607 | `ad5bc2fcbff904fac2f2d776d4904246167ff9381ac9a92701ea5c1303a4c677` |
+| `blueprint/SOURCES_AND_LICENCES.md` | 3743 | `9977d7649ceac34725945f139e07283d1bb306a95d9d6445903b587b75f2cf85` |
 | `blueprint/build_blueprint.sh` | 6890 | `c5500d63e954730d07581145af5e2b68c7caf085cb1fc6504d3c87cb06a2ee0e` |
 | `blueprint/make_manifest.py` | 2960 | `938cc2e17f33c1463fb120b7ba730e09f0669c5c7cd69e00419cf15567f9230b` |
 
@@ -105,11 +105,11 @@ Files listed: 766.
 
 | File | Bytes | SHA-256 |
 |---|---:|---|
-| `blueprint/zenodo/UPLOAD_CHECKLIST.md` | 7338 | `38e06e868fed764bf20ce88940f3fc58665bc526b2e85d289290636015963b39` |
+| `blueprint/zenodo/UPLOAD_CHECKLIST.md` | 7413 | `d967f3c1149b594c691a6538ca1c60ec9f74fd970bca9b1fadfbd6a2051a92c8` |
 | `blueprint/zenodo/description.html` | 4357 | `102df3ce6798e3389ba05bb38dbcda466d0c7baf40592f6c1e7f92e33b38d4c9` |
 | `blueprint/zenodo/description_summary.html` | 1876 | `9cd08099b7d715398075ea2e9c80387aff172879c7d04e6c5eca042b4bcff94e` |
 | `blueprint/zenodo/make_zenodo_package.sh` | 1937 | `67f723655e956ab405cb5c3a4fdb08dfa98d6f753ed6188146d36884493bc3df` |
-| `blueprint/zenodo/zenodo_metadata.json` | 2431 | `9826dc55a78fa07e007032c956b16518556a174dd285e9d7f83875ed542f1aee` |
+| `blueprint/zenodo/zenodo_metadata.json` | 2355 | `aa0924d3ad2dc101e710b86efa3e641031ff087a21e176c99d7f037464f8df5d` |
 | `blueprint/zenodo/zenodo_metadata_summary.json` | 1670 | `bab9e04ad6dfd50f968f1c092153ba4fbb067fc018dd65625dc67a43bc263e20` |
 
 ## Figures (TikZ, PDF, PNG; EN and BN) (96 files)
@@ -812,7 +812,7 @@ Files listed: 766.
 | `blueprint/review/CROSS_DOCUMENT_RECONCILIATION.md` | 8896 | `1e5072e4cab01a6bb87d2af44907f6434714f67c46ebd3c5b5cdfc7ac3215390` |
 | `blueprint/review/INDEPENDENT_REVIEW_2026-10-23.md` | 10115 | `b2562e78d0bdcfa11b17827d532e37869ea8cb0f2b0fb7c3f689df90faae77b3` |
 | `blueprint/review/MARKDOWN_VALIDATION_REPORT.md` | 5333 | `fa5f2db635e4ee745b8e439ac0e7f87b2ddac32bc9344ee1af21c0202fb71af2` |
-| `blueprint/review/METADATA_TO_CONFIRM.md` | 3374 | `a3b2c1f94d75362bc74237370427257c88f1874411b3997cffcfa6c3b2ab4c84` |
+| `blueprint/review/METADATA_TO_CONFIRM.md` | 3542 | `fd017f7c2dbf3ec83562cf1dd7770baf0d21d46f03cdb7f547cd578339ea18bc` |
 | `blueprint/review/PROJECT_AUDIT_REPORT.md` | 22099 | `e2816df4280691e87f2fe62aa893576afb821c7051ecfb3659148d6229df231c` |
 | `blueprint/review/README.md` | 1180 | `1eee7846d4dd06e5ce9f36e67ffba77be8706d656cc349125ea294a390732490` |
 | `blueprint/review/REFERENCE_NUMBERS.md` | 9697 | `56d2384643b3037a6ef36e1c53c668831f8ac1ab8712ec3e2d4b9455217cd244` |

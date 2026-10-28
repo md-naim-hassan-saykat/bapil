@@ -61,6 +61,7 @@ Prepared for repository release v1.1.0. The tag, the GitHub release and the Blue
 - `README.md`: verified project status, Decision Memo, documentation index, repository structure, licensing of documents versus code, release status and the Zenodo GitHub integration decision.
 - New: `CONTRIBUTING.md`, `REPRODUCIBILITY.md`, `DATA_AND_METHODOLOGY.md`, `RELEASE_NOTES.md` (draft) and `docs/` (overview, inventory, architecture, governance, evaluation, legal references, financial model, licensing and asset rights, publication and archiving, source-of-truth register with bilingual terminology).
 - `reports/README.md`: missing closing backtick in the build-script entry.
+- Licences and affiliation settled for release (29 October 2026): CC BY 4.0 for the publications, tables, figures, data and the research studies (new `research/README.md`), MIT for code; affiliation "Independent Researcher, Bangladesh" in `CITATION.cff`, the README and the Zenodo metadata.
 
 ### Build and reproducibility
 
