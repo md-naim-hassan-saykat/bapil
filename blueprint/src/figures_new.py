@@ -178,7 +178,7 @@ NEW_FIGS["13"] = {
            "d2": "Blueprint 2.0; national policy alignment", "d3": "Common assurance across government",
            "d4": "Regional and South-South cooperation", "d5": "Periodic independent review",
            "e0": "Briefings for decision-makers", "e1": "200 officials trained by 2028; fellows",
-           "e2": "1,000 officials trained", "e3": "5,500 trained; regional hubs",
+           "e2": "750 officials trained", "e3": "5,500 trained; regional hubs",
            "e4": "Part of public-service training", "e5": "Lifelong learning",
            "rev": "Reviews", "r1": "Mid and end 2028", "r2": "2030", "r3": "2035", "r4": "2041"},
     "bn": {"h0": "H0 ভিত্তি", "p0": "চতুর্থ ত্রৈমাসিক ২০২৬", "h1": "H1 স্বল্পমেয়াদি", "p1": "২০২৭ থেকে ২০২৮",
@@ -198,7 +198,7 @@ NEW_FIGS["13"] = {
            "d2": "ব্লুপ্রিন্ট ২.০; জাতীয় নীতির সঙ্গে সামঞ্জস্য", "d3": "সরকারজুড়ে অভিন্ন আশ্বাস-পদ্ধতি",
            "d4": "আঞ্চলিক ও দক্ষিণ-দক্ষিণ সহযোগিতা", "d5": "পর্যায়ক্রমিক স্বাধীন পর্যালোচনা",
            "e0": "সিদ্ধান্তগ্রহণকারীদের অবহিতকরণ", "e1": "২০২৮-এর মধ্যে ২০০ কর্মকর্তা প্রশিক্ষিত; ফেলো",
-           "e2": "১,০০০ কর্মকর্তা প্রশিক্ষিত", "e3": "৫,৫০০ প্রশিক্ষিত; আঞ্চলিক কেন্দ্র",
+           "e2": "৭৫০ কর্মকর্তা প্রশিক্ষিত", "e3": "৫,৫০০ প্রশিক্ষিত; আঞ্চলিক কেন্দ্র",
            "e4": "জনপ্রশাসন প্রশিক্ষণের অংশ", "e5": "আজীবন শিক্ষা",
            "rev": "পর্যালোচনা", "r1": "২০২৮ (মধ্য ও শেষ)", "r2": "২০৩০", "r3": "২০৩৫", "r4": "২০৪১"},
 }

@@ -242,3 +242,20 @@ The audit corrected legal, institutional and technical statements in both editio
 | Line breaks in reference lists | Pass | Ragged-right; 0 split dates, 0 web addresses broken inside a word or number, 0 bare “https://” at a line end, 0 words beyond the margin, in all six PDFs |
 | DOIs | Pass | Blueprint DOI on 5 places in each edition of the Blueprint, the Summary DOI on 5; each Summary shows both; the Memo shows the Blueprint DOI; no “pending” text left; DOI links point to doi.org. doi.org does not yet resolve the DOIs because the records are unpublished |
 | DOI audit | Pass | Blueprint DOI: Blueprint 8 times per edition (title page, document information, citation, Table 1, Figure 1, Annex D, Annex V, Table 60), Summary 3, Memo 1; Summary DOI: Blueprint 7, Summary 3. PDF keywords carry each publication’s DOI. No DOI hyphenated in any PDF or table file |
+
+## 14. Ninth pass: project-wide consistency check (29 October 2026)
+
+Every source file, table module, generated document, repository document and engagement draft was read against the costed plan, the decisions table (Table 57), the review schedule (Table 48) and the traceability matrix (Annex A). Corrections are listed in `CHANGES.md` items 9.51 to 9.56.
+
+| Check | Result | Detail |
+|---|---|---|
+| Long-term targets against the plan | Fixed | Table 46, Figure 13, Chapter 16 and the Summary now agree with Tables 54 and 70: officials 750 by the end of 2030 and 5,500 by 2035; questions 3,000 in 2030 and 11,800 in 2035 |
+| Claims about traceability | Fixed | 16 of 26 requirements in Annex A; 13 implemented in code with unit tests |
+| Decisions and reviews in summaries | Fixed | Overview, Summary, Memo and briefing notes agree with Tables 48 and 57 |
+| Cross-references | Pass | Every table, figure, annex, chapter and section reference resolves in all six documents |
+| Page counts | Pass | Blueprint 147 and 146, Summary 11 and 11, Memo 1 and 1, briefing notes 1 and 1 |
+| Layout | Pass | Short pages are the accepted set; no body text near the page number; no word beyond the right margin; changed pages inspected visually |
+| English and Bangla parity | Pass | Same differences as the previous build (known layout values and numbers written as words) |
+| Typography | Pass | Quotation-mark check passed; no en or em dashes in the changes |
+| Unit tests and evaluation | Pass | 49 tests pass; demonstration Recall@10 0.92 (22 of 24), unchanged |
+| Budget | Pass | Unchanged: Tk 20.43 crore base, 22.24 adjusted, 17.93 to 25.25 scenarios, Phase 0 Tk 0.44 crore |

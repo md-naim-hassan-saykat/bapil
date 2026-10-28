@@ -120,11 +120,11 @@ Items that remain unresolved, with their owners and how they will be resolved, a
 
 **What already exists, and what does not.** A small, tested reference implementation of the core components (bilingual normalisation and search, cited answers with abstention, risk-tier assessment, the AI system register, evaluation and a tamper-evident audit log) is issued with this Blueprint in GitHub release v1.1.0 and archived with the Blueprint’s Zenodo record, which is published only after that release exists (Annex D). It is a research prototype, not a production system. The institution, the pilots, the benchmark and the funding do not yet exist; they are what this Blueprint proposes.
 
-**The long view.** A strategic roadmap sets five horizons: foundation (Q4 2026), short term (2027 to 2028), medium term (2029 to 2030), long term (2031 to 2035) and vision (2036 to 2041), followed by a charter renewal decision after 2041. It is aligned with the national AI policy cycle and with the 2041 national plans, and it is reviewed at fixed points and whenever major events occur.
+**The long view.** A strategic roadmap sets five horizons: foundation (Q4 2026), short term (2027 to 2028), medium term (2029 to 2030), long term (2031 to 2035) and vision (2036 to 2041), followed by a charter renewal decision after 2041. It is aligned with the national AI policy cycle, takes the long-term national plans to 2041 as reference points, and is reviewed at fixed points and whenever major events occur.
 
 **What it would cost.** An indicative budget, built from stated assumptions, is about Tk 20.4 crore over 36 months (Tk 17.9 to 25.3 crore across low and high scenarios). It is a planning estimate for a feasibility study to confirm, not approved funding (Chapter 17 and Annex Q). It deliberately funds a first stage only: if the pilots succeed, a costed national scale-up in Years 4 to 8 (about Tk 218.9 crore, rising to about 118 direct posts) is set out in Annex W; it is not requested now.
 
-**What is asked of the authorities.** Six decisions (Chapter 21): accept the Blueprint as a technical input to national AI policy drafting; approve a 12-month Phase 1 pilot; authorise bulk access to already-public documents; nominate Steering Board members and agree an independent selection process for the ethics committee; commission a feasibility and costing study; and confirm the guardrails.
+**What is asked of the authorities.** Six decisions (Chapter 21): accept the Blueprint as a technical input to national AI policy drafting; after Phase 0, approve a 12-month Phase 1 pilot; authorise bulk access to already-public documents; nominate Steering Board members and agree an independent selection process for the ethics committee; fund Phase 0, including a feasibility and costing study; and confirm the guardrails.
 
 \newpage
 
@@ -472,7 +472,7 @@ BAPIL complements, and must not duplicate, existing programmes. A KOICA-supporte
 
 ## 4.1 Approach
 
-Requirements were derived from three sources: the White Paper’s architecture, dashboard, foundation-model and governance chapters; the international frameworks the White Paper adopted as reference points [1, 2, 3, 19, 20, 21]; and the Bangladesh legal context summarised in Chapter 14. User needs were captured as personas and user stories. Each requirement is stated once, given an identifier and a priority, and traced to the components, code modules and tests that satisfy it (Annex A).
+Requirements were derived from three sources: the White Paper’s architecture, dashboard, foundation-model and governance chapters; the international frameworks the White Paper adopted as reference points [1, 2, 3, 19, 20, 21]; and the Bangladesh legal context summarised in Chapter 14. User needs were captured as personas and user stories. Each requirement is stated once, given an identifier and a priority; Annex A traces 16 requirements to the components, code modules and tests that address them, and the rest are verified in the pilots or by review.
 
 ## 4.2 Users and Personas
 
@@ -524,7 +524,7 @@ Requirements are grouped as functional requirements (FR), non-functional require
 | GR-05 | Incident reporting and response within defined time limits | Must |
 | GR-06 | Prohibited uses (tier T0) excluded by the BAPIL charter | Must |
 
-*Note.* Priority follows the MoSCoW convention (Must, Should, Could). Requirement IDs are traced to components, code modules and tests in Annex A.
+*Note.* Priority follows the MoSCoW convention (Must, Should, Could). Annex A traces 16 requirements to components, code modules and tests or pilot acceptance; the others are verified through pilot acceptance criteria, security testing or governance review.
 
 ## 4.4 Priority User Stories
 
@@ -1311,7 +1311,7 @@ python -m unittest discover -s tests
 
 ## 11.5 Demonstration Results
 
-Running `python -m bapil.cli evaluate benchmarks/demo_questions.json` over a corpus of 1,792 passages from 8 BAPIL documents gives the following results (corpus version `c3df905f3ada`):
+Running `python -m bapil.cli evaluate benchmarks/demo_questions.json` over a corpus of 1,792 passages from 8 BAPIL documents gives the following results (corpus version `58a34eae5e3e`):
 
 | Question set | Questions | Recall@5 | Recall@10 | MRR@10 | nDCG@10 |
 |---|---|---|---|---|---|
@@ -1764,7 +1764,7 @@ The short term covers Phase 0 in the first half of 2027 and the first 18 months 
 
 In the medium term, successful tools pass Gate G4 and are adopted by agencies as class O services under agency ownership, with BAPIL continuing to maintain benchmarks and evaluations. Hybrid retrieval is in production, BanglaPolicyQA v1 is released, and BPFM Stage 1 is completed if justified. The end of the 36-month plan in mid-2030 brings the final evaluation, a sustainability plan and Blueprint 2.0. In 2030, the end of the draft national AI policy period [12], BAPIL contributes evaluation evidence and governance experience to the design of the next policy cycle.
 
-**Key results by the end of 2030:** tools in operational use in at least two agencies; about 1,000 officials trained; ten agencies using BAPIL tools or methods; multi-year core funding agreed; the choice between continuing as a university lab and moving towards an independent foundation documented.
+**Key results by the end of 2030:** tools in operational use in at least two agencies; about 750 officials trained; ten agencies using BAPIL tools or methods; multi-year core funding agreed; the choice between continuing as a university lab and moving towards an independent foundation documented.
 
 **Dependencies:** positive final evaluation; agency budgets for operating adopted tools; continued political sponsorship.
 
@@ -1794,8 +1794,8 @@ No institution should assume its own permanence. After 2041 the charter is renew
 |------------------------------|----------|-----------|-----------|------------|----------------|
 | Public documents indexed with full provenance | 0 | 15,000 | 30,000 | 100,000 | All public instruments in force |
 | Share of national laws in force searchable in Bangla and English with citations | 0% | 50% | 90% | 100% | 100%, updated within 7 days |
-| BanglaPolicyQA questions (all versions) | 0 | 1,000 | 2,300 | 6,000 | Multi-domain, maintained |
-| Officials trained (cumulative) | 0 | 200 | 1,000 | 5,500 | Part of public-service training |
+| BanglaPolicyQA questions (all versions) | 0 | 1,000 | 3,000 | 11,800 | Multi-domain, maintained |
+| Officials trained (cumulative) | 0 | 200 | 750 | 5,500 | Part of public-service training |
 | Agencies using BAPIL tools or methods | 0 | 3 | 10 | 30 | Most ministries and divisions |
 | Monthly active users of policy search | 0 | 50 | 500 | 3,000 | Routine use across government |
 | Bangla and English Recall@10 gap (points) | n/a | Measured from v1 (month 30) | 5 or less | 3 or less | 2 or less |
@@ -1803,7 +1803,7 @@ No institution should assume its own permanence. After 2041 the charter is renew
 | Independent evaluations published | 0 | 1 | 3 | 8 | Every 5 years at least |
 | Open releases archived with a DOI | 3 | 8 | 15 | 40 | Continuous |
 
-*Note.* Planning targets, not commitments. They assume the baseline scenario of Table 47, Phase 0 in the first half of 2027 and Month 1 in July 2027, and are reset at every strategic review.
+*Note.* Planning targets, not commitments. They assume the baseline scenario of Table 47, Phase 0 in the first half of 2027 and Month 1 in July 2027, and are reset at every strategic review. Values are for the end of each year; from 2030 they assume the conditional scale-up of Annex W (Table 70). Question counts include 300 out-of-scope questions.
 
 The targets express the scale of ambition at each horizon. They are deliberately indicative: they assume the baseline scenario below, they will be revised at every strategic review, and they must never be pursued at the expense of quality or safeguards.
 
@@ -2189,7 +2189,7 @@ While the decisions are considered, the following steps can proceed without comm
 
 ## 21.4 Conclusion
 
-Bangladesh has the data foundations, the institutions and the talent to build a trustworthy AI policy-intelligence capability, and it is now putting in place the legal framework and national AI policy within which such a capability must operate. This Blueprint shows how to start small, safely and openly: with public documents, a bilingual search and answer service that always shows its sources, a governance system with real decision rights, and pilots that must prove their value before they grow. It also shows how that start can grow, horizon by horizon, into a national capability that supports the 2041 goals, without ever relaxing the safeguards that make it trustworthy. The reference implementation shows that the core mechanisms can be built and tested on a small scale; whether they help officials with real policy questions is what the pilot is designed to find out. That next step belongs to the authorities and partners who can decide to test them.
+Bangladesh has the data foundations, the institutions and the talent to build a trustworthy AI policy-intelligence capability, and it is now putting in place the legal framework and national AI policy within which such a capability must operate. This Blueprint shows how to start small, safely and openly: with public documents, a bilingual search and answer service that always shows its sources, a governance system with real decision rights, and pilots that must prove their value before they grow. It also shows how that start can grow, horizon by horizon, into a national capability that supports Bangladesh’s long-term development goals, without ever relaxing the safeguards that make it trustworthy. The reference implementation shows that the core mechanisms can be built and tested on a small scale; whether they help officials with real policy questions is what the pilot is designed to find out. That next step belongs to the authorities and partners who can decide to test them.
 
 \newpage
 
