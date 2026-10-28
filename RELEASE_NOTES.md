@@ -30,7 +30,7 @@ Full details: [`CHANGELOG.md`](CHANGELOG.md) and [`blueprint/CHANGES.md`](bluepr
 * The numbers and Gazette dates of the 2026 data-protection, data-management and cyber-security Acts are confirmed from official sources; their provisions were read through the laws database texts and need confirmation by qualified Bangladesh counsel (planned in Phase 0). The draft national AI policy is described from press reports.
 * The budget is a planning estimate: Tk 20.43 crore (base), Tk 22.24 crore (adjusted, with known omissions and 10% contingency), Tk 17.93 to 25.25 crore (low and high scenarios). A conditional national scale-up for Years 4 to 8 (about Tk 218.9 crore, about 118 direct posts by Year 8) is shown in Annex W but not requested. No funding is approved or committed.
 * The BanglaPolicyQA benchmark does not exist yet; the demonstration evaluation (Recall@10 0.92 on 24 questions at the latest build; it changes as the documents change) is a development result only.
-* The reference implementation is a research prototype, tested only on Linux. The unit tests pass locally; the CI workflows run for the first time when the release branch is pushed.
+* The reference implementation is a research prototype, tested only on Linux. Its 49 unit tests pass locally and on GitHub Actions.
 * The Bangla edition has had a systematic editorial pass (`blueprint/review/BANGLA_EDITORIAL_LOG.md`) but not an independent professional copy-edit.
 * Unit costs were checked against published prices and pay data, but no quotations or host salary scale exist yet (Annex V, U6).
 * The PDFs are not tagged for accessibility.
