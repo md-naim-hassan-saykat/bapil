@@ -103,7 +103,7 @@ TABLES_E = [
                 ["Bangla and English Recall@10 gap (points)", "n/a", "Measured from v1 (month 30)", "5 or less", "3 or less", "2 or less"],
                 ["AI systems listed in a public transparency register", "0", "6", "15", "Public-sector-wide register proposed", "Standard practice"],
                 ["Independent evaluations published", "0", "1", "3", "8", "Every 5 years at least"],
-                ["Open releases archived with a DOI", "3", "8", "15", "40", "Continuous"],
+                ["Open releases archived with a DOI", "4", "8", "15", "40", "Continuous"],
             ],
             "bn": [
                 ["পূর্ণ উৎস-তথ্যসহ সূচিবদ্ধ উন্মুক্ত নথি", "০", "১৫,০০০", "৩০,০০০", "১,০০,০০০", "বলবৎ সব উন্মুক্ত দলিল"],
@@ -115,7 +115,7 @@ TABLES_E = [
                 ["বাংলা ও ইংরেজির Recall@10 ব্যবধান (পয়েন্ট)", "প্রযোজ্য নয়", "v1 থেকে পরিমাপ (মাস ৩০)", "৫ বা কম", "৩ বা কম", "২ বা কম"],
                 ["জনসমক্ষে স্বচ্ছতা নিবন্ধনে তালিকাভুক্ত এআই ব্যবস্থা", "০", "৬", "১৫", "সরকারি খাতজুড়ে নিবন্ধন প্রস্তাবিত", "প্রমিত চর্চা"],
                 ["প্রকাশিত স্বাধীন মূল্যায়ন", "০", "১", "৩", "৮", "অন্তত প্রতি ৫ বছরে"],
-                ["DOI-সহ সংরক্ষিত উন্মুক্ত প্রকাশ", "৩", "৮", "১৫", "৪০", "নিরবচ্ছিন্ন"],
+                ["DOI-সহ সংরক্ষিত উন্মুক্ত প্রকাশ", "৪", "৮", "১৫", "৪০", "নিরবচ্ছিন্ন"],
             ],
         },
         "note": {"en": "Planning targets, not commitments. They assume the baseline scenario of Table 47, Phase 0 in the first half of 2027 and Month 1 in July 2027, and are reset at every strategic review. Values are for the end of each year; from 2030 they assume the conditional scale-up of Annex W (Table 70). Question counts include 300 out-of-scope questions.",

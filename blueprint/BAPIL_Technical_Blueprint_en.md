@@ -1311,7 +1311,7 @@ python -m unittest discover -s tests
 
 ## 11.5 Demonstration Results
 
-Running `python -m bapil.cli evaluate benchmarks/demo_questions.json` over a corpus of 1,792 passages from 8 BAPIL documents gives the following results (corpus version `58a34eae5e3e`):
+Running `python -m bapil.cli evaluate benchmarks/demo_questions.json` over a corpus of 1,792 passages from 8 BAPIL documents gives the following results (corpus version `9cfe9d22d2e1`):
 
 | Question set | Questions | Recall@5 | Recall@10 | MRR@10 | nDCG@10 |
 |---|---|---|---|---|---|
@@ -1801,7 +1801,7 @@ No institution should assume its own permanence. After 2041 the charter is renew
 | Bangla and English Recall@10 gap (points) | n/a | Measured from v1 (month 30) | 5 or less | 3 or less | 2 or less |
 | AI systems listed in a public transparency register | 0 | 6 | 15 | Public-sector-wide register proposed | Standard practice |
 | Independent evaluations published | 0 | 1 | 3 | 8 | Every 5 years at least |
-| Open releases archived with a DOI | 3 | 8 | 15 | 40 | Continuous |
+| Open releases archived with a DOI | 4 | 8 | 15 | 40 | Continuous |
 
 *Note.* Planning targets, not commitments. They assume the baseline scenario of Table 47, Phase 0 in the first half of 2027 and Month 1 in July 2027, and are reset at every strategic review. Values are for the end of each year; from 2030 they assume the conditional scale-up of Annex W (Table 70). Question counts include 300 out-of-scope questions.
 
@@ -2030,7 +2030,7 @@ The logical framework, following the standard logical framework approach [119], 
 | Input | Public documents indexed with full provenance | 0 | 5,000 | 25,000 |
 | Output | BanglaPolicyQA benchmark questions released | 0 | 500 | 2,000 |
 | Output | User-facing pilots (P1 to P3) that passed Gate G3 | 0 | 2 | 3 |
-| Output | Open releases archived with a DOI (including this Blueprint) | 3 | 5 | 10 |
+| Output | Open releases archived with a DOI (including this Blueprint and its Summary) | 4 | 5 | 10 |
 | Output | Officials trained in responsible AI and the tools | 0 | 100 | 500 |
 | Outcome | Monthly active pilot users | 0 | 30 | 300 |
 | Outcome | Median time saved on evidence search, measured in time-to-evidence studies (Annex R) | Baseline study | First measurement | 30% |
@@ -2174,7 +2174,7 @@ BAPIL is designed as a research institution as well as a builder of tools. Its r
 
 ## 21.2 What Happens After the Decisions
 
-Decisions D1 and D5 start Phase 0. During Phase 0 the host is selected, the legal review and the costing study are completed, and decisions D3 and D4 are prepared. When decision D2 is then taken and the MoU, host agreement and Year 1 funding are in place (Annex T), the 90-day plan in Section 15.4 can start. Decision D3 unlocks the full P1 corpus. Without it, P1 would start on a narrower corpus collected by assisted manual download from official websites and through university law libraries, because the official laws database does not permit automated retrieval (Section 14.1); the Phase 0 study costs this fallback. Decision D6 ensures that the safeguards in this Blueprint are binding from the first day.
+Decisions D1 and D5 start Phase 0. During Phase 0 the host is selected, the legal review and the costing study are completed, and decisions D3 and D4 are prepared. When decision D2 is then taken and the MoU, host agreement and Year 1 funding are in place (Annex T), the 90-day plan in Section 15.4 can start. Decision D3 unlocks the full P1 corpus. Without it, P1 would start on a narrower corpus collected by assisted manual download from official websites and through university law libraries, because the official laws database does not permit automated retrieval (Section 14.1); the Phase 0 study costs this fallback. Decision D6 makes the safeguards in this Blueprint binding from the adoption of the charter, before any pilot begins.
 
 ## 21.3 Immediate Next Steps (Q4 2026 to Q1 2027)
 

@@ -344,7 +344,7 @@ BAPIL is designed as a research institution as well as a builder of tools. Its r
 
 ## 21.2 What Happens After the Decisions
 
-Decisions D1 and D5 start Phase 0. During Phase 0 the host is selected, the legal review and the costing study are completed, and decisions D3 and D4 are prepared. When decision D2 is then taken and the MoU, host agreement and Year 1 funding are in place (Annex T), the 90-day plan in Section 15.4 can start. Decision D3 unlocks the full P1 corpus. Without it, P1 would start on a narrower corpus collected by assisted manual download from official websites and through university law libraries, because the official laws database does not permit automated retrieval (Section 14.1); the Phase 0 study costs this fallback. Decision D6 ensures that the safeguards in this Blueprint are binding from the first day.
+Decisions D1 and D5 start Phase 0. During Phase 0 the host is selected, the legal review and the costing study are completed, and decisions D3 and D4 are prepared. When decision D2 is then taken and the MoU, host agreement and Year 1 funding are in place (Annex T), the 90-day plan in Section 15.4 can start. Decision D3 unlocks the full P1 corpus. Without it, P1 would start on a narrower corpus collected by assisted manual download from official websites and through university law libraries, because the official laws database does not permit automated retrieval (Section 14.1); the Phase 0 study costs this fallback. Decision D6 makes the safeguards in this Blueprint binding from the adoption of the charter, before any pilot begins.
 
 ## 21.3 Immediate Next Steps (Q4 2026 to Q1 2027)
 

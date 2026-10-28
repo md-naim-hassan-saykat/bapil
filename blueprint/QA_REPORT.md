@@ -259,3 +259,20 @@ Every source file, table module, generated document, repository document and eng
 | Typography | Pass | Quotation-mark check passed; no en or em dashes in the changes |
 | Unit tests and evaluation | Pass | 49 tests pass; demonstration Recall@10 0.92 (22 of 24), unchanged |
 | Budget | Pass | Unchanged: Tk 20.43 crore base, 22.24 adjusted, 17.93 to 25.25 scenarios, Phase 0 Tk 0.44 crore |
+
+## 15. Tenth pass: second project-wide check (29 October 2026)
+
+Checked from different angles than section 14. Corrections: `CHANGES.md` items 9.57 and 9.58.
+
+| Check | Result | Detail |
+|---|---|---|
+| Every taka amount in the documents against `budget_model.py` | Pass | Base, scenarios, sensitivities, bridge, Phase 0, capital share, tranches, scale-up and eight-year total all agree; table rows and totals add up within rounding as stated in the notes |
+| Numbers in every table cell, English against Bangla | Pass | Differences are only numbers written as words (Year 1, Q4, Phase 2, a2i) and Indian digit grouping |
+| Numbers in figure labels, English against Bangla | Pass | Same |
+| Month numbers against calendar dates and fiscal years | Pass | Month 1 July 2027; milestones and reviews (mid and end 2028, mid 2030) and FY labels consistent |
+| Reference lists | Pass | All six documents: entries numbered 1 to n, every entry cited, no citation without an entry, first citations in order |
+| Section and table references | Pass | Each reference read against the heading or caption it points to |
+| Long-term targets and KPIs | Fixed | DOI baseline now 4 in Tables 46 and 54 |
+| Decisions in the text | Fixed | Section 21.2 timing of D6 aligned with Table 57 |
+| Repository, Zenodo and engagement files | Pass | Counts, DOIs, decisions, budget figures and statuses agree with the documents; referenced files exist |
+| Rebuild | Pass | Page counts 147, 146, 11, 11, 1, 1; accepted short pages only; no word beyond the margin; cross-references resolve; parity unchanged; typography check passed; 49 tests pass; Recall@10 0.92 |
