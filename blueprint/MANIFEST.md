@@ -95,7 +95,7 @@ Files listed: 766.
 | File | Bytes | SHA-256 |
 |---|---:|---|
 | `blueprint/CHANGES.md` | 36763 | `3db0b220b011252956705b5c812ee999f10abf4335140319522f8df3d4993913` |
-| `blueprint/QA_REPORT.md` | 23587 | `c1853910e2ee1bdbfffc63923eeb5c7cbe76b3555678a9ddfea8be3151fd19f2` |
+| `blueprint/QA_REPORT.md` | 25261 | `fbb3f4059bfb6fcf9bc648ed298bc6e1f056b298f1b33ba0f08f0c94b444b599` |
 | `blueprint/README.md` | 10539 | `b6532385ebe4365e045614dd9f99e4269bfb221ab591be5aadf58725d4b4fbf5` |
 | `blueprint/SOURCES_AND_LICENCES.md` | 3546 | `9d461cad46615590a1621f25a6f5db29585881fe14496c274a8bb7543fcbd123` |
 | `blueprint/build_blueprint.sh` | 6890 | `c5500d63e954730d07581145af5e2b68c7caf085cb1fc6504d3c87cb06a2ee0e` |
