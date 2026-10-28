@@ -4,14 +4,17 @@ Nothing in this list has been done yet. Each step is to be carried out by the au
 
 Keep these concepts apart: document version **1.0**; source revision (a Git commit); Git tag **v1.1.0**; GitHub release **v1.1.0**; the Blueprint’s Zenodo record and DOI (new, separate from the White Paper and Executive Summary records). Blueprint Annex D requires that the Zenodo record is **published only after** the GitHub release it refers to exists.
 
-## 0. Decide before anything is pushed
+## 0. Decisions before anything is pushed (taken 29 October 2026)
 
-| Decision | Options | Recommendation |
+| Decision | Choice | What remains to be done |
 |---|---|---|
-| Licence of the Blueprint, Summary, Memo, tables, figures and data | CC BY 4.0 (as printed) or another licence | Confirm CC BY 4.0 (consistent with the Executive Summary record) |
-| Affiliation in the metadata | Blueprint, `metadata.json` and `zenodo_metadata.json`: "Independent Researcher, Bangladesh" (chosen by the author). `CITATION.cff` and README author section: "Université Paris-Saclay" | Decide whether `CITATION.cff` and the README adopt the Blueprint affiliation for v1.1.0, so that GitHub, CFF and Zenodo agree |
-| Zenodo GitHub integration for this repository | The earlier White Paper record (10.5281/zenodo.21363967) was archived from GitHub release v1.0.1, so the integration was switched on at that time. If it is still on, publishing GitHub release v1.1.0 will automatically create a **new version under the concept DOI 10.5281/zenodo.21360565** (which today resolves to the White Paper), with metadata taken from `CITATION.cff` (a `.zenodo.json` file would take precedence; the repository has none) | **Option A (recommended):** switch the repository off at <https://zenodo.org/account/settings/github/> before publishing the release, and create the Blueprint record manually (sections 1 to 6). **Option B:** leave it on, accept that the concept DOI then points to a repository snapshot, and set `version: "1.1.0"` and `date-released` in `CITATION.cff` in the commit that will be tagged, so that the automatic record is not labelled 1.0 |
-| Include the Decision Memo in the Zenodo record | Yes or no | No by default: it is a separate document addressed to the authorities. It is attached to the GitHub release either way |
+| Licence of the Blueprint, Summary, Memo, tables, figures and data | **CC BY 4.0**, as printed (consistent with the Executive Summary record); code stays MIT | Select CC BY 4.0 on both Zenodo records |
+| Affiliation in the metadata | **"Independent Researcher, Bangladesh"** everywhere: Blueprint, Summary, `metadata.json`, `zenodo_metadata*.json`, `CITATION.cff` and the README author section | None |
+| Zenodo GitHub integration for this repository | **Option A: switch it off.** The earlier White Paper record (10.5281/zenodo.21363967) was archived from GitHub release v1.0.1, so the integration was on at that time. If it is still on, publishing GitHub release v1.1.0 would automatically create a new version under the concept DOI 10.5281/zenodo.21360565 (which today resolves to the White Paper), with metadata from `CITATION.cff`, in addition to the two prepared records | **Author, before the GitHub release:** at <https://zenodo.org/account/settings/github/>, switch the toggle for `md-naim-hassan-saykat/bapil` off. This does not affect existing records or DOIs |
+| Decision Memo in a Zenodo record | **No.** It is a separate document addressed to the authorities, not a research output; it is attached to the GitHub release | None |
+| Licence of `research/` | **CC BY 4.0**, stated in `research/README.md` | None |
+| Licence shown on the White Paper's Zenodo record (MIT, while the document says CC BY 4.0) | **Correct it to CC BY 4.0** (recommended; editing metadata keeps the DOI) | Author, on zenodo.org, at any time |
+| Engagement drafts in the Zenodo source archive | **Keep them in**, as they are marked as unsent drafts and document the planned consultation | None |
 
 ## 1. Reserve the DOIs (Zenodo drafts, not published): done
 

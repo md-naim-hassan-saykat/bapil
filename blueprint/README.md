@@ -23,7 +23,7 @@ This directory holds the editable sources and everything needed to rebuild the p
 | Figure sources (15 TikZ figures, EN and BN) | `src/make_figures.py`, `src/figures_new.py` | source |
 | Figures as TikZ, PDF and PNG | `figures/` | generated |
 | Budget model and its data | `src/budget_model.py`; CSV outputs in `data/` | source; generated |
-| Bibliography | `src/refs_new.md` (references 84 to 122); references 1 to 83 are read from `../reports/BAPIL_White_Paper_v1.md` | source |
+| Bibliography | `src/refs_new.md` (source keys 84 to 168); source keys 1 to 83 are read from `../reports/BAPIL_White_Paper_v1.md`; the documents renumber all references in order of first citation | source |
 | Layout templates and configuration | `src/header-*.tex`, `src/blueprint-filter.lua`, `src/metadata.json` | source |
 | Quotation-mark convention and check | `src/typography.py` | source |
 | Build script | `build_blueprint.sh` | source |

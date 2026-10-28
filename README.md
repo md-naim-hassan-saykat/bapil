@@ -421,7 +421,7 @@ If you use BAPIL in research, policy work, publications, or derivative projects,
 
 Unless otherwise noted, the source code, scripts, build files, and repository infrastructure are licensed under the **MIT License**. See the repository `LICENSE` file for details.
 
-The publications are licensed separately. The White Paper and Executive Summary state **CC BY 4.0**; the Technical Blueprint, Blueprint Summary, Decision Memo, their tables, figures and budget data are printed with **CC BY 4.0** (to be confirmed by the author before release). The Zenodo record of the White Paper currently shows the MIT License, which differs from the licence stated in the document. Details, third-party material and open licence decisions: [`docs/licensing-and-asset-rights.md`](docs/licensing-and-asset-rights.md).
+The publications are licensed separately. The White Paper and Executive Summary state **CC BY 4.0**; the Technical Blueprint, Blueprint Summary, Decision Memo, their tables, figures and budget data are licensed under **CC BY 4.0** (confirmed by the author on 29 October 2026). The research studies in `research/` are also CC BY 4.0. The Zenodo record of the White Paper currently shows the MIT License, which differs from the licence stated in the document. Details, third-party material and open licence decisions: [`docs/licensing-and-asset-rights.md`](docs/licensing-and-asset-rights.md).
 
 ---
 
@@ -463,8 +463,8 @@ BAPIL is an independent research and innovation initiative. The project does not
 
 **Md Naim Hassan Saykat**
 
-Master's Student in Artificial Intelligence  
-Université Paris-Saclay, France
+Independent Researcher, Bangladesh  
+ORCID: [0009-0007-5270-3970](https://orcid.org/0009-0007-5270-3970)
 
 **Research Interests**
 

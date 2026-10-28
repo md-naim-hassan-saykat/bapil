@@ -1,6 +1,6 @@
 # Metadata that still needs the author’s confirmation
 
-These values cannot be decided from the evidence in the repository. Nothing has been invented to fill them; each is marked as pending in the files concerned. Please confirm or correct them before release v1.1.0.
+These values could not be decided from the evidence in the repository. On 29 October 2026 the author asked for the standard choice to be made for items 1 to 6 and 11; the decisions are recorded in `blueprint/zenodo/UPLOAD_CHECKLIST.md`, section 0. Items 1, 2, 4, 6 and 11 are settled in the files; items 3 and 5 are actions for the author on zenodo.org; item 8 is set at release.
 
 | # | Item | Current value in the files | Why it needs confirmation | Where to change it |
 |---|---|---|---|---|
