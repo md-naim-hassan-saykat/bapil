@@ -10,11 +10,67 @@ The format is inspired by [Keep a Changelog](https://keepachangelog.com/en/1.1.0
 
 ### Planned
 
-- BAPIL Blueprint
+- BanglaPolicyQA benchmark (version 0)
 - Additional international AI governance studies
-- Expanded technical architecture documentation
-- Policy intelligence prototype
-- Expanded implementation roadmap
+- Pilot P1 (Bangladesh Policy Search Engine) alpha
+
+---
+
+## [1.1.0] - Unreleased (prepared October 2026)
+
+Prepared for repository release v1.1.0. The tag, the GitHub release and the Blueprint's Zenodo DOI have not been created yet; the release date will be added when the release is published.
+
+### Added
+
+- **Bangladesh AI Policy & Innovation Lab (BAPIL): Technical Blueprint**, Version 1.0 (October 2026), in English (authoritative) and Bangla (বাংলাদেশ এআই পলিসি অ্যান্ড ইনোভেশন ল্যাব (BAPIL): টেকনিক্যাল ব্লুপ্রিন্ট): five parts, 21 chapters, 23 annexes, 72 tables and 16 figures. PDFs: `releases/v1.1/BAPIL_Technical_Blueprint_en.pdf` and `releases/v1.1/BAPIL_Technical_Blueprint_bn.pdf`.
+- Blueprint Summary, Version 1.0, in English and Bangla (`releases/v1.1/BAPIL_Blueprint_Summary_en.pdf`, `..._bn.pdf`).
+- Decision Memo to the authorities, in English and Bangla (`releases/v1.1/BAPIL_Decision_Memo_en.pdf`, `..._bn.pdf`), a separate document that is not part of the Blueprint.
+- Editable source package in `blueprint/`: Markdown masters, table data, TikZ figure sources, the budget model with CSV outputs and an editable workbook with formulas (`blueprint/data/BAPIL_Budget_Model.xlsx`), LaTeX headers, Pandoc filter, metadata and one build script.
+- Sixteen figures and seventy-two tables as LaTeX, PDF and PNG (and Markdown for tables), in English and Bangla.
+- Reference implementation (`implementation/`, version 0.1.0): Bangla normalisation, bilingual BM25 search, cited extractive answers with abstention, risk tiers, AI system register and transparency export, evaluation metrics, hash-chained audit log, CLI and JSON API, with 49 unit tests (run locally; no public CI record yet).
+- JSON Schemas for policy-document metadata, AI system records and risk questionnaires; example records for pilots P1 to P6.
+- Bilingual demonstration question set and evaluation report (development results only).
+- GitHub Actions workflows for tests and for rebuilding the Blueprint PDFs (not yet run on GitHub).
+- Zenodo metadata draft, description and GitHub-to-Zenodo release checklist for the Blueprint record.
+- Security policy (`SECURITY.md`).
+- Internal review records in `blueprint/review/` (earlier audit and adversarial review, change record, October 2026 project audit, cross-document reconciliation, Markdown validation); these are not part of the publication.
+- Annex W of the Blueprint (Tables 69 and 70): jobs and skills created by the 36-month plan, and a costed, conditional national scale-up for Years 4 to 8 (about Tk 218.9 crore; about 118 direct posts by Year 8), shown for information and not requested; summarised in Section 17.3, the front matter, the Summary and the Decision Memo.
+- References numbered in order of first citation in every document (previously the White Paper numbers 1 to 83 were kept, so the list jumped, for example from 1 to 4); entries from the White Paper bibliography are marked with an asterisk; `blueprint/review/REFERENCE_NUMBERS.md` maps the new numbers to the source keys.
+- Unit costs in the budget checked against published prices and pay data (Section 17.1, Table 49); the base case is unchanged and the risk from 2026 equipment list prices, with or without import duty and VAT, is stated.
+- Stakeholder engagement drafts in `docs/engagement/`: one-page briefing note, letter templates for a candidate host and for the ICT Division (English and Bangla), and a consultation plan. None has been sent or signed.
+- Bangla editorial pass: consistent spelling of compound terms across all Bangla documents (`blueprint/review/BANGLA_EDITORIAL_LOG.md`).
+- Preparatory Phase 0 (about six months, about Tk 0.44 crore) before the 36-month plan: host selection, legal review, feasibility and costing study, data-access confirmation and the Year 1 funding commitment. Month 1 is July 2027 (FY2027-28).
+- Response to an independent review of the Blueprint (`blueprint/review/INDEPENDENT_REVIEW_2026-10-23.md`); expert-review request, comment form and counsel checklist in `docs/engagement/`.
+- DOIs reserved on Zenodo by the author: Technical Blueprint 10.5281/zenodo.23587901, Blueprint Summary 10.5281/zenodo.23587919 (two records; they resolve once published). Printed in all documents; separate upload folders `dist/zenodo/` and `dist/zenodo-summary/`.
+
+### Corrected
+
+- Personal data: the Blueprint and Summary no longer say that the data-protection framework simply "requires consent"; consent is described as the principal basis, with other grounds and broad exemptions, and BAPIL's consent rule is labelled as its own safeguard.
+- Cyber security: the June 2026 amendment is no longer described as an amendment on AI-generated content; the passage date is given and the disagreement between sources is disclosed, with the further draft amendment under review from July 2026.
+- National AI policy: the revised draft version 2.0 (9 February 2026) is recorded, so that the drafting announced for the fourth quarter of 2026 is not presented as a first draft.
+- Institutional status: remaining present-tense descriptions of BAPIL as established were made conditional.
+- Bangla terminology: "মানবিক তত্ত্বাবধান" (humane supervision) corrected to "মানব-তত্ত্বাবধান" (human oversight) throughout.
+- Table 60 now quotes the current demonstration result (Recall@10 0.92 at the latest build); the build stops if they diverge.
+- Legal references: the 2026 Acts are cited from the official list of Acts, the Gazette copies and the laws database texts instead of secondary sources.
+- Year 1 funding: 70% government and 30% one development partner; government share of the 36-month plan about Tk 9.6 crore (47%).
+- Codes renamed to avoid clashes: data classes DC0 to DC3 (were P0 to P3) and training programmes TR1 to TR6 (were T1 to T6).
+- White Paper reference [38] is cited in the Blueprint with the correct co-author (A. Piktus); the White Paper source is unchanged.
+
+### Documentation
+
+- `README.md`: verified project status, Decision Memo, documentation index, repository structure, licensing of documents versus code, release status and the Zenodo GitHub integration decision.
+- New: `CONTRIBUTING.md`, `REPRODUCIBILITY.md`, `DATA_AND_METHODOLOGY.md`, `RELEASE_NOTES.md` (draft) and `docs/` (overview, inventory, architecture, governance, evaluation, legal references, financial model, licensing and asset rights, publication and archiving, source-of-truth register with bilingual terminology).
+- `reports/README.md`: missing closing backtick in the build-script entry.
+- Licences and affiliation settled for release (29 October 2026): CC BY 4.0 for the publications, tables, figures, data and the research studies (new `research/README.md`), MIT for code; affiliation "Independent Researcher, Bangladesh" in `CITATION.cff`, the README and the Zenodo metadata.
+
+### Build and reproducibility
+
+- One script (`blueprint/build_blueprint.sh`) regenerates tables, figures, budget CSV, assembled Markdown and all six PDFs; fixed PDF dates and `SOURCE_DATE_EPOCH`; quotation-mark check on every build.
+- The demonstration evaluation corpus is restricted to the White Paper, Executive Summary, Blueprint and Summary.
+
+### Unchanged
+
+- The White Paper and Executive Summary (Version 1.0), their sources and `releases/v1.0/`.
 
 ---
 

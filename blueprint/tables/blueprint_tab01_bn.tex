@@ -1,0 +1,54 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\AtBeginDocument{\hyphenation{zenodo}}% never hyphenate "zenodo" inside a DOI
+\setmainfont{Noto Serif}[Ligatures=TeXOff]
+\XeTeXgenerateactualtext=1
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali, NFSSFamily=bnfam]
+\usepackage[Latin,Bengali]{ucharclasses}
+% group-free font switching (as in header-common.tex): robust inside braces, cells and quotes
+\makeatletter
+\def\BN@saved{\rmdefault}
+\def\BN@bn{bnfam}
+\newcommand\BNin{\edef\BN@tmp{\f@family}\ifx\BN@tmp\BN@bn\else\let\BN@saved\BN@tmp\fi\fontfamily{bnfam}\selectfont}
+\newcommand\BNout{\fontfamily{\BN@saved}\selectfont}
+\makeatother
+\setTransitionsFor{Bengali}{\BNin}{\BNout}
+% Typographic quotes and dashes are not in a ucharclasses class (class 0), so a Bangla word right
+% after “ or ‘ would not trigger the Bangla font. Treat them as Latin so that every switch fires.
+\XeTeXcharclass"2018=\XeTeXcharclass`A
+\XeTeXcharclass"2019=\XeTeXcharclass`A
+\XeTeXcharclass"201C=\XeTeXcharclass`A
+\XeTeXcharclass"201D=\XeTeXcharclass`A
+\XeTeXcharclass"2013=\XeTeXcharclass`A
+\XeTeXcharclass"2014=\XeTeXcharclass`A
+\XeTeXcharclass"2026=\XeTeXcharclass`A
+\usepackage{newunicodechar}
+\newunicodechar{।}{{\bengalifont\char"0964}}
+\newunicodechar{॥}{{\bengalifont\char"0965}}
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{17cm}
+{\large\bfseries সারণি ১।}\ {\large BAPIL নথি-পরিবার ও স্থায়ী শনাক্তকারী (Persistent Identifier)}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=0.815\hsize\raggedright\arraybackslash}X>{\hsize=0.598\hsize\raggedright\arraybackslash}X>{\hsize=1.413\hsize\raggedright\arraybackslash}X>{\hsize=1.033\hsize\raggedright\arraybackslash}X>{\hsize=1.141\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{নথি/\allowbreak{}উপকরণ} & \textbf{সংস্করণ} & \textbf{উদ্দেশ্য} & \textbf{প্রধান পাঠক} & \textbf{শনাক্তকারী} \\
+\midrule
+\textbf{হোয়াইট পেপার} & ১.০ (রিপোজিটরি রিলিজ v1.0.1) & ধারণাগত কাঠামো, আন্তর্জাতিক শিক্ষা, ২০৪১ পর্যন্ত রূপকল্প & সকল অংশীজন & 10.5281/\allowbreak{}zenodo.21363967 \\
+\textbf{নির্বাহী সারসংক্ষেপ} & ১.০ & হোয়াইট পেপারের সংক্ষিপ্ত সার & জ্যেষ্ঠ নীতিনির্ধারক & 10.5281/\allowbreak{}zenodo.21441172 \\
+\textbf{টেকনিক্যাল ব্লুপ্রিন্ট} (এই নথি) & ১.০ & বাস্তবায়নযোগ্য নকশা: প্রতিষ্ঠান, স্থাপত্য, ডেটা, শাসন, বাস্তবায়ন পরিকল্পনা & মন্ত্রণালয়, সংস্থা, কারিগরি দল, অংশীদার & 10.5281/\allowbreak{}zenodo.23587901 \\
+\textbf{ব্লুপ্রিন্ট সারসংক্ষেপ} & ১.০ & ব্লুপ্রিন্টের সংক্ষিপ্ত সার & সিদ্ধান্তগ্রহণকারী & 10.5281/\allowbreak{}zenodo.23587919 \\
+\textbf{রেফারেন্স বাস্তবায়ন} & ০.১.০ (এই ব্লুপ্রিন্টের সঙ্গে রিপোজিটরি রিলিজ v1.1.0-এ প্রকাশের জন্য নির্ধারিত) & ইউনিট পরীক্ষাসহ ব্লুপ্রিন্টের মূল উপাদানের গবেষণা-প্রোটোটাইপ; উৎপাদন-ব্যবস্থা নয় & প্রকৌশলী, গবেষক, নিরীক্ষক & গিটহাব রিপোজিটরি; রেকর্ডের সঙ্গে সংরক্ষিত \\
+\bottomrule
+\end{tabularx}
+\par\vspace{3pt}{\scriptsize\color{gray} উৎস: BAPIL টেকনিক্যাল ব্লুপ্রিন্ট, সংস্করণ ১.০ (২০২৬)। CC BY 4.0।}
+\end{minipage}
+\end{document}

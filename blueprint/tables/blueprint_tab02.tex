@@ -1,0 +1,49 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\AtBeginDocument{\hyphenation{zenodo}}% never hyphenate "zenodo" inside a DOI
+\setmainfont{Latin Modern Roman}[Ligatures=TeXOff]
+\XeTeXgenerateactualtext=1
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali, NFSSFamily=bnfam]
+\usepackage[Latin,Bengali]{ucharclasses}
+% group-free font switching (as in header-common.tex): robust inside braces, cells and quotes
+\makeatletter
+\def\BN@saved{\rmdefault}
+\def\BN@bn{bnfam}
+\newcommand\BNin{\edef\BN@tmp{\f@family}\ifx\BN@tmp\BN@bn\else\let\BN@saved\BN@tmp\fi\fontfamily{bnfam}\selectfont}
+\newcommand\BNout{\fontfamily{\BN@saved}\selectfont}
+\makeatother
+\setTransitionsFor{Bengali}{\BNin}{\BNout}
+% Typographic quotes and dashes are not in a ucharclasses class (class 0), so a Bangla word right
+% after “ or ‘ would not trigger the Bangla font. Treat them as Latin so that every switch fires.
+\XeTeXcharclass"2018=\XeTeXcharclass`A
+\XeTeXcharclass"2019=\XeTeXcharclass`A
+\XeTeXcharclass"201C=\XeTeXcharclass`A
+\XeTeXcharclass"201D=\XeTeXcharclass`A
+\XeTeXcharclass"2013=\XeTeXcharclass`A
+\XeTeXcharclass"2014=\XeTeXcharclass`A
+\XeTeXcharclass"2026=\XeTeXcharclass`A
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{22cm}
+{\large\bfseries Table 2.}\ {\large System maturity classes used throughout this Blueprint}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=0.709\hsize\raggedright\arraybackslash}X>{\hsize=1.418\hsize\raggedright\arraybackslash}X>{\hsize=0.927\hsize\raggedright\arraybackslash}X>{\hsize=0.927\hsize\raggedright\arraybackslash}X>{\hsize=1.036\hsize\raggedright\arraybackslash}X>{\hsize=0.982\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{Class} & \textbf{Definition} & \textbf{Users} & \textbf{Permitted data} & \textbf{Example} & \textbf{Approval} \\
+\midrule
+\textbf{R} Research prototype & Experimental system used to test methods; outputs never used for official decisions & BAPIL researchers and research partners & DC0; DC1 under a data-sharing agreement & Benchmark experiments with open models & Gates G0 and G1 \\
+\textbf{A} Advisory tool & Used by officials as one input among several; a person reviews every output before use & Officials in pilot agencies & DC0 and DC1; de-identified DC2 only & Policy Search pilot in two to three agencies & Gates G2 and G3; ERRC approval for tier T2 \\
+\textbf{O} Operational system & Integrated into agency workflows and owned and operated by the agency, not by BAPIL & Host agency staff and, where intended, the public & As authorised by law and the agency & Agency-operated search service & Gate G4 with host-agency legal review \\
+\bottomrule
+\end{tabularx}
+\par\vspace{3pt}{\scriptsize\color{gray} Source: BAPIL Technical Blueprint, Version 1.0 (2026). CC BY 4.0.}
+\end{minipage}
+\end{document}

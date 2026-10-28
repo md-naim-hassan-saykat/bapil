@@ -1,0 +1,56 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\AtBeginDocument{\hyphenation{zenodo}}% never hyphenate "zenodo" inside a DOI
+\setmainfont{Noto Serif}[Ligatures=TeXOff]
+\XeTeXgenerateactualtext=1
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali, NFSSFamily=bnfam]
+\usepackage[Latin,Bengali]{ucharclasses}
+% group-free font switching (as in header-common.tex): robust inside braces, cells and quotes
+\makeatletter
+\def\BN@saved{\rmdefault}
+\def\BN@bn{bnfam}
+\newcommand\BNin{\edef\BN@tmp{\f@family}\ifx\BN@tmp\BN@bn\else\let\BN@saved\BN@tmp\fi\fontfamily{bnfam}\selectfont}
+\newcommand\BNout{\fontfamily{\BN@saved}\selectfont}
+\makeatother
+\setTransitionsFor{Bengali}{\BNin}{\BNout}
+% Typographic quotes and dashes are not in a ucharclasses class (class 0), so a Bangla word right
+% after “ or ‘ would not trigger the Bangla font. Treat them as Latin so that every switch fires.
+\XeTeXcharclass"2018=\XeTeXcharclass`A
+\XeTeXcharclass"2019=\XeTeXcharclass`A
+\XeTeXcharclass"201C=\XeTeXcharclass`A
+\XeTeXcharclass"201D=\XeTeXcharclass`A
+\XeTeXcharclass"2013=\XeTeXcharclass`A
+\XeTeXcharclass"2014=\XeTeXcharclass`A
+\XeTeXcharclass"2026=\XeTeXcharclass`A
+\usepackage{newunicodechar}
+\newunicodechar{।}{{\bengalifont\char"0964}}
+\newunicodechar{॥}{{\bengalifont\char"0965}}
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{17cm}
+{\large\bfseries সারণি ৩১।}\ {\large দিগন্তভিত্তিক নির্দেশক অবকাঠামো-আকার}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=0.828\hsize\raggedright\arraybackslash}X>{\hsize=1.057\hsize\raggedright\arraybackslash}X>{\hsize=1.057\hsize\raggedright\arraybackslash}X>{\hsize=1.057\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{সম্পদ} & \textbf{পাইলট (২০২৭ থেকে ২০২৮)} & \textbf{সম্প্রসারণ (২০২৯ থেকে ২০৩০)} & \textbf{জাতীয় নেটওয়ার্ক (২০৩১ থেকে)} \\
+\midrule
+পরিবেশ & উন্নয়ন, পরীক্ষা ও উৎপাদন; দ্বিতীয় বছরে স্টেজিং ও পুনরুদ্ধার-সাইট যুক্ত & একাধিক সাইটে উৎপাদন-সক্ষমতা সম্প্রসারিত & অংশীদার সংস্থায় সমন্বিত প্রয়োগ \\
+অ্যাপ্লিকেশন সার্ভার & ২ থেকে ৩টি সাধারণ-উদ্দেশ্য সার্ভার & ৬ থেকে ৮টি সার্ভার বা সমতুল্য ভার্চুয়াল সক্ষমতা & যৌথ সরকারি ক্লাউড সক্ষমতা \\
+ইনফারেন্স GPU & ২টি GPU ইনফারেন্স সার্ভার (প্রতিটিতে ১ থেকে ২টি GPU); দ্বিতীয় বছরে স্টেজিং ও পুনরুদ্ধারের জন্য আরও ২টি & উৎপাদনে ৪ থেকে ৮টি GPU & জাতীয় এআই কম্পিউটিং থেকে বরাদ্দ \\
+অভিযোজন-কম্পিউটিং & পর্যায় ০-এ নেই; মাস ১৮-এ পর্যায় ১ অনুমোদিত হলে মাস ১৯ থেকে সময়সীমিত জাতীয় বরাদ্দ & সময়সীমিত জাতীয় বরাদ্দ (পর্যায় ১) & নির্ধারিত জাতীয় বরাদ্দ (যৌক্তিক হলে পর্যায় ২) \\
+সংরক্ষণক্ষমতা & ব্যাকআপসহ ১০ থেকে ২০ টেরাবাইট & প্রায় ১০০ টেরাবাইট & সংগ্রহজুড়ে কয়েকশ টেরাবাইট \\
+ব্যবহারকারী & প্রায় ৫০ জন পর্যন্ত পাইলট ব্যবহারকারী & কয়েকশ ব্যবহারকারী & মন্ত্রণালয়জুড়ে হাজারো ব্যবহারকারী \\
+\bottomrule
+\end{tabularx}
+\par\vspace{5pt}{\footnotesize\itshape ধাপ ০-এর সম্ভাব্যতা ও ব্যয়-নিরূপণ সমীক্ষার (অনুচ্ছেদ ১৫.১) পরিকল্পনা-অনুমান, ক্রয়-বিনির্দেশ নয়। পাইলট-কলাম বাজেটের যন্ত্রপাতির সঙ্গে সংগতিপূর্ণ (সারণি ৪৯)।}
+\par\vspace{3pt}{\scriptsize\color{gray} উৎস: BAPIL টেকনিক্যাল ব্লুপ্রিন্ট, সংস্করণ ১.০ (২০২৬)। CC BY 4.0।}
+\end{minipage}
+\end{document}

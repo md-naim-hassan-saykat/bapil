@@ -1,0 +1,52 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\AtBeginDocument{\hyphenation{zenodo}}% never hyphenate "zenodo" inside a DOI
+\setmainfont{Latin Modern Roman}[Ligatures=TeXOff]
+\XeTeXgenerateactualtext=1
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali, NFSSFamily=bnfam]
+\usepackage[Latin,Bengali]{ucharclasses}
+% group-free font switching (as in header-common.tex): robust inside braces, cells and quotes
+\makeatletter
+\def\BN@saved{\rmdefault}
+\def\BN@bn{bnfam}
+\newcommand\BNin{\edef\BN@tmp{\f@family}\ifx\BN@tmp\BN@bn\else\let\BN@saved\BN@tmp\fi\fontfamily{bnfam}\selectfont}
+\newcommand\BNout{\fontfamily{\BN@saved}\selectfont}
+\makeatother
+\setTransitionsFor{Bengali}{\BNin}{\BNout}
+% Typographic quotes and dashes are not in a ucharclasses class (class 0), so a Bangla word right
+% after “ or ‘ would not trigger the Bangla font. Treat them as Latin so that every switch fires.
+\XeTeXcharclass"2018=\XeTeXcharclass`A
+\XeTeXcharclass"2019=\XeTeXcharclass`A
+\XeTeXcharclass"201C=\XeTeXcharclass`A
+\XeTeXcharclass"201D=\XeTeXcharclass`A
+\XeTeXcharclass"2013=\XeTeXcharclass`A
+\XeTeXcharclass"2014=\XeTeXcharclass`A
+\XeTeXcharclass"2026=\XeTeXcharclass`A
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{22cm}
+{\large\bfseries Table 71.}\ {\large Integrated institutional and financial pathway, 2027 to 2041}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=1.274\hsize\raggedright\arraybackslash}X>{\hsize=1.221\hsize\raggedright\arraybackslash}X>{\hsize=1.381\hsize\raggedright\arraybackslash}X>{\hsize=0.478\hsize\raggedright\arraybackslash}X>{\hsize=0.531\hsize\raggedright\arraybackslash}X>{\hsize=1.115\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{Stage and period} & \textbf{Institutional form and employer} & \textbf{Government bodies and their role} & \textbf{Direct posts (end of stage)} & \textbf{Budget (Tk crore)} & \textbf{Gate to the next stage} \\
+\midrule
+\textbf{Phase 0}, about six months before Year 1 (first half of 2027) & No institution yet; studies and the host call commissioned by the ICT Division or a development partner & ICT Division or a development partner funds Phase 0 and names a focal point (D5); custodians confirm reuse terms (D3); Steering Board nominations prepared (D4) & None (contracted studies) & 0.44 & Host selected; legal review and costing study complete; Decision D2 taken \\
+\textbf{Phase 1 pilot}, Year 1 (FY2027-28) & University-anchored lab under an MoU (Option C); staff employed by the host on fixed-term contracts & ICT Division signs the MoU, co-chairs the Steering Board and names a focal point; Planning Commission and a data custodian sit on the Board; custodians authorise bulk access to public documents (D2 to D4) & 9 & 4.73 & Month-12 review and the updated Phase 2 work plan and budget (D1.3) approve Phase 2 and release Tranche 2 \\
+\textbf{Phase 2}, Years 2 and 3 (FY2028-29 to FY2029-30) & Same form; ERRC, TAB and transparency register in operation & Pilot agencies provide users and data; adoption decisions on P1 and P2 taken with host agencies (G4, month 24 onwards); independent mid-term evaluation at month 18 & 19 & 15.70 & Positive final evaluation (June 2030); P1 and P2 pass G4; decision to scale up at the strategic review (Table 48) \\
+\textbf{Conditional national scale-up}, Years 4 to 8 (FY2030-31 to FY2034-35) & Lab with multi-year core funding; four divisional university nodes; staff still employed by the host and partner universities & Government core contribution rises to about half of the budget; agencies own adopted tools as class O services, host placed analysts and sign service agreements; alignment with the national AI policy cycle after 2030 & 118 & 218.85 & 2035 strategic review of the institutional form against independence, sustainability, policy uptake and public trust \\
+\textbf{Institutionalisation}, from 2035 & Independent public-interest foundation (Option D), statutory centre attached to government, or a smaller research lab with agencies running the services (Section 5.9) & A statutory centre needs legislation or a formal government decision (Annex T); posts can then become regular posts of the new body under its service rules, with open recruitment & Set at the 2035 review & Set at the 2035 review (Blueprint 2.0 and later) & Independent review in 2041; charter renewed only if public value is confirmed \\
+\bottomrule
+\end{tabularx}
+\par\vspace{5pt}{\footnotesize\itshape Posts and budgets are computed by blueprint/\allowbreak{}src/\allowbreak{}budget\_model.py (functions stage\_posts, totals and scaleup); Phase 0 (function phase0) precedes the 36-month plan and is costed separately; Phase 1 and Phase 2 are the 36-month plan; the scale-up is conditional and not requested. Years are indicative, with Year 1 the fiscal year 2027-28 (Month 1 in July 2027).}
+\par\vspace{3pt}{\scriptsize\color{gray} Source: BAPIL Technical Blueprint, Version 1.0 (2026). CC BY 4.0.}
+\end{minipage}
+\end{document}

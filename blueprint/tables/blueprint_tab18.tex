@@ -1,0 +1,53 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\AtBeginDocument{\hyphenation{zenodo}}% never hyphenate "zenodo" inside a DOI
+\setmainfont{Latin Modern Roman}[Ligatures=TeXOff]
+\XeTeXgenerateactualtext=1
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali, NFSSFamily=bnfam]
+\usepackage[Latin,Bengali]{ucharclasses}
+% group-free font switching (as in header-common.tex): robust inside braces, cells and quotes
+\makeatletter
+\def\BN@saved{\rmdefault}
+\def\BN@bn{bnfam}
+\newcommand\BNin{\edef\BN@tmp{\f@family}\ifx\BN@tmp\BN@bn\else\let\BN@saved\BN@tmp\fi\fontfamily{bnfam}\selectfont}
+\newcommand\BNout{\fontfamily{\BN@saved}\selectfont}
+\makeatother
+\setTransitionsFor{Bengali}{\BNin}{\BNout}
+% Typographic quotes and dashes are not in a ucharclasses class (class 0), so a Bangla word right
+% after “ or ‘ would not trigger the Bangla font. Treat them as Latin so that every switch fires.
+\XeTeXcharclass"2018=\XeTeXcharclass`A
+\XeTeXcharclass"2019=\XeTeXcharclass`A
+\XeTeXcharclass"201C=\XeTeXcharclass`A
+\XeTeXcharclass"201D=\XeTeXcharclass`A
+\XeTeXcharclass"2013=\XeTeXcharclass`A
+\XeTeXcharclass"2014=\XeTeXcharclass`A
+\XeTeXcharclass"2026=\XeTeXcharclass`A
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{22cm}
+{\large\bfseries Table 18.}\ {\large Training curriculum}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=1.273\hsize\raggedright\arraybackslash}X>{\hsize=1.030\hsize\raggedright\arraybackslash}X>{\hsize=1.818\hsize\raggedright\arraybackslash}X>{\hsize=0.667\hsize\raggedright\arraybackslash}X>{\hsize=0.667\hsize\raggedright\arraybackslash}X>{\hsize=0.545\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{Programme} & \textbf{Audience} & \textbf{Core modules} & \textbf{Duration} & \textbf{Format} & \textbf{Year 1 target} \\
+\midrule
+\textbf{TR1} AI literacy for public leaders & Senior officials and heads of agencies & AI capabilities and limits; risk tiers; procurement; reading evaluations & 1 day & In person & 40 \\
+\textbf{TR2} Responsible AI for policy analysts & Pilot users and analysts & Cited search; verification; abstention; bias; data protection basics; prompt-injection awareness & 3 days & Blended & 100 \\
+\textbf{TR3} AI governance practitioner & Governance and legal staff, ERRC & Tier assessment; DPIA; impact assessment; gate reviews; audits; transparency & 5 days & In person & 30 \\
+\textbf{TR4} Data stewardship & Data custodians, chief data officers & Metadata; licences; quality; classification; data exchange agreements & 3 days & Blended & 40 \\
+\textbf{TR5} Bangla NLP and MLOps & Engineers in agencies and universities & Bangla text processing; retrieval; evaluation; model cards; secure deployment & 10 days & Blended & 30 \\
+\textbf{TR6} BAPIL fellowships & Graduate fellows & Research placement on a pilot or benchmark with mentoring & 6 to 12 months & Placement & 10 \\
+\bottomrule
+\end{tabularx}
+\par\vspace{5pt}{\footnotesize\itshape All course materials are published in Bangla and English under CC BY 4.0. The KPI of 100 trained officials in Year 1 counts TR2 participants; TR1 briefings and the specialist cohorts TR3 to TR5 are counted separately and funded from the specialist-course line of the budget (Table 49).}
+\par\vspace{3pt}{\scriptsize\color{gray} Source: BAPIL Technical Blueprint, Version 1.0 (2026). CC BY 4.0.}
+\end{minipage}
+\end{document}

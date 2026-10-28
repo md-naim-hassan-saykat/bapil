@@ -1,0 +1,57 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\AtBeginDocument{\hyphenation{zenodo}}% never hyphenate "zenodo" inside a DOI
+\setmainfont{Noto Serif}[Ligatures=TeXOff]
+\XeTeXgenerateactualtext=1
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali, NFSSFamily=bnfam]
+\usepackage[Latin,Bengali]{ucharclasses}
+% group-free font switching (as in header-common.tex): robust inside braces, cells and quotes
+\makeatletter
+\def\BN@saved{\rmdefault}
+\def\BN@bn{bnfam}
+\newcommand\BNin{\edef\BN@tmp{\f@family}\ifx\BN@tmp\BN@bn\else\let\BN@saved\BN@tmp\fi\fontfamily{bnfam}\selectfont}
+\newcommand\BNout{\fontfamily{\BN@saved}\selectfont}
+\makeatother
+\setTransitionsFor{Bengali}{\BNin}{\BNout}
+% Typographic quotes and dashes are not in a ucharclasses class (class 0), so a Bangla word right
+% after “ or ‘ would not trigger the Bangla font. Treat them as Latin so that every switch fires.
+\XeTeXcharclass"2018=\XeTeXcharclass`A
+\XeTeXcharclass"2019=\XeTeXcharclass`A
+\XeTeXcharclass"201C=\XeTeXcharclass`A
+\XeTeXcharclass"201D=\XeTeXcharclass`A
+\XeTeXcharclass"2013=\XeTeXcharclass`A
+\XeTeXcharclass"2014=\XeTeXcharclass`A
+\XeTeXcharclass"2026=\XeTeXcharclass`A
+\usepackage{newunicodechar}
+\newunicodechar{।}{{\bengalifont\char"0964}}
+\newunicodechar{॥}{{\bengalifont\char"0965}}
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{17cm}
+{\large\bfseries সারণি ৪।}\ {\large বাংলাদেশের নির্বাচিত ভিত্তি-সূচক}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=1.045\hsize\raggedright\arraybackslash}X>{\hsize=1.545\hsize\raggedright\arraybackslash}X>{\hsize=1.000\hsize\raggedright\arraybackslash}X>{\hsize=0.409\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{সূচক} & \textbf{প্রতিবেদিত মান} & \textbf{BAPIL-এর জন্য তাৎপর্য} & \textbf{উৎস} \\
+\midrule
+জাতিসংঘ ই-সরকার উন্নয়ন সূচক (EGDI), ২০২৪ & ১৯৩ দেশের মধ্যে ১০০তম, স্কোর ০.৬৫৭০ (২০২২ সালে ১১১তম); স্বল্পোন্নত দেশগুলোর মধ্যে সর্বোচ্চ EGDI & ভিত্তি হিসেবে ডিজিটাল সেবার কাঠামো বিদ্যমান & [5, 23] \\
+আইটিইউ গ্লোবাল সাইবার সিকিউরিটি ইনডেক্স, ২০২৪ & শীর্ষ স্তরে অবস্থান প্রতিবেদিত & কাঠামো আছে; চাপের মধ্যে স্থিতিস্থাপকতা এখনো যাচাই প্রয়োজন & [24, 25] \\
+অক্সফোর্ড ইনসাইটস সরকারি এআই প্রস্তুতি সূচক, ২০২৩ & ৮২তম & শাসন, ডেটা ও সক্ষমতা স্তম্ভে উন্নতির সুযোগ & [26, 27] \\
+বিশ্ববিদ্যালয়ে এআই কম্পিউটিং, ২০২৫ সালের অনুমান & জরিপকৃত বিভাগপ্রতি ২ থেকে ৫৫টি GPU; সরকারি বিশ্ববিদ্যালয়গুলো নিম্নপ্রান্তে & যৌথ জাতীয় কম্পিউটিং ব্যবহার; পাইলট মডেল ছোট রাখা & [27] \\
+উপাত্ত সুরক্ষা ও উপাত্ত ব্যবস্থাপনা & ১০ এপ্রিল ২০২৬-এ ব্যক্তিগত উপাত্ত সুরক্ষা আইন, ২০২৬ ও জাতীয় উপাত্ত ব্যবস্থাপনা আইন, ২০২৬ গেজেটে প্রকাশিত (২০২৬ সালের ৬৩ ও ৮০ নং আইন) & প্রথমে উন্মুক্ত ডেটা নকশার আইনগত প্রেক্ষাপট; প্রকাশিত নথির পুনর্ব্যবহার তথ্য অধিকার আইন ও পুনর্ব্যবহারের শর্তের ওপর নির্ভরশীল & [8, 9] \\
+জাতীয় এআই নীতি & খসড়া ২০২৬-২০৩০ জানুয়ারি ২০২৬-এ জন-পরামর্শে; ২০২৬-এর চতুর্থ ত্রৈমাসিক থেকে নতুন প্রণয়ন & কারিগরি উপকরণ দেওয়ার উপযুক্ত সময় & [12, 16] \\
+নেটওয়ার্ক স্থিতিস্থাপকতা & জুলাই ২০২৪-এর দেশব্যাপী ইন্টারনেট বন্ধে সংযোগ-নির্ভরতা ও একক ব্যর্থতা-বিন্দু উন্মোচিত & অফলাইন পরিচালনা, ব্যাকআপ ও পুনরুদ্ধারের পরিকল্পনা & [25] \\
+\bottomrule
+\end{tabularx}
+\par\vspace{5pt}{\footnotesize\itshape সূচকগুলো ভিন্ন ভিন্ন বছরে ভিন্ন বিষয় পরিমাপ করে, তাই সরাসরি তুলনীয় নয়। মানগুলো উদ্ধৃত উৎসে যেমন প্রতিবেদিত তেমনই দেওয়া হয়েছে।}
+\par\vspace{3pt}{\scriptsize\color{gray} উৎস: BAPIL টেকনিক্যাল ব্লুপ্রিন্ট, সংস্করণ ১.০ (২০২৬)। CC BY 4.0।}
+\end{minipage}
+\end{document}

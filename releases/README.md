@@ -1,6 +1,23 @@
 # BAPIL Releases
 
-This directory contains the official release packages for the Bangladesh AI Policy & Innovation Lab (BAPIL) White Paper.
+This directory contains the official release packages for the Bangladesh AI Policy & Innovation Lab (BAPIL) publications.
+
+## Version 1.1 (Technical Blueprint), prepared for release
+
+**Repository release:** v1.1.0 (proposed; not yet tagged or published)  
+**Document:** Bangladesh AI Policy & Innovation Lab (BAPIL): Technical Blueprint, Version 1.0, October 2026  
+**বাংলা শিরোনাম:** বাংলাদেশ এআই পলিসি অ্যান্ড ইনোভেশন ল্যাব (BAPIL): টেকনিক্যাল ব্লুপ্রিন্ট
+
+| File | Language | Description |
+|------|----------|-------------|
+| `v1.1/BAPIL_Technical_Blueprint_bn.pdf` | Bangla | Technical Blueprint (Version 1.0) |
+| `v1.1/BAPIL_Technical_Blueprint_en.pdf` | English | Technical Blueprint (Version 1.0), authoritative edition |
+| `v1.1/BAPIL_Blueprint_Summary_bn.pdf` | Bangla | Blueprint Summary (Version 1.0) |
+| `v1.1/BAPIL_Blueprint_Summary_en.pdf` | English | Blueprint Summary (Version 1.0) |
+| `v1.1/BAPIL_Decision_Memo_bn.pdf` | Bangla | Decision Memo (October 2026), a separate document addressed to the authorities; not part of the Blueprint |
+| `v1.1/BAPIL_Decision_Memo_en.pdf` | English | Decision Memo (October 2026), same |
+
+The PDFs are generated from the editable sources in [`blueprint/src/`](../blueprint/src/) by `blueprint/build_blueprint.sh`; see [`blueprint/README.md`](../blueprint/README.md). DOIs (reserved on Zenodo; they resolve once the records are published, after the GitHub release exists): Technical Blueprint 10.5281/zenodo.23587901; Blueprint Summary 10.5281/zenodo.23587919. The Decision Memo has no DOI.
 
 ## Version 1.0
 
@@ -13,6 +30,6 @@ This directory contains the official release packages for the Bangladesh AI Poli
 | `v1.0/BAPIL_White_Paper_v1.pdf` | English | White Paper (Version 1.0) |
 | `v1.0/BAPIL_White_Paper_v1_bn.pdf` | Bangla | White Paper (Version 1.0) |
 
-The editable Markdown source files are maintained in the [`reports/`](../reports/) directory.
+The editable Markdown source files for Version 1.0 are maintained in the [`reports/`](../reports/) directory.
 
 Future releases will be published in separate versioned directories (for example, `v1.1`, `v2.0`) to preserve a complete release history.

@@ -1,0 +1,54 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\AtBeginDocument{\hyphenation{zenodo}}% never hyphenate "zenodo" inside a DOI
+\setmainfont{Noto Serif}[Ligatures=TeXOff]
+\XeTeXgenerateactualtext=1
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali, NFSSFamily=bnfam]
+\usepackage[Latin,Bengali]{ucharclasses}
+% group-free font switching (as in header-common.tex): robust inside braces, cells and quotes
+\makeatletter
+\def\BN@saved{\rmdefault}
+\def\BN@bn{bnfam}
+\newcommand\BNin{\edef\BN@tmp{\f@family}\ifx\BN@tmp\BN@bn\else\let\BN@saved\BN@tmp\fi\fontfamily{bnfam}\selectfont}
+\newcommand\BNout{\fontfamily{\BN@saved}\selectfont}
+\makeatother
+\setTransitionsFor{Bengali}{\BNin}{\BNout}
+% Typographic quotes and dashes are not in a ucharclasses class (class 0), so a Bangla word right
+% after “ or ‘ would not trigger the Bangla font. Treat them as Latin so that every switch fires.
+\XeTeXcharclass"2018=\XeTeXcharclass`A
+\XeTeXcharclass"2019=\XeTeXcharclass`A
+\XeTeXcharclass"201C=\XeTeXcharclass`A
+\XeTeXcharclass"201D=\XeTeXcharclass`A
+\XeTeXcharclass"2013=\XeTeXcharclass`A
+\XeTeXcharclass"2014=\XeTeXcharclass`A
+\XeTeXcharclass"2026=\XeTeXcharclass`A
+\usepackage{newunicodechar}
+\newunicodechar{।}{{\bengalifont\char"0964}}
+\newunicodechar{॥}{{\bengalifont\char"0965}}
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{17cm}
+{\large\bfseries সারণি ৮।}\ {\large ধাপভিত্তিক পরামর্শ ও সম্পৃক্ততা পরিকল্পনা}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=0.744\hsize\raggedright\arraybackslash}X>{\hsize=1.302\hsize\raggedright\arraybackslash}X>{\hsize=1.209\hsize\raggedright\arraybackslash}X>{\hsize=0.744\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{ধাপ} & \textbf{উদ্দেশ্য} & \textbf{কার্যক্রম} & \textbf{উৎপাদ} \\
+\midrule
+প্রাক-সূচনা (২০২৬-এর চতুর্থ ত্রৈমাসিক থেকে ২০২৭-এর প্রথম ত্রৈমাসিক) & সিদ্ধান্তগ্রহণকারী ও বিশেষজ্ঞদের সঙ্গে ব্লুপ্রিন্ট যাচাই & আইসিটি বিভাগ ও ডেটা-রক্ষকদের অবহিতকরণ; বিশেষজ্ঞ গোলটেবিল; রিপোজিটরিতে জনমন্তব্যের সময় & মন্তব্য-লগ; ব্লুপ্রিন্ট ১.১ সংশোধনী \\
+সূচনা (মাস ১ থেকে ৬) & ভূমিকা, ডেটা প্রবেশাধিকার ও সুরক্ষায় সম্মতি & সনদ বিষয়ে পরামর্শ; ERRC মনোনয়ন; ডেটা-রক্ষক কর্মশালা & গৃহীত সনদ; ডেটা প্রবেশাধিকার পরিকল্পনা \\
+নির্মাণ (মাস ৪ থেকে ১৫) & বাস্তব ব্যবহারকারীদের সঙ্গে নকশা & সহ-নকশা অধিবেশন; বাংলা ও ইংরেজিতে ব্যবহারযোগ্যতা পরীক্ষা; মাসিক প্রদর্শনী & ব্যবহারকারী-পরীক্ষিত পাইলট; কাজের তালিকা প্রকাশিত \\
+মূল্যায়ন (মাস ১২ থেকে ২৪) & কী কাজ করে তা শেখা & ব্যবহারকারী জরিপ; প্রমাণ-প্রাপ্তির সময় সমীক্ষা; ফলাফলের উন্মুক্ত পর্যালোচনা & DOI-সহ মূল্যায়ন প্রতিবেদন \\
+সিদ্ধান্ত ও সম্প্রসারণ (মাস ২৪ থেকে ৩৬) & গ্রহণ ও পরবর্তী পদক্ষেপের সিদ্ধান্ত & স্বাগতিক সংস্থার সঙ্গে গ্রহণ-কর্মশালা; ব্লুপ্রিন্ট ২.০ বিষয়ে গণশুনানি & গ্রহণ-স্মারক; ব্লুপ্রিন্ট ২.০ \\
+\bottomrule
+\end{tabularx}
+\par\vspace{3pt}{\scriptsize\color{gray} উৎস: BAPIL টেকনিক্যাল ব্লুপ্রিন্ট, সংস্করণ ১.০ (২০২৬)। CC BY 4.0।}
+\end{minipage}
+\end{document}

@@ -1,0 +1,57 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\AtBeginDocument{\hyphenation{zenodo}}% never hyphenate "zenodo" inside a DOI
+\setmainfont{Latin Modern Roman}[Ligatures=TeXOff]
+\XeTeXgenerateactualtext=1
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali, NFSSFamily=bnfam]
+\usepackage[Latin,Bengali]{ucharclasses}
+% group-free font switching (as in header-common.tex): robust inside braces, cells and quotes
+\makeatletter
+\def\BN@saved{\rmdefault}
+\def\BN@bn{bnfam}
+\newcommand\BNin{\edef\BN@tmp{\f@family}\ifx\BN@tmp\BN@bn\else\let\BN@saved\BN@tmp\fi\fontfamily{bnfam}\selectfont}
+\newcommand\BNout{\fontfamily{\BN@saved}\selectfont}
+\makeatother
+\setTransitionsFor{Bengali}{\BNin}{\BNout}
+% Typographic quotes and dashes are not in a ucharclasses class (class 0), so a Bangla word right
+% after “ or ‘ would not trigger the Bangla font. Treat them as Latin so that every switch fires.
+\XeTeXcharclass"2018=\XeTeXcharclass`A
+\XeTeXcharclass"2019=\XeTeXcharclass`A
+\XeTeXcharclass"201C=\XeTeXcharclass`A
+\XeTeXcharclass"201D=\XeTeXcharclass`A
+\XeTeXcharclass"2013=\XeTeXcharclass`A
+\XeTeXcharclass"2014=\XeTeXcharclass`A
+\XeTeXcharclass"2026=\XeTeXcharclass`A
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{22cm}
+{\large\bfseries Table 46.}\ {\large Indicative long-term targets by horizon}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=2.000\hsize\raggedright\arraybackslash}X>{\hsize=0.667\hsize\raggedright\arraybackslash}X>{\hsize=0.733\hsize\raggedright\arraybackslash}X>{\hsize=0.733\hsize\raggedright\arraybackslash}X>{\hsize=0.800\hsize\raggedright\arraybackslash}X>{\hsize=1.067\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{Indicator} & \textbf{2026} & \textbf{2028} & \textbf{2030} & \textbf{2035} & \textbf{2041} \\
+\midrule
+Public documents indexed with full provenance & 0 & 15,000 & 30,000 & 100,000 & All public instruments in force \\
+Share of national laws in force searchable in Bangla and English with citations & 0\% & 50\% & 90\% & 100\% & 100\%, updated within 7 days \\
+BanglaPolicyQA questions (all versions) & 0 & 1,000 & 3,000 & 11,800 & Multi-domain, maintained \\
+Officials trained (cumulative) & 0 & 200 & 750 & 5,500 & Part of public-service training \\
+Agencies using BAPIL tools or methods & 0 & 3 & 10 & 30 & Most ministries and divisions \\
+Monthly active users of policy search & 0 & 50 & 500 & 3,000 & Routine use across government \\
+Bangla and English Recall@10 gap (points) & n/\allowbreak{}a & Measured from v1 (month 30) & 5 or less & 3 or less & 2 or less \\
+AI systems listed in a public transparency register & 0 & 6 & 15 & Public-sector-wide register proposed & Standard practice \\
+Independent evaluations published & 0 & 1 & 3 & 8 & Every 5 years at least \\
+Open releases archived with a DOI & 4 & 8 & 15 & 40 & Continuous \\
+\bottomrule
+\end{tabularx}
+\par\vspace{5pt}{\footnotesize\itshape Planning targets, not commitments. They assume the baseline scenario of Table 47, Phase 0 in the first half of 2027 and Month 1 in July 2027, and are reset at every strategic review. Values are for the end of each year; from 2030 they assume the conditional scale-up of Annex W (Table 70). Question counts include 300 out-of-scope questions.}
+\par\vspace{3pt}{\scriptsize\color{gray} Source: BAPIL Technical Blueprint, Version 1.0 (2026). CC BY 4.0.}
+\end{minipage}
+\end{document}

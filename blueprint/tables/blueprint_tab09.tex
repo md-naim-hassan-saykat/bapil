@@ -1,0 +1,52 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\AtBeginDocument{\hyphenation{zenodo}}% never hyphenate "zenodo" inside a DOI
+\setmainfont{Latin Modern Roman}[Ligatures=TeXOff]
+\XeTeXgenerateactualtext=1
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali, NFSSFamily=bnfam]
+\usepackage[Latin,Bengali]{ucharclasses}
+% group-free font switching (as in header-common.tex): robust inside braces, cells and quotes
+\makeatletter
+\def\BN@saved{\rmdefault}
+\def\BN@bn{bnfam}
+\newcommand\BNin{\edef\BN@tmp{\f@family}\ifx\BN@tmp\BN@bn\else\let\BN@saved\BN@tmp\fi\fontfamily{bnfam}\selectfont}
+\newcommand\BNout{\fontfamily{\BN@saved}\selectfont}
+\makeatother
+\setTransitionsFor{Bengali}{\BNin}{\BNout}
+% Typographic quotes and dashes are not in a ucharclasses class (class 0), so a Bangla word right
+% after “ or ‘ would not trigger the Bangla font. Treat them as Latin so that every switch fires.
+\XeTeXcharclass"2018=\XeTeXcharclass`A
+\XeTeXcharclass"2019=\XeTeXcharclass`A
+\XeTeXcharclass"201C=\XeTeXcharclass`A
+\XeTeXcharclass"201D=\XeTeXcharclass`A
+\XeTeXcharclass"2013=\XeTeXcharclass`A
+\XeTeXcharclass"2014=\XeTeXcharclass`A
+\XeTeXcharclass"2026=\XeTeXcharclass`A
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{17cm}
+{\large\bfseries Table 9.}\ {\large User personas}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=0.840\hsize\raggedright\arraybackslash}X>{\hsize=0.988\hsize\raggedright\arraybackslash}X>{\hsize=1.185\hsize\raggedright\arraybackslash}X>{\hsize=0.988\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{Persona} & \textbf{Goals} & \textbf{Pain points today} & \textbf{Most important requirement} \\
+\midrule
+\textbf{A. Policy analyst} in a planning wing & Find the governing text and past commitments quickly; cite them in briefs & Searches many websites; scanned PDFs; unsure which version is current & FR-01, FR-02, FR-03 \\
+\textbf{B. Budget analyst or journalist} & Compare allocations across years and ministries & Tables locked in PDFs; inconsistent headings between years & FR-04, NFR-07 \\
+\textbf{C. Consultation owner} in a ministry & Understand thousands of submissions fairly & Manual reading; risk of missing minority views & FR-05, GR-03 \\
+\textbf{D. Researcher} in a university & Benchmark Bangla methods on real policy text & No open domain benchmark or governed corpus & FR-08, NFR-06 \\
+\textbf{E. Senior official} & Trust the evidence behind a recommendation & Cannot see sources or limitations of AI outputs & NFR-08, GR-01 \\
+\textbf{F. Citizen or civil-society monitor} & Know how AI is used in public research & No public register of AI systems & FR-09, GR-06 \\
+\bottomrule
+\end{tabularx}
+\par\vspace{3pt}{\scriptsize\color{gray} Source: BAPIL Technical Blueprint, Version 1.0 (2026). CC BY 4.0.}
+\end{minipage}
+\end{document}

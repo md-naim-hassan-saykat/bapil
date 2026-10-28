@@ -1,0 +1,54 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\AtBeginDocument{\hyphenation{zenodo}}% never hyphenate "zenodo" inside a DOI
+\setmainfont{Noto Serif}[Ligatures=TeXOff]
+\XeTeXgenerateactualtext=1
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali, NFSSFamily=bnfam]
+\usepackage[Latin,Bengali]{ucharclasses}
+% group-free font switching (as in header-common.tex): robust inside braces, cells and quotes
+\makeatletter
+\def\BN@saved{\rmdefault}
+\def\BN@bn{bnfam}
+\newcommand\BNin{\edef\BN@tmp{\f@family}\ifx\BN@tmp\BN@bn\else\let\BN@saved\BN@tmp\fi\fontfamily{bnfam}\selectfont}
+\newcommand\BNout{\fontfamily{\BN@saved}\selectfont}
+\makeatother
+\setTransitionsFor{Bengali}{\BNin}{\BNout}
+% Typographic quotes and dashes are not in a ucharclasses class (class 0), so a Bangla word right
+% after “ or ‘ would not trigger the Bangla font. Treat them as Latin so that every switch fires.
+\XeTeXcharclass"2018=\XeTeXcharclass`A
+\XeTeXcharclass"2019=\XeTeXcharclass`A
+\XeTeXcharclass"201C=\XeTeXcharclass`A
+\XeTeXcharclass"201D=\XeTeXcharclass`A
+\XeTeXcharclass"2013=\XeTeXcharclass`A
+\XeTeXcharclass"2014=\XeTeXcharclass`A
+\XeTeXcharclass"2026=\XeTeXcharclass`A
+\usepackage{newunicodechar}
+\newunicodechar{।}{{\bengalifont\char"0964}}
+\newunicodechar{॥}{{\bengalifont\char"0965}}
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{17cm}
+{\large\bfseries সারণি ৪৭।}\ {\large কৌশলগত দৃশ্যকল্প ও করণীয়}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=0.681\hsize\raggedright\arraybackslash}X>{\hsize=1.106\hsize\raggedright\arraybackslash}X>{\hsize=0.979\hsize\raggedright\arraybackslash}X>{\hsize=1.234\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{দৃশ্যকল্প} & \textbf{বিবরণ} & \textbf{প্রাথমিক সংকেত} & \textbf{কৌশলগত করণীয়} \\
+\midrule
+\textbf{ত্বরান্বিত} & শক্তিশালী রাজনৈতিক পৃষ্ঠপোষকতা, জাতীয় কম্পিউটিং ও ডেটা-বিনিময় আগেভাগে উপলব্ধ & অর্থায়নসহ এআই নীতি গৃহীত; NRDEX চালু; সংস্থাগুলোর সরঞ্জাম চাহিদা & H2-এর গ্রহণ এগিয়ে আনা; আরও মন্ত্রণালয়ে সম্প্রসারণ; গতির কারণে সুরক্ষা যেন না কমে তাই গেট অপরিবর্তিত \\
+\textbf{ভিত্তি} & ডেটা প্রবেশাধিকার ও অর্থায়নে স্বাভাবিক বিলম্বসহ স্থির অগ্রগতি & প্রায় দুই ত্রৈমাসিকের মধ্যে মাইলফলক অর্জিত & রোডম্যাপ অনুসরণ; পর্যালোচনার মাধ্যমে পরিধি সমন্বয় \\
+\textbf{সীমিত} & অর্থায়ন হ্রাস, ধীর ডেটা-চুক্তি বা পৃষ্ঠপোষকতা হারানো & MS2 বা MS4 অনর্জিত; বাজেট বিলম্ব; কর্মী বদল & মূল অংশ রক্ষা (P1, বেঞ্চমার্ক, শাসন); P3, P5 ও P6 স্থগিত; গবেষণা অনুদান সন্ধান; যা আছে তা প্রকাশ \\
+\textbf{প্রযুক্তিগত পরিবর্তন} & অনেক শক্তিশালী বা সস্তা মডেল সম্ভাবনার পরিধি বদলে দেয় & অভিযোজন ছাড়াই উন্মুক্ত মডেল সীমা অতিক্রম করে; ব্যয় দ্রুত কমে & মডেল নির্বাচন পুনরায় (সারণি ২৯); অপ্রয়োজনীয় BPFM পর্যায় বাদ; মূল্যায়ন ও ডেটায় বিনিয়োগ \\
+\textbf{শাসনগত ধাক্কা} & বাংলাদেশে বা বিদেশে গুরুতর এআই ঘটনায় জন-আস্থা হ্রাস & সংবাদমাধ্যমে প্রচার; নতুন বিধিনিষেধ; অভিযোগ & প্রভাবিত ব্যবস্থা স্থগিত; স্বাধীন পর্যালোচনা; ফলাফল প্রকাশ; নিয়ন্ত্রণ জোরদার; উন্মুক্ত যোগাযোগ \\
+\bottomrule
+\end{tabularx}
+\par\vspace{3pt}{\scriptsize\color{gray} উৎস: BAPIL টেকনিক্যাল ব্লুপ্রিন্ট, সংস্করণ ১.০ (২০২৬)। CC BY 4.0।}
+\end{minipage}
+\end{document}

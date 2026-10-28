@@ -1,0 +1,54 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\AtBeginDocument{\hyphenation{zenodo}}% never hyphenate "zenodo" inside a DOI
+\setmainfont{Latin Modern Roman}[Ligatures=TeXOff]
+\XeTeXgenerateactualtext=1
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali, NFSSFamily=bnfam]
+\usepackage[Latin,Bengali]{ucharclasses}
+% group-free font switching (as in header-common.tex): robust inside braces, cells and quotes
+\makeatletter
+\def\BN@saved{\rmdefault}
+\def\BN@bn{bnfam}
+\newcommand\BNin{\edef\BN@tmp{\f@family}\ifx\BN@tmp\BN@bn\else\let\BN@saved\BN@tmp\fi\fontfamily{bnfam}\selectfont}
+\newcommand\BNout{\fontfamily{\BN@saved}\selectfont}
+\makeatother
+\setTransitionsFor{Bengali}{\BNin}{\BNout}
+% Typographic quotes and dashes are not in a ucharclasses class (class 0), so a Bangla word right
+% after “ or ‘ would not trigger the Bangla font. Treat them as Latin so that every switch fires.
+\XeTeXcharclass"2018=\XeTeXcharclass`A
+\XeTeXcharclass"2019=\XeTeXcharclass`A
+\XeTeXcharclass"201C=\XeTeXcharclass`A
+\XeTeXcharclass"201D=\XeTeXcharclass`A
+\XeTeXcharclass"2013=\XeTeXcharclass`A
+\XeTeXcharclass"2014=\XeTeXcharclass`A
+\XeTeXcharclass"2026=\XeTeXcharclass`A
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{22cm}
+{\large\bfseries Table 59.}\ {\large Risk-tier questionnaire: scored dimensions (Annex B)}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=0.424\hsize\raggedright\arraybackslash}X>{\hsize=1.341\hsize\raggedright\arraybackslash}X>{\hsize=1.059\hsize\raggedright\arraybackslash}X>{\hsize=1.059\hsize\raggedright\arraybackslash}X>{\hsize=1.059\hsize\raggedright\arraybackslash}X>{\hsize=1.059\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{Code} & \textbf{Dimension} & \textbf{Score 0} & \textbf{Score 1} & \textbf{Score 2} & \textbf{Score 3} \\
+\midrule
+D1 & Influence on decisions & Research only & Informs analysts & Informs official decisions on policies or programmes & Informs or automates decisions about specific people or entities \\
+D2 & Data sensitivity & DC0 public & DC1 internal, non-personal & DC2 personal & DC3 sensitive personal or restricted \\
+D3 & People potentially affected & None or internal & Fewer than 10,000 & 10,000 to 1 million & More than 1 million \\
+D4 & Reversibility of harm & Trivially reversible & Reversible with effort & Hard to reverse & Irreversible \\
+D5 & Degree of automation & Suggestions on request & Person reviews every output & Person reviews samples & Fully automated \\
+D6 & Vulnerability of affected groups & No affected individuals & General public & Includes vulnerable groups & Targets vulnerable groups \\
+D7 & Exposure & Internal researchers & Officials & Public information & Public guidance with consequences \\
+\bottomrule
+\end{tabularx}
+\par\vspace{5pt}{\footnotesize\itshape Tier rules: any prohibited-use flag gives T0. Otherwise T3 if total at least 13, or D1 = 3, or D2 = 3, or both D2 and D3 at least 2; T2 if total at least 6, or D1 = 2, or D7 at least 2; else T1. Implemented in bapil.risk.}
+\par\vspace{3pt}{\scriptsize\color{gray} Source: BAPIL Technical Blueprint, Version 1.0 (2026). CC BY 4.0.}
+\end{minipage}
+\end{document}

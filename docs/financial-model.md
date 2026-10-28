@@ -1,0 +1,77 @@
+# Financial model
+
+The indicative 36-month budget of the Technical Blueprint (Chapter 17, Tables 49, 50, 61 and 62, Annex Q) is a **planning estimate**. It is not a quotation, not an approved budget and not secured funding: no funding has been requested, approved or committed.
+
+## 1. Files
+
+| File | Role |
+|---|---|
+| [`blueprint/src/budget_model.py`](../blueprint/src/budget_model.py) | Canonical model. Every budget figure printed in the Blueprint is computed here from stated assumptions |
+| [`blueprint/data/*.csv`](../blueprint/data/) | Model outputs written by the build: line items, categories, scenarios, bridge, sensitivity, assumptions |
+| [`blueprint/data/BAPIL_Budget_Model.xlsx`](../blueprint/data/BAPIL_Budget_Model.xlsx) | Editable workbook with live formulas (612 formulas, four scenario sheets). It re-implements the model independently; inputs are in blue on the Assumptions sheet |
+| [`blueprint/src/make_budget_workbook.py`](../blueprint/src/make_budget_workbook.py) | Writes the workbook and checks it against the Python model (`--check`) |
+
+To change an assumption, edit `budget_model.py` and rebuild; the published tables, CSV files and Summary follow. Then regenerate the workbook (`python3 blueprint/src/make_budget_workbook.py blueprint/data/BAPIL_Budget_Model.xlsx`), recalculate it in LibreOffice or Excel, and run the check.
+
+## 2. Results (recalculated 22 October 2026)
+
+| Tk crore | Year 1 | Year 2 | Year 3 | Total |
+|---|---:|---:|---:|---:|
+| Base case | 4.73 | 7.49 | 8.21 | 20.43 |
+| Low scenario | 4.20 | 6.58 | 7.16 | 17.93 |
+| Adjusted base case (known omissions, 10% contingency) | 5.29 | 8.10 | 8.85 | 22.24 |
+| High scenario | 5.76 | 9.46 | 10.03 | 25.25 |
+
+The base case is Tk 204,264,136 unrounded (about USD 1.65 million at Tk 124 per USD). Independently rounded rows of Table 50 add to 4.74, 7.48, 8.22 and 20.42; the difference from the printed totals is rounding only, and the Table 50 note says so.
+
+## 3. Independent check
+
+The workbook formulas were written separately from the Python code and recalculated in LibreOffice (612 formulas, no errors). For all four scenarios the annual totals and 36-month totals agree with `budget_model.py` to within Tk 1, and every base-case category row agrees by year. The figures quoted in the Blueprint, the Summary and the Decision Memo (Tk 20.4, 17.9, 22.2 and 25.3 crore; Tk 4.7 crore in Year 1) are roundings of these values.
+
+## 4. Main assumptions
+
+| Assumption | Base value | Source or basis |
+|---|---|---|
+| Exchange rate | Tk 124 per USD | Bangladesh Bank weighted average, Tk 123.65 on 19 October 2026 |
+| Escalation of taka costs | 8% a year in Years 2 and 3 | September 2026 CPI inflation of 8.34% (BBS, as reported) |
+| Year 1 staffing | 75% of posts filled on average | Recruitment in months 1 to 6 |
+| Staff | About 9 FTE in Year 1, 19 by Year 3; fully loaded monthly costs above the 2026 pay-scale equivalents | Planning assumption (Section 17.5) |
+| Overheads; contingency | 10%; 5% of direct costs (10% recommended, adjusted case) | Planning assumption |
+| Equipment | Servers USD 12,000; GPU inference servers (two L40S cards) USD 25,000; storage; priced in USD, not escalated | 2026 market prices; quotations needed (see below) |
+
+Taxes and duties are not modelled separately: equipment is priced before any import duty or VAT, and the sensitivity test "equipment 25% dearer" (+Tk 0.71 crore) covers them. Known omissions (engagement events, P5 survey data, travel, open-access fees, staff computers) are excluded from the base case and included in the adjusted case (unresolved item U16). The Phase 0 feasibility and costing study (Decision D5, before Month 1; about Tk 0.44 crore with the legal review and host call, function `phase0`) is meant to replace these assumptions with the host’s salary scale, quotations and agreed rates.
+
+### 4.1 Evidence for the unit costs (checked 22 October 2026)
+
+| Assumption | Model value | Published evidence | Source key (`refs_new.md`) | Result |
+|---|---|---|---|---|
+| ML and Bangla NLP engineers | Tk 2.0 lakh a month, fully loaded | Dhaka market pay Tk 0.7 to 1.1 lakh (mid level) and Tk 1.2 to 2.0 lakh (senior), before provident fund and bonuses (Nucamp, April 2026; commercial source, bands not attributed to a survey) | [160] | Consistent (senior band after on-costs); salary data for Bangladesh are thin |
+| Public pay comparison | Above pay scale | Ninth National Pay Scale 2026: Tk 20,000 to 156,000 basic; grade 9 (BCS entry) Tk 44,000 (The Financial Express, 31 August 2026) | [109] | Consistent: research posts deliberately above the scale |
+| Fellowship stipend | Tk 40,000 a month | HSTU PhD Fellowship Policy 2025: Tk 40,000 a month for 36 months | [161] | Equal |
+| Hosting | Tk 25 lakh rising to 38 lakh a year | One 2 to 7 kW colocation rack in a domestic facility Tk 1.0 to 1.6 lakh a month (The Financial Express, 22 July 2026) | [155] | Consistent (one rack plus bandwidth, licences, development cloud; second site from Year 2) |
+| GPU inference server | USD 25,000 | L40S card USD 7,126 (lowest marketplace average, September 2026) to USD 8,053 (CDW retail) | [156, 157] | Consistent: two cards plus a host of about USD 10,000 |
+| General server | USD 12,000 | Dell R760xs base list price USD 15,957 (August 2026); refurbished R760 from USD 5,900 | [158] | Within the market range; below list |
+| Memory-driven price rises | Not modelled | Memory component prices up 63% from September to December 2025; server prices rising (The Register, January 2026) | [159] | Risk shown in Section 17.1 |
+
+Effect of 2026 list prices on equipment (+26%): +Tk 0.74 crore on the base case. Effect of list prices plus 25% import duty and VAT: +Tk 1.63 crore, and the high scenario would be Tk 26.30 crore instead of Tk 25.25 crore. The base case was not changed because no assumption differs materially from the evidence; the list-price and duty risk is reported in Section 17.1 and Table 49. The sources were opened on 22 October 2026; the PDF and web pages may change.
+
+## 5. Conditional national scale-up and jobs (Years 4 to 8)
+
+Added on 22 October 2026 at the author's request, after a comparison with the Tk 192.66 crore KOICA-supported AI hub project. The 36-month budget is unchanged; the scale-up is a separate, conditional envelope that applies only if the pilots pass Gate G4, the final evaluation is positive and the authorities decide to scale up (Blueprint Section 17.3, Annex W, Tables 69 and 70). It is not part of the funding requested.
+
+| Tk crore | Year 4 | Year 5 | Year 6 | Year 7 | Year 8 | Total |
+|---|---:|---:|---:|---:|---:|---:|
+| Scale-up total | 25.50 | 36.08 | 45.26 | 51.11 | 60.90 | 218.85 |
+
+With the 36-month plan (20.43), the eight-year total is about Tk 239 crore. Direct posts (full-time equivalents) rise from 9, 15 and 19 in Years 1 to 3 to 58, 88, 105, 114 and 118 in Years 4 to 8; graduate fellows from 6, 10 and 12 to 20, 30 and then 40 a year; officials trained reach about 5,500 in total.
+
+Method: the same fully loaded unit costs as the 36-month model (Table 49), escalated by 8% a year from Year 1; 10% host overheads and a 10% contingency. Components and quantities (central lab 25 to 45 posts, four divisional university nodes of five posts plus Tk 25 lakh running costs each, 6 to 20 analysts placed in agencies, up to 30 annotators at Tk 45,000 a month with supervisors, national inference platform hardware priced in USD, Tk 50 lakh per agency joining federated search, governance and two independent evaluations) are set in `blueprint/src/budget_model.py` (`SU_*` constants, functions `scaleup` and `jobs`) and exported to `blueprint/data/scaleup_by_category.csv` and `jobs_and_skills.csv`. They are planning assumptions made before any pilot result (unresolved item U17); the Excel workbook covers the 36-month model only.
+
+## 6. Tranches and capital spending
+
+Funds would be released in three tranches tied to the review points (Blueprint Section 17.2): Year 1, about Tk 4.73 crore, on decision D2 and the signed MoU and host agreement; Year 2, about Tk 7.49 crore, after the month-12 review and the costing study; Year 3, about Tk 8.21 crore, after the month-24 review informed by the mid-term evaluation. By the end of Year 1 about 23% of the 36-month budget has been committed. Capital expenditure (servers, GPUs and storage) is Tk 1.14, 1.02 and 0.30 crore by year, Tk 2.46 crore in all (12% of the total); the rest is revenue spending (`capital_revenue` in `budget_model.py`; Table 62).
+
+## 7. Funding by source and integrated pathway
+
+`funding_by_source` applies one indicative share per horizon, chosen inside the ranges of Blueprint Table 51 and checked automatically (Year 1: government 70%, development partners 30%, because only these can commit before the lab exists; Year 2 (H1): government 35%, grants 25%, development partners 30%, service agreements 0%, industry and philanthropy 10%; Year 3 (H2): 45, 20, 20, 7, 8; Years 4 to 8 (H3): 50, 15, 7, 20, 8), with Year 1 the fiscal year 2027-28. Result (Tk crore): Phase 1 4.73 (government 3.31), Phase 2 15.70 (government 6.32), scale-up 218.85 (government 108.15, service agreements 40.46); government provides 47% of the 36-month plan. Phase 0 (Tk 0.44 crore) is written to `blueprint/data/phase0_budget.csv`. Output: `blueprint/data/funding_by_source_and_stage.csv`; Blueprint Table 72 and Figure 16. Categories are not single funders, and no amount has been requested or committed.
+

@@ -1,0 +1,57 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\AtBeginDocument{\hyphenation{zenodo}}% never hyphenate "zenodo" inside a DOI
+\setmainfont{Latin Modern Roman}[Ligatures=TeXOff]
+\XeTeXgenerateactualtext=1
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali, NFSSFamily=bnfam]
+\usepackage[Latin,Bengali]{ucharclasses}
+% group-free font switching (as in header-common.tex): robust inside braces, cells and quotes
+\makeatletter
+\def\BN@saved{\rmdefault}
+\def\BN@bn{bnfam}
+\newcommand\BNin{\edef\BN@tmp{\f@family}\ifx\BN@tmp\BN@bn\else\let\BN@saved\BN@tmp\fi\fontfamily{bnfam}\selectfont}
+\newcommand\BNout{\fontfamily{\BN@saved}\selectfont}
+\makeatother
+\setTransitionsFor{Bengali}{\BNin}{\BNout}
+% Typographic quotes and dashes are not in a ucharclasses class (class 0), so a Bangla word right
+% after “ or ‘ would not trigger the Bangla font. Treat them as Latin so that every switch fires.
+\XeTeXcharclass"2018=\XeTeXcharclass`A
+\XeTeXcharclass"2019=\XeTeXcharclass`A
+\XeTeXcharclass"201C=\XeTeXcharclass`A
+\XeTeXcharclass"201D=\XeTeXcharclass`A
+\XeTeXcharclass"2013=\XeTeXcharclass`A
+\XeTeXcharclass"2014=\XeTeXcharclass`A
+\XeTeXcharclass"2026=\XeTeXcharclass`A
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{22cm}
+{\large\bfseries Table 23.}\ {\large Initial inventory of public data sources for the pilot corpus}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=1.189\hsize\raggedright\arraybackslash}X>{\hsize=1.189\hsize\raggedright\arraybackslash}X>{\hsize=1.245\hsize\raggedright\arraybackslash}X>{\hsize=0.623\hsize\raggedright\arraybackslash}X>{\hsize=0.453\hsize\raggedright\arraybackslash}X>{\hsize=1.302\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{Source} & \textbf{Custodian} & \textbf{Content} & \textbf{Format} & \textbf{Class} & \textbf{Access note} \\
+\midrule
+Laws of Bangladesh (bdlaws.minlaw.gov.bd) & Legislative and Parliamentary Affairs Division & Acts and ordinances in Bangla and English & HTML & DC0 & Confirm reuse terms; request bulk export (Decision D3) \\
+Bangladesh Gazette (dpp.gov.bd) & Department of Printing and Publications & Gazette notifications & PDF, often scanned & DC0 & OCR quality is a key risk (R3) \\
+National budget documents (mof.gov.bd) & Finance Division & Budget speeches, MTBF, allocations & PDF, spreadsheets & DC0 & Basis of Pilot P2 \\
+Development plans (plancomm.gov.bd) & Planning Commission & Five-year plans, perspective plan, ADP & PDF, spreadsheets & DC0 & Versioning across plan revisions \\
+Official statistics (bbs.gov.bd) & Bangladesh Bureau of Statistics & Yearbooks and survey reports & PDF, spreadsheets & DC0 & Aggregates only; microdata excluded \\
+Open Government Data (data.gov.bd) & ICT Division and a2i & Machine-readable datasets & CSV, spreadsheets, API & DC0 & Check dataset-level licences \\
+National Portal (bangladesh.gov.bd) & ICT Division and a2i & Office information, services, notices & HTML & DC0 & High volume; prioritise by ministry \\
+Parliament (parliament.gov.bd) & Bangladesh Parliament Secretariat & Bills, debates, committee reports & PDF & DC0 & Mixed scanned and digital \\
+e-Nothi records & a2i and ministries & Administrative files & Internal system & DC1 to DC3 & Out of scope for pilots \\
+BAPIL publications (this repository) & BAPIL & White Paper, Executive Summary, Blueprint, studies & Markdown, PDF & DC0 & Demonstration corpus of the reference implementation \\
+\bottomrule
+\end{tabularx}
+\par\vspace{5pt}{\footnotesize\itshape Custodians and access terms must be confirmed with each agency before ingestion. Listing a source does not imply any agreement with its custodian.}
+\par\vspace{3pt}{\scriptsize\color{gray} Source: BAPIL Technical Blueprint, Version 1.0 (2026). CC BY 4.0.}
+\end{minipage}
+\end{document}

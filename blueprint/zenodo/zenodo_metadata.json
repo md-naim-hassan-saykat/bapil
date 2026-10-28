@@ -1,0 +1,62 @@
+{
+  "metadata": {
+    "title": "Bangladesh AI Policy & Innovation Lab (BAPIL): Technical Blueprint",
+    "upload_type": "publication",
+    "publication_type": "report",
+    "version": "1.0",
+    "language": "eng",
+    "creators": [
+      {
+        "name": "Saykat, Md Naim Hassan",
+        "affiliation": "Independent Researcher, Bangladesh",
+        "orcid": "0009-0007-5270-3970"
+      }
+    ],
+    "license": "cc-by-4.0",
+    "access_right": "open",
+    "keywords": [
+      "Bangladesh",
+      "Artificial Intelligence",
+      "AI Governance",
+      "Responsible AI",
+      "Policy Intelligence",
+      "Technical Blueprint",
+      "Reference Architecture",
+      "Bangla NLP",
+      "Retrieval-Augmented Generation",
+      "Digital Government",
+      "GovTech",
+      "Data Protection",
+      "Risk Management",
+      "Evidence-Based Policymaking",
+      "Public Sector Innovation"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "10.5281/zenodo.21363967",
+        "relation": "isSupplementTo",
+        "scheme": "doi",
+        "resource_type": "publication-report"
+      },
+      {
+        "identifier": "10.5281/zenodo.21441172",
+        "relation": "references",
+        "scheme": "doi",
+        "resource_type": "publication-report"
+      },
+      {
+        "identifier": "10.5281/zenodo.23587919",
+        "relation": "isSupplementedBy",
+        "scheme": "doi",
+        "resource_type": "publication-report"
+      },
+      {
+        "identifier": "https://github.com/md-naim-hassan-saykat/bapil/tree/v1.1.0",
+        "relation": "isSupplementedBy",
+        "scheme": "url",
+        "resource_type": "software"
+      }
+    ],
+    "notes": "Languages: English (authoritative) and Bengali; one multilingual record. Contents: Technical Blueprint in English and Bangla (PDF and Markdown); sixteen figures and seventy-two tables in LaTeX, PDF and PNG; the editable source package (Markdown masters, table data, figure sources, budget model with CSV outputs and spreadsheet workbook, templates, build script and documentation); source code of the reference implementation (MIT). Independent research proposal; it does not represent any official government position. publication_date is set when the record is published. Reserved DOI: 10.5281/zenodo.23587901. The Blueprint Summary has its own record (10.5281/zenodo.23587919)."
+  }
+}

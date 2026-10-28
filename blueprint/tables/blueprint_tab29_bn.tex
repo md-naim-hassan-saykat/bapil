@@ -1,0 +1,56 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\AtBeginDocument{\hyphenation{zenodo}}% never hyphenate "zenodo" inside a DOI
+\setmainfont{Noto Serif}[Ligatures=TeXOff]
+\XeTeXgenerateactualtext=1
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali, NFSSFamily=bnfam]
+\usepackage[Latin,Bengali]{ucharclasses}
+% group-free font switching (as in header-common.tex): robust inside braces, cells and quotes
+\makeatletter
+\def\BN@saved{\rmdefault}
+\def\BN@bn{bnfam}
+\newcommand\BNin{\edef\BN@tmp{\f@family}\ifx\BN@tmp\BN@bn\else\let\BN@saved\BN@tmp\fi\fontfamily{bnfam}\selectfont}
+\newcommand\BNout{\fontfamily{\BN@saved}\selectfont}
+\makeatother
+\setTransitionsFor{Bengali}{\BNin}{\BNout}
+% Typographic quotes and dashes are not in a ucharclasses class (class 0), so a Bangla word right
+% after “ or ‘ would not trigger the Bangla font. Treat them as Latin so that every switch fires.
+\XeTeXcharclass"2018=\XeTeXcharclass`A
+\XeTeXcharclass"2019=\XeTeXcharclass`A
+\XeTeXcharclass"201C=\XeTeXcharclass`A
+\XeTeXcharclass"201D=\XeTeXcharclass`A
+\XeTeXcharclass"2013=\XeTeXcharclass`A
+\XeTeXcharclass"2014=\XeTeXcharclass`A
+\XeTeXcharclass"2026=\XeTeXcharclass`A
+\usepackage{newunicodechar}
+\newunicodechar{।}{{\bengalifont\char"0964}}
+\newunicodechar{॥}{{\bengalifont\char"0965}}
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{17cm}
+{\large\bfseries সারণি ২৯।}\ {\large মডেল নির্বাচনের মানদণ্ড ও ভার}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=1.114\hsize\raggedright\arraybackslash}X>{\hsize=0.343\hsize\raggedright\arraybackslash}X>{\hsize=1.543\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{মানদণ্ড} & \textbf{ভার} & \textbf{প্রমাণ} \\
+\midrule
+BanglaPolicyQA-তে বাংলা ও ইংরেজির মান & ৩০\% & স্থির বেঞ্চমার্কে সারণি ২৮-এর উদ্ধার ও উত্তরের মাপকাঠি \\
+উদ্ধৃত উৎসের প্রতি বিশ্বস্ততা & ২০\% & উদ্ধৃতির নির্ভুলতা ও অসমর্থিত দাবির হার \\
+নিরাপত্তা ও দৃঢ়তা & ১৫\% & রেড-টিমের ফলাফল; প্রম্পট-ইনজেকশনের সাফল্যের হার; প্রত্যাখ্যানের আচরণ \\
+স্থানীয় হার্ডওয়্যারে প্রয়োগযোগ্যতা & ১৫\% & পাইলট GPU-তে লক্ষ্যমাত্রার কোয়ান্টাইজেশনে মেমরি ও লেটেন্সি \\
+লাইসেন্স ও উন্মুক্ততা & ১০\% & লাইসেন্সের শর্ত; ওজনের প্রাপ্যতা; ব্যবহারের সীমাবদ্ধতা \\
+স্বচ্ছতা ও নথিভুক্তি & ১০\% & মডেল কার্ডের মান; প্রশিক্ষণ-ডেটার প্রকাশ [89] \\
+\bottomrule
+\end{tabularx}
+\par\vspace{5pt}{\footnotesize\itshape সারণি ২৮-এর কোনো নিরাপত্তা-সীমা অতিক্রমে ব্যর্থ মডেল মোট স্কোর যা-ই হোক বাদ পড়ে।}
+\par\vspace{3pt}{\scriptsize\color{gray} উৎস: BAPIL টেকনিক্যাল ব্লুপ্রিন্ট, সংস্করণ ১.০ (২০২৬)। CC BY 4.0।}
+\end{minipage}
+\end{document}

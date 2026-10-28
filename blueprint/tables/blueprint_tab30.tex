@@ -1,0 +1,51 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\AtBeginDocument{\hyphenation{zenodo}}% never hyphenate "zenodo" inside a DOI
+\setmainfont{Latin Modern Roman}[Ligatures=TeXOff]
+\XeTeXgenerateactualtext=1
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali, NFSSFamily=bnfam]
+\usepackage[Latin,Bengali]{ucharclasses}
+% group-free font switching (as in header-common.tex): robust inside braces, cells and quotes
+\makeatletter
+\def\BN@saved{\rmdefault}
+\def\BN@bn{bnfam}
+\newcommand\BNin{\edef\BN@tmp{\f@family}\ifx\BN@tmp\BN@bn\else\let\BN@saved\BN@tmp\fi\fontfamily{bnfam}\selectfont}
+\newcommand\BNout{\fontfamily{\BN@saved}\selectfont}
+\makeatother
+\setTransitionsFor{Bengali}{\BNin}{\BNout}
+% Typographic quotes and dashes are not in a ucharclasses class (class 0), so a Bangla word right
+% after “ or ‘ would not trigger the Bangla font. Treat them as Latin so that every switch fires.
+\XeTeXcharclass"2018=\XeTeXcharclass`A
+\XeTeXcharclass"2019=\XeTeXcharclass`A
+\XeTeXcharclass"201C=\XeTeXcharclass`A
+\XeTeXcharclass"201D=\XeTeXcharclass`A
+\XeTeXcharclass"2013=\XeTeXcharclass`A
+\XeTeXcharclass"2014=\XeTeXcharclass`A
+\XeTeXcharclass"2026=\XeTeXcharclass`A
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{17cm}
+{\large\bfseries Table 30.}\ {\large Bangla Policy Foundation Model: an evidence-gated ladder}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=0.619\hsize\raggedright\arraybackslash}X>{\hsize=1.143\hsize\raggedright\arraybackslash}X>{\hsize=1.190\hsize\raggedright\arraybackslash}X>{\hsize=0.810\hsize\raggedright\arraybackslash}X>{\hsize=1.238\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{Step} & \textbf{Entry criteria} & \textbf{Main activities} & \textbf{Outputs} & \textbf{Exit or adoption criteria} \\
+\midrule
+\textbf{Stage 0a} Lexical and metadata search & Governed DC0 corpus with metadata & BM25 with bilingual expansion; filters by document type, issuing body and year; abstention & Baseline results on BanglaPolicyQA v0 & Baseline published; remains the transparent fallback for every later step \\
+\textbf{Stage 0b} Dense retrieval and reranking & Stage 0a baseline; open multilingual embedding and reranking models shortlisted (Table 29) & Hybrid retrieval; reranking; ablation by language and document type & Hybrid configuration; evaluation report & Adopted only if Recall@10 or nDCG@10 improves by more than the confidence interval, with no safety metric worse \\
+\textbf{Stage 0c} Answers with existing models & Retrieval meets its thresholds; citation-judgement protocol ready (Annex R) & Extractive answers; optional rephrasing by an open model with sentence-level citation checks & Answer service; citation results & Citation precision and unsupported-claim thresholds met (Table 28); otherwise extractive answers only \\
+\textbf{Stage 1} Targeted adaptation & Residual errors after Stage 0 documented by category and attributable to the model rather than to retrieval or data; curated data; compute; ERRC review & Parameter-efficient adaptation (LoRA); instruction tuning on curated pairs; red-teaming & Adapted model; model card; cost report & Gain over Stage 0c larger than the confidence interval on agreed metrics; all safety thresholds met \\
+\textbf{Stage 2} Dedicated domain model & Stage 1 insufficient for priority tasks; enough governed Bangla text; national compute; cost-benefit case approved; coordination with any national Bangla LLM & Continued pre-training of an existing open model on governed Bangla text; independent audit & Domain model release; audit report & Independent audit passed; release decision by Steering Board and ERRC. Training a new model from scratch is out of scope (Section 9.7) \\
+\bottomrule
+\end{tabularx}
+\par\vspace{3pt}{\scriptsize\color{gray} Source: BAPIL Technical Blueprint, Version 1.0 (2026). CC BY 4.0.}
+\end{minipage}
+\end{document}

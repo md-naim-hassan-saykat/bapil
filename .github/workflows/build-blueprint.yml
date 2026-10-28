@@ -1,0 +1,32 @@
+name: build-blueprint
+
+on:
+  workflow_dispatch:
+  push:
+    paths: ["blueprint/src/**", "blueprint/build_blueprint.sh", ".github/workflows/build-blueprint.yml"]
+
+permissions:
+  contents: read
+
+jobs:
+  pdfs:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install pandoc, XeLaTeX and fonts
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends pandoc texlive-xetex texlive-latex-extra \
+            texlive-fonts-recommended texlive-fonts-extra texlive-pictures lmodern poppler-utils \
+            fonts-noto-core fonts-noto-extra fonts-dejavu-core fonts-texgyre
+          fc-list | grep -i -E "Noto (Serif|Sans) Bengali" | head
+      - name: Build tables, figures and PDFs
+        run: blueprint/build_blueprint.sh
+      - uses: actions/upload-artifact@v4
+        with:
+          name: bapil-technical-blueprint
+          path: |
+            releases/v1.1/*.pdf
+            blueprint/data/*
+            blueprint/figures/*
+            blueprint/tables/*

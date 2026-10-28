@@ -1,0 +1,61 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\AtBeginDocument{\hyphenation{zenodo}}% never hyphenate "zenodo" inside a DOI
+\setmainfont{Latin Modern Roman}[Ligatures=TeXOff]
+\XeTeXgenerateactualtext=1
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali, NFSSFamily=bnfam]
+\usepackage[Latin,Bengali]{ucharclasses}
+% group-free font switching (as in header-common.tex): robust inside braces, cells and quotes
+\makeatletter
+\def\BN@saved{\rmdefault}
+\def\BN@bn{bnfam}
+\newcommand\BNin{\edef\BN@tmp{\f@family}\ifx\BN@tmp\BN@bn\else\let\BN@saved\BN@tmp\fi\fontfamily{bnfam}\selectfont}
+\newcommand\BNout{\fontfamily{\BN@saved}\selectfont}
+\makeatother
+\setTransitionsFor{Bengali}{\BNin}{\BNout}
+% Typographic quotes and dashes are not in a ucharclasses class (class 0), so a Bangla word right
+% after “ or ‘ would not trigger the Bangla font. Treat them as Latin so that every switch fires.
+\XeTeXcharclass"2018=\XeTeXcharclass`A
+\XeTeXcharclass"2019=\XeTeXcharclass`A
+\XeTeXcharclass"201C=\XeTeXcharclass`A
+\XeTeXcharclass"201D=\XeTeXcharclass`A
+\XeTeXcharclass"2013=\XeTeXcharclass`A
+\XeTeXcharclass"2014=\XeTeXcharclass`A
+\XeTeXcharclass"2026=\XeTeXcharclass`A
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{17cm}
+{\large\bfseries Table 7.}\ {\large Stakeholder register}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=1.042\hsize\raggedright\arraybackslash}X>{\hsize=1.198\hsize\raggedright\arraybackslash}X>{\hsize=0.938\hsize\raggedright\arraybackslash}X>{\hsize=1.250\hsize\raggedright\arraybackslash}X>{\hsize=0.573\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{Stakeholder} & \textbf{Main interest} & \textbf{Role for BAPIL} & \textbf{Engagement approach} & \textbf{Frequency} \\
+\midrule
+ICT Division (Ministry of Posts, Telecommunications and IT) & National AI policy, digital transformation & MoU partner, Steering Board co-chair & Joint planning, quarterly reviews & Monthly \\
+Cabinet Division & Whole-of-government coordination & Convening across ministries & Briefings at milestones & Semi-annual \\
+Planning Commission & Plans, project appraisal, monitoring & Host agency for P1; co-owner of P2 with the Finance Division; data custodian & Product ownership, co-design & Monthly \\
+Finance Division & Budget transparency and analysis & Data custodian; P2 users & Data agreement, user testing & Quarterly \\
+Legislative and Parliamentary Affairs Division & Authoritative legal texts & Custodian of the laws corpus & Bulk access agreement & Quarterly \\
+Bangladesh Bureau of Statistics & Official statistics and metadata & Data custodian; P5 partner & Metadata alignment & Quarterly \\
+a2i and Bangladesh Computer Council & Digital services, portal, data centre & Platform and hosting partners & Technical working group & Monthly \\
+National Data Management Authority & Data policy and compliance & Regulator and adviser on data use & Consultation on DPIAs and agreements & As needed \\
+Bangladesh AI Hub & Skills, startups, adoption & Complementary programme & Division-of-labour MoU, shared benchmarks & Quarterly \\
+Universities and research institutes & Research, students, publications & Host institution, partners, annotators & Fellowships, joint research & Continuous \\
+Industry and startups & Market for public-interest AI & Technology partners, adopters & Open calls, industry days & Semi-annual \\
+Civil society and media & Rights, transparency, accountability & ERRC members, critical reviewers & Open consultations, register & Quarterly \\
+Development partners & Digital public goods, capacity & Funders and technical advisers & Joint workplans, reviews & Semi-annual \\
+Citizens & Accessible information, trust & Ultimate beneficiaries & Public reports in Bangla, feedback channel & Continuous \\
+\bottomrule
+\end{tabularx}
+\par\vspace{5pt}{\footnotesize\itshape Listing an organisation describes its possible role; it does not imply any agreement or endorsement.}
+\par\vspace{3pt}{\scriptsize\color{gray} Source: BAPIL Technical Blueprint, Version 1.0 (2026). CC BY 4.0.}
+\end{minipage}
+\end{document}

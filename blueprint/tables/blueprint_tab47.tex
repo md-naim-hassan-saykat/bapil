@@ -1,0 +1,51 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\AtBeginDocument{\hyphenation{zenodo}}% never hyphenate "zenodo" inside a DOI
+\setmainfont{Latin Modern Roman}[Ligatures=TeXOff]
+\XeTeXgenerateactualtext=1
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali, NFSSFamily=bnfam]
+\usepackage[Latin,Bengali]{ucharclasses}
+% group-free font switching (as in header-common.tex): robust inside braces, cells and quotes
+\makeatletter
+\def\BN@saved{\rmdefault}
+\def\BN@bn{bnfam}
+\newcommand\BNin{\edef\BN@tmp{\f@family}\ifx\BN@tmp\BN@bn\else\let\BN@saved\BN@tmp\fi\fontfamily{bnfam}\selectfont}
+\newcommand\BNout{\fontfamily{\BN@saved}\selectfont}
+\makeatother
+\setTransitionsFor{Bengali}{\BNin}{\BNout}
+% Typographic quotes and dashes are not in a ucharclasses class (class 0), so a Bangla word right
+% after “ or ‘ would not trigger the Bangla font. Treat them as Latin so that every switch fires.
+\XeTeXcharclass"2018=\XeTeXcharclass`A
+\XeTeXcharclass"2019=\XeTeXcharclass`A
+\XeTeXcharclass"201C=\XeTeXcharclass`A
+\XeTeXcharclass"201D=\XeTeXcharclass`A
+\XeTeXcharclass"2013=\XeTeXcharclass`A
+\XeTeXcharclass"2014=\XeTeXcharclass`A
+\XeTeXcharclass"2026=\XeTeXcharclass`A
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{17cm}
+{\large\bfseries Table 47.}\ {\large Strategic scenarios and responses}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=0.681\hsize\raggedright\arraybackslash}X>{\hsize=1.106\hsize\raggedright\arraybackslash}X>{\hsize=0.979\hsize\raggedright\arraybackslash}X>{\hsize=1.234\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{Scenario} & \textbf{Description} & \textbf{Early signals} & \textbf{Strategic response} \\
+\midrule
+\textbf{Accelerated} & Strong political sponsorship, national compute and data exchange arrive early & AI policy adopted with funding; NRDEX operational; agencies request tools & Bring forward H2 adoption; expand to more ministries; keep gates unchanged so that speed does not erode safeguards \\
+\textbf{Baseline} & Steady progress with normal delays in data access and funding & Milestones met within about two quarters & Follow the roadmap; use reviews to adjust scope \\
+\textbf{Constrained} & Funding cuts, slow data agreements or loss of sponsorship & Missed MS2 or MS4; budget delays; staff turnover & Protect the core (P1, benchmark, governance); pause P3, P5 and P6; seek research grants; publish what exists \\
+\textbf{Technology shift} & Much stronger or cheaper models change what is possible & Open models exceed thresholds without adaptation; costs fall sharply & Re-run model selection (Table 29); skip BPFM stages that are no longer needed; invest in evaluation and data \\
+\textbf{Governance shock} & A serious AI incident in Bangladesh or abroad reduces public trust & Media coverage; new restrictions; complaints & Pause affected systems; independent review; publish findings; strengthen controls; communicate openly \\
+\bottomrule
+\end{tabularx}
+\par\vspace{3pt}{\scriptsize\color{gray} Source: BAPIL Technical Blueprint, Version 1.0 (2026). CC BY 4.0.}
+\end{minipage}
+\end{document}

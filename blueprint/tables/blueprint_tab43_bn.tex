@@ -1,0 +1,60 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\AtBeginDocument{\hyphenation{zenodo}}% never hyphenate "zenodo" inside a DOI
+\setmainfont{Noto Serif}[Ligatures=TeXOff]
+\XeTeXgenerateactualtext=1
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali, NFSSFamily=bnfam]
+\usepackage[Latin,Bengali]{ucharclasses}
+% group-free font switching (as in header-common.tex): robust inside braces, cells and quotes
+\makeatletter
+\def\BN@saved{\rmdefault}
+\def\BN@bn{bnfam}
+\newcommand\BNin{\edef\BN@tmp{\f@family}\ifx\BN@tmp\BN@bn\else\let\BN@saved\BN@tmp\fi\fontfamily{bnfam}\selectfont}
+\newcommand\BNout{\fontfamily{\BN@saved}\selectfont}
+\makeatother
+\setTransitionsFor{Bengali}{\BNin}{\BNout}
+% Typographic quotes and dashes are not in a ucharclasses class (class 0), so a Bangla word right
+% after “ or ‘ would not trigger the Bangla font. Treat them as Latin so that every switch fires.
+\XeTeXcharclass"2018=\XeTeXcharclass`A
+\XeTeXcharclass"2019=\XeTeXcharclass`A
+\XeTeXcharclass"201C=\XeTeXcharclass`A
+\XeTeXcharclass"201D=\XeTeXcharclass`A
+\XeTeXcharclass"2013=\XeTeXcharclass`A
+\XeTeXcharclass"2014=\XeTeXcharclass`A
+\XeTeXcharclass"2026=\XeTeXcharclass`A
+\usepackage{newunicodechar}
+\newunicodechar{।}{{\bengalifont\char"0964}}
+\newunicodechar{॥}{{\bengalifont\char"0965}}
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{17cm}
+{\large\bfseries সারণি ৪৩।}\ {\large বাংলাদেশের কাঠামোর আলোকে সম্মতি-চেকলিস্ট}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=0.800\hsize\raggedright\arraybackslash}X>{\hsize=1.224\hsize\raggedright\arraybackslash}X>{\hsize=1.129\hsize\raggedright\arraybackslash}X>{\hsize=0.847\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{ক্ষেত্র} & \textbf{প্রয়োজনীয়তা (সারসংক্ষেপ)} & \textbf{BAPIL নিয়ন্ত্রণ} & \textbf{প্রমাণ} \\
+\midrule
+সম্মতি ও আইনগত ভিত্তি (PDPA ২০২৬) & সম্মতি (সুস্পষ্ট ইতিবাচক নির্দেশনা) বা অন্য কোনো নির্দিষ্ট ভিত্তি (ধারা ৫) & প্রথমে DC0; P3 পাইলট-ডেটার সম্মতির রেকর্ড & সম্মতিপত্র; DPIA \\
+ডেটা-বিষয়ীর অধিকার (PDPA ২০২৬) & প্রবেশ, সংশোধন, অপসারণ; স্বয়ংক্রিয় সিদ্ধান্ত সীমিতকরণ & ব্যক্তিসংক্রান্ত কোনো স্বয়ংক্রিয় সিদ্ধান্ত নয়; অধিকার-অনুরোধের প্রক্রিয়া & প্রক্রিয়া; অনুরোধ-লগ \\
+সংবেদনশীল ও শিশুদের ডেটা (PDPA ২০২৬) & বাড়তি সুরক্ষা; শিশুদের প্রোফাইলিংয়ে নিষেধাজ্ঞা & সনদ দ্বারা DC3 ডেটা বর্জিত & সনদ; ডেটা-তালিকা \\
+ডেটা রক্ষণ ও বিনিময় (NDMA ২০২৬) & রক্ষকের দায়িত্ব; অনুমোদিত ডেটা-বিনিময় & ডেটা-বিনিময় চুক্তি; উপলব্ধ হলে NRDEX ব্যবহার & স্বাক্ষরিত চুক্তি \\
+ডেটা দেশে রাখা (PDPA সংশোধনী, ২০২৬) & ২০২৬ সালের সংশোধনী অধ্যাদেশে ডেটা দেশে রাখা-সংক্রান্ত বিধান পরিবর্তিত, প্রতিবেদন অনুযায়ী ব্যাংকিং ও স্বাস্থ্যের মতো গুরুত্বপূর্ণ খাতে সীমিত [78, 79] (আইনে বহাল আছে কি না: নিশ্চিত করতে হবে) & DC0-এর ঊর্ধ্বের সব ডেটা বাংলাদেশে হোস্টকৃত (NFR-02) & হোস্টিং চুক্তি \\
+সোর্স কোড (NDMA ২০২৬) & সরকারি সফটওয়্যারের জাতীয় কোড রিপোজিটরি (ধারা ২৩) & উন্মুক্ত সোর্স কোড; উপলব্ধ হলে জাতীয় ভান্ডারে প্রতিচ্ছবি & রিপোজিটরির লিংক \\
+নিরাপত্তা-দায়িত্ব (সাইবার সুরক্ষা আইন ২০২৬) & ব্যবস্থা ও ডেটার সুরক্ষা; ঘটনা ব্যবস্থাপনা & NIST CSF 2.0 নিয়ন্ত্রণ; ঘটনা-পরিকল্পনা & নিরাপত্তা পর্যালোচনা; মহড়া \\
+কনটেন্ট অপসারণ (সাইবার সুরক্ষা আইন ২০২৬, ধারা ৮) & নিরাপত্তা বা জনশৃঙ্খলার জন্য হুমকিস্বরূপ কনটেন্ট অপসারণ বা ব্লক, তিন দিনের মধ্যে ট্রাইব্যুনালের অনুমোদন সাপেক্ষে & কৃত্রিম মিডিয়া তৈরি নয়; P6-এর জন্য গবেষণা-প্রটোকল & ERRC অনুমোদন \\
+স্বতঃপ্রণোদিত প্রকাশ (তথ্য অধিকার আইন ২০০৯) & জনগুরুত্বপূর্ণ তথ্য প্রকাশ & উন্মুক্ত প্রকাশনা; স্বচ্ছতা নিবন্ধন & প্রকাশিত নিবন্ধন \\
+খসড়া জাতীয় এআই নীতি & ঝুঁকির শ্রেণি; প্রভাব মূল্যায়ন; তত্ত্বাবধান & সামঞ্জস্যপূর্ণ স্তরব্যবস্থা; T2 ও T3-এ প্রভাব মূল্যায়ন & মূল্যায়ন; নিবন্ধন \\
+\bottomrule
+\end{tabularx}
+\par\vspace{5pt}{\footnotesize\itshape প্রয়োজনীয়তাগুলো ২০২৬ সালের আইনগুলোর ডেটাবেস-পাঠ [8, 9, 10, 42] ও ভাষ্যের [6, 32, 78, 100, 101] সারাংশ। কার্যকারিতার তারিখ জানা, তবে স্থগিত ধারা ও কোনো বিধিমালা থাকলে তা এখনো নিশ্চিত করতে হবে। ধাপ ০-এর আইনি পর্যালোচনা (অনুচ্ছেদ ১৪.৩) প্রতিটি সারি গেজেটের পাঠের সঙ্গে মিলিয়ে দেখবে; ততদিন BAPIL কঠোরতর ব্যাখ্যা প্রয়োগ করবে।}
+\par\vspace{3pt}{\scriptsize\color{gray} উৎস: BAPIL টেকনিক্যাল ব্লুপ্রিন্ট, সংস্করণ ১.০ (২০২৬)। CC BY 4.0।}
+\end{minipage}
+\end{document}

@@ -1,0 +1,192 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/md-naim-hassan-saykat/bapil/implementation/schemas/ai_system_record.schema.json",
+  "title": "BAPIL AI system record",
+  "description": "Entry in the BAPIL AI system register (Blueprint Annex C.1). Tier T0 systems cannot be registered; T3 systems may exist only as research prototypes; DC3 data is excluded.",
+  "type": "object",
+  "required": [
+    "system_id",
+    "name",
+    "purpose",
+    "owner",
+    "maturity_class",
+    "risk_tier",
+    "data_classes",
+    "gate_status",
+    "limitations",
+    "contact"
+  ],
+  "properties": {
+    "system_id": {
+      "type": "string",
+      "pattern": "^BAPIL-[A-Z0-9-]+$"
+    },
+    "name": {
+      "type": "object",
+      "required": [
+        "en"
+      ],
+      "properties": {
+        "en": {
+          "type": "string"
+        },
+        "bn": {
+          "type": "string"
+        }
+      }
+    },
+    "purpose": {
+      "type": "object",
+      "required": [
+        "en"
+      ],
+      "properties": {
+        "en": {
+          "type": "string"
+        },
+        "bn": {
+          "type": "string"
+        }
+      }
+    },
+    "out_of_scope": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "owner": {
+      "type": "object",
+      "required": [
+        "unit",
+        "accountable"
+      ],
+      "properties": {
+        "unit": {
+          "type": "string"
+        },
+        "accountable": {
+          "type": "string"
+        },
+        "host_agency_product_owner": {
+          "type": "string"
+        }
+      }
+    },
+    "maturity_class": {
+      "type": "string",
+      "enum": [
+        "R",
+        "A",
+        "O"
+      ]
+    },
+    "risk_tier": {
+      "type": "string",
+      "enum": [
+        "T1",
+        "T2",
+        "T3"
+      ]
+    },
+    "risk_assessment": {
+      "type": "object",
+      "properties": {
+        "date": {
+          "type": "string",
+          "format": "date"
+        },
+        "reference": {
+          "type": "string"
+        },
+        "total": {
+          "type": "integer"
+        }
+      }
+    },
+    "data_classes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "DC0",
+          "DC1",
+          "DC2"
+        ]
+      },
+      "minItems": 1
+    },
+    "models": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "version": {
+            "type": "string"
+          },
+          "model_card": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "evaluation": {
+      "type": "object",
+      "properties": {
+        "benchmark": {
+          "type": "string"
+        },
+        "summary": {
+          "type": "string"
+        }
+      }
+    },
+    "gate_status": {
+      "type": "object",
+      "required": [
+        "gate",
+        "date"
+      ],
+      "properties": {
+        "gate": {
+          "type": "string",
+          "enum": [
+            "G0",
+            "G1",
+            "G2",
+            "G3",
+            "G4",
+            "G5"
+          ]
+        },
+        "date": {
+          "type": "string",
+          "format": "date"
+        },
+        "approved_by": {
+          "type": "string"
+        }
+      }
+    },
+    "limitations": {
+      "type": "object",
+      "required": [
+        "en"
+      ],
+      "properties": {
+        "en": {
+          "type": "string"
+        },
+        "bn": {
+          "type": "string"
+        }
+      }
+    },
+    "contact": {
+      "type": "string"
+    }
+  }
+}

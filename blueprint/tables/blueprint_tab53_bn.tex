@@ -1,0 +1,58 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\AtBeginDocument{\hyphenation{zenodo}}% never hyphenate "zenodo" inside a DOI
+\setmainfont{Noto Serif}[Ligatures=TeXOff]
+\XeTeXgenerateactualtext=1
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali, NFSSFamily=bnfam]
+\usepackage[Latin,Bengali]{ucharclasses}
+% group-free font switching (as in header-common.tex): robust inside braces, cells and quotes
+\makeatletter
+\def\BN@saved{\rmdefault}
+\def\BN@bn{bnfam}
+\newcommand\BNin{\edef\BN@tmp{\f@family}\ifx\BN@tmp\BN@bn\else\let\BN@saved\BN@tmp\fi\fontfamily{bnfam}\selectfont}
+\newcommand\BNout{\fontfamily{\BN@saved}\selectfont}
+\makeatother
+\setTransitionsFor{Bengali}{\BNin}{\BNout}
+% Typographic quotes and dashes are not in a ucharclasses class (class 0), so a Bangla word right
+% after “ or ‘ would not trigger the Bangla font. Treat them as Latin so that every switch fires.
+\XeTeXcharclass"2018=\XeTeXcharclass`A
+\XeTeXcharclass"2019=\XeTeXcharclass`A
+\XeTeXcharclass"201C=\XeTeXcharclass`A
+\XeTeXcharclass"201D=\XeTeXcharclass`A
+\XeTeXcharclass"2013=\XeTeXcharclass`A
+\XeTeXcharclass"2014=\XeTeXcharclass`A
+\XeTeXcharclass"2026=\XeTeXcharclass`A
+\usepackage{newunicodechar}
+\newunicodechar{।}{{\bengalifont\char"0964}}
+\newunicodechar{॥}{{\bengalifont\char"0965}}
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{17cm}
+{\large\bfseries সারণি ৫৩।}\ {\large লজিক্যাল ফ্রেমওয়ার্ক (৩৬ মাসের কর্মসূচি)}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=0.592\hsize\raggedright\arraybackslash}X>{\hsize=1.232\hsize\raggedright\arraybackslash}X>{\hsize=1.232\hsize\raggedright\arraybackslash}X>{\hsize=0.900\hsize\raggedright\arraybackslash}X>{\hsize=1.043\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{স্তর} & \textbf{সংক্ষিপ্ত বিবরণ} & \textbf{সূচক} & \textbf{যাচাইয়ের উপায়} & \textbf{অনুমান} \\
+\midrule
+\textbf{প্রভাব} & বাংলাদেশের জননীতি প্রমাণে আরও দৃঢ়ভাবে ভিত্তিস্থাপিত, এবং সরকারি খাতে এআই আস্থাভাজন ও সুশাসিত & BAPIL-এর প্রমাণ উদ্ধৃতকারী সরকারি নথি; ব্যবহারকারী জরিপে আস্থার মাপ & নথি বিশ্লেষণ; স্বাধীন মূল্যায়ন & প্রমাণভিত্তিক নীতির প্রতি রাজনৈতিক অঙ্গীকার অব্যাহত \\
+\textbf{ফলাফল ১} & কর্মকর্তা ও গবেষকেরা দ্রুত ও নির্ভরযোগ্যভাবে প্রামাণ্য প্রমাণ খুঁজে পান ও উদ্ধৃত করেন & প্রমাণ অনুসন্ধানে সাশ্রয়কৃত সময়; মাসিক সক্রিয় ব্যবহারকারী & প্রমাণ-প্রাপ্তির সময় সমীক্ষা; ব্যবহার-লগ & সংস্থাগুলো পাইলটের জন্য কর্মীদের সময় দেয় \\
+\textbf{ফলাফল ২} & BAPIL-এর পরিধিভুক্ত এআই ব্যবস্থা স্বচ্ছ ও নিরাপদভাবে নিয়ন্ত্রিত & ১০০\% নিবন্ধিত; গুরুতর ঘটনা সময়মতো নিষ্পন্ন & স্বচ্ছতা নিবন্ধন; ঘটনার রেকর্ড & ERRC স্বাধীন ও সম্পদসমৃদ্ধ থাকে \\
+\textbf{ফলাফল ৩} & বাংলা নীতি-এআই-তে জাতীয় সক্ষমতা বৃদ্ধি & প্রশিক্ষিত কর্মকর্তা; ফেলো; পুনর্ব্যবহৃত উন্মুক্ত ডেটাসেট & প্রশিক্ষণ রেকর্ড; ডাউনলোড ও উদ্ধৃতির সংখ্যা & প্রশিক্ষিত কর্মীরা প্রাসঙ্গিক পদে থাকেন \\
+\textbf{উৎপাদ ১} & ব্যবহারকারীদের সঙ্গে নীতি অনুসন্ধান ও বাজেট ডেটাসেটের পাইলট & G3 উত্তীর্ণ পাইলট; Recall@10 & গেট রেকর্ড; বেঞ্চমার্ক প্রতিবেদন & সময়মতো ডেটা প্রবেশাধিকার প্রদান \\
+\textbf{উৎপাদ ২} & উন্মুক্ত বেঞ্চমার্ক, কর্পাস ও মূল্যায়ন-পদ্ধতি প্রকাশিত & বেঞ্চমার্ক প্রশ্ন; DOI-সহ প্রকাশ & Zenodo ও GitHub রেকর্ড & টীকাকার উপলব্ধ \\
+\textbf{উৎপাদ ৩} & শাসনব্যবস্থা কার্যকর & সনদ গৃহীত; ERRC-এর সিদ্ধান্ত প্রকাশিত & বোর্ডের কার্যবিবরণী; নিবন্ধন & সময়মতো সদস্য মনোনয়ন \\
+\textbf{উৎপাদ ৪} & কর্মকর্তা ও বিশেষজ্ঞ প্রশিক্ষিত & কর্মসূচিভিত্তিক প্রশিক্ষিত কর্মকর্তা & উপস্থিতি ও মূল্যায়নের রেকর্ড & সংস্থাগুলো অংশগ্রহণকারী মনোনয়ন দেয় \\
+\textbf{কার্যক্রম} & অধ্যায় ১৫-এর কর্মপরিকল্পনা ও পাইলটগুলোর কাজের প্যাকেজ & মাইলফলক MS1 থেকে MS9 & অগ্রগতি প্রতিবেদন & পরিকল্পনামাফিক অর্থছাড় \\
+\bottomrule
+\end{tabularx}
+\par\vspace{3pt}{\scriptsize\color{gray} উৎস: BAPIL টেকনিক্যাল ব্লুপ্রিন্ট, সংস্করণ ১.০ (২০২৬)। CC BY 4.0।}
+\end{minipage}
+\end{document}

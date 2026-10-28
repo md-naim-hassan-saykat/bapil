@@ -9,16 +9,18 @@ type: software
 authors:
   - family-names: "Saykat"
     given-names: "Md Naim Hassan"
-    affiliation: "Université Paris-Saclay"
+    affiliation: "Independent Researcher, Bangladesh"
+    orcid: "https://orcid.org/0009-0007-5270-3970"
 
 abstract: >
   Bangladesh AI Policy & Innovation Lab (BAPIL) is an independent
   research initiative exploring artificial intelligence, policy
   intelligence, responsible AI governance, digital government,
   and evidence-based policymaking for Bangladesh. This repository
-  contains the BAPIL White Paper, Executive Summary, supporting
-  international AI governance studies, technical documentation,
-  and related research materials.
+  contains the BAPIL White Paper, Executive Summary, Technical
+  Blueprint (with Blueprint Summary and a separate Decision Memo),
+  a tested reference implementation, supporting international AI governance
+  studies and related research materials.
 
 keywords:
   - Artificial Intelligence
@@ -35,6 +37,8 @@ keywords:
 
 license: "MIT"
 
+# version and date-released describe the latest published release; update them to 1.1.0
+# and the release date only when GitHub release v1.1.0 has been published.
 version: "1.0"
 
 identifiers:
@@ -56,3 +60,48 @@ preferred-citation:
   identifiers:
     - type: doi
       value: "10.5281/zenodo.21363967"
+
+references:
+  - type: report
+    title: "Bangladesh AI Policy & Innovation Lab (BAPIL): Executive Summary"
+    authors:
+      - family-names: "Saykat"
+        given-names: "Md Naim Hassan"
+    version: "1.0"
+    year: 2026
+    identifiers:
+      - type: doi
+        value: "10.5281/zenodo.21441172"
+  # Prepared for repository release v1.1.0, which has not been published; DOIs reserved on Zenodo.
+  - type: report
+    title: "Bangladesh AI Policy & Innovation Lab (BAPIL): Technical Blueprint"
+    authors:
+      - family-names: "Saykat"
+        given-names: "Md Naim Hassan"
+    version: "1.0"
+    year: 2026
+    month: 10
+    status: in-preparation
+    languages:
+      - en
+      - bn
+    repository: "https://github.com/md-naim-hassan-saykat/bapil"
+    identifiers:
+      - type: doi
+        value: "10.5281/zenodo.23587901"
+  - type: report
+    title: "Bangladesh AI Policy & Innovation Lab (BAPIL): Blueprint Summary"
+    authors:
+      - family-names: "Saykat"
+        given-names: "Md Naim Hassan"
+    version: "1.0"
+    year: 2026
+    month: 10
+    status: in-preparation
+    languages:
+      - en
+      - bn
+    repository: "https://github.com/md-naim-hassan-saykat/bapil"
+    identifiers:
+      - type: doi
+        value: "10.5281/zenodo.23587919"

@@ -1,0 +1,54 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\AtBeginDocument{\hyphenation{zenodo}}% never hyphenate "zenodo" inside a DOI
+\setmainfont{Latin Modern Roman}[Ligatures=TeXOff]
+\XeTeXgenerateactualtext=1
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali, NFSSFamily=bnfam]
+\usepackage[Latin,Bengali]{ucharclasses}
+% group-free font switching (as in header-common.tex): robust inside braces, cells and quotes
+\makeatletter
+\def\BN@saved{\rmdefault}
+\def\BN@bn{bnfam}
+\newcommand\BNin{\edef\BN@tmp{\f@family}\ifx\BN@tmp\BN@bn\else\let\BN@saved\BN@tmp\fi\fontfamily{bnfam}\selectfont}
+\newcommand\BNout{\fontfamily{\BN@saved}\selectfont}
+\makeatother
+\setTransitionsFor{Bengali}{\BNin}{\BNout}
+% Typographic quotes and dashes are not in a ucharclasses class (class 0), so a Bangla word right
+% after “ or ‘ would not trigger the Bangla font. Treat them as Latin so that every switch fires.
+\XeTeXcharclass"2018=\XeTeXcharclass`A
+\XeTeXcharclass"2019=\XeTeXcharclass`A
+\XeTeXcharclass"201C=\XeTeXcharclass`A
+\XeTeXcharclass"201D=\XeTeXcharclass`A
+\XeTeXcharclass"2013=\XeTeXcharclass`A
+\XeTeXcharclass"2014=\XeTeXcharclass`A
+\XeTeXcharclass"2026=\XeTeXcharclass`A
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{17cm}
+{\large\bfseries Table 48.}\ {\large Strategic review points and triggers}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=0.494\hsize\raggedright\arraybackslash}X>{\hsize=0.899\hsize\raggedright\arraybackslash}X>{\hsize=1.348\hsize\raggedright\arraybackslash}X>{\hsize=1.258\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{When} & \textbf{Review} & \textbf{Key questions} & \textbf{Possible decisions} \\
+\midrule
+Mid 2028 & Year 1 review (MS4) & Did P1 and P2 deliver value with public data? Is governance working? & Continue, adjust scope or stop pilots; confirm Phase 2 budget \\
+End 2028 & Independent mid-term evaluation (MS6) & Value for money; adoption; quality of assurance & BPFM Stage 1 decision; staffing for Phase 2 \\
+Mid 2030 & Final evaluation of the 36-month plan (MS9) & Which tools should agencies own? Is the institutional form right? & G4 transfers; Blueprint 2.0; choice between Options C and D \\
+2030 & Alignment with the next national AI policy cycle & How should BAPIL support the post-2030 policy? & Revised mission and targets for H3 \\
+2035 & Long-term strategic review & Is a national network justified? Are methods used beyond BAPIL? & Network expansion, consolidation or narrowing of scope \\
+2041 & Vision review & Has BAPIL delivered public value aligned with national long-term goals? & Renew charter, merge into government or close with archives preserved \\
+Any time & Event triggers & New law or rules; serious incident; major technology shift; loss of funding & Extraordinary Steering Board review within 30 days \\
+\bottomrule
+\end{tabularx}
+\par\vspace{5pt}{\footnotesize\itshape Calendar dates assume that Phase 0 runs in the first half of 2027 and Month 1 is July 2027; if the plan starts later, the first three reviews move with it (Annex T).}
+\par\vspace{3pt}{\scriptsize\color{gray} Source: BAPIL Technical Blueprint, Version 1.0 (2026). CC BY 4.0.}
+\end{minipage}
+\end{document}

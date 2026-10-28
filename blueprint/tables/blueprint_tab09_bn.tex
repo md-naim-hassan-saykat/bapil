@@ -1,0 +1,55 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\AtBeginDocument{\hyphenation{zenodo}}% never hyphenate "zenodo" inside a DOI
+\setmainfont{Noto Serif}[Ligatures=TeXOff]
+\XeTeXgenerateactualtext=1
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali, NFSSFamily=bnfam]
+\usepackage[Latin,Bengali]{ucharclasses}
+% group-free font switching (as in header-common.tex): robust inside braces, cells and quotes
+\makeatletter
+\def\BN@saved{\rmdefault}
+\def\BN@bn{bnfam}
+\newcommand\BNin{\edef\BN@tmp{\f@family}\ifx\BN@tmp\BN@bn\else\let\BN@saved\BN@tmp\fi\fontfamily{bnfam}\selectfont}
+\newcommand\BNout{\fontfamily{\BN@saved}\selectfont}
+\makeatother
+\setTransitionsFor{Bengali}{\BNin}{\BNout}
+% Typographic quotes and dashes are not in a ucharclasses class (class 0), so a Bangla word right
+% after “ or ‘ would not trigger the Bangla font. Treat them as Latin so that every switch fires.
+\XeTeXcharclass"2018=\XeTeXcharclass`A
+\XeTeXcharclass"2019=\XeTeXcharclass`A
+\XeTeXcharclass"201C=\XeTeXcharclass`A
+\XeTeXcharclass"201D=\XeTeXcharclass`A
+\XeTeXcharclass"2013=\XeTeXcharclass`A
+\XeTeXcharclass"2014=\XeTeXcharclass`A
+\XeTeXcharclass"2026=\XeTeXcharclass`A
+\usepackage{newunicodechar}
+\newunicodechar{।}{{\bengalifont\char"0964}}
+\newunicodechar{॥}{{\bengalifont\char"0965}}
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{17cm}
+{\large\bfseries সারণি ৯।}\ {\large ব্যবহারকারী-চরিত্র (Persona)}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=0.840\hsize\raggedright\arraybackslash}X>{\hsize=0.988\hsize\raggedright\arraybackslash}X>{\hsize=1.185\hsize\raggedright\arraybackslash}X>{\hsize=0.988\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{চরিত্র} & \textbf{লক্ষ্য} & \textbf{বর্তমান সমস্যা} & \textbf{সবচেয়ে গুরুত্বপূর্ণ প্রয়োজনীয়তা} \\
+\midrule
+\textbf{ক. নীতি-বিশ্লেষক}, পরিকল্পনা অনুবিভাগ & নিয়ন্ত্রক পাঠ ও অতীত অঙ্গীকার দ্রুত খুঁজে পাওয়া; সারসংক্ষেপে উদ্ধৃত করা & বহু ওয়েবসাইটে খোঁজা; স্ক্যানকৃত PDF; কোন সংস্করণ চলমান তা অনিশ্চিত & FR-01, FR-02, FR-03 \\
+\textbf{খ. বাজেট বিশ্লেষক বা সাংবাদিক} & বছর ও মন্ত্রণালয়ভেদে বরাদ্দ তুলনা & PDF-এ আটকে থাকা সারণি; বছরভেদে অসামঞ্জস্যপূর্ণ শিরোনাম & FR-04, NFR-07 \\
+\textbf{গ. জন-পরামর্শ পরিচালনাকারী}, মন্ত্রণালয় & হাজারো মতামত ন্যায্যভাবে বোঝা & হাতে পড়া; সংখ্যালঘু মত হারিয়ে যাওয়ার ঝুঁকি & FR-05, GR-03 \\
+\textbf{ঘ. গবেষক}, বিশ্ববিদ্যালয় & বাস্তব নীতি-টেক্সটে বাংলা পদ্ধতির বেঞ্চমার্ক & উন্মুক্ত ক্ষেত্রভিত্তিক বেঞ্চমার্ক বা নিয়ন্ত্রিত কর্পাস নেই & FR-08, NFR-06 \\
+\textbf{ঙ. জ্যেষ্ঠ কর্মকর্তা} & সুপারিশের পেছনের প্রমাণে আস্থা & এআই-ফলাফলের উৎস বা সীমাবদ্ধতা দেখা যায় না & NFR-08, GR-01 \\
+\textbf{চ. নাগরিক বা নাগরিক সমাজের পর্যবেক্ষক} & জনস্বার্থমূলক গবেষণায় এআই-এর ব্যবহার জানা & এআই ব্যবস্থার কোনো জনসমক্ষে নিবন্ধন নেই & FR-09, GR-06 \\
+\bottomrule
+\end{tabularx}
+\par\vspace{3pt}{\scriptsize\color{gray} উৎস: BAPIL টেকনিক্যাল ব্লুপ্রিন্ট, সংস্করণ ১.০ (২০২৬)। CC BY 4.0।}
+\end{minipage}
+\end{document}

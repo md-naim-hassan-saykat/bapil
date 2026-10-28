@@ -1,0 +1,53 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\AtBeginDocument{\hyphenation{zenodo}}% never hyphenate "zenodo" inside a DOI
+\setmainfont{Latin Modern Roman}[Ligatures=TeXOff]
+\XeTeXgenerateactualtext=1
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali, NFSSFamily=bnfam]
+\usepackage[Latin,Bengali]{ucharclasses}
+% group-free font switching (as in header-common.tex): robust inside braces, cells and quotes
+\makeatletter
+\def\BN@saved{\rmdefault}
+\def\BN@bn{bnfam}
+\newcommand\BNin{\edef\BN@tmp{\f@family}\ifx\BN@tmp\BN@bn\else\let\BN@saved\BN@tmp\fi\fontfamily{bnfam}\selectfont}
+\newcommand\BNout{\fontfamily{\BN@saved}\selectfont}
+\makeatother
+\setTransitionsFor{Bengali}{\BNin}{\BNout}
+% Typographic quotes and dashes are not in a ucharclasses class (class 0), so a Bangla word right
+% after “ or ‘ would not trigger the Bangla font. Treat them as Latin so that every switch fires.
+\XeTeXcharclass"2018=\XeTeXcharclass`A
+\XeTeXcharclass"2019=\XeTeXcharclass`A
+\XeTeXcharclass"201C=\XeTeXcharclass`A
+\XeTeXcharclass"201D=\XeTeXcharclass`A
+\XeTeXcharclass"2013=\XeTeXcharclass`A
+\XeTeXcharclass"2014=\XeTeXcharclass`A
+\XeTeXcharclass"2026=\XeTeXcharclass`A
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{17cm}
+{\large\bfseries Table 56.}\ {\large Research agenda and planned knowledge outputs}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=0.372\hsize\raggedright\arraybackslash}X>{\hsize=1.596\hsize\raggedright\arraybackslash}X>{\hsize=1.170\hsize\raggedright\arraybackslash}X>{\hsize=1.277\hsize\raggedright\arraybackslash}X>{\hsize=0.585\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{ID} & \textbf{Research question} & \textbf{Method} & \textbf{Planned output} & \textbf{Timing} \\
+\midrule
+RQ1 & How well do lexical, dense and hybrid retrieval perform on Bangla and English policy text, and what closes the gap between the two languages? & Benchmark experiments on BanglaPolicyQA; ablations of normalisation and glossary expansion & Benchmark and methods paper; open code and data & 2027 to 2028 \\
+RQ2 & Can abstention and citation verification be calibrated so that officials see few unsupported claims without losing useful answers? & Threshold studies; human judgement of faithfulness & Evaluation paper; calibration guidance & 2027 to 2029 \\
+RQ3 & Do cited-search tools change the speed and quality of policy analysis? & Matched-task studies with pilot users; interviews & Empirical study of time-to-evidence and quality & 2028 to 2029 \\
+RQ4 & How can risk tiering, gates and transparency registers be made to work in a public administration with new data laws? & Design science and case study of BAPIL governance & Peer-reviewed journal article on the Blueprint framework; policy brief & Manuscript 2027 \\
+RQ5 & How do OCR quality and Unicode normalisation affect downstream retrieval in Bangla? & Controlled experiments on scanned and born-digital documents & Dataset of corrected text with datasheet; short paper & 2028 \\
+RQ6 & What institutional form sustains a public-interest AI policy lab in a lower-middle-income country? & Comparative institutional analysis; evaluation evidence & Institutional review for Blueprint 2.0 & 2029 \\
+\bottomrule
+\end{tabularx}
+\par\vspace{5pt}{\footnotesize\itshape Outputs are published open access with DOIs. Journal choice follows scope, open-access options and peer-review quality; no outcome of peer review is assumed.}
+\par\vspace{3pt}{\scriptsize\color{gray} Source: BAPIL Technical Blueprint, Version 1.0 (2026). CC BY 4.0.}
+\end{minipage}
+\end{document}

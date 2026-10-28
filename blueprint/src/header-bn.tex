@@ -1,0 +1,27 @@
+\fancyhead[L]{\footnotesize BAPIL টেকনিক্যাল ব্লুপ্রিন্ট}
+\fancyhead[R]{\footnotesize সংস্করণ ১.০}
+\linespread{1.12}
+% Bangla page numbers
+\ExplSyntaxOn
+\NewDocumentCommand{\banglanumber}{m}
+ {
+  \tl_set:Nx \l_tmpa_tl {#1}
+  \tl_replace_all:Nnn \l_tmpa_tl {0}{০}
+  \tl_replace_all:Nnn \l_tmpa_tl {1}{১}
+  \tl_replace_all:Nnn \l_tmpa_tl {2}{২}
+  \tl_replace_all:Nnn \l_tmpa_tl {3}{৩}
+  \tl_replace_all:Nnn \l_tmpa_tl {4}{৪}
+  \tl_replace_all:Nnn \l_tmpa_tl {5}{৫}
+  \tl_replace_all:Nnn \l_tmpa_tl {6}{৬}
+  \tl_replace_all:Nnn \l_tmpa_tl {7}{৭}
+  \tl_replace_all:Nnn \l_tmpa_tl {8}{৮}
+  \tl_replace_all:Nnn \l_tmpa_tl {9}{৯}
+  \tl_use:N \l_tmpa_tl
+ }
+\ExplSyntaxOff
+\renewcommand{\thepage}{\banglanumber{\arabic{page}}}
+% list titles: set after polyglossia's Bengali captions so these spellings are used
+\AtBeginDocument{%
+  \renewcommand{\contentsname}{সূচিপত্র}%
+  \renewcommand{\listfigurename}{চিত্রের তালিকা}%
+  \renewcommand{\listtablename}{সারণির তালিকা}}

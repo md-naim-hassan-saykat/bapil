@@ -1,0 +1,58 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\AtBeginDocument{\hyphenation{zenodo}}% never hyphenate "zenodo" inside a DOI
+\setmainfont{Noto Serif}[Ligatures=TeXOff]
+\XeTeXgenerateactualtext=1
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali, NFSSFamily=bnfam]
+\usepackage[Latin,Bengali]{ucharclasses}
+% group-free font switching (as in header-common.tex): robust inside braces, cells and quotes
+\makeatletter
+\def\BN@saved{\rmdefault}
+\def\BN@bn{bnfam}
+\newcommand\BNin{\edef\BN@tmp{\f@family}\ifx\BN@tmp\BN@bn\else\let\BN@saved\BN@tmp\fi\fontfamily{bnfam}\selectfont}
+\newcommand\BNout{\fontfamily{\BN@saved}\selectfont}
+\makeatother
+\setTransitionsFor{Bengali}{\BNin}{\BNout}
+% Typographic quotes and dashes are not in a ucharclasses class (class 0), so a Bangla word right
+% after “ or ‘ would not trigger the Bangla font. Treat them as Latin so that every switch fires.
+\XeTeXcharclass"2018=\XeTeXcharclass`A
+\XeTeXcharclass"2019=\XeTeXcharclass`A
+\XeTeXcharclass"201C=\XeTeXcharclass`A
+\XeTeXcharclass"201D=\XeTeXcharclass`A
+\XeTeXcharclass"2013=\XeTeXcharclass`A
+\XeTeXcharclass"2014=\XeTeXcharclass`A
+\XeTeXcharclass"2026=\XeTeXcharclass`A
+\usepackage{newunicodechar}
+\newunicodechar{।}{{\bengalifont\char"0964}}
+\newunicodechar{॥}{{\bengalifont\char"0965}}
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{17cm}
+{\large\bfseries সারণি ২৬।}\ {\large নির্দেশক সংরক্ষণ-সূচি}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=1.040\hsize\raggedright\arraybackslash}X>{\hsize=0.920\hsize\raggedright\arraybackslash}X>{\hsize=1.040\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{রেকর্ডের ধরন} & \textbf{সংরক্ষণকাল} & \textbf{নিষ্পত্তি বা সংরক্ষণাগার} \\
+\midrule
+মূল উন্মুক্ত নথি (DC0) & অনির্দিষ্টকাল & চেকসামসহ সংরক্ষিত; বাতিল সংস্করণও রাখা হয় \\
+নিষ্কাশিত টেক্সট ও সূচি & প্রতিস্থাপিত না হওয়া পর্যন্ত & মূল নথি থেকে পুনর্নির্মাণ; পুনরুৎপাদনের জন্য পুরোনো সূচি এক বছর রাখা হয় \\
+নিরীক্ষা লগ (প্রশ্ন, উৎস, ফলাফল) & ৫ বছর & শুধু-পঠন আকারে সংরক্ষণ; এরপর মুছে ফেলা \\
+লগে প্রশ্নের টেক্সট & ২ বছর & সামষ্টিক পরিসংখ্যানে সংক্ষেপিত \\
+মূল পরামর্শ-মতামত (DC2) & পরিচয়-অপসারণের ৯০ দিনের মধ্যে মুছে ফেলা & সনদসহ নিরাপদ অপসারণ \\
+পরিচয়-অপসারিত বিশ্লেষণ-ডেটা & পাইলটের মেয়াদ এবং আরও ২ বছর & চুক্তি অনুযায়ী অপসারণ বা সংরক্ষণ \\
+মডেল উপকরণ ও মূল্যায়ন প্রতিবেদন & ব্যবস্থার আয়ুষ্কাল এবং আরও ৩ বছর & লাইসেন্স অনুমতি দিলে Zenodo-তে সংরক্ষণ \\
+ঘটনার রেকর্ড ও ERRC-এর সিদ্ধান্ত & ৭ বছর & সারাংশ প্রকাশিত; পূর্ণ রেকর্ড সংরক্ষিত \\
+\bottomrule
+\end{tabularx}
+\par\vspace{5pt}{\footnotesize\itshape ব্যক্তিগত উপাত্ত সুরক্ষা আইন, ২০২৬, জাতীয় উপাত্ত ব্যবস্থাপনা আইন, ২০২৬ ও এগুলোর অধীনে জারিকৃত বিধিমালার আলোকে আইনি পর্যালোচনা সাপেক্ষ।}
+\par\vspace{3pt}{\scriptsize\color{gray} উৎস: BAPIL টেকনিক্যাল ব্লুপ্রিন্ট, সংস্করণ ১.০ (২০২৬)। CC BY 4.0।}
+\end{minipage}
+\end{document}

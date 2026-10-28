@@ -1,0 +1,69 @@
+\documentclass[border=8pt]{standalone}
+\usepackage{fontspec}
+\setmainfont{Noto Sans}[Ligatures=TeXOff]
+\XeTeXgenerateactualtext=1
+\setsansfont{Noto Sans}
+\newfontfamily\bengalifont{Noto Sans Bengali}[Script=Bengali, NFSSFamily=bnfam]
+\usepackage[Latin,Bengali]{ucharclasses}
+% group-free font switching (as in header-common.tex): robust inside braces, cells and quotes
+\makeatletter
+\def\BN@saved{\rmdefault}
+\def\BN@bn{bnfam}
+\newcommand\BNin{\edef\BN@tmp{\f@family}\ifx\BN@tmp\BN@bn\else\let\BN@saved\BN@tmp\fi\fontfamily{bnfam}\selectfont}
+\newcommand\BNout{\fontfamily{\BN@saved}\selectfont}
+\makeatother
+\setTransitionsFor{Bengali}{\BNin}{\BNout}
+% Typographic quotes and dashes are not in a ucharclasses class (class 0), so a Bangla word right
+% after “ or ‘ would not trigger the Bangla font. Treat them as Latin so that every switch fires.
+\XeTeXcharclass"2018=\XeTeXcharclass`A
+\XeTeXcharclass"2019=\XeTeXcharclass`A
+\XeTeXcharclass"201C=\XeTeXcharclass`A
+\XeTeXcharclass"201D=\XeTeXcharclass`A
+\XeTeXcharclass"2013=\XeTeXcharclass`A
+\XeTeXcharclass"2014=\XeTeXcharclass`A
+\XeTeXcharclass"2026=\XeTeXcharclass`A
+\usepackage{newunicodechar}
+\newunicodechar{।}{{\bengalifont\char"0964}}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,shapes.geometric,shapes.misc,shapes.symbols,fit,backgrounds,calc,chains}
+\definecolor{ink}{HTML}{111827}
+\definecolor{band}{HTML}{F3F4F6}
+\definecolor{band2}{HTML}{E5E7EB}
+\definecolor{accent}{HTML}{1D4ED8}
+\definecolor{accentlight}{HTML}{DBEAFE}
+\definecolor{warn}{HTML}{B91C1C}
+\definecolor{warnlight}{HTML}{FEE2E2}
+\definecolor{ok}{HTML}{047857}
+\definecolor{oklight}{HTML}{D1FAE5}
+\tikzset{
+  >={Stealth[length=2.6mm]},
+  box/.style={draw=ink, line width=0.6pt, rounded corners=9pt, fill=white, align=center,
+              inner sep=4pt, font=\small},
+  pill/.style={box, rounded corners=13pt},
+  key/.style={box, fill=accentlight, draw=accent, line width=0.9pt},
+  soft/.style={box, fill=band},
+  dec/.style={draw=ink, line width=0.6pt, diamond, aspect=2.2, align=center, inner sep=1.5pt,
+              font=\footnotesize, fill=white},
+  arr/.style={->, draw=ink, line width=0.6pt},
+  darr/.style={->, draw=ink, line width=0.6pt, dashed},
+  lbl/.style={font=\footnotesize, fill=white, inner sep=1.5pt},
+  layer/.style={draw=band2, fill=band, rounded corners=6pt},
+  title/.style={font=\bfseries\small, align=left, anchor=west},
+}
+\begin{document}
+\sffamily\hyphenpenalty=10000\exhyphenpenalty=10000
+
+\begin{tikzpicture}
+\node[key, circle, minimum size=44mm, text width=38mm, font=\footnotesize] (c) at (0,0) {\textbf{ডেটা শাসন}\\[1mm]স্টুয়ার্ড ও রক্ষকের ভূমিকা; DC0 থেকে DC3 শ্রেণি; মানের মাপকাঠি; নিরীক্ষা};
+\tikzset{st/.style={box, minimum width=36mm, minimum height=13mm, text width=33mm, font=\footnotesize}}
+\foreach \i/\a in {1/90,2/45,3/0,4/-45,5/-90,6/-135,7/180,8/135} {
+  \node[st] (s\i) at (\a:56mm) {};
+}
+\node[st] at (s1) {\textbf{১. সংগ্রহ}\\অনুমোদিত উৎস; পুনর্ব্যবহারের শর্ত}; \node[st] at (s2) {\textbf{২. গ্রহণ}\\নিষ্কাশন, OCR, প্রমিতকরণ};
+\node[st] at (s3) {\textbf{৩. শ্রেণিবিন্যাস}\\ডেটা-শ্রেণি; DCAT মেটাডেটা}; \node[st] at (s4) {\textbf{৪. সংরক্ষণ}\\মূল নথি, চেকসাম, সংস্করণ};
+\node[st] at (s5) {\textbf{৫. সূচিকরণ}\\অনুচ্ছেদ; শব্দভিত্তিক ও ঘন}; \node[st] at (s6) {\textbf{৬. ব্যবহার}\\অনুসন্ধান, উত্তর, বিশ্লেষণ};
+\node[st] at (s7) {\textbf{৭. প্রকাশ}\\উন্মুক্ত ডেটা ও বেঞ্চমার্ক}; \node[st] at (s8) {\textbf{৮. সংরক্ষণ বা নিষ্পত্তি}\\সংরক্ষণ-সূচি; আর্কাইভ};
+\foreach \i/\j in {1/2,2/3,3/4,4/5,5/6,6/7,7/8,8/1} \draw[arr] (s\i) -- (s\j);
+\foreach \i in {1,...,8} \draw[darr, draw=accent] (c) -- (s\i);
+\end{tikzpicture}
+\end{document}

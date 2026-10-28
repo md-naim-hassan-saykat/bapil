@@ -1,0 +1,55 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\AtBeginDocument{\hyphenation{zenodo}}% never hyphenate "zenodo" inside a DOI
+\setmainfont{Noto Serif}[Ligatures=TeXOff]
+\XeTeXgenerateactualtext=1
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali, NFSSFamily=bnfam]
+\usepackage[Latin,Bengali]{ucharclasses}
+% group-free font switching (as in header-common.tex): robust inside braces, cells and quotes
+\makeatletter
+\def\BN@saved{\rmdefault}
+\def\BN@bn{bnfam}
+\newcommand\BNin{\edef\BN@tmp{\f@family}\ifx\BN@tmp\BN@bn\else\let\BN@saved\BN@tmp\fi\fontfamily{bnfam}\selectfont}
+\newcommand\BNout{\fontfamily{\BN@saved}\selectfont}
+\makeatother
+\setTransitionsFor{Bengali}{\BNin}{\BNout}
+% Typographic quotes and dashes are not in a ucharclasses class (class 0), so a Bangla word right
+% after “ or ‘ would not trigger the Bangla font. Treat them as Latin so that every switch fires.
+\XeTeXcharclass"2018=\XeTeXcharclass`A
+\XeTeXcharclass"2019=\XeTeXcharclass`A
+\XeTeXcharclass"201C=\XeTeXcharclass`A
+\XeTeXcharclass"201D=\XeTeXcharclass`A
+\XeTeXcharclass"2013=\XeTeXcharclass`A
+\XeTeXcharclass"2014=\XeTeXcharclass`A
+\XeTeXcharclass"2026=\XeTeXcharclass`A
+\usepackage{newunicodechar}
+\newunicodechar{।}{{\bengalifont\char"0964}}
+\newunicodechar{॥}{{\bengalifont\char"0965}}
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{22cm}
+{\large\bfseries সারণি ৫১।}\ {\large দিগন্তভিত্তিক নির্দেশক অর্থায়ন-মিশ্রণ}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=1.685\hsize\raggedright\arraybackslash}X>{\hsize=0.809\hsize\raggedright\arraybackslash}X>{\hsize=0.876\hsize\raggedright\arraybackslash}X>{\hsize=0.876\hsize\raggedright\arraybackslash}X>{\hsize=0.876\hsize\raggedright\arraybackslash}X>{\hsize=0.876\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{উৎস} & \textbf{বছর ১ (ধাপ ১)} & \textbf{H1, বছর ২ থেকে} & \textbf{H2 ২০২৯ থেকে ২০৩০} & \textbf{H3 ২০৩১ থেকে ২০৩৫} & \textbf{H4 ২০৩৬ থেকে ২০৪১} \\
+\midrule
+সরকারের মূল অবদান (সমঝোতা স্মারক, উন্নয়ন বাজেট) & ৭০ থেকে ৭৫\% & ৩০ থেকে ৪০\% & ৪০ থেকে ৫০\% & ৪৫ থেকে ৫৫\% & ৫০ থেকে ৬০\% \\
+প্রতিযোগিতামূলক গবেষণা অনুদান & ০\% & ২০ থেকে ৩০\% & ১৫ থেকে ২৫\% & ১০ থেকে ২০\% & ১০ থেকে ১৫\% \\
+উন্নয়ন সহযোগী (পাইলটভিত্তিক) & ২৫ থেকে ৩০\% & ২০ থেকে ৩০\% & ১৫ থেকে ২০\% & ৫ থেকে ১০\% & ০ থেকে ৫\% \\
+সংস্থার সঙ্গে সেবা-চুক্তি (ব্যয় পুনরুদ্ধার) & ০\% & ০\% & ৫ থেকে ১০\% & ১৫ থেকে ২৫\% & ২০ থেকে ৩০\% \\
+শিল্প ও জনহিতৈষী সহায়তা (উন্মুক্ত বেঞ্চমার্ক, ফেলোশিপ) & ০\% & ৫ থেকে ১০\% & ৫ থেকে ১০\% & ৫ থেকে ১০\% & ৫ থেকে ১০\% \\
+\bottomrule
+\end{tabularx}
+\par\vspace{5pt}{\footnotesize\itshape প্রথম বছর এমন উৎসের ওপর নির্ভর করে, যা মাস ১-এর আগে প্রতিশ্রুত হতে পারে: সরকারি বাজেট ও একটি উন্নয়ন সহযোগী। ল্যাব গঠিত হওয়ার পর গবেষণা অনুদান ও শিল্পখাতের অর্থ আসে। কোনো বছরে সরকার-বহির্ভূত কোনো একক অর্থদাতা বাজেটের ৩০\%-এর বেশি দেবেন না, এবং শিল্পখাতের সহায়তা কখনো গবেষণার ফলাফল বা শাসনগত সিদ্ধান্তে প্রভাব কিনতে পারবে না।}
+\par\vspace{3pt}{\scriptsize\color{gray} উৎস: BAPIL টেকনিক্যাল ব্লুপ্রিন্ট, সংস্করণ ১.০ (২০২৬)। CC BY 4.0।}
+\end{minipage}
+\end{document}

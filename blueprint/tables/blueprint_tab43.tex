@@ -1,0 +1,57 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\AtBeginDocument{\hyphenation{zenodo}}% never hyphenate "zenodo" inside a DOI
+\setmainfont{Latin Modern Roman}[Ligatures=TeXOff]
+\XeTeXgenerateactualtext=1
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali, NFSSFamily=bnfam]
+\usepackage[Latin,Bengali]{ucharclasses}
+% group-free font switching (as in header-common.tex): robust inside braces, cells and quotes
+\makeatletter
+\def\BN@saved{\rmdefault}
+\def\BN@bn{bnfam}
+\newcommand\BNin{\edef\BN@tmp{\f@family}\ifx\BN@tmp\BN@bn\else\let\BN@saved\BN@tmp\fi\fontfamily{bnfam}\selectfont}
+\newcommand\BNout{\fontfamily{\BN@saved}\selectfont}
+\makeatother
+\setTransitionsFor{Bengali}{\BNin}{\BNout}
+% Typographic quotes and dashes are not in a ucharclasses class (class 0), so a Bangla word right
+% after “ or ‘ would not trigger the Bangla font. Treat them as Latin so that every switch fires.
+\XeTeXcharclass"2018=\XeTeXcharclass`A
+\XeTeXcharclass"2019=\XeTeXcharclass`A
+\XeTeXcharclass"201C=\XeTeXcharclass`A
+\XeTeXcharclass"201D=\XeTeXcharclass`A
+\XeTeXcharclass"2013=\XeTeXcharclass`A
+\XeTeXcharclass"2014=\XeTeXcharclass`A
+\XeTeXcharclass"2026=\XeTeXcharclass`A
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{17cm}
+{\large\bfseries Table 43.}\ {\large Compliance checklist against the Bangladesh framework}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=0.800\hsize\raggedright\arraybackslash}X>{\hsize=1.224\hsize\raggedright\arraybackslash}X>{\hsize=1.129\hsize\raggedright\arraybackslash}X>{\hsize=0.847\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{Area} & \textbf{Requirement (summary)} & \textbf{BAPIL control} & \textbf{Evidence} \\
+\midrule
+Consent and lawful basis (PDPA 2026) & Consent (a clear affirmative indication) or another specified ground (s. 5) & DC0-first; consent records for P3 pilot data & Consent forms; DPIA \\
+Data-subject rights (PDPA 2026) & Access, correction, deletion; restriction of automated decisions & No automated decisions on individuals; rights-request procedure & Procedure; request log \\
+Sensitive and children’s data (PDPA 2026) & Enhanced protection; restrictions on profiling minors & DC3 data excluded by charter & Charter; data inventory \\
+Data custody and exchange (NDMA 2026) & Custodian duties; approved data exchange & Data-sharing agreements; use of NRDEX where available & Signed agreements \\
+Data residency (PDPA amendment, 2026) & Data-residency provisions changed by the 2026 amendment ordinance, reportedly limited to critical sectors such as banking and healthcare [78, 79] (whether carried into the Act: to be confirmed) & All data above class DC0 hosted in Bangladesh (NFR-02) & Hosting agreement \\
+Source code (NDMA 2026) & National code repository for government software (s. 23) & Open-source code; mirror to national repository when available & Repository links \\
+Security duties (Cyber Security Act 2026) & Protection of systems and data; incident handling & NIST CSF 2.0 controls; incident plan & Security reviews; drills \\
+Content removal (Cyber Security Act 2026, s. 8) & Removal or blocking of content threatening security or public order, subject to Tribunal approval within three days & No generation of synthetic media; research protocols for P6 & ERRC approvals \\
+Proactive disclosure (RTI Act 2009) & Publication of public information & Open publications; transparency register & Published register \\
+Draft national AI policy & Risk categories; impact assessment; oversight & Tier system aligned; impact assessments for T2 and T3 & Assessments; register \\
+\bottomrule
+\end{tabularx}
+\par\vspace{5pt}{\footnotesize\itshape Requirements summarise the database texts of the 2026 Acts [8, 9, 10, 42] and commentary [6, 32, 78, 100, 101]. Commencement dates are known, but the deferred sections and any rules still have to be confirmed. The Phase 0 legal review (Section 14.3) checks each line against the Gazette texts; until then BAPIL applies the stricter reading.}
+\par\vspace{3pt}{\scriptsize\color{gray} Source: BAPIL Technical Blueprint, Version 1.0 (2026). CC BY 4.0.}
+\end{minipage}
+\end{document}

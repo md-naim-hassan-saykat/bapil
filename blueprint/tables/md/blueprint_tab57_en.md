@@ -1,0 +1,12 @@
+**Table 57.** Decisions requested from the relevant authorities
+
+| No. | Decision | Responsible authority | Timing |
+|------|--------------------------------------------|------------------------|-------------|
+| D1 | Accept this Blueprint as a technical input to the national AI policy drafting process | Ministry of Posts, Telecommunications and Information Technology (ICT Division) | Q4 2026 |
+| D2 | After Phase 0: approve the 12-month Phase 1 pilot, agree an MoU with the selected host institution, and commit Year 1 funding (about Tk 4.7 crore, Table 50, as confirmed by the Phase 0 costing study) | ICT Division and host institution | End of Phase 0 |
+| D3 | Authorise structured bulk access to already-public document collections and nominate data custodians | Legislative and Parliamentary Affairs Division, Finance Division, Planning Commission, BBS, a2i | During Phase 0 |
+| D4 | Nominate Steering Board members, and agree that ERRC members are selected through an open call by an independent nominations panel | ICT Division and host institution (Steering Board); independent panel (ERRC) | During Phase 0 |
+| D5 | Fund and commission Phase 0 (about Tk 0.44 crore, about six months): an open host call, an independent legal review, an independent feasibility and costing study, and confirmation of data access; name a government focal point | ICT Division or a development partner | Within 90 days |
+| D6 | Confirm guardrails: no deployment beyond class A without a G4 decision, and no use in prohibited categories | Steering Board | At charter adoption |
+
+*Note.* In time, D1 and D5 come first; D3 and D4 are prepared during Phase 0; D2 follows Phase 0 and D6 the adoption of the charter. None of these decisions creates a statutory body or gives BAPIL legal powers. The approvals and agreements needed before month 1 are listed in Annex T (Table 65).

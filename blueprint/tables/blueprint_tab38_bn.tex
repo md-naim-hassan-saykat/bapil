@@ -1,0 +1,55 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\AtBeginDocument{\hyphenation{zenodo}}% never hyphenate "zenodo" inside a DOI
+\setmainfont{Noto Serif}[Ligatures=TeXOff]
+\XeTeXgenerateactualtext=1
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali, NFSSFamily=bnfam]
+\usepackage[Latin,Bengali]{ucharclasses}
+% group-free font switching (as in header-common.tex): robust inside braces, cells and quotes
+\makeatletter
+\def\BN@saved{\rmdefault}
+\def\BN@bn{bnfam}
+\newcommand\BNin{\edef\BN@tmp{\f@family}\ifx\BN@tmp\BN@bn\else\let\BN@saved\BN@tmp\fi\fontfamily{bnfam}\selectfont}
+\newcommand\BNout{\fontfamily{\BN@saved}\selectfont}
+\makeatother
+\setTransitionsFor{Bengali}{\BNin}{\BNout}
+% Typographic quotes and dashes are not in a ucharclasses class (class 0), so a Bangla word right
+% after “ or ‘ would not trigger the Bangla font. Treat them as Latin so that every switch fires.
+\XeTeXcharclass"2018=\XeTeXcharclass`A
+\XeTeXcharclass"2019=\XeTeXcharclass`A
+\XeTeXcharclass"201C=\XeTeXcharclass`A
+\XeTeXcharclass"201D=\XeTeXcharclass`A
+\XeTeXcharclass"2013=\XeTeXcharclass`A
+\XeTeXcharclass"2014=\XeTeXcharclass`A
+\XeTeXcharclass"2026=\XeTeXcharclass`A
+\usepackage{newunicodechar}
+\newunicodechar{।}{{\bengalifont\char"0964}}
+\newunicodechar{॥}{{\bengalifont\char"0965}}
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{22cm}
+{\large\bfseries সারণি ৩৮।}\ {\large পাইলট পোর্টফোলিও: ব্যবহারকারী, ডেটা, ঝুঁকি-স্তর, পরিসর ও উত্তরণ-মানদণ্ড}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=0.981\hsize\raggedright\arraybackslash}X>{\hsize=0.923\hsize\raggedright\arraybackslash}X>{\hsize=0.808\hsize\raggedright\arraybackslash}X>{\hsize=0.519\hsize\raggedright\arraybackslash}X>{\hsize=1.500\hsize\raggedright\arraybackslash}X>{\hsize=1.269\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{পাইলট} & \textbf{প্রধান ব্যবহারকারী} & \textbf{ডেটা} & \textbf{স্তর} & \textbf{ন্যূনতম কার্যকর পরিসর (প্রতিটি পাইলটের প্রথম ১২ মাস)} & \textbf{উত্তরণ-মানদণ্ড} \\
+\midrule
+\textbf{P1} বাংলাদেশ নীতি অনুসন্ধান ইঞ্জিন & নীতি-বিশ্লেষক, গবেষক, কর্মকর্তা & আইন, গেজেট, পরিকল্পনা, বাজেট নথি (DC0) & T1; কর্মকর্তারা ব্যবহার করলে T2 & জাতীয় আইন, পরিকল্পনা ও বাজেট নথির মূল কর্পাসে উদ্ধৃতিসহ দ্বিভাষিক অনুসন্ধান & Recall@10 কমপক্ষে ০.৮৫; উত্তরের সঠিকতা কমপক্ষে ০.৮০; উদ্ধৃতির নির্ভুলতা কমপক্ষে ০.৯৫; ৩০ বা ততোধিক সক্রিয় ব্যবহারকারীর গড় উপযোগিতা-মূল্যায়ন ৫-এ কমপক্ষে ৪.০ \\
+\textbf{P2} বাজেট ইন্টেলিজেন্স ড্যাশবোর্ড & অর্থ ও পরিকল্পনা বিশ্লেষক, সাংবাদিক, গবেষক & প্রকাশিত বাজেট নথি ও এডিপি (DC0) & T2 (প্রকাশ্য ড্যাশবোর্ড) & পাঁচ অর্থবছরের মন্ত্রণালয়ভিত্তিক বরাদ্দ পুনরুৎপাদনযোগ্যভাবে নিষ্কাশন ও মাস ১২-এর মধ্যে উন্মুক্ত ডেটা হিসেবে প্রকাশ; মাস ১৫ থেকে প্রকাশ্য ড্যাশবোর্ড & হাতে-যাচাইকৃত নমুনায় নিষ্কাশনের নির্ভুলতা কমপক্ষে ৯৯\% \\
+\textbf{P3} নাগরিক মতামত বিশ্লেষক & জন-পরামর্শ পরিচালনাকারী কর্তৃপক্ষ & সম্মতিপ্রাপ্ত ও পরিচয়-অপসারিত মতামত (DC1, DC2) & T2 & একটি জন-পরামর্শের বিষয় ও মনোভাবের সারাংশ, শুধু সামষ্টিক আকারে & DPIA অনুমোদিত; মানুষের দ্বারা যাচাইকৃত বিষয়; পুনঃশনাক্তকরণের কোনো ঘটনা নেই \\
+\textbf{P4} বাংলা নীতি ফাউন্ডেশন মডেল, পর্যায় ০ ও ১ & গবেষক & নিয়ন্ত্রিত উন্মুক্ত কর্পাস (DC0) & T1 & উদ্ধারসহ বিদ্যমান উন্মুক্ত মডেলের মূল্যায়ন; BanglaPolicyQA v0 বেঞ্চমার্ক প্রকাশ & বেঞ্চমার্ক প্রকাশিত; পর্যায় ১-এর এগোনো বা না-এগোনোর সিদ্ধান্ত নথিভুক্ত \\
+\textbf{P5} জাতীয় এআই প্রস্তুতি পর্যবেক্ষণকেন্দ্র & নীতিনির্ধারক, উন্নয়ন সহযোগী & উন্মুক্ত সূচক ও জরিপ (DC0) & T2 (প্রকাশ্য প্রতিবেদন) & সূচক-কাঠামো ও প্রথম বার্ষিক প্রতিবেদন & উন্মুক্ত ডেটাসহ প্রথম প্রতিবেদন প্রকাশিত \\
+\textbf{P6} তথ্য-অখণ্ডতা গবেষণা & গবেষক, তথ্য-যাচাইকারী & উন্মুক্ত গবেষণা ডেটাসেট (DC0) & T2 & বাংলা ভুল তথ্য ও কৃত্রিম মিডিয়া শনাক্তকরণ পদ্ধতির পর্যালোচনা ও বেঞ্চমার্ক; কোনো ব্যক্তির ওপর নজরদারি নয় & পদ্ধতিগত গবেষণাপত্র প্রকাশিত; গবেষণা প্রটোকলে ERRC অনুমোদন \\
+\bottomrule
+\end{tabularx}
+\par\vspace{3pt}{\scriptsize\color{gray} উৎস: BAPIL টেকনিক্যাল ব্লুপ্রিন্ট, সংস্করণ ১.০ (২০২৬)। CC BY 4.0।}
+\end{minipage}
+\end{document}

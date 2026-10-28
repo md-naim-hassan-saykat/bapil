@@ -1,0 +1,59 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\AtBeginDocument{\hyphenation{zenodo}}% never hyphenate "zenodo" inside a DOI
+\setmainfont{Latin Modern Roman}[Ligatures=TeXOff]
+\XeTeXgenerateactualtext=1
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali, NFSSFamily=bnfam]
+\usepackage[Latin,Bengali]{ucharclasses}
+% group-free font switching (as in header-common.tex): robust inside braces, cells and quotes
+\makeatletter
+\def\BN@saved{\rmdefault}
+\def\BN@bn{bnfam}
+\newcommand\BNin{\edef\BN@tmp{\f@family}\ifx\BN@tmp\BN@bn\else\let\BN@saved\BN@tmp\fi\fontfamily{bnfam}\selectfont}
+\newcommand\BNout{\fontfamily{\BN@saved}\selectfont}
+\makeatother
+\setTransitionsFor{Bengali}{\BNin}{\BNout}
+% Typographic quotes and dashes are not in a ucharclasses class (class 0), so a Bangla word right
+% after “ or ‘ would not trigger the Bangla font. Treat them as Latin so that every switch fires.
+\XeTeXcharclass"2018=\XeTeXcharclass`A
+\XeTeXcharclass"2019=\XeTeXcharclass`A
+\XeTeXcharclass"201C=\XeTeXcharclass`A
+\XeTeXcharclass"201D=\XeTeXcharclass`A
+\XeTeXcharclass"2013=\XeTeXcharclass`A
+\XeTeXcharclass"2014=\XeTeXcharclass`A
+\XeTeXcharclass"2026=\XeTeXcharclass`A
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{17cm}
+{\large\bfseries Table 54.}\ {\large Monitoring and evaluation framework: key performance indicators}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=0.714\hsize\raggedright\arraybackslash}X>{\hsize=2.202\hsize\raggedright\arraybackslash}X>{\hsize=0.655\hsize\raggedright\arraybackslash}X>{\hsize=0.714\hsize\raggedright\arraybackslash}X>{\hsize=0.714\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{Level} & \textbf{Indicator} & \textbf{Baseline} & \textbf{Month 12} & \textbf{Month 36} \\
+\midrule
+Input & Core staff in post (FTE) & 0 & 9 & 19 \\
+Input & Public documents indexed with full provenance & 0 & 5,000 & 25,000 \\
+Output & BanglaPolicyQA benchmark questions released & 0 & 500 & 2,000 \\
+Output & User-facing pilots (P1 to P3) that passed Gate G3 & 0 & 2 & 3 \\
+Output & Open releases archived with a DOI (including this Blueprint and its Summary) & 4 & 5 & 10 \\
+Output & Officials trained in responsible AI and the tools & 0 & 100 & 500 \\
+Outcome & Monthly active pilot users & 0 & 30 & 300 \\
+Outcome & Median time saved on evidence search, measured in time-to-evidence studies (Annex R) & Baseline study & First measurement & 30\% \\
+Outcome & Agencies with signed data or collaboration agreements & 0 & 3 & 10 \\
+Quality & Recall@10 on Bangla and English questions & Not yet measured & 0.85 & 0.90 \\
+Governance & Pilots listed in the transparency register with model cards & Not applicable & 100\% & 100\% \\
+Governance & Serious incidents (all handled within agreed time limits) & Not applicable & 0 & 0 \\
+Impact & Official documents or policy briefs citing BAPIL evidence & 0 & 1 & 20 \\
+\bottomrule
+\end{tabularx}
+\par\vspace{3pt}{\scriptsize\color{gray} Source: BAPIL Technical Blueprint, Version 1.0 (2026). CC BY 4.0.}
+\end{minipage}
+\end{document}

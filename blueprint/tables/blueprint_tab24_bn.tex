@@ -1,0 +1,65 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\AtBeginDocument{\hyphenation{zenodo}}% never hyphenate "zenodo" inside a DOI
+\setmainfont{Noto Serif}[Ligatures=TeXOff]
+\XeTeXgenerateactualtext=1
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali, NFSSFamily=bnfam]
+\usepackage[Latin,Bengali]{ucharclasses}
+% group-free font switching (as in header-common.tex): robust inside braces, cells and quotes
+\makeatletter
+\def\BN@saved{\rmdefault}
+\def\BN@bn{bnfam}
+\newcommand\BNin{\edef\BN@tmp{\f@family}\ifx\BN@tmp\BN@bn\else\let\BN@saved\BN@tmp\fi\fontfamily{bnfam}\selectfont}
+\newcommand\BNout{\fontfamily{\BN@saved}\selectfont}
+\makeatother
+\setTransitionsFor{Bengali}{\BNin}{\BNout}
+% Typographic quotes and dashes are not in a ucharclasses class (class 0), so a Bangla word right
+% after “ or ‘ would not trigger the Bangla font. Treat them as Latin so that every switch fires.
+\XeTeXcharclass"2018=\XeTeXcharclass`A
+\XeTeXcharclass"2019=\XeTeXcharclass`A
+\XeTeXcharclass"201C=\XeTeXcharclass`A
+\XeTeXcharclass"201D=\XeTeXcharclass`A
+\XeTeXcharclass"2013=\XeTeXcharclass`A
+\XeTeXcharclass"2014=\XeTeXcharclass`A
+\XeTeXcharclass"2026=\XeTeXcharclass`A
+\usepackage{newunicodechar}
+\newunicodechar{।}{{\bengalifont\char"0964}}
+\newunicodechar{॥}{{\bengalifont\char"0965}}
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{17cm}
+{\large\bfseries সারণি ২৪।}\ {\large নথির মেটাডেটা ক্ষেত্র (policy\_document স্কিমা)}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=0.762\hsize\raggedright\arraybackslash}X>{\hsize=1.667\hsize\raggedright\arraybackslash}X>{\hsize=0.429\hsize\raggedright\arraybackslash}X>{\hsize=1.143\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{ক্ষেত্র} & \textbf{বিবরণ} & \textbf{আবশ্যিক} & \textbf{উদাহরণ} \\
+\midrule
+id & কর্পাসের ভেতরে স্থায়ী শনাক্তকারী & হ্যাঁ & bd-act-2009-20 \\
+title & প্রাপ্তিসাপেক্ষে বাংলা ও ইংরেজি শিরোনাম & হ্যাঁ & তথ্য অধিকার আইন, ২০০৯ \\
+publisher & নথি প্রকাশকারী প্রতিষ্ঠান & হ্যাঁ & লেজিসলেটিভ ও সংসদ বিষয়ক বিভাগ \\
+issuing\_body & দলিল জারিকারী সংস্থা & না & জাতীয় সংসদ \\
+document\_type & আইন, অধ্যাদেশ, বিধি, গেজেট, বাজেট, পরিকল্পনা, পরিসংখ্যান, সংসদীয় কাগজ, নীতি, প্রতিবেদন & হ্যাঁ & act \\
+date\_issued & জারির তারিখ & হ্যাঁ & 2009-04-06 \\
+version & সংস্করণ বা সংশোধনের অবস্থা & না & ২০২৬ পর্যন্ত সংশোধিত \\
+language & টেক্সটের ভাষা & হ্যাঁ & bn, en \\
+source\_url & মূল নথি যেখান থেকে সংগৃহীত & হ্যাঁ & http:/\allowbreak{}/\allowbreak{}bdlaws.minlaw.gov.bd/\allowbreak{}... \\
+retrieved & সংগ্রহের তারিখ & হ্যাঁ & 2027-02-01 \\
+reuse\_terms & লাইসেন্স বা পুনর্ব্যবহারের শর্ত & না & সরকারি প্রকাশনা; শর্ত নিশ্চিত \\
+data\_class & DC0, DC1 বা DC2 & হ্যাঁ & DC0 \\
+sha256 & মূল ফাইলের চেকসাম & হ্যাঁ & ৬৪টি হেক্সাডেসিমাল অক্ষর \\
+extraction & পদ্ধতি (জন্মগতভাবে ডিজিটাল বা OCR), মানের স্কোর, সরঞ্জাম & হ্যাঁ & ocr, 0.93, tesseract 5 \\
+supersedes & আগের সংস্করণের শনাক্তকারী & না & bd-act-2009-20-v1 \\
+\bottomrule
+\end{tabularx}
+\par\vspace{5pt}{\footnotesize\itshape উদাহরণগুলো দৃষ্টান্তমূলক। যন্ত্র-পাঠযোগ্য স্কিমা: implementation/\allowbreak{}schemas/\allowbreak{}policy\_document.schema.json।}
+\par\vspace{3pt}{\scriptsize\color{gray} উৎস: BAPIL টেকনিক্যাল ব্লুপ্রিন্ট, সংস্করণ ১.০ (২০২৬)। CC BY 4.0।}
+\end{minipage}
+\end{document}

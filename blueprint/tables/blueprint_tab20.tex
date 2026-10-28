@@ -1,0 +1,51 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\AtBeginDocument{\hyphenation{zenodo}}% never hyphenate "zenodo" inside a DOI
+\setmainfont{Latin Modern Roman}[Ligatures=TeXOff]
+\XeTeXgenerateactualtext=1
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali, NFSSFamily=bnfam]
+\usepackage[Latin,Bengali]{ucharclasses}
+% group-free font switching (as in header-common.tex): robust inside braces, cells and quotes
+\makeatletter
+\def\BN@saved{\rmdefault}
+\def\BN@bn{bnfam}
+\newcommand\BNin{\edef\BN@tmp{\f@family}\ifx\BN@tmp\BN@bn\else\let\BN@saved\BN@tmp\fi\fontfamily{bnfam}\selectfont}
+\newcommand\BNout{\fontfamily{\BN@saved}\selectfont}
+\makeatother
+\setTransitionsFor{Bengali}{\BNin}{\BNout}
+% Typographic quotes and dashes are not in a ucharclasses class (class 0), so a Bangla word right
+% after “ or ‘ would not trigger the Bangla font. Treat them as Latin so that every switch fires.
+\XeTeXcharclass"2018=\XeTeXcharclass`A
+\XeTeXcharclass"2019=\XeTeXcharclass`A
+\XeTeXcharclass"201C=\XeTeXcharclass`A
+\XeTeXcharclass"201D=\XeTeXcharclass`A
+\XeTeXcharclass"2013=\XeTeXcharclass`A
+\XeTeXcharclass"2014=\XeTeXcharclass`A
+\XeTeXcharclass"2026=\XeTeXcharclass`A
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{17cm}
+{\large\bfseries Table 20.}\ {\large API specification (version 1)}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=1.105\hsize\raggedright\arraybackslash}X>{\hsize=0.407\hsize\raggedright\arraybackslash}X>{\hsize=1.163\hsize\raggedright\arraybackslash}X>{\hsize=1.512\hsize\raggedright\arraybackslash}X>{\hsize=0.814\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{Endpoint} & \textbf{Method} & \textbf{Parameters} & \textbf{Response} & \textbf{Errors} \\
+\midrule
+/\allowbreak{}v1/\allowbreak{}health & GET & None & status, version, corpus\_version, documents, passages & None \\
+/\allowbreak{}v1/\allowbreak{}search & GET & q (1 to 500 characters); k (1 to 50, default 10) & query, corpus\_version, results: pid, doc\_id, heading, lang, score, matched\_terms, text, provenance & 400 missing or invalid parameter \\
+/\allowbreak{}v1/\allowbreak{}answer & GET & q (1 to 500 characters) & abstained; confidence; evidence (top\_score, coverage); answer sentences with citation; sources; corpus\_version & 400 missing parameter \\
+/\allowbreak{}v1/\allowbreak{}risk/\allowbreak{}assess & POST & JSON questionnaire (Annex B schema) & system\_id, tier, tier\_name, total, reasons, controls, approver & 400 invalid questionnaire; 400 body over 64 KB \\
+All endpoints &  &  & JSON in UTF-8; every request logged in the audit chain & 404 unknown path \\
+\bottomrule
+\end{tabularx}
+\par\vspace{3pt}{\scriptsize\color{gray} Source: BAPIL Technical Blueprint, Version 1.0 (2026). CC BY 4.0.}
+\end{minipage}
+\end{document}

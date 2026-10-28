@@ -1,0 +1,57 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\AtBeginDocument{\hyphenation{zenodo}}% never hyphenate "zenodo" inside a DOI
+\setmainfont{Noto Serif}[Ligatures=TeXOff]
+\XeTeXgenerateactualtext=1
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali, NFSSFamily=bnfam]
+\usepackage[Latin,Bengali]{ucharclasses}
+% group-free font switching (as in header-common.tex): robust inside braces, cells and quotes
+\makeatletter
+\def\BN@saved{\rmdefault}
+\def\BN@bn{bnfam}
+\newcommand\BNin{\edef\BN@tmp{\f@family}\ifx\BN@tmp\BN@bn\else\let\BN@saved\BN@tmp\fi\fontfamily{bnfam}\selectfont}
+\newcommand\BNout{\fontfamily{\BN@saved}\selectfont}
+\makeatother
+\setTransitionsFor{Bengali}{\BNin}{\BNout}
+% Typographic quotes and dashes are not in a ucharclasses class (class 0), so a Bangla word right
+% after “ or ‘ would not trigger the Bangla font. Treat them as Latin so that every switch fires.
+\XeTeXcharclass"2018=\XeTeXcharclass`A
+\XeTeXcharclass"2019=\XeTeXcharclass`A
+\XeTeXcharclass"201C=\XeTeXcharclass`A
+\XeTeXcharclass"201D=\XeTeXcharclass`A
+\XeTeXcharclass"2013=\XeTeXcharclass`A
+\XeTeXcharclass"2014=\XeTeXcharclass`A
+\XeTeXcharclass"2026=\XeTeXcharclass`A
+\usepackage{newunicodechar}
+\newunicodechar{।}{{\bengalifont\char"0964}}
+\newunicodechar{॥}{{\bengalifont\char"0965}}
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{22cm}
+{\large\bfseries সারণি ৫৯।}\ {\large ঝুঁকি-স্তর প্রশ্নমালা: স্কোরযুক্ত মাত্রা (সংযুক্তি খ)}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=0.424\hsize\raggedright\arraybackslash}X>{\hsize=1.341\hsize\raggedright\arraybackslash}X>{\hsize=1.059\hsize\raggedright\arraybackslash}X>{\hsize=1.059\hsize\raggedright\arraybackslash}X>{\hsize=1.059\hsize\raggedright\arraybackslash}X>{\hsize=1.059\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{কোড} & \textbf{মাত্রা} & \textbf{স্কোর ০} & \textbf{স্কোর ১} & \textbf{স্কোর ২} & \textbf{স্কোর ৩} \\
+\midrule
+D1 & সিদ্ধান্তে প্রভাব & শুধু গবেষণা & বিশ্লেষককে তথ্য দেয় & নীতি বা কর্মসূচি-সংক্রান্ত সরকারি সিদ্ধান্তে তথ্য দেয় & নির্দিষ্ট ব্যক্তি বা প্রতিষ্ঠান-সংক্রান্ত সিদ্ধান্তে তথ্য দেয় বা স্বয়ংক্রিয় করে \\
+D2 & ডেটার সংবেদনশীলতা & DC0 উন্মুক্ত & DC1 অভ্যন্তরীণ, ব্যক্তিগত নয় & DC2 ব্যক্তিগত & DC3 সংবেদনশীল ব্যক্তিগত বা সংরক্ষিত \\
+D3 & সম্ভাব্য প্রভাবিত মানুষ & কেউ নয় বা অভ্যন্তরীণ & ১০,০০০-এর কম & ১০,০০০ থেকে ১০ লক্ষ & ১০ লক্ষের বেশি \\
+D4 & ক্ষতির প্রত্যাবর্তনযোগ্যতা & সহজেই প্রত্যাবর্তনযোগ্য & চেষ্টায় প্রত্যাবর্তনযোগ্য & প্রত্যাবর্তন কঠিন & অপ্রত্যাবর্তনযোগ্য \\
+D5 & স্বয়ংক্রিয়তার মাত্রা & অনুরোধে পরামর্শ & প্রতিটি ফলাফল মানুষ পর্যালোচনা করেন & নমুনা মানুষ পর্যালোচনা করেন & সম্পূর্ণ স্বয়ংক্রিয় \\
+D6 & প্রভাবিত গোষ্ঠীর ঝুঁকিপ্রবণতা & কোনো প্রভাবিত ব্যক্তি নেই & সাধারণ জনগণ & ঝুঁকিপূর্ণ গোষ্ঠী অন্তর্ভুক্ত & ঝুঁকিপূর্ণ গোষ্ঠীকে লক্ষ্য করে \\
+D7 & উন্মুক্ততা & অভ্যন্তরীণ গবেষক & কর্মকর্তা & জনসাধারণের জন্য তথ্য & পরিণামসহ জনসাধারণের জন্য নির্দেশনা \\
+\bottomrule
+\end{tabularx}
+\par\vspace{5pt}{\footnotesize\itshape স্তর-নিয়ম: কোনো নিষিদ্ধ ব্যবহার চিহ্ন থাকলে T0। অন্যথায় মোট স্কোর কমপক্ষে ১৩, বা D1 = ৩, বা D2 = ৩, বা D2 ও D3 উভয়ই কমপক্ষে ২ হলে T3; মোট কমপক্ষে ৬, বা D1 = ২, বা D7 কমপক্ষে ২ হলে T2; অন্যথায় T1। bapil.risk-এ বাস্তবায়িত।}
+\par\vspace{3pt}{\scriptsize\color{gray} উৎস: BAPIL টেকনিক্যাল ব্লুপ্রিন্ট, সংস্করণ ১.০ (২০২৬)। CC BY 4.0।}
+\end{minipage}
+\end{document}

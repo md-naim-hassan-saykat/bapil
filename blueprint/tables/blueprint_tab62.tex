@@ -1,0 +1,55 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\AtBeginDocument{\hyphenation{zenodo}}% never hyphenate "zenodo" inside a DOI
+\setmainfont{Latin Modern Roman}[Ligatures=TeXOff]
+\XeTeXgenerateactualtext=1
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali, NFSSFamily=bnfam]
+\usepackage[Latin,Bengali]{ucharclasses}
+% group-free font switching (as in header-common.tex): robust inside braces, cells and quotes
+\makeatletter
+\def\BN@saved{\rmdefault}
+\def\BN@bn{bnfam}
+\newcommand\BNin{\edef\BN@tmp{\f@family}\ifx\BN@tmp\BN@bn\else\let\BN@saved\BN@tmp\fi\fontfamily{bnfam}\selectfont}
+\newcommand\BNout{\fontfamily{\BN@saved}\selectfont}
+\makeatother
+\setTransitionsFor{Bengali}{\BNin}{\BNout}
+% Typographic quotes and dashes are not in a ucharclasses class (class 0), so a Bangla word right
+% after “ or ‘ would not trigger the Bangla font. Treat them as Latin so that every switch fires.
+\XeTeXcharclass"2018=\XeTeXcharclass`A
+\XeTeXcharclass"2019=\XeTeXcharclass`A
+\XeTeXcharclass"201C=\XeTeXcharclass`A
+\XeTeXcharclass"201D=\XeTeXcharclass`A
+\XeTeXcharclass"2013=\XeTeXcharclass`A
+\XeTeXcharclass"2014=\XeTeXcharclass`A
+\XeTeXcharclass"2026=\XeTeXcharclass`A
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{17cm}
+{\large\bfseries Table 62.}\ {\large Budget by cost type, with low, base and high scenarios (Tk crore)}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=2.530\hsize\raggedright\arraybackslash}X>{\hsize=0.602\hsize\raggedright\arraybackslash}X>{\hsize=0.602\hsize\raggedright\arraybackslash}X>{\hsize=0.602\hsize\raggedright\arraybackslash}X>{\hsize=0.663\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{Item} & \textbf{Year 1} & \textbf{Year 2} & \textbf{Year 3} & \textbf{Total} \\
+\midrule
+One-time direct costs (equipment, benchmark creation, studies and evaluations) & 1.42 & 1.46 & 0.79 & 3.67 \\
+of which capital expenditure (servers, GPUs and storage) & 1.14 & 1.02 & 0.30 & 2.46 \\
+Recurring direct costs (staff, editors, fellows, hosting, OCR, training, assurance) & 2.69 & 5.05 & 6.35 & 14.10 \\
+Host overheads and contingency & 0.62 & 0.98 & 1.07 & 2.66 \\
+\textbf{Base case total} & \textbf{4.73} & \textbf{7.49} & \textbf{8.21} & \textbf{20.43} \\
+Low scenario total & 4.20 & 6.58 & 7.16 & 17.93 \\
+High scenario total & 5.76 & 9.46 & 10.03 & 25.25 \\
+Adjusted base case: known omissions added and 10\% contingency (Section 17.2) & 5.29 & 8.10 & 8.85 & 22.24 \\
+\bottomrule
+\end{tabularx}
+\par\vspace{5pt}{\footnotesize\itshape Low scenario: staff costs 15\% lower, escalation 6\%, equipment 20\% cheaper, Tk 120 per US dollar. High scenario: staff costs 20\% higher, escalation 10\%, equipment 25\% dearer (for example import duty and VAT), Tk 135 per US dollar, contingency 10\% and USD 20,000 of cloud compute for Stage 1 adaptation. Adjusted base case: base-case assumptions plus Tk 15 lakh a year for engagement events, P5 survey data, travel and open-access fees, a computer (USD 1,200) for each of 19 new staff, and a 10\% contingency. Figures are rounded independently.}
+\par\vspace{3pt}{\scriptsize\color{gray} Source: BAPIL Technical Blueprint, Version 1.0 (2026). CC BY 4.0.}
+\end{minipage}
+\end{document}

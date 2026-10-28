@@ -1,0 +1,65 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\AtBeginDocument{\hyphenation{zenodo}}% never hyphenate "zenodo" inside a DOI
+\setmainfont{Latin Modern Roman}[Ligatures=TeXOff]
+\XeTeXgenerateactualtext=1
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali, NFSSFamily=bnfam]
+\usepackage[Latin,Bengali]{ucharclasses}
+% group-free font switching (as in header-common.tex): robust inside braces, cells and quotes
+\makeatletter
+\def\BN@saved{\rmdefault}
+\def\BN@bn{bnfam}
+\newcommand\BNin{\edef\BN@tmp{\f@family}\ifx\BN@tmp\BN@bn\else\let\BN@saved\BN@tmp\fi\fontfamily{bnfam}\selectfont}
+\newcommand\BNout{\fontfamily{\BN@saved}\selectfont}
+\makeatother
+\setTransitionsFor{Bengali}{\BNin}{\BNout}
+% Typographic quotes and dashes are not in a ucharclasses class (class 0), so a Bangla word right
+% after “ or ‘ would not trigger the Bangla font. Treat them as Latin so that every switch fires.
+\XeTeXcharclass"2018=\XeTeXcharclass`A
+\XeTeXcharclass"2019=\XeTeXcharclass`A
+\XeTeXcharclass"201C=\XeTeXcharclass`A
+\XeTeXcharclass"201D=\XeTeXcharclass`A
+\XeTeXcharclass"2013=\XeTeXcharclass`A
+\XeTeXcharclass"2014=\XeTeXcharclass`A
+\XeTeXcharclass"2026=\XeTeXcharclass`A
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{22cm}
+{\large\bfseries Table 68.}\ {\large Unresolved items register}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=0.340\hsize\raggedright\arraybackslash}X>{\hsize=1.472\hsize\raggedright\arraybackslash}X>{\hsize=1.245\hsize\raggedright\arraybackslash}X>{\hsize=0.906\hsize\raggedright\arraybackslash}X>{\hsize=1.132\hsize\raggedright\arraybackslash}X>{\hsize=0.906\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{ID} & \textbf{Unresolved item} & \textbf{Why it is unresolved} & \textbf{Owner} & \textbf{How and when it is resolved} & \textbf{Affects} \\
+\midrule
+U1 & Provisions of the PDPA 2026, NDMA 2026 and Cyber Security Act 2026 as enacted (section-level content, exemptions), the notification of the deferred PDPA sections, the further cyber-security amendment, and any rules issued & Act numbers, Gazette dates and deemed commencement confirmed from official sources [7, 8, 9, 10, 11, 42]; provisions read only through database texts & Legal counsel commissioned in Phase 0 (Decision D5) & Independent legal review in Phase 0, before the host agreement is signed (Section 14.3) & Ch. 2, 8, 14; Tables 42, 43 \\
+U2 & Whether NRDEX, the national code repository and chief data officers are retained in the Acts & Resolved on 22 October 2026: all three are in the National Data Management Act (s. 2, 23, 30, 33) [42]; confirmation by counsel within the U1 review & Legal counsel & Closed, subject to U1 & Sect. 8.8, 8.11, 10.8 \\
+U3 & Whether the 2026 data-residency changes are carried into the Personal Data Protection Act & No localisation section found in the database text read; the text was incomplete & Legal counsel & Same legal review & Sect. 8.12; Table 43 \\
+U4 & Public GitHub release v1.1.0 and the Zenodo records & DOIs reserved: Blueprint 10.5281/\allowbreak{}zenodo.23587901, Summary 10.5281/\allowbreak{}zenodo.23587919; the release and both records not yet published at the time of writing & Author & Publish the release, then both Zenodo records (Annex D), before circulation & Table 1; Ch. 11; Annex D \\
+U5 & Government approval of the AI hub technical assistance project & Pending in June 2026; later status not found & Author, with the ICT Division & Check before Blueprint 1.1 & Sect. 3.6, 17.2; Table 42 \\
+U6 & Budget inputs: host salary scale, overhead rate, equipment quotations, duty and VAT status & No host selected; no quotations. Published prices and pay data checked on 22 October 2026 (Section 17.1) & Phase 0 feasibility and costing study & Before Decision D2 (Section 15.1) & Ch. 17; Tables 49, 50, 61, 62 \\
+U7 & In-kind access to national compute for Stage 1 & Draft policy only & ICT Division; National Data Center & Confirm by MS2; otherwise use the high-scenario allocation & Sect. 9.7, 10.3; Table 31 \\
+U8 & BanglaPolicyQA does not exist; all quality targets are unmeasured & Work not yet funded & Work package 6 & Benchmark v0 at MS3; first results at G2 & Ch. 9, 12; Tables 28, 54, 63 \\
+U9 & No host institution, governance body or government focal point & Decisions not yet taken & ICT Division; host & Decisions D2 and D4; MS1 & Ch. 5; Annexes S, T \\
+U10 & No funding requested or approved & Proposal stage & ICT Division or partners & Decisions D2 and D5; before month 1 & Ch. 15, 17; Table 65 \\
+U11 & References taken from the White Paper bibliography (marked with an asterisk in the reference list) to be re-checked against their sources & Resolved on 22 October 2026: all 40 checked; 13 corrected in this Blueprint (title, year, DOI, authors or publisher) & Author & Closed; carry the corrections into the next White Paper version & References \\
+U12 & Gazette status of the Ninth National Pay Scale & Only Cabinet approval reported & Feasibility study & D1.3 & Sect. 17.5; Table 49 \\
+U13 & 2023 AI readiness rank taken from a secondary source & Resolved on 22 October 2026: rank 82, score 46.04 confirmed in the index report [26] & Author & Closed & Sect. 2.2; Table 4 \\
+U14 & Independent copy-edit of the Bangla edition by a professional Bangla editor & Editorial review done by the author; no independent editor yet & Author & Before Blueprint 1.1 & Bangla edition \\
+U15 & Whether the host’s statutes allow its governing body to accept a binding external veto (ERRC) & Depends on the host selected; requires counsel & Candidate host with the Phase 0 legal counsel & Phase 0 legal review, before the host agreement is signed (Section 14.3) & Sect. 5.3; Annex F; Table 64 \\
+U16 & Costs not yet in the base case: consultation and engagement events, P5 survey data collection, staff travel other than for training, open-access fees and staff computers & Not costed in the planning estimate & Phase 0 feasibility and costing study & Before Decision D2; indicative allowance in Section 17.2 & Ch. 17; Tables 49, 50 \\
+U17 & Scale-up figures for Years 4 to 8 (staffing, nodes, agency analysts, compute) are planning assumptions made before any pilot result & Indicative only; not requested & Author, then the Steering Board & Costed plan in Blueprint 2.0, after the final evaluation & Sect. 17.3; Annex W; Tables 69, 70 \\
+U18 & Content of the official draft National AI Policy (version 2.0, February 2026): risk categories, oversight body and innovation fund are described from press reports & The official text is listed on the policy portal [14] but could not be read automatically; the tier system is described as compatible with the reported categories & Author & Read and cite the official text by section before Blueprint 1.1 & Sect. 13.2, 14.2, 16.11; Annex N \\
+\bottomrule
+\end{tabularx}
+\par\vspace{5pt}{\footnotesize\itshape Each item is marked in the text where it applies (“to be confirmed”, “proposed” or “planning estimate”). The register is updated at every Blueprint version.}
+\par\vspace{3pt}{\scriptsize\color{gray} Source: BAPIL Technical Blueprint, Version 1.0 (2026). CC BY 4.0.}
+\end{minipage}
+\end{document}

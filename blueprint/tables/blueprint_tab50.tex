@@ -1,0 +1,56 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\AtBeginDocument{\hyphenation{zenodo}}% never hyphenate "zenodo" inside a DOI
+\setmainfont{Latin Modern Roman}[Ligatures=TeXOff]
+\XeTeXgenerateactualtext=1
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali, NFSSFamily=bnfam]
+\usepackage[Latin,Bengali]{ucharclasses}
+% group-free font switching (as in header-common.tex): robust inside braces, cells and quotes
+\makeatletter
+\def\BN@saved{\rmdefault}
+\def\BN@bn{bnfam}
+\newcommand\BNin{\edef\BN@tmp{\f@family}\ifx\BN@tmp\BN@bn\else\let\BN@saved\BN@tmp\fi\fontfamily{bnfam}\selectfont}
+\newcommand\BNout{\fontfamily{\BN@saved}\selectfont}
+\makeatother
+\setTransitionsFor{Bengali}{\BNin}{\BNout}
+% Typographic quotes and dashes are not in a ucharclasses class (class 0), so a Bangla word right
+% after “ or ‘ would not trigger the Bangla font. Treat them as Latin so that every switch fires.
+\XeTeXcharclass"2018=\XeTeXcharclass`A
+\XeTeXcharclass"2019=\XeTeXcharclass`A
+\XeTeXcharclass"201C=\XeTeXcharclass`A
+\XeTeXcharclass"201D=\XeTeXcharclass`A
+\XeTeXcharclass"2013=\XeTeXcharclass`A
+\XeTeXcharclass"2014=\XeTeXcharclass`A
+\XeTeXcharclass"2026=\XeTeXcharclass`A
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{22cm}
+{\large\bfseries Table 50.}\ {\large Indicative 36-month budget (Tk crore)}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=2.278\hsize\raggedright\arraybackslash}X>{\hsize=0.759\hsize\raggedright\arraybackslash}X>{\hsize=0.759\hsize\raggedright\arraybackslash}X>{\hsize=0.759\hsize\raggedright\arraybackslash}X>{\hsize=0.759\hsize\raggedright\arraybackslash}X>{\hsize=0.684\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{Category} & \textbf{Year 1} & \textbf{Year 2} & \textbf{Year 3} & \textbf{Total} & \textbf{Share} \\
+\midrule
+Core staff & 1.37 & 3.11 & 4.14 & 8.61 & 42\% \\
+Language editors and fellowships & 0.41 & 0.67 & 0.84 & 1.91 & 9\% \\
+Compute and hosting & 1.39 & 1.36 & 0.74 & 3.49 & 17\% \\
+Data and annotation & 0.41 & 0.52 & 0.46 & 1.39 & 7\% \\
+Training and outreach & 0.23 & 0.44 & 0.48 & 1.15 & 6\% \\
+Governance, audit and evaluation & 0.31 & 0.40 & 0.49 & 1.20 & 6\% \\
+Host overheads (10\%) & 0.41 & 0.65 & 0.71 & 1.78 & 9\% \\
+Contingency (5\%) & 0.21 & 0.33 & 0.36 & 0.89 & 4\% \\
+\textbf{Total} & \textbf{4.73} & \textbf{7.49} & \textbf{8.21} & \textbf{20.43} & \textbf{100\%} \\
+\bottomrule
+\end{tabularx}
+\par\vspace{5pt}{\footnotesize\itshape Computed from the assumptions in Table 49 by blueprint/\allowbreak{}src/\allowbreak{}budget\_model.py. Figures are rounded independently, so rows and columns may not add exactly: the unrounded total is Tk 204,264,136 (Tk 20.43 crore), while the rounded annual totals add to Tk 20.43 crore. Rounded rows add to 4.74, 7.48, 8.22 and 20.42; the totals shown are computed from unrounded values. Equivalent to about USD 1.65 million. A planning estimate: no funds have been approved or committed.}
+\par\vspace{3pt}{\scriptsize\color{gray} Source: BAPIL Technical Blueprint, Version 1.0 (2026). CC BY 4.0.}
+\end{minipage}
+\end{document}

@@ -1,0 +1,29 @@
+{
+  "system_id": "BAPIL-P1",
+  "context": "Class A use by officials in pilot agencies (Blueprint Annex B.4)",
+  "prohibited": {
+    "social_scoring": false,
+    "mass_biometric_surveillance": false,
+    "opinion_profiling": false,
+    "deceptive_synthetic_media": false,
+    "manipulation_of_vulnerabilities": false
+  },
+  "scores": {
+    "D1": 2,
+    "D2": 0,
+    "D3": 0,
+    "D4": 1,
+    "D5": 1,
+    "D6": 0,
+    "D7": 1
+  },
+  "rationale": {
+    "D1": "Informs official decisions on policies",
+    "D2": "Public documents only",
+    "D3": "No individuals affected",
+    "D4": "Errors reversible with effort",
+    "D5": "A person reviews every output",
+    "D6": "No affected individuals",
+    "D7": "Officials"
+  }
+}

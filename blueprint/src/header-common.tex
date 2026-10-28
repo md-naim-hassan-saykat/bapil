@@ -1,0 +1,123 @@
+% ---- shared by English and Bangla Blueprint documents (XeLaTeX) ----
+\usepackage{xurl}
+% No stretchable space inside URLs: stretched gaps after hyphens were copied from the PDF as spaces
+\Urlmuskip=0mu\relax
+\usepackage{etoolbox}
+% never hyphenate "zenodo" inside a DOI (10.5281/zen-odo...); lines may still break at "/" or "."
+\AtBeginDocument{\hyphenation{zenodo}}
+\usepackage{titlesec}
+\usepackage{tocloft}
+\usepackage{fancyhdr}
+\usepackage{caption}
+\usepackage[table]{xcolor}
+\usepackage{newunicodechar}
+\definecolor{bapilrule}{HTML}{1F2937}
+\captionsetup{labelformat=empty, labelsep=none, font=small, justification=centering, skip=6pt}
+\captionsetup[table]{justification=raggedright, singlelinecheck=false, position=top}
+% Bangla script support inside any text (fonts switch automatically by Unicode block)
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali, NFSSFamily=bnserif]
+\newfontfamily\bengalisansfont{Noto Sans Bengali}[Script=Bengali, NFSSFamily=bnsans]
+\usepackage[Latin,Bengali]{ucharclasses}
+% group-free switching: remember the surrounding family, keep series and shape (bold, italic)
+\makeatletter
+\def\BN@saved{\rmdefault}
+\def\BN@serif{bnserif}
+\def\BN@sans{bnsans}
+\newcommand\BNin{\edef\BN@tmp{\f@family}%
+  \ifx\BN@tmp\BN@serif\else\ifx\BN@tmp\BN@sans\else\let\BN@saved\BN@tmp\fi\fi
+  \fontfamily{bnserif}\selectfont}
+\newcommand\BNout{\fontfamily{\BN@saved}\selectfont}
+\makeatother
+\setTransitionsFor{Bengali}{\BNin}{\BNout}
+% Typographic quotes and dashes are not in a ucharclasses class (class 0), so a Bangla word right
+% after “ or ‘ would not trigger the Bangla font. Treat them as Latin so that every switch fires.
+\XeTeXcharclass"2018=\XeTeXcharclass`A
+\XeTeXcharclass"2019=\XeTeXcharclass`A
+\XeTeXcharclass"201C=\XeTeXcharclass`A
+\XeTeXcharclass"201D=\XeTeXcharclass`A
+\XeTeXcharclass"2013=\XeTeXcharclass`A
+\XeTeXcharclass"2014=\XeTeXcharclass`A
+\XeTeXcharclass"2026=\XeTeXcharclass`A
+% Real space characters in the reference lists. XeTeX writes no space characters into the PDF text
+% layer, so some viewers (for example macOS Preview) join short words when text is copied
+% ("Fosteringa", "AZAMAHM"). In the reference lists, every word boundary gets an invisible space
+% glyph of zero net width, so copied text keeps its spaces; layout, line breaks and hyphenation are
+% unchanged. The tokens are appended to the existing class transitions (ucharclasses font switching).
+\makeatletter
+% The glyph is added only when the next token is a real space, not at braces such as Pandoc's {[}.
+\newcommand\bapilrealspace{\futurelet\bapil@next\bapil@realspace}
+\newcommand\bapil@realspace{\ifx\bapil@next\@sptoken\ifhmode
+    \count255=\spacefactor\relax
+    \setbox\z@=\hbox{\XeTeXglyph\XeTeXcharglyph"20\relax}%
+    \XeTeXglyph\XeTeXcharglyph"20\relax\kern-\wd\z@\relax\penalty\z@\relax
+    \spacefactor=\count255\relax
+  \fi\fi}
+\newcommand\bapilrealspaces{\exhyphenpenalty=\@M % no line break at a hyphen in a reference (dates such as 2026-10-22)
+  % web addresses in the reference lists break only at punctuation, preferably after "/", never inside a
+  % word or a number; the lists are set ragged-right, so no line is stretched to fill the measure
+  \def\UrlBreaks{\do\.\do\@\do\\\do\!\do\_\do\|\do\;\do\>\do\]\do\)\do\,\do\?\do\&\do\'\do+\do\=\do\#\do\-}%
+  \def\UrlBigBreaks{\do\:\do\/}%
+  \mathchardef\UrlBreakPenalty=300 \mathchardef\UrlBigBreakPenalty=100
+  \raggedright
+  \XeTeXinterchartokenstate=\@ne
+  \count@=\z@
+  \loop
+    \XeTeXinterchartoks\count@\e@alloc@intercharclass@top=\expandafter{%
+      \the\XeTeXinterchartoks\count@\e@alloc@intercharclass@top\bapilrealspace}%
+    \advance\count@\@ne
+  \ifnum\count@<\e@alloc@intercharclass@top\repeat}
+\makeatother
+\newunicodechar{।}{{\bengalifont\char"0964}}
+\newunicodechar{॥}{{\bengalifont\char"0965}}
+% tables: smaller type, light rules
+% row spacing of long tables; a page can set \bapiltablestretch in a group to fit a table
+\providecommand{\bapiltablestretch}{1.18}
+\providecommand{\bapiltablesize}{\small}
+\AtBeginEnvironment{longtable}{\bapiltablesize\setlength{\tabcolsep}{4pt}\renewcommand{\arraystretch}{\bapiltablestretch}}
+% headings
+\titleformat{\section}{\normalfont\Large\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{2.0em}{1.0em}
+\titleformat{\subsection}{\normalfont\large\bfseries}{}{0pt}{}
+\titlespacing*{\subsection}{0pt}{1.4em}{0.6em}
+\titleformat{\subsubsection}{\normalfont\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\subsubsection}{0pt}{1.1em}{0.4em}
+% table of contents
+\setcounter{tocdepth}{2}
+\setlength{\cftbeforesecskip}{0.5em}
+\renewcommand{\cftsecfont}{\bfseries}
+\renewcommand{\cftsecpagefont}{\bfseries}
+\setlength{\cftsubsecindent}{1.6em}
+% lists: compact, modest bullets
+\usepackage{enumitem}
+\setlist{itemsep=0.15em, topsep=0.4em, parsep=0pt}
+\setlist[itemize,1]{label={\small\textbullet}}
+% page style
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.3pt}
+\fancyfoot[C]{\small\thepage}
+\linespread{1.06}
+\setlength{\emergencystretch}{3em}
+\sloppy
+% parts in the table of contents
+\renewcommand{\cftpartfont}{\large\bfseries}
+\renewcommand{\cftpartpagefont}{\large\bfseries}
+\setlength{\cftbeforepartskip}{1.3em}
+% lists of figures and tables: the visible label ("Figure 3.") is part of each caption
+\renewcommand{\cftfigpresnum}{\setbox0\hbox\bgroup}
+\renewcommand{\cftfigaftersnum}{\egroup}
+\setlength{\cftfignumwidth}{0pt}
+\setlength{\cftfigindent}{0pt}
+\renewcommand{\cfttabpresnum}{\setbox0\hbox\bgroup}
+\renewcommand{\cfttabaftersnum}{\egroup}
+\setlength{\cfttabnumwidth}{0pt}
+\setlength{\cfttabindent}{0pt}
+\setlength{\cftbeforefigskip}{0.25em}
+\setlength{\cftbeforetabskip}{0.25em}
+% Text extraction: record the source characters of every shaped glyph cluster (ActualText),
+% so that copied or searched text keeps Unicode order (Bangla pre-base vowel signs such as ে, ি)
+\XeTeXgenerateactualtext=1
+% table of contents; an edition can tighten its line spacing to avoid a near-empty last page
+\providecommand{\bapiltableofcontents}{\tableofcontents}
+% keep a short table together with its caption when little space is left on the page
+\usepackage{needspace}

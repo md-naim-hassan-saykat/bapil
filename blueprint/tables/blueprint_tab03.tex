@@ -1,0 +1,63 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\AtBeginDocument{\hyphenation{zenodo}}% never hyphenate "zenodo" inside a DOI
+\setmainfont{Latin Modern Roman}[Ligatures=TeXOff]
+\XeTeXgenerateactualtext=1
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali, NFSSFamily=bnfam]
+\usepackage[Latin,Bengali]{ucharclasses}
+% group-free font switching (as in header-common.tex): robust inside braces, cells and quotes
+\makeatletter
+\def\BN@saved{\rmdefault}
+\def\BN@bn{bnfam}
+\newcommand\BNin{\edef\BN@tmp{\f@family}\ifx\BN@tmp\BN@bn\else\let\BN@saved\BN@tmp\fi\fontfamily{bnfam}\selectfont}
+\newcommand\BNout{\fontfamily{\BN@saved}\selectfont}
+\makeatother
+\setTransitionsFor{Bengali}{\BNin}{\BNout}
+% Typographic quotes and dashes are not in a ucharclasses class (class 0), so a Bangla word right
+% after “ or ‘ would not trigger the Bangla font. Treat them as Latin so that every switch fires.
+\XeTeXcharclass"2018=\XeTeXcharclass`A
+\XeTeXcharclass"2019=\XeTeXcharclass`A
+\XeTeXcharclass"201C=\XeTeXcharclass`A
+\XeTeXcharclass"201D=\XeTeXcharclass`A
+\XeTeXcharclass"2013=\XeTeXcharclass`A
+\XeTeXcharclass"2014=\XeTeXcharclass`A
+\XeTeXcharclass"2026=\XeTeXcharclass`A
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{17cm}
+{\large\bfseries Table 3.}\ {\large From White Paper chapters to Blueprint chapters}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=0.892\hsize\raggedright\arraybackslash}X>{\hsize=0.649\hsize\raggedright\arraybackslash}X>{\hsize=1.459\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{White Paper chapter (v1.0)} & \textbf{Blueprint chapter} & \textbf{What the Blueprint adds} \\
+\midrule
+2. Why Bangladesh needs AI policy intelligence & 2, 4 & Baseline indicators, gap analysis, user personas and testable requirements \\
+3. Global examples & 5, 13, 14 & Institutional choices and controls adapted from the cases, with a framework crosswalk \\
+4. Current AI landscape in Bangladesh & 2, 3, 14 & Situation analysis, stakeholder register and the 2026 legal framework \\
+5. BAPIL vision & 1, 16 & Scope boundaries, maturity classes and a 2026-2041 strategic roadmap \\
+6. BAPIL architecture & 7, 8, 10 & Twelve named components, interfaces, data rules, hosting and security zones \\
+7. Policy Intelligence Dashboard & 7, 12 & API specification and pilot specifications (P1, P2, P5) \\
+8. Bangla Policy Foundation Model & 9, 12 & Bangla text rules, BanglaPolicyQA benchmark and an evidence-gated model path \\
+9. AI governance framework & 13, Annexes B, E to J & Risk tiers, lifecycle gates, charter, terms of reference and checklists \\
+10. National security and cybersecurity & 10 & NIST CSF 2.0 mapping, AI-specific threats, incident levels and recovery targets \\
+11. AI education and talent & 6 & Staffing plan, competency framework and training curriculum \\
+12. Startup ecosystem & 3, 17 & Industry engagement and procurement clauses that keep markets open \\
+13. Resources and funding & 17 & Cost model, funding mix by horizon and sustainability plan \\
+14. Five-year roadmap & 15 & 36-month workplan with milestones, deliverables and gates \\
+15. Long-term vision & 16 & Horizons, indicative targets, scenarios and review triggers to 2041 and beyond \\
+16. Risks, ethics and responsible AI & 13, 19 & Risk register, heat map and operational assurance \\
+17. Strategic recommendations & 21 & Six concrete decisions for the authorities \\
+Appendix A. Pilot projects & 12 & Full specifications with users, data, tier, scope and exit criteria \\
+\bottomrule
+\end{tabularx}
+\par\vspace{3pt}{\scriptsize\color{gray} Source: BAPIL Technical Blueprint, Version 1.0 (2026). CC BY 4.0.}
+\end{minipage}
+\end{document}

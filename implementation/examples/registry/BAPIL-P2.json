@@ -1,0 +1,30 @@
+{
+  "system_id": "BAPIL-P2",
+  "name": {
+    "en": "Budget Intelligence Dashboard",
+    "bn": "বাজেট ইন্টেলিজেন্স ড্যাশবোর্ড"
+  },
+  "purpose": {
+    "en": "Reproducible extraction of ministry-level allocations from published budget documents, released as open data.",
+    "bn": "প্রকাশিত বাজেট নথি থেকে মন্ত্রণালয়ভিত্তিক বরাদ্দের পুনরুৎপাদনযোগ্য নিষ্কাশন ও উন্মুক্ত ডেটা হিসেবে প্রকাশ।"
+  },
+  "owner": {
+    "unit": "Data Analytics and Public Sentiment Unit",
+    "accountable": "Pilot lead (to be appointed)"
+  },
+  "maturity_class": "R",
+  "risk_tier": "T1",
+  "data_classes": [
+    "DC0"
+  ],
+  "gate_status": {
+    "gate": "G0",
+    "date": "2026-10-21",
+    "approved_by": "Pending constitution of governance bodies"
+  },
+  "limitations": {
+    "en": "Figures depend on published documents and extraction accuracy; definitions may change between fiscal years.",
+    "bn": "পরিসংখ্যান প্রকাশিত নথি ও নিষ্কাশনের নির্ভুলতার ওপর নির্ভরশীল; অর্থবছরভেদে সংজ্ঞা বদলাতে পারে।"
+  },
+  "contact": "https://github.com/md-naim-hassan-saykat/bapil/issues"
+}

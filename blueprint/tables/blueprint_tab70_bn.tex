@@ -1,0 +1,62 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\AtBeginDocument{\hyphenation{zenodo}}% never hyphenate "zenodo" inside a DOI
+\setmainfont{Noto Serif}[Ligatures=TeXOff]
+\XeTeXgenerateactualtext=1
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali, NFSSFamily=bnfam]
+\usepackage[Latin,Bengali]{ucharclasses}
+% group-free font switching (as in header-common.tex): robust inside braces, cells and quotes
+\makeatletter
+\def\BN@saved{\rmdefault}
+\def\BN@bn{bnfam}
+\newcommand\BNin{\edef\BN@tmp{\f@family}\ifx\BN@tmp\BN@bn\else\let\BN@saved\BN@tmp\fi\fontfamily{bnfam}\selectfont}
+\newcommand\BNout{\fontfamily{\BN@saved}\selectfont}
+\makeatother
+\setTransitionsFor{Bengali}{\BNin}{\BNout}
+% Typographic quotes and dashes are not in a ucharclasses class (class 0), so a Bangla word right
+% after “ or ‘ would not trigger the Bangla font. Treat them as Latin so that every switch fires.
+\XeTeXcharclass"2018=\XeTeXcharclass`A
+\XeTeXcharclass"2019=\XeTeXcharclass`A
+\XeTeXcharclass"201C=\XeTeXcharclass`A
+\XeTeXcharclass"201D=\XeTeXcharclass`A
+\XeTeXcharclass"2013=\XeTeXcharclass`A
+\XeTeXcharclass"2014=\XeTeXcharclass`A
+\XeTeXcharclass"2026=\XeTeXcharclass`A
+\usepackage{newunicodechar}
+\newunicodechar{।}{{\bengalifont\char"0964}}
+\newunicodechar{॥}{{\bengalifont\char"0965}}
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{22cm}
+{\large\bfseries সারণি ৭০।}\ {\large শর্তসাপেক্ষ জাতীয় সম্প্রসারণের নির্দেশক বাজেট, বছর ৪ থেকে ৮ (কোটি টাকা)}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=2.674\hsize\raggedright\arraybackslash}X>{\hsize=0.708\hsize\raggedright\arraybackslash}X>{\hsize=0.708\hsize\raggedright\arraybackslash}X>{\hsize=0.708\hsize\raggedright\arraybackslash}X>{\hsize=0.708\hsize\raggedright\arraybackslash}X>{\hsize=0.708\hsize\raggedright\arraybackslash}X>{\hsize=0.787\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{বিষয়} & \textbf{বছর ৪} & \textbf{বছর ৫} & \textbf{বছর ৬} & \textbf{বছর ৭} & \textbf{বছর ৮} & \textbf{মোট} \\
+\midrule
+কেন্দ্রীয় ল্যাবের জনবল & ৫.৭১ & ৭.৪৮ & ১০.০৯ & ১২.৩৮ & ১৪.০৯ & ৪৯.৭৪ \\
+বিভাগীয় বিশ্ববিদ্যালয়-কেন্দ্র & ২.৫০ & ৫.৪১ & ৫.৮৪ & ৬.৩১ & ৬.৮১ & ২৬.৮৮ \\
+সংস্থায় নিযুক্ত বিশ্লেষক & ১.৩৬ & ২.৪৫ & ৩.৭০ & ৫.১৪ & ৬.১৭ & ১৮.৮২ \\
+বাংলা ভাষা-ডেটা ও টীকাকরণ কর্মী & ১.৪০ & ২.৪৫ & ৩.০৪ & ৩.২৮ & ৩.৫৫ & ১৩.৭২ \\
+স্নাতক ফেলোশিপ & ১.২১ & ১.৯৬ & ২.৮২ & ৩.০৫ & ৩.২৯ & ১২.৩৩ \\
+কম্পিউটিং, হোস্টিং ও সমন্বিত অনুসন্ধান & ৬.২৬ & ৬.৫১ & ৭.০৮ & ৭.২০ & ৯.৫৬ & ৩৬.৬১ \\
+ডেটা ও বেঞ্চমার্ক & ১.১০ & ১.৩৬ & ১.৪৭ & ১.৪৩ & ১.৫৪ & ৬.৯০ \\
+কর্মকর্তাদের প্রশিক্ষণ & ১.২২ & ১.৯৩ & ২.৫৩ & ৩.২১ & ৪.২৩ & ১৩.১২ \\
+শাসন, নিরীক্ষা ও মূল্যায়ন & ০.৪৮ & ০.৫২ & ১.১৫ & ০.৬০ & ১.৫১ & ৪.২৫ \\
+স্বাগতিকের পরোক্ষ ব্যয় (১০\%) & ২.১২ & ৩.০১ & ৩.৭৭ & ৪.২৬ & ৫.০৮ & ১৮.২৪ \\
+আপৎকালীন সংস্থান (১০\%) & ২.১২ & ৩.০১ & ৩.৭৭ & ৪.২৬ & ৫.০৮ & ১৮.২৪ \\
+\textbf{মোট, বছর ৪ থেকে ৮} & \textbf{২৫.৫০} & \textbf{৩৬.০৮} & \textbf{৪৫.২৬} & \textbf{৫১.১১} & \textbf{৬০.৯০} & \textbf{২১৮.৮৫} \\
+\bottomrule
+\end{tabularx}
+\par\vspace{5pt}{\footnotesize\itshape ৩৬ মাসের পরিকল্পনার জন্য অনুরোধকৃত অর্থের অংশ নয়। সারণি ৪৯-এর একই একক-ব্যয়, প্রথম বছরের মূল্যে, বছরে ৮\% মূল্যবৃদ্ধিসহ; ১০\% স্বাগতিকের পরোক্ষ ব্যয় ও ১০\% আপৎকালীন সংস্থান। কেন্দ্রীয় ল্যাব ২৫ থেকে ৪৫টি পদে বাড়ে; প্রতিটি পাঁচটি পদসহ চারটি বিভাগীয় বিশ্ববিদ্যালয়-কেন্দ্র; গ্রহণকারী সংস্থায় ৬ থেকে ২০ জন বিশ্লেষক; ১৭ থেকে ৩৩ জন বাংলা ভাষা-ডেটা কর্মী (টীকাকারের মাসিক ব্যয় ৪৫,০০০ টাকা); বছরে ২০ থেকে ৪০ জন স্নাতক ফেলো; ৫,০০০ কর্মকর্তার প্রশিক্ষণ; জাতীয় ইনফারেন্স ও অনুসন্ধান প্ল্যাটফর্ম এবং সমন্বিত অনুসন্ধানে যুক্ত হওয়া সংস্থাগুলোর সহায়তা (প্রতি সংস্থায় ৫০ লাখ টাকা)। blueprint/\allowbreak{}src/\allowbreak{}budget\_model.py (scaleup ফাংশন) দ্বারা হিসাবকৃত; ব্লুপ্রিন্ট ২.০-এ একটি ব্যয়-নির্ধারিত পরিকল্পনা এর স্থলাভিষিক্ত হবে।}
+\par\vspace{3pt}{\scriptsize\color{gray} উৎস: BAPIL টেকনিক্যাল ব্লুপ্রিন্ট, সংস্করণ ১.০ (২০২৬)। CC BY 4.0।}
+\end{minipage}
+\end{document}

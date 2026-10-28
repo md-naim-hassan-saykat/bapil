@@ -1,0 +1,59 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\AtBeginDocument{\hyphenation{zenodo}}% never hyphenate "zenodo" inside a DOI
+\setmainfont{Noto Serif}[Ligatures=TeXOff]
+\XeTeXgenerateactualtext=1
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali, NFSSFamily=bnfam]
+\usepackage[Latin,Bengali]{ucharclasses}
+% group-free font switching (as in header-common.tex): robust inside braces, cells and quotes
+\makeatletter
+\def\BN@saved{\rmdefault}
+\def\BN@bn{bnfam}
+\newcommand\BNin{\edef\BN@tmp{\f@family}\ifx\BN@tmp\BN@bn\else\let\BN@saved\BN@tmp\fi\fontfamily{bnfam}\selectfont}
+\newcommand\BNout{\fontfamily{\BN@saved}\selectfont}
+\makeatother
+\setTransitionsFor{Bengali}{\BNin}{\BNout}
+% Typographic quotes and dashes are not in a ucharclasses class (class 0), so a Bangla word right
+% after “ or ‘ would not trigger the Bangla font. Treat them as Latin so that every switch fires.
+\XeTeXcharclass"2018=\XeTeXcharclass`A
+\XeTeXcharclass"2019=\XeTeXcharclass`A
+\XeTeXcharclass"201C=\XeTeXcharclass`A
+\XeTeXcharclass"201D=\XeTeXcharclass`A
+\XeTeXcharclass"2013=\XeTeXcharclass`A
+\XeTeXcharclass"2014=\XeTeXcharclass`A
+\XeTeXcharclass"2026=\XeTeXcharclass`A
+\usepackage{newunicodechar}
+\newunicodechar{।}{{\bengalifont\char"0964}}
+\newunicodechar{॥}{{\bengalifont\char"0965}}
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{17cm}
+{\large\bfseries সারণি ৩৩।}\ {\large এআই ব্যবস্থার নির্দিষ্ট নিরাপত্তা হুমকি ও পরিকল্পিত নিয়ন্ত্রণ}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=0.732\hsize\raggedright\arraybackslash}X>{\hsize=0.805\hsize\raggedright\arraybackslash}X>{\hsize=1.463\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{হুমকি (OWASP LLM Top 10, ২০২৫)} & \textbf{BAPIL প্রেক্ষাপটে উদাহরণ} & \textbf{পরিকল্পিত নিয়ন্ত্রণ} \\
+\midrule
+LLM01 প্রম্পট-ইনজেকশন & গৃহীত PDF-এর ভেতরে লুকানো নির্দেশনা & উদ্ধারকৃত টেক্সটকে শুধু ডেটা হিসেবে গণ্য করা; কোনো টুল চালানো নয়; শুধু উদ্ধৃতিভিত্তিক উত্তর; প্রতিটি G2-তে রেড-টিম পরীক্ষা \\
+LLM02 সংবেদনশীল তথ্য প্রকাশ & উত্তরে ব্যক্তিগত তথ্য চলে আসা & প্রথমে DC0 কর্পাস; গ্রহণের সময় ব্যক্তিগত তথ্য স্ক্যান; সংগ্রহভিত্তিক প্রবেশ নিয়ন্ত্রণ; লগ থেকে তথ্য অপসারণ \\
+LLM03 সরবরাহ শৃঙ্খল & ক্ষতিগ্রস্ত মডেল-ওজন বা প্যাকেজ & নির্দিষ্ট সংস্করণের নির্ভরতা; সফটওয়্যার উপাদান তালিকা (SBOM); মডেলের চেকসাম ও উৎস-তথ্য; স্বাক্ষরিত রিলিজ \\
+LLM04 ডেটা ও মডেল বিষক্রিয়া & কর্পাসে কারসাজিকৃত নথি প্রবেশ & অনুমোদিত উৎসের তালিকা; উৎস-হ্যাশ; পরিবর্তন শনাক্তকরণ; ফাইন-টিউনিং ডেটার মানব-বাছাই \\
+LLM05 অনুপযুক্ত আউটপুট ব্যবস্থাপনা & মডেলের আউটপুট সক্রিয় কনটেন্ট হিসেবে প্রদর্শিত & সকল আউটপুট এস্কেপ করা; কাঠামোবদ্ধ আউটপুট যাচাই; সরাসরি চালনা নয় \\
+LLM06 অতিরিক্ত কর্তৃত্ব & সরঞ্জামকে ব্যবস্থায় পদক্ষেপ নেওয়ার ক্ষমতা দেওয়া & শুধু-পঠন নকশা; কোনো স্বয়ংক্রিয় পদক্ষেপ নয়; যেকোনো পরিবর্তনে মানব-অনুমোদন \\
+LLM07 সিস্টেম প্রম্পট ফাঁস & প্রম্পটে গোপন তথ্য রাখা & প্রম্পটে কোনো গোপন তথ্য নয়; প্রম্পট সংস্করণকৃত ও সম্ভব হলে প্রকাশিত \\
+LLM08 ভেক্টর ও এমবেডিং দুর্বলতা & সূচিতে এক সংগ্রহ থেকে অন্য সংগ্রহে তথ্য ফাঁস & অনুসন্ধানের সময় সংগ্রহভিত্তিক প্রবেশ নিয়ন্ত্রণ; ব্যবহারকারী-গোষ্ঠী পৃথকীকরণ \\
+LLM09 ভুল তথ্য & আত্মবিশ্বাসী কিন্তু ভুল উত্তর & বাধ্যতামূলক উদ্ধৃতি; বিরত থাকা; আস্থার মাত্রা প্রদর্শন; ব্যবহারকারী প্রশিক্ষণ \\
+LLM10 সীমাহীন সম্পদ ব্যবহার & অনুসন্ধানের বন্যায় কম্পিউটিং ব্যয় বৃদ্ধি & কোটা, হার-সীমা, সময়সীমা, ব্যয় পর্যবেক্ষণ \\
+\bottomrule
+\end{tabularx}
+\par\vspace{3pt}{\scriptsize\color{gray} উৎস: BAPIL টেকনিক্যাল ব্লুপ্রিন্ট, সংস্করণ ১.০ (২০২৬)। CC BY 4.0।}
+\end{minipage}
+\end{document}

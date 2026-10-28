@@ -1,0 +1,17 @@
+# Metadata that still needs the author’s confirmation
+
+These values could not be decided from the evidence in the repository. On 29 October 2026 the author asked for the standard choice to be made for items 1 to 6 and 11; the decisions are recorded in `blueprint/zenodo/UPLOAD_CHECKLIST.md`, section 0. Items 1, 2, 4, 6 and 11 are settled in the files; items 3 and 5 are actions for the author on zenodo.org; item 8 is set at release.
+
+| # | Item | Current value in the files | Why it needs confirmation | Where to change it |
+|---|---|---|---|---|
+| 1 | Author affiliation in the citation metadata of release v1.1.0 | Blueprint, Summary and `zenodo_metadata.json`: "Independent Researcher, Bangladesh" (chosen by the author for the Blueprint title page). `CITATION.cff` (describing the last real release, 1.0), the README "Author" section and both earlier Zenodo records: "Université Paris-Saclay" | The Blueprint affiliation is settled. Still to decide: whether `CITATION.cff` and the README author section switch to "Independent Researcher, Bangladesh" when v1.1.0 is released, so that the GitHub, CFF and Zenodo metadata agree. The earlier records keep their own affiliation | `CITATION.cff` (`affiliation`), README "Author"; `metadata.json` and `zenodo_metadata.json` need no change |
+| 2 | Licence of the Blueprint, Summary, Decision Memo, tables, figures and budget data | CC BY 4.0, as printed | A licence must not be assumed; it is consistent with the Executive Summary record | `blueprint/src/metadata.json`, `zenodo_metadata.json`, `docs/licensing-and-asset-rights.md` |
+| 3 | Licence shown on the White Paper’s Zenodo record | MIT on Zenodo; CC BY 4.0 in the document | The published record contradicts the document; editing the record metadata on Zenodo keeps the DOI | On zenodo.org (record 21363967) |
+| 4 | Licence of `research/` | None stated | Prose should not fall under the MIT software licence by default | A statement in each file or a `research/README.md` |
+| 5 | Handling of the Zenodo GitHub integration for release v1.1.0 | Unknown whether still switched on | If on, the release creates an automatic record under the concept DOI with CITATION.cff metadata | <https://zenodo.org/account/settings/github/>; see `blueprint/zenodo/UPLOAD_CHECKLIST.md`, section 0 |
+| 6 | Whether the Decision Memo goes into a Zenodo record | Not included by default | It is a separate document addressed to the authorities | `blueprint/zenodo/make_zenodo_package.sh` |
+| 7 | Blueprint and Summary DOIs | **Settled 23 October 2026:** Technical Blueprint 10.5281/zenodo.23587901, Blueprint Summary 10.5281/zenodo.23587919, reserved by the author on Zenodo (two records) | They resolve only once the records are published | Publish both records after GitHub release v1.1.0 (checklist, section 6) |
+| 8 | Release date of v1.1.0 | "Unreleased" | Set when the release is published | `CHANGELOG.md`, `CITATION.cff` (`date-released`, `version`), `RELEASE_NOTES.md` |
+| 9 | Zenodo communities, funding information | None | No community or grant is known; leave empty unless one applies | `zenodo_metadata.json` |
+| 10 | ORCID | 0009-0007-5270-3970 | Matches both Zenodo records; no change expected | — |
+| 11 | Whether the engagement drafts in `docs/engagement/` go into the Zenodo source archive | Included, because the package script copies `docs/` | They are templates marked as unsent drafts. Some authors prefer to keep correspondence templates on GitHub only | `blueprint/zenodo/make_zenodo_package.sh` (exclude `docs/engagement`) |

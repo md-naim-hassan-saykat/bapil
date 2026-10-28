@@ -1,0 +1,56 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\AtBeginDocument{\hyphenation{zenodo}}% never hyphenate "zenodo" inside a DOI
+\setmainfont{Noto Serif}[Ligatures=TeXOff]
+\XeTeXgenerateactualtext=1
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali, NFSSFamily=bnfam]
+\usepackage[Latin,Bengali]{ucharclasses}
+% group-free font switching (as in header-common.tex): robust inside braces, cells and quotes
+\makeatletter
+\def\BN@saved{\rmdefault}
+\def\BN@bn{bnfam}
+\newcommand\BNin{\edef\BN@tmp{\f@family}\ifx\BN@tmp\BN@bn\else\let\BN@saved\BN@tmp\fi\fontfamily{bnfam}\selectfont}
+\newcommand\BNout{\fontfamily{\BN@saved}\selectfont}
+\makeatother
+\setTransitionsFor{Bengali}{\BNin}{\BNout}
+% Typographic quotes and dashes are not in a ucharclasses class (class 0), so a Bangla word right
+% after “ or ‘ would not trigger the Bangla font. Treat them as Latin so that every switch fires.
+\XeTeXcharclass"2018=\XeTeXcharclass`A
+\XeTeXcharclass"2019=\XeTeXcharclass`A
+\XeTeXcharclass"201C=\XeTeXcharclass`A
+\XeTeXcharclass"201D=\XeTeXcharclass`A
+\XeTeXcharclass"2013=\XeTeXcharclass`A
+\XeTeXcharclass"2014=\XeTeXcharclass`A
+\XeTeXcharclass"2026=\XeTeXcharclass`A
+\usepackage{newunicodechar}
+\newunicodechar{।}{{\bengalifont\char"0964}}
+\newunicodechar{॥}{{\bengalifont\char"0965}}
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{22cm}
+{\large\bfseries সারণি ১৮।}\ {\large প্রশিক্ষণ পাঠ্যক্রম}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=1.273\hsize\raggedright\arraybackslash}X>{\hsize=1.030\hsize\raggedright\arraybackslash}X>{\hsize=1.818\hsize\raggedright\arraybackslash}X>{\hsize=0.667\hsize\raggedright\arraybackslash}X>{\hsize=0.667\hsize\raggedright\arraybackslash}X>{\hsize=0.545\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{কর্মসূচি} & \textbf{লক্ষ্য-গোষ্ঠী} & \textbf{মূল মডিউল} & \textbf{মেয়াদ} & \textbf{ধরন} & \textbf{প্রথম বছরের লক্ষ্য} \\
+\midrule
+\textbf{TR1} জনপ্রশাসনের নেতৃত্বের জন্য এআই সাক্ষরতা & জ্যেষ্ঠ কর্মকর্তা ও সংস্থাপ্রধান & এআই-এর সক্ষমতা ও সীমা; ঝুঁকি-স্তর; ক্রয়; মূল্যায়ন পড়া & ১ দিন & সরাসরি & ৪০ \\
+\textbf{TR2} নীতি-বিশ্লেষকদের জন্য দায়িত্বশীল এআই & পাইলট ব্যবহারকারী ও বিশ্লেষক & উদ্ধৃতিভিত্তিক অনুসন্ধান; যাচাই; বিরতি; পক্ষপাত; উপাত্ত সুরক্ষার মৌলিক বিষয়; প্রম্পট-ইনজেকশন সচেতনতা & ৩ দিন & মিশ্র & ১০০ \\
+\textbf{TR3} এআই শাসন চর্চাকারী & শাসন ও আইন কর্মী, ERRC & স্তর মূল্যায়ন; DPIA; প্রভাব মূল্যায়ন; গেট পর্যালোচনা; নিরীক্ষা; স্বচ্ছতা & ৫ দিন & সরাসরি & ৩০ \\
+\textbf{TR4} ডেটা তত্ত্বাবধান & ডেটা-রক্ষক, প্রধান ডেটা কর্মকর্তা & মেটাডেটা; লাইসেন্স; মান; শ্রেণিবিন্যাস; ডেটা-বিনিময় চুক্তি & ৩ দিন & মিশ্র & ৪০ \\
+\textbf{TR5} বাংলা NLP ও MLOps & সংস্থা ও বিশ্ববিদ্যালয়ের প্রকৌশলী & বাংলা টেক্সট প্রক্রিয়াকরণ; উদ্ধার; মূল্যায়ন; মডেল কার্ড; নিরাপদ প্রয়োগ & ১০ দিন & মিশ্র & ৩০ \\
+\textbf{TR6} BAPIL ফেলোশিপ & স্নাতকোত্তর ফেলো & মেন্টরিংসহ কোনো পাইলট বা বেঞ্চমার্কে গবেষণা-নিয়োজন & ৬ থেকে ১২ মাস & নিয়োজন & ১০ \\
+\bottomrule
+\end{tabularx}
+\par\vspace{5pt}{\footnotesize\itshape সকল কোর্স-উপকরণ বাংলা ও ইংরেজিতে CC BY 4.0 লাইসেন্সে প্রকাশিত হয়। প্রথম বছরে ১০০ প্রশিক্ষিত কর্মকর্তার KPI-তে TR2-এর অংশগ্রহণকারীরা গণ্য; TR1 অবহিতকরণ ও বিশেষায়িত দল TR3 থেকে TR5 আলাদাভাবে গণ্য এবং বাজেটের বিশেষায়িত কোর্স-খাত থেকে অর্থায়িত (সারণি ৪৯)।}
+\par\vspace{3pt}{\scriptsize\color{gray} উৎস: BAPIL টেকনিক্যাল ব্লুপ্রিন্ট, সংস্করণ ১.০ (২০২৬)। CC BY 4.0।}
+\end{minipage}
+\end{document}

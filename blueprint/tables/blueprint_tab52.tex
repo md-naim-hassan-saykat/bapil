@@ -1,0 +1,56 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\AtBeginDocument{\hyphenation{zenodo}}% never hyphenate "zenodo" inside a DOI
+\setmainfont{Latin Modern Roman}[Ligatures=TeXOff]
+\XeTeXgenerateactualtext=1
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali, NFSSFamily=bnfam]
+\usepackage[Latin,Bengali]{ucharclasses}
+% group-free font switching (as in header-common.tex): robust inside braces, cells and quotes
+\makeatletter
+\def\BN@saved{\rmdefault}
+\def\BN@bn{bnfam}
+\newcommand\BNin{\edef\BN@tmp{\f@family}\ifx\BN@tmp\BN@bn\else\let\BN@saved\BN@tmp\fi\fontfamily{bnfam}\selectfont}
+\newcommand\BNout{\fontfamily{\BN@saved}\selectfont}
+\makeatother
+\setTransitionsFor{Bengali}{\BNin}{\BNout}
+% Typographic quotes and dashes are not in a ucharclasses class (class 0), so a Bangla word right
+% after “ or ‘ would not trigger the Bangla font. Treat them as Latin so that every switch fires.
+\XeTeXcharclass"2018=\XeTeXcharclass`A
+\XeTeXcharclass"2019=\XeTeXcharclass`A
+\XeTeXcharclass"201C=\XeTeXcharclass`A
+\XeTeXcharclass"201D=\XeTeXcharclass`A
+\XeTeXcharclass"2013=\XeTeXcharclass`A
+\XeTeXcharclass"2014=\XeTeXcharclass`A
+\XeTeXcharclass"2026=\XeTeXcharclass`A
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{17cm}
+{\large\bfseries Table 52.}\ {\large Model clauses for procuring AI products and services}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=0.732\hsize\raggedright\arraybackslash}X>{\hsize=1.317\hsize\raggedright\arraybackslash}X>{\hsize=0.951\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{Clause} & \textbf{Requirement} & \textbf{Purpose} \\
+\midrule
+Data residency and ownership & Government data stays in Bangladesh and remains government property; no use for vendor model training & Protect data and sovereignty (NFR-02) \\
+Right to evaluate & Buyer may test the product on BanglaPolicyQA and red-team tests before and after award & Decisions based on evidence, not claims \\
+Bangla performance acceptance & Acceptance requires meeting agreed Bangla and English thresholds & Bangla as a first-class language \\
+Documentation & Model cards, datasheets, SBOM and known limitations delivered with each version & Transparency and audit \\
+Portability and exit & Open formats; export of all data and configurations; transition support at contract end & Avoid lock-in (R10) \\
+Source code & Open source where possible; otherwise escrow and the right to audit & Long-term maintainability \\
+Security and incidents & Compliance with Table 32 controls; vulnerability disclosure; incident notification within 24 hours & Security and accountability \\
+Change control & Notice and re-evaluation before any model or major dependency change & Stable, assessed behaviour (G5) \\
+Accessibility & WCAG 2.2 level AA conformance with evidence & Inclusion (NFR-05) \\
+Integrity & Declaration of conflicts of interest; no influence over evaluation or governance & Independence \\
+\bottomrule
+\end{tabularx}
+\par\vspace{3pt}{\scriptsize\color{gray} Source: BAPIL Technical Blueprint, Version 1.0 (2026). CC BY 4.0.}
+\end{minipage}
+\end{document}

@@ -1,0 +1,52 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\AtBeginDocument{\hyphenation{zenodo}}% never hyphenate "zenodo" inside a DOI
+\setmainfont{Latin Modern Roman}[Ligatures=TeXOff]
+\XeTeXgenerateactualtext=1
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali, NFSSFamily=bnfam]
+\usepackage[Latin,Bengali]{ucharclasses}
+% group-free font switching (as in header-common.tex): robust inside braces, cells and quotes
+\makeatletter
+\def\BN@saved{\rmdefault}
+\def\BN@bn{bnfam}
+\newcommand\BNin{\edef\BN@tmp{\f@family}\ifx\BN@tmp\BN@bn\else\let\BN@saved\BN@tmp\fi\fontfamily{bnfam}\selectfont}
+\newcommand\BNout{\fontfamily{\BN@saved}\selectfont}
+\makeatother
+\setTransitionsFor{Bengali}{\BNin}{\BNout}
+% Typographic quotes and dashes are not in a ucharclasses class (class 0), so a Bangla word right
+% after “ or ‘ would not trigger the Bangla font. Treat them as Latin so that every switch fires.
+\XeTeXcharclass"2018=\XeTeXcharclass`A
+\XeTeXcharclass"2019=\XeTeXcharclass`A
+\XeTeXcharclass"201C=\XeTeXcharclass`A
+\XeTeXcharclass"201D=\XeTeXcharclass`A
+\XeTeXcharclass"2013=\XeTeXcharclass`A
+\XeTeXcharclass"2014=\XeTeXcharclass`A
+\XeTeXcharclass"2026=\XeTeXcharclass`A
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{22cm}
+{\large\bfseries Table 38.}\ {\large Pilot portfolio: users, data, risk tier, scope and exit criteria}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=0.981\hsize\raggedright\arraybackslash}X>{\hsize=0.923\hsize\raggedright\arraybackslash}X>{\hsize=0.808\hsize\raggedright\arraybackslash}X>{\hsize=0.519\hsize\raggedright\arraybackslash}X>{\hsize=1.500\hsize\raggedright\arraybackslash}X>{\hsize=1.269\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{Pilot} & \textbf{Primary users} & \textbf{Data} & \textbf{Tier} & \textbf{Minimum viable scope (first 12 months of each pilot)} & \textbf{Exit criterion} \\
+\midrule
+\textbf{P1} Bangladesh Policy Search Engine & Policy analysts, researchers, officials & Laws, gazettes, plans, budget documents (DC0) & T1; T2 when used by officials & Bilingual search with citations over a core corpus of national laws, plans and budget documents & Recall@10 at least 0.85; answer correctness at least 0.80; citation precision at least 0.95; mean usefulness rating of at least 4.0 of 5 from 30 or more active users \\
+\textbf{P2} Budget Intelligence Dashboard & Finance and planning analysts, journalists, researchers & Published budget documents and ADP (DC0) & T2 (public dashboard) & Five fiscal years of ministry-level allocations extracted reproducibly, published as open data by month 12; public dashboard from month 15 & Extraction accuracy at least 99\% on a hand-checked sample \\
+\textbf{P3} Citizen Feedback Analyser & Owners of public consultations & Consented, de-identified submissions (DC1, DC2) & T2 & Topic and sentiment summaries for one public consultation, reported only in aggregate & DPIA approved; topics validated by people; zero re-identification incidents \\
+\textbf{P4} Bangla Policy Foundation Model, Stages 0 and 1 & Researchers & Governed public corpus (DC0) & T1 & Evaluate existing open models with retrieval; release benchmark BanglaPolicyQA v0 & Benchmark published; Stage 1 go or no-go decision documented \\
+\textbf{P5} National AI Readiness Observatory & Policymakers, development partners & Public indicators and surveys (DC0) & T2 (public report) & Indicator framework and first annual report & First report published with open data \\
+\textbf{P6} Information-integrity research & Researchers, fact-checkers & Public research datasets (DC0) & T2 & Review and benchmark of Bangla misinformation and synthetic-media detection methods; no monitoring of individuals & Methods paper published; ERRC approval of research protocol \\
+\bottomrule
+\end{tabularx}
+\par\vspace{3pt}{\scriptsize\color{gray} Source: BAPIL Technical Blueprint, Version 1.0 (2026). CC BY 4.0.}
+\end{minipage}
+\end{document}

@@ -1,0 +1,10 @@
+**Table 38.** Pilot portfolio: users, data, risk tier, scope and exit criteria
+
+| Pilot | Primary users | Data | Tier | Minimum viable scope (first 12 months of each pilot) | Exit criterion |
+|-----------------|----------------|--------------|---------|--------------------------|----------------------|
+| **P1** Bangladesh Policy Search Engine | Policy analysts, researchers, officials | Laws, gazettes, plans, budget documents (DC0) | T1; T2 when used by officials | Bilingual search with citations over a core corpus of national laws, plans and budget documents | Recall@10 at least 0.85; answer correctness at least 0.80; citation precision at least 0.95; mean usefulness rating of at least 4.0 of 5 from 30 or more active users |
+| **P2** Budget Intelligence Dashboard | Finance and planning analysts, journalists, researchers | Published budget documents and ADP (DC0) | T2 (public dashboard) | Five fiscal years of ministry-level allocations extracted reproducibly, published as open data by month 12; public dashboard from month 15 | Extraction accuracy at least 99% on a hand-checked sample |
+| **P3** Citizen Feedback Analyser | Owners of public consultations | Consented, de-identified submissions (DC1, DC2) | T2 | Topic and sentiment summaries for one public consultation, reported only in aggregate | DPIA approved; topics validated by people; zero re-identification incidents |
+| **P4** Bangla Policy Foundation Model, Stages 0 and 1 | Researchers | Governed public corpus (DC0) | T1 | Evaluate existing open models with retrieval; release benchmark BanglaPolicyQA v0 | Benchmark published; Stage 1 go or no-go decision documented |
+| **P5** National AI Readiness Observatory | Policymakers, development partners | Public indicators and surveys (DC0) | T2 (public report) | Indicator framework and first annual report | First report published with open data |
+| **P6** Information-integrity research | Researchers, fact-checkers | Public research datasets (DC0) | T2 | Review and benchmark of Bangla misinformation and synthetic-media detection methods; no monitoring of individuals | Methods paper published; ERRC approval of research protocol |

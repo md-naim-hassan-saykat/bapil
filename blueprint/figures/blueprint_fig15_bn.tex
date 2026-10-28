@@ -1,0 +1,86 @@
+\documentclass[border=8pt]{standalone}
+\usepackage{fontspec}
+\setmainfont{Noto Sans}[Ligatures=TeXOff]
+\XeTeXgenerateactualtext=1
+\setsansfont{Noto Sans}
+\newfontfamily\bengalifont{Noto Sans Bengali}[Script=Bengali, NFSSFamily=bnfam]
+\usepackage[Latin,Bengali]{ucharclasses}
+% group-free font switching (as in header-common.tex): robust inside braces, cells and quotes
+\makeatletter
+\def\BN@saved{\rmdefault}
+\def\BN@bn{bnfam}
+\newcommand\BNin{\edef\BN@tmp{\f@family}\ifx\BN@tmp\BN@bn\else\let\BN@saved\BN@tmp\fi\fontfamily{bnfam}\selectfont}
+\newcommand\BNout{\fontfamily{\BN@saved}\selectfont}
+\makeatother
+\setTransitionsFor{Bengali}{\BNin}{\BNout}
+% Typographic quotes and dashes are not in a ucharclasses class (class 0), so a Bangla word right
+% after “ or ‘ would not trigger the Bangla font. Treat them as Latin so that every switch fires.
+\XeTeXcharclass"2018=\XeTeXcharclass`A
+\XeTeXcharclass"2019=\XeTeXcharclass`A
+\XeTeXcharclass"201C=\XeTeXcharclass`A
+\XeTeXcharclass"201D=\XeTeXcharclass`A
+\XeTeXcharclass"2013=\XeTeXcharclass`A
+\XeTeXcharclass"2014=\XeTeXcharclass`A
+\XeTeXcharclass"2026=\XeTeXcharclass`A
+\usepackage{newunicodechar}
+\newunicodechar{।}{{\bengalifont\char"0964}}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,shapes.geometric,shapes.misc,shapes.symbols,fit,backgrounds,calc,chains}
+\definecolor{ink}{HTML}{111827}
+\definecolor{band}{HTML}{F3F4F6}
+\definecolor{band2}{HTML}{E5E7EB}
+\definecolor{accent}{HTML}{1D4ED8}
+\definecolor{accentlight}{HTML}{DBEAFE}
+\definecolor{warn}{HTML}{B91C1C}
+\definecolor{warnlight}{HTML}{FEE2E2}
+\definecolor{ok}{HTML}{047857}
+\definecolor{oklight}{HTML}{D1FAE5}
+\tikzset{
+  >={Stealth[length=2.6mm]},
+  box/.style={draw=ink, line width=0.6pt, rounded corners=9pt, fill=white, align=center,
+              inner sep=4pt, font=\small},
+  pill/.style={box, rounded corners=13pt},
+  key/.style={box, fill=accentlight, draw=accent, line width=0.9pt},
+  soft/.style={box, fill=band},
+  dec/.style={draw=ink, line width=0.6pt, diamond, aspect=2.2, align=center, inner sep=1.5pt,
+              font=\footnotesize, fill=white},
+  arr/.style={->, draw=ink, line width=0.6pt},
+  darr/.style={->, draw=ink, line width=0.6pt, dashed},
+  lbl/.style={font=\footnotesize, fill=white, inner sep=1.5pt},
+  layer/.style={draw=band2, fill=band, rounded corners=6pt},
+  title/.style={font=\bfseries\small, align=left, anchor=west},
+}
+\begin{document}
+\sffamily\hyphenpenalty=10000\exhyphenpenalty=10000
+
+\begin{tikzpicture}
+\def\S{38mm}
+\foreach \r/\c/\col in {0/0/oklight,0/1/oklight,0/2/accentlight,1/0/oklight,1/1/accentlight,1/2/warnlight,2/0/accentlight,2/1/warnlight,2/2/warn!45} {
+  \fill[\col] (\c*\S,\r*\S) rectangle (\c*\S+\S,\r*\S+\S);
+}
+\draw[ink, line width=0.6pt, step=\S] (0,0) grid (3*\S,3*\S);
+\foreach \c/\t in {0/নিম্ন,1/মাঝারি,2/উচ্চ} {
+  \node[font=\small] at (\c*\S+0.5*\S,-5mm) {\t};
+  \node[font=\small, anchor=east] at (-3mm,\c*\S+0.5*\S) {\t};
+}
+\node[font=\small\bfseries] at (1.5*\S,-13mm) {প্রভাব};
+\node[font=\small\bfseries, rotate=90] at (-25mm,1.5*\S) {সম্ভাবনা};
+\tikzset{rk/.style={draw=ink, fill=white, rounded corners=3pt, font=\footnotesize\bfseries, inner sep=2pt, minimum width=9mm}}
+% High likelihood, high impact
+\node[rk] at (2*\S+0.3*\S,2*\S+0.65*\S) {R2}; \node[rk] at (2*\S+0.7*\S,2*\S+0.65*\S) {R16};
+% High likelihood, medium impact
+\node[rk] at (1*\S+0.3*\S,2*\S+0.5*\S) {R3}; \node[rk] at (1*\S+0.7*\S,2*\S+0.5*\S) {R7};
+% Medium likelihood, high impact
+\node[rk] at (2*\S+0.3*\S,1*\S+0.78*\S) {R1}; \node[rk] at (2*\S+0.7*\S,1*\S+0.78*\S) {R4};
+\node[rk] at (2*\S+0.3*\S,1*\S+0.5*\S) {R8}; \node[rk] at (2*\S+0.7*\S,1*\S+0.5*\S) {R11};
+\node[rk] at (2*\S+0.3*\S,1*\S+0.22*\S) {R12}; \node[rk] at (2*\S+0.7*\S,1*\S+0.22*\S) {R18};
+% Medium likelihood, medium impact
+\node[rk] at (1*\S+0.3*\S,1*\S+0.78*\S) {R9}; \node[rk] at (1*\S+0.7*\S,1*\S+0.78*\S) {R10};
+\node[rk] at (1*\S+0.3*\S,1*\S+0.5*\S) {R13}; \node[rk] at (1*\S+0.7*\S,1*\S+0.5*\S) {R15};
+\node[rk] at (1*\S+0.5*\S,1*\S+0.22*\S) {R17};
+% Low likelihood, high impact
+\node[rk] at (2*\S+0.3*\S,0.65*\S) {R5}; \node[rk] at (2*\S+0.7*\S,0.65*\S) {R6};
+\node[rk] at (2*\S+0.5*\S,0.3*\S) {R14};
+\node[font=\footnotesize, text width=42mm, align=left, anchor=north west] at (3*\S+6mm,3*\S) {\textbf{মানচিত্র পড়ার নিয়ম}\\[1mm]প্রতিটি লেবেল নিবন্ধনের (সারণি ৫৫) একটি ঝুঁকি।\\[1mm]লাল ঘরে সক্রিয় প্রশমন ও স্টিয়ারিং বোর্ডের ত্রৈমাসিক মনোযোগ প্রয়োজন।\\[1mm]নীল ঘরে মনোনীত দায়িত্বপ্রাপ্ত ও পর্যবেক্ষণ প্রয়োজন।\\[1mm]সবুজ ঘর গৃহীত এবং বার্ষিক পর্যালোচিত।};
+\end{tikzpicture}
+\end{document}

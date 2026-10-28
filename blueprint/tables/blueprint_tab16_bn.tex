@@ -1,0 +1,61 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\AtBeginDocument{\hyphenation{zenodo}}% never hyphenate "zenodo" inside a DOI
+\setmainfont{Noto Serif}[Ligatures=TeXOff]
+\XeTeXgenerateactualtext=1
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali, NFSSFamily=bnfam]
+\usepackage[Latin,Bengali]{ucharclasses}
+% group-free font switching (as in header-common.tex): robust inside braces, cells and quotes
+\makeatletter
+\def\BN@saved{\rmdefault}
+\def\BN@bn{bnfam}
+\newcommand\BNin{\edef\BN@tmp{\f@family}\ifx\BN@tmp\BN@bn\else\let\BN@saved\BN@tmp\fi\fontfamily{bnfam}\selectfont}
+\newcommand\BNout{\fontfamily{\BN@saved}\selectfont}
+\makeatother
+\setTransitionsFor{Bengali}{\BNin}{\BNout}
+% Typographic quotes and dashes are not in a ucharclasses class (class 0), so a Bangla word right
+% after “ or ‘ would not trigger the Bangla font. Treat them as Latin so that every switch fires.
+\XeTeXcharclass"2018=\XeTeXcharclass`A
+\XeTeXcharclass"2019=\XeTeXcharclass`A
+\XeTeXcharclass"201C=\XeTeXcharclass`A
+\XeTeXcharclass"201D=\XeTeXcharclass`A
+\XeTeXcharclass"2013=\XeTeXcharclass`A
+\XeTeXcharclass"2014=\XeTeXcharclass`A
+\XeTeXcharclass"2026=\XeTeXcharclass`A
+\usepackage{newunicodechar}
+\newunicodechar{।}{{\bengalifont\char"0964}}
+\newunicodechar{॥}{{\bengalifont\char"0965}}
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{17cm}
+{\large\bfseries সারণি ১৬।}\ {\large নির্দেশক মূল জনবল পরিকল্পনা (পূর্ণকালীন সমতুল্য)}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=2.000\hsize\raggedright\arraybackslash}X>{\hsize=0.667\hsize\raggedright\arraybackslash}X>{\hsize=0.667\hsize\raggedright\arraybackslash}X>{\hsize=0.667\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{ভূমিকা} & \textbf{মাস ১-১২} & \textbf{মাস ১৩-২৪} & \textbf{মাস ২৫-৩৬} \\
+\midrule
+পরিচালক ও প্রধান গবেষক & ১ & ১ & ১ \\
+নীতি-গবেষণা প্রধান ও বিশ্লেষক & ১ & ২ & ৩ \\
+মেশিন লার্নিং ও বাংলা NLP প্রকৌশলী & ২ & ৩ & ৪ \\
+ডেটা প্রকৌশলী & ১ & ২ & ২ \\
+সফটওয়্যার ও প্ল্যাটফর্ম (DevSecOps) প্রকৌশলী & ১ & ২ & ২ \\
+নিরাপত্তা প্রকৌশলী & ০.৫ & ১ & ১ \\
+শাসন, আইন ও নৈতিকতা বিশ্লেষক & ১ & ১ & ২ \\
+ব্যবহারকারী অভিজ্ঞতা ও প্রবেশযোগ্যতা নকশাকার & ০.৫ & ১ & ১ \\
+কর্মসূচি ও অংশীদারিত্ব সমন্বয়ক & ১ & ১ & ১ \\
+প্রশিক্ষণ ও প্রচার কর্মকর্তা & ০ & ১ & ২ \\
+\textbf{মোট মূল জনবল} & \textbf{৯} & \textbf{১৫} & \textbf{১৯} \\
+\bottomrule
+\end{tabularx}
+\par\vspace{5pt}{\footnotesize\itshape খণ্ডকালীন ERRC সদস্য, উপদেষ্টা, অতিথি ফেলো ও স্নাতকোত্তর শিক্ষার্থী অন্তর্ভুক্ত নয়। নির্দেশক ব্যয় সারণি ৪৯-এ; চূড়ান্ত ব্যয় সম্ভাব্যতা সমীক্ষায় (D1.3) নির্ধারিত হবে।}
+\par\vspace{3pt}{\scriptsize\color{gray} উৎস: BAPIL টেকনিক্যাল ব্লুপ্রিন্ট, সংস্করণ ১.০ (২০২৬)। CC BY 4.0।}
+\end{minipage}
+\end{document}

@@ -1,0 +1,59 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\AtBeginDocument{\hyphenation{zenodo}}% never hyphenate "zenodo" inside a DOI
+\setmainfont{Noto Serif}[Ligatures=TeXOff]
+\XeTeXgenerateactualtext=1
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali, NFSSFamily=bnfam]
+\usepackage[Latin,Bengali]{ucharclasses}
+% group-free font switching (as in header-common.tex): robust inside braces, cells and quotes
+\makeatletter
+\def\BN@saved{\rmdefault}
+\def\BN@bn{bnfam}
+\newcommand\BNin{\edef\BN@tmp{\f@family}\ifx\BN@tmp\BN@bn\else\let\BN@saved\BN@tmp\fi\fontfamily{bnfam}\selectfont}
+\newcommand\BNout{\fontfamily{\BN@saved}\selectfont}
+\makeatother
+\setTransitionsFor{Bengali}{\BNin}{\BNout}
+% Typographic quotes and dashes are not in a ucharclasses class (class 0), so a Bangla word right
+% after “ or ‘ would not trigger the Bangla font. Treat them as Latin so that every switch fires.
+\XeTeXcharclass"2018=\XeTeXcharclass`A
+\XeTeXcharclass"2019=\XeTeXcharclass`A
+\XeTeXcharclass"201C=\XeTeXcharclass`A
+\XeTeXcharclass"201D=\XeTeXcharclass`A
+\XeTeXcharclass"2013=\XeTeXcharclass`A
+\XeTeXcharclass"2014=\XeTeXcharclass`A
+\XeTeXcharclass"2026=\XeTeXcharclass`A
+\usepackage{newunicodechar}
+\newunicodechar{।}{{\bengalifont\char"0964}}
+\newunicodechar{॥}{{\bengalifont\char"0965}}
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{17cm}
+{\large\bfseries সারণি ৩৭।}\ {\large রেফারেন্স বাস্তবায়ন থেকে উৎপাদন-ব্যবস্থা}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=0.916\hsize\raggedright\arraybackslash}X>{\hsize=1.060\hsize\raggedright\arraybackslash}X>{\hsize=1.398\hsize\raggedright\arraybackslash}X>{\hsize=0.627\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{সক্ষমতা} & \textbf{রেফারেন্স বাস্তবায়ন} & \textbf{উৎপাদন-প্রতিস্থাপন} & \textbf{কখন} \\
+\midrule
+কর্পাস সংরক্ষণ & JSON ফাইল & PostgreSQL ক্যাটালগ ও S3-সামঞ্জস্যপূর্ণ অবজেক্ট স্টোর & মাস ১ থেকে ৬ \\
+গ্রহণ & Markdown লোডার & বাংলা OCR ও মানের স্কোরসহ PDF ও HTML নিষ্কাশন & মাস ১ থেকে ৯ \\
+শব্দভিত্তিক অনুসন্ধান & মেমরিভিত্তিক BM25 & OpenSearch বা PostgreSQL পূর্ণ-টেক্সট অনুসন্ধান & মাস ৪ থেকে ৯ \\
+ঘন উদ্ধার & অন্তর্ভুক্ত নয় & ভেক্টর সূচিতে বহুভাষিক এমবেডিং; মিশ্র র‍্যাংকিং & মাস ৬ থেকে ১২ \\
+রোমান হরফে লেখা বাংলার প্রতিবর্ণীকরণ & অন্তর্ভুক্ত নয় & প্রশ্ন-সম্প্রসারণে প্রতিবর্ণীকরণের সম্ভাব্য রূপ & মাস ১২ থেকে ১৮ \\
+উত্তর & উদ্ধৃতিসহ নিষ্কাশনমূলক & প্রথমে নিষ্কাশনমূলক; উদ্ধৃতি যাচাইয়ের পেছনে ঐচ্ছিক উন্মুক্ত-ওজন LLM পুনর্বিন্যাস & G2-এর প্রমাণের পর \\
+API & স্ট্যান্ডার্ড লাইব্রেরির HTTP সার্ভার & প্রমাণীকরণ, কোটা ও সংস্করণসহ API গেটওয়ে & মাস ৬ থেকে ৯ \\
+পরিচয় & নেই & MFA ও ভূমিকাসহ একক সাইন-অন & G2-এর আগে (পাইলট শুরু, মাস ৯) \\
+নিরীক্ষা লগ & হ্যাশ-শৃঙ্খলিত JSONL ফাইল & প্রতিলিপি ও বাহ্যিক নোঙরসহ শুধু-সংযোজনযোগ্য স্টোর & G2-এর আগে \\
+নিবন্ধন ও ঝুঁকি-সরঞ্জাম & CLI ও JSON ফাইল & শাসন কর্মক্ষেত্র ওয়েব অ্যাপ্লিকেশন & মাস ৯ থেকে ১৫ \\
+\bottomrule
+\end{tabularx}
+\par\vspace{3pt}{\scriptsize\color{gray} উৎস: BAPIL টেকনিক্যাল ব্লুপ্রিন্ট, সংস্করণ ১.০ (২০২৬)। CC BY 4.0।}
+\end{minipage}
+\end{document}

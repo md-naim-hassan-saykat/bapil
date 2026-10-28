@@ -1,0 +1,54 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\AtBeginDocument{\hyphenation{zenodo}}% never hyphenate "zenodo" inside a DOI
+\setmainfont{Noto Serif}[Ligatures=TeXOff]
+\XeTeXgenerateactualtext=1
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali, NFSSFamily=bnfam]
+\usepackage[Latin,Bengali]{ucharclasses}
+% group-free font switching (as in header-common.tex): robust inside braces, cells and quotes
+\makeatletter
+\def\BN@saved{\rmdefault}
+\def\BN@bn{bnfam}
+\newcommand\BNin{\edef\BN@tmp{\f@family}\ifx\BN@tmp\BN@bn\else\let\BN@saved\BN@tmp\fi\fontfamily{bnfam}\selectfont}
+\newcommand\BNout{\fontfamily{\BN@saved}\selectfont}
+\makeatother
+\setTransitionsFor{Bengali}{\BNin}{\BNout}
+% Typographic quotes and dashes are not in a ucharclasses class (class 0), so a Bangla word right
+% after “ or ‘ would not trigger the Bangla font. Treat them as Latin so that every switch fires.
+\XeTeXcharclass"2018=\XeTeXcharclass`A
+\XeTeXcharclass"2019=\XeTeXcharclass`A
+\XeTeXcharclass"201C=\XeTeXcharclass`A
+\XeTeXcharclass"201D=\XeTeXcharclass`A
+\XeTeXcharclass"2013=\XeTeXcharclass`A
+\XeTeXcharclass"2014=\XeTeXcharclass`A
+\XeTeXcharclass"2026=\XeTeXcharclass`A
+\usepackage{newunicodechar}
+\newunicodechar{।}{{\bengalifont\char"0964}}
+\newunicodechar{॥}{{\bengalifont\char"0965}}
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{17cm}
+{\large\bfseries সারণি ৩৫।}\ {\large ব্যবসায়িক ধারাবাহিকতা ও দুর্যোগ-পুনরুদ্ধার লক্ষ্য (পাইলট ধাপ)}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=1.266\hsize\raggedright\arraybackslash}X>{\hsize=0.709\hsize\raggedright\arraybackslash}X>{\hsize=0.709\hsize\raggedright\arraybackslash}X>{\hsize=1.316\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{সেবা} & \textbf{পুনরুদ্ধার-বিন্দু (RPO)} & \textbf{পুনরুদ্ধার-সময় (RTO)} & \textbf{পদ্ধতি} \\
+\midrule
+পোর্টাল ও API & প্রযোজ্য নয় (অবস্থাহীন) & ৮ ঘণ্টা & সংস্করণ-নিয়ন্ত্রণ থেকে কন্টেইনার পুনঃপ্রয়োগ \\
+নথি সংরক্ষণাগার ও ক্যাটালগ & ২৪ ঘণ্টা & ২৪ ঘণ্টা & রাত্রিকালীন এনক্রিপ্টেড ব্যাকআপ; সাপ্তাহিক অফলাইন অনুলিপি \\
+অনুসন্ধান সূচি & পুনর্নির্মাণযোগ্য & ৪৮ ঘণ্টা & নথি সংরক্ষণাগার থেকে পুনর্নির্মাণ \\
+নিরীক্ষা লগ & ১ ঘণ্টা & ২৪ ঘণ্টা & নিরবচ্ছিন্ন প্রতিলিপি; পুনরুদ্ধারের পর হ্যাশ-শৃঙ্খল যাচাই \\
+এআই ব্যবস্থা নিবন্ধন ও শাসন-রেকর্ড & ২৪ ঘণ্টা & ২৪ ঘণ্টা & অফলাইন প্রতিচ্ছবিসহ রিপোজিটরিতে সংস্করণকৃত \\
+\bottomrule
+\end{tabularx}
+\par\vspace{3pt}{\scriptsize\color{gray} উৎস: BAPIL টেকনিক্যাল ব্লুপ্রিন্ট, সংস্করণ ১.০ (২০২৬)। CC BY 4.0।}
+\end{minipage}
+\end{document}

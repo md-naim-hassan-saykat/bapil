@@ -1,0 +1,54 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\AtBeginDocument{\hyphenation{zenodo}}% never hyphenate "zenodo" inside a DOI
+\setmainfont{Latin Modern Roman}[Ligatures=TeXOff]
+\XeTeXgenerateactualtext=1
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali, NFSSFamily=bnfam]
+\usepackage[Latin,Bengali]{ucharclasses}
+% group-free font switching (as in header-common.tex): robust inside braces, cells and quotes
+\makeatletter
+\def\BN@saved{\rmdefault}
+\def\BN@bn{bnfam}
+\newcommand\BNin{\edef\BN@tmp{\f@family}\ifx\BN@tmp\BN@bn\else\let\BN@saved\BN@tmp\fi\fontfamily{bnfam}\selectfont}
+\newcommand\BNout{\fontfamily{\BN@saved}\selectfont}
+\makeatother
+\setTransitionsFor{Bengali}{\BNin}{\BNout}
+% Typographic quotes and dashes are not in a ucharclasses class (class 0), so a Bangla word right
+% after “ or ‘ would not trigger the Bangla font. Treat them as Latin so that every switch fires.
+\XeTeXcharclass"2018=\XeTeXcharclass`A
+\XeTeXcharclass"2019=\XeTeXcharclass`A
+\XeTeXcharclass"201C=\XeTeXcharclass`A
+\XeTeXcharclass"201D=\XeTeXcharclass`A
+\XeTeXcharclass"2013=\XeTeXcharclass`A
+\XeTeXcharclass"2014=\XeTeXcharclass`A
+\XeTeXcharclass"2026=\XeTeXcharclass`A
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{17cm}
+{\large\bfseries Table 4.}\ {\large Selected baseline indicators for Bangladesh}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=1.045\hsize\raggedright\arraybackslash}X>{\hsize=1.545\hsize\raggedright\arraybackslash}X>{\hsize=1.000\hsize\raggedright\arraybackslash}X>{\hsize=0.409\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{Indicator} & \textbf{Reported value} & \textbf{Implication for BAPIL} & \textbf{Source} \\
+\midrule
+UN E-Government Development Index (EGDI), 2024 & Rank 100 of 193, score 0.6570 (rank 111 in 2022); highest EGDI among least developed countries & Digital service foundations exist to build on & [5, 23] \\
+ITU Global Cybersecurity Index, 2024 & Reported in the top tier & Frameworks exist; resilience under stress still needs testing & [24, 25] \\
+Oxford Insights Government AI Readiness Index, 2023 & Rank 82 & Room to improve on governance, data and capacity pillars & [26, 27] \\
+University AI compute, 2025 estimates & 2 to 55 GPUs per surveyed department; public universities at the low end & Use shared national compute; keep pilot models small & [27] \\
+Data protection and data management & Personal Data Protection Act, 2026 and National Data Management Act, 2026 gazetted on 10 April 2026 (Acts No. 63 and 80 of 2026) & Legal context for a public-data-first design; reuse of published documents rests on the Right to Information Act and reuse terms & [8, 9] \\
+National AI policy & Draft 2026-2030 consulted in January 2026; new drafting from Q4 2026 & Timely window for technical input & [12, 16] \\
+Network resilience & The nationwide internet shutdown of July 2024 exposed dependence on connectivity and single points of failure & Plan for offline operation, backups and recovery & [25] \\
+\bottomrule
+\end{tabularx}
+\par\vspace{5pt}{\footnotesize\itshape Indices measure different things over different years and should not be compared directly. Values are as reported in the cited sources.}
+\par\vspace{3pt}{\scriptsize\color{gray} Source: BAPIL Technical Blueprint, Version 1.0 (2026). CC BY 4.0.}
+\end{minipage}
+\end{document}

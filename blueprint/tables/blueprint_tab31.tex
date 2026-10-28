@@ -1,0 +1,53 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\AtBeginDocument{\hyphenation{zenodo}}% never hyphenate "zenodo" inside a DOI
+\setmainfont{Latin Modern Roman}[Ligatures=TeXOff]
+\XeTeXgenerateactualtext=1
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali, NFSSFamily=bnfam]
+\usepackage[Latin,Bengali]{ucharclasses}
+% group-free font switching (as in header-common.tex): robust inside braces, cells and quotes
+\makeatletter
+\def\BN@saved{\rmdefault}
+\def\BN@bn{bnfam}
+\newcommand\BNin{\edef\BN@tmp{\f@family}\ifx\BN@tmp\BN@bn\else\let\BN@saved\BN@tmp\fi\fontfamily{bnfam}\selectfont}
+\newcommand\BNout{\fontfamily{\BN@saved}\selectfont}
+\makeatother
+\setTransitionsFor{Bengali}{\BNin}{\BNout}
+% Typographic quotes and dashes are not in a ucharclasses class (class 0), so a Bangla word right
+% after “ or ‘ would not trigger the Bangla font. Treat them as Latin so that every switch fires.
+\XeTeXcharclass"2018=\XeTeXcharclass`A
+\XeTeXcharclass"2019=\XeTeXcharclass`A
+\XeTeXcharclass"201C=\XeTeXcharclass`A
+\XeTeXcharclass"201D=\XeTeXcharclass`A
+\XeTeXcharclass"2013=\XeTeXcharclass`A
+\XeTeXcharclass"2014=\XeTeXcharclass`A
+\XeTeXcharclass"2026=\XeTeXcharclass`A
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{17cm}
+{\large\bfseries Table 31.}\ {\large Indicative infrastructure sizing by horizon}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=0.828\hsize\raggedright\arraybackslash}X>{\hsize=1.057\hsize\raggedright\arraybackslash}X>{\hsize=1.057\hsize\raggedright\arraybackslash}X>{\hsize=1.057\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{Resource} & \textbf{Pilot (2027 to 2028)} & \textbf{Scale (2029 to 2030)} & \textbf{National network (2031 onwards)} \\
+\midrule
+Environments & Development, test and production; staging and a recovery site added in Year 2 & Production capacity expanded across sites & Federated deployments in partner agencies \\
+Application servers & 2 to 3 general-purpose servers & 6 to 8 servers or equivalent virtual capacity & Shared government cloud capacity \\
+Inference GPUs & 2 GPU inference servers (1 to 2 GPUs each); 2 more in Year 2 for staging and recovery & 4 to 8 GPUs in production & Allocation from national AI compute \\
+Adaptation compute & None in Stage 0; time-limited national allocation from month 19 if Stage 1 is approved at month 18 & Time-limited national allocation (Stage 1) & Scheduled national allocation (Stage 2 if justified) \\
+Storage & 10 to 20 TB including backups & About 100 TB & Several hundred TB across collections \\
+Users & Up to about 50 pilot users & Several hundred users & Thousands of users across ministries \\
+\bottomrule
+\end{tabularx}
+\par\vspace{5pt}{\footnotesize\itshape Planning assumptions for the Phase 0 feasibility and costing study (Section 15.1), not procurement specifications. The pilot column matches the equipment in the budget (Table 49).}
+\par\vspace{3pt}{\scriptsize\color{gray} Source: BAPIL Technical Blueprint, Version 1.0 (2026). CC BY 4.0.}
+\end{minipage}
+\end{document}

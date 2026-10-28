@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bapil"
+version = "0.1.0"
+description = "Reference implementation of the BAPIL Technical Blueprint: bilingual (Bangla/English) citation-grounded policy search, risk tiers, AI system register and audit log."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Md Naim Hassan Saykat"}]
+keywords = ["Bangla", "Bengali", "policy intelligence", "AI governance", "BM25", "retrieval", "Bangladesh"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Natural Language :: Bengali",
+  "Natural Language :: English",
+  "Topic :: Text Processing :: Indexing",
+  "Development Status :: 3 - Alpha",
+]
+dependencies = []
+
+[project.urls]
+Repository = "https://github.com/md-naim-hassan-saykat/bapil"
+
+[project.scripts]
+bapil = "bapil.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+bapil = ["data/*.json"]

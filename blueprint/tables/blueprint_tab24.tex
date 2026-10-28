@@ -1,0 +1,62 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{fontspec}
+\AtBeginDocument{\hyphenation{zenodo}}% never hyphenate "zenodo" inside a DOI
+\setmainfont{Latin Modern Roman}[Ligatures=TeXOff]
+\XeTeXgenerateactualtext=1
+\newfontfamily\bengalifont{Noto Serif Bengali}[Script=Bengali, NFSSFamily=bnfam]
+\usepackage[Latin,Bengali]{ucharclasses}
+% group-free font switching (as in header-common.tex): robust inside braces, cells and quotes
+\makeatletter
+\def\BN@saved{\rmdefault}
+\def\BN@bn{bnfam}
+\newcommand\BNin{\edef\BN@tmp{\f@family}\ifx\BN@tmp\BN@bn\else\let\BN@saved\BN@tmp\fi\fontfamily{bnfam}\selectfont}
+\newcommand\BNout{\fontfamily{\BN@saved}\selectfont}
+\makeatother
+\setTransitionsFor{Bengali}{\BNin}{\BNout}
+% Typographic quotes and dashes are not in a ucharclasses class (class 0), so a Bangla word right
+% after “ or ‘ would not trigger the Bangla font. Treat them as Latin so that every switch fires.
+\XeTeXcharclass"2018=\XeTeXcharclass`A
+\XeTeXcharclass"2019=\XeTeXcharclass`A
+\XeTeXcharclass"201C=\XeTeXcharclass`A
+\XeTeXcharclass"201D=\XeTeXcharclass`A
+\XeTeXcharclass"2013=\XeTeXcharclass`A
+\XeTeXcharclass"2014=\XeTeXcharclass`A
+\XeTeXcharclass"2026=\XeTeXcharclass`A
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx,array}
+\definecolor{bapilrule}{HTML}{1F2937}
+\definecolor{bapilstripe}{HTML}{F3F4F6}
+\renewcommand{\arraystretch}{1.28}
+\setlength{\tabcolsep}{5pt}
+
+\begin{document}
+\begin{minipage}{17cm}
+{\large\bfseries Table 24.}\ {\large Document metadata fields (policy\_document schema)}\par\vspace{7pt}
+\small
+\rowcolors{2}{bapilstripe}{white}
+\begin{tabularx}{\linewidth}{@{}>{\hsize=0.762\hsize\raggedright\arraybackslash}X>{\hsize=1.667\hsize\raggedright\arraybackslash}X>{\hsize=0.429\hsize\raggedright\arraybackslash}X>{\hsize=1.143\hsize\raggedright\arraybackslash}X@{}}
+\arrayrulecolor{bapilrule}\toprule
+\rowcolor{white}\textbf{Field} & \textbf{Description} & \textbf{Required} & \textbf{Example} \\
+\midrule
+id & Persistent identifier inside the corpus & Yes & bd-act-2009-20 \\
+title & Title in Bangla and English where available & Yes & Right to Information Act, 2009 \\
+publisher & Organisation that published the document & Yes & Legislative and Parliamentary Affairs Division \\
+issuing\_body & Body that issued the instrument & No & Parliament \\
+document\_type & Act, ordinance, rule, gazette, budget, plan, statistics, parliamentary paper, policy, report & Yes & act \\
+date\_issued & Date of issue & Yes & 2009-04-06 \\
+version & Version or amendment state & No & as amended to 2026 \\
+language & Languages of the text & Yes & bn, en \\
+source\_url & Where the original was obtained & Yes & http:/\allowbreak{}/\allowbreak{}bdlaws.minlaw.gov.bd/\allowbreak{}... \\
+retrieved & Date retrieved & Yes & 2027-02-01 \\
+reuse\_terms & Licence or reuse conditions & No & Government publication; terms confirmed \\
+data\_class & DC0, DC1 or DC2 & Yes & DC0 \\
+sha256 & Checksum of the original file & Yes & 64 hexadecimal characters \\
+extraction & Method (born digital or OCR), quality score, tool & Yes & ocr, 0.93, tesseract 5 \\
+supersedes & Identifier of an earlier version & No & bd-act-2009-20-v1 \\
+\bottomrule
+\end{tabularx}
+\par\vspace{5pt}{\footnotesize\itshape Examples are illustrative. The machine-readable schema is implementation/\allowbreak{}schemas/\allowbreak{}policy\_document.schema.json.}
+\par\vspace{3pt}{\scriptsize\color{gray} Source: BAPIL Technical Blueprint, Version 1.0 (2026). CC BY 4.0.}
+\end{minipage}
+\end{document}
