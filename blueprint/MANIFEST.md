@@ -94,7 +94,7 @@ Files listed: 766.
 
 | File | Bytes | SHA-256 |
 |---|---:|---|
-| `blueprint/CHANGES.md` | 38416 | `5f980fa87b202627abb2c383281adbdf9e0f99597095a535d0d26eaf106dab61` |
+| `blueprint/CHANGES.md` | 38683 | `452ccd19243a208b0c2e031154a6e9106bfe9be1ec8c8bc83f885f0fa1a029fb` |
 | `blueprint/QA_REPORT.md` | 26896 | `b2038a789ab8a8d715576cdfbc64b7d8d90f4d9f4d3c774af29fa959c3dfb37e` |
 | `blueprint/README.md` | 10607 | `ad5bc2fcbff904fac2f2d776d4904246167ff9381ac9a92701ea5c1303a4c677` |
 | `blueprint/SOURCES_AND_LICENCES.md` | 3743 | `9977d7649ceac34725945f139e07283d1bb306a95d9d6445903b587b75f2cf85` |
@@ -105,7 +105,7 @@ Files listed: 766.
 
 | File | Bytes | SHA-256 |
 |---|---:|---|
-| `blueprint/zenodo/UPLOAD_CHECKLIST.md` | 7413 | `d967f3c1149b594c691a6538ca1c60ec9f74fd970bca9b1fadfbd6a2051a92c8` |
+| `blueprint/zenodo/UPLOAD_CHECKLIST.md` | 7411 | `b68a659a7c4826ae3a969e60c63aa0b1229a847a3e258dd845d6382999d52173` |
 | `blueprint/zenodo/description.html` | 4357 | `102df3ce6798e3389ba05bb38dbcda466d0c7baf40592f6c1e7f92e33b38d4c9` |
 | `blueprint/zenodo/description_summary.html` | 1876 | `9cd08099b7d715398075ea2e9c80387aff172879c7d04e6c5eca042b4bcff94e` |
 | `blueprint/zenodo/make_zenodo_package.sh` | 1937 | `67f723655e956ab405cb5c3a4fdb08dfa98d6f753ed6188146d36884493bc3df` |

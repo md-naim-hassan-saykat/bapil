@@ -47,8 +47,8 @@ Then create the GitHub release **v1.1.0** from the tag, paste `RELEASE_NOTES.md`
 
 Blueprint record (10.5281/zenodo.23587901): upload everything in `dist/zenodo/`:
 
-* 4 PDFs: Technical Blueprint and Blueprint Summary, English and Bangla
-* 4 Markdown files (assembled editions)
+* 2 PDFs: Technical Blueprint, English and Bangla
+* 2 Markdown files (assembled editions, English and Bangla)
 * `BAPIL_Technical_Blueprint_figures.zip` and `BAPIL_Technical_Blueprint_tables.zip`
 * `BAPIL_Technical_Blueprint_source.zip` (editable sources, budget model and workbook, documentation)
 * `bapil-reference-implementation-0.1.0.zip`
