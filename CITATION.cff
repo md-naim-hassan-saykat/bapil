@@ -37,9 +37,8 @@ keywords:
 
 license: "MIT"
 
-# version and date-released describe the latest published release; update them to 1.1.0
-# and the release date only when GitHub release v1.1.0 has been published.
-version: "1.0"
+# version and date-released describe the latest published release.
+version: "1.1.0"
 
 identifiers:
   - type: doi
@@ -47,7 +46,7 @@ identifiers:
 
 repository-code: "https://github.com/md-naim-hassan-saykat/bapil"
 
-date-released: "2026-07-14"
+date-released: "2026-10-29"
 
 preferred-citation:
   type: report
@@ -72,7 +71,7 @@ references:
     identifiers:
       - type: doi
         value: "10.5281/zenodo.21441172"
-  # Prepared for repository release v1.1.0, which has not been published; DOIs reserved on Zenodo.
+  # Published with repository release v1.1.0; each has its own Zenodo record.
   - type: report
     title: "Bangladesh AI Policy & Innovation Lab (BAPIL): Technical Blueprint"
     authors:
@@ -81,7 +80,6 @@ references:
     version: "1.0"
     year: 2026
     month: 10
-    status: in-preparation
     languages:
       - en
       - bn
@@ -97,7 +95,6 @@ references:
     version: "1.0"
     year: 2026
     month: 10
-    status: in-preparation
     languages:
       - en
       - bn

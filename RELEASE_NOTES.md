@@ -1,6 +1,6 @@
-# Release notes (draft): BAPIL repository release v1.1.0
+# Release notes: BAPIL repository release v1.1.0
 
-**Status: not released.** This is the prepared description for GitHub release v1.1.0. The tag and the release do not exist yet. The DOIs of the Technical Blueprint (10.5281/zenodo.23587901) and the Blueprint Summary (10.5281/zenodo.23587919) are reserved on Zenodo and resolve once their records are published; the release date will be added when the release is published. Do not cite this release until it exists.
+Released on 29 October 2026. The Technical Blueprint (10.5281/zenodo.23587901) and the Blueprint Summary (10.5281/zenodo.23587919) each have their own Zenodo record, deposited from this release. The Decision Memo is attached to this release only.
 
 ## Publications in this release
 
@@ -43,14 +43,8 @@ Everything needed to rebuild the PDFs is in `blueprint/` (sources, table data, f
 
 ## Citation
 
-Once the Zenodo records are published:
+Please cite the publications:
 
 > Saykat, M. N. H. (2026). *Bangladesh AI Policy & Innovation Lab (BAPIL): Technical Blueprint* (Version 1.0). Zenodo. https://doi.org/10.5281/zenodo.23587901
 >
 > Saykat, M. N. H. (2026). *Bangladesh AI Policy & Innovation Lab (BAPIL): Blueprint Summary* (Version 1.0). Zenodo. https://doi.org/10.5281/zenodo.23587919
-
-## Open before publication
-
-1. Decided on 29 October 2026: CC BY 4.0 for the documents, tables, figures, data and `research/`; MIT for code; affiliation "Independent Researcher, Bangladesh" in all metadata; the Decision Memo is attached to the GitHub release but not deposited on Zenodo.
-2. Before the release, switch off the Zenodo GitHub integration for this repository (see `blueprint/zenodo/UPLOAD_CHECKLIST.md`, section 0), so that the release does not create an extra record under the White Paper's concept DOI.
-3. The DOIs are reserved and printed in the documents; tag and release, then publish the two Zenodo records.

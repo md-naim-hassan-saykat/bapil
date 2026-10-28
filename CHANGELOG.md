@@ -16,9 +16,9 @@ The format is inspired by [Keep a Changelog](https://keepachangelog.com/en/1.1.0
 
 ---
 
-## [1.1.0] - Unreleased (prepared October 2026)
+## [1.1.0] - 2026-10-29
 
-Prepared for repository release v1.1.0. The tag, the GitHub release and the Blueprint's Zenodo DOI have not been created yet; the release date will be added when the release is published.
+Repository release v1.1.0: the Technical Blueprint, Blueprint Summary and Decision Memo (Version 1.0, October 2026), with the reference implementation 0.1.0. The Technical Blueprint (10.5281/zenodo.23587901) and the Blueprint Summary (10.5281/zenodo.23587919) each have their own Zenodo record.
 
 ### Added
 
