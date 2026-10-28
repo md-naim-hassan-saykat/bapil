@@ -6,7 +6,7 @@
 | Input | Public documents indexed with full provenance | 0 | 5,000 | 25,000 |
 | Output | BanglaPolicyQA benchmark questions released | 0 | 500 | 2,000 |
 | Output | User-facing pilots (P1 to P3) that passed Gate G3 | 0 | 2 | 3 |
-| Output | Open releases archived with a DOI (including this Blueprint) | 3 | 5 | 10 |
+| Output | Open releases archived with a DOI (including this Blueprint and its Summary) | 4 | 5 | 10 |
 | Output | Officials trained in responsible AI and the tools | 0 | 100 | 500 |
 | Outcome | Monthly active pilot users | 0 | 30 | 300 |
 | Outcome | Median time saved on evidence search, measured in time-to-evidence studies (Annex R) | Baseline study | First measurement | 30% |
