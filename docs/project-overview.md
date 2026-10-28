@@ -14,7 +14,6 @@ BAPIL is a **proposal**. No institution has been established, no host institutio
 | Executive Summary | 1.0, July 2026 | EN, BN | Published; DOI 10.5281/zenodo.21441172 | `releases/v1.0/`, sources in `reports/` |
 | Technical Blueprint | 1.0, October 2026 | EN (authoritative), BN | Prepared for release v1.1.0; DOI 10.5281/zenodo.23587901 (reserved) | `releases/v1.1/`, sources in `blueprint/src/` |
 | Blueprint Summary | 1.0, October 2026 | EN, BN | Prepared with the Blueprint; DOI 10.5281/zenodo.23587919 (reserved) | same |
-| Decision Memo | October 2026 | EN, BN | Separate document addressed to the authorities; not part of the Blueprint | same |
 | Reference implementation | 0.1.0 | code | Research prototype; to be issued in release v1.1.0 | `implementation/` |
 | International case studies | 2026 | EN | Supporting research | `research/` |
 

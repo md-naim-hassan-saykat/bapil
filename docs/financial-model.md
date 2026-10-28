@@ -26,7 +26,7 @@ The base case is Tk 204,264,136 unrounded (about USD 1.65 million at Tk 124 per 
 
 ## 3. Independent check
 
-The workbook formulas were written separately from the Python code and recalculated in LibreOffice (612 formulas, no errors). For all four scenarios the annual totals and 36-month totals agree with `budget_model.py` to within Tk 1, and every base-case category row agrees by year. The figures quoted in the Blueprint, the Summary and the Decision Memo (Tk 20.4, 17.9, 22.2 and 25.3 crore; Tk 4.7 crore in Year 1) are roundings of these values.
+The workbook formulas were written separately from the Python code and recalculated in LibreOffice (612 formulas, no errors). For all four scenarios the annual totals and 36-month totals agree with `budget_model.py` to within Tk 1, and every base-case category row agrees by year. The figures quoted in the Blueprint and the Summary (Tk 20.4, 17.9, 22.2 and 25.3 crore; Tk 4.7 crore in Year 1) are roundings of these values.
 
 ## 4. Main assumptions
 

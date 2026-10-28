@@ -26,4 +26,4 @@ If the independent AI oversight committee proposed in the draft national AI poli
 
 ## 4. Decisions requested and approvals needed
 
-The six decisions requested from the authorities are in Blueprint Table 57 and in the separate Decision Memo (`releases/v1.1/BAPIL_Decision_Memo_en.pdf`). The approvals and agreements needed before month 1 (host selection, MoU, host agreement, Year 1 funding) are listed in Table 65. No decision has been taken by any authority.
+The six decisions requested from the authorities are in Blueprint Table 57. The approvals and agreements needed before month 1 (host selection, MoU, host agreement, Year 1 funding) are listed in Table 65. No decision has been taken by any authority.

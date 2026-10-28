@@ -10,7 +10,7 @@ computes that order and rewrites the citations.
 * The Technical Blueprint uses one numbering for both editions, taken from the English text
   (tables included, in the position where they appear), so that the English and Bangla
   editions cite the same numbers.
-* The Summary and the Decision Memo each number their own (short) reference lists.
+* The Summary numbers its own (short) reference list.
 
 Citations have the form [84] or [84, 106]; code blocks and inline code are left untouched.
 """

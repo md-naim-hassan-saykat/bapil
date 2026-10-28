@@ -8,10 +8,10 @@ Keep these concepts apart: document version **1.0**; source revision (a Git comm
 
 | Decision | Choice | What remains to be done |
 |---|---|---|
-| Licence of the Blueprint, Summary, Memo, tables, figures and data | **CC BY 4.0**, as printed (consistent with the Executive Summary record); code stays MIT | Select CC BY 4.0 on both Zenodo records |
+| Licence of the Blueprint, Summary, tables, figures and data | **CC BY 4.0**, as printed (consistent with the Executive Summary record); code stays MIT | Select CC BY 4.0 on both Zenodo records |
 | Affiliation in the metadata | **"Independent Researcher, Bangladesh"** everywhere: Blueprint, Summary, `metadata.json`, `zenodo_metadata*.json`, `CITATION.cff` and the README author section | None |
 | Zenodo GitHub integration for this repository | **Option A: switch it off.** The earlier White Paper record (10.5281/zenodo.21363967) was archived from GitHub release v1.0.1, so the integration was on at that time. If it is still on, publishing GitHub release v1.1.0 would automatically create a new version under the concept DOI 10.5281/zenodo.21360565 (which today resolves to the White Paper), with metadata from `CITATION.cff`, in addition to the two prepared records | **Author, before the GitHub release:** at <https://zenodo.org/account/settings/github/>, switch the toggle for `md-naim-hassan-saykat/bapil` off. This does not affect existing records or DOIs |
-| Decision Memo in a Zenodo record | **No.** It is a separate document addressed to the authorities, not a research output; it is attached to the GitHub release | None |
+| Decision Memo | **Removed from the repository** on 29 October 2026 at the author's request; not on GitHub and not on Zenodo. The author keeps it privately | None |
 | Licence of `research/` | **CC BY 4.0**, stated in `research/README.md` | None |
 | Licence shown on the White Paper's Zenodo record (MIT, while the document says CC BY 4.0) | **Correct it to CC BY 4.0** (recommended; editing metadata keeps the DOI) | Author, on zenodo.org, at any time |
 | Engagement drafts in the Zenodo source archive | **Keep them in**, as they are marked as unsent drafts and document the planned consultation | None |
@@ -29,7 +29,7 @@ A reserved DOI is not registered until its record is published; until then doi.o
 
 ## 2. Put the DOIs into the documents and rebuild: done
 
-`blueprint/src/metadata.json` holds `"doi": "10.5281/zenodo.23587901"` and `"summary_doi": "10.5281/zenodo.23587919"`. The build prints them on the title pages, the document information and citation of the Blueprint, Table 1, both Summaries and the Decision Memo. They have also been entered in `README.md`, `RELEASE_NOTES.md`, `releases/README.md`, `CHANGELOG.md`, `CITATION.cff` (`references`), `docs/` and the Zenodo descriptions. To repackage, run `blueprint/zenodo/make_zenodo_package.sh`, then run `sha256sum -c SHA256SUMS.txt` inside each of the two folders.
+`blueprint/src/metadata.json` holds `"doi": "10.5281/zenodo.23587901"` and `"summary_doi": "10.5281/zenodo.23587919"`. The build prints them on the title pages, the document information and citation of the Blueprint, Table 1 and both Summaries. They have also been entered in `README.md`, `RELEASE_NOTES.md`, `releases/README.md`, `CHANGELOG.md`, `CITATION.cff` (`references`), `docs/` and the Zenodo descriptions. To repackage, run `blueprint/zenodo/make_zenodo_package.sh`, then run `sha256sum -c SHA256SUMS.txt` inside each of the two folders.
 
 ## 3. Push, tag and create the GitHub release
 
@@ -41,7 +41,7 @@ git tag -a v1.1.0 -m "BAPIL Technical Blueprint, Version 1.0"
 git push origin v1.1.0
 ```
 
-Then create the GitHub release **v1.1.0** from the tag, paste `RELEASE_NOTES.md` as the description, and attach the six PDFs from `releases/v1.1/` (Blueprint, Summary and Decision Memo, English and Bangla). Confirm that the release appears at <https://github.com/md-naim-hassan-saykat/bapil/releases> and that the two GitHub Actions workflows ran.
+Then create the GitHub release **v1.1.0** from the tag, paste `RELEASE_NOTES.md` as the description, and attach the four PDFs from `releases/v1.1/` (Blueprint and Summary, English and Bangla). Confirm that the release appears at <https://github.com/md-naim-hassan-saykat/bapil/releases> and that the two GitHub Actions workflows ran.
 
 ## 4. Upload the files to the Zenodo drafts
 

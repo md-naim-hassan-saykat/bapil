@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
 # Collect the files for the two Zenodo records: the Technical Blueprint (10.5281/zenodo.23587901) into
 # dist/zenodo/ and the Blueprint Summary (10.5281/zenodo.23587919) into dist/zenodo-summary/
-# (run after blueprint/build_blueprint.sh). Internal review records (blueprint/review/) and the separate
-# Decision Memo are not included (see UPLOAD_CHECKLIST.md, section 0).
+# (run after blueprint/build_blueprint.sh). Internal review records (blueprint/review/) are not included.
 set -euo pipefail
 cd "$(dirname "$0")/../.."
 OUT=dist/zenodo

@@ -18,13 +18,12 @@ The format is inspired by [Keep a Changelog](https://keepachangelog.com/en/1.1.0
 
 ## [1.1.0] - 2026-10-29
 
-Repository release v1.1.0: the Technical Blueprint, Blueprint Summary and Decision Memo (Version 1.0, October 2026), with the reference implementation 0.1.0. The Technical Blueprint (10.5281/zenodo.23587901) and the Blueprint Summary (10.5281/zenodo.23587919) each have their own Zenodo record.
+Repository release v1.1.0: the Technical Blueprint and Blueprint Summary (Version 1.0, October 2026), with the reference implementation 0.1.0. The Technical Blueprint (10.5281/zenodo.23587901) and the Blueprint Summary (10.5281/zenodo.23587919) each have their own Zenodo record.
 
 ### Added
 
 - **Bangladesh AI Policy & Innovation Lab (BAPIL): Technical Blueprint**, Version 1.0 (October 2026), in English (authoritative) and Bangla (বাংলাদেশ এআই পলিসি অ্যান্ড ইনোভেশন ল্যাব (BAPIL): টেকনিক্যাল ব্লুপ্রিন্ট): five parts, 21 chapters, 23 annexes, 72 tables and 16 figures. PDFs: `releases/v1.1/BAPIL_Technical_Blueprint_en.pdf` and `releases/v1.1/BAPIL_Technical_Blueprint_bn.pdf`.
 - Blueprint Summary, Version 1.0, in English and Bangla (`releases/v1.1/BAPIL_Blueprint_Summary_en.pdf`, `..._bn.pdf`).
-- Decision Memo to the authorities, in English and Bangla (`releases/v1.1/BAPIL_Decision_Memo_en.pdf`, `..._bn.pdf`), a separate document that is not part of the Blueprint.
 - Editable source package in `blueprint/`: Markdown masters, table data, TikZ figure sources, the budget model with CSV outputs and an editable workbook with formulas (`blueprint/data/BAPIL_Budget_Model.xlsx`), LaTeX headers, Pandoc filter, metadata and one build script.
 - Sixteen figures and seventy-two tables as LaTeX, PDF and PNG (and Markdown for tables), in English and Bangla.
 - Reference implementation (`implementation/`, version 0.1.0): Bangla normalisation, bilingual BM25 search, cited extractive answers with abstention, risk tiers, AI system register and transparency export, evaluation metrics, hash-chained audit log, CLI and JSON API, with 49 unit tests (run locally; no public CI record yet).
@@ -34,7 +33,7 @@ Repository release v1.1.0: the Technical Blueprint, Blueprint Summary and Decisi
 - Zenodo metadata draft, description and GitHub-to-Zenodo release checklist for the Blueprint record.
 - Security policy (`SECURITY.md`).
 - Internal review records in `blueprint/review/` (earlier audit and adversarial review, change record, October 2026 project audit, cross-document reconciliation, Markdown validation); these are not part of the publication.
-- Annex W of the Blueprint (Tables 69 and 70): jobs and skills created by the 36-month plan, and a costed, conditional national scale-up for Years 4 to 8 (about Tk 218.9 crore; about 118 direct posts by Year 8), shown for information and not requested; summarised in Section 17.3, the front matter, the Summary and the Decision Memo.
+- Annex W of the Blueprint (Tables 69 and 70): jobs and skills created by the 36-month plan, and a costed, conditional national scale-up for Years 4 to 8 (about Tk 218.9 crore; about 118 direct posts by Year 8), shown for information and not requested; summarised in Section 17.3, the front matter and the Summary.
 - References numbered in order of first citation in every document (previously the White Paper numbers 1 to 83 were kept, so the list jumped, for example from 1 to 4); entries from the White Paper bibliography are marked with an asterisk; `blueprint/review/REFERENCE_NUMBERS.md` maps the new numbers to the source keys.
 - Unit costs in the budget checked against published prices and pay data (Section 17.1, Table 49); the base case is unchanged and the risk from 2026 equipment list prices, with or without import duty and VAT, is stated.
 - Stakeholder engagement drafts in `docs/engagement/`: one-page briefing note, letter templates for a candidate host and for the ICT Division (English and Bangla), and a consultation plan. None has been sent or signed.
@@ -58,14 +57,14 @@ Repository release v1.1.0: the Technical Blueprint, Blueprint Summary and Decisi
 
 ### Documentation
 
-- `README.md`: verified project status, Decision Memo, documentation index, repository structure, licensing of documents versus code, release status and the Zenodo GitHub integration decision.
+- `README.md`: verified project status, documentation index, repository structure, licensing of documents versus code, release status and the Zenodo GitHub integration decision.
 - New: `CONTRIBUTING.md`, `REPRODUCIBILITY.md`, `DATA_AND_METHODOLOGY.md`, `RELEASE_NOTES.md` (draft) and `docs/` (overview, inventory, architecture, governance, evaluation, legal references, financial model, licensing and asset rights, publication and archiving, source-of-truth register with bilingual terminology).
 - `reports/README.md`: missing closing backtick in the build-script entry.
 - Licences and affiliation settled for release (29 October 2026): CC BY 4.0 for the publications, tables, figures, data and the research studies (new `research/README.md`), MIT for code; affiliation "Independent Researcher, Bangladesh" in `CITATION.cff`, the README and the Zenodo metadata.
 
 ### Build and reproducibility
 
-- One script (`blueprint/build_blueprint.sh`) regenerates tables, figures, budget CSV, assembled Markdown and all six PDFs; fixed PDF dates and `SOURCE_DATE_EPOCH`; quotation-mark check on every build.
+- One script (`blueprint/build_blueprint.sh`) regenerates tables, figures, budget CSV, assembled Markdown and the four PDFs; fixed PDF dates and `SOURCE_DATE_EPOCH`; quotation-mark check on every build.
 - The demonstration evaluation corpus is restricted to the White Paper, Executive Summary, Blueprint and Summary.
 
 ### Unchanged

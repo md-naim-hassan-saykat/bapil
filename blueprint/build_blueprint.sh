@@ -4,7 +4,7 @@
 #   figures : blueprint/figures/*.tex|pdf|png
 #   data    : blueprint/data/budget_*.csv (from src/budget_model.py)
 #   docs    : blueprint/*.md (assembled)  ->  releases/v1.1/BAPIL_Technical_Blueprint_{en,bn}.pdf
-#             BAPIL_Blueprint_Summary_{en,bn}.pdf and the separate BAPIL_Decision_Memo_{en,bn}.pdf
+#             and BAPIL_Blueprint_Summary_{en,bn}.pdf
 # Requirements: python3 (3.10+), pandoc (3.x), XeLaTeX (TeX Live), pdftoppm (poppler),
 #               fonts: Latin Modern, TeX Gyre Heros, Noto Serif, Noto Sans, Noto Serif Bengali,
 #               Noto Sans Bengali, DejaVu Sans Mono.
@@ -72,7 +72,7 @@ import json, sys
 m = json.load(open(sys.argv[1], encoding="utf-8"))
 key, lang, out = sys.argv[2], sys.argv[3], sys.argv[4]
 q = lambda s: json.dumps(s, ensure_ascii=False)   # JSON strings are valid YAML scalars
-# each Zenodo publication carries its own DOI in the PDF keywords (the Memo has no DOI of its own)
+# each Zenodo publication carries its own DOI in the PDF keywords
 doi = {"title": m.get("doi", ""), "summary_title": m.get("summary_doi", "")}.get(key, "")
 kw = m["keywords"] + (["doi:" + doi] if doi and "PENDING" not in doi else [])
 with open(out, "w", encoding="utf-8") as fh:
@@ -88,7 +88,6 @@ build_pdf () {
   local headers=(--include-in-header="$SRC/header-common.tex" --include-in-header="$SRC/header-$lang.tex"
                  --include-in-header="$META_DIR/pubdate.tex")
   [[ "$name" == *Summary* ]] && headers+=(--include-in-header="$SRC/header-summary-$lang.tex")
-  [[ "$name" == *Memo* ]] && headers+=(--include-in-header="$SRC/header-memo.tex")
   local vars=(-V colorlinks=true -V linkcolor=black -V urlcolor=black -V toccolor=black
               -V monofont="DejaVu Sans Mono" -V monofontoptions="Scale=0.84"
               -V fontsize=10pt -V geometry:margin=0.8in
@@ -124,9 +123,6 @@ build_pdf BAPIL_Technical_Blueprint_en en title
 build_pdf BAPIL_Technical_Blueprint_bn bn title
 build_pdf BAPIL_Blueprint_Summary_en   en summary_title
 build_pdf BAPIL_Blueprint_Summary_bn   bn summary_title
-# The Decision Memo is a separate deliverable addressed to the authorities; it is not part of the Blueprint.
-build_pdf BAPIL_Decision_Memo_en       en memo_title
-build_pdf BAPIL_Decision_Memo_bn       bn memo_title
 
 # Manifest of all deliverables with checksums
 python3 "$ROOT/blueprint/make_manifest.py"

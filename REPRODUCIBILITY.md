@@ -1,6 +1,6 @@
 # Reproducibility
 
-How to rebuild the BAPIL Technical Blueprint, Blueprint Summary and Decision Memo from source, and what has and has not been tested. Details of the build internals are in [`blueprint/README.md`](blueprint/README.md).
+How to rebuild the BAPIL Technical Blueprint and Blueprint Summary from source, and what has and has not been tested. Details of the build internals are in [`blueprint/README.md`](blueprint/README.md).
 
 ## 1. Tested environment
 
@@ -36,7 +36,7 @@ From the repository root:
 
 | Command | What it does | Tested |
 |---|---|---|
-| `blueprint/build_blueprint.sh` | Tables, figures, budget CSV, unit tests, demonstration evaluation, assembly, quotation-mark check, all six PDFs, manifest (about 4 minutes) | Yes |
+| `blueprint/build_blueprint.sh` | Tables, figures, budget CSV, unit tests, demonstration evaluation, assembly, quotation-mark check, the four PDFs, manifest (about 4 minutes) | Yes |
 | `blueprint/build_blueprint.sh --skip-assets` | Documents only, using existing tables and figures | Yes (earlier in October 2026) |
 | `blueprint/build_blueprint.sh --only BAPIL_Technical_Blueprint_bn` | One document | Yes (earlier in October 2026) |
 | `cd implementation && python3 -m unittest discover -s tests` | 49 unit tests | Yes: 49 pass (Python 3.13) |
@@ -51,7 +51,6 @@ From the repository root:
 |---|---|
 | Technical Blueprint, EN and BN | `releases/v1.1/BAPIL_Technical_Blueprint_en.pdf`, `..._bn.pdf` |
 | Blueprint Summary, EN and BN | `releases/v1.1/BAPIL_Blueprint_Summary_en.pdf`, `..._bn.pdf` |
-| Decision Memo, EN and BN (separate document) | `releases/v1.1/BAPIL_Decision_Memo_en.pdf`, `..._bn.pdf` |
 | Assembled Markdown | `blueprint/BAPIL_*_{en,bn}.md` |
 | Tables and figures | `blueprint/tables/`, `blueprint/tables/md/`, `blueprint/figures/` |
 | Budget CSV | `blueprint/data/budget_*.csv` |
@@ -59,9 +58,9 @@ From the repository root:
 
 ## 5. How reproducible the outputs are
 
-A clean-clone rebuild of commit `085dea3` (22 October 2026, after the corrections of the project-wide audit) produced byte-identical tables, figures, CSV files and assembled Markdown. The six PDFs were identical byte for byte except for the 16-byte file identifier, which XeTeX derives from pandoc’s randomly named temporary directory. PDF creation and modification dates are fixed to the publication month (`D:202610`) and `SOURCE_DATE_EPOCH` is fixed in `blueprint/src/metadata.json`.
+A clean-clone rebuild of commit `085dea3` (22 October 2026, after the corrections of the project-wide audit) produced byte-identical tables, figures, CSV files and assembled Markdown. The PDFs were identical byte for byte except for the 16-byte file identifier, which XeTeX derives from pandoc’s randomly named temporary directory. PDF creation and modification dates are fixed to the publication month (`D:202610`) and `SOURCE_DATE_EPOCH` is fixed in `blueprint/src/metadata.json`.
 
-The Zenodo source archive was tested the same way: `BAPIL_Technical_Blueprint_source.zip` and `bapil-reference-implementation-0.1.0.zip` unzipped together into an empty directory rebuild the six PDFs, identical apart from the file identifier.
+The Zenodo source archive was tested the same way: `BAPIL_Technical_Blueprint_source.zip` and `bapil-reference-implementation-0.1.0.zip` unzipped together into an empty directory rebuild the PDFs, identical apart from the file identifier.
 
 Two things are recomputed on every build and change when the documents change: the demonstration evaluation in Section 11.5 (the build stops if Table 60 no longer quotes the current Recall@10) and the manifest checksums.
 

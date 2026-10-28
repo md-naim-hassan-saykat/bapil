@@ -195,7 +195,7 @@ The BAPIL White Paper (Version 1.0) is organized into the following chapters:
 **Bangladesh AI Policy & Innovation Lab (BAPIL): Technical Blueprint**, Version 1.0, October 2026  
 **বাংলাদেশ এআই পলিসি অ্যান্ড ইনোভেশন ল্যাব (BAPIL): টেকনিক্যাল ব্লুপ্রিন্ট**, সংস্করণ ১.০, অক্টোবর ২০২৬
 
-The Technical Blueprint turns the White Paper into a buildable plan. It is written in English (authoritative) and Bangla, with a short Blueprint Summary in both languages and a separate Decision Memo addressed to the authorities. The files below are prepared for repository release v1.1.0; the release and the Blueprint's Zenodo DOI do not exist yet (see [Versioning](#versioning-and-release-status)).
+The Technical Blueprint turns the White Paper into a buildable plan. It is written in English (authoritative) and Bangla, with a short Blueprint Summary in both languages. The files below are prepared for repository release v1.1.0; the release and the Blueprint's Zenodo DOI do not exist yet (see [Versioning](#versioning-and-release-status)).
 
 | Publication | English | Bangla |
 |---|---|---|
@@ -203,7 +203,6 @@ The Technical Blueprint turns the White Paper into a buildable plan. It is writt
 | Technical Blueprint (assembled Markdown) | [BAPIL_Technical_Blueprint_en.md](blueprint/BAPIL_Technical_Blueprint_en.md) | [BAPIL_Technical_Blueprint_bn.md](blueprint/BAPIL_Technical_Blueprint_bn.md) |
 | Editable master sources | [`blueprint/src/en/`](blueprint/src/en/) | [`blueprint/src/bn/`](blueprint/src/bn/) |
 | Blueprint Summary | [PDF](releases/v1.1/BAPIL_Blueprint_Summary_en.pdf) · [Markdown](blueprint/BAPIL_Blueprint_Summary_en.md) | [PDF](releases/v1.1/BAPIL_Blueprint_Summary_bn.pdf) · [Markdown](blueprint/BAPIL_Blueprint_Summary_bn.md) |
-| Decision Memo (separate document, not part of the Blueprint) | [PDF](releases/v1.1/BAPIL_Decision_Memo_en.pdf) · [Markdown](blueprint/BAPIL_Decision_Memo_en.md) | [PDF](releases/v1.1/BAPIL_Decision_Memo_bn.pdf) · [Markdown](blueprint/BAPIL_Decision_Memo_bn.md) |
 | Budget model (editable workbook and CSV) | [BAPIL_Budget_Model.xlsx](blueprint/data/BAPIL_Budget_Model.xlsx) · [CSV](blueprint/data/) | |
 
 The editable masters are Markdown chapter files in [`blueprint/src/`](blueprint/src/); tables are Python data (`tables_*.py`), figures are TikZ (`make_figures.py`), the budget is computed by `budget_model.py` (also exported as CSV to [`blueprint/data/`](blueprint/data/) and re-implemented with formulas in an editable workbook), and new references are in `refs_new.md`. One command rebuilds every table, figure and PDF: `blueprint/build_blueprint.sh` (tools, fonts and steps in [`blueprint/README.md`](blueprint/README.md)).
@@ -327,7 +326,6 @@ bapil/
 ├── blueprint/                    # Technical Blueprint (Version 1.0)
 │   ├── BAPIL_Technical_Blueprint_en.md / _bn.md   # assembled (generated) Markdown
 │   ├── BAPIL_Blueprint_Summary_en.md / _bn.md
-│   ├── BAPIL_Decision_Memo_en.md / _bn.md         # separate memo (not part of the Blueprint)
 │   ├── src/                      # editable masters: en/, bn/, tables_*.py, figures, budget model, headers
 │   ├── figures/                  # blueprint_fig01 ... 16 (TeX, PDF, PNG; EN and BN)
 │   ├── tables/                   # blueprint_tab01 ... 72 (TeX, PDF, PNG; EN and BN) + md/
@@ -344,7 +342,7 @@ bapil/
 │
 ├── releases/
 │   ├── v1.0/                     # White Paper and Executive Summary PDFs
-│   └── v1.1/                     # Blueprint, Summary and Decision Memo PDFs (EN, BN), prepared for release v1.1.0
+│   └── v1.1/                     # Blueprint and Summary PDFs (EN, BN), prepared for release v1.1.0
 │
 ├── research/                     # international case studies and literature review
 │
@@ -421,7 +419,7 @@ If you use BAPIL in research, policy work, publications, or derivative projects,
 
 Unless otherwise noted, the source code, scripts, build files, and repository infrastructure are licensed under the **MIT License**. See the repository `LICENSE` file for details.
 
-The publications are licensed separately. The White Paper and Executive Summary state **CC BY 4.0**; the Technical Blueprint, Blueprint Summary, Decision Memo, their tables, figures and budget data are licensed under **CC BY 4.0** (confirmed by the author on 29 October 2026). The research studies in `research/` are also CC BY 4.0. The Zenodo record of the White Paper currently shows the MIT License, which differs from the licence stated in the document. Details, third-party material and open licence decisions: [`docs/licensing-and-asset-rights.md`](docs/licensing-and-asset-rights.md).
+The publications are licensed separately. The White Paper and Executive Summary state **CC BY 4.0**; the Technical Blueprint, Blueprint Summary, their tables, figures and budget data are licensed under **CC BY 4.0** (confirmed by the author on 29 October 2026). The research studies in `research/` are also CC BY 4.0. The Zenodo record of the White Paper currently shows the MIT License, which differs from the licence stated in the document. Details, third-party material and open licence decisions: [`docs/licensing-and-asset-rights.md`](docs/licensing-and-asset-rights.md).
 
 ---
 
@@ -444,7 +442,7 @@ The repository currently contains:
 - Bangla Executive Summary (v1.0)
 - English White Paper (v1.0)
 - Bangla White Paper (v1.0)
-- English and Bangla Technical Blueprint, Blueprint Summary and Decision Memo (Version 1.0, prepared for release v1.1.0)
+- English and Bangla Technical Blueprint and Blueprint Summary (Version 1.0, prepared for release v1.1.0)
 - Reference implementation (version 0.1.0) with unit tests and prepared continuous-integration workflows
 - Supporting international AI governance studies
 - BAPIL conceptual framework and supporting documentation

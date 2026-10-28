@@ -17,7 +17,6 @@ How the BAPIL publications move from this repository to a GitHub release and a Z
 
 * **Two multilingual Zenodo records**, as reserved by the author: the Technical Blueprint (10.5281/zenodo.23587901), holding the English and Bangla editions, the figures, tables, editable sources and a source archive of the reference implementation; and the Blueprint Summary (10.5281/zenodo.23587919), holding the English and Bangla Summary. Each record keeps both languages together, because the two editions are the same work in two languages. The English editions are authoritative.
 * **Linked, not versioned:** the Blueprint record is a new record, related to the White Paper (*is supplement to*), the Executive Summary (*references*) and the Blueprint Summary (*is supplemented by*), not a new version of any of them. The Summary record *is supplement to* the Blueprint.
-* **The Decision Memo** is a separate document addressed to the authorities; it is attached to the GitHub release but, by default, not deposited with the Blueprint.
 * **The repository snapshot** (tag `v1.1.0`) is referenced from the record (*is supplemented by*).
 
 ## 3. Release workflow
@@ -29,7 +28,7 @@ How the BAPIL publications move from this repository to a GitHub release and a Z
 5. Decide how to handle the Zenodo GitHub integration (checklist, section 0): if it is still switched on, publishing a GitHub release automatically creates a new version under the concept DOI, with metadata from `CITATION.cff`.
 6. Reserve the DOIs on Zenodo (drafts, not published), put them in `blueprint/src/metadata.json`, rebuild and commit. Done on 23 October 2026.
 7. Push the branch, merge into `main`, create and push tag `v1.1.0`.
-8. Publish GitHub release v1.1.0 with `RELEASE_NOTES.md` and the six PDFs.
+8. Publish GitHub release v1.1.0 with `RELEASE_NOTES.md` and the four PDFs (Blueprint and Summary, English and Bangla).
 9. Upload `dist/zenodo/` to the Blueprint draft and `dist/zenodo-summary/` to the Summary draft, and publish them.
 10. Check that both DOIs resolve, the related identifiers appear and the files match the `SHA256SUMS.txt` of each upload set.
 11. Update `README.md`, `CITATION.cff`, `CHANGELOG.md` and `docs/source-of-truth.md` with the release date (the DOIs are already in them).

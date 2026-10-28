@@ -28,8 +28,6 @@ DOCS = [
     ("BAPIL_Technical_Blueprint_bn", "bn"),
     ("BAPIL_Blueprint_Summary_en", "en"),
     ("BAPIL_Blueprint_Summary_bn", "bn"),
-    ("BAPIL_Decision_Memo_en", "en"),   # separate deliverable; not part of the Blueprint
-    ("BAPIL_Decision_Memo_bn", "bn"),
 ]
 
 CAPTIONS = {

@@ -1,6 +1,6 @@
 # Release notes: BAPIL repository release v1.1.0
 
-Released on 29 October 2026. The Technical Blueprint (10.5281/zenodo.23587901) and the Blueprint Summary (10.5281/zenodo.23587919) each have their own Zenodo record, deposited from this release. The Decision Memo is attached to this release only.
+Released on 29 October 2026. The Technical Blueprint (10.5281/zenodo.23587901) and the Blueprint Summary (10.5281/zenodo.23587919) each have their own Zenodo record, deposited from this release.
 
 ## Publications in this release
 
@@ -8,7 +8,6 @@ Released on 29 October 2026. The Technical Blueprint (10.5281/zenodo.23587901) a
 |---|---|---|---|
 | Bangladesh AI Policy & Innovation Lab (BAPIL): Technical Blueprint | 1.0 (October 2026) | English (authoritative); Bangla: বাংলাদেশ এআই পলিসি অ্যান্ড ইনোভেশন ল্যাব (BAPIL): টেকনিক্যাল ব্লুপ্রিন্ট | `releases/v1.1/BAPIL_Technical_Blueprint_en.pdf`, `..._bn.pdf` |
 | Bangladesh AI Policy & Innovation Lab (BAPIL): Blueprint Summary | 1.0 (October 2026) | English, Bangla | `releases/v1.1/BAPIL_Blueprint_Summary_en.pdf`, `..._bn.pdf` |
-| Decision Memo: A 12-Month Pilot of an AI Policy-Intelligence Capability for Bangladesh | October 2026 | English, Bangla | `releases/v1.1/BAPIL_Decision_Memo_en.pdf`, `..._bn.pdf` (a separate document, not part of the Blueprint) |
 | Reference implementation `bapil` | 0.1.0 | Python | `implementation/` |
 
 ## Scope
@@ -19,7 +18,7 @@ BAPIL is a proposal. No institution has been established, no governance body con
 
 ## Main contents and changes since v1.0.1
 
-* New: Technical Blueprint, Blueprint Summary and Decision Memo in English and Bangla, with editable sources, tables and figures in LaTeX, PDF and PNG, a budget model with CSV outputs and an editable workbook, and one build script.
+* New: Technical Blueprint and Blueprint Summary in English and Bangla, with editable sources, tables and figures in LaTeX, PDF and PNG, a budget model with CSV outputs and an editable workbook, and one build script.
 * New: reference implementation 0.1.0 (bilingual search, cited extractive answers with abstention, risk tiers, AI system register, evaluation metrics, audit log), 49 unit tests, JSON Schemas and examples.
 * New: repository documentation (`CONTRIBUTING.md`, `REPRODUCIBILITY.md`, `DATA_AND_METHODOLOGY.md`, `docs/`), security policy and GitHub Actions workflows.
 * The White Paper and Executive Summary (v1.0) are unchanged.
