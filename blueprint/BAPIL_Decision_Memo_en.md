@@ -4,7 +4,7 @@ lang: en
 
 # Decision Memo: A 12-Month Pilot of an AI Policy-Intelligence Capability for Bangladesh
 
-**For the consideration of:** the ICT Division; for information the Planning Commission, Finance Division, Legislative and Parliamentary Affairs Division, BBS and a2i · **From:** Md Naim Hassan Saykat, author of the BAPIL Technical Blueprint · **Date:** October 2026  
+**For the consideration of:** the ICT Division; for information the Planning Commission, Finance Division, Legislative and Parliamentary Affairs Division (LPAD), BBS and a2i · **From:** Md Naim Hassan Saykat, author of the BAPIL Technical Blueprint · **Date:** October 2026  
 **Basis:** BAPIL Technical Blueprint, Version 1.0 (10.5281/zenodo.23587901; <https://github.com/md-naim-hassan-saykat/bapil>). This memo is a separate document, not part of the Blueprint. CC BY 4.0.
 
 **Status.** An independent research proposal, not an official document. No decision, body, host or funding exists yet.
@@ -22,7 +22,7 @@ lang: en
 | D3 | Authorise bulk access to already-public document collections; nominate data custodians | LPAD, Finance Division, Planning Commission, BBS, a2i | During Phase 0 |
 | D4 | Nominate Steering Board members; select ERRC members by open call through an independent panel | ICT Division and host; independent panel | During Phase 0 |
 | D5 | Fund Phase 0 (about Tk 0.44 crore, six months): open host call, independent legal review, costing study, data-access check; name a focal point | ICT Division or a development partner | Within 90 days |
-| D6 | Confirm guardrails: no deployment beyond class A without a G4 decision; no prohibited uses | Steering Board | At charter adoption |
+| D6 | Confirm guardrails: no deployment beyond class A (advisory) without a G4 decision; no prohibited uses | Steering Board | At charter adoption |
 
 **Sequence and resources.** D1 and D5 come first; D2 only after Phase 0, so Month 1 can be July 2027. Indicative budget: about Tk 20.4 crore over 36 months (Tk 4.7 crore in Year 1; scenarios Tk 17.9 to 25.3 crore; adjusted Tk 22.2 crore), plus Tk 0.44 crore for Phase 0; about 9 full-time staff in Year 1, rising to 19. Planning estimates, not approved funding; the Annex W scale-up is not requested.
 

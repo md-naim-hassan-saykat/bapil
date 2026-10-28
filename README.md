@@ -182,8 +182,8 @@ The BAPIL White Paper (Version 1.0) is organized into the following chapters:
 11. AI Education & Talent Development
 12. Startup Ecosystem
 13. Resource Requirements & Funding Considerations
-14. Five-Year Roadmap (2026–2030)
-15. Long-Term Vision (2030–2041)
+14. Five-Year Roadmap (2026 to 2030)
+15. Long-Term Vision (2030 to 2041)
 16. Risks, Ethics, and Responsible AI
 17. Strategic Recommendations
 18. Conclusion
@@ -210,7 +210,7 @@ The editable masters are Markdown chapter files in [`blueprint/src/`](blueprint/
 
 The Blueprint specifies:
 
-1. 26 requirements traced to components, code and tests;
+1. 26 requirements, 13 of them implemented in the reference code with unit tests (traceability in Annex A);
 2. an institutional design (university-anchored lab, government MoU, Steering Board, independent Ethics and Risk Review Committee with a binding veto within the limits of the host's statutes, Technical Architecture Board);
 3. a reference architecture of twelve open components hosted in Bangladesh;
 4. data rules (four data classes, public data first) aligned with the data-protection and data-management framework of 2025 and 2026 as reported;

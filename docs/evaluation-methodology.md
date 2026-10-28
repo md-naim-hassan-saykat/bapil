@@ -6,7 +6,7 @@ This page summarises how BAPIL proposes to measure its systems and what has actu
 
 | Item | Status (October 2026) |
 |---|---|
-| BanglaPolicyQA benchmark | **Not built.** No benchmark question has been written for it. Version 0 (500 answerable and 200 out-of-scope questions) is planned for months 5 to 8 of the delivery plan |
+| BanglaPolicyQA benchmark | **Not built.** No benchmark question has been written for it. Version 0 (500 answerable and 200 out-of-scope questions) is planned for months 6 to 9 of the delivery plan (Milestone MS3) |
 | Pilot evaluations (P1 to P6) | **Not started.** No pilot exists |
 | Thresholds such as Recall@10 at least 0.85 and citation precision at least 0.95 | **Proposed targets**, not results |
 | Demonstration evaluation | **Development results only** (Section 3 below), measured locally by the build |

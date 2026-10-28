@@ -40,7 +40,7 @@ Funds are released in three annual tranches, each after a review, so only about 
 | D1 | Accept the Blueprint as a technical input to national AI policy drafting | ICT Division | Q4 2026 |
 | D2 | After Phase 0: approve the pilot, agree an MoU with the selected host, and commit Year 1 funding | ICT Division and host | End of Phase 0 |
 | D3 | Authorise bulk access to already-public document collections and name data custodians | Custodian bodies | During Phase 0 |
-| D4 | Nominate the Steering Board, and agree an open call for ERRC members | ICT Division and host | During Phase 0 |
+| D4 | Nominate the Steering Board, and agree an open call for ERRC members by an independent panel | ICT Division and host; independent panel | During Phase 0 |
 | D5 | Fund Phase 0 and name a focal point | ICT Division or a development partner | Within 90 days |
 | D6 | Confirm the guardrails | Steering Board | At charter adoption |
 

@@ -4,8 +4,8 @@
 |------------------------------|----------|-----------|-----------|------------|----------------|
 | Public documents indexed with full provenance | 0 | 15,000 | 30,000 | 100,000 | All public instruments in force |
 | Share of national laws in force searchable in Bangla and English with citations | 0% | 50% | 90% | 100% | 100%, updated within 7 days |
-| BanglaPolicyQA questions (all versions) | 0 | 1,000 | 2,300 | 6,000 | Multi-domain, maintained |
-| Officials trained (cumulative) | 0 | 200 | 1,000 | 5,500 | Part of public-service training |
+| BanglaPolicyQA questions (all versions) | 0 | 1,000 | 3,000 | 11,800 | Multi-domain, maintained |
+| Officials trained (cumulative) | 0 | 200 | 750 | 5,500 | Part of public-service training |
 | Agencies using BAPIL tools or methods | 0 | 3 | 10 | 30 | Most ministries and divisions |
 | Monthly active users of policy search | 0 | 50 | 500 | 3,000 | Routine use across government |
 | Bangla and English Recall@10 gap (points) | n/a | Measured from v1 (month 30) | 5 or less | 3 or less | 2 or less |
@@ -13,4 +13,4 @@
 | Independent evaluations published | 0 | 1 | 3 | 8 | Every 5 years at least |
 | Open releases archived with a DOI | 3 | 8 | 15 | 40 | Continuous |
 
-*Note.* Planning targets, not commitments. They assume the baseline scenario of Table 47, Phase 0 in the first half of 2027 and Month 1 in July 2027, and are reset at every strategic review.
+*Note.* Planning targets, not commitments. They assume the baseline scenario of Table 47, Phase 0 in the first half of 2027 and Month 1 in July 2027, and are reset at every strategic review. Values are for the end of each year; from 2030 they assume the conditional scale-up of Annex W (Table 70). Question counts include 300 out-of-scope questions.

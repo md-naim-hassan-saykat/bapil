@@ -39,7 +39,7 @@ The Bangladesh AI Policy & Innovation Lab (BAPIL) is a proposed independent rese
 
 # 2. What the Blueprint Specifies
 
-1. **26 requirements** (functional, non-functional and governance), each traced to components, code and tests.
+1. **26 requirements** (functional, non-functional and governance), 13 of them implemented in the reference code with unit tests.
 2. **An institution:** a university-anchored lab with a government MoU, a multi-stakeholder Steering Board, an independent Ethics and Risk Review Committee (ERRC) whose veto binds as far as the host’s statutes allow, and a Technical Architecture Board.
 3. **A reference architecture** of twelve open, replaceable components.
 4. **Data rules:** four data classes, a public-data-first policy and an inventory of official sources.
@@ -113,12 +113,12 @@ The 36-month plan is the first step of a longer strategy that connects BAPIL’s
 
 * **H0 Foundation (Q4 2026):** publish the Blueprint and code; brief the authorities; offer input to national AI policy drafting; fund Phase 0.
 * **H1 Short term (2027 to 2028):** prove value with public data; Phase 0, then the pilots; P1 and P2 pass their pilot gates; about 200 officials trained; mid-term evaluation.
-* **H2 Medium term (2029 to 2030):** agencies adopt successful tools; benchmark v1; Blueprint 2.0; contribution to the post-2030 national AI policy; about 1,000 officials trained.
+* **H2 Medium term (2029 to 2030):** agencies adopt successful tools; benchmark v1; Blueprint 2.0; contribution to the post-2030 national AI policy; about 750 officials trained.
 * **H3 Long term (2031 to 2035):** a national policy-intelligence network on shared standards; common assurance methods across government; regional training hubs; decision on institutional form.
 * **H4 Vision (2036 to 2041):** evidence services embedded in policy cycles; open Bangla language resources across domains; regional and South-South cooperation; independent review in 2041.
 * **Beyond 2041:** the charter is renewed only if the 2041 review confirms continuing public value; otherwise BAPIL closes or merges, with open archives preserved.
 
-Targets are indicative and revised at fixed reviews (2027, 2028, 2029, 2030, 2035 and 2041) and whenever a major event occurs. In every scenario, the core (governed corpus, cited search, benchmark and governance) is protected, and safeguards never weaken as BAPIL grows.
+Targets are indicative and revised at fixed reviews (mid and end 2028, 2030, 2035 and 2041) and whenever a major event occurs. In every scenario, the core (governed corpus, cited search, benchmark and governance) is protected, and safeguards never weaken as BAPIL grows.
 
 <!-- TABLE:45 -->
 

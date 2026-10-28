@@ -188,7 +188,7 @@ BAPIL complements, and must not duplicate, existing programmes. A KOICA-supporte
 
 ## 4.1 Approach
 
-Requirements were derived from three sources: the White Paper’s architecture, dashboard, foundation-model and governance chapters; the international frameworks the White Paper adopted as reference points [1, 4, 5, 6, 7, 68]; and the Bangladesh legal context summarised in Chapter 14. User needs were captured as personas and user stories. Each requirement is stated once, given an identifier and a priority, and traced to the components, code modules and tests that satisfy it (Annex A).
+Requirements were derived from three sources: the White Paper’s architecture, dashboard, foundation-model and governance chapters; the international frameworks the White Paper adopted as reference points [1, 4, 5, 6, 7, 68]; and the Bangladesh legal context summarised in Chapter 14. User needs were captured as personas and user stories. Each requirement is stated once, given an identifier and a priority; Annex A traces 16 requirements to the components, code modules and tests that address them, and the rest are verified in the pilots or by review.
 
 ## 4.2 Users and Personas
 

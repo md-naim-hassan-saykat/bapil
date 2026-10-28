@@ -96,8 +96,8 @@ TABLES_E = [
             "en": [
                 ["Public documents indexed with full provenance", "0", "15,000", "30,000", "100,000", "All public instruments in force"],
                 ["Share of national laws in force searchable in Bangla and English with citations", "0%", "50%", "90%", "100%", "100%, updated within 7 days"],
-                ["BanglaPolicyQA questions (all versions)", "0", "1,000", "2,300", "6,000", "Multi-domain, maintained"],
-                ["Officials trained (cumulative)", "0", "200", "1,000", "5,500", "Part of public-service training"],
+                ["BanglaPolicyQA questions (all versions)", "0", "1,000", "3,000", "11,800", "Multi-domain, maintained"],
+                ["Officials trained (cumulative)", "0", "200", "750", "5,500", "Part of public-service training"],
                 ["Agencies using BAPIL tools or methods", "0", "3", "10", "30", "Most ministries and divisions"],
                 ["Monthly active users of policy search", "0", "50", "500", "3,000", "Routine use across government"],
                 ["Bangla and English Recall@10 gap (points)", "n/a", "Measured from v1 (month 30)", "5 or less", "3 or less", "2 or less"],
@@ -108,8 +108,8 @@ TABLES_E = [
             "bn": [
                 ["পূর্ণ উৎস-তথ্যসহ সূচিবদ্ধ উন্মুক্ত নথি", "০", "১৫,০০০", "৩০,০০০", "১,০০,০০০", "বলবৎ সব উন্মুক্ত দলিল"],
                 ["বলবৎ জাতীয় আইনের যে অংশ উদ্ধৃতিসহ বাংলা ও ইংরেজিতে অনুসন্ধানযোগ্য", "০%", "৫০%", "৯০%", "১০০%", "১০০%, ৭ দিনের মধ্যে হালনাগাদ"],
-                ["BanglaPolicyQA প্রশ্ন (সব সংস্করণ)", "০", "১,০০০", "২,৩০০", "৬,০০০", "বহু-ক্ষেত্রভিত্তিক, রক্ষিত"],
-                ["প্রশিক্ষিত কর্মকর্তা (ক্রমপুঞ্জিত)", "০", "২০০", "১,০০০", "৫,৫০০", "জনপ্রশাসন প্রশিক্ষণের অংশ"],
+                ["BanglaPolicyQA প্রশ্ন (সব সংস্করণ)", "০", "১,০০০", "৩,০০০", "১১,৮০০", "বহু-ক্ষেত্রভিত্তিক, রক্ষিত"],
+                ["প্রশিক্ষিত কর্মকর্তা (ক্রমপুঞ্জিত)", "০", "২০০", "৭৫০", "৫,৫০০", "জনপ্রশাসন প্রশিক্ষণের অংশ"],
                 ["BAPIL-এর সরঞ্জাম বা পদ্ধতি ব্যবহারকারী সংস্থা", "০", "৩", "১০", "৩০", "অধিকাংশ মন্ত্রণালয় ও বিভাগ"],
                 ["নীতি অনুসন্ধানের মাসিক সক্রিয় ব্যবহারকারী", "০", "৫০", "৫০০", "৩,০০০", "সরকারজুড়ে নিয়মিত ব্যবহার"],
                 ["বাংলা ও ইংরেজির Recall@10 ব্যবধান (পয়েন্ট)", "প্রযোজ্য নয়", "v1 থেকে পরিমাপ (মাস ৩০)", "৫ বা কম", "৩ বা কম", "২ বা কম"],
@@ -118,8 +118,8 @@ TABLES_E = [
                 ["DOI-সহ সংরক্ষিত উন্মুক্ত প্রকাশ", "৩", "৮", "১৫", "৪০", "নিরবচ্ছিন্ন"],
             ],
         },
-        "note": {"en": "Planning targets, not commitments. They assume the baseline scenario of Table 47, Phase 0 in the first half of 2027 and Month 1 in July 2027, and are reset at every strategic review.",
-                 "bn": "পরিকল্পনা-লক্ষ্য, প্রতিশ্রুতি নয়। এগুলো সারণি ৪৭-এর ভিত্তি-দৃশ্যকল্প, ২০২৭-এর প্রথমার্ধে ধাপ ০ এবং জুলাই ২০২৭-এ মাস ১ ধরে নেয় এবং প্রতিটি কৌশলগত পর্যালোচনায় পুনর্নির্ধারিত হয়।"},
+        "note": {"en": "Planning targets, not commitments. They assume the baseline scenario of Table 47, Phase 0 in the first half of 2027 and Month 1 in July 2027, and are reset at every strategic review. Values are for the end of each year; from 2030 they assume the conditional scale-up of Annex W (Table 70). Question counts include 300 out-of-scope questions.",
+                 "bn": "পরিকল্পনা-লক্ষ্য, প্রতিশ্রুতি নয়। এগুলো সারণি ৪৭-এর ভিত্তি-দৃশ্যকল্প, ২০২৭-এর প্রথমার্ধে ধাপ ০ এবং জুলাই ২০২৭-এ মাস ১ ধরে নেয় এবং প্রতিটি কৌশলগত পর্যালোচনায় পুনর্নির্ধারিত হয়। মানগুলো প্রতি বছরের শেষের; ২০৩০ থেকে এগুলো সংযুক্তি ব-এর শর্তসাপেক্ষ সম্প্রসারণ (সারণি ৭০) ধরে নেয়। প্রশ্নের সংখ্যায় ৩০০টি আওতাবহির্ভূত প্রশ্ন অন্তর্ভুক্ত।"},
     },
     # ------------------------------------------------------------------ 47
     {

@@ -132,8 +132,8 @@ TABLES_A = [
             ],
         },
         "note": {
-            "en": "Priority follows the MoSCoW convention (Must, Should, Could). Requirement IDs are traced to components, code modules and tests in Annex A.",
-            "bn": "অগ্রাধিকার MoSCoW রীতি অনুসরণ করে (আবশ্যিক, প্রয়োজনীয়, ঐচ্ছিক)। প্রয়োজনীয়তার আইডিগুলো সংযুক্তি ক-তে উপাদান, কোড মডিউল ও পরীক্ষার সঙ্গে সংযুক্ত করা হয়েছে।",
+            "en": "Priority follows the MoSCoW convention (Must, Should, Could). Annex A traces 16 requirements to components, code modules and tests or pilot acceptance; the others are verified through pilot acceptance criteria, security testing or governance review.",
+            "bn": "অগ্রাধিকার MoSCoW রীতি অনুসরণ করে (আবশ্যিক, প্রয়োজনীয়, ঐচ্ছিক)। সংযুক্তি ক ১৬টি প্রয়োজনীয়তাকে উপাদান, কোড মডিউল ও পরীক্ষা বা পাইলট গ্রহণের সঙ্গে সংযুক্ত করে; বাকিগুলো পাইলট গ্রহণের মানদণ্ড, নিরাপত্তা পরীক্ষা বা শাসনগত পর্যালোচনার মাধ্যমে যাচাই করা হয়।",
         },
     },
     # ------------------------------------------------------------------ 4

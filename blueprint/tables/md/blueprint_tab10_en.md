@@ -29,4 +29,4 @@
 | GR-05 | Incident reporting and response within defined time limits | Must |
 | GR-06 | Prohibited uses (tier T0) excluded by the BAPIL charter | Must |
 
-*Note.* Priority follows the MoSCoW convention (Must, Should, Could). Requirement IDs are traced to components, code modules and tests in Annex A.
+*Note.* Priority follows the MoSCoW convention (Must, Should, Could). Annex A traces 16 requirements to components, code modules and tests or pilot acceptance; the others are verified through pilot acceptance criteria, security testing or governance review.

@@ -11,10 +11,10 @@ No primary data was collected: there were no interviews, surveys, focus groups o
 ## 2. Source selection and evidence verification
 
 * **Preference used in the October 2026 evidence check:** official sources where they could be read (several official legal and policy sites block automated retrieval), then international organisations, peer-reviewed or institutional publications, established news media and specialist commentary.
-* **Recording:** every source has a URL and an access date in the bibliography (`blueprint/src/refs_new.md`; references 1 to 83 come from the White Paper).
+* **Recording:** every source has a URL and an access date in the bibliography (new references in `blueprint/src/refs_new.md`; the 40 entries taken from the White Paper bibliography, `reports/BAPIL_White_Paper_v1.md`, are marked with an asterisk in the Blueprint’s reference list).
 * **Classification:** each important claim is classed in Table 60 as a verified fact, source-reported fact, research finding, design recommendation, assumption or estimate, with the evidence and how the text presents it.
 * **Disagreement:** where sources disagree (for example on the content of the June 2026 cyber-security amendment), the documents say so rather than choose one.
-* **Limits:** all references were checked in October 2026: the new references when they were added, and the 40 entries taken from the White Paper on 22 October 2026, when 13 were corrected (`blueprint/review/REFERENCE_VERIFICATION.md`). The gazetted texts of the 2025 and 2026 laws could not be retrieved and are still cited through secondary sources (unresolved items U1 to U3).
+* **Limits:** all references were checked in October 2026: the new references when they were added, and the 40 entries taken from the White Paper on 22 October 2026, when 13 were corrected (`blueprint/review/REFERENCE_VERIFICATION.md`). The Act numbers, Gazette dates and commencement of the 2026 laws were confirmed from official sources, but their provisions could be read only through database texts, not the Gazette texts; confirmation by counsel is still open (unresolved items U1 to U3).
 
 ## 3. Legal research
 
